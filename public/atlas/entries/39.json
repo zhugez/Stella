@@ -58,7 +58,11 @@
     "cefr": "B2",
     "topic": "daily",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "昏暗的",
+    "zh": "昏暗的；微弱的",
+    "fr_word": "faible",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/bW43908_fra-32d005a2.ogg.cvrt.mp3"
   },
   {
     "id": "intelligence",
@@ -110,7 +114,11 @@
     "cefr": "B2",
     "topic": "thinking",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "智力",
+    "zh": "智力；理解力",
+    "fr_word": "renseignement",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/qw51874_fra-a5da59ee.ogg.cvrt.mp3"
   },
   {
     "id": "triangular",
@@ -158,7 +166,11 @@
     "cefr": "B2",
     "topic": "science",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "三角形的",
+    "zh": "三角形的",
+    "fr_word": "triangulaire",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/jG170819_wikipedia-commons-9-94-Fr-triangulaire.ogg.cvrt.mp3"
   },
   {
     "id": "tutorial",
@@ -208,7 +220,11 @@
     "cefr": "B2",
     "topic": "education",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "辅导课",
+    "zh": "辅导课；小组讨论课",
+    "fr_word": "tutoriel",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/Xz2190631_audio-by-166438.mp3"
   },
   {
     "id": "stroll",
@@ -257,7 +273,11 @@
     "cefr": "B2",
     "topic": "daily",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "悠闲地散步",
+    "zh": "悠闲地散步",
+    "fr_word": "promenade",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/dr50288_fra-ce3c8370.ogg.cvrt.mp3"
   },
   {
     "id": "plentiful",
@@ -305,7 +325,11 @@
     "cefr": "B2",
     "topic": "nature",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "丰富的",
+    "zh": "丰富的；充足的",
+    "fr_word": "abondant",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/Do48827_fra-ebad646c.ogg.cvrt.mp3"
   },
   {
     "id": "psychologist",
@@ -349,7 +373,11 @@
     "cefr": "B2",
     "topic": "health",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "心理学家",
+    "zh": "心理学家；心理专业人员",
+    "fr_word": "psychologue",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/t2144060_wikipedia-commons-4-48-Fr-psychologue.ogg.cvrt.mp3"
   },
   {
     "id": "trunk",
@@ -401,7 +429,11 @@
     "cefr": "B2",
     "topic": "nature",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "树干",
+    "zh": "树干",
+    "fr_word": "coffre",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/7P51202_fra-5606ad25.ogg.cvrt.mp3"
   },
   {
     "id": "literary",
@@ -450,7 +482,11 @@
     "cefr": "B2",
     "topic": "arts",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "文学的",
+    "zh": "文学的；与文学有关的",
+    "fr_word": "littéraire",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/EX55667_fra-3d570fef.ogg.cvrt.mp3"
   },
   {
     "id": "honor",
@@ -512,7 +548,11 @@
     "cefr": "B2",
     "topic": "society",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "荣誉",
+    "zh": "荣誉；敬意",
+    "fr_word": "honneur",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/gs159821_wikipedia-commons-b-b9-Fr-honneur.ogg.cvrt.mp3"
   },
   {
     "id": "status",
@@ -559,7 +599,11 @@
     "cefr": "B2",
     "topic": "society",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "社会地位",
+    "zh": "社会地位；身份",
+    "fr_word": "statut",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/hC50407_fra-e564f0bf.ogg.cvrt.mp3"
   },
   {
     "id": "adequate",
@@ -610,7 +654,11 @@
     "cefr": "B2",
     "topic": "daily",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "足够的",
+    "zh": "足够的；合乎要求的",
+    "fr_word": "adéquat",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/Jy55710_fra-46e604c6.ogg.cvrt.mp3"
   },
   {
     "id": "optional",
@@ -659,7 +707,11 @@
     "cefr": "B2",
     "topic": "education",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "可选择的",
+    "zh": "可选择的；非强制的",
+    "fr_word": "facultatif",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/bU165022_wikipedia-commons-c-c8-Fr-facultatif.ogg.cvrt.mp3"
   },
   {
     "id": "frequency",
@@ -712,7 +764,11 @@
     "cefr": "B2",
     "topic": "science",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "频率",
+    "zh": "频率；发生次数",
+    "fr_word": "fréquence",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/Fy130453_wikipedia-commons-2-21-FR-frequence.ogg.cvrt.mp3"
   },
   {
     "id": "demonstrate",
@@ -771,7 +827,11 @@
     "cefr": "B2",
     "topic": "science",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "证明",
+    "zh": "证明；表明",
+    "fr_word": "démontrer",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/jn43819_fra-2fa652d7.ogg.cvrt.mp3"
   },
   {
     "id": "disapproval",
@@ -821,7 +881,11 @@
     "cefr": "B2",
     "topic": "emotion",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "不赞同",
+    "zh": "不赞同；反对",
+    "fr_word": "désapprobation",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/nn4326966_audio-by-183135.mp3"
   },
   {
     "id": "sane",
@@ -877,7 +941,11 @@
     "cefr": "B2",
     "topic": "thinking",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "理智的",
+    "zh": "理智的；明智的",
+    "fr_word": "sain d'esprit",
+    "fr_audio": ""
   },
   {
     "id": "concept",
@@ -925,7 +993,11 @@
     "cefr": "B2",
     "topic": "thinking",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "概念",
+    "zh": "概念；观念",
+    "fr_word": "notion",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/Yk54427_fra-736ad346.ogg.cvrt.mp3"
   },
   {
     "id": "sigh",
@@ -971,7 +1043,11 @@
     "cefr": "B2",
     "topic": "emotion",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "叹气",
+    "zh": "叹气；叹息",
+    "fr_word": "soupir",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/yi52696_fra-2532c650.ogg.cvrt.mp3"
   },
   {
     "id": "convinced",
@@ -1023,7 +1099,11 @@
     "cefr": "B2",
     "topic": "thinking",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "确信的",
+    "zh": "确信的；信服的",
+    "fr_word": "convaincu",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/2B55695_fra-42547f35.ogg.cvrt.mp3"
   },
   {
     "id": "contemporary",
@@ -1079,7 +1159,11 @@
     "cefr": "B2",
     "topic": "arts",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "当代的",
+    "zh": "当代的；现代的",
+    "fr_word": "contemporain",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/kO55841_fra-71688765.ogg.cvrt.mp3"
   },
   {
     "id": "solo",
@@ -1134,7 +1218,11 @@
     "cefr": "B2",
     "topic": "arts",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "独奏",
+    "zh": "独奏；独唱",
+    "fr_word": "en solo",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/Zk4313302_audio-by-183135.mp3"
   },
   {
     "id": "arabian",
@@ -1183,7 +1271,10 @@
     "cefr": "B2",
     "topic": "travel",
     "note": "",
-    "m": 15
+    "m": 15,
+    "fr_word": "arabe",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/7g42565_fra-011c4dc6.ogg.cvrt.mp3",
+    "zh_word": "阿拉伯半岛的"
   },
   {
     "id": "whisper",
@@ -1239,7 +1330,11 @@
     "cefr": "B2",
     "topic": "daily",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "低语",
+    "zh": "低语；耳语",
+    "fr_word": "murmurer",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/2K159926_wikipedia-commons-2-2f-Fr-murmurer.ogg.cvrt.mp3"
   },
   {
     "id": "gravel",
@@ -1281,7 +1376,11 @@
     "cefr": "B2",
     "topic": "nature",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "砾石",
+    "zh": "砾石；碎石",
+    "fr_word": "gravier",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/IG45811_fra-7bbe28f1.ogg.cvrt.mp3"
   },
   {
     "id": "curriculum",
@@ -1325,7 +1424,11 @@
     "cefr": "B2",
     "topic": "education",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "课程体系",
+    "zh": "课程体系；全部课程",
+    "fr_word": "programme d'études",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/FW2153158_audio-by-166438.mp3"
   },
   {
     "id": "welfare",
@@ -1373,7 +1476,11 @@
     "cefr": "B2",
     "topic": "society",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "健康幸福",
+    "zh": "健康幸福；福祉",
+    "fr_word": "bien-être",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/1A53144_fra-8f78f890.ogg.cvrt.mp3"
   },
   {
     "id": "offensive",
@@ -1436,7 +1543,11 @@
     "cefr": "B2",
     "topic": "society",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "冒犯的",
+    "zh": "冒犯的；令人反感的",
+    "fr_word": "offensant",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/SR2202449_audio-by-166438.mp3"
   },
   {
     "id": "territory",
@@ -1492,7 +1603,11 @@
     "cefr": "B2",
     "topic": "government",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "领土",
+    "zh": "领土；辖区",
+    "fr_word": "territoire",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/E452029_fra-b8655f54.ogg.cvrt.mp3"
   },
   {
     "id": "warehouse",
@@ -1540,7 +1655,11 @@
     "cefr": "B2",
     "topic": "economy",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "仓库",
+    "zh": "仓库；货栈",
+    "fr_word": "entrepôt",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/nw2207185_audio-by-166438.mp3"
   },
   {
     "id": "fame",
@@ -1590,7 +1709,11 @@
     "cefr": "B2",
     "topic": "media",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "名声",
+    "zh": "名声；名望",
+    "fr_word": "renommée",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/ZG49695_fra-4afa7d9c.ogg.cvrt.mp3"
   },
   {
     "id": "prior",
@@ -1636,7 +1759,11 @@
     "cefr": "B2",
     "topic": "work",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "先前的",
+    "zh": "先前的；事先的",
+    "fr_word": "avant",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/lb47931_fra-c92704bb.ogg.cvrt.mp3"
   },
   {
     "id": "sewage",
@@ -1679,7 +1806,11 @@
     "cefr": "B2",
     "topic": "environment",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "污水",
+    "zh": "污水；生活污物",
+    "fr_word": "eaux usées",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/An328292_Fr-Paris-eaux_us-C3-A9es_-les-.ogg.cvrt.mp3"
   },
   {
     "id": "ratio",
@@ -1719,7 +1850,11 @@
     "cefr": "B2",
     "topic": "science",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "比",
+    "zh": "比；比率",
+    "fr_word": "rapport",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/oW141154_wikipedia-commons-f-f4-Fr-rapport.ogg.cvrt.mp3"
   },
   {
     "id": "poll",
@@ -1775,7 +1910,11 @@
     "cefr": "B2",
     "topic": "government",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "民意调查",
+    "zh": "民意调查",
+    "fr_word": "sondage",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/aw160940_wikipedia-commons-6-61-Fr-Paris-sondage.ogg.cvrt.mp3"
   },
   {
     "id": "intersection",
@@ -1827,7 +1966,11 @@
     "cefr": "B2",
     "topic": "city",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "道路交叉口",
+    "zh": "道路交叉口",
+    "fr_word": "intersection",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/qr2126241_audio-by-166438.mp3"
   },
   {
     "id": "surroundings",
@@ -1873,7 +2016,11 @@
     "cefr": "B2",
     "topic": "environment",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "周围环境",
+    "zh": "周围环境；周围事物",
+    "fr_word": "environs",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/Sd4287883_audio-by-183135.mp3"
   },
   {
     "id": "unbearable",
@@ -1923,7 +2070,11 @@
     "cefr": "B2",
     "topic": "emotion",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "难以忍受的",
+    "zh": "难以忍受的",
+    "fr_word": "insupportable",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/su2143749_audio-by-166438.mp3"
   },
   {
     "id": "filter",
@@ -1980,7 +2131,11 @@
     "cefr": "B2",
     "topic": "technology",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "过滤器",
+    "zh": "过滤器；滤网",
+    "fr_word": "filtrer",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/03154685_wikipedia-commons-6-6b-Fr-filtrer.ogg.cvrt.mp3"
   },
   {
     "id": "consume",
@@ -2036,7 +2191,11 @@
     "cefr": "B2",
     "topic": "environment",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "消耗",
+    "zh": "消耗；耗费",
+    "fr_word": "consommer",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/ge48751_fra-e8b34bcc.ogg.cvrt.mp3"
   },
   {
     "id": "numerous",
@@ -2085,7 +2244,11 @@
     "cefr": "B2",
     "topic": "daily",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "许多的",
+    "zh": "许多的；众多的",
+    "fr_word": "nombreux",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/5i57469_fra-09997c24.ogg.cvrt.mp3"
   },
   {
     "id": "pace",
@@ -2141,7 +2304,11 @@
     "cefr": "B2",
     "topic": "daily",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "速度",
+    "zh": "速度；节奏",
+    "fr_word": "rythme",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/4t51115_fra-4cf8a2b9.ogg.cvrt.mp3"
   },
   {
     "id": "dread",
@@ -2193,7 +2360,11 @@
     "cefr": "B2",
     "topic": "emotion",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "害怕",
+    "zh": "害怕；担忧",
+    "fr_word": "redouter",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/Hs45578_fra-734698c6.ogg.cvrt.mp3"
   },
   {
     "id": "narrative",
@@ -2252,7 +2423,11 @@
     "cefr": "B2",
     "topic": "arts",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "叙述",
+    "zh": "叙述；故事",
+    "fr_word": "récit",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/i5153845_wikipedia-commons-2-2c-Fr-recit.ogg.cvrt.mp3"
   },
   {
     "id": "eruption",
@@ -2303,7 +2478,11 @@
     "cefr": "B2",
     "topic": "nature",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "火山喷发",
+    "zh": "火山喷发",
+    "fr_word": "éruption",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/252201060_audio-by-166438.mp3"
   },
   {
     "id": "clause",
@@ -2350,7 +2529,11 @@
     "cefr": "B2",
     "topic": "work",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "条款",
+    "zh": "条款",
+    "fr_word": "clause",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/kB55927_fra-8b0ac324.ogg.cvrt.mp3"
   },
   {
     "id": "subscribe",
@@ -2402,7 +2585,11 @@
     "cefr": "B2",
     "topic": "media",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "订阅",
+    "zh": "订阅；订购",
+    "fr_word": "abonnez-vous",
+    "fr_audio": ""
   },
   {
     "id": "beak",
@@ -2446,7 +2633,11 @@
     "cefr": "B2",
     "topic": "nature",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "鸟喙",
+    "zh": "鸟喙；鸟嘴",
+    "fr_word": "bec",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/IK147583_wikipedia-commons-8-82-Fr-bec.ogg.cvrt.mp3"
   },
   {
     "id": "chorus",
@@ -2501,7 +2692,11 @@
     "cefr": "B2",
     "topic": "arts",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "副歌",
+    "zh": "副歌",
+    "fr_word": "chœur",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/f150226_fra-c46565e5.ogg.cvrt.mp3"
   },
   {
     "id": "supportive",
@@ -2551,7 +2746,11 @@
     "cefr": "B2",
     "topic": "emotion",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "给予支持和帮助的",
+    "zh": "给予支持和帮助的",
+    "fr_word": "favorable",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/Fu136785_wikipedia-commons-b-bc-Fr-favorable.ogg.cvrt.mp3"
   },
   {
     "id": "utterly",
@@ -2599,7 +2798,11 @@
     "cefr": "B2",
     "topic": "emotion",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "完全地",
+    "zh": "完全地；彻底地",
+    "fr_word": "tout à fait",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/5Y155747_wikipedia-commons-3-30-Fr-tout_a_fait.ogg.cvrt.mp3"
   },
   {
     "id": "democratic",
@@ -2653,7 +2856,11 @@
     "cefr": "B2",
     "topic": "government",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "民主的",
+    "zh": "民主的；民主制度的",
+    "fr_word": "démocratique",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/iH162531_wikipedia-commons-a-a2-FR-democratique.ogg.cvrt.mp3"
   },
   {
     "id": "peninsula",
@@ -2695,7 +2902,11 @@
     "cefr": "B2",
     "topic": "nature",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "半岛",
+    "zh": "半岛",
+    "fr_word": "péninsule",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/SL47333_fra-b25e14cf.ogg.cvrt.mp3"
   },
   {
     "id": "bound",
@@ -2752,7 +2963,11 @@
     "cefr": "B2",
     "topic": "thinking",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "必定的",
+    "zh": "必定的；很可能的",
+    "fr_word": "lié",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/c455770_fra-586ff8c9.ogg.cvrt.mp3"
   },
   {
     "id": "submission",
@@ -2803,7 +3018,11 @@
     "cefr": "B2",
     "topic": "education",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "提交",
+    "zh": "提交；提交的文件",
+    "fr_word": "soumission",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/Ns2204523_audio-by-166438.mp3"
   },
   {
     "id": "allowance",
@@ -2859,7 +3078,11 @@
     "cefr": "B2",
     "topic": "economy",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "津贴",
+    "zh": "津贴；定期零用钱",
+    "fr_word": "allocation",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/om4307831_audio-by-183135.mp3"
   },
   {
     "id": "smuggle",
@@ -2902,7 +3125,11 @@
     "cefr": "B2",
     "topic": "society",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "走私",
+    "zh": "走私；偷运；偷带",
+    "fr_word": "faire de la contrebande",
+    "fr_audio": ""
   },
   {
     "id": "astonish",
@@ -2950,7 +3177,11 @@
     "cefr": "B2",
     "topic": "emotion",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "使十分惊讶",
+    "zh": "使十分惊讶",
+    "fr_word": "étonner",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/gF49153_fra-f7d84fa3.ogg.cvrt.mp3"
   },
   {
     "id": "realistic",
@@ -3006,7 +3237,11 @@
     "cefr": "B2",
     "topic": "thinking",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "现实的",
+    "zh": "现实的；切实可行的",
+    "fr_word": "réaliste",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/YB57078_fra-e73e2882.ogg.cvrt.mp3"
   },
   {
     "id": "pearl",
@@ -3049,7 +3284,11 @@
     "cefr": "B2",
     "topic": "nature",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "珍珠",
+    "zh": "珍珠",
+    "fr_word": "perle",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/0f43020_fra-11b1ac75.ogg.cvrt.mp3"
   },
   {
     "id": "chill",
@@ -3105,7 +3344,11 @@
     "cefr": "B2",
     "topic": "daily",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "寒冷",
+    "zh": "寒冷；寒意",
+    "fr_word": "se détendre",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/2s2145594_audio-by-166438.mp3"
   },
   {
     "id": "rake",
@@ -3151,7 +3394,11 @@
     "cefr": "B2",
     "topic": "daily",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "耙子",
+    "zh": "耙子",
+    "fr_word": "râteau",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/l6140175_wikipedia-commons-7-77-Fr-rateau-ca-Montreal.ogg.cvrt.mp3"
   },
   {
     "id": "recreational",
@@ -3194,7 +3441,11 @@
     "cefr": "B2",
     "topic": "sport",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "娱乐的",
+    "zh": "娱乐的；休闲的",
+    "fr_word": "récréatif",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/mM2170214_audio-by-166438.mp3"
   },
   {
     "id": "threat",
@@ -3247,7 +3498,11 @@
     "cefr": "B2",
     "topic": "environment",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "威胁",
+    "zh": "威胁；潜在危险",
+    "fr_word": "menace",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/CJ141462_wikipedia-commons-3-32-Fr-menace.ogg.cvrt.mp3"
   },
   {
     "id": "resolve",
@@ -3307,7 +3562,11 @@
     "cefr": "B2",
     "topic": "society",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "解决",
+    "zh": "解决；消除",
+    "fr_word": "résoudre",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/aC47585_fra-bb7c0b96.ogg.cvrt.mp3"
   },
   {
     "id": "pursuit",
@@ -3362,7 +3621,11 @@
     "cefr": "B2",
     "topic": "thinking",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "追求",
+    "zh": "追求；寻求",
+    "fr_word": "poursuite",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/i353487_fra-d5de3e16.ogg.cvrt.mp3"
   },
   {
     "id": "atomic",
@@ -3412,7 +3675,11 @@
     "cefr": "B2",
     "topic": "science",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "原子的",
+    "zh": "原子的",
+    "fr_word": "atomique",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/ui46113_fra-85c9278d.ogg.cvrt.mp3"
   },
   {
     "id": "brainstorm",
@@ -3460,7 +3727,11 @@
     "cefr": "B2",
     "topic": "work",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "集思广益",
+    "zh": "集思广益；头脑风暴",
+    "fr_word": "remue-méninges",
+    "fr_audio": ""
   },
   {
     "id": "vocational",
@@ -3504,7 +3775,11 @@
     "cefr": "B2",
     "topic": "education",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "职业技能的",
+    "zh": "职业技能的；职业的",
+    "fr_word": "professionnel",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/k153865_fra-5ef18799.ogg.cvrt.mp3"
   },
   {
     "id": "manner",
@@ -3561,7 +3836,11 @@
     "cefr": "B2",
     "topic": "society",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "方式",
+    "zh": "方式；方法",
+    "fr_word": "manière",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/xO49604_fra-369395d7.ogg.cvrt.mp3"
   },
   {
     "id": "disposal",
@@ -3610,7 +3889,11 @@
     "cefr": "B2",
     "topic": "environment",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "清除",
+    "zh": "清除；处置",
+    "fr_word": "élimination",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/kE2107506_audio-by-166438.mp3"
   },
   {
     "id": "isolation",
@@ -3666,7 +3949,11 @@
     "cefr": "B2",
     "topic": "society",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "孤立",
+    "zh": "孤立；隔绝",
+    "fr_word": "isolement",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/Cn4312316_audio-by-183135.mp3"
   },
   {
     "id": "cheeky",
@@ -3715,7 +4002,11 @@
     "cefr": "B2",
     "topic": "daily",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "放肆却讨喜的",
+    "zh": "放肆却讨喜的；厚脸皮的",
+    "fr_word": "effronté",
+    "fr_audio": ""
   },
   {
     "id": "controversy",
@@ -3765,7 +4056,11 @@
     "cefr": "B2",
     "topic": "society",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "公开争议",
+    "zh": "公开争议；争论",
+    "fr_word": "controverse",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/Db2178028_audio-by-166438.mp3"
   },
   {
     "id": "master",
@@ -3822,7 +4117,11 @@
     "cefr": "B2",
     "topic": "education",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "掌握",
+    "zh": "掌握；精通",
+    "fr_word": "maître",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/Bu57528_fra-c48d9cb6.ogg.cvrt.mp3"
   },
   {
     "id": "obesity",
@@ -3864,7 +4163,11 @@
     "cefr": "B2",
     "topic": "health",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "肥胖症",
+    "zh": "肥胖症",
+    "fr_word": "obésité",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/Tm4389027_audio-by-183135.mp3"
   },
   {
     "id": "fleece",
@@ -3918,7 +4221,11 @@
     "cefr": "B2",
     "topic": "daily",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "羊毛",
+    "zh": "羊毛；整张羊毛",
+    "fr_word": "polaire",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/w04346573_audio-by-183135.mp3"
   },
   {
     "id": "numb",
@@ -3974,7 +4281,11 @@
     "cefr": "B2",
     "topic": "health",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "麻木的",
+    "zh": "麻木的；失去知觉的",
+    "fr_word": "engourdi",
+    "fr_audio": ""
   },
   {
     "id": "observe",
@@ -4034,7 +4345,11 @@
     "cefr": "B2",
     "topic": "science",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "观察",
+    "zh": "观察；注意到",
+    "fr_word": "observer",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/Fr46690_fra-9b6f44e7.ogg.cvrt.mp3"
   },
   {
     "id": "outlet",
@@ -4087,7 +4402,11 @@
     "cefr": "B2",
     "topic": "economy",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "销售网点",
+    "zh": "销售网点；专卖店",
+    "fr_word": "sortie",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/uk137997_wikipedia-commons-1-10-Fr-sortie.ogg.cvrt.mp3"
   },
   {
     "id": "accessory",
@@ -4139,7 +4458,11 @@
     "cefr": "B2",
     "topic": "daily",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "配件",
+    "zh": "配件；附件",
+    "fr_word": "accessoire",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/7E42660_fra-0427d3c8.ogg.cvrt.mp3"
   },
   {
     "id": "publicity",
@@ -4191,7 +4514,11 @@
     "cefr": "B2",
     "topic": "media",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "媒体关注",
+    "zh": "媒体关注；公众关注",
+    "fr_word": "publicité",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/NC134535_wikipedia-commons-0-04-Fr-publicite.ogg.cvrt.mp3"
   },
   {
     "id": "suck",
@@ -4246,7 +4573,11 @@
     "cefr": "B2",
     "topic": "daily",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "吸",
+    "zh": "吸；吮吸",
+    "fr_word": "sucer",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/r347920_fra-c8a1c727.ogg.cvrt.mp3"
   },
   {
     "id": "treaty",
@@ -4291,7 +4622,11 @@
     "cefr": "B2",
     "topic": "government",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "条约",
+    "zh": "条约；国家间协议",
+    "fr_word": "traité",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/NS56523_fra-3df83eb5.ogg.cvrt.mp3"
   },
   {
     "id": "stable",
@@ -4347,7 +4682,11 @@
     "cefr": "B2",
     "topic": "daily",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "稳定的",
+    "zh": "稳定的；稳固的",
+    "fr_word": "stable",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/8E42878_fra-0c7fa697.ogg.cvrt.mp3"
   },
   {
     "id": "division",
@@ -4410,7 +4749,11 @@
     "cefr": "B2",
     "topic": "work",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "分割",
+    "zh": "分割；分配",
+    "fr_word": "division",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/dF52585_fra-10174714.ogg.cvrt.mp3"
   },
   {
     "id": "rooster",
@@ -4451,7 +4794,11 @@
     "cefr": "B2",
     "topic": "nature",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "公鸡",
+    "zh": "公鸡",
+    "fr_word": "coq",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/l3133719_wikipedia-commons-4-47-Fr-coq.ogg.cvrt.mp3"
   },
   {
     "id": "competent",
@@ -4500,7 +4847,11 @@
     "cefr": "B2",
     "topic": "work",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "能胜任的",
+    "zh": "能胜任的；有能力的",
+    "fr_word": "compétent",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/87166664_wikipedia-commons-7-7e-Fr-competent.ogg.cvrt.mp3"
   },
   {
     "id": "margin",
@@ -4559,7 +4910,11 @@
     "cefr": "B2",
     "topic": "economy",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "页边空白",
+    "zh": "页边空白；边缘",
+    "fr_word": "marge",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/Ha54386_fra-640b000e.ogg.cvrt.mp3"
   },
   {
     "id": "virtually",
@@ -4610,7 +4965,11 @@
     "cefr": "B2",
     "topic": "daily",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "几乎",
+    "zh": "几乎；实际上",
+    "fr_word": "virtuellement",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/H12222960_audio-by-166438.mp3"
   },
   {
     "id": "coldness",
@@ -4664,7 +5023,11 @@
     "cefr": "B2",
     "topic": "daily",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "寒冷",
+    "zh": "寒冷；冰冷",
+    "fr_word": "froideur",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/rZ2167149_audio-by-166438.mp3"
   },
   {
     "id": "conventional",
@@ -4714,7 +5077,11 @@
     "cefr": "B2",
     "topic": "society",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "传统的",
+    "zh": "传统的；常规的",
+    "fr_word": "conventionnel",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/Fc2150463_audio-by-166438.mp3"
   },
   {
     "id": "fortress",
@@ -4762,7 +5129,11 @@
     "cefr": "B2",
     "topic": "history",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "堡垒",
+    "zh": "堡垒；要塞",
+    "fr_word": "forteresse",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/5E2237827_audio-by-166438.mp3"
   },
   {
     "id": "inadequate",
@@ -4819,7 +5190,11 @@
     "cefr": "B2",
     "topic": "society",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "不足的",
+    "zh": "不足的；不够好的",
+    "fr_word": "inadéquat",
+    "fr_audio": ""
   },
   {
     "id": "effectiveness",
@@ -4869,7 +5244,11 @@
     "cefr": "B2",
     "topic": "science",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "有效性",
+    "zh": "有效性；成效",
+    "fr_word": "efficacité",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/dJ55929_fra-8b4fdcc1.ogg.cvrt.mp3"
   },
   {
     "id": "pollutant",
@@ -4913,7 +5292,11 @@
     "cefr": "B2",
     "topic": "environment",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "污染物",
+    "zh": "污染物",
+    "fr_word": "polluant",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/ie2144901_audio-by-166438.mp3"
   },
   {
     "id": "reflection",
@@ -4971,7 +5354,11 @@
     "cefr": "B2",
     "topic": "thinking",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "映像",
+    "zh": "映像；倒影",
+    "fr_word": "réflexion",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/tt54317_fra-421ef3d1.ogg.cvrt.mp3"
   },
   {
     "id": "actual",
@@ -5019,7 +5406,11 @@
     "cefr": "B2",
     "topic": "thinking",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "实际的",
+    "zh": "实际的；真实的",
+    "fr_word": "réel",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/7D47140_fra-abefd124.ogg.cvrt.mp3"
   },
   {
     "id": "occasional",
@@ -5068,7 +5459,11 @@
     "cefr": "B2",
     "topic": "daily",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "偶尔的",
+    "zh": "偶尔的；不经常的",
+    "fr_word": "occasionnel",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/O52117634_audio-by-166438.mp3"
   },
   {
     "id": "bitterly",
@@ -5121,6 +5516,10 @@
     "cefr": "B2",
     "topic": "emotion",
     "note": "",
-    "m": 15
+    "m": 15,
+    "zh_word": "痛苦地",
+    "zh": "痛苦地；愤愤地",
+    "fr_word": "amèrement",
+    "fr_audio": "https://glosbe.com/fb_aud/mp3/1u2111457_audio-by-166438.mp3"
   }
 ]

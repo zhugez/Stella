@@ -101,5 +101,16 @@ export default defineConfig({
   ],
   server: { port: 5188, strictPort: true },
   preview: { port: 5188, strictPort: true },
-  build: { chunkSizeWarningLimit: 600 },
+  build: {
+    chunkSizeWarningLimit: 600,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ["react", "react-dom"],
+          icons: ["lucide-react"],
+          fsrs: ["ts-fsrs"],
+        },
+      },
+    },
+  },
 });

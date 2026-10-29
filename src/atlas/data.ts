@@ -50,6 +50,8 @@ export async function loadOpenAtlas(): Promise<Atlas> {
     cefr: r[4],
     topic: r[5],
     media: r[6],
+    zh_word: r[7] || "",
+    fr_word: r[8] || "",
     order,
   }));
   const byId = new Map(words.map((w) => [w.id, w]));

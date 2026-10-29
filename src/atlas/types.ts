@@ -1,7 +1,7 @@
 export type Accent = "uk" | "us";
 
 /** Compact row from atlas/index.json: [id, word, zh, ipa, cefr, topic, media]. */
-export type IndexRow = [string, string, string, string, number, number, number];
+export type IndexRow = [string, string, string, string, number, number, number, string?, string?];
 
 export interface Sense {
   pos: string;
@@ -29,6 +29,9 @@ export interface Entry {
   ant: string[];
   tip: string;
   tip_vi?: string;
+  zh_word?: string;
+  fr_word?: string;
+  fr_audio?: string;
   cefr: string;
   topic: string;
   /** Usage caution (register, offensiveness, spelling), shown with the entry. */
@@ -46,6 +49,8 @@ export interface WordRef {
   word: string;
   zh: string;
   vi?: string;
+  zh_word?: string;
+  fr_word?: string;
   ipa: string;
   cefr: number;
   topic: number;

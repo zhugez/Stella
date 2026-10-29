@@ -67,7 +67,6 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
   const status = card ? (isMastered(card) ? "Mastered" : "Learning") : null;
 
   const langPair = useStore((s) => s.settings.langPair || "en-vi");
-  const isViToEn = langPair === "vi-en";
   const isZh = langPair === "zh-vi" || langPair === "vi-zh";
   const isFr = langPair === "fr-vi" || langPair === "vi-fr";
 
@@ -102,20 +101,29 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
           </p>
         )}
         <h2 className="headword" lang="en">
-          {isViToEn ? (entry.senses[0]?.vi || entry.w) : entry.w}
+          {langPair === "vi-en" || langPair === "vi-zh" || langPair === "vi-fr"
+            ? (entry.senses[0]?.vi || entry.w)
+            : langPair === "zh-vi"
+            ? (entry.zh_word || entry.senses[0]?.zh || entry.w)
+            : langPair === "fr-vi"
+            ? (entry.fr_word || entry.w)
+            : entry.w}
         </h2>
-        {isViToEn && (
-          <p style={{ fontSize: "1.15rem", fontWeight: 600, color: "var(--terra)", marginTop: "-6px", marginBottom: "8px" }}>
-            English: <b>{entry.w}</b>
+        {(langPair === "vi-en" || langPair === "vi-zh" || langPair === "vi-fr" || langPair === "zh-vi" || langPair === "fr-vi") && (
+          <p style={{ fontSize: "1.05rem", fontWeight: 600, color: "var(--terra)", marginTop: "-6px", marginBottom: "8px" }}>
+            {langPair === "vi-en" && <>English: <b>{entry.w}</b></>}
+            {langPair === "vi-zh" && <>中文: <b>{entry.zh_word || entry.senses[0]?.zh}</b> (EN: {entry.w})</>}
+            {langPair === "vi-fr" && <>Français: <b>{entry.fr_word || entry.w}</b> (EN: {entry.w})</>}
+            {langPair === "zh-vi" && <>English: <b>{entry.w}</b></>}
+            {langPair === "fr-vi" && <>English: <b>{entry.w}</b></>}
           </p>
         )}
-        <Pronounce entry={entry} refw={ref ?? entry} />
-
-        {isFr && (
-          <div style={{ margin: "10px 0", padding: "8px 12px", background: "rgba(78, 186, 135, 0.12)", borderRadius: "8px", border: "1px solid rgba(78, 186, 135, 0.25)", fontSize: "0.85rem" }}>
-            🇫🇷 <b>French Partner Mode:</b> Tra cứu ngữ nghĩa và nghe phát âm tiếng Pháp bản xứ tại <a href={`https://vi.glosbe.com/fr/vi/${encodeURIComponent(entry.w)}`} target="_blank" rel="noreferrer" style={{ textDecoration: "underline", color: "var(--sage)" }}>Glosbe French-Vietnamese</a>.
-          </div>
-        )}
+        <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "8px" }}>
+          <Pronounce entry={entry} refw={ref ?? entry} />
+          {isFr && entry.fr_audio && (
+            <Speak url={entry.fr_audio} text={entry.fr_word || entry.w} accent="uk" size="sm" label="FR (Français)" />
+          )}
+        </div>
 
         <ol className="senses">
           {entry.senses.map((s, i) => (

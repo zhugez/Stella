@@ -13,9 +13,11 @@ export function searchAtlas(atlas: Atlas, raw: string, limit = 40): WordRef[] {
     let score = 0;
     const word = w.word.toLowerCase();
     const def = (w.zh || "").toLowerCase();
-    if (word === q) score = 1000;
-    else if (word.startsWith(q)) score = 500 - word.length;
-    else if (word.includes(q)) score = 200 - word.indexOf(q) - word.length;
+    const zh = (w.zh_word || "").toLowerCase();
+    const fr = (w.fr_word || "").toLowerCase();
+    if (word === q || zh === q || fr === q) score = 1000;
+    else if (word.startsWith(q) || zh.startsWith(q) || fr.startsWith(q)) score = 500 - word.length;
+    else if (word.includes(q) || zh.includes(q) || fr.includes(q)) score = 200 - word.length;
     else if (def.includes(q)) score = 150 - Math.min(50, def.indexOf(q));
     if (score > 0) hits.push([score, w]);
   }
