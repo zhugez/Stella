@@ -38,7 +38,16 @@ export default {
     const newHeaders = new Headers(response.headers);
 
     // 3. High-performance Cache-Control headers based on asset type
-    if (url.pathname.startsWith("/assets/")) {
+    if (url.pathname === "/robots.txt") {
+      newHeaders.set("Content-Type", "text/plain; charset=utf-8");
+      newHeaders.set("Cache-Control", "public, max-age=86400");
+    } else if (url.pathname === "/llms.txt") {
+      newHeaders.set("Content-Type", "text/markdown; charset=utf-8");
+      newHeaders.set("Cache-Control", "public, max-age=86400");
+    } else if (url.pathname === "/ai-catalog.json") {
+      newHeaders.set("Content-Type", "application/json; charset=utf-8");
+      newHeaders.set("Cache-Control", "public, max-age=86400");
+    } else if (url.pathname.startsWith("/assets/")) {
       // Vite hashed JS, CSS, and fonts never change
       newHeaders.set("Cache-Control", "public, max-age=31536000, immutable");
     } else if (url.pathname.startsWith("/atlas/img/") || url.pathname.startsWith("/atlas/thumb/")) {

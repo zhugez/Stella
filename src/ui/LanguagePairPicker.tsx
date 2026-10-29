@@ -50,7 +50,7 @@ export function LanguagePairPicker() {
         role="button"
         tabIndex={0}
         onKeyDown={(e) => e.key === "Enter" && setOpen((prev) => !prev)}
-        aria-label="Language Mode"
+        aria-label={`Language Mode ${active.label}`}
       >
         <Globe size={15} />
         <b>{active.label}</b>

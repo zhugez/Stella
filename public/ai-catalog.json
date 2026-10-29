@@ -1,0 +1,13 @@
+{
+  "name": "Stella IELTS Ecosystem",
+  "version": "1.0.0",
+  "description": "7,298 illustrated IELTS vocabulary words with native audio, FSRS spaced repetition, and human-crafted Vietnamese guidance.",
+  "homepage": "https://stella.zhugez.workers.dev",
+  "resources": [
+    {
+      "name": "Vocabulary Atlas",
+      "url": "https://stella.zhugez.workers.dev/atlas/index.json",
+      "format": "application/json"
+    }
+  ]
+}

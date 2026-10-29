@@ -9,7 +9,7 @@ export function About() {
   return (
     <div className="page about">
       <header className="about-hero">
-        <img src={`${BASE}brand/og.webp`} alt="" />
+        <img src={`${BASE}brand/og.webp`} alt="" width="660" height="660" />
         <div>
           <p className="eyebrow">About Stella</p>
           <h1 className="display">One word, one canvas. Light up your IELTS.</h1>
@@ -32,7 +32,7 @@ export function About() {
 
       <div className="about-grid">
         <section className="panel">
-          <h3 className="eyebrow">Why it works</h3>
+          <h2 className="eyebrow">Why it works</h2>
           <ul className="feature-list">
             <li>
               <b>Visual first.</b> Every word is accompanied by a dedicated painting that illustrates the context.
@@ -53,7 +53,7 @@ export function About() {
         </section>
 
         <section className="panel">
-          <h3 className="eyebrow">Keyboard Shortcuts</h3>
+          <h2 className="eyebrow">Keyboard Shortcuts</h2>
           <dl className="keys">
             <div>
               <dt>
@@ -84,7 +84,7 @@ export function About() {
         </section>
 
         <section className="panel">
-          <h3 className="eyebrow">Attribution & Credits</h3>
+          <h2 className="eyebrow">Attribution & Credits</h2>
           <p className="muted">
             Stella is created and developed by <b>zhugez</b>. It is directly inspired by and built upon the wonderful foundation of <a href={UPSTREAM_URL} target="_blank" rel="noreferrer"><b>Word Atlas</b></a> by Yang Lei (<code>designfuchen/word-atlas</code>), licensed under MIT & CC BY 4.0.
           </p>
@@ -94,7 +94,7 @@ export function About() {
         </section>
 
         <section className="panel">
-          <h3 className="eyebrow">For Developers</h3>
+          <h2 className="eyebrow">For Developers</h2>
           <p className="muted">
             Raw vocabulary datasets are in <code>data/</code>; web chunks, illustrations, and audio are in <code>public/atlas/</code>. Free to reuse for custom Anki decks, extensions, or NLP benchmarks with attribution.
           </p>

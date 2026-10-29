@@ -1,0 +1,9 @@
+# Stella · Illustrated IELTS Ecosystem
+
+> Stella is a local-first, illustrated vocabulary and IELTS skills learning web application with 7,298 words, native pronunciations, and FSRS spaced repetition.
+
+## Links
+
+- [Dictionary Atlas](https://stella.zhugez.workers.dev/#/atlas): 7,298 illustrated vocabulary entries with multi-directional language pairs.
+- [Practice Studio](https://stella.zhugez.workers.dev/#/practice): Muscle memory and typing practice with real-time feedback.
+- [About Stella](https://stella.zhugez.workers.dev/#/about): Open-source project details, credits, and architecture.

@@ -129,7 +129,7 @@ function Shell({ privateAvailable }: { privateAvailable: boolean }) {
     <div className={`app ${focus ? "is-focus" : ""}`}>
       {!focus && (
         <header className="topbar">
-          <a className="topbar-logo" href="#/" aria-label="Stella Homepage">
+          <a className="topbar-logo" href="#/" aria-label="Stella IELTS Homepage">
             <Logo />
           </a>
           <nav className="topnav" aria-label="Main navigation">
