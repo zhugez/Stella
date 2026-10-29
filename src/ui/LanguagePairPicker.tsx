@@ -2,13 +2,13 @@ import { ArrowLeftRight, Check, Globe } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { store, useStore, type LangPair } from "../store/store";
 
-export const PAIRS: { id: LangPair; label: string; desc: string; flag: string }[] = [
-  { id: "en-vi", label: "EN ➔ VI", desc: "Học từ Anh, hiểu nghĩa Việt", flag: "🇬🇧 ➔ 🇻🇳" },
-  { id: "vi-en", label: "VI ➔ EN", desc: "Phản xạ từ nghĩa Việt sang từ Anh", flag: "🇻🇳 ➔ 🇬🇧" },
-  { id: "zh-vi", label: "ZH ➔ VI", desc: "Hán tự & nghĩa tiếng Việt", flag: "🇨🇳 ➔ 🇻🇳" },
-  { id: "vi-zh", label: "VI ➔ ZH", desc: "Nghĩa Việt sang chữ Hán", flag: "🇻🇳 ➔ 🇨🇳" },
-  { id: "fr-vi", label: "FR ➔ VI", desc: "Tiếng Pháp & từ điển Glosbe", flag: "🇫🇷 ➔ 🇻🇳" },
-  { id: "vi-fr", label: "VI ➔ FR", desc: "Tiếng Việt sang tiếng Pháp", flag: "🇻🇳 ➔ 🇫🇷" },
+export const PAIRS: { id: LangPair; label: string; desc: string; from: string; to: string }[] = [
+  { id: "en-vi", label: "EN ➔ VI", desc: "Học từ tiếng Anh, hiểu nghĩa tiếng Việt", from: "English", to: "Tiếng Việt" },
+  { id: "vi-en", label: "VI ➔ EN", desc: "Phản xạ từ nghĩa Việt sang từ vựng Anh", from: "Tiếng Việt", to: "English" },
+  { id: "zh-vi", label: "ZH ➔ VI", desc: "Hán tự chữ Hán & nghĩa tiếng Việt", from: "中文", to: "Tiếng Việt" },
+  { id: "vi-zh", label: "VI ➔ ZH", desc: "Từ nghĩa Việt tra chữ Hán", from: "Tiếng Việt", to: "中文" },
+  { id: "fr-vi", label: "FR ➔ VI", desc: "Tiếng Pháp & từ điển Glosbe", from: "Français", to: "Tiếng Việt" },
+  { id: "vi-fr", label: "VI ➔ FR", desc: "Từ nghĩa Việt tra tiếng Pháp", from: "Tiếng Việt", to: "Français" },
 ];
 
 export function LanguagePairPicker() {
@@ -92,7 +92,7 @@ export function LanguagePairPicker() {
                     }}
                   >
                     <span>
-                      <span className="pair-title">{p.flag} ({p.label})</span>
+                      <span className="pair-title">{p.label} <small style={{ fontWeight: 400, opacity: 0.75 }}>({p.from} ➔ {p.to})</small></span>
                       <span className="pair-sub">{p.desc}</span>
                     </span>
                     {sel && <Check size={16} />}
