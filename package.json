@@ -6,7 +6,8 @@
   "author": "zhugez",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && rm -rf dist/atlas/audio",
+    "deploy": "npm run build && wrangler deploy",
     "preview": "vite preview --host 0.0.0.0",
     "test": "node --import tsx --test src/**/*.test.ts",
     "check:atlas": "node scripts/check-atlas.mjs",
