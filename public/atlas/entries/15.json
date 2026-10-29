@@ -2006,27 +2006,32 @@
       {
         "pos": "n.",
         "zh": "礼物；赠品",
+        "vi": "Cái gì được tự do trao cho người khác",
         "en": "Something given freely to another person"
       },
       {
         "pos": "n.",
         "zh": "天赋；才能",
+        "vi": "Khả năng bẩm sinh để làm việc gì tốt",
         "en": "A natural ability to do something well"
       },
       {
         "pos": "v.",
         "zh": "赠送",
+        "vi": "Tặng ai cái gì làm quà",
         "en": "To give something to someone as a present"
       }
     ],
     "ex": [
       {
         "en": "My sister wrapped the gift in bright yellow paper.",
-        "zh": "姐姐用鲜黄色的纸把礼物包了起来。"
+        "zh": "姐姐用鲜黄色的纸把礼物包了起来。",
+        "vi": "Em gái tôi gói quà bằng giấy màu vàng sáng."
       },
       {
         "en": "Schools should nurture each child's gift rather than judge everyone by the same narrow standards.",
-        "zh": "学校应培养每个孩子的天赋，而不是用同一套狭隘的标准评判所有人。"
+        "zh": "学校应培养每个孩子的天赋，而不是用同一套狭隘的标准评判所有人。",
+        "vi": "Nhà trường nên nuôi dưỡng tài năng của mỗi đứa trẻ hơn là đánh giá mọi người bằng cùng một tiêu chuẩn hẹp."
       }
     ],
     "col": [
@@ -2058,17 +2063,20 @@
       {
         "pos": "n.",
         "zh": "女式衬衫",
+        "vi": "Một chiếc áo sơ mi theo truyền thống phụ nữ mặc, thường làm bằng vải mỏng",
         "en": "A shirt traditionally worn by women, often made from light fabric"
       }
     ],
     "ex": [
       {
         "en": "She wore a blue blouse with her favourite grey trousers.",
-        "zh": "她穿了一件蓝色女式衬衫，搭配最喜欢的灰色长裤。"
+        "zh": "她穿了一件蓝色女式衬衫，搭配最喜欢的灰色长裤。",
+        "vi": "Cô ấy mặc một chiếc áo blouse xanh với chiếc quần màu xám yêu thích của mình."
       },
       {
         "en": "Choosing a durable blouse rather than a cheaply made alternative may reduce clothing waste over time.",
-        "zh": "选择耐穿的女式衬衫而非制作廉价的替代品，长期来看可能减少衣物浪费。"
+        "zh": "选择耐穿的女式衬衫而非制作廉价的替代品，长期来看可能减少衣物浪费。",
+        "vi": "Việc lựa chọn một chiếc áo blouse bền thay vì một giải pháp thay thế giá rẻ có thể giảm lãng phí quần áo theo thời gian."
       }
     ],
     "col": [
@@ -2095,27 +2103,32 @@
       {
         "pos": "n.",
         "zh": "细节；具体信息",
+        "vi": "một yếu tố nhỏ của cái gì",
         "en": "a small fact or feature of something"
       },
       {
         "pos": "n.",
         "zh": "详尽程度",
+        "vi": "lượng thông tin cụ thể được cung cấp",
         "en": "the amount of specific information provided"
       },
       {
         "pos": "v.",
         "zh": "详细说明",
+        "vi": "miêu tả cái gì một cách đầy đủ, kể cả những sự kiện cụ thể",
         "en": "to describe something fully, including specific facts"
       }
     ],
     "ex": [
       {
         "en": "Please check every detail before you send the invitation.",
-        "zh": "发送邀请前，请核对每一处细节。"
+        "zh": "发送邀请前，请核对每一处细节。",
+        "vi": "Vui lòng kiểm tra từng chi tiết trước khi gửi giấy mời."
       },
       {
         "en": "The report details how improved housing conditions can reduce health inequalities among families in urban areas.",
-        "zh": "该报告详细说明了改善住房条件如何减少城市家庭之间的健康差距。"
+        "zh": "该报告详细说明了改善住房条件如何减少城市家庭之间的健康差距。",
+        "vi": "Báo cáo nêu chi tiết điều kiện nhà ở được cải thiện như thế nào có thể làm giảm bất bình đẳng về sức khỏe giữa các gia đình ở thành thị."
       }
     ],
     "col": [
@@ -2147,22 +2160,26 @@
       {
         "pos": "adv.",
         "zh": "也许；可能",
+        "vi": "Được sử dụng khi điều gì đó có thể xảy ra nhưng không chắc chắn.",
         "en": "Used when something is possible but not certain."
       },
       {
         "pos": "adv.",
         "zh": "或许（委婉建议或请求）",
+        "vi": "Được sử dụng để đưa ra một đề nghị hoặc yêu cầu âm thanh ít trực tiếp hơn.",
         "en": "Used to make a suggestion or request sound less direct."
       }
     ],
     "ex": [
       {
         "en": "Perhaps we should take an umbrella; those clouds look dark.",
-        "zh": "也许我们该带把伞，那些云看起来很阴沉。"
+        "zh": "也许我们该带把伞，那些云看起来很阴沉。",
+        "vi": "Có lẽ chúng ta nên mang theo ô; những đám mây kia trông có vẻ tối."
       },
       {
         "en": "Perhaps governments could encourage healthier diets by making fresh produce more affordable for low-income households.",
-        "zh": "政府或许可以让低收入家庭更买得起新鲜农产品，以鼓励更健康的饮食。"
+        "zh": "政府或许可以让低收入家庭更买得起新鲜农产品，以鼓励更健康的饮食。",
+        "vi": "Có lẽ chính phủ có thể khuyến khích chế độ ăn uống lành mạnh hơn bằng cách làm cho các sản phẩm tươi sống có giá cả hợp lý hơn cho các hộ gia đình có thu nhập thấp."
       }
     ],
     "col": [
@@ -2192,17 +2209,20 @@
       {
         "pos": "n.",
         "zh": "面包店；烘焙坊",
+        "vi": "một nơi làm hoặc bán bánh mì và bánh ngọt",
         "en": "a place where bread and cakes are made or sold"
       }
     ],
     "ex": [
       {
         "en": "The bakery near our house sells warm bread every morning.",
-        "zh": "我们家附近的面包店每天早上都卖热乎乎的面包。"
+        "zh": "我们家附近的面包店每天早上都卖热乎乎的面包。",
+        "vi": "Tiệm bánh gần nhà chúng tôi bán bánh mì nóng mỗi sáng."
       },
       {
         "en": "Small businesses such as bakeries provide local employment and help maintain vibrant neighbourhood shopping areas.",
-        "zh": "面包店等小企业提供本地就业岗位，也有助于保持社区商业区的活力。"
+        "zh": "面包店等小企业提供本地就业岗位，也有助于保持社区商业区的活力。",
+        "vi": "Các doanh nghiệp nhỏ như tiệm bánh tạo công ăn việc làm cho địa phương và giúp duy trì các khu mua sắm xung quanh sôi động."
       }
     ],
     "col": [

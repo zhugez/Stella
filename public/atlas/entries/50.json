@@ -4635,17 +4635,20 @@
       {
         "pos": "n.",
         "zh": "追踪；跟踪监测",
+        "vi": "Quá trình theo dõi các chuyển động hoặc theo dõi các thay đổi theo thời gian.",
         "en": "The process of following movements or monitoring changes over time."
       }
     ],
     "ex": [
       {
         "en": "Parcel tracking showed that my package had arrived nearby.",
-        "zh": "包裹追踪信息显示，我的包裹已经到附近了。"
+        "zh": "包裹追踪信息显示，我的包裹已经到附近了。",
+        "vi": "Theo dõi bưu kiện cho thấy bưu kiện của tôi đã đến gần đây."
       },
       {
         "en": "Satellite tracking enables researchers to study animal migration and identify habitats that require stronger protection.",
-        "zh": "卫星追踪使研究人员能够研究动物迁徙，并识别需要加强保护的栖息地。"
+        "zh": "卫星追踪使研究人员能够研究动物迁徙，并识别需要加强保护的栖息地。",
+        "vi": "Theo dõi vệ tinh cho phép các nhà nghiên cứu nghiên cứu về sự di cư của động vật và xác định môi trường sống cần được bảo vệ mạnh mẽ hơn."
       }
     ],
     "col": [
@@ -4678,22 +4681,26 @@
       {
         "pos": "adj.",
         "zh": "普遍的；全体适用的",
+        "vi": "Có mặt ở khắp mọi nơi hoặc áp dụng cho tất cả mọi người trong một nhóm.",
         "en": "Existing everywhere or applying to everyone in a group."
       },
       {
         "pos": "adj.",
         "zh": "通用的",
+        "vi": "Phù hợp để sử dụng với nhiều thiết bị hoặc tình huống khác nhau.",
         "en": "Suitable for use with many different devices or situations."
       }
     ],
     "ex": [
       {
         "en": "The new playground won universal approval from local families.",
-        "zh": "新游乐场得到了当地家庭的一致认可。"
+        "zh": "新游乐场得到了当地家庭的一致认可。",
+        "vi": "Sân chơi mới đã được các gia đình địa phương chấp thuận rộng rãi."
       },
       {
         "en": "Universal access to affordable healthcare can reduce inequality and improve the overall wellbeing of a population.",
-        "zh": "人人都能获得负担得起的医疗服务，可以减少不平等并改善全民的整体福祉。"
+        "zh": "人人都能获得负担得起的医疗服务，可以减少不平等并改善全民的整体福祉。",
+        "vi": "Tiếp cận phổ cập với các dịch vụ chăm sóc sức khỏe giá rẻ có thể làm giảm bất bình đẳng và cải thiện phúc lợi chung của toàn bộ dân số."
       }
     ],
     "col": [
@@ -4724,22 +4731,26 @@
       {
         "pos": "adj.",
         "zh": "共同的；联合的",
+        "vi": "Chia sẻ, sở hữu hoặc thực hiện bởi hai hoặc nhiều người hoặc nhóm.",
         "en": "Shared, owned, or done by two or more people or groups."
       },
       {
         "pos": "n.",
         "zh": "关节；接合处",
+        "vi": "Nơi xương hoặc các bộ phận tách biệt gặp nhau.",
         "en": "A place where bones or separate parts meet."
       }
     ],
     "ex": [
       {
         "en": "Buying the sofa was a joint decision with my flatmate.",
-        "zh": "买这张沙发是我和室友共同作出的决定。"
+        "zh": "买这张沙发是我和室友共同作出的决定。",
+        "vi": "Mua ghế sofa là một quyết định chung với người bạn cùng phòng của tôi."
       },
       {
         "en": "Joint research projects allow universities to share resources and address environmental problems more effectively.",
-        "zh": "联合研究项目使大学能够共享资源，更有效地应对环境问题。"
+        "zh": "联合研究项目使大学能够共享资源，更有效地应对环境问题。",
+        "vi": "Các dự án nghiên cứu chung cho phép các trường đại học chia sẻ nguồn lực và giải quyết các vấn đề môi trường một cách hiệu quả hơn."
       }
     ],
     "col": [
@@ -4769,22 +4780,26 @@
       {
         "pos": "n.",
         "zh": "耽搁；延误",
+        "vi": "Sự chậm trễ ngăn cản việc gì tiếp tục theo kế hoạch",
         "en": "A delay that prevents something from continuing as planned"
       },
       {
         "pos": "n.",
         "zh": "持械抢劫",
+        "vi": "Một vụ cướp có vũ khí đe dọa",
         "en": "A robbery involving threats with a weapon"
       }
     ],
     "ex": [
       {
         "en": "A hold-up on the bridge made us miss lunch.",
-        "zh": "桥上的堵塞让我们错过了午饭。"
+        "zh": "桥上的堵塞让我们错过了午饭。",
+        "vi": "Một vụ cướp cầu khiến chúng tôi bỏ lỡ bữa trưa."
       },
       {
         "en": "Even a brief hold-up in the supply chain can significantly increase costs for small manufacturers.",
-        "zh": "供应链中即使出现短暂延误，也可能显著增加小型制造商的成本。"
+        "zh": "供应链中即使出现短暂延误，也可能显著增加小型制造商的成本。",
+        "vi": "Ngay cả khi bị đình chỉ một thời gian ngắn trong chuỗi cung ứng cũng có thể làm tăng đáng kể chi phí cho các nhà sản xuất nhỏ."
       }
     ],
     "col": [
@@ -4814,17 +4829,20 @@
       {
         "pos": "n.",
         "zh": "男发言人",
+        "vi": "Một người phát biểu chính thức cho một nhóm hoặc tổ chức",
         "en": "A man who speaks officially for a group or organisation"
       }
     ],
     "ex": [
       {
         "en": "A spokesman explained why the swimming pool was closed.",
-        "zh": "一位男发言人解释了游泳池关闭的原因。"
+        "zh": "一位男发言人解释了游泳池关闭的原因。",
+        "vi": "Một phát ngôn viên giải thích tại sao hồ bơi bị đóng cửa."
       },
       {
         "en": "The government spokesman announced that additional funding would support public transport improvements in rural communities.",
-        "zh": "政府男发言人宣布，将追加资金支持农村地区的公共交通改善。"
+        "zh": "政府男发言人宣布，将追加资金支持农村地区的公共交通改善。",
+        "vi": "Người phát ngôn của chính phủ tuyên bố rằng các khoản tài trợ bổ sung sẽ hỗ trợ cải thiện giao thông công cộng ở các cộng đồng nông thôn."
       }
     ],
     "col": [
@@ -4863,17 +4881,20 @@
       {
         "pos": "v.",
         "zh": "绕轨道运行；环绕",
+        "vi": "di chuyển quanh một hành tinh, ngôi sao, hoặc vật thể khác trong không gian",
         "en": "to move around a planet, star, or other object in space"
       }
     ],
     "ex": [
       {
         "en": "We watched an animation showing the satellite's orbit.",
-        "zh": "我们观看了一段展示卫星运行轨道的动画。"
+        "zh": "我们观看了一段展示卫星运行轨道的动画。",
+        "vi": "Chúng tôi xem một bộ phim hoạt hình cho thấy quỹ đạo của vệ tinh."
       },
       {
         "en": "Satellites that orbit the Earth provide essential data for weather forecasting, disaster monitoring, and climate research.",
-        "zh": "绕地球运行的卫星为天气预报、灾害监测和气候研究提供必要数据。"
+        "zh": "绕地球运行的卫星为天气预报、灾害监测和气候研究提供必要数据。",
+        "vi": "Các vệ tinh quay quanh trái đất cung cấp dữ liệu cần thiết cho dự báo thời tiết, giám sát thiên tai và nghiên cứu khí hậu."
       }
     ],
     "col": [
@@ -4904,17 +4925,20 @@
       {
         "pos": "n.",
         "zh": "细菌",
+        "vi": "Một vi sinh vật đơn bào, đôi khi gây bệnh.",
         "en": "A microscopic single-celled organism, sometimes responsible for disease."
       }
     ],
     "ex": [
       {
         "en": "Under the microscope, a single bacterium moved slowly.",
-        "zh": "显微镜下，一个细菌缓缓移动。"
+        "zh": "显微镜下，一个细菌缓缓移动。",
+        "vi": "Dưới kính hiển vi, một vi khuẩn di chuyển chậm."
       },
       {
         "en": "Scientists identified a bacterium that could help remove harmful chemicals from polluted soil without damaging nearby plants.",
-        "zh": "科学家发现了一种细菌，可帮助去除受污染土壤中的有害化学物质，同时不伤害附近的植物。"
+        "zh": "科学家发现了一种细菌，可帮助去除受污染土壤中的有害化学物质，同时不伤害附近的植物。",
+        "vi": "Các nhà khoa học đã phát hiện ra một loại vi khuẩn có thể giúp loại bỏ các hóa chất độc hại khỏi đất ô nhiễm mà không làm hỏng các loài thực vật gần đó."
       }
     ],
     "col": [
@@ -4945,17 +4969,20 @@
       {
         "pos": "n.",
         "zh": "爆发；突然发生",
+        "vi": "Sự bắt đầu đột ngột của một bệnh hoặc một sự kiện có hại khác.",
         "en": "The sudden start of a disease or other harmful event."
       }
     ],
     "ex": [
       {
         "en": "The flu outbreak kept several children home from school.",
-        "zh": "流感爆发让几个孩子待在家里，未能上学。"
+        "zh": "流感爆发让几个孩子待在家里，未能上学。",
+        "vi": "Dịch cúm đã khiến một số trẻ em không được đến trường."
       },
       {
         "en": "Rapid access to reliable health information can help communities respond effectively to an outbreak of infectious disease.",
-        "zh": "及时获取可靠的健康信息有助于社区有效应对传染病暴发。"
+        "zh": "及时获取可靠的健康信息有助于社区有效应对传染病暴发。",
+        "vi": "Tiếp cận nhanh chóng với các thông tin y tế đáng tin cậy có thể giúp các cộng đồng ứng phó hiệu quả với sự bùng phát của các bệnh truyền nhiễm."
       }
     ],
     "col": [
@@ -4982,17 +5009,20 @@
       {
         "pos": "adj.",
         "zh": "繁荣的；富裕的",
+        "vi": "Thành công về tài chính và tận hưởng sự giàu có hoặc tăng trưởng kinh tế",
         "en": "Financially successful and enjoying wealth or economic growth"
       }
     ],
     "ex": [
       {
         "en": "The once quiet village is now a prosperous market town.",
-        "zh": "这个曾经安静的村庄如今已成为繁荣的集镇。"
+        "zh": "这个曾经安静的村庄如今已成为繁荣的集镇。",
+        "vi": "Ngôi làng từng yên tĩnh giờ đây là một thị trấn giàu có."
       },
       {
         "en": "A prosperous economy can generate the resources needed to improve education, healthcare, and public infrastructure.",
-        "zh": "繁荣的经济能够创造改善教育、医疗和公共基础设施所需的资源。"
+        "zh": "繁荣的经济能够创造改善教育、医疗和公共基础设施所需的资源。",
+        "vi": "Một nền kinh tế thịnh vượng có thể tạo ra các nguồn lực cần thiết để cải thiện giáo dục, y tế và cơ sở hạ tầng công cộng."
       }
     ],
     "col": [
@@ -5028,27 +5058,32 @@
       {
         "pos": "v.",
         "zh": "移动；转变",
+        "vi": "Để di chuyển hoặc thay đổi vị trí, hướng, hoặc tiêu điểm.",
         "en": "To move or change position, direction, or focus."
       },
       {
         "pos": "n.",
         "zh": "转变；变化",
+        "vi": "Thay đổi vị trí, phương hướng, hoặc nhấn mạnh.",
         "en": "A change in position, direction, or emphasis."
       },
       {
         "pos": "n.",
         "zh": "轮班；轮班工作时间",
+        "vi": "Một giai đoạn làm việc đã lên lịch trong một hệ thống luân phiên.",
         "en": "A scheduled period of work in a rotating system."
       }
     ],
     "ex": [
       {
         "en": "We shifted the sofa closer to the window.",
-        "zh": "我们把沙发往窗边挪了挪。"
+        "zh": "我们把沙发往窗边挪了挪。",
+        "vi": "Chúng tôi di chuyển chiếc ghế sofa gần cửa sổ hơn."
       },
       {
         "en": "Governments should shift investment towards public transport to reduce traffic congestion and urban air pollution.",
-        "zh": "政府应将投资转向公共交通，以缓解交通拥堵和城市空气污染。"
+        "zh": "政府应将投资转向公共交通，以缓解交通拥堵和城市空气污染。",
+        "vi": "Chính phủ nên chuyển đầu tư sang vận tải công cộng để giảm ùn tắc giao thông và ô nhiễm không khí đô thị."
       }
     ],
     "col": [

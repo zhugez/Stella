@@ -3765,22 +3765,26 @@
       {
         "pos": "adv.",
         "zh": "向南；朝南",
+        "vi": "về hướng nam",
         "en": "towards the south"
       },
       {
         "pos": "adj.",
         "zh": "向南的；朝南的",
+        "vi": "di chuyển hoặc chỉ về phía nam",
         "en": "moving or pointing towards the south"
       }
     ],
     "ex": [
       {
         "en": "We drove southward until we reached the coast.",
-        "zh": "我们一直向南开车，直到抵达海岸。"
+        "zh": "我们一直向南开车，直到抵达海岸。",
+        "vi": "Chúng tôi lái xe về phía nam cho đến khi tới được bờ biển."
       },
       {
         "en": "The southward movement of some marine species may reflect changes in ocean temperatures and food availability.",
-        "zh": "一些海洋物种向南迁移，可能反映了海水温度和食物供应的变化。"
+        "zh": "一些海洋物种向南迁移，可能反映了海水温度和食物供应的变化。",
+        "vi": "Sự di chuyển về phía nam của một số loài sinh vật biển có thể phản ánh những thay đổi về nhiệt độ đại dương và tính sẵn có của thức ăn."
       }
     ],
     "col": [
@@ -3815,22 +3819,26 @@
       {
         "pos": "n.",
         "zh": "拱；拱门；拱形结构",
+        "vi": "Một cấu trúc cong trải dài qua một lỗ mở hoặc trọng lượng hỗ trợ",
         "en": "A curved structure spanning an opening or supporting weight"
       },
       {
         "pos": "v.",
         "zh": "拱起；使成弓形",
+        "vi": "Gập người lại",
         "en": "To bend into a curved shape"
       }
     ],
     "ex": [
       {
         "en": "We sheltered from the rain beneath a stone arch.",
-        "zh": "我们在一座石拱门下避雨。"
+        "zh": "我们在一座石拱门下避雨。",
+        "vi": "Chúng tôi trú mưa dưới một vòm đá."
       },
       {
         "en": "Traditional bridges often use a central arch to distribute weight and allow boats to pass beneath.",
-        "zh": "传统桥梁常用中央拱形结构来分散重量，并让船只从下方通过。"
+        "zh": "传统桥梁常用中央拱形结构来分散重量，并让船只从下方通过。",
+        "vi": "Các cây cầu truyền thống thường sử dụng vòm trung tâm để phân bổ trọng lượng và cho phép tàu thuyền đi qua bên dưới."
       }
     ],
     "col": [
@@ -3860,27 +3868,32 @@
       {
         "pos": "n.",
         "zh": "可能的影响；后果",
+        "vi": "tác động hoặc hậu quả có thể xảy ra của một hành động hoặc quyết định",
         "en": "a possible effect or consequence of an action or decision"
       },
       {
         "pos": "n.",
         "zh": "言外之意；暗示",
+        "vi": "một ý kiến đưa ra mà không được nói trực tiếp",
         "en": "an idea suggested without being stated directly"
       },
       {
         "pos": "n.",
         "zh": "牵连；涉及",
+        "vi": "can thiệp vào việc gì sai trái hoặc bất hợp pháp",
         "en": "involvement in something wrong or illegal"
       }
     ],
     "ex": [
       {
         "en": "We discussed the financial implications of buying a puppy.",
-        "zh": "我们讨论了买小狗可能带来的经济负担。"
+        "zh": "我们讨论了买小狗可能带来的经济负担。",
+        "vi": "Chúng tôi đã thảo luận về ý nghĩa tài chính của việc mua một chú chó con."
       },
       {
         "en": "Policymakers must consider the long-term implications of automation for employment, education, and social equality.",
-        "zh": "政策制定者必须考虑自动化对就业、教育和社会平等的长期影响。"
+        "zh": "政策制定者必须考虑自动化对就业、教育和社会平等的长期影响。",
+        "vi": "Các nhà hoạch định chính sách phải xem xét tác động lâu dài của tự động hóa đối với việc làm, giáo dục và bình đẳng xã hội."
       }
     ],
     "col": [
@@ -3911,22 +3924,26 @@
       {
         "pos": "adj.",
         "zh": "三倍的；三部分的",
+        "vi": "Gấp ba lần, hoặc gồm ba phần.",
         "en": "Three times as much, or consisting of three parts."
       },
       {
         "pos": "v.",
         "zh": "增至三倍；使成三倍",
+        "vi": "Để trở nên nhiều gấp ba lần, hoặc làm một cái gì đó như vậy.",
         "en": "To become three times as much, or make something so."
       }
     ],
     "ex": [
       {
         "en": "The hotel charges triple the price during holidays.",
-        "zh": "这家酒店在假日期间收取平时三倍的价格。"
+        "zh": "这家酒店在假日期间收取平时三倍的价格。",
+        "vi": "Khách sạn có giá gấp ba lần trong các kỳ nghỉ lễ."
       },
       {
         "en": "Demand for renewable energy could triple as governments introduce stricter limits on carbon emissions.",
-        "zh": "随着各国政府对碳排放实施更严格的限制，可再生能源需求可能增至三倍。"
+        "zh": "随着各国政府对碳排放实施更严格的限制，可再生能源需求可能增至三倍。",
+        "vi": "Nhu cầu về năng lượng tái tạo có thể tăng gấp ba khi các chính phủ đưa ra các giới hạn nghiêm ngặt hơn về lượng khí thải carbon."
       }
     ],
     "col": [
@@ -3956,17 +3973,20 @@
       {
         "pos": "adj.",
         "zh": "基因的；遗传的",
+        "vi": "liên quan đến gen hoặc đặc điểm được truyền từ cha mẹ sang con cái",
         "en": "relating to genes or characteristics passed from parents to offspring"
       }
     ],
     "ex": [
       {
         "en": "The doctor explained how genetic factors affect eye colour.",
-        "zh": "医生解释了遗传因素如何影响眼睛的颜色。"
+        "zh": "医生解释了遗传因素如何影响眼睛的颜色。",
+        "vi": "Bác sĩ giải thích các yếu tố di truyền ảnh hưởng đến màu mắt như thế nào."
       },
       {
         "en": "Genetic research may help doctors identify health risks before patients develop any noticeable symptoms.",
-        "zh": "基因研究可能帮助医生在患者出现明显症状之前识别健康风险。"
+        "zh": "基因研究可能帮助医生在患者出现明显症状之前识别健康风险。",
+        "vi": "Nghiên cứu di truyền có thể giúp bác sĩ nhận diện các nguy cơ sức khỏe trước khi bệnh nhân có bất kỳ triệu chứng đáng chú ý nào."
       }
     ],
     "col": [
@@ -3999,17 +4019,20 @@
       {
         "pos": "n.",
         "zh": "鸵鸟",
+        "vi": "một con chim rất to không biết bay với đôi chân dài và cổ dài",
         "en": "a very large flightless bird with long legs and neck"
       }
     ],
     "ex": [
       {
         "en": "The ostrich ran quickly across the dusty grassland.",
-        "zh": "那只鸵鸟飞快地跑过尘土飞扬的草原。"
+        "zh": "那只鸵鸟飞快地跑过尘土飞扬的草原。",
+        "vi": "Đà điểu chạy nhanh qua đồng cỏ bụi bặm."
       },
       {
         "en": "Although the ostrich cannot fly, its powerful legs allow it to escape many predators in open habitats.",
-        "zh": "虽然鸵鸟不会飞，但它强壮的双腿使它能在开阔的栖息地逃脱许多捕食者。"
+        "zh": "虽然鸵鸟不会飞，但它强壮的双腿使它能在开阔的栖息地逃脱许多捕食者。",
+        "vi": "Mặc dù đà điểu không thể bay, nhưng đôi chân mạnh mẽ của nó cho phép nó thoát khỏi nhiều kẻ săn mồi trong môi trường sống mở."
       }
     ],
     "col": [
@@ -4036,22 +4059,26 @@
       {
         "pos": "n.",
         "zh": "营养；营养摄取",
+        "vi": "quá trình thu thập và sử dụng thực phẩm vì sức khỏe",
         "en": "the process of obtaining and using food for health"
       },
       {
         "pos": "n.",
         "zh": "营养学",
+        "vi": "nghiên cứu về ảnh hưởng của thực phẩm đối với sức khỏe và sự phát triển",
         "en": "the study of how food affects health and growth"
       }
     ],
     "ex": [
       {
         "en": "Good nutrition helps children grow and stay active.",
-        "zh": "良好的营养有助于儿童成长并保持活力。"
+        "zh": "良好的营养有助于儿童成长并保持活力。",
+        "vi": "Dinh dưỡng tốt giúp trẻ phát triển và hoạt động tích cực."
       },
       {
         "en": "Schools should teach nutrition so that young people can make informed choices about their daily diets.",
-        "zh": "学校应教授营养知识，让年轻人能够在了解相关信息的基础上选择日常饮食。"
+        "zh": "学校应教授营养知识，让年轻人能够在了解相关信息的基础上选择日常饮食。",
+        "vi": "Các trường học nên dạy dinh dưỡng để thanh niên có thể đưa ra những lựa chọn sáng suốt về chế độ ăn uống hàng ngày của mình."
       }
     ],
     "col": [
@@ -4085,22 +4112,26 @@
       {
         "pos": "n.",
         "zh": "创造；创作；建立",
+        "vi": "quá trình mang một cái gì đó mới ra đời",
         "en": "the process of bringing something new into existence"
       },
       {
         "pos": "n.",
         "zh": "创作物；作品",
+        "vi": "một cái gì đó mới mà ai đó đã tạo ra hoặc thiết kế",
         "en": "something new that someone has made or designed"
       }
     ],
     "ex": [
       {
         "en": "The creation of our garden took several busy weekends.",
-        "zh": "我们忙了好几个周末才建好花园。"
+        "zh": "我们忙了好几个周末才建好花园。",
+        "vi": "Việc xây dựng khu vườn của chúng tôi mất nhiều cuối tuần bận rộn."
       },
       {
         "en": "Investment in renewable energy can support job creation while helping countries reduce their dependence on fossil fuels.",
-        "zh": "投资可再生能源可以促进就业，同时帮助各国减少对化石燃料的依赖。"
+        "zh": "投资可再生能源可以促进就业，同时帮助各国减少对化石燃料的依赖。",
+        "vi": "Đầu tư vào năng lượng tái tạo có thể hỗ trợ tạo việc làm trong khi giúp các quốc gia giảm sự phụ thuộc vào nhiên liệu hóa thạch."
       }
     ],
     "col": [
@@ -4134,27 +4165,32 @@
       {
         "pos": "v.",
         "zh": "腐烂；腐朽",
+        "vi": "dần dần bị phá vỡ bởi những quá trình tự nhiên",
         "en": "to gradually break down through natural processes"
       },
       {
         "pos": "n.",
         "zh": "腐烂；腐朽",
+        "vi": "quá trình tự nhiên của sự mục nát hoặc sụp đổ",
         "en": "the natural process of rotting or breaking down"
       },
       {
         "pos": "n.",
         "zh": "衰败；衰退",
+        "vi": "mất dần sức mạnh, chất lượng hoặc tầm quan trọng",
         "en": "a gradual loss of strength, quality, or importance"
       }
     ],
     "ex": [
       {
         "en": "Fallen leaves decay slowly beneath the trees each winter.",
-        "zh": "每到冬天，落叶都会在树下慢慢腐烂。"
+        "zh": "每到冬天，落叶都会在树下慢慢腐烂。",
+        "vi": "Những chiếc lá rụng mục rữa dần dưới những tán cây mỗi mùa đông."
       },
       {
         "en": "Urban decay often accelerates when public infrastructure is neglected and businesses move away from residential neighbourhoods.",
-        "zh": "当公共基础设施缺乏维护、企业迁离居民区时，城市衰败往往会加速。"
+        "zh": "当公共基础设施缺乏维护、企业迁离居民区时，城市衰败往往会加速。",
+        "vi": "Sự sụp đổ của đô thị thường tăng tốc khi cơ sở hạ tầng công cộng bị bỏ mặc và các doanh nghiệp rời xa các khu dân cư."
       }
     ],
     "col": [
@@ -4188,27 +4224,32 @@
       {
         "pos": "n.",
         "zh": "维护；保养；维修",
+        "vi": "công việc cần thiết để giữ cho cái gì ở trạng thái tốt",
         "en": "work needed to keep something in good condition"
       },
       {
         "pos": "n.",
         "zh": "维持；保持",
+        "vi": "hành động giữ điều kiện hoặc tình hình không thay đổi",
         "en": "the act of keeping a condition or situation unchanged"
       },
       {
         "pos": "n.",
         "zh": "抚养费；赡养费",
+        "vi": "tiền chi trả thường xuyên để nuôi con hoặc vợ/chồng cũ",
         "en": "money paid regularly to support a child or former spouse"
       }
     ],
     "ex": [
       {
         "en": "Regular maintenance keeps my old bicycle safe to ride.",
-        "zh": "定期保养让我的旧自行车骑起来依然安全。"
+        "zh": "定期保养让我的旧自行车骑起来依然安全。",
+        "vi": "Bảo dưỡng thường xuyên giúp chiếc xe đạp cũ của tôi an toàn đi lại."
       },
       {
         "en": "Governments should budget for the long-term maintenance of public infrastructure rather than focusing solely on new construction.",
-        "zh": "政府应为公共基础设施的长期维护安排预算，而不应只关注新建工程。"
+        "zh": "政府应为公共基础设施的长期维护安排预算，而不应只关注新建工程。",
+        "vi": "Chính phủ nên dành ngân sách cho việc bảo trì lâu dài cơ sở hạ tầng công cộng thay vì chỉ tập trung vào xây dựng mới."
       }
     ],
     "col": [
@@ -4243,17 +4284,20 @@
       {
         "pos": "n.",
         "zh": "哺乳动物",
+        "vi": "Một động vật máu nóng có con cái sản xuất sữa cho con non.",
         "en": "A warm-blooded animal whose females produce milk for their young."
       }
     ],
     "ex": [
       {
         "en": "A dolphin is a mammal, even though it lives underwater.",
-        "zh": "海豚虽然生活在水下，却是哺乳动物。"
+        "zh": "海豚虽然生活在水下，却是哺乳动物。",
+        "vi": "Cá heo là động vật có vú, mặc dù chúng sống dưới nước."
       },
       {
         "en": "Protecting marine mammals requires international cooperation because these animals often migrate across the waters of several countries.",
-        "zh": "保护海洋哺乳动物需要国际合作，因为这些动物经常跨越多个国家的水域迁徙。"
+        "zh": "保护海洋哺乳动物需要国际合作，因为这些动物经常跨越多个国家的水域迁徙。",
+        "vi": "Việc bảo vệ động vật có vú biển đòi hỏi sự hợp tác quốc tế vì những động vật này thường di cư qua vùng biển của một số quốc gia."
       }
     ],
     "col": [
@@ -4282,22 +4326,26 @@
       {
         "pos": "adj.",
         "zh": "精神的；心灵的",
+        "vi": "Kết nối với cảm xúc nội tâm và ý nghĩa hơn là những thứ vật chất.",
         "en": "Connected with inner feelings and meaning rather than material things."
       },
       {
         "pos": "adj.",
         "zh": "宗教的",
+        "vi": "Liên quan đến tín ngưỡng hay kinh nghiệm tôn giáo.",
         "en": "Related to religious beliefs or experiences."
       }
     ],
     "ex": [
       {
         "en": "Walking quietly in the forest gives me spiritual comfort.",
-        "zh": "在森林里静静散步能给我心灵上的慰藉。"
+        "zh": "在森林里静静散步能给我心灵上的慰藉。",
+        "vi": "Đi lặng lẽ trong rừng cho tôi sự an ủi tinh thần."
       },
       {
         "en": "Public spaces can support spiritual well-being by offering residents peaceful places for reflection and connection with nature.",
-        "zh": "公共空间可以为居民提供安静思考和亲近自然的场所，从而促进精神健康。"
+        "zh": "公共空间可以为居民提供安静思考和亲近自然的场所，从而促进精神健康。",
+        "vi": "Không gian công cộng có thể hỗ trợ phúc lợi tinh thần bằng cách cung cấp cho người dân những nơi yên bình để suy ngẫm và kết nối với thiên nhiên."
       }
     ],
     "col": [
@@ -4330,27 +4378,32 @@
       {
         "pos": "adj.",
         "zh": "每季度的",
+        "vi": "Xảy ra hay sản xuất cứ ba tháng một lần.",
         "en": "Happening or produced every three months."
       },
       {
         "pos": "adv.",
         "zh": "每季度一次地",
+        "vi": "Cứ ba tháng một lần.",
         "en": "Once every three months."
       },
       {
         "pos": "n.",
         "zh": "季刊",
+        "vi": "Một tạp chí xuất bản ba tháng một lần.",
         "en": "A magazine published every three months."
       }
     ],
     "ex": [
       {
         "en": "Our club holds quarterly meetings at the local library.",
-        "zh": "我们俱乐部每季度在当地的图书馆开一次会。"
+        "zh": "我们俱乐部每季度在当地的图书馆开一次会。",
+        "vi": "Câu lạc bộ của chúng tôi tổ chức các cuộc họp hàng quý tại thư viện địa phương."
       },
       {
         "en": "Quarterly reports allow investors to monitor company performance and identify emerging financial risks throughout the year.",
-        "zh": "季度报告让投资者能够全年跟踪公司的表现，并识别新出现的财务风险。"
+        "zh": "季度报告让投资者能够全年跟踪公司的表现，并识别新出现的财务风险。",
+        "vi": "Các báo cáo hàng quý cho phép các nhà đầu tư giám sát hoạt động của công ty và xác định các rủi ro tài chính đang nổi lên trong năm."
       }
     ],
     "col": [
@@ -4379,27 +4432,32 @@
       {
         "pos": "v.",
         "zh": "占据；占用",
+        "vi": "điền hoặc sử dụng một khoảng trống, địa điểm hoặc dấu chấm",
         "en": "to fill or use a space, place, or period"
       },
       {
         "pos": "v.",
         "zh": "占领",
+        "vi": "chiếm giữ và duy trì quyền kiểm soát một nơi bằng vũ lực",
         "en": "to take and maintain control of a place by force"
       },
       {
         "pos": "v.",
         "zh": "使忙于",
+        "vi": "làm cho ai bận rộn hoặc có hứng thú",
         "en": "to keep someone busy or interested"
       }
     ],
     "ex": [
       {
         "en": "These old boxes occupy most of our spare room.",
-        "zh": "这些旧箱子占了我们闲置房间的大部分空间。"
+        "zh": "这些旧箱子占了我们闲置房间的大部分空间。",
+        "vi": "Những chiếc hộp cũ này chiếm hầu hết phòng dự phòng của chúng tôi."
       },
       {
         "en": "Private cars occupy valuable urban space that could otherwise accommodate parks, cycle lanes, or wider pavements.",
-        "zh": "私家车占用了宝贵的城市空间，而这些空间本可用于建设公园、自行车道或更宽的人行道。"
+        "zh": "私家车占用了宝贵的城市空间，而这些空间本可用于建设公园、自行车道或更宽的人行道。",
+        "vi": "Xe hơi tư nhân chiếm không gian đô thị có giá trị có thể chứa được các công viên, làn xe đạp hoặc vỉa hè rộng hơn."
       }
     ],
     "col": [
@@ -4430,17 +4488,20 @@
       {
         "pos": "n.",
         "zh": "卵石；小圆石",
+        "vi": "Một hòn đá nhỏ, nhẵn, thường được tìm thấy gần nước.",
         "en": "A small, smooth stone, often found near water."
       }
     ],
     "ex": [
       {
         "en": "A smooth grey pebble lay beside my wet shoes.",
-        "zh": "我的湿鞋旁躺着一颗光滑的灰色卵石。"
+        "zh": "我的湿鞋旁躺着一颗光滑的灰色卵石。",
+        "vi": "Một viên sỏi màu xám mịn nằm cạnh đôi giày ướt của tôi."
       },
       {
         "en": "Removing pebbles from beaches can disturb coastal habitats and reduce natural protection against erosion.",
-        "zh": "从海滩上移走卵石可能扰乱沿海栖息地，并削弱抵御侵蚀的天然屏障。"
+        "zh": "从海滩上移走卵石可能扰乱沿海栖息地，并削弱抵御侵蚀的天然屏障。",
+        "vi": "Việc loại bỏ sỏi khỏi các bãi biển có thể làm xáo trộn môi trường sống ven biển và giảm thiểu sự bảo vệ thiên nhiên chống xói mòn."
       }
     ],
     "col": [
@@ -4469,27 +4530,32 @@
       {
         "pos": "n.",
         "zh": "运动场；球场",
+        "vi": "Khu vực sử dụng cho các môn thể thao đồng đội ngoài trời.",
         "en": "An area of ground used for outdoor team sports."
       },
       {
         "pos": "n.",
         "zh": "音高",
+        "vi": "Âm thanh cao hay thấp.",
         "en": "How high or low a sound is."
       },
       {
         "pos": "v.",
         "zh": "推介；推销",
+        "vi": "Trình bày một ý tưởng hoặc sản phẩm để thuyết phục ai đó chấp nhận nó.",
         "en": "Present an idea or product to persuade someone to accept it."
       }
     ],
     "ex": [
       {
         "en": "The players ran onto the pitch despite the rain.",
-        "zh": "尽管下着雨，球员们还是跑进了球场。"
+        "zh": "尽管下着雨，球员们还是跑进了球场。",
+        "vi": "Các cầu thủ chạy lên sân bất chấp trời mưa."
       },
       {
         "en": "Young entrepreneurs often pitch their business ideas to investors who can provide funding and practical guidance.",
-        "zh": "年轻创业者经常向能够提供资金和实用指导的投资者推介商业构想。"
+        "zh": "年轻创业者经常向能够提供资金和实用指导的投资者推介商业构想。",
+        "vi": "Các doanh nhân trẻ thường đưa ra các ý tưởng kinh doanh cho các nhà đầu tư có thể cung cấp vốn và hướng dẫn thực tế."
       }
     ],
     "col": [
@@ -4519,17 +4585,20 @@
       {
         "pos": "adj.",
         "zh": "极少的；最低限度的",
+        "vi": "rất ít về số lượng hoặc càng ít càng tốt",
         "en": "very small in amount or as little as possible"
       }
     ],
     "ex": [
       {
         "en": "These plants need minimal care, even during hot weather.",
-        "zh": "这些植物即使在炎热天气里也只需极少的照料。"
+        "zh": "这些植物即使在炎热天气里也只需极少的照料。",
+        "vi": "Những cây này cần được chăm sóc tối thiểu, ngay cả trong thời tiết nóng bức."
       },
       {
         "en": "Well-designed buildings can maintain comfortable indoor temperatures with minimal energy use, reducing both costs and emissions.",
-        "zh": "设计良好的建筑能以极低的能耗保持舒适的室内温度，同时降低成本和排放。"
+        "zh": "设计良好的建筑能以极低的能耗保持舒适的室内温度，同时降低成本和排放。",
+        "vi": "Các tòa nhà được thiết kế tốt có thể duy trì nhiệt độ trong nhà thoải mái với mức sử dụng năng lượng tối thiểu, giảm cả chi phí và khí thải."
       }
     ],
     "col": [
@@ -4567,22 +4636,26 @@
       {
         "pos": "n.",
         "zh": "消失；失踪",
+        "vi": "Hành động biến mất hoặc trở nên bất khả thi.",
         "en": "The act of vanishing or becoming impossible to find."
       },
       {
         "pos": "n.",
         "zh": "消亡；不复存在",
+        "vi": "Quá trình dần dần chấm dứt để tồn tại.",
         "en": "The process of gradually ceasing to exist."
       }
     ],
     "ex": [
       {
         "en": "The disappearance of my keys made me late again.",
-        "zh": "我的钥匙不见了，害得我又迟到了。"
+        "zh": "我的钥匙不见了，害得我又迟到了。",
+        "vi": "Chìa khóa biến mất khiến tôi lại trễ nữa."
       },
       {
         "en": "The gradual disappearance of traditional crafts reflects changing lifestyles and declining demand for handmade goods.",
-        "zh": "传统手工艺逐渐消亡，反映出生活方式的变化以及手工制品需求的下降。"
+        "zh": "传统手工艺逐渐消亡，反映出生活方式的变化以及手工制品需求的下降。",
+        "vi": "Sự biến mất dần của các sản phẩm thủ công truyền thống phản ánh lối sống đang thay đổi và nhu cầu về các sản phẩm thủ công đang giảm dần."
       }
     ],
     "col": [
@@ -4617,22 +4690,26 @@
       {
         "pos": "n.",
         "zh": "陶工；制陶者",
+        "vi": "người làm chậu và các đồ vật khác bằng đất sét",
         "en": "someone who makes pots and other objects from clay"
       },
       {
         "pos": "v.",
         "zh": "悠闲地做琐事",
+        "vi": "làm những công việc nhỏ mà không vội vàng",
         "en": "to spend time doing small tasks without hurrying"
       }
     ],
     "ex": [
       {
         "en": "The potter shaped a bowl with her wet hands.",
-        "zh": "陶工用湿润的双手捏出了一个碗。"
+        "zh": "陶工用湿润的双手捏出了一个碗。",
+        "vi": "Người thợ gốm đã tạo ra một cái bát bằng bàn tay ướt của mình."
       },
       {
         "en": "Local potters can preserve traditional skills while attracting visitors interested in the region's cultural heritage.",
-        "zh": "当地陶工既能保护传统技艺，也能吸引对该地区文化遗产感兴趣的游客。"
+        "zh": "当地陶工既能保护传统技艺，也能吸引对该地区文化遗产感兴趣的游客。",
+        "vi": "Các thợ gốm địa phương có thể bảo tồn các kỹ năng truyền thống đồng thời thu hút du khách quan tâm đến di sản văn hóa của khu vực."
       }
     ],
     "col": [
@@ -4664,27 +4741,32 @@
       {
         "pos": "n.",
         "zh": "套房；套间",
+        "vi": "Các phòng kết nối được sử dụng cùng nhau, đặc biệt là trong một khách sạn",
         "en": "Connected rooms used together, especially in a hotel"
       },
       {
         "pos": "n.",
         "zh": "一套软件或家具",
+        "vi": "Một bộ chương trình phần mềm hoặc đồ nội thất được sử dụng cùng nhau",
         "en": "A set of software programs or furniture used together"
       },
       {
         "pos": "n.",
         "zh": "组曲",
+        "vi": "Một tác phẩm âm nhạc gồm nhiều tác phẩm liên quan",
         "en": "A musical work consisting of several related pieces"
       }
     ],
     "ex": [
       {
         "en": "Our hotel suite has a balcony overlooking the sea.",
-        "zh": "我们住的酒店套房有一个面朝大海的阳台。"
+        "zh": "我们住的酒店套房有一个面朝大海的阳台。",
+        "vi": "Phòng khách sạn của chúng tôi có ban công nhìn ra biển."
       },
       {
         "en": "The university provides a software suite that enables students to analyse data and prepare research presentations.",
-        "zh": "该大学提供一套软件，帮助学生分析数据并制作研究报告演示文稿。"
+        "zh": "该大学提供一套软件，帮助学生分析数据并制作研究报告演示文稿。",
+        "vi": "Trường đại học cung cấp một bộ phần mềm cho phép sinh viên phân tích dữ liệu và chuẩn bị các bài trình bày nghiên cứu."
       }
     ],
     "col": [
@@ -4711,17 +4793,20 @@
       {
         "pos": "adj.",
         "zh": "色盲的",
+        "vi": "không phân biệt được một số màu sắc với các màu khác",
         "en": "unable to distinguish some colours from others"
       }
     ],
     "ex": [
       {
         "en": "My color-blind uncle sometimes confuses red apples with green ones.",
-        "zh": "我叔叔有色盲，有时分不清红苹果和青苹果。"
+        "zh": "我叔叔有色盲，有时分不清红苹果和青苹果。",
+        "vi": "Ông chú mù màu của tôi đôi khi nhầm táo đỏ với táo xanh lá cây."
       },
       {
         "en": "Designers should use distinct shapes alongside colours to make public information accessible to color-blind users.",
-        "zh": "设计师应在使用颜色的同时采用不同形状，让色盲用户也能获取公共信息。"
+        "zh": "设计师应在使用颜色的同时采用不同形状，让色盲用户也能获取公共信息。",
+        "vi": "Các nhà thiết kế nên sử dụng các hình dạng khác nhau bên cạnh màu sắc để người dùng mù màu có thể tiếp cận thông tin công khai."
       }
     ],
     "col": [
@@ -4749,27 +4834,32 @@
       {
         "pos": "n.",
         "zh": "大学的院；系",
+        "vi": "Một phân ban đại học bao gồm một nhóm môn học cụ thể.",
         "en": "A university division covering a particular group of subjects."
       },
       {
         "pos": "n.",
         "zh": "全体教员",
+        "vi": "Đội ngũ giáo viên của một trường đại học, cao đẳng hoặc trường học.",
         "en": "The teaching staff of a university, college, or school."
       },
       {
         "pos": "n.",
         "zh": "官能；能力",
+        "vi": "Một khả năng tự nhiên về tinh thần hay thể chất.",
         "en": "A natural mental or physical ability."
       }
     ],
     "ex": [
       {
         "en": "The science faculty has moved into a new building.",
-        "zh": "理学院已搬进一栋新楼。"
+        "zh": "理学院已搬进一栋新楼。",
+        "vi": "Khoa khoa học đã chuyển đến một tòa nhà mới."
       },
       {
         "en": "Cooperation between the faculty of engineering and local industries can help students develop skills relevant to employment.",
-        "zh": "工程学院与当地产业的合作可以帮助学生培养与就业相关的技能。"
+        "zh": "工程学院与当地产业的合作可以帮助学生培养与就业相关的技能。",
+        "vi": "Sự hợp tác giữa khoa kỹ thuật và công nghiệp địa phương có thể giúp sinh viên phát triển các kỹ năng liên quan đến việc làm."
       }
     ],
     "col": [
@@ -4796,17 +4886,20 @@
       {
         "pos": "v.",
         "zh": "成熟；使成熟",
+        "vi": "chín muồi làm cho trái cây hoặc cây trồng chín muồi",
         "en": "to become ripe or make fruit or crops ripe"
       }
     ],
     "ex": [
       {
         "en": "Leave these green tomatoes on the windowsill to ripen.",
-        "zh": "把这些青番茄放在窗台上，让它们慢慢成熟。"
+        "zh": "把这些青番茄放在窗台上，让它们慢慢成熟。",
+        "vi": "Hãy để những quả cà chua xanh này trên bệ cửa sổ để chín."
       },
       {
         "en": "Warmer temperatures can cause fruit to ripen earlier, forcing farmers to adjust their harvesting schedules.",
-        "zh": "气温升高会使水果提早成熟，迫使农民调整采收时间。"
+        "zh": "气温升高会使水果提早成熟，迫使农民调整采收时间。",
+        "vi": "Nhiệt độ ấm hơn có thể khiến trái cây chín sớm hơn, buộc nông dân điều chỉnh thời gian thu hoạch."
       }
     ],
     "col": [
@@ -4839,33 +4932,38 @@
       {
         "pos": "v.",
         "zh": "挤在一起；蜷缩",
+        "vi": "Tập trung chặt chẽ với nhau hoặc cuộn tròn lại để bảo vệ hoặc giữ ấm.",
         "en": "To gather closely together or curl up for warmth or protection."
       },
       {
         "pos": "n.",
         "zh": "挤在一起的人群",
+        "vi": "Một nhóm người đứng hoặc ngồi gần nhau.",
         "en": "A group of people standing or sitting close together."
       },
       {
         "pos": "n.",
         "zh": "私下短会",
+        "vi": "Một cuộc họp ngắn gần gũi để thảo luận một cái gì đó riêng tư.",
         "en": "A brief close gathering to discuss something privately."
       }
     ],
     "ex": [
       {
         "en": "We huddled under one umbrella until the rain stopped.",
-        "zh": "我们挤在同一把伞下，直到雨停。"
+        "zh": "我们挤在同一把伞下，直到雨停。",
+        "vi": "Chúng tôi thu mình dưới một chiếc ô cho đến khi mưa tạnh."
       },
       {
         "en": "Without adequate shelter, displaced families may huddle together outdoors, increasing their exposure to cold and illness.",
-        "zh": "缺乏足够住所时，流离失所的家庭可能只好在户外挤作一团，更容易受寒和生病。"
+        "zh": "缺乏足够住所时，流离失所的家庭可能只好在户外挤作一团，更容易受寒和生病。",
+        "vi": "Nếu không có nơi trú ẩn thích hợp, các gia đình di cư có thể tụ tập bên ngoài với nhau, làm tăng nguy cơ bị cảm lạnh và bệnh tật."
       }
     ],
     "col": [
-      "huddle together｜挤在一起",
-      "huddle for warmth｜挤在一起取暖",
-      "huddle around a fire｜围着火堆挤在一起",
+      "huddle together｜túm tụm lại với nhau",
+      "huddle for warmth｜túm tụm lại để sưởi ấm",
+      "huddle around a fire｜quây quần bên đống lửa",
       "a team huddle｜团队碰头会"
     ],
     "fam": [],
@@ -4889,22 +4987,26 @@
       {
         "pos": "v.",
         "zh": "满足需求；提供服务",
+        "vi": "cung cấp những gì một người hoặc nhóm cụ thể cần",
         "en": "to provide what a particular person or group needs"
       },
       {
         "pos": "v.",
         "zh": "提供餐饮服务",
+        "vi": "tiếp tế thức ăn và đồ uống cho một sự kiện",
         "en": "to supply food and drinks for an event"
       }
     ],
     "ex": [
       {
         "en": "These weekend classes cater for children of all ages.",
-        "zh": "这些周末课程面向各个年龄段的儿童。"
+        "zh": "这些周末课程面向各个年龄段的儿童。",
+        "vi": "Những lớp học cuối tuần này phục vụ cho trẻ em ở mọi lứa tuổi."
       },
       {
         "en": "Public transport systems should cater for passengers with limited mobility by providing accessible vehicles and stations.",
-        "zh": "公共交通系统应提供无障碍车辆和车站，满足行动不便乘客的需求。"
+        "zh": "公共交通系统应提供无障碍车辆和车站，满足行动不便乘客的需求。",
+        "vi": "Các hệ thống giao thông công cộng nên phục vụ cho hành khách có tính di động hạn chế bằng cách cung cấp các phương tiện và trạm có thể tiếp cận được."
       }
     ],
     "col": [

@@ -278,27 +278,32 @@
       {
         "pos": "n.",
         "zh": "西北方；西北部",
+        "vi": "Hướng giữa bắc và tây, hay một khu vực tây bắc.",
         "en": "The direction between north and west, or an area's northwestern part."
       },
       {
         "pos": "adj.",
         "zh": "西北部的；来自西北的",
+        "vi": "Nằm ở phía tây bắc, hoặc đến từ hướng đó.",
         "en": "Located in the northwest, or coming from that direction."
       },
       {
         "pos": "adv.",
         "zh": "向西北；在西北",
+        "vi": "Hướng hay hướng giữa bắc và tây.",
         "en": "Towards or in the direction between north and west."
       }
     ],
     "ex": [
       {
         "en": "Our cabin is in the northwest of the island.",
-        "zh": "我们的小木屋位于岛的西北部。"
+        "zh": "我们的小木屋位于岛的西北部。",
+        "vi": "Cabin của chúng tôi ở phía tây bắc của đảo."
       },
       {
         "en": "Investment in rail networks could improve access to employment for communities in the northwest of the country.",
-        "zh": "对铁路网的投资可以为该国西北部的社区提供更多就业便利。"
+        "zh": "对铁路网的投资可以为该国西北部的社区提供更多就业便利。",
+        "vi": "Đầu tư vào mạng lưới đường sắt có thể cải thiện khả năng tiếp cận việc làm cho các cộng đồng ở phía tây bắc nước ta."
       }
     ],
     "col": [
@@ -329,17 +334,20 @@
       {
         "pos": "n.",
         "zh": "跑步者；赛跑选手",
+        "vi": "một người chạy, đặc biệt là để tập thể dục hoặc trong các cuộc đua",
         "en": "a person who runs, especially for exercise or in races"
       }
     ],
     "ex": [
       {
         "en": "A runner in bright shoes passed us by the lake.",
-        "zh": "一位穿着亮色鞋子的跑步者在湖边从我们身旁跑过。"
+        "zh": "一位穿着亮色鞋子的跑步者在湖边从我们身旁跑过。",
+        "vi": "Một vận động viên chạy trong đôi giày sáng đã đi ngang qua chúng tôi bên hồ."
       },
       {
         "en": "Urban parks provide runners with safer exercise spaces away from heavy traffic and polluted main roads.",
-        "zh": "城市公园为跑步者提供更安全的锻炼空间，远离繁忙交通和污染严重的主干道。"
+        "zh": "城市公园为跑步者提供更安全的锻炼空间，远离繁忙交通和污染严重的主干道。",
+        "vi": "Các công viên đô thị cung cấp cho người lái xe không gian tập thể dục an toàn hơn tránh xa giao thông đông đúc và các đường chính bị ô nhiễm."
       }
     ],
     "col": [
@@ -369,17 +377,20 @@
       {
         "pos": "n.",
         "zh": "猪肉",
+        "vi": "Thịt lợn, dùng làm thức ăn.",
         "en": "Meat from a pig, used as food."
       }
     ],
     "ex": [
       {
         "en": "We cooked the pork slowly with apples and onions.",
-        "zh": "我们把猪肉和苹果、洋葱一起慢炖。"
+        "zh": "我们把猪肉和苹果、洋葱一起慢炖。",
+        "vi": "Chúng tôi đã nấu thịt lợn từ từ bằng táo và hành tây."
       },
       {
         "en": "Clear food labelling helps consumers identify products containing pork and make choices that suit their dietary requirements.",
-        "zh": "清晰的食品标签有助于消费者识别含猪肉的产品，并作出符合自身饮食要求的选择。"
+        "zh": "清晰的食品标签有助于消费者识别含猪肉的产品，并作出符合自身饮食要求的选择。",
+        "vi": "Nhãn thực phẩm rõ ràng giúp người tiêu dùng xác định các sản phẩm có chứa thịt lợn và đưa ra các lựa chọn phù hợp với yêu cầu về chế độ ăn uống của họ."
       }
     ],
     "col": [
@@ -407,22 +418,26 @@
       {
         "pos": "n.",
         "zh": "戏剧；戏剧艺术",
+        "vi": "Các vở kịch và nghệ thuật viết hoặc biểu diễn chúng.",
         "en": "Plays and the art of writing or performing them."
       },
       {
         "pos": "n.",
         "zh": "戏剧性事件；激动场面",
+        "vi": "Một sự kiện hay một tình huống thú vị hay tình huống cảm xúc.",
         "en": "An exciting or emotional event or situation."
       }
     ],
     "ex": [
       {
         "en": "Our drama group rehearses in the hall every Thursday.",
-        "zh": "我们的戏剧小组每周四在大厅排练。"
+        "zh": "我们的戏剧小组每周四在大厅排练。",
+        "vi": "Nhóm kịch của chúng tôi diễn tập ở sảnh vào mỗi thứ năm."
       },
       {
         "en": "Teaching drama in schools can develop students' confidence and encourage them to consider different perspectives.",
-        "zh": "在学校教授戏剧可以培养学生的自信，并鼓励他们从不同角度思考。"
+        "zh": "在学校教授戏剧可以培养学生的自信，并鼓励他们从不同角度思考。",
+        "vi": "Việc giảng dạy kịch nghệ trong trường có thể phát triển sự tự tin của học sinh và khuyến khích các em cân nhắc các quan điểm khác nhau."
       }
     ],
     "col": [
@@ -455,22 +470,26 @@
       {
         "pos": "n.",
         "zh": "惊讶；意外之事",
+        "vi": "Một sự kiện bất ngờ, hay cảm giác nó gây ra.",
         "en": "An unexpected event, or the feeling it causes."
       },
       {
         "pos": "v.",
         "zh": "使惊讶",
+        "vi": "Để làm cho ai đó cảm thấy ngạc nhiên bởi một điều gì đó bất ngờ.",
         "en": "To make someone feel amazed by something unexpected."
       }
     ],
     "ex": [
       {
         "en": "Finding a birthday cake in the kitchen was a lovely surprise.",
-        "zh": "在厨房里发现一个生日蛋糕，真是个美好的惊喜。"
+        "zh": "在厨房里发现一个生日蛋糕，真是个美好的惊喜。",
+        "vi": "Tìm thấy một chiếc bánh sinh nhật trong bếp là một ngạc nhiên thú vị."
       },
       {
         "en": "The survey results may surprise policymakers who assume that young people prefer online learning.",
-        "zh": "调查结果可能让那些认为年轻人偏爱线上学习的政策制定者感到意外。"
+        "zh": "调查结果可能让那些认为年轻人偏爱线上学习的政策制定者感到意外。",
+        "vi": "Kết quả khảo sát có thể gây ngạc nhiên cho các nhà hoạch định chính sách, những người cho rằng thanh niên thích học trực tuyến hơn."
       }
     ],
     "col": [

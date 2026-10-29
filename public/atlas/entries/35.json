@@ -4140,22 +4140,26 @@
       {
         "pos": "adj.",
         "zh": "看得见的",
+        "vi": "Có thể bị nhìn thấy.",
         "en": "Able to be seen."
       },
       {
         "pos": "adj.",
         "zh": "明显的；显而易见的",
+        "vi": "Đủ rõ ràng để được chú ý hoặc nhận ra.",
         "en": "Clear enough to be noticed or recognised."
       }
     ],
     "ex": [
       {
         "en": "The mountains were barely visible through the morning mist.",
-        "zh": "晨雾中，群山依稀可见。"
+        "zh": "晨雾中，群山依稀可见。",
+        "vi": "Sương mù buổi sáng hầu như không thể nhìn thấy những ngọn núi."
       },
       {
         "en": "Investment in public transport has brought visible improvements to air quality in several major cities.",
-        "zh": "公共交通投资已使几个大城市的空气质量得到明显改善。"
+        "zh": "公共交通投资已使几个大城市的空气质量得到明显改善。",
+        "vi": "Đầu tư vào giao thông công cộng đã cải thiện rõ rệt chất lượng không khí ở một số thành phố lớn."
       }
     ],
     "col": [
@@ -4192,17 +4196,20 @@
       {
         "pos": "adj.",
         "zh": "负担不起的",
+        "vi": "Quá đắt đối với một ai đó để trả tiền.",
         "en": "Too expensive for someone to pay for."
       }
     ],
     "ex": [
       {
         "en": "The larger flat was unaffordable on my salary.",
-        "zh": "以我的工资，负担不起那套更大的公寓。"
+        "zh": "以我的工资，负担不起那套更大的公寓。",
+        "vi": "Căn hộ lớn hơn không đủ khả năng chi trả tiền lương của tôi."
       },
       {
         "en": "When housing becomes unaffordable, essential workers may be forced to move far from their workplaces.",
-        "zh": "当住房变得难以负担时，关键岗位工作人员可能被迫搬到离工作地点很远的地方。"
+        "zh": "当住房变得难以负担时，关键岗位工作人员可能被迫搬到离工作地点很远的地方。",
+        "vi": "Khi nhà cửa trở nên không đủ khả năng chi trả, những công nhân thiết yếu có thể bị buộc phải rời xa nơi làm việc của họ."
       }
     ],
     "col": [
@@ -4237,17 +4244,20 @@
       {
         "pos": "adj.",
         "zh": "自雇的；个体经营的",
+        "vi": "Làm việc cho bản thân hơn là được làm việc cho một tổ chức.",
         "en": "Working for yourself rather than being employed by an organisation."
       }
     ],
     "ex": [
       {
         "en": "My aunt is a self-employed electrician with her own van.",
-        "zh": "我姑姑是个体电工，有自己的货车。"
+        "zh": "我姑姑是个体电工，有自己的货车。",
+        "vi": "Dì tôi là một thợ điện tự kinh doanh với chiếc xe tải riêng của bà."
       },
       {
         "en": "Self-employed workers often enjoy flexible schedules but may lack paid holidays and a stable monthly income.",
-        "zh": "自雇者通常享有灵活的工作时间，但可能没有带薪假期和稳定的月收入。"
+        "zh": "自雇者通常享有灵活的工作时间，但可能没有带薪假期和稳定的月收入。",
+        "vi": "Những người tự làm chủ thường có lịch trình linh hoạt nhưng có thể thiếu những ngày nghỉ có lương và thu nhập ổn định hàng tháng."
       }
     ],
     "col": [
@@ -4279,17 +4289,20 @@
       {
         "pos": "n.",
         "zh": "筹款；募捐活动",
+        "vi": "Hoạt động thu tiền cho một tổ chức hoặc vì mục đích nào đó.",
         "en": "The activity of collecting money for an organization or cause."
       }
     ],
     "ex": [
       {
         "en": "Our fund-raising dinner helped buy books for the library.",
-        "zh": "我们的筹款晚宴为图书馆购书提供了帮助。"
+        "zh": "我们的筹款晚宴为图书馆购书提供了帮助。",
+        "vi": "Bữa tối gây quỹ của chúng tôi đã giúp mua sách cho thư viện."
       },
       {
         "en": "Community fund-raising can support local services, but essential healthcare should not depend entirely on charitable donations.",
-        "zh": "社区筹款可以支持当地公共服务，但基本医疗不应完全依赖慈善捐赠。"
+        "zh": "社区筹款可以支持当地公共服务，但基本医疗不应完全依赖慈善捐赠。",
+        "vi": "Việc gây quỹ cộng đồng có thể hỗ trợ các dịch vụ địa phương, nhưng các dịch vụ y tế thiết yếu không nên phụ thuộc hoàn toàn vào các khoản đóng góp từ thiện."
       }
     ],
     "col": [
@@ -4320,27 +4333,32 @@
       {
         "pos": "v.",
         "zh": "砰地关上；用力摔放",
+        "vi": "đóng cửa hoặc dẹp bỏ cái gì một cách mạnh mẽ và ồn ào",
         "en": "to shut or put something down with force and noise"
       },
       {
         "pos": "v.",
         "zh": "猛烈抨击",
+        "vi": "phê bình gay gắt ai hoặc cái gì",
         "en": "to criticize someone or something very strongly"
       },
       {
         "pos": "n.",
         "zh": "砰的一声；猛烈撞击",
+        "vi": "một tiếng ồn lớn do cái gì đó đóng hoặc đập mạnh gây ra",
         "en": "a loud noise caused by something closing or hitting hard"
       }
     ],
     "ex": [
       {
         "en": "The wind slammed the window shut during breakfast.",
-        "zh": "吃早饭时，风把窗户砰地吹关了。"
+        "zh": "吃早饭时，风把窗户砰地吹关了。",
+        "vi": "Gió đóng sầm cửa sổ lại trong bữa sáng."
       },
       {
         "en": "Environmental groups slammed the proposal because it would allow further construction in protected coastal areas.",
-        "zh": "环保组织猛烈抨击该提案，因为它将允许在受保护的沿海地区继续施工。"
+        "zh": "环保组织猛烈抨击该提案，因为它将允许在受保护的沿海地区继续施工。",
+        "vi": "Các nhóm môi trường chỉ trích đề xuất này vì nó sẽ cho phép xây dựng thêm ở các khu vực ven biển được bảo vệ."
       }
     ],
     "col": [
@@ -4367,22 +4385,26 @@
       {
         "pos": "v.",
         "zh": "批准；发许可证给",
+        "vi": "cấp phép chính thức cho một hoạt động",
         "en": "to give official permission for an activity"
       },
       {
         "pos": "n.",
         "zh": "执照；许可证",
+        "vi": "một tài liệu chính thức cho phép một hoạt động hoặc quyền sở hữu",
         "en": "an official document permitting an activity or ownership"
       }
     ],
     "ex": [
       {
         "en": "You need a license to drive on public roads.",
-        "zh": "你需要有驾驶执照才能在公共道路上开车。"
+        "zh": "你需要有驾驶执照才能在公共道路上开车。",
+        "vi": "Bạn cần bằng lái để lái xe trên đường công cộng."
       },
       {
         "en": "Authorities should license childcare providers carefully to ensure that facilities meet appropriate safety and quality standards.",
-        "zh": "主管部门应审慎审批托育机构的经营许可，确保设施符合相应的安全和质量标准。"
+        "zh": "主管部门应审慎审批托育机构的经营许可，确保设施符合相应的安全和质量标准。",
+        "vi": "Các nhà chức trách nên cấp giấy phép cẩn thận cho các nhà cung cấp dịch vụ chăm sóc trẻ em để đảm bảo rằng các cơ sở đáp ứng các tiêu chuẩn an toàn và chất lượng phù hợp."
       }
     ],
     "col": [
@@ -4417,22 +4439,26 @@
       {
         "pos": "n.",
         "zh": "长途艰苦跋涉",
+        "vi": "một hành trình dài, khó khăn đi bộ",
         "en": "a long, difficult journey on foot"
       },
       {
         "pos": "v.",
         "zh": "长途跋涉；徒步远行",
+        "vi": "đi bộ một quãng đường dài, thường xuyên băng qua địa hình hiểm trở",
         "en": "to walk a long distance, often across difficult terrain"
       }
     ],
     "ex": [
       {
         "en": "Our trek through the forest ended beside a waterfall.",
-        "zh": "我们穿越森林的徒步旅程在一处瀑布旁结束。"
+        "zh": "我们穿越森林的徒步旅程在一处瀑布旁结束。",
+        "vi": "Cuộc hành trình xuyên qua rừng của chúng tôi kết thúc bên cạnh một thác nước."
       },
       {
         "en": "Visitors who trek through remote mountain regions can support local economies by hiring guides and purchasing local supplies.",
-        "zh": "在偏远山区徒步的游客可以通过雇用向导和购买当地物资来支持当地经济。"
+        "zh": "在偏远山区徒步的游客可以通过雇用向导和购买当地物资来支持当地经济。",
+        "vi": "Du khách đi bộ qua các vùng núi hẻo lánh có thể hỗ trợ các nền kinh tế địa phương bằng cách thuê hướng dẫn viên và mua vật tư địa phương."
       }
     ],
     "col": [
@@ -4464,17 +4490,20 @@
       {
         "pos": "n.",
         "zh": "甲虫",
+        "vi": "Một loài côn trùng có đôi cánh cứng cáp che phủ đôi cánh đang bay.",
         "en": "An insect with hard outer wings covering its flying wings."
       }
     ],
     "ex": [
       {
         "en": "A shiny beetle crawled slowly across the garden path.",
-        "zh": "一只发亮的甲虫缓缓爬过花园小径。"
+        "zh": "一只发亮的甲虫缓缓爬过花园小径。",
+        "vi": "Một con bọ sáng bóng bò chầm chậm qua con đường vườn."
       },
       {
         "en": "Some beetle species help maintain healthy forests by breaking down dead wood and recycling nutrients.",
-        "zh": "一些甲虫通过分解枯木和循环利用养分，帮助维持森林健康。"
+        "zh": "一些甲虫通过分解枯木和循环利用养分，帮助维持森林健康。",
+        "vi": "Một số loài bọ cánh cứng giúp duy trì các khu rừng lành mạnh bằng cách phá hủy gỗ chết và tái chế chất dinh dưỡng."
       }
     ],
     "col": [
@@ -4501,22 +4530,26 @@
       {
         "pos": "n.",
         "zh": "带子；背带",
+        "vi": "một dải hẹp dùng để mang, cầm hoặc buộc chặt cái gì",
         "en": "a narrow strip used to carry, hold, or fasten something"
       },
       {
         "pos": "v.",
         "zh": "用带子固定；捆扎",
+        "vi": "trói chặt ai hoặc vật gì bằng dây thừng",
         "en": "to secure someone or something with a strap"
       }
     ],
     "ex": [
       {
         "en": "The strap on my backpack broke near the bus stop.",
-        "zh": "快到公交站时，我背包的肩带断了。"
+        "zh": "快到公交站时，我背包的肩带断了。",
+        "vi": "Dây đeo trên ba lô của tôi bị đứt gần trạm xe buýt."
       },
       {
         "en": "Passengers should strap their luggage securely to prevent injuries when vehicles stop suddenly or travel over uneven roads.",
-        "zh": "乘客应把行李绑牢，以免车辆急停或驶过不平路面时造成伤害。"
+        "zh": "乘客应把行李绑牢，以免车辆急停或驶过不平路面时造成伤害。",
+        "vi": "Hành khách nên thắt dây an toàn hành lý để tránh bị thương khi xe dừng đột ngột hoặc di chuyển trên những con đường gồ ghề."
       }
     ],
     "col": [
@@ -4543,17 +4576,20 @@
       {
         "pos": "n.",
         "zh": "氢；氢气",
+        "vi": "nguyên tố hoá học nhẹ nhất, khí không màu dễ cháy",
         "en": "the lightest chemical element, a colourless gas that burns easily"
       }
     ],
     "ex": [
       {
         "en": "Our science teacher showed us how hydrogen burns.",
-        "zh": "科学老师向我们演示了氢气如何燃烧。"
+        "zh": "科学老师向我们演示了氢气如何燃烧。",
+        "vi": "Giáo viên khoa học của chúng tôi đã chỉ cho chúng tôi cách hydro cháy."
       },
       {
         "en": "Hydrogen produced using renewable electricity could help reduce emissions from industries that currently depend on fossil fuels.",
-        "zh": "利用可再生电力生产的氢气，可帮助目前依赖化石燃料的行业减少排放。"
+        "zh": "利用可再生电力生产的氢气，可帮助目前依赖化石燃料的行业减少排放。",
+        "vi": "Hydro được sản xuất bằng điện tái tạo có thể giúp giảm lượng khí thải từ các ngành công nghiệp hiện phụ thuộc vào nhiên liệu hóa thạch."
       }
     ],
     "col": [
@@ -4780,11 +4816,13 @@
     "ex": [
       {
         "en": "My sister handles administrative tasks at a local clinic.",
-        "zh": "我姐姐在当地一家诊所处理行政事务。"
+        "zh": "我姐姐在当地一家诊所处理行政事务。",
+        "vi": "Chị tôi phụ trách các công việc hành chính tại một phòng khám địa phương."
       },
       {
         "en": "Reducing administrative costs could allow schools to spend more money on teaching materials and student support.",
-        "zh": "降低行政成本可以让学校将更多资金用于教材和学生支持服务。"
+        "zh": "降低行政成本可以让学校将更多资金用于教材和学生支持服务。",
+        "vi": "Giảm chi phí hành chính có thể cho phép các trường chi nhiều tiền hơn cho tài liệu giảng dạy và hỗ trợ sinh viên."
       }
     ],
     "col": [
