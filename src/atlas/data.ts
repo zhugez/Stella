@@ -39,7 +39,7 @@ const TOPIC_NAMES_EN: Record<string, string> = {
 };
 
 export async function loadOpenAtlas(): Promise<Atlas> {
-  const res = await fetch(url("index.json"));
+  const res = await fetch(url("index.json?v=stella-v2"));
   if (!res.ok) throw new Error(`词库索引加载失败（${res.status}）`);
   const idx = (await res.json()) as IndexFile;
   const words: WordRef[] = idx.words.map((r, order) => ({
@@ -59,7 +59,7 @@ export async function loadOpenAtlas(): Promise<Atlas> {
   const loadChunk = (n: number) => {
     let p = pending.get(n);
     if (!p) {
-      p = fetch(url(`entries/${n}.json`))
+      p = fetch(url(`entries/${n}.json?v=stella-v2`))
         .then((r) => {
           if (!r.ok) throw new Error(`词条加载失败（${r.status}）`);
           return r.json() as Promise<Entry[]>;
