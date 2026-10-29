@@ -8,19 +8,15 @@ import { Illustration } from "./Illustration";
 export function searchAtlas(atlas: Atlas, raw: string, limit = 40): WordRef[] {
   const q = raw.trim().toLowerCase();
   if (!q) return [];
-  const zh = /[一-鿿]/.test(q);
   const hits: [number, WordRef][] = [];
   for (const w of atlas.words) {
     let score = 0;
-    if (zh) {
-      const i = w.zh.indexOf(q);
-      if (i >= 0) score = 60 - Math.min(40, i) - w.zh.length * 0.2;
-    } else {
-      const word = w.word.toLowerCase();
-      if (word === q) score = 1000;
-      else if (word.startsWith(q)) score = 500 - word.length;
-      else if (word.includes(q)) score = 200 - word.indexOf(q) - word.length;
-    }
+    const word = w.word.toLowerCase();
+    const def = (w.zh || "").toLowerCase();
+    if (word === q) score = 1000;
+    else if (word.startsWith(q)) score = 500 - word.length;
+    else if (word.includes(q)) score = 200 - word.indexOf(q) - word.length;
+    else if (def.includes(q)) score = 150 - Math.min(50, def.indexOf(q));
     if (score > 0) hits.push([score, w]);
   }
   hits.sort((a, b) => b[0] - a[0] || a[1].order - b[1].order);
@@ -90,7 +86,7 @@ export function Palette({ open, onClose }: { open: boolean; onClose: () => void 
               <span className="palette-word" lang="en">
                 {w.word}
               </span>
-              <span className="palette-zh">{w.zh}</span>
+              <span className="palette-zh">{w.vi || (!/[\u4e00-\u9fff]/.test(w.zh) ? w.zh : "")}</span>
               {i === sel && <CornerDownLeft size={15} className="palette-enter" />}
             </li>
           ))}

@@ -251,7 +251,7 @@ function WordOfDay() {
             <Pronounce entry={entry} refw={pick} />
           </div>
         )}
-        <p className="wotd-zh">{pick.zh}</p>
+        <p className="wotd-zh">{pick.vi || (!/[\u4e00-\u9fff]/.test(pick.zh) ? pick.zh : "")}</p>
         {entry?.ex[0] && (
           <p className="wotd-ex" lang="en">
             <Highlight text={entry.ex[0].en} word={entry.w} />

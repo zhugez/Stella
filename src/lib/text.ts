@@ -57,10 +57,14 @@ export function hashSeed(s: string) {
   return h >>> 0;
 }
 
-/** Collocations are stored as "english｜中文". */
+const ZH_RE = /[\u4e00-\u9fff]/;
+
+/** Collocations are stored as "english｜vietnamese". */
 export const splitPair = (s: string) => {
-  const [en, zh] = s.split(/[｜|]/);
-  return { en: (en || "").trim(), zh: (zh || "").trim() };
+  const [en, vi] = s.split(/[｜|]/);
+  const clean = (vi || "").trim();
+  const safe = ZH_RE.test(clean) ? "" : clean;
+  return { en: (en || "").trim(), zh: safe, vi: safe };
 };
 
 export const plural = (n: number) => n.toLocaleString("en-US");
