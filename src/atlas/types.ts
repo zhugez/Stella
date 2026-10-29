@@ -14,6 +14,7 @@ export interface Example {
   en: string;
   zh: string;
   vi?: string;
+  fr?: string;
 }
 
 export interface Entry {
@@ -29,9 +30,12 @@ export interface Entry {
   ant: string[];
   tip: string;
   tip_vi?: string;
+  tip_fr?: string;
   zh_word?: string;
   fr_word?: string;
   fr_audio?: string;
+  col_zh?: string[];
+  col_fr?: string[];
   cefr: string;
   topic: string;
   /** Usage caution (register, offensiveness, spelling), shown with the entry. */

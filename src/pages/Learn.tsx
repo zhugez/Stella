@@ -231,11 +231,18 @@ function Quiz({ step, session }: { step: Step & { kind: QuizKind }; session: Act
             const isAnswer = o.id === ref.id;
             const chosen = pending?.value === o.id;
             const cls = pending ? (isAnswer ? "is-answer" : chosen ? "is-chosen" : "is-dim") : "";
+            const langPair = settings.langPair || "en-vi";
+            let optionLabel = o.word;
+            if (step.kind === "meaning") {
+              if (langPair === "vi-zh") optionLabel = o.zh_word || o.word;
+              else if (langPair === "vi-fr") optionLabel = o.fr_word || o.word;
+              else optionLabel = o.vi || (!/[\u4e00-\u9fff]/.test(o.zh) ? o.zh : o.word);
+            }
             return (
               <li key={o.id}>
                 <button className={`option ${cls}`} data-option={o.id} onClick={() => submit(o.id, isAnswer)} disabled={!!pending}>
                   <kbd>{i + 1}</kbd>
-                  <span lang={step.kind === "meaning" ? "vi" : "en"}>{step.kind === "meaning" ? (o.vi || (!/[\u4e00-\u9fff]/.test(o.zh) ? o.zh : o.word)) : o.word}</span>
+                  <span lang={step.kind === "meaning" ? "vi" : "en"}>{optionLabel}</span>
                   {pending && isAnswer && <Check size={20} className="option-mark" />}
                   {pending && chosen && !isAnswer && <X size={20} className="option-mark" />}
                 </button>

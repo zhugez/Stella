@@ -73,7 +73,7 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
   return (
     <article className={`entry entry-${mode}`}>
       <div className="entry-art">
-        <Illustration src={atlas.img(entry)} word={entry.w} topic={topicIdx} eager={eager} alt={`${entry.w} illustration`} />
+        <Illustration src={atlas.img(entry)} word={entry.w} topic={topicIdx} eager={eager} alt={`${isFr ? (entry.fr_word || entry.w) : isZh ? (entry.zh_word || entry.w) : entry.w} illustration`} />
       </div>
       <div className="entry-body">
         <header className="entry-head">
@@ -129,12 +129,15 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
           {entry.senses.map((s, i) => (
             <li key={i}>
               <span className="pos">{s.pos}</span>
-              <span className="zh">{isZh ? `${s.zh} · ${s.vi || ""}` : (s.vi || (s.zh && !/[\u4e00-\u9fff]/.test(s.zh) ? s.zh : ""))}</span>
-              {s.en && (
-                <span className="en" lang="en">
-                  {s.en}
-                </span>
-              )}
+              <span className="zh">
+                {isZh ? (
+                  <><b>{s.zh}</b> · <span>{s.vi || ""}</span></>
+                ) : isFr ? (
+                  <><b>{s.vi || s.en}</b> {s.en && <span className="en" lang="en">({s.en})</span>}</>
+                ) : (
+                  <><b>{s.vi || (!/[\u4e00-\u9fff]/.test(s.zh) ? s.zh : "")}</b> {s.en && <span className="en" lang="en">({s.en})</span>}</>
+                )}
+              </span>
             </li>
           ))}
         </ol>
@@ -143,30 +146,37 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
           <section className="block">
             <h3 className="eyebrow">Examples</h3>
             <ul className="examples">
-              {entry.ex.map((x, i) => (
-                <li key={i}>
-                  {entry.ex.length > 1 && <span className={`ex-tag ${i ? "is-ielts" : ""}`}>{i ? "IELTS Context" : "Everyday"}</span>}
-                  <p className="ex-en" lang="en">
-                    <Highlight text={x.en} word={entry.w} />
-                    <Speak url={exUrls[i] ?? null} text={x.en} accent={i === 1 && exUrls[1] ? "us" : accent} size="sm" className="ex-speak" />
-                  </p>
-                  <p className="ex-zh">{x.vi || (x.zh && !/[\u4e00-\u9fff]/.test(x.zh) ? x.zh : "")}</p>
-                </li>
-              ))}
+              {entry.ex.map((x, i) => {
+                const mainSent = isFr && x.fr ? x.fr : isZh && x.zh ? x.zh : x.en;
+                const audioUrl = isFr || isZh ? null : (exUrls[i] ?? null);
+                return (
+                  <li key={i}>
+                    {entry.ex.length > 1 && <span className={`ex-tag ${i ? "is-ielts" : ""}`}>{i ? "IELTS Context" : "Everyday"}</span>}
+                    <p className="ex-en" lang={isFr ? "fr" : isZh ? "zh" : "en"}>
+                      <Highlight text={mainSent} word={isFr ? (entry.fr_word || entry.w) : isZh ? (entry.zh_word || entry.w) : entry.w} />
+                      <Speak url={audioUrl} text={mainSent} accent={i === 1 && exUrls[1] ? "us" : accent} size="sm" className="ex-speak" />
+                    </p>
+                    <p className="ex-zh">
+                      {x.vi || (x.zh && !/[\u4e00-\u9fff]/.test(x.zh) ? x.zh : "")}
+                      {(isFr || isZh) && x.en && <small style={{ display: "block", color: "var(--ink-4)", marginTop: "2px" }}>EN: {x.en}</small>}
+                    </p>
+                  </li>
+                );
+              })}
             </ul>
           </section>
         )}
 
-        {entry.col.length > 0 && (
+        {(entry.col.length > 0 || entry.col_fr?.length || entry.col_zh?.length) && (
           <section className="block">
             <h3 className="eyebrow">Collocations</h3>
             <ul className="collocations">
-              {entry.col.map((c) => {
-                const { en, zh } = splitPair(c);
+              {(isFr && entry.col_fr?.length ? entry.col_fr : isZh && entry.col_zh?.length ? entry.col_zh : entry.col).map((c) => {
+                const { en: headPhrase, zh: subDef } = splitPair(c);
                 return (
                   <li key={c}>
-                    <span lang="en">{en}</span>
-                    {zh && <small>{zh}</small>}
+                    <span lang={isFr ? "fr" : isZh ? "zh" : "en"}>{headPhrase}</span>
+                    {subDef && <small>{subDef}</small>}
                   </li>
                 );
               })}
@@ -195,22 +205,34 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
             {entry.syn.length > 0 && (
               <div>
                 <h3 className="eyebrow">Synonyms</h3>
-                <p>{entry.syn.map((s) => <span key={s}>{s}</span>)}</p>
+                <p>
+                  {entry.syn.map((s) => (
+                    <span key={s} style={{ display: "inline-block", background: "rgba(255,255,255,0.06)", padding: "2px 8px", borderRadius: "4px", marginRight: "6px", marginBottom: "4px" }}>
+                      {s}
+                    </span>
+                  ))}
+                </p>
               </div>
             )}
             {entry.ant.length > 0 && (
               <div>
                 <h3 className="eyebrow">Antonyms</h3>
-                <p>{entry.ant.map((s) => <span key={s}>{s}</span>)}</p>
+                <p>
+                  {entry.ant.map((s) => (
+                    <span key={s} style={{ display: "inline-block", background: "rgba(255,255,255,0.06)", padding: "2px 8px", borderRadius: "4px", marginRight: "6px", marginBottom: "4px" }}>
+                      {s}
+                    </span>
+                  ))}
+                </p>
               </div>
             )}
           </section>
         )}
 
-        {(entry.tip_vi || (entry.tip && !/[\u4e00-\u9fff]/.test(entry.tip))) && (
+        {(isFr && entry.tip_fr ? entry.tip_fr : entry.tip_vi || entry.tip) && (
           <aside className="tip">
             <Lightbulb size={17} strokeWidth={1.8} />
-            <p>{entry.tip_vi || entry.tip}</p>
+            <p>{isFr && entry.tip_fr ? entry.tip_fr : (entry.tip_vi || entry.tip)}</p>
           </aside>
         )}
 
