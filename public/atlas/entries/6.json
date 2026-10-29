@@ -1,0 +1,5271 @@
+[
+  {
+    "w": "computer",
+    "uk": "/kəmˈpjuːtə/",
+    "us": "/kəmˈpjuːtər/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "计算机；电脑",
+        "en": "An electronic machine that stores and processes information using programs.",
+        "vi": "máy vi tính, máy tính điện tử"
+      }
+    ],
+    "ex": [
+      {
+        "en": "My computer froze while I was editing holiday photos.",
+        "zh": "我编辑度假照片时，电脑卡住了。",
+        "vi": "Máy tính của mình bị đơ lúc đang chỉnh sửa mấy tấm ảnh đi du lịch."
+      },
+      {
+        "en": "Access to a computer at home can help students complete assignments and develop essential digital skills.",
+        "zh": "在家能使用电脑可以帮助学生完成作业，并培养必要的数字技能。",
+        "vi": "Có máy tính dùng ở nhà sẽ giúp học sinh làm bài tập thuận tiện và rèn luyện các kỹ năng số cần thiết."
+      }
+    ],
+    "col": [
+      "computer software｜phần mềm máy tính",
+      "computer skills｜kỹ năng sử dụng máy tính",
+      "computer network｜mạng máy tính",
+      "computer science｜khoa học máy tính"
+    ],
+    "fam": [
+      "compute (v.)",
+      "computing (n.)",
+      "computation (n.)",
+      "computerise (v.)"
+    ],
+    "syn": [],
+    "ant": [],
+    "tip": "在电脑上工作用work on a computer。",
+    "cefr": "A1",
+    "topic": "technology",
+    "note": "",
+    "id": "computer",
+    "m": 31,
+    "tip_vi": "Làm việc trên máy tính thì dùng giới từ \"on\": \"work on a computer\", đừng dịch word-by-word thành \"in\". Trong bài thi IELTS Writing, cụm từ \"computer skills\" hoặc \"digital literacy\" (khả năng sử dụng công nghệ số) ghi điểm từ vựng rất tốt khi viết về chủ đề giáo dục và việc làm."
+  },
+  {
+    "w": "shopping",
+    "uk": "/ˈʃɒpɪŋ/",
+    "us": "/ˈʃɑːpɪŋ/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "购物",
+        "en": "The activity of looking for and buying things.",
+        "vi": "việc mua sắm, hoạt động đi mua đồ"
+      },
+      {
+        "pos": "n.",
+        "zh": "买来的物品（英）",
+        "en": "The things you have bought during a shopping trip.",
+        "vi": "hàng hóa mua được, đồ vừa sắm về"
+      }
+    ],
+    "ex": [
+      {
+        "en": "We usually do our shopping early on Saturday mornings.",
+        "zh": "我们通常在星期六一早去购物。",
+        "vi": "Tụi mình thường đi mua sắm từ sáng sớm thứ Bảy."
+      },
+      {
+        "en": "The growth of online shopping has changed consumer habits and increased demand for home delivery services.",
+        "zh": "网上购物的发展改变了消费者习惯，也增加了对送货上门服务的需求。",
+        "vi": "Sự bùng nổ của mua sắm trực tuyến đã thay đổi thói quen tiêu dùng và làm tăng nhu cầu đối với các dịch vụ giao hàng tận nhà."
+      }
+    ],
+    "col": [
+      "go shopping｜đi mua sắm",
+      "do the shopping｜đi mua nhu yếu phẩm, đi chợ",
+      "online shopping｜mua sắm trực tuyến",
+      "shopping centre｜trung tâm mua sắm"
+    ],
+    "fam": [
+      "shop (v.)",
+      "shop (n.)",
+      "shopper (n.)"
+    ],
+    "syn": [],
+    "ant": [],
+    "tip": "shopping作名词不可数；“去购物”用go shopping。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "shopping",
+    "m": 31,
+    "tip_vi": "Phân biệt rõ: \"go shopping\" là đi dạo phố ngắm nghía mua sắm chung chung, còn \"do the shopping\" thường chỉ việc đi chợ hoặc mua đồ nhu yếu phẩm định kỳ cho gia đình. \"Shopping\" là danh từ không đếm được, không dùng \"a shopping\"."
+  },
+  {
+    "w": "alphabet",
+    "uk": "/ˈælfəbet/",
+    "us": "/ˈælfəbet/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "字母表",
+        "en": "the complete set of letters used in a language",
+        "vi": "bảng chữ cái"
+      }
+    ],
+    "ex": [
+      {
+        "en": "My little sister learned the alphabet through a song.",
+        "zh": "我的小妹妹通过一首歌学会了字母表。",
+        "vi": "Em gái tôi học thuộc bảng chữ cái qua một bài hát."
+      },
+      {
+        "en": "Learning the alphabet is an important early step towards literacy, but children also need regular reading practice.",
+        "zh": "学习字母表是掌握读写能力的重要起点，但孩子也需要经常练习阅读。",
+        "vi": "Học bảng chữ cái là bước đầu quan trọng để biết đọc viết, nhưng trẻ nhỏ cũng cần được luyện đọc thường xuyên."
+      }
+    ],
+    "col": [
+      "the English alphabet｜bảng chữ cái tiếng Anh",
+      "learn the alphabet｜học bảng chữ cái",
+      "alphabet song｜bài hát bảng chữ cái"
+    ],
+    "fam": [
+      "alphabetical (adj.)",
+      "alphabetically (adv.)"
+    ],
+    "syn": [],
+    "ant": [],
+    "tip": "alphabet指整套字母；单个字母用letter。",
+    "cefr": "A1",
+    "topic": "education",
+    "note": "",
+    "id": "alphabet",
+    "m": 31,
+    "tip_vi": "\"Alphabet\" là toàn bộ hệ thống bảng chữ cái, không phải từng chữ riêng lẻ. Nếu muốn nói từng chữ cái như A, B, C, hãy dùng từ \"letter\". Thí sinh Speaking Part 1 hay nhầm chỗ này khi kể về thời thơ ấu học tiếng Anh."
+  },
+  {
+    "w": "address",
+    "uk": "/əˈdres/",
+    "us": "/ˈædres/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "地址；网址",
+        "en": "Details identifying where someone lives or something can be found.",
+        "vi": "địa chỉ (nhà, cơ quan, email)"
+      },
+      {
+        "pos": "v.",
+        "zh": "处理；设法解决",
+        "en": "To give attention to a problem and try to solve it.",
+        "vi": "giải quyết, xử lý (vấn đề khó khăn)"
+      },
+      {
+        "pos": "v.",
+        "zh": "向…讲话；致辞",
+        "en": "To speak directly to a person or group.",
+        "vi": "nói chuyện trực tiếp, diễn thuyết trước ai"
+      }
+    ],
+    "ex": [
+      {
+        "en": "Please send me your address before I post the parcel.",
+        "zh": "请在我寄包裹之前把你的地址发给我。",
+        "vi": "Nhớ gửi cho mình địa chỉ của bạn trước khi mình gửi bưu phẩm nhé."
+      },
+      {
+        "en": "Governments need to address housing shortages by supporting affordable construction and improving public transport links.",
+        "zh": "政府需要通过支持可负担住房建设和改善公共交通连接来应对住房短缺。",
+        "vi": "Chính phủ cần giải quyết tình trạng thiếu hụt nhà ở bằng cách hỗ trợ xây dựng nhà ở giá rẻ và cải thiện mạng lưới giao thông công cộng."
+      }
+    ],
+    "col": [
+      "postal address｜địa chỉ bưu điện",
+      "email address｜địa chỉ thư điện tử",
+      "address a problem｜giải quyết một vấn đề",
+      "address an audience｜phát biểu trước khán giả"
+    ],
+    "fam": [
+      "addressee (n.)"
+    ],
+    "syn": [],
+    "ant": [],
+    "tip": "美音动词读/əˈdres/；address问题不等于已解决。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "address",
+    "m": 31,
+    "tip_vi": "Trong IELTS Writing Task 2, thay vì lặp lại từ \"solve\", hãy dùng \"address a problem / an issue\" để câu văn nghe học thuật và tự nhiên hơn. Chú ý phát âm: danh từ thường nhấn âm một /ˈædres/, còn động từ trong tiếng Anh chuẩn nhấn âm hai /əˈdres/."
+  },
+  {
+    "w": "win",
+    "uk": "/wɪn/",
+    "us": "/wɪn/",
+    "senses": [
+      {
+        "pos": "v.",
+        "zh": "获胜；赢得",
+        "en": "To succeed in a competition or receive a prize.",
+        "vi": "chiến thắng, đoạt giải, trúng thưởng"
+      },
+      {
+        "pos": "v.",
+        "zh": "争取到；获得",
+        "en": "To gain something through effort or personal qualities.",
+        "vi": "giành được, chiếm được (sự ủng hộ, lòng tin)"
+      },
+      {
+        "pos": "n.",
+        "zh": "胜利",
+        "en": "A successful result in a competition or contest.",
+        "vi": "chiến thắng, thắng lợi"
+      }
+    ],
+    "ex": [
+      {
+        "en": "Our team won the match despite the heavy rain.",
+        "zh": "尽管下着大雨，我们队还是赢得了比赛。",
+        "vi": "Đội của chúng tôi đã giành chiến thắng dù trời mưa tầm tã."
+      },
+      {
+        "en": "To win public support, governments must explain how environmental policies will benefit communities in the long term.",
+        "zh": "为了赢得公众支持，政府必须解释环境政策将如何让社区长期受益。",
+        "vi": "Muốn nhận được sự ủng hộ từ công chúng, chính phủ phải làm rõ các chính sách môi trường sẽ mang lại lợi ích lâu dài cho cộng đồng ra sao."
+      }
+    ],
+    "col": [
+      "win a prize｜đoạt giải thưởng",
+      "win a match｜thắng một trận đấu",
+      "win support｜giành được sự ủng hộ",
+      "win someone's trust｜chiếm được lòng tin của ai"
+    ],
+    "fam": [
+      "winner (n.)",
+      "winning (adj.)"
+    ],
+    "syn": [
+      "triumph"
+    ],
+    "ant": [
+      "lose"
+    ],
+    "tip": "过去式和过去分词均为won；赢比赛用win，击败人用beat。",
+    "cefr": "A1",
+    "topic": "sport",
+    "note": "",
+    "id": "win",
+    "m": 31,
+    "tip_vi": "Lỗi phổ biến nhất của người Việt là nhầm giữa \"win\" và \"beat\". Bạn chỉ \"win a game / prize / competition\", nhưng phải dùng \"beat an opponent / a team\" khi đánh bại một đối thủ cụ thể. Quá khứ và phân từ của win là won /wʌn/."
+  },
+  {
+    "w": "grow",
+    "uk": "/ɡrəʊ/",
+    "us": "/ɡroʊ/",
+    "senses": [
+      {
+        "pos": "v.",
+        "zh": "生长；增长；发展",
+        "en": "To become bigger or develop over time.",
+        "vi": "lớn lên, phát triển, gia tăng"
+      },
+      {
+        "pos": "v.",
+        "zh": "种植",
+        "en": "To raise plants for food or other purposes.",
+        "vi": "trồng (cây cối, hoa màu)"
+      },
+      {
+        "pos": "v.",
+        "zh": "逐渐变得",
+        "en": "To gradually become different in condition or feeling.",
+        "vi": "dần trở nên, dần cảm thấy"
+      }
+    ],
+    "ex": [
+      {
+        "en": "We grow fresh herbs in pots beside the kitchen window.",
+        "zh": "我们在厨房窗边的花盆里种新鲜香草。",
+        "vi": "Tụi mình trồng mấy chậu rau thơm tươi ngay cạnh bậu cửa sổ bếp."
+      },
+      {
+        "en": "As cities grow, local authorities must invest in transport systems that serve expanding populations.",
+        "zh": "随着城市发展，地方政府必须投资建设满足不断增长的人口需求的交通系统。",
+        "vi": "Khi các đô thị mở rộng quy mô, chính quyền địa phương buộc phải đầu tư vào hệ thống giao thông để phục vụ lượng dân số ngày càng đông."
+      }
+    ],
+    "col": [
+      "grow rapidly｜tăng trưởng nhanh chóng",
+      "grow vegetables｜trồng rau",
+      "grow older｜già đi theo năm tháng",
+      "grow increasingly concerned｜ngày càng thêm lo ngại"
+    ],
+    "fam": [
+      "growth (n.)",
+      "grower (n.)",
+      "growing (adj.)"
+    ],
+    "syn": [],
+    "ant": [
+      "shrink"
+    ],
+    "tip": "过去式grew，过去分词grown；表变得后接形容词。",
+    "cefr": "A1",
+    "topic": "nature",
+    "note": "",
+    "id": "grow",
+    "m": 31,
+    "tip_vi": "Trong IELTS Writing Task 1 miêu tả biểu đồ xu hướng, \"grow rapidly / steadily\" là cụm động từ rất tự nhiên. Động từ bất quy tắc: grow – grew /ɡruː/ – grown /ɡrəʊn/. Khi đi với tính từ (ví dụ: \"grow tired\", \"grow concerned\"), nó mang nghĩa là \"dần trở nên\" giống như become."
+  },
+  {
+    "w": "box",
+    "uk": "/bɒks/",
+    "us": "/bɑːks/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "盒子；箱子",
+        "en": "a container with firm sides, often with a lid",
+        "vi": "hộp, thùng, tráp"
+      },
+      {
+        "pos": "v.",
+        "zh": "把…装箱",
+        "en": "to put something into a box",
+        "vi": "đóng hộp, xếp vào thùng"
+      },
+      {
+        "pos": "v.",
+        "zh": "打拳击",
+        "en": "to compete in a sport using punches and protective gloves",
+        "vi": "đấm bốc, thi đấu quyền anh"
+      }
+    ],
+    "ex": [
+      {
+        "en": "The kitten fell asleep inside an empty cardboard box.",
+        "zh": "小猫在一个空纸箱里睡着了。",
+        "vi": "Chú mèo con lăn ra ngủ say sưa bên trong chiếc thùng các-tông rỗng."
+      },
+      {
+        "en": "Retailers can reduce packaging waste by choosing a box that closely matches the size of each product.",
+        "zh": "零售商可以选择与每件商品大小相近的箱子，以减少包装浪费。",
+        "vi": "Các đơn vị bán lẻ có thể giảm bớt rác thải bao bì bằng cách chọn thùng carton vừa vặn với kích thước từng món đồ."
+      }
+    ],
+    "col": [
+      "cardboard box｜thùng các-tông",
+      "a box of chocolates｜hộp sô-cô-la",
+      "box up｜đóng thùng, thu dọn vào hộp"
+    ],
+    "fam": [
+      "boxer (n.)",
+      "boxing (n.)",
+      "boxed (adj.)"
+    ],
+    "syn": [],
+    "ant": [],
+    "tip": "复数为boxes；a box of后接盒中物品。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "box",
+    "m": 31,
+    "tip_vi": "Khi đi kèm lượng từ chỉ đồ bên trong, ta dùng \"a box of...\". Danh từ số nhiều thêm -es và phát âm là /ˈbɒksɪz/. Trong văn nói hàng ngày, cụm từ \"think outside the box\" (tư duy sáng tạo, đột phá) rất hữu ích cho phần Speaking Part 3."
+  },
+  {
+    "w": "fun",
+    "uk": "/fʌn/",
+    "us": "/fʌn/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "乐趣；快乐",
+        "en": "Enjoyment or pleasure from an activity or experience.",
+        "vi": "niềm vui, sự vui thích, trò vui"
+      },
+      {
+        "pos": "adj.",
+        "zh": "有趣的；令人愉快的",
+        "en": "Enjoyable and entertaining.",
+        "vi": "vui vẻ, thú vị, mang tính giải trí"
+      }
+    ],
+    "ex": [
+      {
+        "en": "We had so much fun building sandcastles together yesterday.",
+        "zh": "昨天我们一起堆沙堡，玩得特别开心。",
+        "vi": "Hôm qua tụi mình đã chơi đùa rất vui khi cùng nhau xây lâu đài cát."
+      },
+      {
+        "en": "Making physical activity fun can encourage children to exercise regularly and develop healthier habits throughout their lives.",
+        "zh": "让体育活动充满乐趣，可以鼓励儿童经常锻炼，并养成终身受益的健康习惯。",
+        "vi": "Biến các hoạt động thể chất thành niềm vui sẽ khuyến khích trẻ nhỏ tập thể dục đều đặn và duy trì thói quen lành mạnh suốt đời."
+      }
+    ],
+    "col": [
+      "have fun｜chơi vui vẻ",
+      "for fun｜cho vui, để giải trí",
+      "make fun of｜chế giễu, trêu chọc ai",
+      "good fun｜rất vui vẻ, dễ chịu"
+    ],
+    "fam": [],
+    "syn": [
+      "enjoyment",
+      "amusement"
+    ],
+    "ant": [
+      "boredom"
+    ],
+    "tip": "fun作名词不可数；funny多指好笑的或奇怪的。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "fun",
+    "m": 31,
+    "tip_vi": "Cực kỳ chú ý: \"fun\" là vui thích, dễ chịu; còn \"funny\" là buồn cười, khôi hài hoặc có gì đó kỳ lạ. Nói \"He is a fun person\" nghĩa là anh ấy chơi rất vui tính, nhưng \"He looks funny\" có thể ám chỉ anh ta trông kỳ quặc."
+  },
+  {
+    "w": "beard",
+    "uk": "/bɪəd/",
+    "us": "/bɪrd/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "胡须；络腮胡子",
+        "en": "Hair growing on a person's chin and cheeks.",
+        "vi": "bộ râu, râu quai nón (mọc ở cằm và má)"
+      }
+    ],
+    "ex": [
+      {
+        "en": "He trimmed his beard before leaving for work.",
+        "zh": "他上班出门前修剪了胡须。",
+        "vi": "Anh ấy cạo tỉa lại bộ râu thật gọn gàng trước khi đi làm."
+      },
+      {
+        "en": "In some workplaces, employees with beards must use special coverings to maintain food hygiene standards.",
+        "zh": "在一些工作场所，蓄胡须的员工必须佩戴专用罩具，以符合食品卫生标准。",
+        "vi": "Ở một số nơi làm việc, nhân viên để râu bắt buộc phải dùng màng bọc chuyên dụng để bảo đảm tiêu chuẩn vệ sinh an toàn thực phẩm."
+      }
+    ],
+    "col": [
+      "grow a beard｜để râu, nuôi râu",
+      "trim a beard｜tỉa râu gọn gàng",
+      "a thick beard｜bộ râu rậm rạp"
+    ],
+    "fam": [
+      "bearded (adj.)"
+    ],
+    "syn": [],
+    "ant": [],
+    "tip": "beard指下巴及两颊胡须；moustache指上唇胡须。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "beard",
+    "m": 31,
+    "tip_vi": "Đừng nhầm: \"beard\" là râu ở cằm và má, còn phần ria mép ở môi trên gọi là \"moustache\". Khi miêu tả người trong IELTS Speaking Part 2, hãy dùng cụm \"grow a beard\" (nuôi râu) hoặc \"clean-shaven\" (mày râu nhẵn nhụi) để thể hiện vốn từ tự nhiên."
+  },
+  {
+    "w": "wet",
+    "uk": "/wet/",
+    "us": "/wet/",
+    "senses": [
+      {
+        "pos": "adj.",
+        "zh": "湿的；潮湿的",
+        "en": "Covered with or containing water or another liquid",
+        "vi": "ướt, đẫm nước, dính chất lỏng"
+      },
+      {
+        "pos": "adj.",
+        "zh": "多雨的；下雨的",
+        "en": "Having rain or frequent rainfall",
+        "vi": "ẩm ướt, mưa nhiều (thời tiết)"
+      },
+      {
+        "pos": "v.",
+        "zh": "弄湿",
+        "en": "To put water or another liquid onto something",
+        "vi": "làm ướt, thấm nước vào"
+      }
+    ],
+    "ex": [
+      {
+        "en": "My socks got wet when I stepped in a puddle.",
+        "zh": "我踩进水坑，把袜子弄湿了。",
+        "vi": "Tất của tôi bị ướt sũng khi vô tình dẫm phải vũng nước."
+      },
+      {
+        "en": "Prolonged wet weather can damage crops and make it harder for farmers to harvest them efficiently.",
+        "zh": "持续的阴雨天气会损害庄稼，使农民更难高效收获。",
+        "vi": "Thời tiết mưa ẩm kéo dài có thể gây hư hại mùa màng và khiến nông dân gặp nhiều trở ngại khi thu hoạch."
+      }
+    ],
+    "col": [
+      "get wet｜bị ướt",
+      "wet weather｜thời tiết mưa ẩm",
+      "soaking wet｜ướt sũng, ướt như chuột lột",
+      "wet the cloth｜làm ẩm miếng giẻ lau"
+    ],
+    "fam": [
+      "wetness (n.)"
+    ],
+    "syn": [
+      "damp",
+      "soaked"
+    ],
+    "ant": [
+      "dry"
+    ],
+    "tip": "damp指微湿；soaking wet表示湿透。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "wet",
+    "m": 31,
+    "tip_vi": "Nếu muốn tả ướt sũng hoàn toàn, hãy dùng cụm từ rất tự nhiên \"soaking wet\" thay vì chỉ nói \"very wet\". Để tả đồ ẩm nhẹ hay hơi ẩm mốc, từ chính xác là \"damp\" chứ không phải \"wet\"."
+  },
+  {
+    "w": "money",
+    "uk": "/ˈmʌni/",
+    "us": "/ˈmʌni/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "钱；货币",
+        "en": "What people use to pay for goods and services.",
+        "vi": "tiền, tiền tệ dùng để thanh toán"
+      },
+      {
+        "pos": "n.",
+        "zh": "财富；财产",
+        "en": "The wealth that a person or organisation owns.",
+        "vi": "của cải, tài sản, sự giàu có"
+      }
+    ],
+    "ex": [
+      {
+        "en": "I saved enough money to buy a new bicycle.",
+        "zh": "我攒够了买一辆新自行车的钱。",
+        "vi": "Mình đã tiết kiệm đủ tiền để sắm một chiếc xe đạp mới."
+      },
+      {
+        "en": "Governments should invest more money in public transport to reduce congestion and improve air quality.",
+        "zh": "政府应该向公共交通投入更多资金，以缓解拥堵并改善空气质量。",
+        "vi": "Chính phủ nên rót thêm ngân sách vào phương tiện giao thông công cộng nhằm giảm thiểu ùn tắc và cải thiện chất lượng không khí."
+      }
+    ],
+    "col": [
+      "save money｜tiết kiệm tiền",
+      "spend money on｜chi tiền vào việc gì",
+      "value for money｜đáng đồng tiền bát gạo",
+      "raise money｜gây quỹ, quyên góp tiền"
+    ],
+    "fam": [
+      "moneyed (adj.)",
+      "moneyless (adj.)"
+    ],
+    "syn": [],
+    "ant": [],
+    "tip": "通常不可数：说much money，不说many money。",
+    "cefr": "A1",
+    "topic": "economy",
+    "note": "",
+    "id": "money",
+    "m": 31,
+    "tip_vi": "\"Money\" là danh từ không đếm được, dùng \"much money\" hoặc \"a lot of money\", tuyệt đối không dùng \"many money\". Trong IELTS Speaking khi nhận xét một món đồ có xứng đáng với giá tiền hay không, cụm \"value for money\" nghe rất đắt giá."
+  },
+  {
+    "w": "agree",
+    "uk": "/əˈɡriː/",
+    "us": "/əˈɡriː/",
+    "senses": [
+      {
+        "pos": "v.",
+        "zh": "同意；赞成",
+        "en": "Have the same opinion or accept someone else's view",
+        "vi": "đồng ý, tán thành quan điểm"
+      },
+      {
+        "pos": "v.",
+        "zh": "商定；答应",
+        "en": "Decide something together or promise to do something",
+        "vi": "thống nhất, cùng thỏa thuận hoặc cam kết làm gì"
+      }
+    ],
+    "ex": [
+      {
+        "en": "I agree with you that this soup needs salt.",
+        "zh": "我同意你的看法，这汤需要加盐。",
+        "vi": "Mình đồng ý với bạn là món canh này cần nêm thêm chút muối."
+      },
+      {
+        "en": "Most researchers agree that regular physical activity can improve both mental health and academic performance.",
+        "zh": "大多数研究人员认为，经常运动可以改善心理健康和学业表现。",
+        "vi": "Phần lớn các nhà nghiên cứu đều nhất trí rằng việc vận động thể chất thường xuyên giúp nâng cao cả sức khỏe tinh thần lẫn kết quả học tập."
+      }
+    ],
+    "col": [
+      "agree with someone｜đồng ý với ai",
+      "agree on a plan｜thống nhất về một kế hoạch",
+      "agree to do something｜đồng ý, nhận lời làm việc gì",
+      "agree to a proposal｜chấp thuận một đề xuất"
+    ],
+    "fam": [
+      "agreement (n.)",
+      "disagree (v.)",
+      "disagreement (n.)"
+    ],
+    "syn": [
+      "concur"
+    ],
+    "ant": [
+      "disagree"
+    ],
+    "tip": "同意某人用with；商定某事用on；答应做用to do。",
+    "cefr": "A1",
+    "topic": "thinking",
+    "note": "",
+    "id": "agree",
+    "m": 31,
+    "tip_vi": "Nhớ giới từ đi kèm: đồng ý với một người thì dùng \"agree with\", cùng nhất trí về một phương án dùng \"agree on\", còn chấp thuận một đề xuất hay nhận lời làm gì dùng \"agree to\". Tránh tuyệt đối lỗi dịch word-by-word: \"I am agree\" (phải là \"I agree\")."
+  },
+  {
+    "w": "now",
+    "uk": "/naʊ/",
+    "us": "/naʊ/",
+    "senses": [
+      {
+        "pos": "adv.",
+        "zh": "现在；如今",
+        "en": "at the present time",
+        "vi": "bây giờ, hiện nay, lúc này"
+      },
+      {
+        "pos": "adv.",
+        "zh": "马上；立刻",
+        "en": "immediately, without waiting",
+        "vi": "ngay lập tức, ngay tức thì"
+      },
+      {
+        "pos": "conj.",
+        "zh": "既然；由于",
+        "en": "because a situation has changed or become true",
+        "vi": "giờ đây khi mà, bởi vì (dùng nối nguyên nhân do hoàn cảnh đổi khác)"
+      }
+    ],
+    "ex": [
+      {
+        "en": "We live near the station now, so walking is easy.",
+        "zh": "我们现在住在车站附近，步行过去很方便。",
+        "vi": "Bây giờ tụi mình sống gần ga tàu rồi nên đi bộ rất tiện."
+      },
+      {
+        "en": "Now that online courses are widely available, more adults can continue their education while working.",
+        "zh": "既然在线课程已广泛普及，更多成年人就能在工作的同时继续接受教育。",
+        "vi": "Giờ đây khi các khóa học trực tuyến đã rất phổ biến, nhiều người đi làm có thể tiếp tục học tập mà không cần bỏ việc."
+      }
+    ],
+    "col": [
+      "right now｜ngay bây giờ, lúc này đây",
+      "by now｜tính đến thời điểm hiện tại",
+      "from now on｜kể từ bây giờ trở đi",
+      "now that｜giờ đây khi mà, bởi vì"
+    ],
+    "fam": [],
+    "syn": [
+      "currently"
+    ],
+    "ant": [
+      "then"
+    ],
+    "tip": "now that引导原因从句，强调情况已发生变化。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "now",
+    "m": 31,
+    "tip_vi": "Cụm liên từ \"now that\" (giờ đây khi mà / vì thực tế đã thay đổi) là cấu trúc nâng band điểm ngữ pháp rất tốt cho IELTS Writing và Speaking, ví dụ: \"Now that smartphones are ubiquitous, communication is effortless.\""
+  },
+  {
+    "w": "real",
+    "uk": "/rɪəl/",
+    "us": "/ˈriːəl/",
+    "senses": [
+      {
+        "pos": "adj.",
+        "zh": "真实的；实际存在的",
+        "en": "existing in fact rather than being imagined",
+        "vi": "có thật, trong thực tế (không phải tưởng tượng)"
+      },
+      {
+        "pos": "adj.",
+        "zh": "真的；非仿制的",
+        "en": "genuine rather than copied or artificial",
+        "vi": "thật, chính cống (không phải hàng giả, nhân tạo)"
+      },
+      {
+        "pos": "adj.",
+        "zh": "实际的；扣除通胀的",
+        "en": "measured after allowing for changes in prices",
+        "vi": "thực tế (đã trừ đi lạm phát, trượt giá)"
+      }
+    ],
+    "ex": [
+      {
+        "en": "I thought the bird was plastic, but it was real.",
+        "zh": "我以为那只鸟是塑料的，没想到是真的。",
+        "vi": "Tôi cứ ngỡ con chim đó làm bằng nhựa, hóa ra nó là chim thật."
+      },
+      {
+        "en": "Although average salaries have increased, rising prices mean that many workers have experienced a fall in real income.",
+        "zh": "虽然平均工资上涨了，但物价上涨意味着许多劳动者的实际收入有所下降。",
+        "vi": "Dù mức lương trung bình đã tăng, nhưng giá cả leo thang đồng nghĩa với việc thu nhập thực tế của nhiều người lao động lại sụt giảm."
+      }
+    ],
+    "col": [
+      "real life｜cuộc sống đời thực",
+      "real leather｜da thật",
+      "real income｜thu nhập thực tế (sau lạm phát)",
+      "real danger｜mối nguy hiểm có thật"
+    ],
+    "fam": [
+      "reality (n.)",
+      "really (adv.)",
+      "realistic (adj.)",
+      "unreal (adj.)"
+    ],
+    "syn": [
+      "actual",
+      "genuine"
+    ],
+    "ant": [
+      "imaginary",
+      "fake"
+    ],
+    "tip": "real修饰名词；表示“很、真正地”通常用really。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "real",
+    "m": 31,
+    "tip_vi": "Trong IELTS Writing Task 2 về kinh tế, cụm \"real income\" hay \"real wages\" (thu nhập thực tế sau khi tính toán trượt giá) thể hiện sự am hiểu kiến thức xã hội. Đừng nhầm tính từ \"real\" với phó từ \"really\"."
+  },
+  {
+    "w": "someone",
+    "uk": "/ˈsʌmwʌn/",
+    "us": "/ˈsʌmwʌn/",
+    "senses": [
+      {
+        "pos": "pron.",
+        "zh": "某人；有人",
+        "en": "a person whose identity is unknown or not stated",
+        "vi": "ai đó, một người nào đó (chưa rõ danh tính)"
+      }
+    ],
+    "ex": [
+      {
+        "en": "Someone left a blue umbrella beside the front door.",
+        "zh": "有人把一把蓝色雨伞落在了前门旁边。",
+        "vi": "Ai đó đã bỏ quên chiếc ô màu xanh dương ngay cạnh cửa chính."
+      },
+      {
+        "en": "Students may feel more confident seeking help when someone they trust is available to discuss their concerns.",
+        "zh": "如果有信任的人可以倾听他们的困扰，学生求助时可能会更有信心。",
+        "vi": "Học sinh sẽ tự tin tìm kiếm sự trợ giúp hơn khi có một người mà các em tin tưởng sẵn sàng lắng nghe những băn khoăn của mình."
+      }
+    ],
+    "col": [
+      "someone else｜người khác",
+      "someone special｜người đặc biệt",
+      "someone to talk to｜người để trò chuyện, tâm sự"
+    ],
+    "fam": [],
+    "syn": [
+      "somebody"
+    ],
+    "ant": [
+      "nobody",
+      "no one"
+    ],
+    "tip": "作主语时谓语用单数；后文可用they指代。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "someone",
+    "m": 31,
+    "tip_vi": "\"Someone\" đi với động từ số ít (\"someone is calling\"), nhưng khi dùng đại từ phía sau để nói chung về giới tính thì người bản xứ chuẩn mực luôn dùng \"they / them / their\" (\"Someone left their bag\")."
+  },
+  {
+    "w": "hear",
+    "uk": "/hɪə/",
+    "us": "/hɪr/",
+    "senses": [
+      {
+        "pos": "v.",
+        "zh": "听见；听到",
+        "en": "notice a sound through your ears",
+        "vi": "nghe thấy, nhận biết âm thanh bằng tai"
+      },
+      {
+        "pos": "v.",
+        "zh": "听说；得知",
+        "en": "receive information about something",
+        "vi": "nghe tin, nhận được thông tin về điều gì"
+      },
+      {
+        "pos": "v.",
+        "zh": "审理；听取",
+        "en": "listen formally to evidence or arguments",
+        "vi": "lắng nghe, xem xét chính thức (chứng cứ, ý kiến, phiên tòa)"
+      }
+    ],
+    "ex": [
+      {
+        "en": "I can hear birds singing outside my bedroom window.",
+        "zh": "我能听见卧室窗外的鸟鸣声。",
+        "vi": "Tôi có thể nghe thấy tiếng chim hót líu lo bên ngoài cửa sổ phòng ngủ."
+      },
+      {
+        "en": "Local councils should hear residents' concerns before making decisions about major changes to public transport.",
+        "zh": "地方议会在对公共交通作出重大调整前，应听取居民的顾虑。",
+        "vi": "Chính quyền địa phương nên lắng nghe ý kiến đóng góp của người dân trước khi đưa ra các quyết định thay đổi lớn về mạng lưới xe buýt."
+      }
+    ],
+    "col": [
+      "hear from someone｜nhận được tin tức, liên lạc từ ai",
+      "hear about something｜nghe ngóng, biết tin về chuyện gì",
+      "hear a case｜xét xử một vụ án",
+      "hear both sides｜lắng nghe từ cả hai phía"
+    ],
+    "fam": [
+      "hearing (n.)",
+      "hearer (n.)"
+    ],
+    "syn": [],
+    "ant": [],
+    "tip": "hear强调听见；listen to强调主动听。过去式heard。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "hear",
+    "m": 31,
+    "tip_vi": "Phân biệt: \"hear\" là khả năng thụ động nghe thấy âm thanh lọt vào tai, còn \"listen to\" là chủ động chú ý lắng nghe. Nhớ dạng quá khứ bất quy tắc là \"heard\" /hɜːd/ (đọc vần với bird, đừng đọc là /hɪəd/)."
+  },
+  {
+    "w": "please",
+    "uk": "/pliːz/",
+    "us": "/pliːz/",
+    "senses": [
+      {
+        "pos": "adv.",
+        "zh": "请；劳驾",
+        "en": "Used to make a request or offer more polite.",
+        "vi": "làm ơn, xin vui lòng (dùng để nói lịch sự)"
+      },
+      {
+        "pos": "v.",
+        "zh": "使高兴；使满意",
+        "en": "To make someone feel happy or satisfied.",
+        "vi": "làm hài lòng, chiều lòng, khiến ai vui"
+      }
+    ],
+    "ex": [
+      {
+        "en": "Could you please hold the door for me?",
+        "zh": "你能帮我扶一下门吗？",
+        "vi": "Bạn làm ơn giữ giúp mình cánh cửa một chút được không?"
+      },
+      {
+        "en": "Public policies designed to please every group may fail to address the most urgent social problems.",
+        "zh": "旨在取悦所有群体的公共政策，可能无法解决最紧迫的社会问题。",
+        "vi": "Những chính sách công cố gắng làm vừa lòng mọi tầng lớp xã hội thường khó lòng giải quyết triệt để các vấn đề cấp bách nhất."
+      }
+    ],
+    "col": [
+      "please do｜xin cứ tự nhiên, xin mời",
+      "please everyone｜làm vừa lòng tất cả mọi người",
+      "hard to please｜khó tính, khó chiều",
+      "as you please｜tùy ý bạn"
+    ],
+    "fam": [
+      "pleased (adj.)",
+      "pleasing (adj.)",
+      "pleasure (n.)",
+      "pleasant (adj.)"
+    ],
+    "syn": [],
+    "ant": [],
+    "tip": "please是动词；感到满意用be pleased。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "please",
+    "m": 31,
+    "tip_vi": "Khi \"please\" là động từ, nó mang nghĩa làm hài lòng người khác. Muốn nói bản thân cảm thấy hài lòng, bạn phải dùng dạng bị động hoặc tính từ: \"be pleased with something\". Trong Speaking, cụm \"hard to please\" miêu tả người khó tính rất tự nhiên."
+  },
+  {
+    "w": "hard",
+    "uk": "/hɑːd/",
+    "us": "/hɑːrd/",
+    "senses": [
+      {
+        "pos": "adj.",
+        "zh": "坚硬的",
+        "en": "Firm and not easily bent, cut, or pressed",
+        "vi": "cứng, rắn, không dễ uốn cong hay bẻ gãy"
+      },
+      {
+        "pos": "adj.",
+        "zh": "困难的；艰苦的",
+        "en": "Requiring considerable effort or being difficult to endure",
+        "vi": "gian khổ, khó khăn, đòi hỏi nhiều công sức"
+      },
+      {
+        "pos": "adv.",
+        "zh": "努力地；猛烈地",
+        "en": "With great effort, force, or intensity",
+        "vi": "hết sức chăm chỉ, cật lực, mạnh mẽ (phó từ)"
+      }
+    ],
+    "ex": [
+      {
+        "en": "This bread is too hard to bite into.",
+        "zh": "这块面包太硬了，咬不动。",
+        "vi": "Ổ bánh mì này cứng quá, cắn mãi không nổi."
+      },
+      {
+        "en": "Many students work hard to gain qualifications, yet still find it difficult to secure stable employment.",
+        "zh": "许多学生努力取得学历或资格，却仍然难以找到稳定的工作。",
+        "vi": "Nhiều sinh viên học hành rất chăm chỉ để lấy tấm bằng, thế nhưng vẫn chật vật tìm kiếm một công việc ổn định."
+      }
+    ],
+    "col": [
+      "hard work｜công việc nặng nhọc, sự chăm chỉ",
+      "work hard｜làm việc chăm chỉ",
+      "hard evidence｜bằng chứng xác thực, rõ ràng",
+      "hard surface｜bề mặt cứng rắn"
+    ],
+    "fam": [
+      "harden (v.)",
+      "hardness (n.)",
+      "hardship (n.)"
+    ],
+    "syn": [],
+    "ant": [
+      "soft",
+      "easy"
+    ],
+    "tip": "hard可作副词“努力地”；hardly意为“几乎不”。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "hard",
+    "m": 31,
+    "tip_vi": "\"Hard\" vừa là tính từ vừa là trạng từ (\"work hard\"). Cẩn thận đừng nhầm với \"hardly\" – từ này mang nghĩa là \"hầu như không\" (\"He hardly works\" nghĩa là anh ta lười, gần như chẳng làm việc gì cả)."
+  },
+  {
+    "w": "terrible",
+    "uk": "/ˈterəbl/",
+    "us": "/ˈterəbl/",
+    "senses": [
+      {
+        "pos": "adj.",
+        "zh": "糟糕的；令人不快的",
+        "en": "Very bad or unpleasant.",
+        "vi": "rất tệ, dở tệ, khó chịu"
+      },
+      {
+        "pos": "adj.",
+        "zh": "可怕的；严重的",
+        "en": "Causing great fear, suffering, or harm.",
+        "vi": "kinh khủng, gây hoảng sợ hoặc thiệt hại nặng nề"
+      }
+    ],
+    "ex": [
+      {
+        "en": "The soup tasted terrible, so I made a sandwich.",
+        "zh": "汤很难喝，于是我做了个三明治。",
+        "vi": "Món súp nấu dở quá nên mình đành làm bánh mì kẹp ăn tạm."
+      },
+      {
+        "en": "Poor waste management can have terrible consequences for public health, especially in densely populated cities.",
+        "zh": "垃圾管理不善可能给公共健康带来严重后果，在人口密集的城市尤其如此。",
+        "vi": "Việc xử lý rác thải yếu kém có thể để lại những hậu quả khôn lường cho sức khỏe cộng đồng, nhất là tại các đô thị đất chật người đông."
+      }
+    ],
+    "col": [
+      "terrible weather｜thời tiết tồi tệ",
+      "a terrible mistake｜sai lầm tai hại",
+      "feel terrible｜cảm thấy rất mệt mỏi hoặc day dứt"
+    ],
+    "fam": [
+      "terribly (adv.)"
+    ],
+    "syn": [
+      "awful",
+      "dreadful"
+    ],
+    "ant": [
+      "wonderful"
+    ],
+    "tip": "terrible是形容词；表示“非常”通常用terribly。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "terrible",
+    "m": 31,
+    "tip_vi": "\"Terrible\" dùng để chỉ điều gì đó rất tồi tệ, không nên nhầm với \"terrific\" – từ này tuy cùng gốc nhưng trong văn nói lại mang nghĩa là \"tuyệt vời, xuất sắc\"."
+  },
+  {
+    "w": "feel",
+    "uk": "/fiːl/",
+    "us": "/fiːl/",
+    "senses": [
+      {
+        "pos": "v.",
+        "zh": "感到；觉得",
+        "en": "Experience an emotion, physical sensation, or personal belief.",
+        "vi": "cảm thấy, có cảm giác (về cảm xúc hay thể chất)"
+      },
+      {
+        "pos": "v.",
+        "zh": "触摸；摸索",
+        "en": "Touch something to discover its texture, shape, or position.",
+        "vi": "sờ, chạm để cảm nhận bề mặt hay tìm đồ vật"
+      },
+      {
+        "pos": "n.",
+        "zh": "触感；氛围",
+        "en": "The quality something has when touched or experienced.",
+        "vi": "cảm giác khi chạm vào, ấn tượng chung mang lại"
+      }
+    ],
+    "ex": [
+      {
+        "en": "I feel much warmer with this soft blanket.",
+        "zh": "盖着这条柔软的毯子，我觉得暖和多了。",
+        "vi": "Đắp tấm chăn mềm này vào mình thấy ấm áp hơn hẳn."
+      },
+      {
+        "en": "Residents often feel safer when public spaces are well lit and regularly maintained by local authorities.",
+        "zh": "当公共空间照明充足且由地方政府定期维护时，居民往往更有安全感。",
+        "vi": "Người dân thường cảm thấy an tâm hơn khi các khu vực công cộng được chiếu sáng đầy đủ và chính quyền địa phương chăm sóc thường xuyên."
+      }
+    ],
+    "col": [
+      "feel comfortable｜cảm thấy thoải mái, dễ chịu",
+      "feel strongly about｜có quan điểm rất dứt khoát về điều gì",
+      "feel like doing something｜thấy muốn làm việc gì",
+      "get a feel for｜dần quen và nắm bắt được cách làm"
+    ],
+    "fam": [
+      "feeling (n.)"
+    ],
+    "syn": [
+      "sense",
+      "experience"
+    ],
+    "ant": [],
+    "tip": "过去式和过去分词均为felt；feel后可直接接形容词。",
+    "cefr": "A1",
+    "topic": "emotion",
+    "note": "",
+    "id": "feel",
+    "m": 31,
+    "tip_vi": "Sau \"feel\" là một tính từ miêu tả trạng thái (ví dụ: \"feel confident\", \"feel safe\"), không dùng phó từ. Trong IELTS Speaking Part 3, thay vì nói \"I think that...\", bạn có thể dùng \"I feel strongly that...\" để nhấn mạnh quan điểm cá nhân một cách tự tin."
+  },
+  {
+    "w": "toy",
+    "uk": "/tɔɪ/",
+    "us": "/tɔɪ/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "玩具",
+        "en": "An object that children use for play.",
+        "vi": "đồ chơi của trẻ em"
+      },
+      {
+        "pos": "v.",
+        "zh": "摆弄；漫不经心地考虑",
+        "en": "To handle casually or consider without serious commitment.",
+        "vi": "chơi đùa lơ đễnh, cân nhắc ý tưởng qua loa cho vui"
+      }
+    ],
+    "ex": [
+      {
+        "en": "The baby dropped her toy behind the sofa.",
+        "zh": "宝宝把她的玩具掉到了沙发后面。",
+        "vi": "Em bé làm rơi món đồ chơi xuống phía sau ghế sofa."
+      },
+      {
+        "en": "Well-designed toys can encourage young children to develop practical skills through creative play and exploration.",
+        "zh": "设计精良的玩具可以鼓励幼儿通过创意游戏和探索来培养实践技能。",
+        "vi": "Những món đồ chơi được thiết kế khoa học có thể giúp trẻ nhỏ phát triển các kỹ năng thực tế thông qua việc vừa chơi vừa tò mò khám phá."
+      }
+    ],
+    "col": [
+      "soft toy｜thú nhồi bông",
+      "toy car｜xe ô tô đồ chơi",
+      "toy with an idea｜nhen nhóm hoặc thoáng nghĩ đến một ý tưởng"
+    ],
+    "fam": [],
+    "syn": [],
+    "ant": [],
+    "tip": "动词常用toy with；toy with an idea指并不认真地考虑。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "toy",
+    "m": 31,
+    "tip_vi": "Khi đi kèm giới từ \"with\", cụm \"toy with an idea\" rất hay gặp trong văn viết và nói trình độ cao, mang nghĩa thoáng cân nhắc một phương án nào đó nhưng chưa thực sự quyết tâm thực hiện."
+  },
+  {
+    "w": "so",
+    "uk": "/səʊ/",
+    "us": "/soʊ/",
+    "senses": [
+      {
+        "pos": "adv.",
+        "zh": "这么；如此；非常",
+        "en": "to such a degree or extent",
+        "vi": "đến mức như vậy, quá đỗi (chỉ mức độ)"
+      },
+      {
+        "pos": "conj.",
+        "zh": "所以；因此",
+        "en": "used to introduce a result or consequence",
+        "vi": "vì vậy, cho nên (nối kết quả)"
+      },
+      {
+        "pos": "adv.",
+        "zh": "这样；如此",
+        "en": "used instead of repeating an idea already mentioned",
+        "vi": "như thế, đúng như vậy (thay thế cho ý đã nhắc)"
+      }
+    ],
+    "ex": [
+      {
+        "en": "The soup was so hot that I had to wait.",
+        "zh": "汤太烫了，我只好等一会儿。",
+        "vi": "Bát canh nóng quá nên mình phải chờ một lúc mới ăn được."
+      },
+      {
+        "en": "Public transport is limited in rural areas, so many residents rely on private cars for essential journeys.",
+        "zh": "农村地区的公共交通有限，因此许多居民依靠私家车进行必要的出行。",
+        "vi": "Giao thông công cộng ở vùng nông thôn còn nhiều hạn chế, vì thế nhiều người dân buộc phải dựa vào xe cá nhân cho những chuyến đi cần thiết."
+      }
+    ],
+    "col": [
+      "so much｜nhiều đến thế",
+      "so far｜cho đến nay",
+      "so that｜để mà, nhằm mục đích",
+      "think so｜nghĩ như vậy"
+    ],
+    "fam": [],
+    "syn": [],
+    "ant": [],
+    "tip": "so修饰形容词或副词；such通常修饰名词短语。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "so",
+    "m": 31,
+    "tip_vi": "Trong IELTS Writing, cần phân biệt rõ: \"so that\" dùng chỉ mục đích (\"in order that\"), còn \"so\" đứng đầu mệnh đề chỉ kết quả. Tuy nhiên, tránh lạm dụng \"So\" ở đầu câu trong văn viết học thuật; hãy thay bằng \"Therefore\" hoặc \"As a consequence\"."
+  },
+  {
+    "w": "climb",
+    "uk": "/klaɪm/",
+    "us": "/klaɪm/",
+    "senses": [
+      {
+        "pos": "v.",
+        "zh": "攀登；爬",
+        "en": "to move upwards using your feet and often your hands",
+        "vi": "leo, trèo, trèo lên bằng tay chân"
+      },
+      {
+        "pos": "v.",
+        "zh": "上升；增加",
+        "en": "to increase in amount or level",
+        "vi": "tăng lên, leo thang (giá cả, con số, mực nước)"
+      },
+      {
+        "pos": "n.",
+        "zh": "攀登；上升",
+        "en": "an act of moving upwards or an increase in level",
+        "vi": "chuyến leo trèo, đoạn đường dốc cần vượt qua"
+      }
+    ],
+    "ex": [
+      {
+        "en": "We climbed the hill before stopping for a picnic.",
+        "zh": "我们爬上山坡，然后停下来野餐。",
+        "vi": "Tụi mình leo lên đến đỉnh đồi trước khi dừng chân ăn trưa dã ngoại."
+      },
+      {
+        "en": "As housing costs continue to climb, many young adults struggle to live independently in major cities.",
+        "zh": "随着住房成本持续上涨，许多年轻人难以在大城市独立生活。",
+        "vi": "Khi chi phí thuê nhà tiếp tục leo thang, nhiều người trẻ phải chật vật mới có thể sống tự lập tại các thành phố lớn."
+      }
+    ],
+    "col": [
+      "climb a mountain｜leo núi",
+      "climb stairs｜leo cầu thang",
+      "a steep climb｜đoạn dốc đứng đầy thử thách",
+      "climb steadily｜tăng trưởng đều đặn"
+    ],
+    "fam": [
+      "climber (n.)",
+      "climbing (n.)"
+    ],
+    "syn": [
+      "ascend"
+    ],
+    "ant": [
+      "descend"
+    ],
+    "tip": "词尾b不发音；climb a mountain不加介词。",
+    "cefr": "A1",
+    "topic": "sport",
+    "note": "",
+    "id": "climb",
+    "m": 31,
+    "tip_vi": "Chú ý phát âm: chữ cái âm cuối \"b\" là âm câm, chỉ đọc là /klaɪm/. Trong IELTS Writing Task 1, \"climb steadily / sharply\" là cụm từ rất giá trị để miêu tả xu hướng gia tăng của số liệu."
+  },
+  {
+    "w": "bird",
+    "uk": "/bɜːd/",
+    "us": "/bɝːd/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "鸟",
+        "en": "an animal with feathers, wings, and a beak that lays eggs",
+        "vi": "loài chim, loài cầm vũ"
+      }
+    ],
+    "ex": [
+      {
+        "en": "A small bird built a nest above our window.",
+        "zh": "一只小鸟在我们窗户上方筑了巢。",
+        "vi": "Một chú chim nhỏ vừa làm tổ ngay phía trên khung cửa sổ nhà tôi."
+      },
+      {
+        "en": "Protecting native bird species requires preserving their habitats and reducing pollution in both rural and urban areas.",
+        "zh": "保护本土鸟类需要维护其栖息地，并减少乡村和城市地区的污染。",
+        "vi": "Việc bảo vệ các giống chim bản địa đòi hỏi phải gìn giữ môi trường sống tự nhiên và hạn chế ô nhiễm ở cả thành thị lẫn nông thôn."
+      }
+    ],
+    "col": [
+      "a flock of birds｜đàn chim",
+      "a migratory bird｜chim di cư",
+      "bird watching｜thú vui ngắm chim thiên nhiên",
+      "a bird of prey｜chim săn mồi"
+    ],
+    "fam": [
+      "birdwatcher (n.)",
+      "birdwatching (n.)"
+    ],
+    "syn": [],
+    "ant": [],
+    "tip": "鸟群用a flock of birds；bird本身是可数名词。",
+    "cefr": "A1",
+    "topic": "nature",
+    "note": "",
+    "id": "bird",
+    "m": 31,
+    "tip_vi": "Khi nói về một bầy hoặc đàn chim, từ chỉ số lượng chính xác là \"a flock of birds\" (không dùng herd hay pack). Thành ngữ thường gặp: \"an early bird\" chỉ người có thói quen dậy sớm học bài hay làm việc."
+  },
+  {
+    "w": "game",
+    "uk": "/ɡeɪm/",
+    "us": "/ɡeɪm/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "游戏；比赛",
+        "en": "an activity or contest played according to rules",
+        "vi": "trò chơi, ván đấu, trận thi đấu có luật lệ"
+      },
+      {
+        "pos": "n.",
+        "zh": "猎物；野味",
+        "en": "wild animals hunted for food or sport, or their meat",
+        "vi": "thịt thú rừng, thú săn để làm thực phẩm"
+      },
+      {
+        "pos": "adj.",
+        "zh": "愿意尝试的；有胆量的",
+        "en": "willing to try something difficult or unfamiliar",
+        "vi": "sẵn sàng thử sức, dám tham gia trò mới lạ"
+      }
+    ],
+    "ex": [
+      {
+        "en": "We played a board game after dinner yesterday.",
+        "zh": "昨天晚饭后我们玩了一个桌游。",
+        "vi": "Tối qua ăn cơm xong cả nhà cùng nhau chơi một ván cờ bàn."
+      },
+      {
+        "en": "Cooperative games can help children develop communication skills and learn to solve problems together.",
+        "zh": "合作型游戏能帮助儿童培养沟通能力，并学会共同解决问题。",
+        "vi": "Các trò chơi đòi hỏi sự phối hợp có thể giúp trẻ rèn luyện kỹ năng giao tiếp và học cách cùng nhau giải quyết vấn đề."
+      }
+    ],
+    "col": [
+      "board game｜trò chơi cờ bàn",
+      "team game｜môn thể thao đồng đội",
+      "video game｜trò chơi điện tử",
+      "be game for｜sẵn lòng thử sức với việc gì"
+    ],
+    "fam": [
+      "gaming (n.)",
+      "gamer (n.)"
+    ],
+    "syn": [],
+    "ant": [],
+    "tip": "猎物义不可数；be game for表示愿意尝试。",
+    "cefr": "A1",
+    "topic": "sport",
+    "note": "",
+    "id": "game",
+    "m": 31,
+    "tip_vi": "Trong văn nói thân mật, nếu bạn muốn rủ ai đó tham gia một trò vui hay thử thách và hỏi họ có dám chơi không, bạn có thể hỏi: \"Are you game?\". Còn trong nghĩa thú săn hoặc thịt thú rừng (\"game meat\"), từ này là danh từ không đếm được."
+  },
+  {
+    "w": "single",
+    "uk": "/ˈsɪŋɡəl/",
+    "us": "/ˈsɪŋɡəl/",
+    "senses": [
+      {
+        "pos": "adj.",
+        "zh": "单个的；仅一个的",
+        "en": "Only one, rather than several or many.",
+        "vi": "đơn chiếc, chỉ một, duy nhất"
+      },
+      {
+        "pos": "adj.",
+        "zh": "单身的；未婚的",
+        "en": "Not married or not in a romantic relationship.",
+        "vi": "độc thân, chưa kết hôn hoặc chưa có người yêu"
+      },
+      {
+        "pos": "adj.",
+        "zh": "单程的",
+        "en": "For travel to a destination without a return journey.",
+        "vi": "vé một chiều (chuyến đi không khứ hồi)"
+      }
+    ],
+    "ex": [
+      {
+        "en": "A single candle lit the room during the power cut.",
+        "zh": "停电时，房间里只有一支蜡烛照明。",
+        "vi": "Một ngọn nến duy nhất thắp sáng căn phòng trong lúc mất điện."
+      },
+      {
+        "en": "No single policy can solve urban congestion without improvements to public transport and local planning.",
+        "zh": "如果不改善公共交通和地方规划，任何单一政策都无法解决城市拥堵。",
+        "vi": "Không một chính sách riêng lẻ nào có thể giải quyết dứt điểm ùn tắc đô thị nếu thiếu đi sự nâng cấp giao thông công cộng và quy hoạch cục bộ hợp lý."
+      }
+    ],
+    "col": [
+      "a single person｜một người độc thân",
+      "every single day｜mỗi một ngày, không sót ngày nào",
+      "a single ticket｜vé một chiều",
+      "a single parent｜cha hoặc mẹ đơn thân"
+    ],
+    "fam": [
+      "singly (adv.)",
+      "singleness (n.)"
+    ],
+    "syn": [
+      "sole",
+      "unmarried"
+    ],
+    "ant": [
+      "multiple",
+      "married"
+    ],
+    "tip": "单程票英式常说single ticket，美式用one-way ticket。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "single",
+    "m": 31,
+    "tip_vi": "Vé một chiều người Anh gọi là \"single ticket\", trong khi người Mỹ hay nói \"one-way ticket\". Trong IELTS Writing Task 2, khi muốn nhấn mạnh không có giải pháp đơn lẻ nào giải quyết được vấn đề phức tạp, cụm \"no single solution / policy\" là cấu trúc lập luận rất đắt giá."
+  },
+  {
+    "w": "park",
+    "uk": "/pɑːk/",
+    "us": "/pɑrk/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "公园",
+        "en": "An open area with grass and trees for public enjoyment.",
+        "vi": "công viên, vườn hoa công cộng"
+      },
+      {
+        "pos": "v.",
+        "zh": "停车；泊车",
+        "en": "To stop a vehicle somewhere and leave it there.",
+        "vi": "đỗ xe, đậu xe vào vị trí quy định"
+      },
+      {
+        "pos": "n.",
+        "zh": "专用园区",
+        "en": "An area set aside for a particular activity or purpose.",
+        "vi": "khu vực chuyên dụng (dành cho mục đích cụ thể)"
+      }
+    ],
+    "ex": [
+      {
+        "en": "We shared a picnic under the trees in the park.",
+        "zh": "我们在公园的树下共进了野餐。",
+        "vi": "Tụi mình cùng nhau ăn trưa dã ngoại dưới bóng râm của những tán cây trong công viên."
+      },
+      {
+        "en": "Providing a park within walking distance of every neighbourhood can encourage exercise and strengthen community ties.",
+        "zh": "让每个社区步行可达公园，有助于鼓励锻炼并加强社区联系。",
+        "vi": "Quy hoạch công viên trong bán kính đi bộ của mọi khu dân cư sẽ khuyến khích người dân vận động và gắn kết tình làng nghĩa xóm."
+      }
+    ],
+    "col": [
+      "public park｜công viên công cộng",
+      "park a car｜đỗ xe ô tô",
+      "business park｜khu phức hợp văn phòng thương mại",
+      "national park｜vườn quốc gia"
+    ],
+    "fam": [
+      "parking (n.)"
+    ],
+    "syn": [],
+    "ant": [],
+    "tip": "公园用park；英式英语中停车场用car park。",
+    "cefr": "A1",
+    "topic": "city",
+    "note": "",
+    "id": "park",
+    "m": 31,
+    "tip_vi": "Ở Anh, bãi đỗ xe gọi là \"car park\", còn ở Mỹ phổ biến từ \"parking lot\". Khi làm bài thi Speaking miêu tả nơi bạn thích lui tới lúc rảnh rỗi, cụm từ \"within walking distance\" (trong khoảng cách có thể đi bộ được) kết hợp cùng \"local park\" nghe rất mượt mà."
+  },
+  {
+    "w": "boy",
+    "uk": "/bɔɪ/",
+    "us": "/bɔɪ/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "男孩",
+        "en": "a male child or young male person",
+        "vi": "bé trai, cậu bé, thiếu niên nam"
+      }
+    ],
+    "ex": [
+      {
+        "en": "The boy carefully carried his puppy across the puddle.",
+        "zh": "那个男孩小心地抱着小狗跨过水坑。",
+        "vi": "Cậu bé cẩn thận ôm chú cún con bước qua vũng nước."
+      },
+      {
+        "en": "Every boy and girl should have equal access to education, regardless of their family's income.",
+        "zh": "无论家庭收入如何，每个男孩和女孩都应享有平等的受教育机会。",
+        "vi": "Mọi bé trai và bé gái đều xứng đáng có cơ hội tiếp cận giáo dục bình đẳng, bất kể điều kiện kinh tế gia đình ra sao."
+      }
+    ],
+    "col": [
+      "a little boy｜cậu bé nhỏ",
+      "a teenage boy｜nam thiếu niên",
+      "a baby boy｜bé trai sơ sinh"
+    ],
+    "fam": [
+      "boyhood (n.)",
+      "boyish (adj.)"
+    ],
+    "syn": [
+      "lad"
+    ],
+    "ant": [
+      "girl"
+    ],
+    "tip": "通常指未成年男性；称成年男性为boy可能不礼貌。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "boy",
+    "m": 31,
+    "tip_vi": "Từ này chỉ dùng cho trẻ em hoặc thanh thiếu niên. Trong môi trường công sở hoặc giao tiếp trang trọng, đừng gọi nam giới trưởng thành là \"boy\" vì có thể bị coi là thiếu tôn trọng; thay vào đó hãy dùng \"man\" hoặc \"gentleman\"."
+  },
+  {
+    "w": "chicken",
+    "uk": "/ˈtʃɪkɪn/",
+    "us": "/ˈtʃɪkɪn/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "鸡",
+        "en": "A bird kept for its eggs or meat.",
+        "vi": "con gà (vật nuôi lấy trứng hoặc thịt)"
+      },
+      {
+        "pos": "n.",
+        "zh": "鸡肉",
+        "en": "Meat from a chicken, eaten as food.",
+        "vi": "thịt gà (món ăn)"
+      }
+    ],
+    "ex": [
+      {
+        "en": "The chickens scratched the soil beside our vegetable patch.",
+        "zh": "那些鸡在我们的菜地旁刨土。",
+        "vi": "Mấy con gà bới đất tìm giun ngay cạnh luống rau nhà tôi."
+      },
+      {
+        "en": "Replacing some red meat with chicken can reduce the environmental impact of a person's diet.",
+        "zh": "用鸡肉替代部分红肉，可以减少个人饮食对环境的影响。",
+        "vi": "Thay bớt thịt đỏ bằng thịt gà có thể làm giảm bớt tác động tiêu cực của khẩu phần ăn đối với môi trường tự nhiên."
+      }
+    ],
+    "col": [
+      "keep chickens｜nuôi gà",
+      "roast chicken｜thịt gà quay",
+      "chicken breast｜ức gà",
+      "chicken soup｜súp gà, canh gà"
+    ],
+    "fam": [],
+    "syn": [],
+    "ant": [],
+    "tip": "指活鸡时可数，指鸡肉时不可数；小鸡常用chick。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "chicken",
+    "m": 31,
+    "tip_vi": "Quy tắc ngữ pháp quan trọng: khi nói về con gà sống thì đây là danh từ đếm được (\"three chickens\"), nhưng khi là món ăn trên bàn thì thịt gà lại không đếm được (\"I eat chicken every day\"). Gà con mới nở dùng từ \"chick\"."
+  },
+  {
+    "w": "milk",
+    "uk": "/mɪlk/",
+    "us": "/mɪlk/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "奶；牛奶",
+        "en": "A white liquid female mammals produce to feed their young.",
+        "vi": "sữa (chất lỏng màu trắng từ động vật có vú)"
+      },
+      {
+        "pos": "v.",
+        "zh": "挤奶",
+        "en": "Take milk from an animal, especially a cow.",
+        "vi": "vắt sữa (bò, dê)"
+      }
+    ],
+    "ex": [
+      {
+        "en": "I poured some cold milk over my cereal.",
+        "zh": "我往麦片上倒了些冷牛奶。",
+        "vi": "Tôi rót chút sữa lạnh vào bát ngũ cốc buổi sáng."
+      },
+      {
+        "en": "Milk provides calcium and protein, although people with certain dietary needs may choose suitable alternatives.",
+        "zh": "牛奶提供钙和蛋白质，但有特殊饮食需求的人可以选择合适的替代品。",
+        "vi": "Sữa cung cấp hàm lượng canxi và đạm dồi dào, dù những người có cơ địa đặc thù có thể chọn các loại thức uống thay thế phù hợp."
+      }
+    ],
+    "col": [
+      "a glass of milk｜một cốc sữa",
+      "skimmed milk｜sữa tách béo",
+      "milk a cow｜vắt sữa bò"
+    ],
+    "fam": [
+      "milky (adj.)"
+    ],
+    "syn": [],
+    "ant": [],
+    "tip": "milk通常不可数；说a glass of milk，不说a milk。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "milk",
+    "m": 31,
+    "tip_vi": "\"Milk\" là danh từ không đếm được, muốn chỉ số lượng phải dùng các từ đo lường như \"a glass of milk\" hay \"a carton of milk\". Sữa tách béo tiếng Anh Anh dùng \"skimmed milk\", còn tiếng Anh Mỹ hay gọi là \"skim milk\"."
+  },
+  {
+    "w": "and",
+    "uk": "/ænd/",
+    "us": "/ænd/",
+    "senses": [
+      {
+        "pos": "conj.",
+        "zh": "和；并且",
+        "en": "Connects words or statements that belong together.",
+        "vi": "và, cùng với (nối từ, cụm từ hoặc mệnh đề tương đương)"
+      },
+      {
+        "pos": "conj.",
+        "zh": "然后；就",
+        "en": "Connects an action with what follows or results from it.",
+        "vi": "rồi thì, và sau đó (nối hành động tiếp nối hoặc kết quả kéo theo)"
+      }
+    ],
+    "ex": [
+      {
+        "en": "I bought fresh bread and cheese for our picnic.",
+        "zh": "我为我们的野餐买了新鲜面包和奶酪。",
+        "vi": "Tôi ghé mua bánh mì nóng và một ít phô mai cho chuyến dã ngoại."
+      },
+      {
+        "en": "Governments should invest in public transport and encourage cycling to reduce congestion in growing cities.",
+        "zh": "政府应投资公共交通并鼓励骑行，以缓解发展中城市的交通拥堵。",
+        "vi": "Chính phủ nên đầu tư vào phương tiện công cộng và khuyến khích đi xe đạp để giảm bớt tắc nghẽn giao thông ở các đô thị đang mở rộng."
+      }
+    ],
+    "col": [
+      "both ... and ...｜cả ... lẫn ...",
+      "and so on｜vân vân",
+      "more and more｜ngày càng nhiều",
+      "again and again｜lặp đi lặp lại nhiều lần"
+    ],
+    "fam": [],
+    "syn": [],
+    "ant": [],
+    "tip": "连接并列成分时注意结构一致；口语常弱读/ən/。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "and",
+    "m": 31,
+    "tip_vi": "Trong văn nói, từ này hay được đọc lướt thành /ən/ hoặc /n/ (\"rock 'n' roll\"). Tuy nhiên trong IELTS Writing Task 2, đừng bắt đầu câu mới bằng từ \"And\"; hãy dùng các liên từ liên kết ý mạch lạc hơn như \"In addition\" hoặc cấu trúc song hành \"both... and...\"."
+  },
+  {
+    "w": "most",
+    "uk": "/məʊst/",
+    "us": "/moʊst/",
+    "senses": [
+      {
+        "pos": "det.",
+        "zh": "大多数的；最多的",
+        "en": "the majority of something, or the greatest amount or number",
+        "vi": "phần lớn, đa số, hầu hết"
+      },
+      {
+        "pos": "pron.",
+        "zh": "大多数；最大部分",
+        "en": "the majority or greatest part of a group or amount",
+        "vi": "phần nhiều nhất, đại bộ phận"
+      },
+      {
+        "pos": "adv.",
+        "zh": "最；非常",
+        "en": "to the greatest degree; sometimes used to mean very",
+        "vi": "nhất, tột bậc (dùng trong so sánh nhất hoặc mang nghĩa rất)"
+      }
+    ],
+    "ex": [
+      {
+        "en": "Most shops here close before we finish work.",
+        "zh": "这里大多数商店在我们下班前就关门了。",
+        "vi": "Hầu hết các cửa hàng ở khu này đều đóng cửa trước khi chúng tôi tan sở."
+      },
+      {
+        "en": "Most urban residents would benefit from reliable public transport that connects residential areas with major employment centres.",
+        "zh": "大多数城市居民都会受益于连接住宅区与主要就业中心的可靠公共交通。",
+        "vi": "Phần lớn cư dân đô thị sẽ được hưởng lợi từ một hệ thống giao thông công cộng đáng tin cậy, kết nối khu dân cư với các trung tâm việc làm lớn."
+      }
+    ],
+    "col": [
+      "most people｜đa số mọi người",
+      "most of the time｜hầu hết thời gian",
+      "at most｜nhiều nhất là, tối đa",
+      "the most important｜quan trọng nhất"
+    ],
+    "fam": [
+      "more (adv.)"
+    ],
+    "syn": [],
+    "ant": [
+      "least"
+    ],
+    "tip": "泛指用most people；特指用most of the people。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "most",
+    "m": 31,
+    "tip_vi": "Lỗi ngữ pháp cực kỳ phổ biến: khi nói chung chung không xác định thì dùng \"most + danh từ số nhiều\" (ví dụ: \"most people\"), nhưng nếu nói về một nhóm đối tượng cụ thể đã xác định thì bắt buộc phải có \"of the\" (ví dụ: \"most of the people in this room\")."
+  },
+  {
+    "w": "story",
+    "uk": "/ˈstɔːri/",
+    "us": "/ˈstɔːri/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "故事；经历的叙述",
+        "en": "an account of real or imagined events",
+        "vi": "câu chuyện, tích truyện (chuyện có thật hoặc tưởng tượng)"
+      },
+      {
+        "pos": "n.",
+        "zh": "新闻报道",
+        "en": "a report about an event in the news",
+        "vi": "tin bài, câu chuyện thời sự trên báo đài"
+      },
+      {
+        "pos": "n.",
+        "zh": "楼层（美式）",
+        "en": "one level of a building, in American English",
+        "vi": "tầng lầu của một tòa nhà (cách viết kiểu Mỹ)"
+      }
+    ],
+    "ex": [
+      {
+        "en": "Grandma told us a funny story about her childhood.",
+        "zh": "奶奶给我们讲了一个她童年的趣事。",
+        "vi": "Bà vừa kể cho tụi mình nghe một câu chuyện cười thú vị về thời thơ ấu của bà."
+      },
+      {
+        "en": "Sharing a personal story can help students understand historical events from a more human perspective.",
+        "zh": "分享个人经历可以帮助学生从更有人情味的角度理解历史事件。",
+        "vi": "Việc lắng nghe câu chuyện của từng cá nhân sẽ giúp học sinh hiểu sâu sắc các sự kiện lịch sử dưới góc nhìn nhân văn hơn."
+      }
+    ],
+    "col": [
+      "tell a story｜kể một câu chuyện",
+      "short story｜truyện ngắn",
+      "news story｜tin tức thời sự",
+      "true story｜câu chuyện có thật"
+    ],
+    "fam": [
+      "storyteller (n.)",
+      "storytelling (n.)"
+    ],
+    "syn": [
+      "tale",
+      "account"
+    ],
+    "ant": [],
+    "tip": "楼层英式写storey，美式写story；高度不固定。",
+    "cefr": "A1",
+    "topic": "arts",
+    "note": "",
+    "id": "story",
+    "m": 31,
+    "tip_vi": "Về tầng nhà: tiếng Anh Mỹ viết là \"story\" (số nhiều \"stories\"), còn tiếng Anh Anh viết là \"storey\" (số nhiều \"storeys\"). Khi nói tòa nhà 10 tầng, dùng tính từ ghép: \"a ten-storey building\" (không để số nhiều ở chữ storey)."
+  },
+  {
+    "w": "other",
+    "uk": "/ˈʌðə/",
+    "us": "/ˈʌðər/",
+    "senses": [
+      {
+        "pos": "det.",
+        "zh": "其他的；另外的",
+        "en": "Different from or additional to those already mentioned.",
+        "vi": "khác, thêm vào, còn lại (đi kèm danh từ)"
+      },
+      {
+        "pos": "pron.",
+        "zh": "另外的人或事物",
+        "en": "A remaining or different person or thing.",
+        "vi": "người khác, vật khác, cái còn lại (đại từ)"
+      }
+    ],
+    "ex": [
+      {
+        "en": "This shoe fits, but where is the other one?",
+        "zh": "这只鞋合脚，但另一只在哪里？",
+        "vi": "Chiếc giày này đi rất vừa chân, nhưng chiếc còn lại đâu rồi nhỉ?"
+      },
+      {
+        "en": "Schools should teach practical skills alongside other subjects to prepare students for the demands of adult life.",
+        "zh": "学校应在教授其他科目的同时传授实用技能，让学生为成年生活的要求做好准备。",
+        "vi": "Nhà trường nên lồng ghép các kỹ năng thực tế song song với các môn học khác nhằm chuẩn bị cho học sinh trước những đòi hỏi của cuộc sống trưởng thành."
+      }
+    ],
+    "col": [
+      "other people｜những người khác",
+      "the other day｜hôm nọ, mấy ngày trước",
+      "each other｜lẫn nhau (hai đối tượng)",
+      "on the other hand｜mặt khác, ngược lại"
+    ],
+    "fam": [],
+    "syn": [],
+    "ant": [],
+    "tip": "other后接名词；others独立使用；两者中另一个用the other。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "other",
+    "m": 31,
+    "tip_vi": "Quy tắc cần nhớ: \"other\" đứng trước danh từ (\"other students\"); \"others\" đứng độc lập làm đại từ, không đi cùng danh từ phía sau (\"some like coffee, others prefer tea\"); còn \"the other\" chỉ đối tượng còn lại trong hai cái hoặc người cụ thể."
+  },
+  {
+    "w": "apple",
+    "uk": "/ˈæpəl/",
+    "us": "/ˈæpəl/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "苹果",
+        "en": "a round fruit with firm flesh and red or green skin",
+        "vi": "quả táo"
+      }
+    ],
+    "ex": [
+      {
+        "en": "I packed an apple and a sandwich for lunch.",
+        "zh": "我装了一个苹果和一个三明治当午餐。",
+        "vi": "Mình mang theo một quả táo và chiếc bánh mì kẹp để ăn trưa."
+      },
+      {
+        "en": "Providing fresh fruit, such as apples, in schools may encourage children to develop healthier eating habits.",
+        "zh": "在学校提供苹果等新鲜水果，可能有助于鼓励儿童养成更健康的饮食习惯。",
+        "vi": "Cung cấp trái cây tươi như táo trong trường học có thể tạo động lực cho các em nhỏ hình thành thói quen ăn uống lành mạnh hơn."
+      }
+    ],
+    "col": [
+      "apple juice｜nước ép táo",
+      "apple pie｜bánh táo nướng",
+      "an apple core｜lõi quả táo",
+      "a crisp apple｜quả táo giòn ngọt"
+    ],
+    "fam": [],
+    "syn": [],
+    "ant": [],
+    "tip": "可数名词；“一个苹果”用an apple。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "apple",
+    "m": 31,
+    "tip_vi": "Vì từ này bắt đầu bằng nguyên âm nên mạo từ đi kèm là \"an\": \"an apple\". Trong giao tiếp, cụm thành ngữ nổi tiếng \"an apple a day keeps the doctor away\" nói về tầm quan trọng của việc ăn uống lành mạnh để phòng bệnh."
+  },
+  {
+    "w": "Chinese",
+    "uk": "/ˌtʃaɪˈniːz/",
+    "us": "/ˌtʃaɪˈniːz/",
+    "senses": [
+      {
+        "pos": "adj.",
+        "zh": "中国的；汉语的",
+        "en": "Relating to China, its people, or its languages.",
+        "vi": "thuộc về Trung Quốc, người Trung Quốc hoặc tiếng Trung"
+      },
+      {
+        "pos": "n.",
+        "zh": "汉语；中文",
+        "en": "The group of languages spoken in China, especially Mandarin.",
+        "vi": "tiếng Trung Quốc (tiếng Quan Thoại hoặc các phương ngôn)"
+      },
+      {
+        "pos": "n.",
+        "zh": "中国人",
+        "en": "People who come from China.",
+        "vi": "người Trung Quốc (dùng ở dạng số nhiều quy ước)"
+      }
+    ],
+    "ex": [
+      {
+        "en": "We shared Chinese dumplings at a small restaurant yesterday.",
+        "zh": "昨天我们在一家小餐馆一起吃了中式饺子。",
+        "vi": "Hôm qua tụi mình cùng nhau ăn há cảo Trung Hoa tại một quán ăn nhỏ."
+      },
+      {
+        "en": "Learning Chinese can help international students develop a deeper understanding of cultural traditions in China.",
+        "zh": "学习汉语可以帮助国际学生更深入地了解中国的文化传统。",
+        "vi": "Học tiếng Trung giúp sinh viên quốc tế có điều kiện tìm hiểu sâu sắc hơn về các truyền thống văn hóa của đất nước này."
+      }
+    ],
+    "col": [
+      "Chinese culture｜văn hóa Trung Hoa",
+      "learn Chinese｜học tiếng Trung",
+      "Chinese characters｜chữ Hán",
+      "Chinese cuisine｜ẩm thực Trung Hoa"
+    ],
+    "fam": [
+      "China (n.)"
+    ],
+    "syn": [],
+    "ant": [],
+    "tip": "首字母始终大写；指一个中国人常用a Chinese person。",
+    "cefr": "A1",
+    "topic": "society",
+    "note": "",
+    "id": "chinese",
+    "m": 31,
+    "tip_vi": "Tên quốc tịch và ngôn ngữ luôn viết hoa chữ cái đầu: \"Chinese\". Để chỉ một cá nhân người Trung Quốc, hãy nói \"a Chinese person\" hoặc \"a Chinese student\", đừng nói mỗi \"a Chinese\" vì nghe thiếu tự nhiên."
+  },
+  {
+    "w": "air",
+    "uk": "/eə/",
+    "us": "/er/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "空气",
+        "en": "The mixture of gases surrounding Earth that people breathe.",
+        "vi": "không khí, bầu khí quyển mà con người hít thở"
+      },
+      {
+        "pos": "n.",
+        "zh": "神态；气氛",
+        "en": "A particular quality that someone or something seems to have.",
+        "vi": "vẻ ngoài, phong thái, khí chất toát ra"
+      },
+      {
+        "pos": "v.",
+        "zh": "使通风；公开表达",
+        "en": "To let fresh air in, or express views publicly.",
+        "vi": "làm thoáng khí, hoặc bày tỏ quan điểm công khai"
+      }
+    ],
+    "ex": [
+      {
+        "en": "I opened the window to let fresh air in.",
+        "zh": "我打开窗户，让新鲜空气进来。",
+        "vi": "Tôi mở toang cửa sổ ra cho không khí trong lành tràn vào phòng."
+      },
+      {
+        "en": "Improving air quality in cities requires cleaner transport and stricter controls on industrial emissions.",
+        "zh": "改善城市空气质量需要更清洁的交通方式，以及对工业排放更严格的管控。",
+        "vi": "Muốn cải thiện chất lượng không khí ở các đô thị thì cần ưu tiên phương tiện giao thông sạch và kiểm soát chặt chẽ khí thải từ các nhà máy."
+      }
+    ],
+    "col": [
+      "fresh air｜không khí trong lành",
+      "air pollution｜ô nhiễm không khí",
+      "an air of confidence｜vẻ ngoài tự tin",
+      "air concerns｜bày tỏ những mối bận tâm"
+    ],
+    "fam": [
+      "airy (adj.)",
+      "airless (adj.)"
+    ],
+    "syn": [],
+    "ant": [],
+    "tip": "表示空气时不可数；an air of表示“带有某种气质”。",
+    "cefr": "A1",
+    "topic": "environment",
+    "note": "",
+    "id": "air",
+    "m": 31,
+    "tip_vi": "Khi chỉ không khí, đây là danh từ không đếm được. Trong IELTS Writing chủ đề môi trường, các cụm \"improve air quality\" hay \"tackle air pollution\" là những từ vựng nền tảng bắt buộc phải dùng nhuần nhuyễn."
+  },
+  {
+    "w": "because",
+    "uk": "/bɪˈkɒz/",
+    "us": "/bɪˈkɔːz/",
+    "senses": [
+      {
+        "pos": "conj.",
+        "zh": "因为；由于",
+        "en": "Introduces the reason why something happens or is true.",
+        "vi": "bởi vì, do vì (dùng mở đầu mệnh đề nêu nguyên nhân)"
+      }
+    ],
+    "ex": [
+      {
+        "en": "I closed the window because the room felt cold.",
+        "zh": "我关上了窗户，因为房间里有点冷。",
+        "vi": "Tôi khép cửa sổ lại vì thấy trong phòng hơi se lạnh."
+      },
+      {
+        "en": "Many commuters choose public transport because it is cheaper and produces fewer emissions than driving alone.",
+        "zh": "许多通勤者选择公共交通，因为它比独自开车更省钱，排放也更少。",
+        "vi": "Nhiều người đi làm chọn phương tiện công cộng vì nó tiết kiệm chi phí và ít xả khí thải hơn so với việc tự lái xe một mình."
+      }
+    ],
+    "col": [
+      "because of the weather｜do thời tiết",
+      "because of this｜chính vì điều này",
+      "partly because｜một phần là do"
+    ],
+    "fam": [],
+    "syn": [
+      "since",
+      "as"
+    ],
+    "ant": [],
+    "tip": "because 后接从句；because of 后接名词或动名词。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "because",
+    "m": 31,
+    "tip_vi": "Phân biệt dứt khoát: \"because\" nối một mệnh đề có đầy đủ chủ vị (\"because it is cheap\"), còn \"because of\" đi sau là một danh từ hoặc cụm danh từ (\"because of the low cost\"). Tránh lỗi viết rời rạc bắt đầu câu bằng \"Because...\" rồi ngắt câu khi chưa có mệnh đề chính."
+  },
+  {
+    "w": "team",
+    "uk": "/tiːm/",
+    "us": "/tiːm/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "队；团队",
+        "en": "a group working together or playing a sport together",
+        "vi": "đội, nhóm, tập thể cùng làm việc hoặc thi đấu"
+      },
+      {
+        "pos": "v.",
+        "zh": "合作；组成团队",
+        "en": "to join someone to work together, usually with up",
+        "vi": "phối hợp, hợp lực cùng ai (thường đi với \"up\")"
+      }
+    ],
+    "ex": [
+      {
+        "en": "Our team celebrated with pizza after winning the match.",
+        "zh": "我们队赢得比赛后，吃披萨庆祝了一番。",
+        "vi": "Đội chúng tôi đã liên hoan pizza sau khi giành thắng lợi trong trận đấu."
+      },
+      {
+        "en": "Working in a team helps students develop communication skills that are essential for future employment.",
+        "zh": "团队合作有助于学生培养未来就业所必需的沟通能力。",
+        "vi": "Làm việc theo nhóm giúp học sinh rèn luyện những kỹ năng giao tiếp thiết thực cho công việc tương lai sau này."
+      }
+    ],
+    "col": [
+      "team member｜thành viên trong nhóm",
+      "team spirit｜tinh thần đồng đội",
+      "team up with｜bắt tay hợp tác với ai",
+      "research team｜nhóm nghiên cứu"
+    ],
+    "fam": [
+      "teamwork (n.)",
+      "teammate (n.)"
+    ],
+    "syn": [
+      "squad",
+      "crew"
+    ],
+    "ant": [],
+    "tip": "英式英语中team可接单数或复数谓语。",
+    "cefr": "A1",
+    "topic": "work",
+    "note": "",
+    "id": "team",
+    "m": 31,
+    "tip_vi": "Cụm động từ \"team up with someone\" (bắt tay hợp tác với ai) rất phổ biến trong cả văn nói lẫn văn viết. Danh từ tập hợp \"team\" trong tiếng Anh Anh có thể đi với động từ số nhiều nếu nhấn mạnh từng thành viên, nhưng trong tiếng Anh Mỹ hay chia số ít."
+  },
+  {
+    "w": "right",
+    "uk": "/raɪt/",
+    "us": "/raɪt/",
+    "senses": [
+      {
+        "pos": "adj.",
+        "zh": "正确的；合适的",
+        "en": "Correct, true, or suitable for a particular purpose.",
+        "vi": "đúng đắn, chính xác, phù hợp"
+      },
+      {
+        "pos": "n.",
+        "zh": "权利",
+        "en": "Something you are legally or morally entitled to.",
+        "vi": "quyền lợi, quyền hạn hợp pháp hoặc đạo lý"
+      },
+      {
+        "pos": "adj.",
+        "zh": "右边的；右侧的",
+        "en": "On the side opposite to the left.",
+        "vi": "bên phải, phía bên tay phải"
+      }
+    ],
+    "ex": [
+      {
+        "en": "You picked the right key to open the door.",
+        "zh": "你选对了开门的钥匙。",
+        "vi": "Bạn đã chọn đúng chiếc chìa khóa để mở cánh cửa này rồi."
+      },
+      {
+        "en": "Every child has the right to receive an education, regardless of their family's financial circumstances.",
+        "zh": "每个孩子都有受教育的权利，无论其家庭经济状况如何。",
+        "vi": "Mọi đứa trẻ đều có quyền được học hành, bất kể hoàn cảnh kinh tế gia đình của các em ra sao."
+      }
+    ],
+    "col": [
+      "the right answer｜câu trả lời đúng",
+      "the right to education｜quyền được học hành",
+      "on the right｜ở bên tay phải",
+      "make the right decision｜đưa ra quyết định sáng suốt"
+    ],
+    "fam": [
+      "rightly (adv.)",
+      "rightness (n.)"
+    ],
+    "syn": [
+      "correct",
+      "appropriate"
+    ],
+    "ant": [
+      "wrong"
+    ],
+    "tip": "表示权利用a right to；表示在右边用on the right。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "right",
+    "m": 31,
+    "tip_vi": "Khi nói về quyền làm gì, dùng cấu trúc \"the right to do something\" hoặc \"human rights\" (nhân quyền). Khi chỉ vị trí phương hướng thì dùng giới từ \"on\": \"on the right\", đừng nhầm sang \"in the right\"."
+  },
+  {
+    "w": "difficult",
+    "uk": "/ˈdɪfɪkəlt/",
+    "us": "/ˈdɪfɪkəlt/",
+    "senses": [
+      {
+        "pos": "adj.",
+        "zh": "困难的；费力的",
+        "en": "Needing considerable effort or skill to do or understand.",
+        "vi": "khó khăn, cam go, đòi hỏi nhiều kỹ năng hoặc nỗ lực"
+      },
+      {
+        "pos": "adj.",
+        "zh": "难相处的；难应付的",
+        "en": "Not easy to please, manage, or deal with.",
+        "vi": "khó tính, khó chiều, khó ứng xử"
+      }
+    ],
+    "ex": [
+      {
+        "en": "This heavy suitcase is difficult to carry upstairs.",
+        "zh": "这个沉重的行李箱很难搬上楼。",
+        "vi": "Chiếc vali nặng nề này bê lên cầu thang quả là khó khăn."
+      },
+      {
+        "en": "Many graduates find it difficult to secure stable employment without previous experience in their chosen field.",
+        "zh": "许多毕业生发现，如果没有所选领域的工作经验，就很难找到稳定的工作。",
+        "vi": "Nhiều sinh viên mới ra trường thấy khó tìm được công việc ổn định nếu trước đó chưa từng có kinh nghiệm thực tế trong ngành."
+      }
+    ],
+    "col": [
+      "a difficult decision｜quyết định khó khăn",
+      "difficult to understand｜khó hiểu",
+      "a difficult customer｜vị khách khó tính"
+    ],
+    "fam": [
+      "difficulty (n.)"
+    ],
+    "syn": [
+      "hard",
+      "challenging"
+    ],
+    "ant": [
+      "easy"
+    ],
+    "tip": "常用find it difficult to do，勿把difficulty当形容词。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "difficult",
+    "m": 31,
+    "tip_vi": "Cấu trúc kinh điển trong IELTS Writing và Speaking: \"find it difficult to do something\" (nhận thấy làm việc gì rất khó). Chú ý \"difficult\" là tính từ, còn danh từ là \"difficulty\" (\"have difficulty in doing something\")."
+  },
+  {
+    "w": "pencil",
+    "uk": "/ˈpensl/",
+    "us": "/ˈpensl/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "铅笔",
+        "en": "A tool with a solid core for writing or drawing.",
+        "vi": "bút chì (dụng cụ vẽ hoặc viết)"
+      },
+      {
+        "pos": "v.",
+        "zh": "用铅笔写或画",
+        "en": "To write or draw something with a pencil.",
+        "vi": "vẽ hoặc viết bằng bút chì; ghi chú tạm thời"
+      }
+    ],
+    "ex": [
+      {
+        "en": "She sharpened her pencil before sketching the sleeping cat.",
+        "zh": "她削好铅笔，开始画那只熟睡的猫。",
+        "vi": "Cô ấy gọt lại chiếc bút chì trước khi phác thảo chú mèo đang say ngủ."
+      },
+      {
+        "en": "Using a pencil allows students to revise diagrams easily as their understanding of scientific concepts develops.",
+        "zh": "使用铅笔让学生能随着对科学概念理解的加深，轻松修改图示。",
+        "vi": "Dùng bút chì giúp học sinh dễ dàng chỉnh sửa lại các sơ đồ khi hiểu biết của mình về các khái niệm khoa học dần hoàn thiện hơn."
+      }
+    ],
+    "col": [
+      "sharpen a pencil｜gọt bút chì",
+      "in pencil｜viết bằng bút chì",
+      "coloured pencil｜bút chì màu",
+      "pencil case｜hộp đựng bút"
+    ],
+    "fam": [],
+    "syn": [],
+    "ant": [],
+    "tip": "用铅笔写说in pencil；pencil in指暂定安排。",
+    "cefr": "A1",
+    "topic": "education",
+    "note": "",
+    "id": "pencil",
+    "m": 31,
+    "tip_vi": "Muốn nói viết bằng bút chì, bạn phải dùng giới từ \"in\": \"written in pencil\" (tương tự \"in pen\", \"in ink\"), không dùng \"with pencil\". Thành ngữ công sở thú vị: \"pencil someone/something in\" mang nghĩa xếp lịch hẹn tạm thời."
+  },
+  {
+    "w": "somebody",
+    "uk": "/ˈsʌmbədi/",
+    "us": "/ˈsʌmbədi/",
+    "senses": [
+      {
+        "pos": "pron.",
+        "zh": "某人；有人",
+        "en": "a person whose identity is unknown or not stated",
+        "vi": "ai đó, một người nào đó (chưa biết đích danh)"
+      }
+    ],
+    "ex": [
+      {
+        "en": "Somebody left a blue umbrella beside the front door.",
+        "zh": "有人把一把蓝色雨伞落在了前门旁边。",
+        "vi": "Ai đó đã để quên chiếc ô màu xanh dương ngay cạnh cửa chính."
+      },
+      {
+        "en": "Students are more likely to seek help when they know somebody will listen without judging them.",
+        "zh": "如果学生知道有人会倾听而不评判他们，就更有可能寻求帮助。",
+        "vi": "Học sinh sẽ dễ mở lòng xin giúp đỡ hơn khi các em biết rằng có ai đó sẵn sàng lắng nghe mà không hề phán xét mình."
+      }
+    ],
+    "col": [
+      "somebody else｜người khác",
+      "somebody to talk to｜một ai đó để sẻ chia tâm sự",
+      "somebody special｜người có vị trí đặc biệt trong lòng"
+    ],
+    "fam": [],
+    "syn": [
+      "someone"
+    ],
+    "ant": [
+      "nobody"
+    ],
+    "tip": "作主语时谓语用单数；回指常用they。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "somebody",
+    "m": 31,
+    "tip_vi": "\"Somebody\" và \"someone\" hoàn toàn đồng nghĩa và có thể thay thế cho nhau. Chúng đều làm chủ ngữ số ít, do đó động từ theo sau chia ở ngôi thứ ba số ít (\"Somebody is at the door\")."
+  },
+  {
+    "w": "person",
+    "uk": "/ˈpɜːsən/",
+    "us": "/ˈpɝːsən/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "人；个人",
+        "en": "an individual human being",
+        "vi": "con người, một cá nhân"
+      },
+      {
+        "pos": "n.",
+        "zh": "语法人称",
+        "en": "a grammatical category distinguishing speakers, listeners, and others",
+        "vi": "ngôi ngữ pháp (chỉ ngôi thứ nhất, hai hoặc ba)"
+      }
+    ],
+    "ex": [
+      {
+        "en": "Only one person was waiting outside the bakery.",
+        "zh": "只有一个人在面包店外等候。",
+        "vi": "Chỉ có đúng một người đang đứng đợi trước cửa tiệm bánh mì."
+      },
+      {
+        "en": "Every person should have access to affordable healthcare, regardless of income or employment status.",
+        "zh": "每个人都应享有负担得起的医疗服务，无论其收入或就业状况如何。",
+        "vi": "Mọi người dân đều xứng đáng được hưởng dịch vụ chăm sóc sức khỏe với mức giá hợp lý, bất kể thu nhập hay tình trạng việc làm của họ."
+      }
+    ],
+    "col": [
+      "in person｜trực tiếp, đích thân gặp mặt",
+      "a young person｜người trẻ tuổi",
+      "the average person｜người bình thường, dân thường",
+      "first person｜ngôi thứ nhất"
+    ],
+    "fam": [
+      "personal (adj.)",
+      "personally (adv.)",
+      "personality (n.)"
+    ],
+    "syn": [
+      "individual"
+    ],
+    "ant": [],
+    "tip": "普通复数用people；persons多见于正式法律语境。",
+    "cefr": "A1",
+    "topic": "society",
+    "note": "",
+    "id": "person",
+    "m": 31,
+    "tip_vi": "Dạng số nhiều thông dụng nhất là \"people\". Dạng \"persons\" chỉ xuất hiện trong văn bản pháp luật hoặc thông báo mang tính hành chính cứng nhắc. Cụm \"in person\" (đích thân tới gặp trực tiếp) rất hay gặp trong IELTS Speaking khi so sánh giữa làm việc từ xa và tới văn phòng."
+  },
+  {
+    "w": "street",
+    "uk": "/striːt/",
+    "us": "/striːt/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "街道",
+        "en": "a public road in a town, usually lined with buildings",
+        "vi": "đường phố, phố xá (đường trong đô thị có nhà cửa hai bên)"
+      }
+    ],
+    "ex": [
+      {
+        "en": "We crossed the street to reach the bakery.",
+        "zh": "我们穿过街道来到面包店。",
+        "vi": "Tụi mình băng qua đường để sang tiệm bánh mì đối diện."
+      },
+      {
+        "en": "Planting trees along busy streets can improve air quality and make urban neighbourhoods more pleasant for pedestrians.",
+        "zh": "沿繁忙街道植树可以改善空气质量，让城市街区更适宜步行。",
+        "vi": "Trồng thêm cây xanh dọc theo các tuyến phố đông đúc giúp lọc bớt bụi bẩn và tạo bóng mát dễ chịu cho người đi bộ."
+      }
+    ],
+    "col": [
+      "cross the street｜băng qua đường",
+      "busy street｜đường phố tấp nập, nhộn nhịp",
+      "residential street｜đường trong khu dân cư",
+      "street lighting｜hệ thống đèn đường chiếu sáng"
+    ],
+    "fam": [],
+    "syn": [],
+    "ant": [],
+    "tip": "street多指城镇中两旁有建筑的道路。",
+    "cefr": "A1",
+    "topic": "city",
+    "note": "",
+    "id": "street",
+    "m": 31,
+    "tip_vi": "Phân biệt: \"street\" là đường trong thị trấn hoặc thành phố có nhà cửa san sát hai bên; còn \"road\" chỉ chung mọi con đường kết nối giữa các địa điểm hay liên tỉnh. Ở Anh người ta nói \"in the street\", còn người Mỹ quen dùng \"on the street\"."
+  },
+  {
+    "w": "include",
+    "uk": "/ɪnˈkluːd/",
+    "us": "/ɪnˈkluːd/",
+    "senses": [
+      {
+        "pos": "v.",
+        "zh": "包括；包含",
+        "en": "have someone or something as part of a whole",
+        "vi": "bao gồm, gồm có (như một phần của tổng thể)"
+      },
+      {
+        "pos": "v.",
+        "zh": "使加入；把…列入",
+        "en": "make someone or something part of a group or activity",
+        "vi": "đưa vào, tính gộp vào nhóm hoặc hoạt động"
+      }
+    ],
+    "ex": [
+      {
+        "en": "Does the price include breakfast and a clean towel?",
+        "zh": "这个价格包含早餐和一条干净毛巾吗？",
+        "vi": "Giá phòng này đã bao gồm bữa sáng và khăn tắm sạch chưa ạ?"
+      },
+      {
+        "en": "Urban development plans should include affordable housing and reliable public transport to support low-income residents.",
+        "zh": "城市发展规划应包含经济适用住房和可靠的公共交通，以支持低收入居民。",
+        "vi": "Các kế hoạch phát triển đô thị cần tính đến cả nhà ở giá rẻ lẫn mạng lưới phương tiện công cộng đáng tin cậy để hỗ trợ người có thu nhập thấp."
+      }
+    ],
+    "col": [
+      "include someone in｜cho ai tham gia vào cùng",
+      "include a range of｜bao gồm nhiều loại đa dạng",
+      "price includes｜mức giá đã bao gồm trọn gói"
+    ],
+    "fam": [
+      "inclusion (n.)",
+      "inclusive (adj.)",
+      "including (prep.)"
+    ],
+    "syn": [
+      "contain",
+      "incorporate"
+    ],
+    "ant": [
+      "exclude"
+    ],
+    "tip": "include常列出部分内容，不表示完整清单。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "include",
+    "m": 31,
+    "tip_vi": "Từ \"include\" chỉ liệt kê một số thành phần tiêu biểu bên trong tổng thể (chứ không phải toàn bộ danh sách). Dạng phân từ \"including\" thường được dùng làm giới từ rất tiện lợi trong câu: \"The tour visits several cities, including Rome and Florence.\""
+  },
+  {
+    "w": "radio",
+    "uk": "/ˈreɪdiəʊ/",
+    "us": "/ˈreɪdioʊ/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "收音机",
+        "en": "a device used to receive and play broadcast sound",
+        "vi": "máy thu thanh, chiếc đài radio"
+      },
+      {
+        "pos": "n.",
+        "zh": "无线电广播；无线电通信",
+        "en": "broadcasting or communication using electromagnetic waves",
+        "vi": "ngành phát thanh, sóng vô tuyến truyền âm"
+      },
+      {
+        "pos": "v.",
+        "zh": "用无线电联系或发送",
+        "en": "to contact someone or send information using radio equipment",
+        "vi": "gọi vô tuyến, truyền tin qua sóng phát thanh"
+      }
+    ],
+    "ex": [
+      {
+        "en": "Dad keeps a small radio on the kitchen shelf.",
+        "zh": "爸爸在厨房架子上放着一台小收音机。",
+        "vi": "Bố tôi đặt một chiếc đài nhỏ ngay trên kệ bếp."
+      },
+      {
+        "en": "Radio remains an important source of information in remote communities where reliable internet access is limited.",
+        "zh": "在难以稳定上网的偏远社区，广播仍是重要的信息来源。",
+        "vi": "Đài phát thanh vẫn là nguồn cung cấp thông tin hữu hiệu cho các bản làng xa xôi, nơi kết nối internet còn nhiều gián đoạn."
+      }
+    ],
+    "col": [
+      "listen to the radio｜nghe đài phát thanh",
+      "radio station｜đài phát thanh",
+      "radio programme｜chương trình phát thanh",
+      "radio signal｜tín hiệu sóng vô tuyến"
+    ],
+    "fam": [],
+    "syn": [],
+    "ant": [],
+    "tip": "听广播常说listen to the radio；在广播中用on the radio。",
+    "cefr": "A1",
+    "topic": "media",
+    "note": "",
+    "id": "radio",
+    "m": 31,
+    "tip_vi": "Nghe đài thì phải có mạo từ: \"listen to the radio\". Khi muốn nói một chương trình hay bản tin được phát trên đài, giới từ chuẩn xác là \"on\": \"I heard that news on the radio\"."
+  },
+  {
+    "w": "post office",
+    "uk": "/ˈpəʊst ˌɒfɪs/",
+    "us": "/ˈpoʊst ˌɑːfɪs/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "邮局",
+        "en": "a place where people send mail and buy stamps",
+        "vi": "bưu điện (nơi gửi thư từ, bưu kiện và bán tem thư)"
+      }
+    ],
+    "ex": [
+      {
+        "en": "I took the parcel to the post office before lunch.",
+        "zh": "午饭前，我把包裹送到了邮局。",
+        "vi": "Tôi mang gói hàng ra bưu điện trước giờ nghỉ trưa."
+      },
+      {
+        "en": "A local post office can provide essential services for rural residents who lack reliable internet access.",
+        "zh": "当地邮局可以为缺乏可靠网络连接的农村居民提供基本服务。",
+        "vi": "Một bưu điện địa phương có thể cung cấp nhiều dịch vụ thiết yếu cho người dân ở vùng quê chưa có điều kiện tiếp cận mạng internet ổn định."
+      }
+    ],
+    "col": [
+      "local post office｜bưu điện địa phương",
+      "post office counter｜quầy giao dịch bưu điện",
+      "post office branch｜chi nhánh bưu điện"
+    ],
+    "fam": [
+      "post (n.)",
+      "post (v.)",
+      "postal (adj.)"
+    ],
+    "syn": [],
+    "ant": [],
+    "tip": "标准拼写为post office，两词之间不加连字符。",
+    "cefr": "A1",
+    "topic": "city",
+    "note": "已将非标准连字符拼写改为post office",
+    "id": "post-office",
+    "m": 31,
+    "tip_vi": "Từ này viết rời thành hai chữ \"post office\", không có dấu gạch nối. Khi làm bài thi IELTS Listening Section 1 về các tiện ích trong khu vực, \"post office\" là địa điểm rất hay được hỏi đến cùng với chỉ đường."
+  },
+  {
+    "w": "ice",
+    "uk": "/aɪs/",
+    "us": "/aɪs/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "冰",
+        "en": "water that has frozen solid",
+        "vi": "băng, đá đông lạnh"
+      },
+      {
+        "pos": "v.",
+        "zh": "给糕点覆糖霜",
+        "en": "to cover a cake or biscuit with icing",
+        "vi": "phủ lớp kem đường lên bánh ngọt"
+      }
+    ],
+    "ex": [
+      {
+        "en": "She dropped a few cubes of ice into her juice.",
+        "zh": "她往果汁里放了几块冰。",
+        "vi": "Cô ấy thả mấy viên đá lạnh vào ly nước ép hoa quả."
+      },
+      {
+        "en": "The loss of polar ice threatens wildlife habitats and can accelerate warming by reducing the reflection of sunlight.",
+        "zh": "极地冰层的消失威胁野生动物栖息地，还可能因减少阳光反射而加速变暖。",
+        "vi": "Băng ở các vùng cực tan chảy đe dọa trực tiếp môi trường sống của muông thú và khiến trái đất nóng lên nhanh hơn do lượng ánh sáng phản xạ bị sụt giảm."
+      }
+    ],
+    "col": [
+      "ice cube｜viên đá lạnh",
+      "sea ice｜băng trên mặt biển",
+      "melt the ice｜làm tan băng",
+      "ice a cake｜phủ kem đường lên mặt bánh"
+    ],
+    "fam": [
+      "icy (adj.)",
+      "icing (n.)"
+    ],
+    "syn": [],
+    "ant": [],
+    "tip": "ice指冰时通常不可数；一块冰用an ice cube。",
+    "cefr": "A1",
+    "topic": "nature",
+    "note": "",
+    "id": "ice",
+    "m": 31,
+    "tip_vi": "\"Ice\" là danh từ không đếm được. Muốn đếm từng cục đá nhỏ bỏ vào nước uống, bạn phải nói \"an ice cube\" hoặc \"some ice cubes\". Thành ngữ quen thuộc: \"break the ice\" (phá vỡ bầu không khí ngại ngùng ban đầu)."
+  },
+  {
+    "w": "evening",
+    "uk": "/ˈiːvnɪŋ/",
+    "us": "/ˈiːvnɪŋ/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "傍晚；晚上",
+        "en": "The part of the day between afternoon and bedtime.",
+        "vi": "buổi tối (khoảng thời gian từ cuối buổi chiều đến lúc đi ngủ)"
+      }
+    ],
+    "ex": [
+      {
+        "en": "We spent the evening cooking and listening to music.",
+        "zh": "我们做饭、听音乐，度过了这个晚上。",
+        "vi": "Tụi mình dành trọn buổi tối để nấu nướng và nghe nhạc thư giãn."
+      },
+      {
+        "en": "Evening classes allow working adults to gain new qualifications without giving up their current employment.",
+        "zh": "晚间课程让在职成年人无需辞去现有工作，也能获得新的资格证书。",
+        "vi": "Các lớp học buổi tối tạo điều kiện cho người đi làm học thêm văn bằng mới mà không phải bỏ dở công việc hiện tại."
+      }
+    ],
+    "col": [
+      "in the evening｜vào buổi tối",
+      "this evening｜tối nay",
+      "evening classes｜các lớp học buổi tối",
+      "early evening｜chập tối, lúc sẩm tối"
+    ],
+    "fam": [],
+    "syn": [],
+    "ant": [],
+    "tip": "泛指晚上用in the evening；this evening前不加介词。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "evening",
+    "m": 31,
+    "tip_vi": "Nói buổi tối chung chung thì dùng \"in the evening\", nhưng nếu nói tối nay là \"this evening\" (không có giới từ). Khi chào tạm biệt nhau vào buổi tối, hãy chúc \"Good night\"; còn câu chào khi vừa gặp mặt lúc trời tối vẫn là \"Good evening\"."
+  },
+  {
+    "w": "everything",
+    "uk": "/ˈevriθɪŋ/",
+    "us": "/ˈevriθɪŋ/",
+    "senses": [
+      {
+        "pos": "pron.",
+        "zh": "一切；所有事物",
+        "en": "All things or all the things in a particular situation.",
+        "vi": "mọi thứ, tất cả mọi điều trong một hoàn cảnh cụ thể"
+      },
+      {
+        "pos": "pron.",
+        "zh": "最重要的东西",
+        "en": "The most important thing in someone's life or situation.",
+        "vi": "điều quan trọng nhất, lẽ sống của một người"
+      }
+    ],
+    "ex": [
+      {
+        "en": "Everything in my bag got wet during the storm.",
+        "zh": "暴风雨把我包里的东西全弄湿了。",
+        "vi": "Mọi thứ trong balo của mình đều bị ướt sũng trong cơn mưa bão."
+      },
+      {
+        "en": "Although digital resources are valuable, students should not assume that everything they read online is accurate.",
+        "zh": "虽然数字资源很有价值，但学生不应认为自己在网上读到的一切都准确无误。",
+        "vi": "Dù nguồn tài liệu số rất phong phú, sinh viên cũng không nên mặc định rằng tất cả những gì đọc được trên mạng đều chuẩn xác."
+      }
+    ],
+    "col": [
+      "everything else｜tất cả những thứ còn lại",
+      "everything possible｜mọi nỗ lực, mọi biện pháp có thể",
+      "mean everything to someone｜là cả thế giới, là điều quý giá nhất đối với ai"
+    ],
+    "fam": [],
+    "syn": [],
+    "ant": [
+      "nothing"
+    ],
+    "tip": "作主语时谓语用单数：Everything is ready。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "everything",
+    "m": 31,
+    "tip_vi": "\"Everything\" mang nghĩa là tất cả nhưng luôn làm chủ ngữ số ít: \"Everything is ready\", không chia \"are\". Trong IELTS Speaking Part 2 khi kể về người thân, bạn có thể dùng cụm xúc động: \"My family means everything to me\"."
+  },
+  {
+    "w": "west",
+    "uk": "/west/",
+    "us": "/west/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "西；西方；西部",
+        "en": "the direction where the sun sets, opposite east",
+        "vi": "phía tây, hướng tây (hướng mặt trời lặn)"
+      },
+      {
+        "pos": "adj.",
+        "zh": "西部的；朝西的",
+        "en": "in or facing the direction where the sun sets",
+        "vi": "ở phía tây hoặc hướng về phía tây"
+      },
+      {
+        "pos": "adv.",
+        "zh": "向西；在西方",
+        "en": "towards or in the west",
+        "vi": "về hướng tây, sang phía tây"
+      }
+    ],
+    "ex": [
+      {
+        "en": "Our kitchen window faces west, catching the evening sunshine.",
+        "zh": "我们厨房的窗户朝西，能照到傍晚的阳光。",
+        "vi": "Cửa sổ phòng bếp nhà tôi quay về hướng tây, đón trọn những vạt nắng chiều ấm áp."
+      },
+      {
+        "en": "Investment in the west of the country could reduce regional inequalities and create employment opportunities.",
+        "zh": "对该国西部的投资可以缩小地区差距，并创造就业机会。",
+        "vi": "Đầu tư vào khu vực phía tây đất nước có thể thu hẹp khoảng cách phát triển giữa các vùng miền và mở ra thêm nhiều cơ hội việc làm."
+      }
+    ],
+    "col": [
+      "in the west｜ở phía tây",
+      "head west｜đi về hướng tây",
+      "west coast｜bờ biển phía tây",
+      "due west｜chính tây"
+    ],
+    "fam": [
+      "western (adj.)",
+      "westward (adv.)",
+      "westerly (adj.)"
+    ],
+    "syn": [],
+    "ant": [
+      "east"
+    ],
+    "tip": "方位一般小写；the West指西方国家时大写。",
+    "cefr": "A1",
+    "topic": "travel",
+    "note": "",
+    "id": "west",
+    "m": 31,
+    "tip_vi": "Khi chỉ phương hướng thông thường thì viết chữ thường: \"in the west\", \"head west\". Tuy nhiên khi viết hoa \"the West\", cụm từ này ám chỉ các nước phương Tây về mặt văn hóa hoặc địa chính trị."
+  },
+  {
+    "w": "brother",
+    "uk": "/ˈbrʌðə/",
+    "us": "/ˈbrʌðər/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "兄；弟",
+        "en": "A male who has one or both parents in common with you.",
+        "vi": "anh trai hoặc em trai (người có cùng cha mẹ hoặc một bên cha/mẹ)"
+      }
+    ],
+    "ex": [
+      {
+        "en": "My younger brother borrowed my bicycle this morning.",
+        "zh": "我弟弟今天早上借用了我的自行车。",
+        "vi": "Em trai tôi mượn chiếc xe đạp của tôi sáng nay."
+      },
+      {
+        "en": "Older brothers and sisters can support younger children's learning by reading with them regularly at home.",
+        "zh": "哥哥姐姐可以通过经常在家陪弟弟妹妹阅读来帮助他们学习。",
+        "vi": "Anh chị lớn trong nhà có thể trợ giúp việc học của các em nhỏ bằng cách thường xuyên đọc sách cùng nhau tại nhà."
+      }
+    ],
+    "col": [
+      "older brother｜anh trai",
+      "younger brother｜em trai",
+      "twin brother｜anh em sinh đôi"
+    ],
+    "fam": [
+      "brotherly (adj.)",
+      "brotherhood (n.)"
+    ],
+    "syn": [],
+    "ant": [],
+    "tip": "brother不区分兄弟；用older或younger说明长幼。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "brother",
+    "m": 31,
+    "tip_vi": "Trong tiếng Anh, \"brother\" không tự phân biệt thứ bậc tuổi tác. Muốn nói rõ là anh hay em, bạn phải thêm từ: \"older brother\" (hoặc \"elder brother\") cho anh trai, và \"younger brother\" cho em trai."
+  },
+  {
+    "w": "mountain",
+    "uk": "/ˈmaʊntɪn/",
+    "us": "/ˈmaʊntən/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "山；高山",
+        "en": "a very high area of land with steep sides",
+        "vi": "ngọn núi (vùng đất nhô cao và dốc)"
+      },
+      {
+        "pos": "n.",
+        "zh": "大量；一大堆",
+        "en": "a very large amount of something",
+        "vi": "chồng chất như núi, số lượng khổng lồ của việc gì"
+      }
+    ],
+    "ex": [
+      {
+        "en": "Snow covered the mountain even in the middle of summer.",
+        "zh": "即使在盛夏，那座山仍被白雪覆盖。",
+        "vi": "Tuyết vẫn phủ trắng ngọn núi ngay cả giữa những ngày hè oi ả."
+      },
+      {
+        "en": "Mountain communities often face higher transport costs because steep terrain makes road construction more difficult.",
+        "zh": "山区社区往往面临更高的运输成本，因为陡峭的地形增加了修路的难度。",
+        "vi": "Các bản làng vùng cao thường phải chịu cước phí vận chuyển đắt đỏ vì địa hình đồi núi dốc đứng gây nhiều khó khăn cho việc làm đường."
+      }
+    ],
+    "col": [
+      "mountain range｜dãy núi",
+      "mountain peak｜đỉnh núi",
+      "climb a mountain｜leo núi",
+      "a mountain of work｜công việc chất đống như núi"
+    ],
+    "fam": [
+      "mountainous (adj.)",
+      "mountaineer (n.)",
+      "mountaineering (n.)"
+    ],
+    "syn": [],
+    "ant": [],
+    "tip": "一座山用 mountain；山脉通常用 mountain range。",
+    "cefr": "A1",
+    "topic": "nature",
+    "note": "",
+    "id": "mountain",
+    "m": 31,
+    "tip_vi": "Một ngọn núi đơn lẻ dùng \"a mountain\", còn cả một rặng núi trải dài ta dùng cụm từ \"mountain range\". Cụm ẩn dụ quen thuộc trong đời sống công sở: \"a mountain of paperwork\" (hồ sơ giấy tờ chất đống cần xử lý)."
+  },
+  {
+    "w": "than",
+    "uk": "/ðæn/",
+    "us": "/ðæn/",
+    "senses": [
+      {
+        "pos": "prep.",
+        "zh": "比",
+        "en": "used to introduce the second thing in a comparison",
+        "vi": "hơn, so với (dùng giới thiệu vế sau trong phép so sánh)"
+      },
+      {
+        "pos": "conj.",
+        "zh": "比",
+        "en": "used before a clause expressing the other side of a comparison",
+        "vi": "hơn là (dùng trước một mệnh đề biểu thị vế so sánh đối chiếu)"
+      }
+    ],
+    "ex": [
+      {
+        "en": "My new backpack is lighter than my old one.",
+        "zh": "我的新背包比旧的轻。",
+        "vi": "Chiếc balo mới của mình nhẹ hơn chiếc cũ nhiều."
+      },
+      {
+        "en": "Investing in public transport may be more effective than building additional roads in crowded cities.",
+        "zh": "在拥挤的城市，投资公共交通可能比增建道路更有效。",
+        "vi": "Rót vốn vào phương tiện công cộng có thể mang lại hiệu quả cao hơn việc xây thêm đường xá ở các thành phố đông đúc."
+      }
+    ],
+    "col": [
+      "more than｜nhiều hơn",
+      "less than｜ít hơn",
+      "rather than｜thay vì, hơn là",
+      "other than｜ngoại trừ, ngoài... ra"
+    ],
+    "fam": [],
+    "syn": [],
+    "ant": [],
+    "tip": "than用于比较；then表示“然后”，注意拼写。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "than",
+    "m": 31,
+    "tip_vi": "Đừng nhầm lẫn giữa \"than\" (dùng trong so sánh) và \"then\" (sau đó, rồi thì). Cụm \"rather than\" (thay vì làm việc A thì làm việc B) là cấu trúc rất hữu ích để viết câu phức trong bài luận IELTS Writing Task 2."
+  },
+  {
+    "w": "warm",
+    "uk": "/wɔːm/",
+    "us": "/wɔːrm/",
+    "senses": [
+      {
+        "pos": "adj.",
+        "zh": "温暖的；暖和的",
+        "en": "having a comfortable temperature that is not hot",
+        "vi": "ấm, ấm áp (nhiệt độ dễ chịu, không quá nóng)"
+      },
+      {
+        "pos": "adj.",
+        "zh": "热情的；友好的",
+        "en": "showing kindness, friendliness, or affection",
+        "vi": "nồng hậu, thân thiện, trìu mến"
+      },
+      {
+        "pos": "v.",
+        "zh": "使暖和；变暖",
+        "en": "to become warmer or make something warmer",
+        "vi": "làm cho ấm lên, nóng dần lên"
+      }
+    ],
+    "ex": [
+      {
+        "en": "This thick blanket keeps me warm on chilly evenings.",
+        "zh": "这条厚毯子让我在凉飕飕的夜晚保持暖和。",
+        "vi": "Chiếc chăn bông dày này giữ cho mình luôn ấm áp trong những đêm trở gió."
+      },
+      {
+        "en": "A warm welcome at school can help new students feel included and develop confidence.",
+        "zh": "学校的热情欢迎能帮助新生获得归属感，并建立自信。",
+        "vi": "Sự chào đón nồng hậu ở trường có thể giúp các học sinh mới nhanh chóng hòa nhập và thêm phần tự tin."
+      }
+    ],
+    "col": [
+      "keep warm｜giữ ấm",
+      "a warm welcome｜sự đón tiếp nồng hậu",
+      "warm up｜khởi động, làm nóng người",
+      "warm to someone｜dần có thiện cảm với ai"
+    ],
+    "fam": [
+      "warmth (n.)",
+      "warmly (adv.)",
+      "warming (n.)"
+    ],
+    "syn": [],
+    "ant": [
+      "cold",
+      "cool"
+    ],
+    "tip": "warm比hot温度低；warm to某人指渐渐喜欢对方。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "warm",
+    "m": 31,
+    "tip_vi": "\"Warm\" chỉ độ ấm dễ chịu, vừa phải; còn \"hot\" là nóng nực. Khi miêu tả tính cách con người trong Speaking Part 2, tính từ \"warm-hearted\" (nhân hậu, tốt bụng) giúp bài nói tự nhiên và chân thành hơn."
+  },
+  {
+    "w": "future",
+    "uk": "/ˈfjuːtʃə/",
+    "us": "/ˈfjuːtʃər/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "未来；前途",
+        "en": "The time ahead, or what will happen to someone or something.",
+        "vi": "tương lai, khoảng thời gian phía trước hoặc viễn cảnh mai sau"
+      },
+      {
+        "pos": "adj.",
+        "zh": "未来的；将来的",
+        "en": "Happening or existing at a time after the present.",
+        "vi": "thuộc về tương lai, xảy ra sau này"
+      }
+    ],
+    "ex": [
+      {
+        "en": "We talked about our future while walking home.",
+        "zh": "我们走路回家时聊了聊我们的未来。",
+        "vi": "Tụi mình vừa trò chuyện về dự định tương lai trên suốt chặng đường đi bộ về nhà."
+      },
+      {
+        "en": "Governments should invest in renewable energy to protect the environment for future generations worldwide.",
+        "zh": "各国政府应投资可再生能源，为世界各地的子孙后代保护环境。",
+        "vi": "Các quốc gia cần đầu tư vào năng lượng tái tạo nhằm gìn giữ môi trường sống cho các thế hệ tương lai trên toàn cầu."
+      }
+    ],
+    "col": [
+      "in the future｜trong tương lai",
+      "near future｜tương lai gần",
+      "future generations｜các thế hệ mai sau",
+      "bright future｜tương lai tươi sáng"
+    ],
+    "fam": [],
+    "syn": [],
+    "ant": [
+      "past"
+    ],
+    "tip": "in the future指将来；英式in future常指从今以后。",
+    "cefr": "A1",
+    "topic": "thinking",
+    "note": "",
+    "id": "future",
+    "m": 31,
+    "tip_vi": "Phân biệt tinh tế: \"in the future\" chỉ thời gian chung chung sau này, trong khi cụm \"in future\" (không có \"the\", phổ biến trong tiếng Anh Anh) mang nghĩa là \"từ nay về sau, rút kinh nghiệm lần sau\". Cụm \"future generations\" là từ vựng quen thuộc cho Task 2 về môi trường."
+  },
+  {
+    "w": "German",
+    "uk": "/ˈdʒɜːmən/",
+    "us": "/ˈdʒɝːmən/",
+    "senses": [
+      {
+        "pos": "adj.",
+        "zh": "德国的；德语的",
+        "en": "relating to Germany, its people, or its language",
+        "vi": "thuộc về nước Đức, con người hoặc tiếng Đức"
+      },
+      {
+        "pos": "n.",
+        "zh": "德国人",
+        "en": "a person from Germany",
+        "vi": "người Đức"
+      },
+      {
+        "pos": "n.",
+        "zh": "德语",
+        "en": "the language spoken in Germany and some neighbouring countries",
+        "vi": "tiếng Đức (ngôn ngữ chính thức của Đức, Áo và một số vùng lân cận)"
+      }
+    ],
+    "ex": [
+      {
+        "en": "We shared a traditional German cake after dinner.",
+        "zh": "晚饭后，我们分着吃了一块传统德国蛋糕。",
+        "vi": "Tụi mình cùng thưởng thức một chiếc bánh ngọt truyền thống của Đức sau bữa tối."
+      },
+      {
+        "en": "German universities attract international students through research opportunities and a wide range of degree programmes.",
+        "zh": "德国大学通过研究机会和丰富的学位课程吸引国际学生。",
+        "vi": "Các trường đại học của Đức thu hút nhiều sinh viên quốc tế nhờ các cơ hội nghiên cứu chuyên sâu và hệ thống chương trình đào tạo phong phú."
+      }
+    ],
+    "col": [
+      "German culture｜văn hóa Đức",
+      "learn German｜học tiếng Đức",
+      "a German citizen｜một công dân Đức"
+    ],
+    "fam": [
+      "Germany (n.)"
+    ],
+    "syn": [],
+    "ant": [],
+    "tip": "首字母须大写；指德语时通常不加冠词。",
+    "cefr": "A1",
+    "topic": "society",
+    "note": "",
+    "id": "german",
+    "m": 31,
+    "tip_vi": "Tên quốc gia là \"Germany\", còn quốc tịch, ngôn ngữ hoặc tính từ chỉ nguồn gốc là \"German\" (luôn viết hoa chữ cái đầu). Khi nói một người mang quốc tịch Đức, hãy dùng \"a German citizen\" hoặc \"a German national\"."
+  },
+  {
+    "w": "all",
+    "uk": "/ɔːl/",
+    "us": "/ɔːl/",
+    "senses": [
+      {
+        "pos": "det.",
+        "zh": "所有的；整个的",
+        "en": "the whole amount of something or every member of a group",
+        "vi": "toàn bộ, tất cả, mọi (lượng từ đi với danh từ)"
+      },
+      {
+        "pos": "pron.",
+        "zh": "全部；所有人或事物",
+        "en": "everything or everyone in a particular group",
+        "vi": "tất cả mọi người hoặc mọi vật trong một nhóm (đại từ)"
+      },
+      {
+        "pos": "adv.",
+        "zh": "完全地",
+        "en": "completely or entirely",
+        "vi": "hoàn toàn, hết thảy (phó từ chỉ mức độ tuyệt đối)"
+      }
+    ],
+    "ex": [
+      {
+        "en": "All the children brought fruit for the picnic.",
+        "zh": "所有孩子都带了水果来野餐。",
+        "vi": "Tất cả lũ trẻ đều đem theo trái cây cho buổi dã ngoại."
+      },
+      {
+        "en": "Governments should ensure that all citizens have access to affordable healthcare, regardless of their income.",
+        "zh": "政府应确保所有公民无论收入如何，都能获得负担得起的医疗服务。",
+        "vi": "Nhà nước nên bảo đảm mọi công dân đều có quyền tiếp cận dịch vụ y tế với chi phí phải chăng, không phân biệt mức thu nhập."
+      }
+    ],
+    "col": [
+      "all day｜cả ngày trời",
+      "all of us｜tất cả chúng tôi",
+      "all the time｜suốt ngày, lúc nào cũng",
+      "after all｜rốt cuộc thì, xét cho cùng"
+    ],
+    "fam": [],
+    "syn": [],
+    "ant": [
+      "none"
+    ],
+    "tip": "all可接复数或不可数名词；every接单数可数名词。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "all",
+    "m": 31,
+    "tip_vi": "So sánh ngữ pháp: \"all\" đi với danh từ số nhiều (\"all students\") hoặc danh từ không đếm được (\"all water\"), trong khi \"every\" bắt buộc đi với danh từ số ít (\"every student\")."
+  },
+  {
+    "w": "come",
+    "uk": "/kʌm/",
+    "us": "/kʌm/",
+    "senses": [
+      {
+        "pos": "v.",
+        "zh": "来；来到",
+        "en": "Move towards the speaker or a particular place.",
+        "vi": "đến, đi tới hướng người nói hoặc địa điểm cụ thể"
+      },
+      {
+        "pos": "v.",
+        "zh": "到来；发生",
+        "en": "Arrive in time or happen.",
+        "vi": "xảy đến, diễn ra đúng lúc"
+      },
+      {
+        "pos": "v.",
+        "zh": "来自；源于",
+        "en": "Have a particular origin or source.",
+        "vi": "có nguồn gốc từ, bắt nguồn từ"
+      }
+    ],
+    "ex": [
+      {
+        "en": "Come inside and warm your hands by the fire.",
+        "zh": "进来在火边暖暖手吧。",
+        "vi": "Hãy vào trong nhà sưởi ấm đôi bàn tay bên bếp lửa nào."
+      },
+      {
+        "en": "Much of the funding for public libraries comes from local government rather than private donations.",
+        "zh": "公共图书馆的大部分资金来自地方政府，而非私人捐赠。",
+        "vi": "Phần lớn ngân sách duy trì các thư viện công cộng đến từ chính quyền địa phương chứ không phải nguồn quyên góp của tư nhân."
+      }
+    ],
+    "col": [
+      "come home｜về nhà",
+      "come from｜đến từ, xuất thân từ",
+      "come true｜trở thành hiện thực",
+      "come to an end｜đi đến hồi kết"
+    ],
+    "fam": [],
+    "syn": [
+      "arrive"
+    ],
+    "ant": [
+      "go"
+    ],
+    "tip": "不规则变化：come–came–come；come from表示来自。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "come",
+    "m": 31,
+    "tip_vi": "Bảng động từ bất quy tắc: come – came – come. Cụm \"come from\" dùng để nói về quê quán hoặc nguồn gốc của vấn đề. Trong Speaking, chúc ai đó ước mơ thành hiện thực: \"I hope your dreams will come true\"."
+  },
+  {
+    "w": "eat",
+    "uk": "/iːt/",
+    "us": "/iːt/",
+    "senses": [
+      {
+        "pos": "v.",
+        "zh": "吃；进食",
+        "en": "To put food in your mouth, chew it, and swallow",
+        "vi": "ăn (cho thức ăn vào miệng, nhai và nuốt)"
+      }
+    ],
+    "ex": [
+      {
+        "en": "We usually eat breakfast together before leaving the house.",
+        "zh": "我们通常一起吃完早饭再出门。",
+        "vi": "Cả nhà tôi thường cùng nhau ăn sáng trước khi mỗi người rời nhà đi làm."
+      },
+      {
+        "en": "Schools can encourage children to eat more vegetables by providing affordable meals with a variety of fresh ingredients.",
+        "zh": "学校可以提供价格实惠、包含多种新鲜食材的餐食，鼓励孩子多吃蔬菜。",
+        "vi": "Trường học có thể khuyến khích học sinh ăn thêm rau xanh bằng cách cung cấp những suất ăn có giá cả hợp lý với các loại nguyên liệu tươi ngon."
+      }
+    ],
+    "col": [
+      "eat breakfast｜ăn bữa sáng",
+      "eat out｜đi ăn tiệm, ăn ở ngoài",
+      "eat a balanced diet｜ăn uống điều độ, cân đối dinh dưỡng",
+      "eat well｜ăn uống tẩm bổ, lành mạnh"
+    ],
+    "fam": [
+      "eater (n.)",
+      "edible (adj.)",
+      "inedible (adj.)"
+    ],
+    "syn": [
+      "consume"
+    ],
+    "ant": [],
+    "tip": "不规则变化：eat—ate—eaten。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "eat",
+    "m": 31,
+    "tip_vi": "Động từ bất quy tắc cần nhớ: eat – ate /et/ hoặc /eɪt/ – eaten /ˈiːtn/. Trong các bài viết luận về lối sống lành mạnh, cụm collocations chuẩn là \"eat a balanced diet\" hoặc \"have healthy eating habits\"."
+  },
+  {
+    "w": "carrot",
+    "uk": "/ˈkærət/",
+    "us": "/ˈkærət/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "胡萝卜",
+        "en": "A long, usually orange root vegetable.",
+        "vi": "củ cà rốt (loại củ màu cam giàu vitamin)"
+      },
+      {
+        "pos": "n.",
+        "zh": "诱因；奖励",
+        "en": "A reward offered to encourage someone to do something.",
+        "vi": "phần thưởng, lợi ích kinh tế đưa ra để khuyến khích ai làm gì"
+      }
+    ],
+    "ex": [
+      {
+        "en": "She sliced a carrot and added it to the soup.",
+        "zh": "她把一根胡萝卜切片，放进汤里。",
+        "vi": "Cô ấy thái một củ cà rốt rồi cho vào nồi canh đang nấu."
+      },
+      {
+        "en": "Governments can use tax reductions as a carrot to encourage businesses to invest in renewable energy.",
+        "zh": "政府可以用减税作为激励，鼓励企业投资可再生能源。",
+        "vi": "Chính phủ có thể áp dụng chính sách giảm thuế như một giải pháp khuyến khích các doanh nghiệp mạnh dạn đầu tư vào năng lượng tái tạo."
+      }
+    ],
+    "col": [
+      "raw carrot｜cà rốt sống",
+      "grated carrot｜cà rốt bào sợi",
+      "carrot and stick｜chính sách cây gậy và củ cà rốt (vừa đe nẹt vừa thưởng)"
+    ],
+    "fam": [],
+    "syn": [],
+    "ant": [],
+    "tip": "比喻奖励或诱因；carrot and stick指奖惩并用。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "carrot",
+    "m": 31,
+    "tip_vi": "Thành ngữ kinh điển \"the carrot and stick approach\" (chính sách cây gậy và củ cà rốt) thường xuyên được vận dụng trong các bài viết IELTS Task 2 về quản trị, giáo dục kỷ luật hoặc thúc đẩy hành vi của công dân."
+  },
+  {
+    "w": "near",
+    "uk": "/nɪə/",
+    "us": "/nɪr/",
+    "senses": [
+      {
+        "pos": "prep.",
+        "zh": "在附近；接近",
+        "en": "close to a place, time, or state",
+        "vi": "gần (vị trí địa lý, thời gian hoặc trạng thái)"
+      },
+      {
+        "pos": "adv.",
+        "zh": "在附近；临近",
+        "en": "at or towards a short distance away in space or time",
+        "vi": "ở cự ly gần, sát gần"
+      },
+      {
+        "pos": "adj.",
+        "zh": "近的；不久的",
+        "en": "not far away in distance or time",
+        "vi": "gần gũi, không xa xôi"
+      }
+    ],
+    "ex": [
+      {
+        "en": "We found a quiet café near the station.",
+        "zh": "我们在车站附近找到了一家安静的咖啡馆。",
+        "vi": "Tụi mình tìm thấy một quán cà phê khá yên tĩnh ở ngay gần nhà ga."
+      },
+      {
+        "en": "Building affordable housing near public transport can reduce commuting costs and improve access to employment.",
+        "zh": "在公共交通设施附近建设经济适用住房，可以降低通勤成本并增加就业机会。",
+        "vi": "Xây dựng nhà ở giá rẻ gần các điểm giao thông công cộng có thể giảm bớt chi phí đi lại và giúp người lao động tiếp cận công việc thuận lợi hơn."
+      }
+    ],
+    "col": [
+      "near the station｜gần nhà ga",
+      "in the near future｜trong tương lai gần",
+      "come near｜tiến lại gần",
+      "nowhere near｜còn lâu mới bằng, chưa thấm vào đâu"
+    ],
+    "fam": [
+      "nearly (adv.)",
+      "nearness (n.)",
+      "nearby (adj.)"
+    ],
+    "syn": [
+      "close"
+    ],
+    "ant": [
+      "far"
+    ],
+    "tip": "near可直接接地点；nearly通常表示“几乎”。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "near",
+    "m": 31,
+    "tip_vi": "\"Near\" bản thân nó đã là giới từ, do đó bạn nói thẳng \"near the station\" chứ không thêm \"to\" (trừ phi dùng \"close to\"). Đừng nhầm \"near\" với \"nearly\" – từ sau có nghĩa là \"gần như, suýt soát\" (\"nearly finished\")."
+  },
+  {
+    "w": "parent",
+    "uk": "/ˈpeərənt/",
+    "us": "/ˈperənt/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "父亲或母亲",
+        "en": "a person's mother or father",
+        "vi": "cha hoặc mẹ (người sinh thành hoặc dưỡng dục)"
+      },
+      {
+        "pos": "n.",
+        "zh": "母公司",
+        "en": "a company that owns or controls another company",
+        "vi": "công ty mẹ (sở hữu hoặc kiểm soát các công ty con)"
+      },
+      {
+        "pos": "v.",
+        "zh": "养育；教养",
+        "en": "to raise and care for a child as a parent",
+        "vi": "nuôi dạy con cái với tư cách làm cha mẹ"
+      }
+    ],
+    "ex": [
+      {
+        "en": "Each parent brought a snack for the school picnic.",
+        "zh": "每位家长都为学校野餐带了一份点心。",
+        "vi": "Mỗi phụ huynh đều mang theo một phần đồ ăn nhẹ cho buổi dã ngoại của trường."
+      },
+      {
+        "en": "Schools should involve parents in educational decisions because family support plays an important role in children's learning.",
+        "zh": "学校应让家长参与教育决策，因为家庭支持在孩子的学习中发挥着重要作用。",
+        "vi": "Nhà trường nên để phụ huynh tham gia vào các quyết định giáo dục vì sự đồng hành của gia đình đóng vai trò rất lớn đối với việc học của con trẻ."
+      }
+    ],
+    "col": [
+      "single parent｜cha hoặc mẹ đơn thân",
+      "working parents｜cha mẹ cùng đi làm",
+      "parent company｜công ty mẹ",
+      "parent involvement｜sự đồng hành của phụ huynh"
+    ],
+    "fam": [
+      "parental (adj.)",
+      "parenting (n.)",
+      "parenthood (n.)"
+    ],
+    "syn": [],
+    "ant": [],
+    "tip": "parent指父母中的一位；parents通常指父母双方。",
+    "cefr": "A1",
+    "topic": "society",
+    "note": "",
+    "id": "parent",
+    "m": 31,
+    "tip_vi": "Lưu ý số ít/số nhiều: \"parent\" số ít chỉ một trong hai người (cha hoặc mẹ); muốn nói cả hai cha mẹ thì phải dùng dạng số nhiều \"parents\". Cụm danh từ \"working parents\" (các bậc cha mẹ bận rộn đi làm) rất hay gặp trong đề thi viết về nuôi dạy con cái."
+  },
+  {
+    "w": "famous",
+    "uk": "/ˈfeɪməs/",
+    "us": "/ˈfeɪməs/",
+    "senses": [
+      {
+        "pos": "adj.",
+        "zh": "著名的；出名的",
+        "en": "Known by many people.",
+        "vi": "nổi tiếng, được nhiều người biết đến"
+      }
+    ],
+    "ex": [
+      {
+        "en": "This village is famous for its delicious apple pies.",
+        "zh": "这个村庄以美味的苹果派闻名。",
+        "vi": "Ngôi làng này nổi tiếng nhờ những chiếc bánh táo nướng thơm lừng."
+      },
+      {
+        "en": "Famous landmarks attract international visitors, but tourism revenue should also support the communities surrounding them.",
+        "zh": "著名地标吸引着国际游客，但旅游收入也应惠及周边社区。",
+        "vi": "Những địa danh nổi tiếng thu hút đông đảo du khách quốc tế, song nguồn thu từ du lịch cũng cần được tái đầu tư để hỗ trợ đời sống cư dân bản địa."
+      }
+    ],
+    "col": [
+      "famous for｜nổi tiếng vì điều gì",
+      "famous as｜nổi tiếng với tư cách là",
+      "world famous｜nổi tiếng khắp thế giới"
+    ],
+    "fam": [
+      "fame (n.)",
+      "famously (adv.)"
+    ],
+    "syn": [
+      "well-known",
+      "renowned",
+      "celebrated"
+    ],
+    "ant": [
+      "unknown",
+      "obscure"
+    ],
+    "tip": "famous for接出名的原因，famous as接身份。",
+    "cefr": "A1",
+    "topic": "society",
+    "note": "",
+    "id": "famous",
+    "m": 31,
+    "tip_vi": "Phân biệt giới từ: \"famous for\" đi với lý do nổi tiếng (ví dụ: \"famous for its seafood\"), còn \"famous as\" đi với chức danh hoặc vai trò (ví dụ: \"famous as a writer\"). Tránh nhầm với \"notorious\" – từ này chỉ tiếng xấu, tai tiếng."
+  },
+  {
+    "w": "just",
+    "uk": "/dʒʌst/",
+    "us": "/dʒʌst/",
+    "senses": [
+      {
+        "pos": "adv.",
+        "zh": "仅仅；只是",
+        "en": "Only; no more than a particular amount or thing.",
+        "vi": "chỉ, chỉ vẻn vẹn (chỉ mức độ, không hơn)"
+      },
+      {
+        "pos": "adv.",
+        "zh": "刚刚；正好",
+        "en": "Very recently, or exactly at a particular point or degree.",
+        "vi": "vừa mới, hoặc đúng ngay lúc này, vừa vặn"
+      },
+      {
+        "pos": "adj.",
+        "zh": "公正的；正当的",
+        "en": "Fair and morally right.",
+        "vi": "công bằng, hợp lẽ phải và đạo lý"
+      }
+    ],
+    "ex": [
+      {
+        "en": "I need just one more minute to finish packing.",
+        "zh": "我只需要再一分钟就能收拾好行李。",
+        "vi": "Mình chỉ cần thêm đúng một phút nữa thôi là thu dọn đồ đạc xong xuôi."
+      },
+      {
+        "en": "A just society should ensure that all children can access quality education, regardless of family income.",
+        "zh": "一个公正的社会应确保所有儿童都能获得优质教育，不受家庭收入影响。",
+        "vi": "Một xã hội công bằng phải bảo đảm mọi trẻ em đều được tiếp cận nền giáo dục chất lượng, không phụ thuộc vào gia cảnh kinh tế."
+      }
+    ],
+    "col": [
+      "just a moment｜chờ một lát",
+      "just in time｜vừa kịp lúc",
+      "just enough｜vừa đủ dùng",
+      "a just society｜một xã hội công bằng"
+    ],
+    "fam": [
+      "justly (adv.)",
+      "justice (n.)",
+      "unjust (adj.)"
+    ],
+    "syn": [
+      "only",
+      "exactly",
+      "fair"
+    ],
+    "ant": [],
+    "tip": "作副词可指仅仅、刚刚；作形容词指公正的。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "just",
+    "m": 31,
+    "tip_vi": "\"Just\" khi là phó từ thường đứng trước động từ chính hoặc sau trợ động từ: \"I have just finished\". Khi là tính từ, nó đồng nghĩa với \"fair\" trong cụm từ triết học xã hội quen thuộc: \"a just and equal society\"."
+  },
+  {
+    "w": "birthday",
+    "uk": "/ˈbɜːθdeɪ/",
+    "us": "/ˈbɜːrθdeɪ/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "生日",
+        "en": "The yearly anniversary of the day someone was born.",
+        "vi": "ngày sinh nhật, ngày kỷ niệm sinh nhật hàng năm"
+      }
+    ],
+    "ex": [
+      {
+        "en": "My sister baked a lemon cake for my birthday.",
+        "zh": "姐姐为我的生日烤了一个柠檬蛋糕。",
+        "vi": "Chị gái tôi đã nướng một chiếc bánh kem chanh để mừng sinh nhật tôi."
+      },
+      {
+        "en": "Although birthday celebrations vary across cultures, they often provide opportunities for families to spend time together.",
+        "zh": "虽然不同文化中的生日庆祝方式各异，但它们往往能让家人有机会相聚。",
+        "vi": "Dù phong tục mừng sinh nhật ở mỗi nền văn hóa có sự khác biệt, nhưng đây luôn là dịp ấm cúng để các gia đình sum vầy bên nhau."
+      }
+    ],
+    "col": [
+      "a birthday cake｜bánh sinh nhật",
+      "a birthday present｜quà sinh nhật",
+      "celebrate a birthday｜tổ chức tiệc sinh nhật"
+    ],
+    "fam": [
+      "birth (n.)"
+    ],
+    "syn": [],
+    "ant": [],
+    "tip": "在某人生日当天用on，不用in或at。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "birthday",
+    "m": 31,
+    "tip_vi": "Vào ngày sinh nhật, ta dùng giới từ \"on\": \"on my birthday\" (vì đây là một ngày cụ thể), không dùng in hay at. Lời chúc thông dụng nhất trong tiếng Anh vẫn là câu ngắn gọn: \"Happy Birthday!\"."
+  },
+  {
+    "w": "butter",
+    "uk": "/ˈbʌtə/",
+    "us": "/ˈbʌtər/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "黄油",
+        "en": "a pale yellow fat made from cream, used in food",
+        "vi": "bơ (chất béo màu vàng nhạt làm từ kem sữa)"
+      },
+      {
+        "pos": "v.",
+        "zh": "涂黄油于",
+        "en": "to spread butter on food",
+        "vi": "quết bơ, phết bơ lên đồ ăn"
+      }
+    ],
+    "ex": [
+      {
+        "en": "She spread some butter on a slice of warm bread.",
+        "zh": "她在一片温热的面包上抹了些黄油。",
+        "vi": "Cô ấy phết một lớp bơ mịn lên lát bánh mì còn nóng hổi."
+      },
+      {
+        "en": "Replacing some butter with unsaturated oils can help people reduce their overall intake of saturated fat.",
+        "zh": "用不饱和油脂替代部分黄油，有助于减少饱和脂肪的总体摄入量。",
+        "vi": "Thay bớt bơ bằng các loại dầu thực vật chưa bão hòa có thể giúp mọi người giảm lượng chất béo bão hòa nạp vào cơ thể."
+      }
+    ],
+    "col": [
+      "spread butter｜phết bơ",
+      "melted butter｜bơ đun chảy",
+      "a knob of butter｜một viên bơ nhỏ",
+      "butter toast｜phết bơ lên bánh mì nướng"
+    ],
+    "fam": [
+      "buttery (adj.)"
+    ],
+    "syn": [],
+    "ant": [],
+    "tip": "butter是黄油，cream是奶油；作食品名通常不可数。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "butter",
+    "m": 31,
+    "tip_vi": "\"Butter\" là bơ động vật làm từ sữa, còn chất béo thực vật gọi là \"margarine\". Đây là danh từ không đếm được; khi đi nấu ăn hoặc làm bánh người bản xứ hay đong bằng cụm \"a knob of butter\" (một mẩu bơ nhỏ)."
+  },
+  {
+    "w": "college",
+    "uk": "/ˈkɒlɪdʒ/",
+    "us": "/ˈkɑːlɪdʒ/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "学院；高等专科学校",
+        "en": "An institution offering education beyond school, including practical or academic courses.",
+        "vi": "trường cao đẳng, trường đại học hoặc cơ sở đào tạo nghề"
+      },
+      {
+        "pos": "n.",
+        "zh": "大学的学院",
+        "en": "A constituent institution or division within a university.",
+        "vi": "trường thành viên, phân khoa trực thuộc một trường đại học lớn"
+      }
+    ],
+    "ex": [
+      {
+        "en": "My cousin is studying nursing at a local college.",
+        "zh": "我表姐正在当地一所学院学习护理。",
+        "vi": "Người em họ của tôi đang học ngành điều dưỡng tại một trường cao đẳng trong vùng."
+      },
+      {
+        "en": "Making college education more affordable could improve social mobility and provide employers with a more skilled workforce.",
+        "zh": "降低高等教育费用可以促进社会流动，并为雇主提供技能更强的劳动力。",
+        "vi": "Hạ thấp học phí ở bậc đại học, cao đẳng có thể thúc đẩy sự dịch chuyển xã hội và cung cấp cho thị trường lao động đội ngũ nhân lực có tay nghề."
+      }
+    ],
+    "col": [
+      "go to college｜học đại học hoặc cao đẳng",
+      "college student｜sinh viên đại học/cao đẳng",
+      "college education｜giáo dục bậc cao đẳng/đại học",
+      "community college｜trường cao đẳng cộng đồng"
+    ],
+    "fam": [
+      "collegiate (adj.)"
+    ],
+    "syn": [],
+    "ant": [],
+    "tip": "美式常泛指大学；英式多指学院或继续教育院校。",
+    "cefr": "A1",
+    "topic": "education",
+    "note": "",
+    "id": "college",
+    "m": 31,
+    "tip_vi": "Ở Mỹ, người ta thường dùng \"college\" và \"university\" thay thế cho nhau để chỉ việc học đại học (\"go to college\"). Nhưng ở Anh, \"college\" thường chỉ các trường cao đẳng nghề hoặc trường dự bị cấp ba sau 16 tuổi (Sixth Form College)."
+  },
+  {
+    "w": "close",
+    "uk": "/kləʊz/, /kləʊs/",
+    "us": "/kloʊz/, /kloʊs/",
+    "senses": [
+      {
+        "pos": "v.",
+        "zh": "关上；关闭；结束",
+        "en": "Shut something or bring an activity to an end",
+        "vi": "đóng lại, khép lại, kết thúc một hoạt động"
+      },
+      {
+        "pos": "adj.",
+        "zh": "近的；亲密的",
+        "en": "Near in distance or connected by a strong personal relationship",
+        "vi": "gần về khoảng cách, hoặc thân thiết, khăng khít về tình cảm"
+      },
+      {
+        "pos": "adv.",
+        "zh": "靠近；接近",
+        "en": "At a short distance from someone or something",
+        "vi": "ở cự ly gần, sát bên cạnh"
+      }
+    ],
+    "ex": [
+      {
+        "en": "Please close the window before the rain comes in.",
+        "zh": "请在雨飘进来之前关上窗户。",
+        "vi": "Làm ơn đóng cửa sổ lại trước khi mưa tạt vào phòng nhé."
+      },
+      {
+        "en": "When local libraries close, residents lose valuable spaces for independent learning and community activities.",
+        "zh": "当本地图书馆关闭时，居民就失去了自主学习和开展社区活动的宝贵场所。",
+        "vi": "Khi các thư viện địa phương đóng cửa, cư dân sẽ mất đi không gian sinh hoạt cộng đồng và tự học quý báu."
+      }
+    ],
+    "col": [
+      "close a door｜đóng cửa lại",
+      "close to home｜gần nhà",
+      "a close friend｜người bạn thân thiết",
+      "stay close｜ở gần bên cạnh"
+    ],
+    "fam": [
+      "closed (adj.)",
+      "closely (adv.)",
+      "closeness (n.)",
+      "closure (n.)"
+    ],
+    "syn": [
+      "shut",
+      "near"
+    ],
+    "ant": [
+      "open",
+      "distant"
+    ],
+    "tip": "动词读/z/；形容词和副词读/s/。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "close",
+    "m": 31,
+    "tip_vi": "Cực kỳ chú ý cách phát âm: khi là động từ \"đóng lại\", từ này đọc có âm cuối /z/ (/kləʊz/). Khi là tính từ hoặc trạng từ mang nghĩa \"gần gũi\", từ này đọc có âm cuối /s/ (/kləʊs/). Nhớ đi với giới từ \"to\": \"close to my house\"."
+  },
+  {
+    "w": "off",
+    "uk": "/ɒf/",
+    "us": "/ɔːf/",
+    "senses": [
+      {
+        "pos": "adv.",
+        "zh": "离开；脱离",
+        "en": "away from a place or position",
+        "vi": "rời khỏi, cách xa khỏi vị trí ban đầu"
+      },
+      {
+        "pos": "prep.",
+        "zh": "从……离开；离开……表面",
+        "en": "away from or no longer touching something",
+        "vi": "rời ra, không còn chạm vào bề mặt"
+      },
+      {
+        "pos": "adj.",
+        "zh": "关闭的；不工作的",
+        "en": "not operating or not working at a particular time",
+        "vi": "tắt, ngắt hoạt động, nghỉ việc tạm thời"
+      }
+    ],
+    "ex": [
+      {
+        "en": "The dog ran off when the gate opened.",
+        "zh": "门一开，那只狗就跑走了。",
+        "vi": "Chú chó lập tức chạy vụt đi khi cánh cổng vừa mở hé."
+      },
+      {
+        "en": "Keeping unnecessary lights off in public buildings can reduce electricity consumption and lower operating costs.",
+        "zh": "关闭公共建筑内不必要的照明可以减少耗电量并降低运营成本。",
+        "vi": "Tắt bớt những bóng đèn không cần thiết tại các tòa nhà công cộng có thể tiết kiệm đáng kể lượng điện tiêu thụ và hạ thấp chi phí vận hành."
+      }
+    ],
+    "col": [
+      "turn off｜tắt nguồn (thiết bị)",
+      "take off｜cất cánh (máy bay); cởi đồ ra",
+      "off duty｜hết ca làm việc",
+      "day off｜ngày nghỉ phép"
+    ],
+    "fam": [],
+    "syn": [],
+    "ant": [
+      "on"
+    ],
+    "tip": "off强调离开或关闭；of常表示所属，勿混淆。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "off",
+    "m": 31,
+    "tip_vi": "Đừng viết nhầm giữa giới từ chỉ sở hữu \"of\" (một chữ f, phát âm /əv/) và từ mang tính chất ngắt/rời \"off\" (hai chữ f, phát âm /ɒf/). Trong công việc, khi bạn không phải đi làm, cụm từ tự nhiên nhất là \"have a day off\"."
+  },
+  {
+    "w": "wait",
+    "uk": "/weɪt/",
+    "us": "/weɪt/",
+    "senses": [
+      {
+        "pos": "v.",
+        "zh": "等待；等候",
+        "en": "To let time pass until something happens or someone arrives.",
+        "vi": "chờ đợi, đợi cho đến khi có người tới hoặc việc gì diễn ra"
+      },
+      {
+        "pos": "v.",
+        "zh": "暂缓；推迟",
+        "en": "To be left until a later time.",
+        "vi": "tạm gác lại, lùi lại để giải quyết sau"
+      },
+      {
+        "pos": "n.",
+        "zh": "等待；等候时间",
+        "en": "A period spent expecting something to happen.",
+        "vi": "khoảng thời gian chờ đợi"
+      }
+    ],
+    "ex": [
+      {
+        "en": "Please wait here while I find my keys.",
+        "zh": "请在这里等一下，我去找钥匙。",
+        "vi": "Bạn vui lòng đứng đợi ở đây một chút trong lúc mình đi tìm chìa khóa nhé."
+      },
+      {
+        "en": "Patients in rural areas often wait longer for specialist treatment because local medical services are limited.",
+        "zh": "由于当地医疗服务有限，农村地区的患者往往需要等待更久才能接受专科治疗。",
+        "vi": "Người bệnh ở khu vực thôn quê thường phải chờ đợi lâu hơn mới được gặp bác sĩ chuyên khoa do cơ sở y tế địa phương còn nhiều thiếu thốn."
+      }
+    ],
+    "col": [
+      "wait for someone｜chờ đợi ai đó",
+      "wait patiently｜kiên nhẫn chờ đợi",
+      "a long wait｜một khoảng thời gian chờ đợi mòn mỏi",
+      "wait and see｜chờ xem sự việc diễn biến ra sao"
+    ],
+    "fam": [
+      "waiting (n.)"
+    ],
+    "syn": [],
+    "ant": [],
+    "tip": "等人用wait for someone；等着做用wait to do。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "wait",
+    "m": 31,
+    "tip_vi": "Chờ đợi ai hoặc điều gì bắt buộc phải có giới từ \"for\": \"wait for the bus\", không nói \"wait the bus\". Nếu theo sau là động từ, dùng to-V: \"wait to see the doctor\". Thành ngữ giao tiếp hay dùng: \"I can't wait\" (tôi nôn nóng, rất mong chờ)."
+  },
+  {
+    "w": "under",
+    "uk": "/ˈʌndə/",
+    "us": "/ˈʌndər/",
+    "senses": [
+      {
+        "pos": "prep.",
+        "zh": "在…下面",
+        "en": "in or into a position below something",
+        "vi": "ở dưới, nằm phía bên dưới một vật thể"
+      },
+      {
+        "pos": "prep.",
+        "zh": "少于；低于",
+        "en": "less than a particular amount, age, or level",
+        "vi": "ít hơn một mức độ, dưới độ tuổi hoặc giới hạn cụ thể"
+      },
+      {
+        "pos": "prep.",
+        "zh": "在…状态或控制下",
+        "en": "experiencing a condition or being controlled by someone or something",
+        "vi": "dưới sự điều hành, chịu tác động của một điều kiện nào đó"
+      }
+    ],
+    "ex": [
+      {
+        "en": "The cat curled up under the kitchen table.",
+        "zh": "猫蜷缩在厨房的桌子下面。",
+        "vi": "Chú mèo con nằm cuộn tròn dưới gầm bàn ăn trong bếp."
+      },
+      {
+        "en": "Under the new policy, local authorities must provide safer cycling routes near schools and residential areas.",
+        "zh": "根据新政策，地方政府必须在学校和住宅区附近提供更安全的骑行路线。",
+        "vi": "Theo quy định mới, chính quyền địa phương phải thiết lập những làn đường dành cho xe đạp an toàn hơn ở gần trường học và khu dân cư."
+      }
+    ],
+    "col": [
+      "under pressure｜chịu nhiều áp lực",
+      "under control｜trong tầm kiểm soát",
+      "under construction｜đang trong quá trình thi công xây dựng",
+      "under the age of｜dưới độ tuổi"
+    ],
+    "fam": [],
+    "syn": [
+      "below",
+      "beneath"
+    ],
+    "ant": [
+      "over",
+      "above"
+    ],
+    "tip": "under可表位置、数量或状态：under pressure。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "under",
+    "m": 31,
+    "tip_vi": "Cụm thành ngữ học thuật rất giá trị trong bài thi IELTS: \"under pressure\" (chịu áp lực học tập hoặc công việc) và \"under no circumstances\" (trong bất kỳ hoàn cảnh nào cũng không – cấu trúc đảo ngữ band cao)."
+  },
+  {
+    "w": "Italian",
+    "uk": "/ɪˈtæliən/",
+    "us": "/ɪˈtæljən/",
+    "senses": [
+      {
+        "pos": "adj.",
+        "zh": "意大利的；意大利语的",
+        "en": "Relating to Italy, its people, culture, or language",
+        "vi": "thuộc về nước Ý, con người, văn hóa hoặc ngôn ngữ Ý"
+      },
+      {
+        "pos": "n.",
+        "zh": "意大利语",
+        "en": "The main language spoken in Italy",
+        "vi": "tiếng Ý (ngôn ngữ chính thức của Ý)"
+      },
+      {
+        "pos": "n.",
+        "zh": "意大利人",
+        "en": "A person from Italy",
+        "vi": "người Ý"
+      }
+    ],
+    "ex": [
+      {
+        "en": "We cooked Italian pasta with tomatoes and fresh basil.",
+        "zh": "我们用番茄和新鲜罗勒做了意大利面。",
+        "vi": "Tối qua tụi mình nấu món mỳ Ý với sốt cà chua và lá húng quế tươi."
+      },
+      {
+        "en": "Studying Italian architecture can help students understand how historical buildings influence contemporary urban design.",
+        "zh": "研究意大利建筑可以帮助学生理解历史建筑如何影响当代城市设计。",
+        "vi": "Tìm hiểu kiến trúc Ý giúp sinh viên hiểu rõ hơn cách những công trình cổ kính định hình và truyền cảm hứng cho thiết kế đô thị đương đại."
+      }
+    ],
+    "col": [
+      "Italian cuisine｜ẩm thực Ý",
+      "speak Italian｜nói tiếng Ý",
+      "Italian architecture｜kiến trúc phong cách Ý"
+    ],
+    "fam": [],
+    "syn": [],
+    "ant": [],
+    "tip": "国籍和语言名称首字母大写；意大利人复数为Italians。",
+    "cefr": "A1",
+    "topic": "arts",
+    "note": "",
+    "id": "italian",
+    "m": 31,
+    "tip_vi": "Nước Ý là \"Italy\", còn ngôn ngữ, quốc tịch hay món ăn là \"Italian\". Chú ý trọng âm: \"Italy\" nhấn âm đầu /ˈɪtəli/, trong khi \"Italian\" lại đổi trọng âm sang âm thứ hai /ɪˈtæliən/."
+  },
+  {
+    "w": "on",
+    "uk": "/ɒn/",
+    "us": "/ɑːn/",
+    "senses": [
+      {
+        "pos": "prep.",
+        "zh": "在……上",
+        "en": "Touching and supported by a surface.",
+        "vi": "ở trên, nằm trên bề mặt và được nâng đỡ"
+      },
+      {
+        "pos": "prep.",
+        "zh": "在某日；关于",
+        "en": "Used for days and dates, or to introduce a topic.",
+        "vi": "vào (dùng cho các thứ trong tuần, ngày tháng) hoặc bàn về (chủ đề)"
+      },
+      {
+        "pos": "adv.",
+        "zh": "开着；运行中",
+        "en": "Operating or receiving power.",
+        "vi": "đang bật, đang cắm điện hoạt động"
+      }
+    ],
+    "ex": [
+      {
+        "en": "Your keys are on the table beside the door.",
+        "zh": "你的钥匙在门旁的桌子上。",
+        "vi": "Chùm chìa khóa của bạn nằm ngay trên mặt bàn cạnh cửa ra vào đấy."
+      },
+      {
+        "en": "Installing solar panels on public buildings can reduce energy costs and demonstrate a government's commitment to sustainability.",
+        "zh": "在公共建筑上安装太阳能板可以降低能源成本，并展现政府对可持续发展的重视。",
+        "vi": "Lắp đặt các tấm pin năng lượng mặt trời trên mái các tòa nhà công cộng giúp cắt giảm chi phí điện năng và khẳng định nỗ lực bảo vệ môi trường của chính phủ."
+      }
+    ],
+    "col": [
+      "on the table｜ở trên bàn",
+      "on Monday｜vào thứ Hai",
+      "a report on education｜một báo cáo về vấn đề giáo dục",
+      "switch on｜bật công tắc nguồn"
+    ],
+    "fam": [],
+    "syn": [],
+    "ant": [
+      "off"
+    ],
+    "tip": "具体某天用on；月份用in；钟点用at。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "on",
+    "m": 31,
+    "tip_vi": "Quy tắc giới từ thời gian kinh điển: đi với ngày cụ thể dùng \"on\" (on Monday, on 5th May); đi với tháng, năm, mùa dùng \"in\" (in May, in 2024); đi với giờ giấc dùng \"at\" (at 7 o'clock). Viết về một chủ đề học thuật: \"a research paper on...\"."
+  },
+  {
+    "w": "personal",
+    "uk": "/ˈpɜːsənəl/",
+    "us": "/ˈpɝːsənəl/",
+    "senses": [
+      {
+        "pos": "adj.",
+        "zh": "个人的；本人的",
+        "en": "Belonging or relating to one particular person.",
+        "vi": "thuộc về cá nhân, riêng tư của một người cụ thể"
+      },
+      {
+        "pos": "adj.",
+        "zh": "私人的；隐私的",
+        "en": "Concerning someone's private life rather than public matters.",
+        "vi": "liên quan đến đời tư hơn là công việc xã hội"
+      },
+      {
+        "pos": "adj.",
+        "zh": "针对个人的；人身攻击的",
+        "en": "Directed at someone's character rather than their ideas or actions.",
+        "vi": "mang tính công kích cá nhân (nhắm vào phẩm chất hơn là ý kiến)"
+      }
+    ],
+    "ex": [
+      {
+        "en": "Please keep your personal belongings close while boarding the train.",
+        "zh": "上火车时，请将个人物品放在身边。",
+        "vi": "Xin vui lòng để mắt kỹ đồ đạc cá nhân trong khi bước lên tàu."
+      },
+      {
+        "en": "Online services should protect personal information and explain clearly how they collect and use customer data.",
+        "zh": "在线服务应保护个人信息，并清楚说明如何收集和使用客户数据。",
+        "vi": "Các dịch vụ trực tuyến cần bảo vệ thông tin cá nhân và giải thích rõ ràng cách thức họ thu thập cũng như sử dụng dữ liệu của khách hàng."
+      }
+    ],
+    "col": [
+      "personal belongings｜đồ đạc cá nhân",
+      "personal information｜thông tin cá nhân",
+      "personal experience｜trải nghiệm thực tế của bản thân",
+      "personal attack｜sự công kích cá nhân"
+    ],
+    "fam": [
+      "person (n.)",
+      "personally (adv.)",
+      "personality (n.)",
+      "impersonal (adj.)"
+    ],
+    "syn": [
+      "individual",
+      "private"
+    ],
+    "ant": [
+      "impersonal"
+    ],
+    "tip": "personal指个人的；personnel指全体员工，注意拼写。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "personal",
+    "m": 31,
+    "tip_vi": "Phân biệt chính tả và nghĩa: \"personal\" (nhấn âm 1) là thuộc về cá nhân, còn \"personnel\" (nhấn âm 3) là toàn thể nhân viên, lực lượng nhân sự trong công ty. Khi chia sẻ trải nghiệm trong Speaking Part 1 & 2, cụm \"from my personal experience\" giúp bài nói chân thật hơn."
+  },
+  {
+    "w": "possible",
+    "uk": "/ˈpɒsəbl/",
+    "us": "/ˈpɑːsəbl/",
+    "senses": [
+      {
+        "pos": "adj.",
+        "zh": "可能的；可实现的",
+        "en": "able to happen, exist, or be done",
+        "vi": "có thể xảy ra, có thể thực hiện được"
+      },
+      {
+        "pos": "adj.",
+        "zh": "或许合适的；潜在的",
+        "en": "worth considering as a choice or explanation",
+        "vi": "đáng để cân nhắc như một giải pháp hoặc cách giải thích"
+      }
+    ],
+    "ex": [
+      {
+        "en": "Is it possible to book a table for tonight?",
+        "zh": "可以预订今晚的餐桌吗？",
+        "vi": "Liệu chúng tôi có thể đặt một bàn cho tối nay được không?"
+      },
+      {
+        "en": "Investment in renewable energy makes it possible for countries to reduce their dependence on imported fuels.",
+        "zh": "对可再生能源的投资使各国有可能减少对进口燃料的依赖。",
+        "vi": "Rót vốn vào năng lượng tái tạo giúp các quốc gia có thể giảm bớt sự phụ thuộc vào nguồn nhiên liệu nhập khẩu."
+      }
+    ],
+    "col": [
+      "as soon as possible｜càng sớm càng tốt",
+      "possible explanation｜lời giải thích hợp lý",
+      "make it possible｜tạo điều kiện khả thi, biến điều gì thành hiện thực"
+    ],
+    "fam": [
+      "possibility (n.)",
+      "possibly (adv.)",
+      "impossible (adj.)"
+    ],
+    "syn": [
+      "feasible"
+    ],
+    "ant": [
+      "impossible"
+    ],
+    "tip": "常用it is possible to do；不说人is possible to do。",
+    "cefr": "A1",
+    "topic": "thinking",
+    "note": "",
+    "id": "possible",
+    "m": 31,
+    "tip_vi": "Cấu trúc chuẩn là \"It is possible (for someone) to do something\", không bao giờ lấy người làm chủ ngữ để nói \"I am possible to do\". Trong IELTS Writing Task 2, cụm \"make it possible for someone to do something\" là mẫu câu rất chắc tay."
+  },
+  {
+    "w": "cent",
+    "uk": "/sent/",
+    "us": "/sent/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "分（货币单位）",
+        "en": "a monetary unit worth one hundredth of a dollar or euro",
+        "vi": "đồng xu xu (đơn vị tiền tệ bằng 1/100 đô la hoặc euro)"
+      },
+      {
+        "pos": "n.",
+        "zh": "一分硬币",
+        "en": "a coin worth one cent",
+        "vi": "đồng xu mệnh giá một xu"
+      }
+    ],
+    "ex": [
+      {
+        "en": "I found a cent under the sofa cushion.",
+        "zh": "我在沙发坐垫下面找到了一枚一分硬币。",
+        "vi": "Tôi nhặt được một đồng xu nhỏ dưới khe đệm ghế sofa."
+      },
+      {
+        "en": "For households with limited incomes, every cent saved on essential goods can contribute to greater financial security.",
+        "zh": "对收入有限的家庭而言，购买必需品时省下的每一分钱都能增强经济保障。",
+        "vi": "Đối với các gia đình có mức thu nhập eo hẹp, từng đồng cắc chắt chiu từ đồ dùng thiết yếu đều góp phần đảm bảo tài chính ổn định hơn."
+      }
+    ],
+    "col": [
+      "every cent｜từng đồng từng cắc",
+      "not a cent｜không một xu dính túi",
+      "a fifty-cent coin｜đồng xu mệnh giá 50 xu"
+    ],
+    "fam": [],
+    "syn": [],
+    "ant": [],
+    "tip": "cent是可数名词；金额超过一分通常用cents。",
+    "cefr": "A1",
+    "topic": "economy",
+    "note": "",
+    "id": "cent",
+    "m": 31,
+    "tip_vi": "\"Cent\" là danh từ đếm được, từ 2 cent trở lên có số nhiều (\"twenty cents\"). Cụm từ thành ngữ rất quen thuộc trong văn nói: \"not a single cent\" (không còn một đồng xu nào) hoặc \"put in my two cents\" (góp chút ý kiến mọn của bản thân)."
+  },
+  {
+    "w": "describe",
+    "uk": "/dɪˈskraɪb/",
+    "us": "/dɪˈskraɪb/",
+    "senses": [
+      {
+        "pos": "v.",
+        "zh": "描述；形容",
+        "en": "to explain what someone or something is like",
+        "vi": "miêu tả, thuật lại, diễn giải đặc điểm của ai hoặc điều gì"
+      }
+    ],
+    "ex": [
+      {
+        "en": "Can you describe the bag you left on the bus?",
+        "zh": "你能描述一下你落在公交车上的包吗？",
+        "vi": "Bạn có thể miêu tả lại chiếc túi mà bạn đã để quên trên xe buýt không?"
+      },
+      {
+        "en": "The report describes how access to public parks influences physical activity among residents of crowded cities.",
+        "zh": "该报告描述了公共公园的可达性如何影响人口密集城市居民的体育活动。",
+        "vi": "Bản báo cáo đã chỉ rõ việc tiếp cận các công viên công cộng tác động thế nào tới thói quen rèn luyện thể lực của cư dân tại các thành phố đông đúc."
+      }
+    ],
+    "col": [
+      "describe something in detail｜miêu tả chi tiết điều gì",
+      "describe something as｜miêu tả cái gì như là",
+      "describe a process｜mô tả một quy trình"
+    ],
+    "fam": [
+      "description (n.)",
+      "descriptive (adj.)"
+    ],
+    "syn": [
+      "portray",
+      "depict"
+    ],
+    "ant": [],
+    "tip": "说describe something to someone，不说describe someone something。",
+    "cefr": "A1",
+    "topic": "education",
+    "note": "",
+    "id": "describe",
+    "m": 31,
+    "tip_vi": "Nhớ giới từ đi kèm: cấu trúc chuẩn là \"describe something to someone\", không dùng \"describe someone something\". Trong IELTS Writing Task 1 dạng bài miêu tả quy trình sản xuất (Process), bạn thường phải mở bài bằng cấu trúc \"The diagram describes the process of...\"."
+  },
+  {
+    "w": "say",
+    "uk": "/seɪ/",
+    "us": "/seɪ/",
+    "senses": [
+      {
+        "pos": "v.",
+        "zh": "说；表达",
+        "en": "To express something using words.",
+        "vi": "nói ra, diễn đạt bằng lời nói"
+      },
+      {
+        "pos": "v.",
+        "zh": "写着；表明",
+        "en": "To give information in writing or through other evidence.",
+        "vi": "cho biết, thể hiện qua số liệu hoặc văn bản"
+      },
+      {
+        "pos": "n.",
+        "zh": "发言权；决定权",
+        "en": "The opportunity to influence a decision.",
+        "vi": "tiếng nói, cơ hội tham gia đóng góp ý kiến vào quyết định"
+      }
+    ],
+    "ex": [
+      {
+        "en": "Please say your name again so I can remember it.",
+        "zh": "请再说一遍你的名字，好让我记住。",
+        "vi": "Bạn đọc lại tên bạn một lần nữa nhé để mình kịp ghi nhớ."
+      },
+      {
+        "en": "Residents should have a say in planning decisions that directly affect their neighbourhoods and daily lives.",
+        "zh": "居民应当对直接影响其社区和日常生活的规划决策拥有发言权。",
+        "vi": "Người dân cần có tiếng nói trong các quyết định quy hoạch ảnh hưởng trực tiếp đến khu dân cư và cuộc sống hàng ngày của họ."
+      }
+    ],
+    "col": [
+      "say hello｜chào hỏi",
+      "say something to someone｜nói điều gì với ai",
+      "have a say in｜có tiếng nói đóng góp vào việc gì",
+      "say for certain｜khẳng định một cách chắc chắn"
+    ],
+    "fam": [
+      "saying (n.)",
+      "unsaid (adj.)"
+    ],
+    "syn": [],
+    "ant": [],
+    "tip": "说某事用say something；告诉某人用tell someone。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "say",
+    "m": 31,
+    "tip_vi": "Phân biệt với \"tell\": bạn \"say something to someone\", nhưng \"tell someone something\" (không có to). Cụm thành ngữ cực hay cho IELTS Writing & Speaking: \"have a say in something\" (có quyền phát biểu, có tiếng nói trong việc gì)."
+  },
+  {
+    "w": "lot",
+    "uk": "/lɒt/",
+    "us": "/lɑːt/",
+    "senses": [
+      {
+        "pos": "pron.",
+        "zh": "大量；许多",
+        "en": "a large amount or number, in a lot or lots",
+        "vi": "số lượng lớn, rất nhiều (trong a lot hoặc lots)"
+      },
+      {
+        "pos": "adv.",
+        "zh": "很；经常",
+        "en": "very much or often, in the phrase a lot",
+        "vi": "rất nhiều, thường xuyên (phó từ a lot)"
+      },
+      {
+        "pos": "n.",
+        "zh": "一块地；场地",
+        "en": "an area of land used for a particular purpose",
+        "vi": "khu đất, bãi đất dành riêng cho mục đích nào đó"
+      }
+    ],
+    "ex": [
+      {
+        "en": "We bought a lot of fresh fruit today.",
+        "zh": "我们今天买了很多新鲜水果。",
+        "vi": "Hôm nay tụi mình đã mua rất nhiều hoa quả tươi."
+      },
+      {
+        "en": "Cities can save a lot of energy by improving public transport and encouraging residents to walk.",
+        "zh": "城市可以通过改善公共交通并鼓励居民步行来节约大量能源。",
+        "vi": "Các thành phố có thể tiết kiệm được lượng năng lượng đáng kể nhờ việc nâng cấp phương tiện công cộng và vận động người dân đi bộ."
+      }
+    ],
+    "col": [
+      "a lot of time｜nhiều thời gian",
+      "lots of people｜rất nhiều người",
+      "a lot better｜tốt hơn rất nhiều",
+      "a parking lot｜bãi đỗ xe"
+    ],
+    "fam": [],
+    "syn": [],
+    "ant": [],
+    "tip": "a lot of接可数复数或不可数名词；a lot可修饰动词。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "lot",
+    "m": 31,
+    "tip_vi": "\"A lot of\" dùng được với cả danh từ số nhiều lẫn không đếm được. Tuy nhiên trong IELTS Writing Task 2 mang tính học thuật, bạn nên thay cụm từ bình dân này bằng các cách diễn đạt trang trọng hơn như \"a significant amount of\" (với danh từ không đếm được) hoặc \"a substantial number of\" (với danh từ số nhiều)."
+  },
+  {
+    "w": "grandfather",
+    "uk": "/ˈɡrænfɑːðə/",
+    "us": "/ˈɡrænfɑːðər/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "祖父；外祖父",
+        "en": "The father of your mother or father.",
+        "vi": "ông nội hoặc ông ngoại (cha của bố hoặc mẹ)"
+      }
+    ],
+    "ex": [
+      {
+        "en": "My grandfather taught me how to grow tomatoes.",
+        "zh": "我的祖父教过我如何种番茄。",
+        "vi": "Ông tôi là người dạy tôi cách tự trồng những luống cà chua trong vườn."
+      },
+      {
+        "en": "A grandfather who provides regular childcare can strengthen family bonds and support working parents.",
+        "zh": "经常帮忙照顾孩子的祖父或外祖父能够增进家庭感情，并为在职父母提供支持。",
+        "vi": "Người ông phụ giúp chăm nom các cháu nhỏ thường xuyên có thể thắt chặt sợi dây tình cảm gia đình và đỡ đần cha mẹ bận rộn đi làm."
+      }
+    ],
+    "col": [
+      "maternal grandfather｜ông ngoại",
+      "paternal grandfather｜ông nội"
+    ],
+    "fam": [
+      "grandmother (n.)",
+      "grandparent (n.)",
+      "grandchild (n.)"
+    ],
+    "syn": [
+      "granddad",
+      "grandpa"
+    ],
+    "ant": [],
+    "tip": "不区分父系母系；外祖父可说maternal grandfather。",
+    "cefr": "A1",
+    "topic": "society",
+    "note": "",
+    "id": "grandfather",
+    "m": 31,
+    "tip_vi": "Tiếng Anh dùng chung từ \"grandfather\" cho cả hai bên nội ngoại. Khi cần nêu rõ bên nhà nào trong bài viết hay nói, bạn có thể nói \"maternal grandfather\" (ông ngoại) hoặc \"paternal grandfather\" (ông nội). Trong xưng hô thân mật hàng ngày, người ta hay gọi là \"grandpa\" hoặc \"granddad\"."
+  },
+  {
+    "w": "dear",
+    "uk": "/dɪə/",
+    "us": "/dɪr/",
+    "senses": [
+      {
+        "pos": "adj.",
+        "zh": "亲爱的；珍爱的",
+        "en": "loved or valued very much",
+        "vi": "thân thương, quý giá, được hết mực yêu mến"
+      },
+      {
+        "pos": "adj.",
+        "zh": "昂贵的",
+        "en": "costing a lot of money",
+        "vi": "đắt đỏ, tốn kém (khẩu ngữ tiếng Anh - Anh)"
+      },
+      {
+        "pos": "int.",
+        "zh": "哎呀；天哪",
+        "en": "used to express surprise, worry, or disappointment",
+        "vi": "ôi chao, trời ơi (từ cảm thán thể hiện ngạc nhiên, lo lắng)"
+      }
+    ],
+    "ex": [
+      {
+        "en": "This little garden is very dear to my grandmother.",
+        "zh": "祖母十分珍爱这座小花园。",
+        "vi": "Góc vườn nhỏ này là nơi vô cùng thân thương đối với bà tôi."
+      },
+      {
+        "en": "Places that are dear to local residents deserve consideration when urban redevelopment plans are prepared.",
+        "zh": "制定城市改造计划时，应顾及当地居民珍爱的场所。",
+        "vi": "Những địa danh gắn bó sâu sắc với người dân địa phương cần được tôn trọng và lưu tâm khi lập các kế hoạch tái thiết đô thị."
+      }
+    ],
+    "col": [
+      "a dear friend｜người bạn chí cốt",
+      "dear to someone｜rất đỗi thân thương đối với ai",
+      "oh dear｜ôi chao, trời đất ơi"
+    ],
+    "fam": [
+      "dearly (adv.)"
+    ],
+    "syn": [
+      "beloved",
+      "precious"
+    ],
+    "ant": [],
+    "tip": "dear表“贵”主要用于英式口语；称呼常用Dear。",
+    "cefr": "A1",
+    "topic": "emotion",
+    "note": "",
+    "id": "dear",
+    "m": 31,
+    "tip_vi": "Trong thư tín trang trọng hay email công việc, từ \"Dear + Tên\" là lời chào chuẩn mực ở đầu thư. Người Anh lớn tuổi đôi khi dùng \"dear\" với nghĩa là đắt tiền (\"That jacket is a bit dear\"). Còn thốt lên \"Oh dear!\" là cách biểu lộ sự lo lắng nhẹ nhàng rất tự nhiên."
+  },
+  {
+    "w": "sorry",
+    "uk": "/ˈsɒri/",
+    "us": "/ˈsɑːri/",
+    "senses": [
+      {
+        "pos": "adj.",
+        "zh": "抱歉的；后悔的",
+        "en": "feeling regret about something you did or something that happened",
+        "vi": "hối tiếc, ân hận vì việc mình đã làm hoặc chuyện đã xảy ra"
+      },
+      {
+        "pos": "adj.",
+        "zh": "难过的；同情的",
+        "en": "feeling sadness or sympathy because of someone's difficulties",
+        "vi": "buồn lòng, cảm thông trước nỗi vất vả của người khác"
+      }
+    ],
+    "ex": [
+      {
+        "en": "I'm sorry I spilled juice on your clean shirt.",
+        "zh": "很抱歉，我把果汁洒在了你的干净衬衫上。",
+        "vi": "Mình xin lỗi vì lỡ làm đổ nước ép lên chiếc áo sạch của bạn."
+      },
+      {
+        "en": "Although companies may say they are sorry for environmental damage, meaningful action is needed to restore public trust.",
+        "zh": "尽管企业可能对环境破坏表示歉意，但恢复公众信任需要切实行动。",
+        "vi": "Dù các tập đoàn có thể lên tiếng xin lỗi vì hành vi làm hại môi trường, nhưng hành động cụ thể mới là điều kiện cần để lấy lại niềm tin từ người dân."
+      }
+    ],
+    "col": [
+      "sorry for being late｜xin lỗi vì đã đến muộn",
+      "sorry about the mistake｜xin lỗi về sai sót vừa rồi",
+      "feel sorry for someone｜thấy thương hại, cảm thông cho ai",
+      "sorry to hear that｜nghe tin đó tôi rất buồn và chia sẻ"
+    ],
+    "fam": [],
+    "syn": [
+      "apologetic",
+      "regretful"
+    ],
+    "ant": [],
+    "tip": "sorry for doing表示为所做之事道歉。",
+    "cefr": "A1",
+    "topic": "emotion",
+    "note": "",
+    "id": "sorry",
+    "m": 31,
+    "tip_vi": "Cấu trúc giới từ cần lưu ý: xin lỗi vì hành động của mình dùng \"sorry for doing something\" hoặc \"sorry about something\"; còn khi bày tỏ sự thương cảm hay đồng cảm với ai đó thì dùng \"feel sorry for someone\"."
+  },
+  {
+    "w": "ear",
+    "uk": "/ɪə/",
+    "us": "/ɪr/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "耳朵",
+        "en": "One of the organs on your head used for hearing.",
+        "vi": "tai (cơ quan thính giác trên đầu)"
+      },
+      {
+        "pos": "n.",
+        "zh": "辨音能力；听觉",
+        "en": "The ability to recognise and distinguish sounds.",
+        "vi": "khả năng cảm âm, nhận biết giai điệu và âm thanh"
+      },
+      {
+        "pos": "n.",
+        "zh": "谷穗",
+        "en": "The grain-bearing part of a cereal plant, such as wheat.",
+        "vi": "bông thóc, bông lúa mì (phần ngọn mang hạt của cây ngũ cốc)"
+      }
+    ],
+    "ex": [
+      {
+        "en": "My ears felt cold, so I pulled on a hat.",
+        "zh": "我的耳朵觉得冷，于是我戴上了帽子。",
+        "vi": "Hai tai tôi lạnh cóng nên tôi vội kéo chiếc mũ len trùm kín đầu."
+      },
+      {
+        "en": "Regular exposure to loud music can damage the ears and lead to permanent hearing loss.",
+        "zh": "经常接触高音量音乐可能损伤耳朵，并导致永久性听力损失。",
+        "vi": "Thường xuyên tiếp xúc với âm nhạc có âm lượng quá lớn có thể làm tổn thương màng nhĩ và dẫn tới suy giảm thính lực vĩnh viễn."
+      }
+    ],
+    "col": [
+      "an ear for music｜năng khiếu cảm thụ âm nhạc",
+      "ear infection｜chứng viêm tai",
+      "an ear of wheat｜một bông lúa mì",
+      "ear protection｜đồ bảo vệ tai, chụp tai chống ồn"
+    ],
+    "fam": [],
+    "syn": [],
+    "ant": [],
+    "tip": "have an ear for表示善于辨听音乐、语言等。",
+    "cefr": "A1",
+    "topic": "health",
+    "note": "",
+    "id": "ear",
+    "m": 31,
+    "tip_vi": "Cụm thành ngữ rất hay dùng: \"have an ear for music / languages\" mang nghĩa là có đôi tai nhạy bén, có năng khiếu bẩm sinh về âm nhạc hoặc học ngoại ngữ. Trong khi đó, \"play it by ear\" có nghĩa là tùy cơ ứng biến theo tình hình thực tế."
+  },
+  {
+    "w": "healthy",
+    "uk": "/ˈhelθi/",
+    "us": "/ˈhelθi/",
+    "senses": [
+      {
+        "pos": "adj.",
+        "zh": "健康的",
+        "en": "physically well and not suffering from illness",
+        "vi": "khỏe mạnh, sung sức, không ốm đau bệnh tật"
+      },
+      {
+        "pos": "adj.",
+        "zh": "有益健康的",
+        "en": "helping to maintain or improve health",
+        "vi": "lành mạnh, bổ dưỡng, tốt cho sức khỏe"
+      },
+      {
+        "pos": "adj.",
+        "zh": "良好的；兴旺的",
+        "en": "successful, strong, or developing in a positive way",
+        "vi": "vững mạnh, phát triển tốt (nền kinh tế, số liệu)"
+      }
+    ],
+    "ex": [
+      {
+        "en": "Our cat stays healthy with regular exercise and checkups.",
+        "zh": "我们家的猫通过经常运动和定期检查保持健康。",
+        "vi": "Chú mèo nhà tôi luôn khỏe mạnh nhờ được vận động đều và đi khám thú y định kỳ."
+      },
+      {
+        "en": "Schools should provide healthy meals to support children's physical development and encourage better eating habits from an early age.",
+        "zh": "学校应提供健康膳食，以促进儿童身体发育，并鼓励他们从小养成更好的饮食习惯。",
+        "vi": "Trường học nên cung cấp các bữa ăn lành mạnh để hỗ trợ sự phát triển thể chất của trẻ và rèn luyện thói quen ăn uống tốt ngay từ nhỏ."
+      }
+    ],
+    "col": [
+      "a healthy diet｜chế độ ăn uống lành mạnh",
+      "a healthy lifestyle｜lối sống lành mạnh",
+      "stay healthy｜giữ gìn sức khỏe",
+      "a healthy economy｜nền kinh tế phát triển vững vàng"
+    ],
+    "fam": [
+      "health (n.)",
+      "healthily (adv.)",
+      "unhealthy (adj.)"
+    ],
+    "syn": [
+      "well",
+      "fit"
+    ],
+    "ant": [
+      "unhealthy",
+      "ill"
+    ],
+    "tip": "既可形容身体健康，也可形容饮食等有益健康。",
+    "cefr": "A1",
+    "topic": "health",
+    "note": "",
+    "id": "healthy",
+    "m": 31,
+    "tip_vi": "Từ này vừa dùng cho người (\"a healthy child\" = đứa trẻ khỏe mạnh) vừa dùng cho chế độ ăn hay thói quen (\"healthy food\" = đồ ăn tốt cho sức khỏe). Đừng nhầm lẫn giữa tính từ \"healthy\" và danh từ \"health\" (\"good health\")."
+  },
+  {
+    "w": "laugh",
+    "uk": "/lɑːf/",
+    "us": "/læf/",
+    "senses": [
+      {
+        "pos": "v.",
+        "zh": "笑；发笑",
+        "en": "To make sounds showing amusement or happiness.",
+        "vi": "cười thành tiếng (thể hiện sự vui vẻ hoặc thích thú)"
+      },
+      {
+        "pos": "n.",
+        "zh": "笑；笑声",
+        "en": "The sound or act of expressing amusement.",
+        "vi": "tiếng cười, nụ cười sảng khoái"
+      }
+    ],
+    "ex": [
+      {
+        "en": "The baby's funny dance made everyone laugh at dinner.",
+        "zh": "宝宝滑稽的舞蹈让吃晚饭的每个人都笑了。",
+        "vi": "Điệu nhảy ngộ nghĩnh của em bé làm cả nhà cùng bật cười trong bữa tối."
+      },
+      {
+        "en": "People who laugh together regularly may develop stronger social bonds and cope better with everyday stress.",
+        "zh": "经常一起欢笑的人可能建立更牢固的社会联系，并更好地应对日常压力。",
+        "vi": "Những người thường xuyên cười đùa cùng nhau sẽ dễ gắn bó thân thiết và vượt qua những căng thẳng thường nhật một cách nhẹ nhàng hơn."
+      }
+    ],
+    "col": [
+      "laugh out loud｜bật cười thành tiếng, cười lớn",
+      "make someone laugh｜chọc cho ai cười",
+      "laugh at a joke｜cười vì một câu chuyện cười",
+      "a hearty laugh｜một tràng cười sảng khoái"
+    ],
+    "fam": [
+      "laughter (n.)",
+      "laughable (adj.)"
+    ],
+    "syn": [
+      "chuckle"
+    ],
+    "ant": [
+      "cry"
+    ],
+    "tip": "laugh at人常指嘲笑；laugh with人指一起笑。",
+    "cefr": "A1",
+    "topic": "emotion",
+    "note": "",
+    "id": "laugh",
+    "m": 31,
+    "tip_vi": "Phân biệt giới từ mang nghĩa khác nhau: \"laugh with someone\" là cùng cười vui vẻ với ai đó, nhưng \"laugh at someone\" lại là cười nhạo, chế giễu người ta. Cụm \"burst out laughing\" (bật cười không kìm được) rất sống động trong văn miêu tả."
+  },
+  {
+    "w": "find",
+    "uk": "/faɪnd/",
+    "us": "/faɪnd/",
+    "senses": [
+      {
+        "pos": "v.",
+        "zh": "找到；发现",
+        "en": "To discover something or locate what you were looking for.",
+        "vi": "tìm thấy, phát hiện ra điều gì sau khi tìm kiếm"
+      },
+      {
+        "pos": "v.",
+        "zh": "觉得；认为",
+        "en": "To have a particular opinion or experience of something.",
+        "vi": "cảm thấy, nhận thấy một việc như thế nào (quan điểm cá nhân)"
+      },
+      {
+        "pos": "n.",
+        "zh": "发现物",
+        "en": "Something useful or valuable that someone discovers.",
+        "vi": "vật hoặc phát hiện có giá trị tìm được"
+      }
+    ],
+    "ex": [
+      {
+        "en": "I finally found my keys inside my coat pocket.",
+        "zh": "我终于在外套口袋里找到了钥匙。",
+        "vi": "Cuối cùng tôi cũng tìm thấy chùm chìa khóa nằm gọn trong túi áo khoác."
+      },
+      {
+        "en": "Many students find online courses convenient, although some struggle to stay motivated without classroom interaction.",
+        "zh": "许多学生觉得网络课程很方便，但有些人在缺少课堂互动时难以保持学习动力。",
+        "vi": "Nhiều sinh viên cảm thấy các khóa học trên mạng rất tiện lợi, dù một số bạn vẫn chật vật duy trì động lực học nếu thiếu sự tương tác trực tiếp trên lớp."
+      }
+    ],
+    "col": [
+      "find a solution｜tìm ra giải pháp",
+      "find out｜tìm hiểu, phát hiện ra thông tin",
+      "find it difficult to｜nhận thấy làm việc gì rất khó",
+      "a valuable find｜một phát hiện có giá trị lớn"
+    ],
+    "fam": [
+      "finder (n.)",
+      "finding (n.)"
+    ],
+    "syn": [
+      "discover",
+      "locate"
+    ],
+    "ant": [
+      "lose"
+    ],
+    "tip": "过去式和过去分词均为found；find＋宾语＋形容词。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "find",
+    "m": 31,
+    "tip_vi": "Quá khứ và phân từ hai đều là \"found\" /faʊnd/. Đừng nhầm với động từ nguyên mẫu \"found\" /faʊnd/ mang nghĩa là thành lập, sáng lập (quá khứ là founded). Cấu trúc \"find it + tính từ + to do something\" là mẫu câu ghi điểm ngữ pháp tự nhiên trong IELTS Writing."
+  },
+  {
+    "w": "sell",
+    "uk": "/sel/",
+    "us": "/sel/",
+    "senses": [
+      {
+        "pos": "v.",
+        "zh": "卖；出售",
+        "en": "to give something to someone in exchange for money",
+        "vi": "bán (trao đổi hàng hóa lấy tiền)"
+      },
+      {
+        "pos": "v.",
+        "zh": "有销路；卖得",
+        "en": "to be bought in a particular quantity or way",
+        "vi": "được tiêu thụ, bán chạy theo mức độ nào đó"
+      },
+      {
+        "pos": "v.",
+        "zh": "使人接受；推销",
+        "en": "to persuade someone to accept an idea or proposal",
+        "vi": "thuyết phục ai chấp nhận một ý tưởng hoặc đề xuất"
+      }
+    ],
+    "ex": [
+      {
+        "en": "They sell fresh bread at the market every Saturday.",
+        "zh": "他们每周六都在市场卖新鲜面包。",
+        "vi": "Họ bày bán bánh mì tươi tại phiên chợ vào mỗi sáng thứ Bảy."
+      },
+      {
+        "en": "Small businesses increasingly sell their products online to reach customers beyond their local communities.",
+        "zh": "小企业越来越多地在线销售产品，以吸引本地社区以外的顾客。",
+        "vi": "Các cơ sở kinh doanh nhỏ ngày càng tích cực bán hàng trực tuyến nhằm tiếp cận lượng khách hàng bên ngoài khu vực sinh sống của họ."
+      }
+    ],
+    "col": [
+      "sell out｜bán hết sạch vé hoặc hàng",
+      "sell well｜bán rất chạy",
+      "sell something to someone｜bán cái gì cho ai",
+      "sell an idea｜thuyết phục mọi người ủng hộ một ý tưởng"
+    ],
+    "fam": [
+      "seller (n.)",
+      "sale (n.)",
+      "selling (n.)"
+    ],
+    "syn": [],
+    "ant": [
+      "buy"
+    ],
+    "tip": "过去式和过去分词均为sold；sell well常用主动形式。",
+    "cefr": "A1",
+    "topic": "economy",
+    "note": "",
+    "id": "sell",
+    "m": 31,
+    "tip_vi": "Bất quy tắc: sell – sold – sold. Khi muốn nói một cuốn sách hay sản phẩm bán rất chạy, người ta dùng dạng chủ động: \"The book is selling well\" chứ không chia bị động. Cụm từ \"sold out\" nghĩa là đã cháy vé hoặc hết nhẵn hàng."
+  },
+  {
+    "w": "walk",
+    "uk": "/wɔːk/",
+    "us": "/wɔːk/",
+    "senses": [
+      {
+        "pos": "v.",
+        "zh": "走；步行",
+        "en": "To move on foot at a pace slower than running",
+        "vi": "đi bộ, rảo bước bằng đôi chân"
+      },
+      {
+        "pos": "n.",
+        "zh": "散步；步行路程",
+        "en": "A journey made on foot, often for pleasure",
+        "vi": "chuyến đi dạo, cuộc tản bộ giải khuây"
+      }
+    ],
+    "ex": [
+      {
+        "en": "We walk to the bakery every Sunday morning.",
+        "zh": "我们每个星期天早上都步行去面包店。",
+        "vi": "Sáng Chủ nhật nào gia đình tôi cũng cùng nhau đi bộ tới tiệm bánh."
+      },
+      {
+        "en": "Safe pavements and attractive public spaces encourage residents to walk rather than drive for short journeys.",
+        "zh": "安全的人行道和宜人的公共空间能鼓励居民短途出行时步行而不开车。",
+        "vi": "Vỉa hè bằng phẳng an toàn và những không gian công cộng sạch đẹp sẽ khuyến khích người dân đi bộ thay vì dùng xe máy, ô tô cho những chặng đường ngắn."
+      }
+    ],
+    "col": [
+      "go for a walk｜đi dạo mát, tản bộ",
+      "walk to school｜đi bộ đến trường",
+      "walk the dog｜dắt chó đi dạo",
+      "a brisk walk｜cuộc đi bộ nhanh, rảo bước nhanh"
+    ],
+    "fam": [
+      "walker (n.)",
+      "walking (n.)",
+      "walkable (adj.)"
+    ],
+    "syn": [
+      "stroll"
+    ],
+    "ant": [],
+    "tip": "字母l不发音；walk the dog意为遛狗。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "walk",
+    "m": 31,
+    "tip_vi": "Chú ý phát âm: chữ \"l\" hoàn toàn là âm câm, phát âm chuẩn là /wɔːk/. Cụm \"walk the dog\" nghĩa là dắt chó đi dạo. Trong IELTS Speaking khi kể về thói quen thể dục, cụm \"a brisk walk\" (đi bộ nhanh khoảng 30 phút) là một cách diễn đạt rất tự nhiên."
+  },
+  {
+    "w": "as",
+    "uk": "/əz/",
+    "us": "/əz/",
+    "senses": [
+      {
+        "pos": "prep.",
+        "zh": "作为；以……身份",
+        "en": "used to indicate someone's role or something's purpose",
+        "vi": "với tư cách là, đóng vai trò như là (chỉ cương vị, công dụng)"
+      },
+      {
+        "pos": "conj.",
+        "zh": "当……时；因为；如同",
+        "en": "introduces a time, reason, or way something happens",
+        "vi": "khi, trong khi, hoặc bởi vì (liên từ nối thời gian hoặc nguyên nhân)"
+      },
+      {
+        "pos": "adv.",
+        "zh": "同样地；一样地",
+        "en": "used in comparisons to show an equal degree",
+        "vi": "như, bằng như (dùng trong so sánh ngang bằng)"
+      }
+    ],
+    "ex": [
+      {
+        "en": "She works as a guide at the local museum.",
+        "zh": "她在当地博物馆担任讲解员。",
+        "vi": "Cô ấy làm việc với tư cách là hướng dẫn viên tại bảo tàng địa phương."
+      },
+      {
+        "en": "As public transport becomes more reliable, fewer commuters may choose to drive to work.",
+        "zh": "随着公共交通变得更加可靠，选择开车上班的通勤者可能会减少。",
+        "vi": "Khi giao thông công cộng ngày càng chuẩn giờ và thuận tiện, sẽ có ít người đi làm lựa chọn tự lái xe hơi hơn."
+      }
+    ],
+    "col": [
+      "work as｜làm việc với cương vị là",
+      "as a result｜kết quả là, do đó",
+      "as soon as｜ngay khi",
+      "as well as｜cũng như, đi kèm với"
+    ],
+    "fam": [],
+    "syn": [],
+    "ant": [],
+    "tip": "as表示实际身份；like表示相似。重读时读/æz/。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "as",
+    "m": 31,
+    "tip_vi": "Phân biệt: \"work as a teacher\" nghĩa là bạn thực sự là giáo viên; còn \"work like a dog\" chỉ là phép so sánh ví von. Cụm từ \"as a result\" và \"as well as\" là hai công cụ liên kết ý cực kỳ thông dụng trong IELTS Writing Task 2."
+  },
+  {
+    "w": "run",
+    "uk": "/rʌn/",
+    "us": "/rʌn/",
+    "senses": [
+      {
+        "pos": "v.",
+        "zh": "跑；奔跑",
+        "en": "move quickly on foot, lifting both feet between steps",
+        "vi": "chạy (di chuyển nhanh bằng chân)"
+      },
+      {
+        "pos": "v.",
+        "zh": "经营；管理",
+        "en": "manage a business, organisation, or activity",
+        "vi": "quản lý, điều hành (doanh nghiệp, tổ chức hoặc hoạt động)"
+      },
+      {
+        "pos": "v.",
+        "zh": "运转；运行",
+        "en": "operate, or make a machine or program operate",
+        "vi": "vận hành, chạy máy móc hoặc phần mềm"
+      }
+    ],
+    "ex": [
+      {
+        "en": "We ran through the park before breakfast today.",
+        "zh": "今天早饭前，我们跑步穿过了公园。",
+        "vi": "Sáng nay tụi mình đã chạy bộ một vòng quanh công viên trước bữa sáng."
+      },
+      {
+        "en": "Local councils often run training programmes to help unemployed residents develop skills needed by employers.",
+        "zh": "地方议会经常开办培训项目，帮助失业居民培养雇主所需的技能。",
+        "vi": "Hội đồng địa phương thường tổ chức các chương trình đào tạo để giúp người lao động chưa có việc làm nắm bắt những kỹ năng mà nhà tuyển dụng đang tìm kiếm."
+      }
+    ],
+    "col": [
+      "run a business｜điều hành một doanh nghiệp",
+      "run a programme｜tổ chức triển khai một chương trình",
+      "run smoothly｜vận hành trơn tru, suôn sẻ",
+      "run a marathon｜chạy thi ma-ra-tông"
+    ],
+    "fam": [
+      "runner (n)",
+      "running (n)"
+    ],
+    "syn": [
+      "sprint",
+      "manage",
+      "operate"
+    ],
+    "ant": [],
+    "tip": "过去式ran，过去分词run；现在分词running。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "run",
+    "m": 31,
+    "tip_vi": "Ngoài nghĩa chạy thể dục, từ \"run\" rất hay được dùng với nghĩa điều hành: \"run a business / run a school\". Dạng bất quy tắc: run – ran – run. Khi miêu tả máy móc hoạt động tốt, dùng collocations \"run smoothly\"."
+  },
+  {
+    "w": "light",
+    "uk": "/laɪt/",
+    "us": "/laɪt/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "光；光线；灯",
+        "en": "brightness that enables sight, or a device producing it",
+        "vi": "ánh sáng giúp nhìn rõ vạn vật; hoặc bóng đèn, ngọn đèn chiếu sáng"
+      },
+      {
+        "pos": "adj.",
+        "zh": "轻的；明亮的；浅色的",
+        "en": "not heavy, bright, or pale in colour",
+        "vi": "nhẹ (về cân nặng), dịu nhẹ hoặc nhạt màu"
+      },
+      {
+        "pos": "v.",
+        "zh": "点燃；照亮",
+        "en": "make something burn or provide brightness",
+        "vi": "thắp lên, châm lửa đốt, chiếu sáng cho nơi nào"
+      }
+    ],
+    "ex": [
+      {
+        "en": "Warm light came through the curtains into our bedroom.",
+        "zh": "温暖的光线透过窗帘照进了我们的卧室。",
+        "vi": "Ánh sáng ấm áp len lỏi qua rèm cửa chiếu thẳng vào phòng ngủ của chúng tôi."
+      },
+      {
+        "en": "Access to natural light in classrooms may improve students' concentration and reduce electricity consumption.",
+        "zh": "让自然光进入教室可能有助于提高学生的专注力，并减少用电量。",
+        "vi": "Lớp học đón được nhiều ánh sáng tự nhiên có thể giúp học sinh tập trung tốt hơn và giảm thiểu việc tiêu tốn điện năng."
+      }
+    ],
+    "col": [
+      "natural light｜ánh sáng tự nhiên",
+      "turn on the light｜bật đèn",
+      "light a candle｜thắp một ngọn nến",
+      "light luggage｜hành lý gọn nhẹ"
+    ],
+    "fam": [
+      "lighting (n.)",
+      "lightness (n.)",
+      "lightly (adv.)",
+      "lighten (v.)"
+    ],
+    "syn": [],
+    "ant": [
+      "dark",
+      "heavy"
+    ],
+    "tip": "光线通常不可数；一盏灯用a light；动词过去式常用lit。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "light",
+    "m": 31,
+    "tip_vi": "Khi chỉ ánh sáng tự nhiên, \"light\" không đếm được. Nhưng khi chỉ cái đèn cụ thể, nó là danh từ đếm được (\"turn off the lights\"). Quá khứ của động từ \"light\" thường dùng là \"lit\" (ví dụ: \"she lit a candle\")."
+  },
+  {
+    "w": "look",
+    "uk": "/lʊk/",
+    "us": "/lʊk/",
+    "senses": [
+      {
+        "pos": "v.",
+        "zh": "看；注视",
+        "en": "direct your eyes towards someone or something",
+        "vi": "nhìn, hướng ánh mắt về phía ai hoặc vật gì"
+      },
+      {
+        "pos": "v.",
+        "zh": "看起来；显得",
+        "en": "appear to have a particular quality or condition",
+        "vi": "trông có vẻ, dường như mang một sắc thái nào đó"
+      },
+      {
+        "pos": "n.",
+        "zh": "看；神情；外观",
+        "en": "an act of looking, or someone's expression or appearance",
+        "vi": "cái nhìn, hoặc diện mạo, vẻ bề ngoài"
+      }
+    ],
+    "ex": [
+      {
+        "en": "Look at the tiny bird beside the window.",
+        "zh": "看窗边那只小鸟。",
+        "vi": "Nhìn chú chim nhỏ xinh xắn đang đậu bên bậu cửa sổ kìa."
+      },
+      {
+        "en": "Public parks often look more attractive when local residents help maintain their gardens and pathways.",
+        "zh": "当当地居民协助维护花园和步道时，公共公园往往显得更有吸引力。",
+        "vi": "Các công viên công cộng thường trông khang trang và đẹp mắt hơn khi người dân quanh vùng cùng chung tay chăm chút bồn hoa và quét dọn lối đi."
+      }
+    ],
+    "col": [
+      "look at｜nhìn vào",
+      "look forward to｜háo hức mong đợi điều gì",
+      "take a look｜ngắm nghía, xem qua",
+      "look like｜trông giống như"
+    ],
+    "fam": [],
+    "syn": [],
+    "ant": [],
+    "tip": "look at后接看的对象；look作系动词后接形容词。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "look",
+    "m": 31,
+    "tip_vi": "Nhớ rằng \"look forward to\" đi sau là danh từ hoặc V-ing (\"look forward to seeing you\"), đây là cái bẫy ngữ pháp rất nhiều bạn mắc phải. Khi mang nghĩa \"trông có vẻ\", \"look\" đi với tính từ: \"you look tired\" (không dùng phó từ)."
+  },
+  {
+    "w": "first",
+    "uk": "/fɜːst/",
+    "us": "/fɝːst/",
+    "senses": [
+      {
+        "pos": "num.",
+        "zh": "第一",
+        "en": "coming before all others in order or time",
+        "vi": "đầu tiên, đứng thứ nhất về thứ tự hoặc thời gian"
+      },
+      {
+        "pos": "adv.",
+        "zh": "首先；最初；优先",
+        "en": "before anything or anyone else",
+        "vi": "trước hết, trước mọi người hay mọi thứ khác (phó từ)"
+      }
+    ],
+    "ex": [
+      {
+        "en": "This is my first visit to the seaside.",
+        "zh": "这是我第一次到海边来。",
+        "vi": "Đây là chuyến đi biển đầu tiên trong đời của tôi."
+      },
+      {
+        "en": "Governments should first improve public transport before encouraging residents to give up private cars.",
+        "zh": "政府应先改善公共交通，再鼓励居民放弃私家车。",
+        "vi": "Chính phủ nên nâng cấp chất lượng giao thông công cộng trước khi vận động người dân từ bỏ xe cá nhân."
+      }
+    ],
+    "col": [
+      "first place｜vị trí quán quân, giải nhất",
+      "at first｜lúc ban đầu",
+      "first of all｜trước hết, điều đầu tiên là",
+      "first aid｜sơ cứu ban đầu"
+    ],
+    "fam": [],
+    "syn": [],
+    "ant": [
+      "last"
+    ],
+    "tip": "at first指起初；first可用于列举第一点。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "first",
+    "m": 31,
+    "tip_vi": "Phân biệt kỹ: \"at first\" có nghĩa là lúc ban đầu (thường ngụ ý về sau có sự thay đổi: \"At first I disliked coffee, but now I love it\"). Còn khi bắt đầu liệt kê các ý trong bài thi Nói hoặc Viết, hãy dùng \"firstly\" hoặc \"first of all\"."
+  },
+  {
+    "w": "expensive",
+    "uk": "/ɪkˈspensɪv/",
+    "us": "/ɪkˈspensɪv/",
+    "senses": [
+      {
+        "pos": "adj.",
+        "zh": "昂贵的；花钱多的",
+        "en": "costing a large amount of money",
+        "vi": "đắt đỏ, tốn kém nhiều tiền bạc"
+      }
+    ],
+    "ex": [
+      {
+        "en": "These boots are too expensive for my budget.",
+        "zh": "这双靴子太贵，超出了我的预算。",
+        "vi": "Đôi bốt này giá đắt quá so với túi tiền của mình."
+      },
+      {
+        "en": "Housing in major cities is becoming increasingly expensive, forcing many young workers to live farther from their workplaces.",
+        "zh": "大城市的住房越来越贵，迫使许多年轻职工住到离工作地点更远的地方。",
+        "vi": "Giá nhà tại các đô thị lớn đang ngày càng đắt đỏ, buộc nhiều người lao động trẻ phải dọn ra sống ở những khu vực xa nơi làm việc."
+      }
+    ],
+    "col": [
+      "too expensive｜quá đắt đỏ",
+      "increasingly expensive｜ngày càng trở nên đắt đỏ",
+      "expensive to maintain｜chi phí bảo trì tốn kém",
+      "an expensive mistake｜sai lầm phải trả giá đắt"
+    ],
+    "fam": [
+      "expense (n.)",
+      "expensively (adv.)",
+      "inexpensive (adj.)"
+    ],
+    "syn": [
+      "costly",
+      "pricey"
+    ],
+    "ant": [
+      "cheap",
+      "inexpensive"
+    ],
+    "tip": "物品贵用expensive，价格高用high。",
+    "cefr": "A1",
+    "topic": "economy",
+    "note": "",
+    "id": "expensive",
+    "m": 31,
+    "tip_vi": "Lỗi dùng từ kinh điển: món đồ thì mới dùng \"expensive\" (\"This house is expensive\"), còn khi nói về mức giá thì phải dùng \"high\" hoặc \"low\" (\"The price is very high\", không bao giờ nói \"The price is expensive\")."
+  },
+  {
+    "w": "language",
+    "uk": "/ˈlæŋɡwɪdʒ/",
+    "us": "/ˈlæŋɡwɪdʒ/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "语言",
+        "en": "a system of words or gestures used for communication",
+        "vi": "ngôn ngữ, tiếng nói (hệ thống từ ngữ và cử chỉ dùng để giao tiếp)"
+      },
+      {
+        "pos": "n.",
+        "zh": "措辞；表达方式",
+        "en": "the words and style used in a particular context",
+        "vi": "văn phong, cách dùng từ ngữ trong một ngữ cảnh cụ thể"
+      }
+    ],
+    "ex": [
+      {
+        "en": "My neighbour teaches me a little of her language.",
+        "zh": "邻居教我一点她的语言。",
+        "vi": "Bác hàng xóm đang dạy tôi một vài câu chào trong ngôn ngữ của bác ấy."
+      },
+      {
+        "en": "Learning a foreign language can broaden students' cultural understanding and improve their future employment prospects.",
+        "zh": "学习外语可以拓宽学生的文化视野，并改善他们未来的就业前景。",
+        "vi": "Học một ngoại ngữ mới có thể mở rộng vốn hiểu biết văn hóa của học sinh và tăng thêm cơ hội tìm kiếm việc làm sau này."
+      }
+    ],
+    "col": [
+      "foreign language｜ngoại ngữ",
+      "body language｜ngôn ngữ cơ thể",
+      "language barrier｜rào cản ngôn ngữ",
+      "formal language｜ngôn ngữ trang trọng"
+    ],
+    "fam": [],
+    "syn": [],
+    "ant": [],
+    "tip": "指某种语言时可数；泛指语言能力时常不可数。",
+    "cefr": "A1",
+    "topic": "education",
+    "note": "",
+    "id": "language",
+    "m": 31,
+    "tip_vi": "Khi chỉ một thứ tiếng cụ thể, đây là danh từ đếm được (\"learn two languages\"). Khi nói về khả năng ngôn ngữ chung chung của loài người, nó là danh từ không đếm được. Cụm từ \"language barrier\" (rào cản ngôn ngữ) rất thường gặp trong chủ đề du lịch và di cư."
+  },
+  {
+    "w": "busy",
+    "uk": "/ˈbɪzi/",
+    "us": "/ˈbɪzi/",
+    "senses": [
+      {
+        "pos": "adj.",
+        "zh": "忙碌的",
+        "en": "Having many things to do or being actively occupied.",
+        "vi": "bận rộn, có nhiều việc phải làm, tất bật"
+      },
+      {
+        "pos": "adj.",
+        "zh": "繁忙的；人来车往的",
+        "en": "Full of people, traffic, or activity.",
+        "vi": "đông đúc, nhộn nhịp xe cộ hoặc người qua lại"
+      },
+      {
+        "pos": "adj.",
+        "zh": "占线的",
+        "en": "Already being used, especially a telephone line.",
+        "vi": "đang bận (đường dây điện thoại đang có người nghe)"
+      }
+    ],
+    "ex": [
+      {
+        "en": "I am busy making soup for dinner right now.",
+        "zh": "我现在正忙着做晚餐要喝的汤。",
+        "vi": "Lúc này mình đang bận nấu canh cho bữa cơm tối."
+      },
+      {
+        "en": "Busy urban roads can discourage cycling unless local authorities provide safe routes separated from motor traffic.",
+        "zh": "繁忙的城市道路可能让人不愿骑车，除非地方政府提供与机动车流隔离的安全路线。",
+        "vi": "Những tuyến đường phố đông đúc có thể khiến người dân ngại đạp xe, trừ phi chính quyền xây dựng các làn đường riêng biệt tách khỏi dòng xe cơ giới."
+      }
+    ],
+    "col": [
+      "busy doing something｜bận rộn làm việc gì",
+      "busy with work｜bận bịu với công việc",
+      "a busy street｜con phố tấp nập, đông đúc",
+      "a busy schedule｜lịch trình bận rộn, kín mít"
+    ],
+    "fam": [
+      "busily (adv.)",
+      "busyness (n.)"
+    ],
+    "syn": [
+      "occupied",
+      "hectic"
+    ],
+    "ant": [
+      "idle",
+      "quiet"
+    ],
+    "tip": "用busy doing或busy with，不用busy to do。",
+    "cefr": "A1",
+    "topic": "daily",
+    "note": "",
+    "id": "busy",
+    "m": 31,
+    "tip_vi": "Nhớ cấu trúc chuẩn: \"busy doing something\" (sau busy là V-ing, không dùng to-V): \"I am busy preparing for IELTS\". Cụm danh từ \"a busy schedule\" (lịch làm việc dày đặc) rất đắc địa cho Speaking Part 1 khi hỏi về công việc hoặc học tập."
+  },
+  {
+    "w": "write",
+    "uk": "/raɪt/",
+    "us": "/raɪt/",
+    "senses": [
+      {
+        "pos": "v.",
+        "zh": "写；书写",
+        "en": "To form words on paper or a screen.",
+        "vi": "viết, ghi lại từ ngữ lên giấy hoặc màn hình"
+      },
+      {
+        "pos": "v.",
+        "zh": "创作；写作",
+        "en": "To create a story, article, or piece of music.",
+        "vi": "sáng tác, soạn thảo (câu chuyện, bài báo, bản nhạc)"
+      },
+      {
+        "pos": "v.",
+        "zh": "写信",
+        "en": "To send someone a letter or written message.",
+        "vi": "viết thư, gửi thư từ hoặc tin nhắn cho ai"
+      }
+    ],
+    "ex": [
+      {
+        "en": "Please write your address on this small card.",
+        "zh": "请把你的地址写在这张小卡片上。",
+        "vi": "Bạn vui lòng viết địa chỉ của mình lên tấm bưu thiếp nhỏ này nhé."
+      },
+      {
+        "en": "Students who write regularly often develop stronger reasoning skills and express complex ideas more clearly.",
+        "zh": "经常写作的学生往往能培养更强的推理能力，并更清晰地表达复杂观点。",
+        "vi": "Những học sinh rèn luyện thói quen viết lách thường xuyên sẽ phát triển tư duy phản biện tốt hơn và diễn đạt các ý niệm phức tạp mạch lạc hơn."
+      }
+    ],
+    "col": [
+      "write an essay｜viết một bài luận",
+      "write to someone｜viết thư gửi cho ai",
+      "write down｜ghi chép lại ra giấy"
+    ],
+    "fam": [
+      "writer (n.)",
+      "writing (n.)",
+      "rewrite (v.)"
+    ],
+    "syn": [],
+    "ant": [],
+    "tip": "不规则变化：write—wrote—written。",
+    "cefr": "A1",
+    "topic": "education",
+    "note": "",
+    "id": "write",
+    "m": 31,
+    "tip_vi": "Bất quy tắc cần thuộc nằm lòng: write – wrote – written (chú ý written có hai chữ t). Viết cho ai đó dùng \"write to someone\" (trong tiếng Anh Anh có giới từ \"to\"). Cụm động từ \"write down\" mang nghĩa là ghi chép lại thông tin nhanh chóng."
+  },
+  {
+    "w": "Spanish",
+    "uk": "/ˈspænɪʃ/",
+    "us": "/ˈspænɪʃ/",
+    "senses": [
+      {
+        "pos": "n.",
+        "zh": "西班牙语",
+        "en": "the language spoken in Spain and many Latin American countries",
+        "vi": "tiếng Tây Ban Nha (ngôn ngữ tại Tây Ban Nha và phần lớn khu vực Mỹ Latinh)"
+      },
+      {
+        "pos": "adj.",
+        "zh": "西班牙的；西班牙语的",
+        "en": "relating to Spain, its people, culture, or language",
+        "vi": "thuộc về Tây Ban Nha, con người, văn hóa hoặc tiếng Tây Ban Nha"
+      }
+    ],
+    "ex": [
+      {
+        "en": "I practise Spanish with my neighbour after dinner.",
+        "zh": "晚饭后我和邻居一起练习西班牙语。",
+        "vi": "Tối nào tôi cũng dành chút thời gian luyện tập tiếng Tây Ban Nha cùng bác hàng xóm."
+      },
+      {
+        "en": "Learning Spanish can broaden students' access to literature and improve their opportunities for international employment.",
+        "zh": "学习西班牙语能拓宽学生接触文学作品的渠道，并增加他们在国际就业市场上的机会。",
+        "vi": "Học tiếng Tây Ban Nha giúp học sinh tiếp cận kho tàng văn học phong phú và gia tăng cơ hội tìm kiếm việc làm tại các môi trường quốc tế."
+      }
+    ],
+    "col": [
+      "speak Spanish｜nói tiếng Tây Ban Nha",
+      "Spanish culture｜văn hóa Tây Ban Nha",
+      "Spanish-speaking countries｜các quốc gia nói tiếng Tây Ban Nha"
+    ],
+    "fam": [],
+    "syn": [],
+    "ant": [],
+    "tip": "首字母大写；一个西班牙人可说a Spanish person。",
+    "cefr": "A1",
+    "topic": "education",
+    "note": "",
+    "id": "spanish",
+    "m": 31,
+    "tip_vi": "Tên quốc gia là \"Spain\", còn ngôn ngữ, quốc tịch hoặc tính từ là \"Spanish\" (luôn viết hoa chữ cái đầu). Cụm tính từ ghép \"Spanish-speaking countries\" (các quốc gia dùng tiếng Tây Ban Nha) là từ vựng rất chuẩn xác cho bài thi Writing."
+  }
+]
