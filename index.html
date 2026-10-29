@@ -14,7 +14,10 @@
     <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
     <link rel="apple-touch-icon" href="%BASE_URL%icon-512.png" />
     <link rel="manifest" href="%BASE_URL%manifest.webmanifest" />
+    <link rel="alternate" type="application/json" title="AI Catalog" href="%BASE_URL%ai-catalog.json" />
     <link rel="preload" href="%BASE_URL%atlas/index.json?v=stella-v2" as="fetch" crossorigin="anonymous" />
+    <link rel="preload" as="image" href="%BASE_URL%brand/hero-sm.webp" media="(max-width: 759px)" fetchpriority="high" />
+    <link rel="preload" as="image" href="%BASE_URL%brand/hero.webp" media="(min-width: 760px)" fetchpriority="high" />
     <script type="module">
       import RefreshRuntime from "/@react-refresh";
       RefreshRuntime.injectIntoGlobalHook(window);

@@ -105,10 +105,19 @@ export default defineConfig({
     chunkSizeWarningLimit: 600,
     rollupOptions: {
       output: {
-        manualChunks: {
-          vendor: ["react", "react-dom"],
-          icons: ["lucide-react"],
-          fsrs: ["ts-fsrs"],
+        manualChunks(id) {
+          if (id.includes("node_modules/react") || id.includes("node_modules/react-dom")) {
+            return "vendor";
+          }
+          if (id.includes("node_modules/lucide-react")) {
+            return "icons";
+          }
+          if (id.includes("node_modules/ts-fsrs")) {
+            return "fsrs";
+          }
+          if (id.includes("/src/galaxy/")) {
+            return "galaxy";
+          }
         },
       },
     },

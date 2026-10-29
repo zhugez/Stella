@@ -68,7 +68,7 @@ function Runner({ session }: { session: ActiveSession }) {
           <X size={22} />
         </button>
         <div className="learn-progress" role="progressbar" aria-valuemin={0} aria-valuemax={total} aria-valuenow={session.index}>
-          <span style={{ width: `${(session.index / total) * 100}%` }} />
+          <span style={{ transform: `scaleX(${Math.max(0.01, session.index / total)})` }} />
         </div>
         <span className="learn-count">
           {session.index + 1}

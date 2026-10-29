@@ -283,7 +283,7 @@ function useWidth(ref: React.RefObject<HTMLDivElement | null>) {
     if (!el) return;
     const ro = new ResizeObserver(([e]) => setW(e.contentRect.width));
     ro.observe(el);
-    setW(el.getBoundingClientRect().width);
+    if (el.clientWidth) setW(el.clientWidth);
     return () => ro.disconnect();
   }, [ref]);
   return w;

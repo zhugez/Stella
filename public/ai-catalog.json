@@ -1,11 +1,15 @@
 {
+  "$schema": "https://agentic-web.org/schemas/ai-catalog/v1/schema.json",
+  "version": "1.0",
   "name": "Stella IELTS Ecosystem",
-  "version": "1.0.0",
-  "description": "7,298 illustrated IELTS vocabulary words with native audio, FSRS spaced repetition, and human-crafted Vietnamese guidance.",
-  "homepage": "https://stella.zhugez.workers.dev",
+  "description": "Illustrated IELTS vocabulary & 4-skill learning ecosystem with 7,298 entries, native audio, and FSRS spaced repetition.",
+  "url": "https://stella.zhugez.workers.dev",
+  "documentation": "https://stella.zhugez.workers.dev/llms.txt",
   "resources": [
     {
       "name": "Vocabulary Atlas",
+      "description": "7,298 IELTS vocabulary words with CEFR levels, definitions in EN/VI/ZH/FR, collocations, and example sentences.",
+      "type": "dataset",
       "url": "https://stella.zhugez.workers.dev/atlas/index.json",
       "format": "application/json"
     }

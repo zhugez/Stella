@@ -208,7 +208,7 @@ function TypingRound({ mode, entries, onExit, onAgain }: { mode: Mode; entries: 
         </button>
         <AmbiencePicker />
         <div className="learn-progress">
-          <span style={{ width: `${(i / entries.length) * 100}%` }} />
+          <span style={{ transform: `scaleX(${Math.max(0.01, i / Math.max(1, entries.length))})` }} />
         </div>
         <span className="typing-meter">
           <b>{m.wpm}</b> WPM · <b>{m.accuracy}%</b>

@@ -33,6 +33,36 @@ export default {
       return response;
     }
 
+    // 1b. Direct AI Agent discovery endpoints (prevents SPA HTML fallback)
+    if (url.pathname === "/ai-catalog.json" || url.pathname === "/.well-known/ai-catalog.json" || url.pathname === "/.well-known/ard.json") {
+      const catalogData = {
+        "$schema": "https://agentic-web.org/schemas/ai-catalog/v1/schema.json",
+        "version": "1.0",
+        "name": "Stella IELTS Ecosystem",
+        "description": "Illustrated IELTS vocabulary & 4-skill learning ecosystem with 7,298 entries, native audio, and FSRS spaced repetition.",
+        "url": `${url.origin}/`,
+        "documentation": `${url.origin}/llms.txt`,
+        "resources": [
+          {
+            "name": "Vocabulary Atlas",
+            "description": "7,298 IELTS vocabulary words with CEFR levels, definitions in EN/VI/ZH/FR, collocations, and example sentences.",
+            "type": "dataset",
+            "url": `${url.origin}/atlas/index.json`,
+            "format": "application/json"
+          }
+        ]
+      };
+      return new Response(JSON.stringify(catalogData, null, 2), {
+        status: 200,
+        headers: {
+          "Content-Type": "application/json; charset=utf-8",
+          "Cache-Control": "public, max-age=86400",
+          "Access-Control-Allow-Origin": "*",
+          "X-Content-Type-Options": "nosniff"
+        }
+      });
+    }
+
     // 2. Fetch static asset from Cloudflare Edge
     const response = await env.ASSETS.fetch(request);
     const newHeaders = new Headers(response.headers);
@@ -44,14 +74,15 @@ export default {
     } else if (url.pathname === "/llms.txt") {
       newHeaders.set("Content-Type", "text/markdown; charset=utf-8");
       newHeaders.set("Cache-Control", "public, max-age=86400");
-    } else if (url.pathname === "/ai-catalog.json") {
+    } else if (url.pathname === "/ai-catalog.json" || url.pathname.startsWith("/.well-known/")) {
       newHeaders.set("Content-Type", "application/json; charset=utf-8");
       newHeaders.set("Cache-Control", "public, max-age=86400");
+      newHeaders.set("Access-Control-Allow-Origin", "*");
     } else if (url.pathname.startsWith("/assets/")) {
       // Vite hashed JS, CSS, and fonts never change
       newHeaders.set("Cache-Control", "public, max-age=31536000, immutable");
-    } else if (url.pathname.startsWith("/atlas/img/") || url.pathname.startsWith("/atlas/thumb/")) {
-      // 7,298 WebP paintings and thumbnails
+    } else if (url.pathname.startsWith("/brand/") || url.pathname.startsWith("/atlas/img/") || url.pathname.startsWith("/atlas/thumb/")) {
+      // Brand illustrations, WebP paintings, and thumbnails
       newHeaders.set("Cache-Control", "public, max-age=2592000, stale-while-revalidate=604800");
     } else if (url.pathname.startsWith("/atlas/entries/") || url.pathname.endsWith("/index.json")) {
       // Vocabulary data chunks: fresh with background revalidation

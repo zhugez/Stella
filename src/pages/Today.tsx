@@ -86,7 +86,15 @@ export function Today() {
       </header>
 
       <section className={`journey ${total === 0 && !active ? "is-clear" : ""}`}>
-        <img className="journey-art" src={`${BRAND}/hero.webp`} alt="" fetchPriority="high" />
+        <img
+          className="journey-art"
+          src={`${BRAND}/hero.webp`}
+          srcSet={`${BRAND}/hero-sm.webp 480w, ${BRAND}/hero-md.webp 960w, ${BRAND}/hero.webp 1200w`}
+          sizes="(max-width: 759px) 100vw, 920px"
+          alt=""
+          fetchPriority="high"
+          decoding="async"
+        />
         <div className="journey-body">
           {active ? (
             <>
@@ -213,7 +221,7 @@ function GalaxyPanel({ learned, total }: { learned: number; total: number }) {
   }, [ids]);
   void today;
   return (
-    <section className="galaxy-panel" onClick={() => go({ page: "atlas", view: "galaxy" })} role="link" tabIndex={0} onKeyDown={(e) => e.key === "Enter" && go({ page: "atlas", view: "galaxy" })}>
+    <div className="galaxy-panel" onClick={() => go({ page: "atlas", view: "galaxy" })} role="link" tabIndex={0} onKeyDown={(e) => e.key === "Enter" && go({ page: "atlas", view: "galaxy" })}>
       <Galaxy mode="mini" highlight={todayIds} />
       <div className="galaxy-panel-copy">
         <p className="eyebrow eyebrow-light">Your Word Galaxy</p>
@@ -225,7 +233,7 @@ function GalaxyPanel({ learned, total }: { learned: number; total: number }) {
           Enter Galaxy <ArrowRight size={18} />
         </span>
       </div>
-    </section>
+    </div>
   );
 }
 
@@ -239,7 +247,7 @@ function WordOfDay() {
   const { entry } = useEntry(pick?.id);
   if (!pick) return null;
   return (
-    <section className="panel wotd" onClick={() => openWord(pick.id)} role="button" tabIndex={0} onKeyDown={(e) => e.key === "Enter" && openWord(pick.id)} aria-label={`Word of the day: ${pick.word}`}>
+    <div className="panel wotd" onClick={() => openWord(pick.id)} role="button" tabIndex={0} onKeyDown={(e) => e.key === "Enter" && openWord(pick.id)} aria-label={`Word of the day: ${pick.word}`}>
       <Illustration src={atlas.img(pick)} word={pick.word} topic={pick.topic} className="wotd-art" />
       <div className="wotd-body">
         <h3 className="eyebrow">Word of the day</h3>
@@ -258,7 +266,7 @@ function WordOfDay() {
           </p>
         )}
       </div>
-    </section>
+    </div>
   );
 }
 
@@ -294,7 +302,7 @@ function LevelPath() {
           const done = l.mastered / Math.max(1, l.total);
           return (
             <li key={l.name} className={`${i === start ? "is-start" : ""} ${l.seen ? "is-on" : ""}`}>
-              <button onClick={() => go({ page: "atlas", level: l.name })} aria-label={`${l.name} ${NAMES[i]}, learned ${l.seen} / ${l.total}`}>
+              <button onClick={() => go({ page: "atlas", level: l.name })} aria-label={`${l.name} ${NAMES[i]} ${l.seen}/${l.total}`}>
                 <span className="station" style={{ "--seen": seen, "--done": done } as React.CSSProperties}>
                   <b>{l.name}</b>
                 </span>
