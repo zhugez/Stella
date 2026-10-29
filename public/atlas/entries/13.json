@@ -4306,9 +4306,9 @@
       }
     ],
     "col": [
-      "personal secretary｜私人秘书",
-      "club secretary｜俱乐部干事",
-      "foreign secretary｜外交大臣"
+      "personal secretary｜thư ký riêng",
+      "club secretary｜thư ký câu lạc bộ",
+      "foreign secretary｜thư ký nước ngoài"
     ],
     "fam": [
       "secretarial (adj.)",
@@ -4349,9 +4349,9 @@
       }
     ],
     "col": [
-      "climb onto｜爬到……上",
-      "step onto｜踏上",
-      "load goods onto｜把货物装到……上"
+      "climb onto｜leo lên",
+      "step onto｜bước lên",
+      "load goods onto｜tải hàng hóa lên"
     ],
     "fam": [],
     "syn": [],
@@ -4397,10 +4397,10 @@
       }
     ],
     "col": [
-      "win a prize｜获奖",
+      "win a prize｜giành được giải thưởng",
       "first prize｜giải nhất",
-      "prize money｜奖金",
-      "highly prized｜备受珍视的"
+      "prize money｜tiền thưởng",
+      "highly prized｜được đánh giá cao"
     ],
     "fam": [
       "prized (adj.)"
@@ -4444,8 +4444,8 @@
     ],
     "col": [
       "a bowl of popcorn｜một bát bỏng ngô",
-      "salted popcorn｜咸味爆米花",
-      "make popcorn｜做爆米花"
+      "salted popcorn｜bỏng ngô muối",
+      "make popcorn｜làm bỏng ngô"
     ],
     "fam": [],
     "syn": [],
@@ -4495,10 +4495,10 @@
       }
     ],
     "col": [
-      "at high speed｜高速地",
-      "a speed limit｜速度限制",
-      "pick up speed｜加速",
-      "speed up｜加快"
+      "at high speed｜ở tốc độ cao",
+      "a speed limit｜giới hạn tốc độ",
+      "pick up speed｜tăng tốc độ",
+      "speed up｜tăng tốc"
     ],
     "fam": [
       "speedy (adj.)",
@@ -4543,10 +4543,10 @@
       }
     ],
     "col": [
-      "gas stove｜燃气灶",
-      "electric stove｜电炉",
-      "wood-burning stove｜烧木柴的火炉",
-      "on the stove｜在炉灶上"
+      "gas stove｜bếp gas",
+      "electric stove｜bếp điện",
+      "wood-burning stove｜bếp đốt củi",
+      "on the stove｜trên bếp"
     ],
     "fam": [],
     "syn": [],
@@ -4584,9 +4584,9 @@
       }
     ],
     "col": [
-      "a ripe mango｜熟芒果",
-      "mango juice｜芒果汁",
-      "mango flesh｜芒果果肉"
+      "a ripe mango｜một quả xoài chín",
+      "mango juice｜nước ép xoài",
+      "mango flesh｜thịt xoài"
     ],
     "fam": [],
     "syn": [],
@@ -4630,10 +4630,10 @@
       }
     ],
     "col": [
-      "take a pill｜服药",
-      "swallow a pill｜吞服药片",
-      "vitamin pill｜维生素片",
-      "the pill｜口服避孕药"
+      "take a pill｜uống một viên thuốc",
+      "swallow a pill｜nuốt một viên thuốc",
+      "vitamin pill｜viên vitamin",
+      "the pill｜viên thuốc"
     ],
     "fam": [],
     "syn": [
@@ -4685,10 +4685,10 @@
       }
     ],
     "col": [
-      "local community｜当地社区",
-      "local authorities｜地方当局",
-      "local residents｜当地居民",
-      "local anaesthetic｜局部麻醉药"
+      "local community｜cộng đồng địa phương",
+      "local authorities｜chính quyền địa phương",
+      "local residents｜cư dân địa phương",
+      "local anaesthetic｜gây tê cục bộ"
     ],
     "fam": [
       "locally (adv.)",
@@ -4744,10 +4744,10 @@
       }
     ],
     "col": [
-      "hide from view｜藏起来不让看见",
-      "hide the truth｜隐瞒真相",
-      "hide your feelings｜掩饰感情",
-      "animal hide｜兽皮"
+      "hide from view｜ẩn khỏi chế độ xem",
+      "hide the truth｜che giấu sự thật",
+      "hide your feelings｜che giấu cảm xúc của bạn",
+      "animal hide｜ẩn giấu động vật"
     ],
     "fam": [
       "hidden (adj.)",
@@ -4799,9 +4799,9 @@
       }
     ],
     "col": [
-      "wide awake｜完全清醒的",
-      "stay awake｜保持清醒",
-      "lie awake｜躺着睡不着"
+      "wide awake｜tỉnh táo",
+      "stay awake｜tỉnh táo",
+      "lie awake｜nằm thao thức"
     ],
     "fam": [
       "awaken (v.)",
@@ -4844,10 +4844,10 @@
       }
     ],
     "col": [
-      "noise pollution｜噪音污染",
-      "background noise｜背景噪音",
-      "make a noise｜发出声响",
-      "traffic noise｜交通噪音"
+      "noise pollution｜ô nhiễm tiếng ồn",
+      "background noise｜tiếng ồn nền",
+      "make a noise｜gây ồn ào",
+      "traffic noise｜tiếng ồn giao thông"
     ],
     "fam": [
       "noisy (adj.)",
@@ -4905,9 +4905,9 @@
       }
     ],
     "col": [
-      "walking stick｜手杖",
-      "stick to a plan｜坚持计划",
-      "stick a picture on｜把图片贴在……上",
+      "walking stick｜gậy đi bộ",
+      "stick to a plan｜bám sát một kế hoạch",
+      "stick a picture on｜dán một bức ảnh lên",
       "stick together｜gắn bó với nhau"
     ],
     "fam": [
@@ -4961,10 +4961,10 @@
       }
     ],
     "col": [
-      "Irish culture｜爱尔兰文化",
-      "Irish music｜爱尔兰音乐",
-      "speak Irish｜说爱尔兰语",
-      "the Irish｜爱尔兰人"
+      "Irish culture｜văn hóa Ireland",
+      "Irish music｜Âm nhạc Ireland",
+      "speak Irish｜nói tiếng Ailen",
+      "the Irish｜người Ireland"
     ],
     "fam": [
       "Ireland (n.)"
@@ -5010,10 +5010,10 @@
       }
     ],
     "col": [
-      "a common problem｜常见问题",
-      "a common goal｜共同目标",
-      "have something in common｜有共同之处",
-      "common practice｜惯常做法"
+      "a common problem｜một vấn đề chung",
+      "a common goal｜một mục tiêu chung",
+      "have something in common｜có điểm chung",
+      "common practice｜thực tế phổ biến"
     ],
     "fam": [
       "commonly (adv.)",

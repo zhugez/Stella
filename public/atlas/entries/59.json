@@ -37,9 +37,9 @@
       }
     ],
     "col": [
-      "weary travellers｜疲惫的旅人",
-      "weary of｜厌倦",
-      "grow weary｜渐感疲倦"
+      "weary travellers｜du khách mệt mỏi",
+      "weary of｜mệt mỏi",
+      "grow weary｜trở nên mệt mỏi"
     ],
     "fam": [
       "weariness (n.)",
@@ -100,8 +100,8 @@
     ],
     "col": [
       "a mantle of snow｜một lớp phủ tuyết",
-      "Earth's mantle｜地幔",
-      "assume the mantle of｜承担……的职责"
+      "Earth's mantle｜Lớp vỏ trái đất",
+      "assume the mantle of｜đảm nhận lớp áo của"
     ],
     "fam": [],
     "syn": [
@@ -142,9 +142,9 @@
       }
     ],
     "col": [
-      "ceremonial dress｜礼仪服饰",
-      "ceremonial role｜礼仪性职务",
-      "ceremonial occasion｜礼仪场合"
+      "ceremonial dress｜lễ phục",
+      "ceremonial role｜vai trò nghi lễ",
+      "ceremonial occasion｜dịp nghi lễ"
     ],
     "fam": [
       "ceremony (n.)",
@@ -193,10 +193,10 @@
       }
     ],
     "col": [
-      "lunar eclipse｜月食",
-      "lunar surface｜月球表面",
-      "lunar calendar｜阴历",
-      "lunar mission｜探月任务"
+      "lunar eclipse｜nguyệt thực",
+      "lunar surface｜bề mặt mặt trăng",
+      "lunar calendar｜âm lịch",
+      "lunar mission｜sứ mệnh mặt trăng"
     ],
     "fam": [],
     "syn": [],
@@ -240,10 +240,10 @@
       }
     ],
     "col": [
-      "administer a programme｜管理项目",
-      "administer medication｜给药",
-      "administer first aid｜实施急救",
-      "administer a test｜组织测验"
+      "administer a programme｜quản lý một chương trình",
+      "administer medication｜quản lý thuốc",
+      "administer first aid｜thực hiện sơ cứu",
+      "administer a test｜quản lý một bài kiểm tra"
     ],
     "fam": [
       "administration (n.)",
@@ -287,10 +287,10 @@
       }
     ],
     "col": [
-      "fuel combustion｜燃料燃烧",
-      "complete combustion｜完全燃烧",
-      "internal combustion engine｜内燃机",
-      "spontaneous combustion｜自燃"
+      "fuel combustion｜đốt nhiên liệu",
+      "complete combustion｜đốt cháy hoàn toàn",
+      "internal combustion engine｜động cơ đốt trong",
+      "spontaneous combustion｜sự đốt cháy tự phát"
     ],
     "fam": [
       "combustible (adj.)",
@@ -339,9 +339,9 @@
       }
     ],
     "col": [
-      "remain nameless｜不透露姓名",
-      "nameless fear｜莫名的恐惧",
-      "nameless workers｜无名工人"
+      "remain nameless｜vẫn vô danh",
+      "nameless fear｜nỗi sợ hãi không tên",
+      "nameless workers｜công nhân vô danh"
     ],
     "fam": [
       "name (n.)",
@@ -388,8 +388,8 @@
       }
     ],
     "col": [
-      "environmental catastrophe｜环境灾难",
-      "humanitarian catastrophe｜人道主义灾难",
+      "environmental catastrophe｜thảm họa môi trường",
+      "humanitarian catastrophe｜thảm họa nhân đạo",
       "avert a catastrophe｜ngăn chặn thảm họa"
     ],
     "fam": [
@@ -434,9 +434,9 @@
       }
     ],
     "col": [
-      "lay a wreath｜敬献花圈",
-      "a wreath of flowers｜鲜花编成的花环",
-      "laurel wreath｜月桂花冠"
+      "lay a wreath｜đặt vòng hoa",
+      "a wreath of flowers｜một vòng hoa",
+      "laurel wreath｜vòng nguyệt quế"
     ],
     "fam": [
       "wreathe (v.)"
@@ -476,9 +476,9 @@
       }
     ],
     "col": [
-      "legible handwriting｜清楚的字迹",
-      "clearly legible｜清晰可辨的",
-      "barely legible｜几乎无法辨认的"
+      "legible handwriting｜chữ viết dễ đọc",
+      "clearly legible｜rõ ràng dễ đọc",
+      "barely legible｜hầu như không thể đọc được"
     ],
     "fam": [
       "legibly (adv.)",
@@ -530,9 +530,9 @@
       }
     ],
     "col": [
-      "a gracious host｜热情有礼的主人",
-      "gracious in defeat｜落败仍有风度",
-      "gracious living｜优雅舒适的生活"
+      "a gracious host｜một người chủ nhà duyên dáng",
+      "gracious in defeat｜duyên dáng trong thất bại",
+      "gracious living｜cuộc sống duyên dáng"
     ],
     "fam": [
       "graciously (adv.)",
@@ -579,8 +579,8 @@
       }
     ],
     "col": [
-      "an experienced seaman｜经验丰富的海员",
-      "a merchant seaman｜商船海员",
+      "an experienced seaman｜một thủy thủ giàu kinh nghiệm",
+      "a merchant seaman｜một thủy thủ buôn bán",
       "an able seaman｜một thủy thủ có tài"
     ],
     "fam": [
@@ -624,9 +624,9 @@
       }
     ],
     "col": [
-      "an arduous task｜艰巨的任务",
-      "an arduous journey｜艰苦的旅程",
-      "an arduous process｜艰难的过程"
+      "an arduous task｜một nhiệm vụ khó khăn",
+      "an arduous journey｜một hành trình gian khổ",
+      "an arduous process｜một quá trình gian khổ"
     ],
     "fam": [
       "arduously (adv.)",
@@ -680,9 +680,9 @@
       }
     ],
     "col": [
-      "expressly prohibit｜明令禁止",
-      "expressly state｜明确说明",
-      "expressly for｜专门为了"
+      "expressly prohibit｜rõ ràng cấm",
+      "expressly state｜nêu rõ ràng",
+      "expressly for｜rõ ràng cho"
     ],
     "fam": [
       "express (v.)",
@@ -728,9 +728,9 @@
       }
     ],
     "col": [
-      "on the supposition that｜假定……",
-      "mere supposition｜纯属推测",
-      "based on supposition｜基于推测"
+      "on the supposition that｜dựa trên giả định rằng",
+      "mere supposition｜giả định đơn thuần",
+      "based on supposition｜dựa trên giả định"
     ],
     "fam": [
       "suppose (v.)",
@@ -789,10 +789,10 @@
       }
     ],
     "col": [
-      "thermal energy｜热能",
-      "thermal insulation｜隔热；保温",
-      "thermal imaging｜热成像",
-      "thermal underwear｜保暖内衣"
+      "thermal energy｜năng lượng nhiệt",
+      "thermal insulation｜cách nhiệt",
+      "thermal imaging｜hình ảnh nhiệt",
+      "thermal underwear｜đồ lót nhiệt"
     ],
     "fam": [
       "thermally (adv.)"
@@ -838,9 +838,9 @@
       }
     ],
     "col": [
-      "differentiate between｜区分两者",
-      "differentiate A from B｜区分甲与乙",
-      "differentiate products｜使产品差异化"
+      "differentiate between｜phân biệt giữa",
+      "differentiate A from B｜phân biệt A với B",
+      "differentiate products｜phân biệt sản phẩm"
     ],
     "fam": [
       "differentiation (n.)",
@@ -891,9 +891,9 @@
       }
     ],
     "col": [
-      "feel sluggish｜感觉无精打采",
-      "sluggish growth｜增长乏力",
-      "sluggish response｜反应迟缓"
+      "feel sluggish｜cảm thấy chậm chạp",
+      "sluggish growth｜tăng trưởng chậm chạp",
+      "sluggish response｜phản ứng chậm chạp"
     ],
     "fam": [
       "sluggishly (adv.)",
@@ -946,10 +946,10 @@
       }
     ],
     "col": [
-      "embroider a pattern｜绣图案",
-      "embroider flowers on cloth｜在布上绣花",
-      "embroider with silk thread｜用丝线刺绣",
-      "embroider a story｜给故事添油加醋"
+      "embroider a pattern｜thêu một mẫu",
+      "embroider flowers on cloth｜thêu hoa trên vải",
+      "embroider with silk thread｜thêu bằng sợi tơ",
+      "embroider a story｜thêu dệt một câu chuyện"
     ],
     "fam": [
       "embroidery (n.)",
@@ -990,9 +990,9 @@
       }
     ],
     "col": [
-      "a traditional papercut｜传统剪纸作品",
-      "an intricate papercut｜精细的剪纸作品",
-      "papercut art｜剪纸艺术"
+      "a traditional papercut｜cắt giấy truyền thống",
+      "an intricate papercut｜một đường cắt giấy phức tạp",
+      "papercut art｜nghệ thuật cắt giấy"
     ],
     "fam": [
       "papercutting (n.)"
@@ -1032,9 +1032,9 @@
       }
     ],
     "col": [
-      "homogeneous mixture｜均匀混合物",
-      "homogeneous group｜同质群体",
-      "relatively homogeneous｜相对同质的"
+      "homogeneous mixture｜hỗn hợp đồng nhất",
+      "homogeneous group｜nhóm đồng nhất",
+      "relatively homogeneous｜tương đối đồng nhất"
     ],
     "fam": [
       "homogeneity (n.)",
@@ -1085,8 +1085,8 @@
       }
     ],
     "col": [
-      "public morality｜社会公德",
-      "personal morality｜个人道德观",
+      "public morality｜đạo đức công cộng",
+      "personal morality｜đạo đức cá nhân",
       "the morality of an action｜đạo đức của một hành động"
     ],
     "fam": [
@@ -1134,9 +1134,9 @@
       }
     ],
     "col": [
-      "uncap a bottle｜打开瓶盖",
-      "uncap a pen｜拔下笔帽",
-      "uncap a container｜取下容器盖"
+      "uncap a bottle｜mở nắp chai",
+      "uncap a pen｜mở nắp bút",
+      "uncap a container｜mở nắp một thùng chứa"
     ],
     "fam": [
       "cap (n.)",
@@ -1180,10 +1180,10 @@
       }
     ],
     "col": [
-      "reach a consensus｜达成共识",
-      "broad consensus｜广泛共识",
-      "consensus on｜关于……的共识",
-      "build consensus｜凝聚共识"
+      "reach a consensus｜đạt được sự đồng thuận",
+      "broad consensus｜sự đồng thuận rộng rãi",
+      "consensus on｜sự đồng thuận về",
+      "build consensus｜xây dựng sự đồng thuận"
     ],
     "fam": [
       "consensual (adj.)"
@@ -1239,9 +1239,9 @@
       }
     ],
     "col": [
-      "have a mistress｜有情妇",
+      "have a mistress｜có tình nhân",
       "mistress of the house｜bà chủ nhà",
-      "mistress of her craft｜精通技艺的女性"
+      "mistress of her craft｜tình nhân của nghề của cô ấy"
     ],
     "fam": [],
     "syn": [],
@@ -1285,9 +1285,9 @@
       }
     ],
     "col": [
-      "a hideous building｜极丑的建筑",
-      "a hideous mistake｜可怕的错误",
-      "hideous noise｜令人难受的噪声"
+      "a hideous building｜một tòa nhà gớm ghiếc",
+      "a hideous mistake｜một sai lầm khủng khiếp",
+      "hideous noise｜tiếng ồn khủng khiếp"
     ],
     "fam": [
       "hideously (adv.)",
@@ -1334,9 +1334,9 @@
       }
     ],
     "col": [
-      "ammonia solution｜氨水",
-      "ammonia emissions｜氨排放",
-      "ammonia production｜氨生产"
+      "ammonia solution｜dung dịch amoniac",
+      "ammonia emissions｜phát thải amoniac",
+      "ammonia production｜sản xuất amoniac"
     ],
     "fam": [],
     "syn": [],
@@ -1380,9 +1380,9 @@
       }
     ],
     "col": [
-      "erection of scaffolding｜脚手架搭设",
-      "erection of a monument｜纪念碑的竖立",
-      "steel erection｜钢结构安装"
+      "erection of scaffolding｜lắp dựng giàn giáo",
+      "erection of a monument｜dựng tượng đài",
+      "steel erection｜lắp dựng thép"
     ],
     "fam": [
       "erect (v.)",
@@ -1427,9 +1427,9 @@
       }
     ],
     "col": [
-      "pledge allegiance to｜宣誓效忠于",
-      "political allegiance｜政治上的效忠",
-      "switch allegiance｜转而效忠"
+      "pledge allegiance to｜cam kết trung thành với",
+      "political allegiance｜lòng trung thành chính trị",
+      "switch allegiance｜chuyển đổi lòng trung thành"
     ],
     "fam": [],
     "syn": [
@@ -1478,10 +1478,10 @@
       }
     ],
     "col": [
-      "chronic fatigue｜慢性疲劳",
-      "mental fatigue｜精神疲劳",
-      "muscle fatigue｜肌肉疲劳",
-      "metal fatigue｜金属疲劳"
+      "chronic fatigue｜mệt mỏi mãn tính",
+      "mental fatigue｜mệt mỏi tinh thần",
+      "muscle fatigue｜mỏi cơ",
+      "metal fatigue｜mệt mỏi kim loại"
     ],
     "fam": [
       "fatigued (adj.)",
@@ -1525,9 +1525,9 @@
       }
     ],
     "col": [
-      "an outlandish idea｜荒诞的想法",
-      "outlandish clothes｜奇装异服",
-      "an outlandish claim｜离谱的说法"
+      "an outlandish idea｜một ý tưởng kỳ lạ",
+      "outlandish clothes｜quần áo kỳ dị",
+      "an outlandish claim｜một tuyên bố kỳ lạ"
     ],
     "fam": [
       "outlandishly (adv.)",
@@ -1575,9 +1575,9 @@
       }
     ],
     "col": [
-      "explanatory notes｜说明性注释",
-      "explanatory material｜说明材料",
-      "explanatory power｜解释力"
+      "explanatory notes｜ghi chú giải thích",
+      "explanatory material｜tài liệu giải thích",
+      "explanatory power｜sức mạnh giải thích"
     ],
     "fam": [
       "explain (v.)",
@@ -1621,9 +1621,9 @@
       }
     ],
     "col": [
-      "commence work｜开始工作",
-      "commence proceedings｜开始诉讼程序",
-      "commence with｜以……开始"
+      "commence work｜bắt đầu công việc",
+      "commence proceedings｜bắt đầu tố tụng",
+      "commence with｜bắt đầu với"
     ],
     "fam": [
       "commencement (n.)"
@@ -1675,9 +1675,9 @@
       }
     ],
     "col": [
-      "empty rhetoric｜空洞的言辞",
-      "political rhetoric｜政治辞令",
-      "the art of rhetoric｜修辞艺术"
+      "empty rhetoric｜hùng biện trống rỗng",
+      "political rhetoric｜hùng biện chính trị",
+      "the art of rhetoric｜nghệ thuật hùng biện"
     ],
     "fam": [
       "rhetorical (adj.)",
@@ -1719,9 +1719,9 @@
       }
     ],
     "col": [
-      "under the pretext of｜以……为借口",
-      "a pretext for doing something｜做某事的借口",
-      "on some pretext｜以某种借口"
+      "under the pretext of｜dưới cái cớ của",
+      "a pretext for doing something｜một cái cớ để làm điều gì đó",
+      "on some pretext｜với lý do nào đó"
     ],
     "fam": [],
     "syn": [
@@ -1773,9 +1773,9 @@
       }
     ],
     "col": [
-      "pounce on prey｜猛扑向猎物",
-      "pounce on an opportunity｜立即抓住机会",
-      "pounce on a mistake｜揪住错误不放"
+      "pounce on prey｜vồ lấy con mồi",
+      "pounce on an opportunity｜chớp lấy cơ hội",
+      "pounce on a mistake｜vồ lấy một sai lầm"
     ],
     "fam": [],
     "syn": [],
@@ -1813,9 +1813,9 @@
       }
     ],
     "col": [
-      "pioneering research｜开创性研究",
-      "pioneering work｜开创性工作",
-      "pioneering approach｜创新方法"
+      "pioneering research｜nghiên cứu tiên phong",
+      "pioneering work｜công việc tiên phong",
+      "pioneering approach｜cách tiếp cận tiên phong"
     ],
     "fam": [
       "pioneer (n.)",
@@ -1866,9 +1866,9 @@
       }
     ],
     "col": [
-      "a major undertaking｜重大任务",
-      "a joint undertaking｜共同承担的项目",
-      "give an undertaking｜作出正式承诺"
+      "a major undertaking｜một cam kết lớn",
+      "a joint undertaking｜một cam kết chung",
+      "give an undertaking｜đưa ra cam kết"
     ],
     "fam": [
       "undertake (v.)"
@@ -1918,10 +1918,10 @@
       }
     ],
     "col": [
-      "neutralize an acid｜中和酸",
-      "neutralize a threat｜消除威胁",
-      "neutralize the effects｜抵消影响",
-      "neutralize odours｜消除异味"
+      "neutralize an acid｜trung hòa một axit",
+      "neutralize a threat｜vô hiệu hóa mối đe dọa",
+      "neutralize the effects｜vô hiệu hóa các tác động",
+      "neutralize odours｜trung hòa mùi hôi"
     ],
     "fam": [
       "neutral (adj.)",
@@ -1972,9 +1972,9 @@
       }
     ],
     "col": [
-      "career aspirations｜职业抱负",
-      "fulfil an aspiration｜实现抱负",
-      "aspiration to succeed｜成功的志向"
+      "career aspirations｜nguyện vọng nghề nghiệp",
+      "fulfil an aspiration｜thực hiện một khát vọng",
+      "aspiration to succeed｜khát vọng thành công"
     ],
     "fam": [
       "aspire (v.)",
@@ -2031,10 +2031,10 @@
       }
     ],
     "col": [
-      "conception of｜对……的理解",
-      "from conception to completion｜从构思到完成",
-      "a broad conception｜宽泛的理解",
-      "the moment of conception｜受孕时刻"
+      "conception of｜quan niệm về",
+      "from conception to completion｜từ khi hình thành đến khi hoàn thành",
+      "a broad conception｜một quan niệm rộng rãi",
+      "the moment of conception｜thời điểm thụ thai"
     ],
     "fam": [
       "conceive (v.)",
@@ -2079,8 +2079,8 @@
       }
     ],
     "col": [
-      "work conscientiously｜尽职尽责地工作",
-      "conscientiously carry out duties｜认真履行职责"
+      "work conscientiously｜làm việc tận tâm",
+      "conscientiously carry out duties｜tận tâm thực hiện nhiệm vụ"
     ],
     "fam": [
       "conscientious (adj.)",
@@ -2128,9 +2128,9 @@
       }
     ],
     "col": [
-      "rival factions｜对立派系",
-      "political faction｜政治派别",
-      "a faction within the party｜党内派系"
+      "rival factions｜phe phái đối địch",
+      "political faction｜phe phái chính trị",
+      "a faction within the party｜một phe phái trong đảng"
     ],
     "fam": [
       "factional (adj.)",
@@ -2180,9 +2180,9 @@
       }
     ],
     "col": [
-      "aboriginal peoples｜原住民族",
-      "Aboriginal culture｜澳大利亚原住民文化",
-      "Aboriginal communities｜澳大利亚原住民社区"
+      "aboriginal peoples｜thổ dân",
+      "Aboriginal culture｜văn hóa thổ dân",
+      "Aboriginal communities｜Cộng đồng thổ dân"
     ],
     "fam": [],
     "syn": [
@@ -2222,9 +2222,9 @@
       }
     ],
     "col": [
-      "offset the cost｜抵消成本",
-      "offset carbon emissions｜抵消碳排放",
-      "offset the impact｜抵消影响"
+      "offset the cost｜bù đắp chi phí",
+      "offset carbon emissions｜bù đắp lượng khí thải carbon",
+      "offset the impact｜bù đắp tác động"
     ],
     "fam": [],
     "syn": [
@@ -2265,9 +2265,9 @@
       }
     ],
     "col": [
-      "arable land｜耕地",
-      "arable farming｜种植业",
-      "arable crops｜大田作物"
+      "arable land｜đất canh tác",
+      "arable farming｜canh tác nông nghiệp",
+      "arable crops｜cây trồng trọt"
     ],
     "fam": [],
     "syn": [
@@ -2309,10 +2309,10 @@
       }
     ],
     "col": [
-      "call a truce｜宣布休战",
-      "agree to a truce｜同意停战",
-      "a temporary truce｜临时停战",
-      "break a truce｜破坏休战协议"
+      "call a truce｜kêu gọi đình chiến",
+      "agree to a truce｜đồng ý đình chiến",
+      "a temporary truce｜một thỏa thuận ngừng bắn tạm thời",
+      "break a truce｜phá vỡ thỏa thuận ngừng bắn"
     ],
     "fam": [],
     "syn": [
@@ -2359,9 +2359,9 @@
       }
     ],
     "col": [
-      "exuberant enthusiasm｜高涨的热情",
-      "an exuberant personality｜热情奔放的性格",
-      "exuberant growth｜繁茂的生长"
+      "exuberant enthusiasm｜sự nhiệt tình mãnh liệt",
+      "an exuberant personality｜một cá tính sôi nổi",
+      "exuberant growth｜tăng trưởng vượt bậc"
     ],
     "fam": [
       "exuberance (n.)",
@@ -2407,9 +2407,9 @@
       }
     ],
     "col": [
-      "zinc oxide｜氧化锌",
-      "iron oxide｜氧化铁",
-      "nitrogen oxides｜氮氧化物"
+      "zinc oxide｜oxit kẽm",
+      "iron oxide｜oxit sắt",
+      "nitrogen oxides｜oxit nitơ"
     ],
     "fam": [
       "oxidise (v.)",
@@ -2450,9 +2450,9 @@
       }
     ],
     "col": [
-      "inscribe a name on｜把名字刻在……上",
-      "be inscribed with｜刻有；题有",
-      "inscribe a dedication｜题写献词"
+      "inscribe a name on｜ghi tên vào",
+      "be inscribed with｜được ghi với",
+      "inscribe a dedication｜ghi lời cống hiến"
     ],
     "fam": [
       "inscription (n.)"
@@ -2507,9 +2507,9 @@
       }
     ],
     "col": [
-      "a serious handicap｜严重的不利条件",
-      "a golf handicap｜高尔夫差点",
-      "be handicapped by｜受……妨碍"
+      "a serious handicap｜một khuyết tật nghiêm trọng",
+      "a golf handicap｜khuyết tật chơi gôn",
+      "be handicapped by｜bị tàn tật bởi"
     ],
     "fam": [],
     "syn": [
@@ -2558,10 +2558,10 @@
       }
     ],
     "col": [
-      "make a generalization｜作出概括",
-      "sweeping generalization｜过于笼统的论断",
-      "broad generalization｜宽泛的概括",
-      "hasty generalization｜草率的概括"
+      "make a generalization｜khái quát hóa",
+      "sweeping generalization｜khái quát hóa sâu rộng",
+      "broad generalization｜khái quát hóa rộng rãi",
+      "hasty generalization｜khái quát hóa vội vàng"
     ],
     "fam": [
       "general (adj.)",
@@ -2609,10 +2609,10 @@
       }
     ],
     "col": [
-      "transplant seedlings｜移栽幼苗",
-      "a kidney transplant｜肾移植",
-      "an organ transplant｜器官移植",
-      "transplant surgery｜移植手术"
+      "transplant seedlings｜cấy ghép cây giống",
+      "a kidney transplant｜ghép thận",
+      "an organ transplant｜cấy ghép nội tạng",
+      "transplant surgery｜phẫu thuật cấy ghép"
     ],
     "fam": [
       "transplantation (n.)"
@@ -2658,10 +2658,10 @@
       }
     ],
     "col": [
-      "uphold the law｜维护法律",
-      "uphold human rights｜维护人权",
-      "uphold a decision｜维持决定",
-      "uphold standards｜维护标准"
+      "uphold the law｜duy trì luật pháp",
+      "uphold human rights｜đề cao nhân quyền",
+      "uphold a decision｜giữ nguyên một quyết định",
+      "uphold standards｜duy trì các tiêu chuẩn"
     ],
     "fam": [],
     "syn": [
@@ -2704,9 +2704,9 @@
       }
     ],
     "col": [
-      "expiration date｜到期日期",
-      "expiration of a contract｜合同期满",
-      "before expiration｜到期之前"
+      "expiration date｜ngày hết hạn",
+      "expiration of a contract｜hết hạn hợp đồng",
+      "before expiration｜trước khi hết hạn"
     ],
     "fam": [
       "expire (v.)"
@@ -2748,9 +2748,9 @@
       }
     ],
     "col": [
-      "social conformity｜社会从众",
-      "conformity to standards｜遵守标准",
-      "in conformity with｜符合；遵照",
+      "social conformity｜sự phù hợp xã hội",
+      "conformity to standards｜sự phù hợp với tiêu chuẩn",
+      "in conformity with｜phù hợp với",
       "pressure for conformity｜áp lực đối với sự tuân thủ"
     ],
     "fam": [
@@ -2803,9 +2803,9 @@
       }
     ],
     "col": [
-      "a mere formality｜纯粹的例行手续",
-      "complete the formalities｜办完手续",
-      "legal formalities｜法律手续"
+      "a mere formality｜chỉ là hình thức",
+      "complete the formalities｜hoàn tất các thủ tục",
+      "legal formalities｜thủ tục pháp lý"
     ],
     "fam": [
       "formal (adj.)",
@@ -2847,9 +2847,9 @@
       }
     ],
     "col": [
-      "tedious task｜乏味的任务",
-      "tedious process｜冗长乏味的过程",
-      "tedious paperwork｜繁琐的文书工作"
+      "tedious task｜công việc tẻ nhạt",
+      "tedious process｜quá trình tẻ nhạt",
+      "tedious paperwork｜giấy tờ tẻ nhạt"
     ],
     "fam": [
       "tedium (n.)",
@@ -2898,9 +2898,9 @@
       }
     ],
     "col": [
-      "initial outlay｜初期支出",
-      "capital outlay｜资本支出",
-      "a substantial outlay｜大笔开支"
+      "initial outlay｜kinh phí ban đầu",
+      "capital outlay｜kinh phí vốn",
+      "a substantial outlay｜một khoản chi đáng kể"
     ],
     "fam": [],
     "syn": [
@@ -2947,9 +2947,9 @@
       }
     ],
     "col": [
-      "angular shape｜有棱角的形状",
-      "angular features｜棱角分明的五官",
-      "angular design｜棱角分明的设计"
+      "angular shape｜hình dạng góc cạnh",
+      "angular features｜đặc điểm góc cạnh",
+      "angular design｜thiết kế góc cạnh"
     ],
     "fam": [
       "angle (n.)",
@@ -2992,9 +2992,9 @@
       }
     ],
     "col": [
-      "restock shelves｜补充货架商品",
-      "restock the fridge｜补充冰箱食品",
-      "restock with fresh supplies｜补充新物资"
+      "restock shelves｜bổ sung thêm kệ",
+      "restock the fridge｜bổ sung lại tủ lạnh",
+      "restock with fresh supplies｜bổ sung nguồn cung cấp mới"
     ],
     "fam": [
       "stock (n.)",
@@ -3044,9 +3044,9 @@
       }
     ],
     "col": [
-      "family feud｜家族纷争",
-      "long-running feud｜长期争端",
-      "feud with someone｜与某人长期不和"
+      "family feud｜mối thù gia đình",
+      "long-running feud｜mối thù truyền kiếp",
+      "feud with someone｜mối thù với ai đó"
     ],
     "fam": [],
     "syn": [
@@ -3087,9 +3087,9 @@
       }
     ],
     "col": [
-      "a magic potion｜魔法药水",
-      "a healing potion｜治疗药水",
-      "brew a potion｜熬制药水"
+      "a magic potion｜một lọ thuốc ma thuật",
+      "a healing potion｜một lọ thuốc chữa bệnh",
+      "brew a potion｜pha một lọ thuốc"
     ],
     "fam": [],
     "syn": [
@@ -3135,9 +3135,9 @@
       }
     ],
     "col": [
-      "appraise performance｜评估表现",
-      "appraise a property｜评估房产价值",
-      "critically appraise｜批判性评估"
+      "appraise performance｜đánh giá hiệu suất",
+      "appraise a property｜định giá một tài sản",
+      "critically appraise｜đánh giá nghiêm túc"
     ],
     "fam": [
       "appraisal (n.)",
@@ -3187,10 +3187,10 @@
       }
     ],
     "col": [
-      "impose tariffs on｜对……征收关税",
-      "import tariff｜进口关税",
-      "reduce tariffs｜降低关税",
-      "electricity tariff｜电价标准"
+      "impose tariffs on｜áp đặt thuế quan đối với",
+      "import tariff｜thuế nhập khẩu",
+      "reduce tariffs｜giảm thuế",
+      "electricity tariff｜giá điện"
     ],
     "fam": [],
     "syn": [],
@@ -3228,9 +3228,9 @@
       }
     ],
     "col": [
-      "a sarcastic remark｜挖苦的话",
-      "a sarcastic tone｜讥讽的语气",
-      "a sarcastic comment｜讥讽的评论"
+      "a sarcastic remark｜một lời nhận xét mỉa mai",
+      "a sarcastic tone｜một giọng điệu mỉa mai",
+      "a sarcastic comment｜một bình luận mỉa mai"
     ],
     "fam": [
       "sarcasm (n.)",
@@ -3282,10 +3282,10 @@
       }
     ],
     "col": [
-      "devastating consequences｜灾难性后果",
-      "devastating impact｜毁灭性影响",
-      "devastating news｜令人悲痛欲绝的消息",
-      "devastating earthquake｜破坏力极强的地震"
+      "devastating consequences｜hậu quả tàn khốc",
+      "devastating impact｜tác động tàn phá",
+      "devastating news｜tin tức tàn khốc",
+      "devastating earthquake｜trận động đất kinh hoàng"
     ],
     "fam": [
       "devastate (v.)",
@@ -3331,9 +3331,9 @@
       }
     ],
     "col": [
-      "simultaneous events｜同时发生的事件",
-      "simultaneous interpretation｜同声传译",
-      "simultaneous access｜同时访问"
+      "simultaneous events｜sự kiện đồng thời",
+      "simultaneous interpretation｜giải thích đồng thời",
+      "simultaneous access｜truy cập đồng thời"
     ],
     "fam": [
       "simultaneously (adv.)"
@@ -3383,9 +3383,9 @@
       }
     ],
     "col": [
-      "a desolate landscape｜荒凉的景观",
-      "a desolate village｜荒无人烟的村庄",
-      "feel desolate｜感到孤独凄凉"
+      "a desolate landscape｜một khung cảnh hoang vắng",
+      "a desolate village｜một ngôi làng hoang vắng",
+      "feel desolate｜cảm thấy hoang vắng"
     ],
     "fam": [
       "desolation (n.)"
@@ -3430,9 +3430,9 @@
       }
     ],
     "col": [
-      "rodent population｜啮齿动物种群",
-      "rodent control｜啮齿动物防治",
-      "rodent infestation｜鼠患"
+      "rodent population｜quần thể loài gặm nhấm",
+      "rodent control｜kiểm soát loài gặm nhấm",
+      "rodent infestation｜sự phá hoại của loài gặm nhấm"
     ],
     "fam": [],
     "syn": [],
@@ -3476,9 +3476,9 @@
       }
     ],
     "col": [
-      "normalization of relations｜关系正常化",
+      "normalization of relations｜bình thường hóa quan hệ",
       "data normalization｜sự chuẩn hoá dữ liệu",
-      "normalization process｜正常化进程"
+      "normalization process｜quá trình bình thường hóa"
     ],
     "fam": [
       "normal (adj.)",
@@ -3521,9 +3521,9 @@
       }
     ],
     "col": [
-      "contact the consulate｜联系领事馆",
-      "consulate general｜总领事馆",
-      "nearest consulate｜最近的领事馆"
+      "contact the consulate｜liên hệ với lãnh sự quán",
+      "consulate general｜tổng lãnh sự quán",
+      "nearest consulate｜lãnh sự quán gần nhất"
     ],
     "fam": [
       "consul (n.)",
@@ -3564,9 +3564,9 @@
       }
     ],
     "col": [
-      "try vainly to do something｜徒劳地试图做某事",
-      "search vainly for｜徒劳地寻找",
-      "struggle vainly｜徒劳地挣扎"
+      "try vainly to do something｜cố gắng vô ích để làm điều gì đó",
+      "search vainly for｜tìm kiếm trong vô vọng",
+      "struggle vainly｜đấu tranh vô ích"
     ],
     "fam": [
       "vain (adj.)",
@@ -3612,9 +3612,9 @@
       }
     ],
     "col": [
-      "amputate a limb｜截肢",
+      "amputate a limb｜cắt cụt một chi",
       "amputate a leg｜cắt cụt một chân",
-      "amputate below the knee｜进行膝下截肢"
+      "amputate below the knee｜cắt cụt dưới đầu gối"
     ],
     "fam": [
       "amputation (n.)",
@@ -3655,10 +3655,10 @@
       }
     ],
     "col": [
-      "a feasible solution｜可行的解决办法",
-      "economically feasible｜经济上可行的",
-      "technically feasible｜技术上可行的",
-      "a feasible alternative｜可行的替代方案"
+      "a feasible solution｜một giải pháp khả thi",
+      "economically feasible｜khả thi về mặt kinh tế",
+      "technically feasible｜khả thi về mặt kỹ thuật",
+      "a feasible alternative｜một sự thay thế khả thi"
     ],
     "fam": [
       "feasibility (n.)",
@@ -3717,10 +3717,10 @@
       }
     ],
     "col": [
-      "an oil rig｜石油钻井平台",
-      "a drilling rig｜钻井设备",
-      "rig an election｜操纵选举",
-      "rig up equipment｜临时搭建设备"
+      "an oil rig｜một giàn khoan dầu",
+      "a drilling rig｜một giàn khoan",
+      "rig an election｜dàn xếp một cuộc bầu cử",
+      "rig up equipment｜chuẩn bị thiết bị"
     ],
     "fam": [
       "rigging (n.)",
@@ -3767,10 +3767,10 @@
       }
     ],
     "col": [
-      "soil erosion｜土壤侵蚀",
-      "coastal erosion｜海岸侵蚀",
-      "prevent erosion｜防止侵蚀",
-      "erosion of trust｜信任的逐渐削弱"
+      "soil erosion｜xói mòn đất",
+      "coastal erosion｜xói mòn bờ biển",
+      "prevent erosion｜ngăn chặn xói mòn",
+      "erosion of trust｜xói mòn lòng tin"
     ],
     "fam": [
       "erode (v.)",
@@ -3811,9 +3811,9 @@
       }
     ],
     "col": [
-      "a scornful look｜轻蔑的眼神",
+      "a scornful look｜một cái nhìn khinh bỉ",
       "scornful of advice｜khinh thường lời khuyên",
-      "a scornful laugh｜轻蔑的笑声"
+      "a scornful laugh｜một tiếng cười khinh bỉ"
     ],
     "fam": [
       "scorn (n.)",
@@ -3861,9 +3861,9 @@
       }
     ],
     "col": [
-      "disadvantageous to someone｜对某人不利",
-      "disadvantageous position｜不利地位",
-      "disadvantageous conditions｜不利条件"
+      "disadvantageous to someone｜bất lợi cho ai đó",
+      "disadvantageous position｜vị trí bất lợi",
+      "disadvantageous conditions｜điều kiện bất lợi"
     ],
     "fam": [
       "disadvantage (n.)",
@@ -3911,9 +3911,9 @@
       }
     ],
     "col": [
-      "flaunt wealth｜炫耀财富",
-      "flaunt success｜炫耀成功",
-      "flaunt possessions｜炫耀财物"
+      "flaunt wealth｜phô trương sự giàu có",
+      "flaunt success｜phô trương thành công",
+      "flaunt possessions｜phô trương của cải"
     ],
     "fam": [],
     "syn": [
@@ -3959,10 +3959,10 @@
       }
     ],
     "col": [
-      "robust health｜强健的体魄",
-      "robust evidence｜可靠的证据",
-      "robust system｜稳健的系统",
-      "robust economy｜强劲的经济"
+      "robust health｜sức khỏe cường tráng",
+      "robust evidence｜bằng chứng mạnh mẽ",
+      "robust system｜hệ thống mạnh mẽ",
+      "robust economy｜nền kinh tế vững mạnh"
     ],
     "fam": [
       "robustness (n.)",
@@ -4009,10 +4009,10 @@
       }
     ],
     "col": [
-      "tacit approval｜默许",
-      "tacit agreement｜默契",
-      "tacit understanding｜心照不宣的理解",
-      "tacit consent｜默示同意"
+      "tacit approval｜sự chấp thuận ngầm",
+      "tacit agreement｜thỏa thuận ngầm",
+      "tacit understanding｜sự hiểu biết ngầm",
+      "tacit consent｜sự đồng ý ngầm"
     ],
     "fam": [
       "tacitly (adv.)"
@@ -4064,9 +4064,9 @@
       }
     ],
     "col": [
-      "solidify into a mass｜凝固成块",
-      "solidify an alliance｜巩固联盟",
-      "solidify support｜巩固支持"
+      "solidify into a mass｜đông đặc lại thành một khối",
+      "solidify an alliance｜củng cố liên minh",
+      "solidify support｜củng cố sự hỗ trợ"
     ],
     "fam": [
       "solid (adj.)",
@@ -4113,9 +4113,9 @@
       }
     ],
     "col": [
-      "crave attention｜渴望关注",
-      "crave approval｜渴望认可",
-      "crave sweet foods｜特别想吃甜食"
+      "crave attention｜khao khát sự chú ý",
+      "crave approval｜khao khát sự chấp thuận",
+      "crave sweet foods｜thèm đồ ăn ngọt"
     ],
     "fam": [
       "craving (n.)"
@@ -4165,9 +4165,9 @@
       }
     ],
     "col": [
-      "shriek with delight｜高兴得尖叫",
+      "shriek with delight｜hét lên sung sướng",
       "let out a shriek｜thét lên",
-      "a piercing shriek｜刺耳的尖叫声"
+      "a piercing shriek｜một tiếng hét chói tai"
     ],
     "fam": [],
     "syn": [
@@ -4214,9 +4214,9 @@
       }
     ],
     "col": [
-      "cripple the economy｜重创经济",
-      "cripple production｜使生产陷入瘫痪",
-      "crippling costs｜难以承受的费用"
+      "cripple the economy｜làm tê liệt nền kinh tế",
+      "cripple production｜sản xuất tê liệt",
+      "crippling costs｜chi phí làm tê liệt"
     ],
     "fam": [
       "crippling (adj.)"
@@ -4265,9 +4265,9 @@
       }
     ],
     "col": [
-      "ultraviolet radiation｜紫外线辐射",
-      "ultraviolet rays｜紫外线",
-      "ultraviolet light｜紫外光"
+      "ultraviolet radiation｜bức xạ cực tím",
+      "ultraviolet rays｜tia cực tím",
+      "ultraviolet light｜tia cực tím"
     ],
     "fam": [],
     "syn": [],
@@ -4305,9 +4305,9 @@
       }
     ],
     "col": [
-      "everlasting love｜永恒的爱",
-      "everlasting friendship｜永恒的友谊",
-      "everlasting life｜永生"
+      "everlasting love｜tình yêu vĩnh cửu",
+      "everlasting friendship｜tình bạn vĩnh cửu",
+      "everlasting life｜cuộc sống vĩnh cửu"
     ],
     "fam": [
       "everlastingly (adv.)"
@@ -4359,10 +4359,10 @@
       }
     ],
     "col": [
-      "seek asylum｜寻求庇护",
-      "grant asylum｜给予庇护",
-      "asylum seeker｜寻求庇护者",
-      "political asylum｜政治庇护"
+      "seek asylum｜xin tị nạn",
+      "grant asylum｜cấp tị nạn",
+      "asylum seeker｜người xin tị nạn",
+      "political asylum｜tị nạn chính trị"
     ],
     "fam": [],
     "syn": [
@@ -4409,9 +4409,9 @@
       }
     ],
     "col": [
-      "intestinal parasite｜肠道寄生虫",
-      "host organism｜宿主生物",
-      "parasitic infection｜寄生虫感染"
+      "intestinal parasite｜ký sinh trùng đường ruột",
+      "host organism｜sinh vật chủ",
+      "parasitic infection｜nhiễm ký sinh trùng"
     ],
     "fam": [
       "parasitic (adj.)",
@@ -4458,9 +4458,9 @@
       }
     ],
     "col": [
-      "decompose naturally｜自然腐烂",
-      "decompose into｜分解为",
-      "decompose organic matter｜分解有机物"
+      "decompose naturally｜phân hủy tự nhiên",
+      "decompose into｜phân hủy thành",
+      "decompose organic matter｜phân hủy chất hữu cơ"
     ],
     "fam": [
       "decomposition (n.)",
@@ -4504,9 +4504,9 @@
       }
     ],
     "col": [
-      "the legacy of colonialism｜殖民主义的历史遗留影响",
-      "resistance to colonialism｜对殖民统治的反抗",
-      "the end of colonialism｜殖民统治的终结"
+      "the legacy of colonialism｜di sản của chủ nghĩa thực dân",
+      "resistance to colonialism｜chống chủ nghĩa thực dân",
+      "the end of colonialism｜sự kết thúc của chủ nghĩa thực dân"
     ],
     "fam": [
       "colony (n.)",
@@ -4549,9 +4549,9 @@
       }
     ],
     "col": [
-      "a trained meteorologist｜受过专业训练的气象专家",
-      "a team of meteorologists｜气象专家团队",
-      "meteorologists predict｜气象专家预测"
+      "a trained meteorologist｜một nhà khí tượng học được đào tạo",
+      "a team of meteorologists｜một nhóm các nhà khí tượng học",
+      "meteorologists predict｜nhà khí tượng học dự đoán"
     ],
     "fam": [
       "meteorology (n.)",
@@ -4600,7 +4600,7 @@
     "col": [
       "a theatrical production｜một tác phẩm sân khấu",
       "a theatrical performance｜một buổi biểu diễn sân khấu",
-      "a theatrical gesture｜夸张的手势"
+      "a theatrical gesture｜một cử chỉ sân khấu"
     ],
     "fam": [
       "theatre (n.)",
@@ -4655,9 +4655,9 @@
       }
     ],
     "col": [
-      "in a state of agitation｜处于焦躁状态",
-      "political agitation｜政治鼓动",
-      "gentle agitation｜轻轻搅动"
+      "in a state of agitation｜trong trạng thái kích động",
+      "political agitation｜kích động chính trị",
+      "gentle agitation｜kích động nhẹ nhàng"
     ],
     "fam": [
       "agitate (v.)",
@@ -4699,10 +4699,10 @@
       }
     ],
     "col": [
-      "accrued interest｜应计利息",
-      "accrued expenses｜应计费用",
-      "accrued income｜应计收入",
-      "accrued benefits｜累积福利"
+      "accrued interest｜lãi tích lũy",
+      "accrued expenses｜chi phí phải trả",
+      "accrued income｜thu nhập tích lũy",
+      "accrued benefits｜lợi ích tích lũy"
     ],
     "fam": [
       "accrue (v.)",
@@ -4751,10 +4751,10 @@
       }
     ],
     "col": [
-      "vocal opposition｜公开而强烈的反对",
-      "vocal critic｜直言不讳的批评者",
-      "vocal cords｜声带",
-      "vocal training｜声乐训练"
+      "vocal opposition｜sự phản đối bằng giọng nói",
+      "vocal critic｜nhà phê bình giọng hát",
+      "vocal cords｜dây thanh âm",
+      "vocal training｜luyện thanh"
     ],
     "fam": [
       "vocally (adv.)",
@@ -4798,9 +4798,9 @@
       }
     ],
     "col": [
-      "time elapses｜时间流逝",
-      "years elapse｜数年过去",
-      "elapsed time｜已用时间"
+      "time elapses｜thời gian trôi qua",
+      "years elapse｜năm trôi qua",
+      "elapsed time｜thời gian trôi qua"
     ],
     "fam": [],
     "syn": [
@@ -4852,9 +4852,9 @@
       }
     ],
     "col": [
-      "bring dishonour on｜使……蒙羞",
-      "dishonour a promise｜违背诺言",
-      "dishonour an agreement｜不履行协议"
+      "bring dishonour on｜mang lại sự ô nhục",
+      "dishonour a promise｜không thực hiện lời hứa",
+      "dishonour an agreement｜làm nhục một thỏa thuận"
     ],
     "fam": [
       "dishonourable (adj.)",
@@ -4901,9 +4901,9 @@
       }
     ],
     "col": [
-      "an ominous sign｜不祥的征兆",
-      "ominous clouds｜预示风暴的乌云",
-      "an ominous silence｜令人不安的寂静"
+      "an ominous sign｜một dấu hiệu đáng ngại",
+      "ominous clouds｜đám mây đáng ngại",
+      "an ominous silence｜một sự im lặng đáng ngại"
     ],
     "fam": [
       "ominously (adv.)",

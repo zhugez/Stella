@@ -25,8 +25,8 @@
       }
     ],
     "col": [
-      "not live here anymore｜不再住在这里",
-      "not need it anymore｜不再需要它"
+      "not live here anymore｜không sống ở đây nữa",
+      "not need it anymore｜không cần nó nữa"
     ],
     "fam": [],
     "syn": [
@@ -72,9 +72,9 @@
       }
     ],
     "col": [
-      "seriously ill｜病得很重",
-      "fall ill｜生病",
-      "speak ill of｜说……的坏话"
+      "seriously ill｜bệnh nặng",
+      "fall ill｜ngã bệnh",
+      "speak ill of｜nói xấu"
     ],
     "fam": [
       "illness (n.)"
@@ -132,10 +132,10 @@
       }
     ],
     "col": [
-      "made of stone｜石制的",
-      "precious stone｜宝石",
-      "kidney stone｜肾结石",
-      "a stone wall｜石墙"
+      "made of stone｜làm bằng đá",
+      "precious stone｜đá quý",
+      "kidney stone｜sỏi thận",
+      "a stone wall｜một bức tường đá"
     ],
     "fam": [
       "stony (adj.)",
@@ -176,9 +176,9 @@
       }
     ],
     "col": [
-      "Bristol Harbour｜布里斯托尔港",
-      "central Bristol｜布里斯托尔市中心",
-      "the city of Bristol｜布里斯托尔市"
+      "Bristol Harbour｜Cảng Bristol",
+      "central Bristol｜trung tâm Bristol",
+      "the city of Bristol｜thành phố Bristol"
     ],
     "fam": [
       "Bristolian (n.)",
@@ -225,9 +225,9 @@
       }
     ],
     "col": [
-      "give birth to｜生下；产生",
-      "date of birth｜出生日期",
-      "birth rate｜出生率",
+      "give birth to｜sinh con",
+      "date of birth｜ngày sinh",
+      "birth rate｜tỷ lệ sinh",
       "the birth of a movement｜sự ra đời của một phong trào"
     ],
     "fam": [
@@ -277,9 +277,9 @@
       }
     ],
     "col": [
-      "the tenth floor｜第十层",
+      "the tenth floor｜tầng mười",
       "a tenth of｜một phần mười của",
-      "tenth place｜第十名"
+      "tenth place｜vị trí thứ mười"
     ],
     "fam": [
       "ten (num.)",
@@ -326,9 +326,9 @@
       }
     ],
     "col": [
-      "academic calendar｜校历",
-      "calendar year｜公历年",
-      "lunar calendar｜阴历"
+      "academic calendar｜lịch học",
+      "calendar year｜năm dương lịch",
+      "lunar calendar｜âm lịch"
     ],
     "fam": [],
     "syn": [],
@@ -372,9 +372,9 @@
       }
     ],
     "col": [
-      "comb your hair｜梳头",
-      "a fine-toothed comb｜细齿梳",
-      "comb through｜仔细搜查"
+      "comb your hair｜chải tóc của bạn",
+      "a fine-toothed comb｜một chiếc lược có răng thưa",
+      "comb through｜chải qua"
     ],
     "fam": [],
     "syn": [],
@@ -412,9 +412,9 @@
       }
     ],
     "col": [
-      "play golf｜打高尔夫球",
-      "a golf course｜高尔夫球场",
-      "a golf club｜高尔夫球杆；高尔夫俱乐部",
+      "play golf｜chơi gôn",
+      "a golf course｜một sân gôn",
+      "a golf club｜một câu lạc bộ golf",
       "a round of golf｜một vòng chơi gôn"
     ],
     "fam": [
@@ -456,9 +456,9 @@
       }
     ],
     "col": [
-      "a noisy neighbour｜吵闹的邻居",
-      "a noisy environment｜嘈杂的环境",
-      "a noisy crowd｜喧闹的人群"
+      "a noisy neighbour｜một người hàng xóm ồn ào",
+      "a noisy environment｜một môi trường ồn ào",
+      "a noisy crowd｜một đám đông ồn ào"
     ],
     "fam": [
       "noise (n.)",
@@ -517,10 +517,10 @@
       }
     ],
     "col": [
-      "a park bench｜公园长凳",
-      "a wooden bench｜木制长凳",
-      "a work bench｜工作台",
-      "the substitutes' bench｜替补席"
+      "a park bench｜một băng ghế công viên",
+      "a wooden bench｜một chiếc ghế gỗ",
+      "a work bench｜một băng ghế làm việc",
+      "the substitutes' bench｜băng ghế dự bị"
     ],
     "fam": [],
     "syn": [],
@@ -570,10 +570,10 @@
       }
     ],
     "col": [
-      "keep a secret｜保守秘密",
-      "in secret｜秘密地",
-      "secret information｜机密信息",
-      "the secret to success｜成功的秘诀"
+      "keep a secret｜giữ bí mật",
+      "in secret｜trong bí mật",
+      "secret information｜thông tin bí mật",
+      "the secret to success｜bí quyết thành công"
     ],
     "fam": [
       "secrecy (n.)",
@@ -632,10 +632,10 @@
       }
     ],
     "col": [
-      "a sharp rise｜急剧上涨",
-      "rise steadily｜稳步上升",
-      "rise to your feet｜站起身",
-      "a rise in prices｜物价上涨"
+      "a sharp rise｜sự gia tăng mạnh mẽ",
+      "rise steadily｜tăng đều đặn",
+      "rise to your feet｜hãy đứng dậy",
+      "a rise in prices｜sự tăng giá"
     ],
     "fam": [
       "rising (adj.)"
@@ -687,9 +687,9 @@
       }
     ],
     "col": [
-      "yes, sir｜是的，先生",
+      "yes, sir｜vâng, thưa ông",
       "excuse me, sir｜Xin lỗi, thưa ông.",
-      "Dear Sir｜尊敬的先生（信函称呼）"
+      "Dear Sir｜Thưa ngài"
     ],
     "fam": [],
     "syn": [],
@@ -740,9 +740,9 @@
     ],
     "col": [
       "a gust of wind｜một cơn gió",
-      "wind power｜风能",
-      "wind a clock｜给钟上发条",
-      "wind through｜蜿蜒穿过"
+      "wind power｜năng lượng gió",
+      "wind a clock｜lên dây cót đồng hồ",
+      "wind through｜gió qua"
     ],
     "fam": [
       "windy (adj.)",
@@ -795,9 +795,9 @@
       }
     ],
     "col": [
-      "Thai cuisine｜泰国菜",
-      "Thai culture｜泰国文化",
-      "speak Thai｜说泰语"
+      "Thai cuisine｜ẩm thực Thái Lan",
+      "Thai culture｜văn hóa Thái Lan",
+      "speak Thai｜nói tiếng Thái"
     ],
     "fam": [],
     "syn": [],
@@ -841,9 +841,9 @@
       }
     ],
     "col": [
-      "I suppose so｜我想是吧",
-      "suppose that｜假设；认为",
-      "be supposed to do｜应该做；按安排做"
+      "I suppose so｜Tôi cho là vậy",
+      "suppose that｜giả sử rằng",
+      "be supposed to do｜phải làm"
     ],
     "fam": [
       "supposition (n.)",
@@ -894,10 +894,10 @@
       }
     ],
     "col": [
-      "solid wood｜实木",
-      "wood carving｜木雕",
+      "solid wood｜gỗ nguyên khối",
+      "wood carving｜chạm khắc gỗ",
       "a piece of wood｜một khúc gỗ",
-      "walk in the woods｜在树林中散步"
+      "walk in the woods｜đi dạo trong rừng"
     ],
     "fam": [
       "wooden (adj.)",
@@ -954,10 +954,10 @@
       }
     ],
     "col": [
-      "private property｜私有财产",
-      "private sector｜私营部门",
-      "private life｜私生活",
-      "in private｜私下地"
+      "private property｜tài sản riêng",
+      "private sector｜khu vực tư nhân",
+      "private life｜cuộc sống riêng tư",
+      "in private｜ở nơi riêng tư"
     ],
     "fam": [
       "privately (adv.)",
@@ -1003,8 +1003,8 @@
     ],
     "col": [
       "a million people｜một triệu người",
-      "two million pounds｜两百万英镑",
-      "millions of people｜数百万人"
+      "two million pounds｜hai triệu bảng",
+      "millions of people｜hàng triệu người"
     ],
     "fam": [],
     "syn": [],
@@ -1048,10 +1048,10 @@
       }
     ],
     "col": [
-      "silly mistake｜愚蠢的错误",
-      "silly question｜傻问题",
-      "silly joke｜无厘头的笑话",
-      "feel silly｜觉得自己很傻"
+      "silly mistake｜sai lầm ngớ ngẩn",
+      "silly question｜câu hỏi ngớ ngẩn",
+      "silly joke｜trò đùa ngớ ngẩn",
+      "feel silly｜cảm thấy ngớ ngẩn"
     ],
     "fam": [
       "silliness (n.)"
@@ -1107,10 +1107,10 @@
       }
     ],
     "col": [
-      "repair damage｜修复损坏",
-      "carry out repairs｜进行维修",
-      "beyond repair｜无法修复",
-      "in good repair｜保养良好"
+      "repair damage｜sửa chữa hư hỏng",
+      "carry out repairs｜tiến hành sửa chữa",
+      "beyond repair｜không thể sửa chữa",
+      "in good repair｜đang sửa chữa tốt"
     ],
     "fam": [
       "repairable (adj.)",
@@ -1163,10 +1163,10 @@
       }
     ],
     "col": [
-      "shut the door｜关门",
-      "shut your eyes｜闭上眼睛",
-      "shut down a factory｜关闭工厂",
-      "keep something shut｜让某物保持关闭"
+      "shut the door｜đóng cửa lại",
+      "shut your eyes｜nhắm mắt lại",
+      "shut down a factory｜đóng cửa một nhà máy",
+      "keep something shut｜giữ cái gì đó im lặng"
     ],
     "fam": [
       "shutdown (n.)"
@@ -1216,10 +1216,10 @@
       }
     ],
     "col": [
-      "by myself｜独自；独立地",
-      "teach myself｜自学",
-      "enjoy myself｜玩得开心",
-      "not feel myself｜感觉不在状态"
+      "by myself｜một mình tôi",
+      "teach myself｜dạy bản thân mình",
+      "enjoy myself｜tận hưởng bản thân mình",
+      "not feel myself｜không cảm thấy chính mình"
     ],
     "fam": [],
     "syn": [],
@@ -1257,9 +1257,9 @@
       }
     ],
     "col": [
-      "have already done｜已经做过",
-      "already available｜已经可以获得",
-      "already in place｜已经就位；已落实"
+      "have already done｜đã làm rồi",
+      "already available｜đã có sẵn",
+      "already in place｜đã có sẵn"
     ],
     "fam": [],
     "syn": [],
@@ -1303,10 +1303,10 @@
       }
     ],
     "col": [
-      "take medicine｜服药",
-      "study medicine｜学医",
-      "preventive medicine｜预防医学",
-      "prescribe medicine｜开药"
+      "take medicine｜uống thuốc",
+      "study medicine｜học y khoa",
+      "preventive medicine｜thuốc phòng ngừa",
+      "prescribe medicine｜kê đơn thuốc"
     ],
     "fam": [
       "medical (adj.)",
@@ -1360,9 +1360,9 @@
       }
     ],
     "col": [
-      "keep something closed｜使某物保持关闭",
-      "closed for repairs｜停业维修",
-      "a closed mind｜封闭的思想"
+      "keep something closed｜giữ cái gì đó đóng lại",
+      "closed for repairs｜đóng cửa để sửa chữa",
+      "a closed mind｜một tâm trí khép kín"
     ],
     "fam": [
       "close (v.)",
@@ -1413,10 +1413,10 @@
       }
     ],
     "col": [
-      "lifelong learning｜终身学习",
-      "independent learning｜自主学习",
-      "a learning environment｜学习环境",
-      "a steep learning curve｜陡峭的学习曲线"
+      "lifelong learning｜học tập suốt đời",
+      "independent learning｜học tập độc lập",
+      "a learning environment｜một môi trường học tập",
+      "a steep learning curve｜một đường cong học tập dốc"
     ],
     "fam": [
       "learn (v.)",
@@ -1458,10 +1458,10 @@
       }
     ],
     "col": [
-      "go fishing｜去钓鱼",
-      "fishing rod｜钓竿",
-      "commercial fishing｜商业捕鱼",
-      "fishing village｜渔村"
+      "go fishing｜đi câu cá",
+      "fishing rod｜cần câu",
+      "commercial fishing｜đánh cá thương mại",
+      "fishing village｜làng chài"
     ],
     "fam": [
       "fish (n.)",
@@ -1510,9 +1510,9 @@
       }
     ],
     "col": [
-      "kick a ball｜踢球",
-      "kick a habit｜戒掉习惯",
-      "free kick｜任意球"
+      "kick a ball｜đá một quả bóng",
+      "kick a habit｜từ bỏ một thói quen",
+      "free kick｜đá phạt"
     ],
     "fam": [
       "kicker (n.)"
@@ -1564,10 +1564,10 @@
       }
     ],
     "col": [
-      "certain of｜对……有把握",
-      "certain to happen｜必然发生",
-      "make certain｜确保",
-      "certain types of｜某些类型的"
+      "certain of｜nhất định về",
+      "certain to happen｜chắc chắn sẽ xảy ra",
+      "make certain｜chắc chắn",
+      "certain types of｜một số loại"
     ],
     "fam": [
       "certainty (n.)",
@@ -1620,10 +1620,10 @@
       }
     ],
     "col": [
-      "sales department｜销售部",
-      "government department｜政府部门",
-      "department head｜部门负责人",
-      "department store｜百货商店"
+      "sales department｜bộ phận bán hàng",
+      "government department｜cơ quan chính phủ",
+      "department head｜trưởng phòng",
+      "department store｜cửa hàng bách hóa"
     ],
     "fam": [
       "departmental (adj.)"
@@ -1666,9 +1666,9 @@
       }
     ],
     "col": [
-      "wear a necklace｜戴项链",
-      "a pearl necklace｜珍珠项链",
-      "a silver necklace｜银项链"
+      "wear a necklace｜đeo vòng cổ",
+      "a pearl necklace｜một chiếc vòng cổ ngọc trai",
+      "a silver necklace｜một chiếc vòng cổ bạc"
     ],
     "fam": [],
     "syn": [],
@@ -1712,10 +1712,10 @@
       }
     ],
     "col": [
-      "street corner｜街角",
-      "around the corner｜在拐角处；即将到来",
-      "in the corner｜在角落里",
-      "corner the market｜垄断市场"
+      "street corner｜góc phố",
+      "around the corner｜quanh góc",
+      "in the corner｜trong góc",
+      "corner the market｜góc chợ"
     ],
     "fam": [],
     "syn": [],
@@ -1765,10 +1765,10 @@
       }
     ],
     "col": [
-      "soft skin｜柔软的皮肤",
-      "a soft voice｜轻柔的声音",
-      "soft lighting｜柔和的灯光",
-      "be soft on｜对……宽容"
+      "soft skin｜làn da mềm mại",
+      "a soft voice｜một giọng nói nhẹ nhàng",
+      "soft lighting｜ánh sáng dịu nhẹ",
+      "be soft on｜hãy nhẹ nhàng"
     ],
     "fam": [
       "soften (v.)",
@@ -1813,10 +1813,10 @@
       }
     ],
     "col": [
-      "ordinary people｜普通人",
-      "ordinary life｜平常生活",
+      "ordinary people｜người bình thường",
+      "ordinary life｜cuộc sống bình thường",
       "an ordinary day｜một ngày bình thường",
-      "out of the ordinary｜不寻常"
+      "out of the ordinary｜khác thường"
     ],
     "fam": [
       "ordinarily (adv.)",
@@ -1870,10 +1870,10 @@
       }
     ],
     "col": [
-      "gun control｜枪支管制",
-      "a loaded gun｜装有弹药的枪",
-      "a glue gun｜胶枪",
-      "a spray gun｜喷枪"
+      "gun control｜kiểm soát súng",
+      "a loaded gun｜một khẩu súng đã nạp đạn",
+      "a glue gun｜một khẩu súng keo",
+      "a spray gun｜một khẩu súng phun"
     ],
     "fam": [
       "gunfire (n.)"
@@ -1927,10 +1927,10 @@
       }
     ],
     "col": [
-      "medical care｜医疗护理",
-      "take care of｜照顾",
-      "care about｜关心；在意",
-      "with care｜小心地"
+      "medical care｜chăm sóc y tế",
+      "take care of｜chăm sóc",
+      "care about｜quan tâm đến",
+      "with care｜cẩn thận"
     ],
     "fam": [
       "careful (adj.)",
@@ -1984,9 +1984,9 @@
       }
     ],
     "col": [
-      "index finger｜食指",
-      "middle finger｜中指",
-      "point a finger at｜用手指指向；指责"
+      "index finger｜ngón trỏ",
+      "middle finger｜ngón giữa",
+      "point a finger at｜chỉ một ngón tay vào"
     ],
     "fam": [
       "fingertip (n.)",
@@ -2033,10 +2033,10 @@
       }
     ],
     "col": [
-      "worry about｜担心",
+      "worry about｜lo lắng về",
       "a major worry｜một mối lo ngại lớn",
-      "cause worry｜引起担忧",
-      "financial worries｜经济方面的忧虑"
+      "cause worry｜gây lo lắng",
+      "financial worries｜lo lắng tài chính"
     ],
     "fam": [
       "worried (adj.)",
@@ -2091,10 +2091,10 @@
       }
     ],
     "col": [
-      "in fashion｜流行的",
-      "out of fashion｜过时的",
-      "fashion industry｜时装行业",
-      "in a similar fashion｜以类似的方式"
+      "in fashion｜trong thời trang",
+      "out of fashion｜lỗi thời",
+      "fashion industry｜ngành công nghiệp thời trang",
+      "in a similar fashion｜theo cách tương tự"
     ],
     "fam": [
       "fashionable (adj.)",
@@ -2145,10 +2145,10 @@
       }
     ],
     "col": [
-      "cargo ship｜货船",
-      "cruise ship｜游轮",
-      "ship goods｜运送货物",
-      "on board a ship｜在船上"
+      "cargo ship｜tàu chở hàng",
+      "cruise ship｜tàu du lịch",
+      "ship goods｜tàu hàng",
+      "on board a ship｜trên một con tàu"
     ],
     "fam": [
       "shipping (n.)",
@@ -2194,8 +2194,8 @@
     ],
     "col": [
       "a pair of slippers｜một đôi dép lê",
-      "put on your slippers｜穿上拖鞋",
-      "bedroom slippers｜卧室拖鞋"
+      "put on your slippers｜mang dép vào",
+      "bedroom slippers｜dép đi trong phòng ngủ"
     ],
     "fam": [],
     "syn": [],
@@ -2245,9 +2245,9 @@
       }
     ],
     "col": [
-      "perform badly｜表现不佳",
-      "badly damaged｜严重受损",
-      "badly needed｜急需的"
+      "perform badly｜biểu diễn tệ",
+      "badly damaged｜hư hỏng nặng",
+      "badly needed｜rất cần thiết"
     ],
     "fam": [
       "bad (adj.)"
@@ -2304,10 +2304,10 @@
       }
     ],
     "col": [
-      "count up｜合计",
-      "lose count｜数不清；忘记数到哪里",
-      "count on someone｜依靠某人",
-      "every minute counts｜每分钟都很重要"
+      "count up｜đếm lên",
+      "lose count｜mất tính",
+      "count on someone｜trông cậy vào ai đó",
+      "every minute counts｜mỗi phút đều có giá trị"
     ],
     "fam": [
       "countable (adj.)",
@@ -2351,9 +2351,9 @@
       }
     ],
     "col": [
-      "a difficult situation｜困境",
-      "the current situation｜当前形势",
-      "deal with a situation｜应对某种情况"
+      "a difficult situation｜một tình huống khó khăn",
+      "the current situation｜tình hình hiện tại",
+      "deal with a situation｜giải quyết một tình huống"
     ],
     "fam": [
       "situational (adj.)"
@@ -2407,9 +2407,9 @@
       }
     ],
     "col": [
-      "airline pilot｜民航飞行员",
-      "pilot scheme｜试点计划",
-      "pilot study｜初步试验研究",
+      "airline pilot｜phi công hàng không",
+      "pilot scheme｜kế hoạch thí điểm",
+      "pilot study｜nghiên cứu thí điểm",
       "pilot a programme｜thí điểm một chương trình"
     ],
     "fam": [],
@@ -2454,10 +2454,10 @@
       }
     ],
     "col": [
-      "continue to grow｜继续增长",
-      "continue working｜继续工作",
-      "continue a discussion｜继续讨论",
-      "continue as planned｜按计划继续"
+      "continue to grow｜tiếp tục phát triển",
+      "continue working｜tiếp tục làm việc",
+      "continue a discussion｜tiếp tục thảo luận",
+      "continue as planned｜tiếp tục như kế hoạch"
     ],
     "fam": [
       "continuation (n.)",
@@ -2507,8 +2507,8 @@
     ],
     "col": [
       "a slice of watermelon｜một lát dưa hấu",
-      "watermelon seeds｜西瓜籽",
-      "ripe watermelon｜熟西瓜"
+      "watermelon seeds｜hạt dưa hấu",
+      "ripe watermelon｜dưa hấu chín"
     ],
     "fam": [],
     "syn": [],
@@ -2558,10 +2558,10 @@
       }
     ],
     "col": [
-      "heart disease｜心脏病",
-      "at the heart of｜处于……的核心",
-      "learn by heart｜背熟",
-      "lose heart｜灰心"
+      "heart disease｜bệnh tim",
+      "at the heart of｜ở trung tâm của",
+      "learn by heart｜học thuộc lòng",
+      "lose heart｜mất lòng"
     ],
     "fam": [
       "heartless (adj.)",
@@ -2615,10 +2615,10 @@
       }
     ],
     "col": [
-      "dry weather｜干旱天气",
-      "dry skin｜干燥的皮肤",
-      "dry your hands｜擦干双手",
-      "dry up｜干涸"
+      "dry weather｜thời tiết khô ráo",
+      "dry skin｜da khô",
+      "dry your hands｜lau khô tay",
+      "dry up｜khô đi"
     ],
     "fam": [
       "dryness (n.)",
@@ -2662,9 +2662,9 @@
       }
     ],
     "col": [
-      "delivery van｜送货车",
+      "delivery van｜xe tải giao hàng",
       "hire a van｜thuê một chiếc xe tải",
-      "load a van｜往厢式货车上装货"
+      "load a van｜tải một chiếc xe tải"
     ],
     "fam": [],
     "syn": [],
@@ -2702,9 +2702,9 @@
       }
     ],
     "col": [
-      "neat handwriting｜工整的笔迹",
-      "illegible handwriting｜难以辨认的笔迹",
-      "improve your handwriting｜改善书写"
+      "neat handwriting｜chữ viết gọn gàng",
+      "illegible handwriting｜chữ viết khó đọc",
+      "improve your handwriting｜cải thiện chữ viết tay của bạn"
     ],
     "fam": [
       "handwrite (v.)",
@@ -2757,9 +2757,9 @@
       }
     ],
     "col": [
-      "round table｜圆桌",
+      "round table｜bàn tròn",
       "a round of talks｜một vòng đàm phán",
-      "walk round the lake｜绕湖散步"
+      "walk round the lake｜đi dạo quanh hồ"
     ],
     "fam": [
       "roundness (n.)",
@@ -2806,10 +2806,10 @@
       }
     ],
     "col": [
-      "celebrate a festival｜庆祝节日",
-      "music festival｜音乐节",
-      "film festival｜电影节",
-      "hold a festival｜举办节庆活动"
+      "celebrate a festival｜tổ chức lễ hội",
+      "music festival｜lễ hội âm nhạc",
+      "film festival｜liên hoan phim",
+      "hold a festival｜tổ chức lễ hội"
     ],
     "fam": [
       "festive (adj.)",
@@ -2862,9 +2862,9 @@
       }
     ],
     "col": [
-      "connect to the internet｜连接互联网",
-      "connect A with B｜把A与B联系起来",
-      "connect with people｜与人建立联系"
+      "connect to the internet｜kết nối với internet",
+      "connect A with B｜nối A với B",
+      "connect with people｜kết nối với mọi người"
     ],
     "fam": [
       "connection (n.)",
@@ -2918,9 +2918,9 @@
       }
     ],
     "col": [
-      "receive an email｜收到电子邮件",
-      "receive treatment｜接受治疗",
-      "receive a warm welcome｜受到热烈欢迎"
+      "receive an email｜nhận được một email",
+      "receive treatment｜được điều trị",
+      "receive a warm welcome｜nhận được sự chào đón nồng nhiệt"
     ],
     "fam": [
       "receiver (n.)",
@@ -2967,10 +2967,10 @@
       }
     ],
     "col": [
-      "go hiking｜去远足",
-      "hiking boots｜徒步靴",
-      "hiking trail｜徒步小径",
-      "hiking equipment｜徒步装备"
+      "go hiking｜đi leo núi",
+      "hiking boots｜giày đi bộ đường dài",
+      "hiking trail｜đường mòn đi bộ đường dài",
+      "hiking equipment｜thiết bị đi bộ đường dài"
     ],
     "fam": [
       "hike (n.)",
@@ -3018,9 +3018,9 @@
       }
     ],
     "col": [
-      "blond hair｜金发",
-      "a blond child｜金发孩子",
-      "naturally blond｜天生金发的"
+      "blond hair｜tóc vàng",
+      "a blond child｜một đứa trẻ tóc vàng",
+      "naturally blond｜tóc vàng tự nhiên"
     ],
     "fam": [
       "blonde (adj.)",
@@ -3078,10 +3078,10 @@
       }
     ],
     "col": [
-      "leave a mark｜留下痕迹",
-      "get high marks｜获得高分",
-      "mark an exam｜批改试卷",
-      "full marks｜满分"
+      "leave a mark｜để lại dấu ấn",
+      "get high marks｜đạt điểm cao",
+      "mark an exam｜đánh dấu một bài kiểm tra",
+      "full marks｜điểm đầy đủ"
     ],
     "fam": [
       "marker (n.)",
@@ -3123,10 +3123,10 @@
       }
     ],
     "col": [
-      "huge amount｜巨大的数量",
-      "huge difference｜巨大差异",
-      "huge impact｜巨大影响",
-      "huge success｜巨大成功"
+      "huge amount｜số tiền khổng lồ",
+      "huge difference｜sự khác biệt lớn",
+      "huge impact｜tác động lớn",
+      "huge success｜thành công lớn"
     ],
     "fam": [
       "hugely (adv.)"
@@ -3173,10 +3173,10 @@
       }
     ],
     "col": [
-      "have the flu｜患流感",
-      "flu symptoms｜流感症状",
-      "a flu vaccine｜流感疫苗",
-      "a flu outbreak｜流感暴发"
+      "have the flu｜bị cúm",
+      "flu symptoms｜triệu chứng cúm",
+      "a flu vaccine｜vắc xin cúm",
+      "a flu outbreak｜một đợt bùng phát cúm"
     ],
     "fam": [],
     "syn": [
@@ -3216,9 +3216,9 @@
       }
     ],
     "col": [
-      "an advertisement for｜关于……的广告",
-      "place an advertisement｜刊登广告",
-      "online advertisement｜网络广告"
+      "an advertisement for｜một quảng cáo cho",
+      "place an advertisement｜đặt một quảng cáo",
+      "online advertisement｜quảng cáo trực tuyến"
     ],
     "fam": [
       "advertise (v.)",
@@ -3263,10 +3263,10 @@
       }
     ],
     "col": [
-      "field hockey｜草地曲棍球",
-      "ice hockey｜冰球",
-      "hockey stick｜曲棍球棒；冰球杆",
-      "play hockey｜打曲棍球；打冰球"
+      "field hockey｜khúc côn cầu trên sân",
+      "ice hockey｜khúc côn cầu trên băng",
+      "hockey stick｜gậy khúc côn cầu",
+      "play hockey｜chơi khúc côn cầu"
     ],
     "fam": [],
     "syn": [],
@@ -3310,9 +3310,9 @@
       }
     ],
     "col": [
-      "a road accident｜道路交通事故",
-      "by accident｜偶然；无意中",
-      "prevent accidents｜预防事故"
+      "a road accident｜một vụ tai nạn đường bộ",
+      "by accident｜tình cờ",
+      "prevent accidents｜ngăn ngừa tai nạn"
     ],
     "fam": [
       "accidental (adj.)",
@@ -3359,10 +3359,10 @@
       }
     ],
     "col": [
-      "give a speech｜发表演讲",
-      "freedom of speech｜言论自由",
-      "speech therapy｜言语治疗",
-      "opening speech｜开幕致辞"
+      "give a speech｜phát biểu",
+      "freedom of speech｜tự do ngôn luận",
+      "speech therapy｜trị liệu ngôn ngữ",
+      "opening speech｜bài phát biểu khai mạc"
     ],
     "fam": [
       "speak (v.)",
@@ -3405,9 +3405,9 @@
       }
     ],
     "col": [
-      "freshwater lake｜淡水湖",
-      "saltwater lake｜咸水湖",
-      "the shore of a lake｜湖岸"
+      "freshwater lake｜hồ nước ngọt",
+      "saltwater lake｜hồ nước mặn",
+      "the shore of a lake｜bờ hồ"
     ],
     "fam": [
       "lakeside (n.)"
@@ -3447,8 +3447,8 @@
       }
     ],
     "col": [
-      "opening paragraph｜开头段",
-      "concluding paragraph｜结尾段",
+      "opening paragraph｜đoạn mở đầu",
+      "concluding paragraph｜đoạn kết luận",
       "a short paragraph｜một đoạn văn ngắn"
     ],
     "fam": [],
@@ -3499,9 +3499,9 @@
       }
     ],
     "col": [
-      "a chance to learn｜学习的机会",
-      "a good chance of｜很有可能",
-      "by chance｜偶然",
+      "a chance to learn｜một cơ hội để học hỏi",
+      "a good chance of｜một cơ hội tốt",
+      "by chance｜tình cờ",
       "take a chance｜nắm lấy cơ hội"
     ],
     "fam": [],
@@ -3540,9 +3540,9 @@
       }
     ],
     "col": [
-      "go sightseeing｜去观光",
-      "a sightseeing tour｜观光之旅",
-      "a sightseeing bus｜观光巴士"
+      "go sightseeing｜đi tham quan",
+      "a sightseeing tour｜một chuyến tham quan",
+      "a sightseeing bus｜một chiếc xe buýt tham quan"
     ],
     "fam": [
       "sightsee (v.)",
@@ -3595,10 +3595,10 @@
       }
     ],
     "col": [
-      "keep in touch｜保持联系",
-      "lose touch｜失去联系",
-      "sense of touch｜触觉",
-      "deeply touched｜深受感动的"
+      "keep in touch｜giữ liên lạc",
+      "lose touch｜mất liên lạc",
+      "sense of touch｜cảm giác chạm",
+      "deeply touched｜cảm động sâu sắc"
     ],
     "fam": [
       "touching (adj.)",
@@ -3646,9 +3646,9 @@
       }
     ],
     "col": [
-      "pencil drawing｜铅笔画",
-      "drawing skills｜绘画技巧",
-      "drawing class｜绘画课"
+      "pencil drawing｜vẽ bút chì",
+      "drawing skills｜kỹ năng vẽ",
+      "drawing class｜lớp học vẽ"
     ],
     "fam": [
       "draw (v.)"
@@ -3690,9 +3690,9 @@
       }
     ],
     "col": [
-      "for dessert｜作为餐后甜点",
-      "dessert menu｜甜点菜单",
-      "fruit dessert｜水果甜点"
+      "for dessert｜cho món tráng miệng",
+      "dessert menu｜thực đơn tráng miệng",
+      "fruit dessert｜món tráng miệng trái cây"
     ],
     "fam": [],
     "syn": [
@@ -3738,10 +3738,10 @@
       }
     ],
     "col": [
-      "school canteen｜学校食堂",
-      "staff canteen｜员工食堂",
-      "canteen food｜食堂饭菜",
-      "a water canteen｜便携式水壶"
+      "school canteen｜căng tin trường học",
+      "staff canteen｜căng tin nhân viên",
+      "canteen food｜thức ăn căng tin",
+      "a water canteen｜một căng tin nước"
     ],
     "fam": [],
     "syn": [
@@ -3781,9 +3781,9 @@
       }
     ],
     "col": [
-      "local builder｜当地建筑商",
-      "house builder｜住宅建筑商",
-      "hire a builder｜雇用建筑工人"
+      "local builder｜người xây dựng địa phương",
+      "house builder｜thợ xây nhà",
+      "hire a builder｜thuê thợ xây"
     ],
     "fam": [
       "build (v.)",
@@ -3825,9 +3825,9 @@
       }
     ],
     "col": [
-      "solve a problem｜解决问题",
-      "solve a puzzle｜解开谜题",
-      "solve an equation｜解方程"
+      "solve a problem｜giải quyết một vấn đề",
+      "solve a puzzle｜giải một câu đố",
+      "solve an equation｜giải một phương trình"
     ],
     "fam": [
       "solution (n.)",
@@ -3877,9 +3877,9 @@
       }
     ],
     "col": [
-      "wooden spoon｜木勺",
-      "soup spoon｜汤匙",
-      "spoon into a bowl｜用勺舀入碗中"
+      "wooden spoon｜thìa gỗ",
+      "soup spoon｜thìa súp",
+      "spoon into a bowl｜thìa vào bát"
     ],
     "fam": [
       "spoonful (n.)"
@@ -3925,9 +3925,9 @@
       }
     ],
     "col": [
-      "disagree with someone｜不同意某人的看法",
-      "disagree about something｜在某事上意见不合",
-      "strongly disagree｜强烈反对"
+      "disagree with someone｜không đồng ý với ai đó",
+      "disagree about something｜không đồng ý về điều gì đó",
+      "strongly disagree｜hoàn toàn không đồng ý"
     ],
     "fam": [
       "agree (v.)",
@@ -3973,9 +3973,9 @@
       }
     ],
     "col": [
-      "enter a ZIP code｜输入邮政编码",
-      "ZIP code lookup｜邮政编码查询",
-      "ZIP code area｜邮政编码区域"
+      "enter a ZIP code｜nhập mã ZIP",
+      "ZIP code lookup｜Tra cứu mã ZIP",
+      "ZIP code area｜Khu vực mã ZIP"
     ],
     "fam": [],
     "syn": [],
@@ -4020,8 +4020,8 @@
     ],
     "col": [
       "the author of a novel｜tác giả của một cuốn tiểu thuyết",
-      "a bestselling author｜畅销书作家",
-      "author a report｜撰写报告"
+      "a bestselling author｜một tác giả bán chạy nhất",
+      "author a report｜tác giả một báo cáo"
     ],
     "fam": [
       "authorship (n.)",
@@ -4077,9 +4077,9 @@
     ],
     "col": [
       "a bar of soap｜một thanh xà phòng",
-      "liquid soap｜洗手液；液体皂",
-      "soap and water｜肥皂和水",
-      "soap opera｜肥皂剧"
+      "liquid soap｜xà phòng lỏng",
+      "soap and water｜xà phòng và nước",
+      "soap opera｜vở opera xà phòng"
     ],
     "fam": [
       "soapy (adj.)"
@@ -4119,8 +4119,8 @@
       }
     ],
     "col": [
-      "frozen peas｜冷冻豌豆",
-      "pea soup｜豌豆汤",
+      "frozen peas｜đậu đông lạnh",
+      "pea soup｜súp đậu",
       "a pea pod｜một hạt đậu"
     ],
     "fam": [],
@@ -4165,10 +4165,10 @@
       }
     ],
     "col": [
-      "colourful flowers｜色彩鲜艳的花朵",
-      "a colourful display｜绚丽的展示",
-      "a colourful character｜有趣独特的人物",
-      "a colourful history｜丰富多彩的历史"
+      "colourful flowers｜hoa đầy màu sắc",
+      "a colourful display｜một màn hình đầy màu sắc",
+      "a colourful character｜một nhân vật đầy màu sắc",
+      "a colourful history｜lịch sử đầy màu sắc"
     ],
     "fam": [
       "colour (n.)",
@@ -4222,9 +4222,9 @@
       }
     ],
     "col": [
-      "according to research｜根据研究",
-      "according to plan｜按计划",
-      "according to the rules｜按照规则"
+      "according to research｜theo nghiên cứu",
+      "according to plan｜theo kế hoạch",
+      "according to the rules｜theo quy định"
     ],
     "fam": [],
     "syn": [],
@@ -4274,9 +4274,9 @@
       }
     ],
     "col": [
-      "throw a ball｜扔球",
-      "throw a party｜举办聚会",
-      "throw away rubbish｜扔掉垃圾"
+      "throw a ball｜ném một quả bóng",
+      "throw a party｜tổ chức một bữa tiệc",
+      "throw away rubbish｜vứt rác"
     ],
     "fam": [
       "thrower (n.)"
@@ -4333,10 +4333,10 @@
       }
     ],
     "col": [
-      "nasty smell｜难闻的气味",
-      "nasty comment｜恶意评论",
-      "nasty injury｜严重的伤",
-      "nasty shock｜令人不快的打击"
+      "nasty smell｜mùi khó chịu",
+      "nasty comment｜bình luận khó chịu",
+      "nasty injury｜vết thương khó chịu",
+      "nasty shock｜cú sốc khó chịu"
     ],
     "fam": [
       "nastily (adv.)",
@@ -4389,10 +4389,10 @@
       }
     ],
     "col": [
-      "explain something to someone｜向某人解释某事",
-      "explain why｜解释为什么",
-      "explain in detail｜详细解释",
-      "explain the difference｜说明区别"
+      "explain something to someone｜giải thích điều gì đó cho ai đó",
+      "explain why｜giải thích tại sao",
+      "explain in detail｜giải thích chi tiết",
+      "explain the difference｜giải thích sự khác biệt"
     ],
     "fam": [
       "explanation (n.)",
@@ -4442,9 +4442,9 @@
       }
     ],
     "col": [
-      "could possibly｜或许能够",
-      "quite possibly｜很有可能",
-      "can't possibly｜绝不可能"
+      "could possibly｜có thể có thể",
+      "quite possibly｜hoàn toàn có thể",
+      "can't possibly｜không thể nào"
     ],
     "fam": [
       "possible (adj.)",
@@ -4503,9 +4503,9 @@
       }
     ],
     "col": [
-      "pure silver｜纯银",
-      "a silver medal｜银牌",
-      "silver jewellery｜银首饰"
+      "pure silver｜bạc nguyên chất",
+      "a silver medal｜một huy chương bạc",
+      "silver jewellery｜đồ trang sức bạc"
     ],
     "fam": [
       "silvery (adj.)"
@@ -4558,9 +4558,9 @@
     ],
     "col": [
       "a copy of｜một bản sao của",
-      "a digital copy｜电子副本",
-      "copy and paste｜复制粘贴",
-      "advertising copy｜广告文案"
+      "a digital copy｜một bản sao kỹ thuật số",
+      "copy and paste｜sao chép và dán",
+      "advertising copy｜bản sao quảng cáo"
     ],
     "fam": [
       "copier (n.)",
@@ -4620,10 +4620,10 @@
       }
     ],
     "col": [
-      "go travelling｜去旅行",
-      "travelling abroad｜出国旅行",
-      "travelling expenses｜差旅费",
-      "a travelling exhibition｜巡回展览"
+      "go travelling｜đi du lịch",
+      "travelling abroad｜đi du lịch nước ngoài",
+      "travelling expenses｜chi phí đi lại",
+      "a travelling exhibition｜một cuộc triển lãm du lịch"
     ],
     "fam": [
       "travel (v.)",
@@ -4665,10 +4665,10 @@
       }
     ],
     "col": [
-      "think differently｜以不同方式思考",
-      "treat someone differently｜区别对待某人",
-      "react differently｜作出不同反应",
-      "do things differently｜换种方式做事"
+      "think differently｜nghĩ khác đi",
+      "treat someone differently｜đối xử với ai đó khác đi",
+      "react differently｜phản ứng khác nhau",
+      "do things differently｜làm những điều khác biệt"
     ],
     "fam": [
       "different (adj.)",
@@ -4724,10 +4724,10 @@
       }
     ],
     "col": [
-      "police officer｜警察",
-      "army officer｜陆军军官",
-      "housing officer｜住房事务官员",
-      "chief executive officer｜首席执行官"
+      "police officer｜sĩ quan cảnh sát",
+      "army officer｜sĩ quan quân đội",
+      "housing officer｜nhân viên nhà ở",
+      "chief executive officer｜giám đốc điều hành"
     ],
     "fam": [],
     "syn": [],
@@ -4765,9 +4765,9 @@
       }
     ],
     "col": [
-      "giant panda｜大熊猫",
-      "panda cub｜大熊猫幼崽",
-      "panda habitat｜大熊猫栖息地"
+      "giant panda｜gấu trúc khổng lồ",
+      "panda cub｜gấu trúc con",
+      "panda habitat｜môi trường sống của gấu trúc"
     ],
     "fam": [],
     "syn": [],
@@ -4817,10 +4817,10 @@
       }
     ],
     "col": [
-      "gain experience｜积累经验",
-      "work experience｜工作经验",
-      "a rewarding experience｜有收获的经历",
-      "experience difficulties｜遇到困难"
+      "gain experience｜tích lũy kinh nghiệm",
+      "work experience｜kinh nghiệm làm việc",
+      "a rewarding experience｜một trải nghiệm bổ ích",
+      "experience difficulties｜trải qua khó khăn"
     ],
     "fam": [
       "experienced (adj.)",
@@ -4868,10 +4868,10 @@
       }
     ],
     "col": [
-      "increase by｜增加了",
-      "increase to｜增加到",
-      "an increase in demand｜需求的增长",
-      "a significant increase｜显著增长"
+      "increase by｜tăng thêm",
+      "increase to｜tăng lên",
+      "an increase in demand｜sự gia tăng nhu cầu",
+      "a significant increase｜sự gia tăng đáng kể"
     ],
     "fam": [
       "increasing (adj.)",
@@ -4930,9 +4930,9 @@
       }
     ],
     "col": [
-      "belong to someone｜归某人所有",
-      "belong in a museum｜应放在博物馆",
-      "feel you belong｜感到有归属感"
+      "belong to someone｜thuộc về ai đó",
+      "belong in a museum｜thuộc về một bảo tàng",
+      "feel you belong｜cảm thấy bạn thuộc về"
     ],
     "fam": [
       "belonging (n.)",
@@ -4973,10 +4973,10 @@
       }
     ],
     "col": [
-      "almost all｜几乎所有",
-      "almost certainly｜几乎肯定",
-      "almost impossible｜几乎不可能",
-      "almost every day｜几乎每天"
+      "almost all｜gần như tất cả",
+      "almost certainly｜gần như chắc chắn",
+      "almost impossible｜gần như không thể",
+      "almost every day｜hầu như mỗi ngày"
     ],
     "fam": [],
     "syn": [
@@ -5017,8 +5017,8 @@
       }
     ],
     "col": [
-      "a portable tape-recorder｜便携式磁带录音机",
-      "a cassette tape-recorder｜盒式磁带录音机"
+      "a portable tape-recorder｜một máy ghi âm di động",
+      "a cassette tape-recorder｜một máy ghi băng cassette"
     ],
     "fam": [
       "tape (n.)",
@@ -5068,8 +5068,8 @@
     ],
     "col": [
       "exactly the same｜hoàn toàn giống nhau",
-      "exactly right｜完全正确",
-      "know exactly｜确切知道"
+      "exactly right｜chính xác đúng",
+      "know exactly｜biết chính xác"
     ],
     "fam": [
       "exact (adj.)",
