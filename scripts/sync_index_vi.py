@@ -1,8 +1,8 @@
 import json
 import os
 
-INDEX_PATH = '/home/dev/word-atlas/public/atlas/index.json'
-ENTRIES_DIR = '/home/dev/word-atlas/public/atlas/entries'
+INDEX_PATH = '/home/dev/stella/public/atlas/index.json'
+ENTRIES_DIR = '/home/dev/stella/public/atlas/entries'
 
 with open(INDEX_PATH, 'r', encoding='utf-8') as f:
     index_data = json.load(f)
