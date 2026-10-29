@@ -2,13 +2,13 @@ import { ArrowLeftRight, Check, Globe } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { store, useStore, type LangPair } from "../store/store";
 
-export const PAIRS: { id: LangPair; source: string; target: string; label: string; flag: string }[] = [
-  { id: "en-vi", source: "English", target: "Tiếng Việt", label: "EN ➔ VI", flag: "🇬🇧 ➔ 🇻🇳" },
-  { id: "vi-en", source: "Tiếng Việt", target: "English", label: "VI ➔ EN", flag: "🇻🇳 ➔ 🇬🇧" },
-  { id: "zh-vi", source: "中文 (Chinese)", target: "Tiếng Việt", label: "ZH ➔ VI", flag: "🇨🇳 ➔ 🇻🇳" },
-  { id: "vi-zh", source: "Tiếng Việt", target: "中文 (Chinese)", label: "VI ➔ ZH", flag: "🇻🇳 ➔ 🇨🇳" },
-  { id: "fr-vi", source: "Français", target: "Tiếng Việt", label: "FR ➔ VI", flag: "🇫🇷 ➔ 🇻🇳" },
-  { id: "vi-fr", source: "Tiếng Việt", target: "Français", label: "VI ➔ FR", flag: "🇻🇳 ➔ 🇫🇷" },
+export const PAIRS: { id: LangPair; label: string; desc: string; flag: string }[] = [
+  { id: "en-vi", label: "EN ➔ VI", desc: "Học từ Anh, hiểu nghĩa Việt", flag: "🇬🇧 ➔ 🇻🇳" },
+  { id: "vi-en", label: "VI ➔ EN", desc: "Phản xạ từ nghĩa Việt sang từ Anh", flag: "🇻🇳 ➔ 🇬🇧" },
+  { id: "zh-vi", label: "ZH ➔ VI", desc: "Hán tự & nghĩa tiếng Việt", flag: "🇨🇳 ➔ 🇻🇳" },
+  { id: "vi-zh", label: "VI ➔ ZH", desc: "Nghĩa Việt sang chữ Hán", flag: "🇻🇳 ➔ 🇨🇳" },
+  { id: "fr-vi", label: "FR ➔ VI", desc: "Tiếng Pháp & từ điển Glosbe", flag: "🇫🇷 ➔ 🇻🇳" },
+  { id: "vi-fr", label: "VI ➔ FR", desc: "Tiếng Việt sang tiếng Pháp", flag: "🇻🇳 ➔ 🇫🇷" },
 ];
 
 export function LanguagePairPicker() {
@@ -43,53 +43,46 @@ export function LanguagePairPicker() {
   }, [open]);
 
   return (
-    <div className="relative inline-flex items-center gap-1" ref={popoverRef} style={{ position: "relative" }}>
-      <button
-        type="button"
-        className="btn btn-glass"
+    <div className="lang-picker" ref={popoverRef}>
+      <div
+        className="lang-pill"
         onClick={() => setOpen((prev) => !prev)}
-        style={{
-          display: "inline-flex",
-          alignItems: "center",
-          gap: "6px",
-          padding: "4px 10px",
-          fontSize: "0.82rem",
-          fontWeight: 600,
-          borderRadius: "9999px",
-        }}
-        title="Chọn cặp ngôn ngữ học tập"
+        role="button"
+        tabIndex={0}
+        onKeyDown={(e) => e.key === "Enter" && setOpen((prev) => !prev)}
+        aria-label="Language Mode"
       >
         <Globe size={15} />
-        <span>{active.flag}</span>
-      </button>
-
-      <button
-        type="button"
-        className="icon-btn"
-        onClick={swap}
-        style={{ width: "30px", height: "30px" }}
-        title="Đảo chiều ngôn ngữ học (Swap)"
-      >
-        <ArrowLeftRight size={14} />
-      </button>
+        <b>{active.label}</b>
+        <span
+          className="lang-swap-btn"
+          role="button"
+          tabIndex={0}
+          onClick={(e) => {
+            e.stopPropagation();
+            swap();
+          }}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              e.stopPropagation();
+              swap();
+            }
+          }}
+          title="Đảo chiều ngôn ngữ (Swap)"
+          aria-label="Đảo chiều ngôn ngữ"
+        >
+          <ArrowLeftRight size={13} />
+        </span>
+      </div>
 
       {open && (
-        <div
-          className="amb-pop"
-          style={{
-            position: "absolute",
-            top: "calc(100% + 8px)",
-            right: 0,
-            minWidth: "220px",
-            zIndex: 100,
-          }}
-        >
-          <p className="eyebrow" style={{ paddingBottom: "6px" }}>Cặp ngôn ngữ học tập</p>
-          <ul style={{ listStyle: "none", margin: 0, padding: 0 }}>
+        <div className="amb-pop lang-pop" role="dialog" aria-label="Language Mode">
+          <p className="eyebrow">Language Mode</p>
+          <ul>
             {PAIRS.map((p) => {
               const sel = p.id === currentPair;
               return (
-                <li key={p.id} style={{ margin: "2px 0" }}>
+                <li key={p.id}>
                   <button
                     type="button"
                     className={sel ? "is-on" : ""}
@@ -97,18 +90,10 @@ export function LanguagePairPicker() {
                       store.settings({ langPair: p.id });
                       setOpen(false);
                     }}
-                    style={{
-                      width: "100%",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "space-between",
-                      padding: "8px 12px",
-                      borderRadius: "8px",
-                      fontSize: "0.84rem",
-                    }}
                   >
                     <span>
-                      <b>{p.flag}</b> <small style={{ marginLeft: "6px", opacity: 0.8 }}>({p.label})</small>
+                      <span className="pair-title">{p.flag} ({p.label})</span>
+                      <span className="pair-sub">{p.desc}</span>
                     </span>
                     {sel && <Check size={16} />}
                   </button>
