@@ -7,7 +7,7 @@ export const PAIRS: { id: LangPair; label: string; desc: string; from: string; t
   { id: "vi-en", label: "VI ➔ EN", desc: "Phản xạ từ nghĩa Việt sang từ vựng Anh", from: "Tiếng Việt", to: "English" },
   { id: "zh-vi", label: "ZH ➔ VI", desc: "Hán tự chữ Hán & nghĩa tiếng Việt", from: "中文", to: "Tiếng Việt" },
   { id: "vi-zh", label: "VI ➔ ZH", desc: "Từ nghĩa Việt tra chữ Hán", from: "Tiếng Việt", to: "中文" },
-  { id: "fr-vi", label: "FR ➔ VI", desc: "Tiếng Pháp & từ điển Glosbe", from: "Français", to: "Tiếng Việt" },
+  { id: "fr-vi", label: "FR ➔ VI", desc: "Từ vựng tiếng Pháp & phát âm bản xứ", from: "Français", to: "Tiếng Việt" },
   { id: "vi-fr", label: "VI ➔ FR", desc: "Từ nghĩa Việt tra tiếng Pháp", from: "Tiếng Việt", to: "Français" },
 ];
 

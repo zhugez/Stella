@@ -132,7 +132,7 @@ function Shell({ privateAvailable }: { privateAvailable: boolean }) {
           <a className="topbar-logo" href="#/" aria-label="Stella Homepage">
             <Logo />
           </a>
-          <nav className="topnav" aria-label="主导航">
+          <nav className="topnav" aria-label="Main navigation">
             {NAV_ITEMS.map(({ page, key }) => (
               <a key={page} href={page === "today" ? "#/" : `#/${page}`} className={route.page === page ? "is-on" : ""} aria-current={route.page === page ? "page" : undefined}>
                 {t(key)}
@@ -158,7 +158,7 @@ function Shell({ privateAvailable }: { privateAvailable: boolean }) {
             <button className="icon-btn" onClick={() => store.settings({ theme: dark ? "light" : "dark" })} aria-label={dark ? t("toggle_theme_light") : t("toggle_theme_dark")}>
               {dark ? <Sun size={19} /> : <Moon size={19} />}
             </button>
-            <a className="icon-btn hide-sm" href="#/about" aria-label="关于与开源" title="关于与开源">
+            <a className="icon-btn hide-sm" href="#/about" aria-label="About & Open Source" title="About & Open Source">
               <Github size={19} />
             </a>
           </div>
@@ -188,7 +188,7 @@ function Shell({ privateAvailable }: { privateAvailable: boolean }) {
       )}
 
       {!focus && (
-        <nav className="tabbar" aria-label="主导航">
+        <nav className="tabbar" aria-label="Main navigation">
           {NAV_ITEMS.map(({ page, key, icon: Icon }) => (
             <a key={page} href={page === "today" ? "#/" : `#/${page}`} className={route.page === page ? "is-on" : ""} aria-current={route.page === page ? "page" : undefined}>
               <Icon size={22} strokeWidth={route.page === page ? 2.1 : 1.7} />
