@@ -16,6 +16,7 @@ import { cue } from "./lib/sound";
 import { store, useStore } from "./store/store";
 import { EntryView } from "./ui/EntryView";
 import { AmbienceController, AmbiencePicker } from "./ui/Ambience";
+import { LanguagePairPicker } from "./ui/LanguagePairPicker";
 import { Logo } from "./ui/Logo";
 import { Palette } from "./ui/Palette";
 import { Sheet } from "./ui/Sheet";
@@ -145,6 +146,7 @@ function Shell({ privateAvailable }: { privateAvailable: boolean }) {
               <kbd>⌘K</kbd>
             </button>
             <AmbiencePicker />
+            <LanguagePairPicker />
             <button
               className="icon-btn"
               onClick={() => store.settings({ lang: lang === "vi" ? "zh" : "vi" })}

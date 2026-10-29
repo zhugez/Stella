@@ -46,8 +46,11 @@ export interface Progress {
   mistakes: string[];
 }
 
+export type LangPair = "en-vi" | "vi-en" | "zh-vi" | "vi-zh" | "fr-vi" | "vi-fr";
+
 export interface Settings {
   lang: "vi" | "zh";
+  langPair: LangPair;
   accent: Accent;
   autoplay: boolean;
   dailyNew: number;
@@ -65,6 +68,7 @@ export interface Settings {
 
 export const defaultSettings: Settings = {
   lang: "vi",
+  langPair: "en-vi",
   accent: "uk",
   autoplay: true,
   dailyNew: 10,
@@ -163,6 +167,9 @@ export function sanitizeSettings(v: unknown): Settings {
   const s = { ...defaultSettings };
   if (!isObj(v)) return s;
   if (v.lang === "vi" || v.lang === "zh") s.lang = v.lang;
+  if (["en-vi", "vi-en", "zh-vi", "vi-zh", "fr-vi", "vi-fr"].includes(v.langPair as string)) {
+    s.langPair = v.langPair as LangPair;
+  }
   if (v.accent === "uk" || v.accent === "us") s.accent = v.accent;
   if (typeof v.autoplay === "boolean") s.autoplay = v.autoplay;
   if (num(v.dailyNew, 0, 100)) s.dailyNew = Math.round(v.dailyNew as number);

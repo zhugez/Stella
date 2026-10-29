@@ -66,6 +66,11 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
   });
   const status = card ? (isMastered(card) ? "Mastered" : "Learning") : null;
 
+  const langPair = useStore((s) => s.settings.langPair || "en-vi");
+  const isViToEn = langPair === "vi-en";
+  const isZh = langPair === "zh-vi" || langPair === "vi-zh";
+  const isFr = langPair === "fr-vi" || langPair === "vi-fr";
+
   return (
     <article className={`entry entry-${mode}`}>
       <div className="entry-art">
@@ -93,19 +98,30 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
           <p className="specimen">
             № {String(ref.order + 1).padStart(4, "0")}
             <i />
-            Stella
+            Stella · {langPair.toUpperCase()}
           </p>
         )}
         <h2 className="headword" lang="en">
-          {entry.w}
+          {isViToEn ? (entry.senses[0]?.vi || entry.w) : entry.w}
         </h2>
+        {isViToEn && (
+          <p style={{ fontSize: "1.15rem", fontWeight: 600, color: "var(--terra)", marginTop: "-6px", marginBottom: "8px" }}>
+            English: <b>{entry.w}</b>
+          </p>
+        )}
         <Pronounce entry={entry} refw={ref ?? entry} />
+
+        {isFr && (
+          <div style={{ margin: "10px 0", padding: "8px 12px", background: "rgba(78, 186, 135, 0.12)", borderRadius: "8px", border: "1px solid rgba(78, 186, 135, 0.25)", fontSize: "0.85rem" }}>
+            🇫🇷 <b>French Partner Mode:</b> Tra cứu ngữ nghĩa và nghe phát âm tiếng Pháp bản xứ tại <a href={`https://vi.glosbe.com/fr/vi/${encodeURIComponent(entry.w)}`} target="_blank" rel="noreferrer" style={{ textDecoration: "underline", color: "var(--sage)" }}>Glosbe French-Vietnamese</a>.
+          </div>
+        )}
 
         <ol className="senses">
           {entry.senses.map((s, i) => (
             <li key={i}>
               <span className="pos">{s.pos}</span>
-              <span className="zh">{s.vi || s.zh}</span>
+              <span className="zh">{isZh ? `${s.zh} · ${s.vi || ""}` : (s.vi || (s.zh && !/[\u4e00-\u9fff]/.test(s.zh) ? s.zh : ""))}</span>
               {s.en && (
                 <span className="en" lang="en">
                   {s.en}
@@ -126,7 +142,7 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
                     <Highlight text={x.en} word={entry.w} />
                     <Speak url={exUrls[i] ?? null} text={x.en} accent={i === 1 && exUrls[1] ? "us" : accent} size="sm" className="ex-speak" />
                   </p>
-                  <p className="ex-zh">{x.vi || x.zh}</p>
+                  <p className="ex-zh">{x.vi || (x.zh && !/[\u4e00-\u9fff]/.test(x.zh) ? x.zh : "")}</p>
                 </li>
               ))}
             </ul>
@@ -183,7 +199,7 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
           </section>
         )}
 
-        {(entry.tip_vi || entry.tip) && (
+        {(entry.tip_vi || (entry.tip && !/[\u4e00-\u9fff]/.test(entry.tip))) && (
           <aside className="tip">
             <Lightbulb size={17} strokeWidth={1.8} />
             <p>{entry.tip_vi || entry.tip}</p>
