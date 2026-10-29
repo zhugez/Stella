@@ -106,10 +106,10 @@ export async function renderWordCard(atlas: Atlas, e: Entry) {
   ctx.fillRect(pad, H - 120, art, 2);
   ctx.fillStyle = "#1E2640";
   ctx.font = `600 34px ${SERIF}`;
-  ctx.fillText("词光 · Word Atlas", pad, H - 62);
+  ctx.fillText("Stella · IELTS", pad, H - 62);
   ctx.font = `400 26px ${SANS}`;
   ctx.fillStyle = "#7A7C88";
-  const tag = "一词一画，点亮雅思";
+  const tag = "One word, one canvas.";
   ctx.fillText(tag, W - pad - ctx.measureText(tag).width, H - 64);
   return c;
 }
@@ -119,7 +119,7 @@ export async function shareWord(atlas: Atlas, e: Entry) {
     const canvas = await renderWordCard(atlas, e);
     const blob = await new Promise<Blob | null>((r) => canvas.toBlob(r, "image/png"));
     if (!blob) throw new Error("no blob");
-    const file = new File([blob], `word-atlas-${e.id}.png`, { type: "image/png" });
+    const file = new File([blob], `stella-${e.id}.png`, { type: "image/png" });
     if (navigator.canShare?.({ files: [file] })) {
       await navigator.share({ files: [file], title: e.w }).catch(() => null);
       return;

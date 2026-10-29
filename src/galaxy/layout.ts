@@ -44,7 +44,7 @@ export function layoutGalaxy(atlas: Atlas): GalaxyLayout {
   const seeds = new Float32Array(n);
   const arms = atlas.topics.length;
   // Big topics get a wider arm so every arm has a similar star density.
-  const counts = new Array(arms).fill(0);
+  const counts = Array.from({ length: arms }, () => 0);
   words.forEach((w) => counts[w.topic]++);
   const avg = n / arms;
   words.forEach((w, i) => {

@@ -10,7 +10,7 @@ export default {
 
     // Audio stream & edge-caching proxy (avoids hitting Cloudflare's 20,000 file upload limit)
     if (url.pathname.startsWith("/atlas/audio/")) {
-      const upstream = `https://raw.githubusercontent.com/zhugez/lexastra/main/public${url.pathname}`;
+      const upstream = `https://raw.githubusercontent.com/zhugez/stella/main/public${url.pathname}`;
       const cache = (caches as any).default;
       let response = await cache.match(request);
 

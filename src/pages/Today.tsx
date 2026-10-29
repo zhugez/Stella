@@ -316,7 +316,7 @@ function LevelPath() {
 function Topics() {
   const atlas = useAtlas();
   const counts = useMemo(() => {
-    const c = new Array(atlas.topics.length).fill(0);
+    const c = Array.from({ length: atlas.topics.length }, () => 0);
     atlas.words.forEach((w) => c[w.topic]++);
     return c;
   }, [atlas]);

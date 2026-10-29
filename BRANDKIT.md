@@ -1,75 +1,68 @@
-# LexAstra Brandkit & Design System
+# Stella Brandkit & Design System
 
-> **Every word is a star. Light up your IELTS.**
-> *Một từ một tranh, thắp sáng hành trình IELTS.*
+> **Every word is a star. Light up your IELTS.**  
+> *Mỗi từ một bức tranh. Thắp sáng hành trình IELTS.*
 
 ---
 
-## 1. Brand Identity
+## 1. Brand Essence & Story
 
-- **Brandname:** **LexAstra** (`Lex` = Lexicon/Từ vựng, `Astra` = Tinh tú/Chòm sao).
-- **Core Positioning:** Hệ sinh thái học từ vựng và rèn luyện kỹ năng IELTS thông qua hình ảnh trực quan, thuật toán giãn cách FSRS, phát âm bản xứ và giải nghĩa tiếng Việt chuẩn văn phong con người (không văn mẫu AI).
+- **Brandname:** **Stella** (Tiếng Latinh: *Ngôi sao / Tinh tú*).
+- **Core Positioning:** Hệ sinh thái học từ vựng và rèn luyện 4 kỹ năng IELTS thông qua tranh vẽ ngữ cảnh, phát âm bản xứ, thuật toán giãn cách FSRS và hệ thống giải nghĩa tiếng Việt chuẩn văn phong con người (nói không với văn mẫu AI).
+- **Core Metaphor:** Người học là một nhà thám hiểm (explorer). Mỗi từ vựng học được là một ngôi sao được thắp sáng trên bầu trời tri thức 3D Galaxy.
 - **Tagline:**
-  - *EN:* "One word, one canvas. Light up your IELTS."
-  - *VI:* "Mỗi từ một bức tranh. Thắp sáng bầu trời IELTS của bạn."
-- **Tone of Voice:**
-  - **Trực diện, gần gũi, đời thường:** Viết như một người có kinh nghiệm thực tế đang chia sẻ với bạn bè.
-  - **Nói không với từ ngữ sáo rỗng AI:** Cấm tuyệt đối các cụm từ rập khuôn: *mở khóa, đào sâu, bức tranh tổng thể, mang tính then chốt, cực kỳ quan trọng, trong thế giới ngày nay, hơn nữa, bên cạnh đó*.
-  - **Tập trung vào tính ứng dụng:** Từ này người bản xứ dùng trong hoàn cảnh nào? Đi với giới từ gì? Dùng trong IELTS Writing Task 2 hay Speaking như thế nào để ăn điểm tự nhiên?
+  - *EN:* "One word, one canvas. Light up your stars."
+  - *VI:* "Mỗi từ một bức tranh. Thắp sáng những vì sao IELTS."
 
 ---
 
-## 2. Color Palette (Dark-Mode Centric)
+## 2. Voice & Tone Standards (CHẾ ĐỘ BIÊN TẬP VIÊN CON NGƯỜI)
 
-| Color Name | Hex Code | Purpose |
+1. **Trực diện, gần gũi, chia sẻ kinh nghiệm:**
+   - Viết như một người đi trước giàu kinh nghiệm thực tế đang ngồi chỉ bài cho một người bạn.
+   - Nhịp điệu câu tự nhiên: kết hợp câu ngắn, dứt khoát với các câu dài ngắt nghỉ hợp lý.
+2. **Tuyệt đối cấm các sáo ngữ của AI:**
+   - ❌ *Cấm:* "mở khóa" (unlock), "đào sâu" (delve), "bức tranh tổng thể" (tapestry), "điều đáng lưu ý là", "cực kỳ quan trọng" (crucial), "mang tính then chốt" (pivotal), "trong thế giới ngày nay", "hơn nữa", "ngoài ra", "bên cạnh đó".
+3. **Thực tế trong phòng thi IELTS:**
+   - Tập trung giải thích: Từ này dùng trong ngữ cảnh nào? Dùng trong Speaking hay Writing? Dễ nhầm với từ nào? Đi với giới từ gì? Giám khảo đánh giá cao cụm collocation nào?
+
+---
+
+## 3. Color Tokens (Cosmos Dark System)
+
+| Token Name | Hex Code | Visual Role |
 |---|---|---|
-| **Cosmos Void** | `#0B0F19` | Nền chính (Deep space canvas), tạo chiều sâu tối đa cho các chòm sao |
-| **Cosmos Surface** | `#131B2E` | Bề mặt card, panel, modal, khung điều khiển |
+| **Cosmos Void** | `#0B0F19` | Nền chính sâu thẳm, tạo chiều sâu thị giác tối đa cho chòm sao 3D |
+| **Cosmos Surface** | `#131B2E` | Bề mặt thẻ từ, modal, panel điều khiển |
 | **Cosmos Border** | `rgba(255, 255, 255, 0.08)` | Viền kính mờ tinh tế (Frosted glass divider) |
-| **Starlight Gold** | `#F59E0B` | Màu nhấn chủ đạo: Ngôi sao mới thắp sáng, chuỗi ngày streak, huy hiệu nổi bật |
+| **Starlight Gold** | `#F59E0B` | Màu nhấn đặc trưng: Sao mới thắp sáng, chuỗi streak, huy hiệu xuất sắc |
 | **Terra Warmth** | `#E07A5F` | Màu đất nung ấm áp: Nút hành động chính (Primary CTA), kim la bàn |
-| **Sage Nebula** | `#4EBA87` | Màu xanh dịu: Câu trả lời chính xác, độ ổn định trí nhớ cao (Mastered) |
+| **Sage Nebula** | `#4EBA87` | Màu xanh ngọc: Câu trả lời chính xác, độ ổn định trí nhớ cao (Mastered) |
 | **Stardust White** | `#F9FAFB` | Chữ hiển thị chính (High contrast typography) |
 | **Muted Stardust** | `#94A3B8` | Chữ phụ, ghi chú, phiên âm IPA |
 
 ---
 
-## 3. Typography
+## 4. Typography
 
-- **Headings & Display:** `Fraunces` Variable Serif
-  - Ấm áp, cổ điển, mang chiều sâu học thuật của các thư viện phương Tây.
-  - Tự động hỗ trợ đầy đủ bộ ký tự tiếng Việt có dấu.
-- **Body & UI Elements:** `Plus Jakarta Sans` / `-apple-system, BlinkMacSystemFont, Segoe UI, Roboto`
-  - Hiện đại, thoáng, nét chữ sạch sẽ, hiển thị hoàn hảo ở kích thước nhỏ (mobile & web).
-- **Phonetics:** `Menlo, Monaco, Consolas` cho các chuỗi ký âm quốc tế (IPA).
+- **Headings & Display:** `Fraunces` Variable Serif (Serif ấm áp, cổ điển, mang chiều sâu của thư viện Oxford, hỗ trợ đầy đủ tiếng Việt).
+- **Interface & Body:** `Plus Jakarta Sans` / `-apple-system, BlinkMacSystemFont, Segoe UI` (Hiện đại, nét chữ thoáng đãng, sắc nét trên màn hình Retina).
+- **Phonetics & Code:** `Consolas, Menlo, Monaco` (Hiển thị chính xác các ký hiệu phiên âm IPA).
 
 ---
 
-## 4. Logo & Symbolism
+## 5. Technology Standards
 
-- **The Astrolabe Compass (Thước trắc tinh & La bàn):**
-  - Vòng tròn chiêm tinh học với các vạch định vị kinh tuyến.
-  - Kim la bàn hướng thẳng lên phương Bắc dẫn đường cho người học.
-  - Trọng tâm là ngôi sao tinh tú phát sáng tượng trưng cho tri thức được khai phá.
-
----
-
-## 5. Product Architecture (4 IELTS Skills)
-
-```
-LexAstra
-├── 🌌 Lexicon & Atlas (7,298 từ vựng IELTS + Tranh minh hoạ + Audio UK/US + FSRS)
-├── 🎧 Listening (Nghe chính tả câu ví dụ thực tế + Điền từ vào chỗ trống)
-├── 📖 Reading (Đoạn văn học thuật theo 19 chủ đề IELTS + Click tra từ tức thì)
-└── ✍️ Writing (Luyện viết Task 1 / Task 2 với gợi ý từ vựng theo chủ đề + AI feedback)
-```
+- **Package Manager:** `pnpm` (nhanh, tiết kiệm đĩa, cô lập dependency sạch sẽ).
+- **Linter & Formatter:** `oxlint` từ [Oxc](https://oxc.rs/) (tốc độ Rust sub-20ms, loại bỏ hoàn toàn gánh nặng ESLint/Prettier cồng kềnh).
+- **Edge Deployment:** Cloudflare Workers với static asset caching và audio edge-proxy.
 
 ---
 
 ## 6. Attribution & Upstream Credits
 
-- **Creator & Maintainer:** `zhugez` (`github.com/zhugez/lexastra`)
-- **Upstream Project:** Directly inspired by and built upon **Word Atlas** by Yang Lei (`designfuchen/word-atlas`).
+- **Author & Maintainer:** `zhugez` (`github.com/zhugez/stella`)
+- **Upstream Foundation:** Directly inspired by and built upon **Word Atlas** by Yang Lei (`designfuchen/word-atlas`).
 - **Licenses:**
   - Application Code: **MIT License**
   - Dataset & Original Illustrations: **Creative Commons Attribution 4.0 International (CC BY 4.0)**

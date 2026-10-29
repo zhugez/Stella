@@ -40,14 +40,14 @@ export async function shareGalaxy(source: HTMLCanvasElement, lit: number, total:
     g.fillRect(pad, H - 66, W - pad * 2, 1);
     g.fillStyle = "#f3ecdf";
     g.font = `600 30px ${SERIF}`;
-    g.fillText("词光 · Word Atlas", pad, H - 26);
+    g.fillText("Stella · IELTS", pad, H - 26);
     g.font = `400 24px ${SANS}`;
     g.fillStyle = "rgba(243,236,223,.55)";
-    const tag = "一词一画，点亮雅思";
+    const tag = "One word, one canvas. Light up your stars.";
     g.fillText(tag, W - pad - g.measureText(tag).width, H - 28);
     const blob = await new Promise<Blob | null>((r) => c.toBlob(r, "image/png"));
     if (!blob) throw new Error("no blob");
-    const file = new File([blob], "word-atlas-galaxy.png", { type: "image/png" });
+    const file = new File([blob], "stella-galaxy.png", { type: "image/png" });
     if (navigator.canShare?.({ files: [file] })) {
       await navigator.share({ files: [file] }).catch(() => null);
       return;

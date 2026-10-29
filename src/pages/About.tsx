@@ -11,10 +11,10 @@ export function About() {
       <header className="about-hero">
         <img src={`${BASE}brand/og.webp`} alt="" />
         <div>
-          <p className="eyebrow">About LexAstra</p>
+          <p className="eyebrow">About Stella</p>
           <h1 className="display">One word, one canvas. Light up your IELTS.</h1>
           <p className="lede">
-            LexAstra organizes IELTS vocabulary into {atlas.count.toLocaleString()} illustrated constellation entries. Each word features an original painting, everyday & academic IELTS example sentences, native UK/US audio, and human-edited Vietnamese guidance.
+            Stella organizes IELTS vocabulary into {atlas.count.toLocaleString()} illustrated constellation entries. Each word features an original painting, everyday & academic IELTS example sentences, native UK/US audio, and human-edited Vietnamese guidance.
           </p>
           <p className="lede">
             Free, local-first, and open-source. Code is licensed under MIT; vocabulary illustrations and dataset under CC BY 4.0.
@@ -86,7 +86,7 @@ export function About() {
         <section className="panel">
           <h3 className="eyebrow">Attribution & Credits</h3>
           <p className="muted">
-            LexAstra is created and developed by <b>zhugez</b>. It is directly inspired by and built upon the wonderful foundation of <a href={UPSTREAM_URL} target="_blank" rel="noreferrer"><b>Word Atlas</b></a> by Yang Lei (<code>designfuchen/word-atlas</code>), licensed under MIT & CC BY 4.0.
+            Stella is created and developed by <b>zhugez</b>. It is directly inspired by and built upon the wonderful foundation of <a href={UPSTREAM_URL} target="_blank" rel="noreferrer"><b>Word Atlas</b></a> by Yang Lei (<code>designfuchen/word-atlas</code>), licensed under MIT & CC BY 4.0.
           </p>
           <p className="muted">
             Audio synthesized with ElevenLabs (UK Alice, US Sarah). All contributions, corrections, and pull requests are warmly welcomed on our GitHub repository.

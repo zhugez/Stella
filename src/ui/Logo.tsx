@@ -18,7 +18,7 @@ export function Logo({ compact = false }: { compact?: boolean }) {
     <span className="logo">
       <Mark />
       <span className="logo-text">
-        <b>LexAstra</b>
+        <b>Stella</b>
         {!compact && <small>IELTS</small>}
       </span>
     </span>

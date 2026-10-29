@@ -78,7 +78,7 @@ function targets(w: number, h: number, count: number) {
   const en = Math.max(18, zh * 0.24);
   g.font = `700 ${en}px "Fraunces Variable", Georgia, serif`;
   g.letterSpacing = `${en * 0.34}px`;
-  g.fillText("WORD ATLAS", cx, cy + R + zh * 1.52);
+  g.fillText("STELLA", cx, cy + R + zh * 1.52);
   const data = g.getImageData(0, 0, w, h).data;
   // Take every lit pixel, then a random subset: no visible sampling grid.
   const all: [number, number][] = [];
@@ -237,19 +237,19 @@ export function Splash({ onDone }: { onDone: () => void }) {
   }); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
-    <div className={`splash is-${phase} ${reduce ? "is-reduced" : ""}`} onClick={() => open()} role="dialog" aria-label="Welcome to Word Atlas, click to enter">
+    <div className={`splash is-${phase} ${reduce ? "is-reduced" : ""}`} onClick={() => open()} role="dialog" aria-label="Welcome to Stella, click to enter">
       <div className="door door-l" />
       <div className="door door-r" />
       <div className="splash-light" />
       <canvas ref={canvas} className="splash-canvas" aria-hidden="true" />
       {reduce && (
         <div className="splash-static">
-          <b>WORD ATLAS</b>
+          <b>STELLA</b>
           <small>ILLUSTRATED VOCABULARY</small>
         </div>
       )}
       <div className="splash-copy">
-        <p className="splash-tag">Welcome to Word Atlas</p>
+        <p className="splash-tag">Welcome to Stella</p>
         <p className="splash-hint">
           <span className="splash-key" />
           Click to enter · Press any key
