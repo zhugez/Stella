@@ -34,7 +34,7 @@ There is no account and no server-side state. Progress lives in the browser and 
 
 ## Features
 
-**Atlas.** Every entry pairs a word with a painting that shows the scenario from its example sentence, so meaning is anchored to a scene rather than a translation. Filter by CEFR level or by one of 19 IELTS topic clusters.
+**Atlas.** Each painting depicts the situation described in that word's example sentence, so the image and the sentence refer to the same event. Filter by CEFR level or by one of 19 IELTS topic clusters.
 
 **Study cards.** Definitions, example sentences, word family, synonyms, antonyms, and collocations, plus a note on register and prepositions that trip up Vietnamese speakers.
 
@@ -42,7 +42,7 @@ There is no account and no server-side state. Progress lives in the browser and 
 
 **FSRS scheduling.** Review timing comes from [`ts-fsrs`](https://github.com/open-spaced-repetition/ts-fsrs), the scheduler behind modern Anki. It estimates memory stability and retrievability per card and queues reviews just before recall drops.
 
-**Galaxy.** All 7,298 words laid out as stars in a WebGL2 particle field. Orbit to explore, click a star to open its card. Mastery drives brightness.
+**Galaxy.** All 7,298 words laid out as stars in a WebGL2 particle field. Each star's size and colour come from that card's review state: unseen words are dim stardust, learned ones brighten and grow, mastered ones turn gold and carry a halo. Today's due cards are drawn with a wide halo so they stay visible at low zoom.
 
 **Practice.** Three typing modes for active recall: type the word from its painting, transcribe a sentence, or write out what you hear from native audio.
 
@@ -66,7 +66,9 @@ There is no account and no server-side state. Progress lives in the browser and 
 
 React 19 · TypeScript 5.9 · Vite 6 · pnpm · `ts-fsrs` · WebGL2 · Cloudflare Workers
 
-Linting runs on [Oxc](https://oxc.rs/). The Worker serves static assets and proxies audio from the repository, which keeps the deployment under Cloudflare's per-deployment file limit.
+Linting runs on [Oxc](https://oxc.rs/).
+
+Cloudflare accepts at most 20,000 files per deployment and the audio set is 22,905 clips, so the audio is not bundled with the build. Instead `src/worker.ts` intercepts `/atlas/audio/*`, serves it from the repository over GitHub's raw endpoint, and caches it at the edge. The build also strips `dist/atlas/audio` before upload.
 
 ## Getting started
 

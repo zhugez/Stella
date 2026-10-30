@@ -34,7 +34,7 @@ Không có tài khoản, không có dữ liệu trên server. Toàn bộ tiến 
 
 ## Tính năng
 
-**Atlas.** Mỗi mục từ gắn với một bức tranh diễn tả đúng tình huống trong câu ví dụ, nên nghĩa bám vào khung cảnh thay vì vào một dòng dịch. Lọc theo bậc CEFR hoặc theo một trong 19 nhóm chủ đề IELTS.
+**Atlas.** Mỗi bức tranh vẽ đúng tình huống trong câu ví dụ của từ đó, nên tranh và câu nói về cùng một sự việc. Lọc theo bậc CEFR hoặc theo một trong 19 nhóm chủ đề IELTS.
 
 **Thẻ học.** Nghĩa, câu ví dụ, họ từ, từ đồng nghĩa, từ trái nghĩa, collocation, kèm ghi chú về sắc thái và giới từ mà người Việt hay dùng sai.
 
@@ -42,7 +42,7 @@ Không có tài khoản, không có dữ liệu trên server. Toàn bộ tiến 
 
 **Lịch ôn tập FSRS.** Thời điểm ôn do [`ts-fsrs`](https://github.com/open-spaced-repetition/ts-fsrs) quyết định — thuật toán đứng sau các bản Anki hiện đại. Với mỗi thẻ, nó ước lượng độ bền trí nhớ và mức độ còn nhớ được, rồi xếp lịch ôn ngay trước lúc bắt đầu quên.
 
-**Galaxy.** Toàn bộ 7.298 từ trải thành các ngôi sao trong một trường hạt WebGL2. Kéo để xoay, bấm vào sao để mở thẻ. Từ nào đã thuộc sẽ sáng hơn.
+**Galaxy.** Toàn bộ 7.298 từ trải thành các ngôi sao trong một trường hạt WebGL2. Kích thước và màu của mỗi sao lấy từ trạng thái ôn tập của thẻ: từ chưa gặp là bụi sao mờ, từ đã học sáng và to dần, từ đã thuộc chuyển vàng và có quầng. Thẻ đến hạn hôm nay được vẽ quầng rộng để vẫn thấy khi thu nhỏ.
 
 **Luyện gõ.** Ba chế độ gõ để nhớ chủ động: nhìn tranh gõ lại từ, chép lại cả câu, hoặc nghe audio bản ngữ rồi viết ra.
 
@@ -66,7 +66,9 @@ Không có tài khoản, không có dữ liệu trên server. Toàn bộ tiến 
 
 React 19 · TypeScript 5.9 · Vite 6 · pnpm · `ts-fsrs` · WebGL2 · Cloudflare Workers
 
-Lint chạy bằng [Oxc](https://oxc.rs/). Worker phục vụ asset tĩnh và proxy audio từ repository, nhờ vậy bản deploy không vượt giới hạn số file mỗi lần deploy của Cloudflare.
+Lint chạy bằng [Oxc](https://oxc.rs/).
+
+Cloudflare nhận tối đa 20.000 file mỗi lần deploy, trong khi bộ audio có 22.905 clip, nên audio không nằm trong bản build. `src/worker.ts` chặn `/atlas/audio/*`, lấy file từ repository qua endpoint raw của GitHub rồi cache ở edge. Bước build cũng xoá `dist/atlas/audio` trước khi upload.
 
 ## Chạy thử
 
