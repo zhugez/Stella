@@ -11,6 +11,8 @@ An illustrated IELTS vocabulary and practice app. Every word gets its own painti
 [![Code: MIT](https://img.shields.io/badge/code-MIT-17283B?style=flat-square)](LICENSE)
 [![Dataset: CC BY 4.0](https://img.shields.io/badge/dataset-CC%20BY%204.0-AD5038?style=flat-square)](CONTENT_LICENSE.md)
 
+<sub>[Tiếng Việt](README.vi.md)</sub>
+
 </div>
 
 ---
