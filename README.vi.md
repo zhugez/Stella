@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="docs/assets/cover-v2.jpg" alt="Stella — học từ vựng IELTS qua tranh" width="100%">
+<img src="docs/assets/cover-v3.jpg" alt="Stella — học từ vựng IELTS qua tranh" width="100%">
 
 # Stella
 
