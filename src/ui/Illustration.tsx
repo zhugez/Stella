@@ -9,6 +9,8 @@ export function Illustration({
   topic = 0,
   className = "",
   eager = false,
+  srcSet,
+  sizes,
   alt,
 }: {
   src: string | null;
@@ -16,6 +18,8 @@ export function Illustration({
   topic?: number;
   className?: string;
   eager?: boolean;
+  srcSet?: string;
+  sizes?: string;
   alt?: string;
 }) {
   const [state, setState] = useState<"loading" | "ok" | "error">("loading");
@@ -25,8 +29,11 @@ export function Illustration({
       {showImg ? (
         <img
           src={src}
+          srcSet={srcSet}
+          sizes={sizes}
           alt={alt ?? ""}
           loading={eager ? "eager" : "lazy"}
+          fetchPriority={eager ? "high" : undefined}
           decoding="async"
           draggable={false}
           onLoad={() => setState("ok")}

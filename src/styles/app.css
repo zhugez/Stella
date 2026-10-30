@@ -10,7 +10,7 @@
   --card-2: #faf5ec;
   --ink: #1a2035;
   --ink-2: #434b65;
-  --ink-3: #7a7d8a;
+  --ink-3: #606373;
   --ink-4: #aba79f;
   --line: rgba(26, 32, 53, 0.1);
   --line-strong: rgba(26, 32, 53, 0.15);
@@ -23,6 +23,7 @@
   --sage-ink: #4b6b45;
   --sage-soft: #dfe9d8;
   --sky: #5f88a8;
+  --sky-ink: #3b6485;
   --sky-soft: #dde8f0;
   --plum: #9a6283;
   --glow: rgba(255, 200, 110, 0.26);
@@ -67,6 +68,7 @@
     --sage-ink: #b5d1ac;
     --sage-soft: rgba(151, 184, 142, 0.15);
     --sky: #8fb2cc;
+    --sky-ink: #8fb2cc;
     --sky-soft: rgba(143, 178, 204, 0.15);
     --glow: rgba(232, 182, 90, 0.14);
     --mark: rgba(232, 182, 90, 0.28);
@@ -97,6 +99,7 @@
   --sage-ink: #b5d1ac;
   --sage-soft: rgba(151, 184, 142, 0.15);
   --sky: #8fb2cc;
+  --sky-ink: #8fb2cc;
   --sky-soft: rgba(143, 178, 204, 0.15);
   --glow: rgba(232, 182, 90, 0.14);
   --mark: rgba(232, 182, 90, 0.28);
@@ -134,23 +137,22 @@ body {
   font-feature-settings: "kern", "palt";
 }
 body::before {
-  /* Risograph grain shared with the illustrations. */
+  /* Risograph grain shared with the illustrations.
+     No mix-blend-mode: a blended full-viewport layer re-composites the whole
+     page on every paint (~25% of main-thread time on mobile). */
   content: "";
   position: fixed;
   inset: 0;
   z-index: 0;
   pointer-events: none;
   opacity: 0.35;
-  mix-blend-mode: multiply;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.12 0 0 0 0 0.14 0 0 0 0 0.22 0 0 0 .09 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
 }
 :root[data-theme="dark"] body::before {
-  mix-blend-mode: screen;
   opacity: 0.18;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) body::before {
-    mix-blend-mode: screen;
     opacity: 0.18;
   }
 }
@@ -406,20 +408,23 @@ code {
 .lv-A2 {
   --lv: var(--sage);
   --lv-soft: var(--sage-soft);
+  --lv-strong: var(--sage-ink);
 }
 .lv-B1,
 .lv-B2 {
   --lv: var(--sky);
   --lv-soft: var(--sky-soft);
+  --lv-strong: var(--sky-ink);
 }
 .lv-C1,
 .lv-C2 {
   --lv: var(--terra);
   --lv-soft: var(--terra-soft);
+  --lv-strong: var(--terra-ink);
 }
 .chip-level[class*="lv-"] {
   background: var(--lv-soft);
-  color: var(--lv);
+  color: var(--lv-strong);
 }
 .chip-status {
   background: var(--ochre-soft);
@@ -472,9 +477,21 @@ code {
   font-weight: 600;
 }
 .chip-btn.lv.is-on {
+  background: var(--lv-strong, var(--lv));
+  border-color: var(--lv-strong, var(--lv));
+  color: #fff;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .chip-btn.lv.is-on {
+    background: var(--lv);
+    border-color: var(--lv);
+    color: var(--paper);
+  }
+}
+:root[data-theme="dark"] .chip-btn.lv.is-on {
   background: var(--lv);
   border-color: var(--lv);
-  color: #fff;
+  color: var(--paper);
 }
 
 .segmented {
@@ -2078,7 +2095,7 @@ code {
 }
 .tile-lv {
   font: 700 10px var(--mono);
-  color: var(--lv);
+  color: var(--lv-strong);
   background: var(--lv-soft);
   padding: 3px 6px;
   border-radius: 6px;
@@ -2996,6 +3013,9 @@ code {
   opacity: 0;
   inset: 0;
   font-size: 16px;
+  /* Overlay is a typing sink, not a click blocker: without this it swallows
+     clicks aimed at controls inside .typing-stage (e.g. "Listen again"). */
+  pointer-events: none;
 }
 .typing-help {
   font-size: 13px;

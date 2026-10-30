@@ -1,6 +1,6 @@
 import { Grid3x3, List, Search, Sparkles, X } from "lucide-react";
 import { Galaxy } from "../galaxy/Galaxy";
-import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useAtlas } from "../atlas/context";
 import type { WordRef } from "../atlas/types";
 import { morphFrom } from "../lib/motion";
@@ -246,14 +246,15 @@ function useWindowRange(
   rows: number,
   overscan = 4,
 ) {
-  const [range, setRange] = useState<[number, number]>([0, 12]);
-  useLayoutEffect(() => {
+  const [range, setRange] = useState<[number, number]>([0, 1]);
+  useEffect(() => {
+    const el = container.current;
+    if (!el) return;
     let raf = 0;
+    let offset = 0;
     const update = () => {
       raf = 0;
-      const el = container.current;
-      if (!el) return;
-      const top = el.getBoundingClientRect().top;
+      const top = offset - window.scrollY;
       const first = Math.max(0, Math.floor(-top / rowHeight) - overscan);
       const last = Math.min(
         rows,
@@ -264,12 +265,19 @@ function useWindowRange(
     const on = () => {
       if (!raf) raf = requestAnimationFrame(update);
     };
-    update();
+    // ResizeObserver runs after layout; scrolling only reads the cached offset.
+    const ro = new ResizeObserver(() => {
+      offset = el.getBoundingClientRect().top + window.scrollY;
+      update();
+    });
+    ro.observe(el);
+    ro.observe(document.body);
     window.addEventListener("scroll", on, { passive: true });
     window.addEventListener("resize", on);
     return () => {
       window.removeEventListener("scroll", on);
       window.removeEventListener("resize", on);
+      ro.disconnect();
       cancelAnimationFrame(raf);
     };
   }, [container, rowHeight, rows, overscan]);
@@ -278,12 +286,11 @@ function useWindowRange(
 
 function useWidth(ref: React.RefObject<HTMLDivElement | null>) {
   const [w, setW] = useState(0);
-  useLayoutEffect(() => {
+  useEffect(() => {
     const el = ref.current;
     if (!el) return;
     const ro = new ResizeObserver(([e]) => setW(e.contentRect.width));
     ro.observe(el);
-    if (el.clientWidth) setW(el.clientWidth);
     return () => ro.disconnect();
   }, [ref]);
   return w;
@@ -335,6 +342,9 @@ function VirtualGrid({
               src={atlas.img(w, "thumb")}
               word={w.word}
               topic={w.topic}
+              srcSet={atlas.kind === "open" ? `${atlas.img(w, "thumb")} 200w, ${atlas.img(w)} 512w` : undefined}
+              sizes={`${Math.max(1, cell - (window.innerWidth <= 559 ? 12 : 16))}px`}
+              eager={r === 0}
             />
             <span className="tile-no">
               № {String(w.order + 1).padStart(4, "0")}

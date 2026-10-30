@@ -134,6 +134,18 @@ function TypingRound({ mode, entries, onExit, onAgain }: { mode: Mode; entries: 
   }, [i]); // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => () => stopAudio(), []);
 
+  // Ctrl+Space replays the sentence audio without leaving the keyboard.
+  useEffect(() => {
+    if (mode !== "dictation") return;
+    const onKey = (ev: KeyboardEvent) => {
+      if (!ev.ctrlKey || ev.key !== " " || ev.repeat) return;
+      ev.preventDefault();
+      void play(atlas.audio(entries[i], "ex"), entries[i].ex[0].en, settings.accent);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [mode, i, atlas, entries, settings.accent]);
+
   const onChange = (next: string) => {
     if (done) return;
     if (started.current === null && next) started.current = performance.now();

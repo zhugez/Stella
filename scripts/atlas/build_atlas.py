@@ -3,7 +3,7 @@
 Writes:
   public/atlas/index.json            compact list for search, grid and scheduling
   public/atlas/entries/<n>.json      full entries in chunks of 100 (learning order)
-  public/atlas/img|thumb/<slug>.webp illustrations (512 / 256 px)
+  public/atlas/img|thumb/<slug>.webp illustrations (512 / 200 px)
   public/atlas/audio/<uk|us|ex>/<slug>.mp3
   data/word-atlas.json|.csv          developer downloads (CC BY 4.0)
 Usage: python3 scripts/atlas/build_atlas.py [--no-media]
@@ -111,7 +111,7 @@ def main():
             try:
                 if not a.no_media:
                     webp(src, PUB / "img" / f"{slug}.webp", 512, 74)
-                    webp(src, PUB / "thumb" / f"{slug}.webp", 256, 70)
+                    webp(src, PUB / "thumb" / f"{slug}.webp", 200, 65)
                 m |= 1
             except subprocess.CalledProcessError:
                 pass  # still being written; picked up on the next build

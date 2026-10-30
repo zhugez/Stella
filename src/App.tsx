@@ -1,16 +1,18 @@
 import { BookOpen, ChevronLeft, ChevronRight, Compass, Github, Keyboard, Moon, Search, Sun, User } from "lucide-react";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState, lazy, Suspense } from "react";
 import { AtlasContext, useAtlas, useEntry } from "./atlas/context";
 import { loadOpenAtlas, loadPrivateAtlas } from "./atlas/data";
 import type { Atlas } from "./atlas/types";
 import { REPO_URL } from "./config";
 import { closeWord, currentLocation, go, openWord, useLocation, type Route } from "./lib/router";
 import { AtlasPage } from "./pages/Atlas";
-import { About } from "./pages/About";
-import { Learn } from "./pages/Learn";
-import { Me } from "./pages/Me";
+
+// Secondary routes stay out of the boot bundle (Atlas/Today are the entry points).
+const About = lazy(() => import("./pages/About").then((m) => ({ default: m.About })));
+const Learn = lazy(() => import("./pages/Learn").then((m) => ({ default: m.Learn })));
+const Me = lazy(() => import("./pages/Me").then((m) => ({ default: m.Me })));
+const Practice = lazy(() => import("./pages/Practice").then((m) => ({ default: m.Practice })));
 import { Onboarding } from "./pages/Onboarding";
-import { Practice } from "./pages/Practice";
 import { Today } from "./pages/Today";
 import { cue } from "./lib/sound";
 import { store, useStore } from "./store/store";
@@ -119,9 +121,11 @@ function Shell({ privateAvailable }: { privateAvailable: boolean }) {
     return () => window.removeEventListener("keydown", on);
   }, [focus]);
 
+  const previousPage = useRef(route.page);
   useEffect(() => {
-    if (!word) window.scrollTo({ top: 0 });
-  }, [route.page]); // eslint-disable-line react-hooks/exhaustive-deps
+    if (previousPage.current !== route.page && !word) window.scrollTo({ top: 0 });
+    previousPage.current = route.page;
+  }, [route.page, word]);
 
   const dark = theme === "dark" || (theme === "system" && matchMedia("(prefers-color-scheme: dark)").matches);
 
@@ -129,7 +133,7 @@ function Shell({ privateAvailable }: { privateAvailable: boolean }) {
     <div className={`app ${focus ? "is-focus" : ""}`}>
       {!focus && (
         <header className="topbar">
-          <a className="topbar-logo" href="#/" aria-label="Stella IELTS">
+          <a className="topbar-logo" href="#/">
             <Logo />
           </a>
           <nav className="topnav" aria-label="Main navigation">
@@ -140,10 +144,10 @@ function Shell({ privateAvailable }: { privateAvailable: boolean }) {
             ))}
           </nav>
           <div className="topbar-tools">
-            <button className="search-pill" onClick={() => setPalette(true)} aria-label={t("search_word")}>
+            <button className="search-pill" onClick={() => setPalette(true)} aria-label={`${t("search_word")} ⌘K`}>
               <Search size={17} />
               <span>{t("search_word")}</span>
-              <kbd>⌘K</kbd>
+              <kbd aria-hidden="true">⌘K</kbd>
             </button>
             <AmbiencePicker />
             <LanguagePairPicker />
@@ -166,12 +170,14 @@ function Shell({ privateAvailable }: { privateAvailable: boolean }) {
       )}
 
       <main className="main" id="main">
-        {route.page === "today" && <Today />}
-        {route.page === "atlas" && <AtlasPage route={route} />}
-        {route.page === "learn" && <Learn />}
-        {route.page === "practice" && <Practice />}
-        {route.page === "me" && <Me privateAvailable={privateAvailable} />}
-        {route.page === "about" && <About />}
+        <Suspense fallback={null}>
+          {route.page === "today" && <Today />}
+          {route.page === "atlas" && <AtlasPage route={route} />}
+          {route.page === "learn" && <Learn />}
+          {route.page === "practice" && <Practice />}
+          {route.page === "me" && <Me privateAvailable={privateAvailable} />}
+          {route.page === "about" && <About />}
+        </Suspense>
       </main>
 
       {!focus && (

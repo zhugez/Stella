@@ -21,5 +21,9 @@ test("gaps the sentence for cloze questions", () => {
 
 test("normalizes typography from mobile keyboards", () => {
   assert.equal(normalize("  Don’t  "), "don't");
-  assert.deepEqual(splitPair("in principle｜原则上"), { en: "in principle", zh: "原则上" });
+});
+
+test("splits Vietnamese collocations and omits legacy Chinese translations", () => {
+  assert.deepEqual(splitPair(" in principle｜ về nguyên tắc "), { en: "in principle", zh: "về nguyên tắc", vi: "về nguyên tắc" });
+  assert.deepEqual(splitPair("in principle｜原则上"), { en: "in principle", zh: "", vi: "" });
 });
