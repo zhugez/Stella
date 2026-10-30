@@ -8,7 +8,7 @@ An illustrated IELTS vocabulary and practice app. Every word gets its own painti
 
 [**Live app**](https://stella.zhugez.workers.dev) · [**Dataset**](data/) · [**Brandkit**](BRANDKIT.md) · [**Roadmap**](#roadmap)
 
-[![Code: MIT](https://img.shields.io/badge/code-MIT-17283B?style=flat-square)](LICENSE)
+[![Code: GPL-3.0](https://img.shields.io/badge/code-GPL--3.0-17283B?style=flat-square)](LICENSE)
 [![Dataset: CC BY 4.0](https://img.shields.io/badge/dataset-CC%20BY%204.0-AD5038?style=flat-square)](CONTENT_LICENSE.md)
 
 <sub>[Tiếng Việt](README.vi.md)</sub>
@@ -124,5 +124,5 @@ What this fork adds:
 
 ## License
 
-- Code: [MIT](LICENSE)
+- Code: [GPL-3.0](LICENSE)
 - Dataset and illustrations: [CC BY 4.0](CONTENT_LICENSE.md)
