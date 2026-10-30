@@ -1,165 +1,124 @@
 <div align="center">
 
-<img src="docs/assets/cover-v2.jpg" alt="Stella — Illustrated IELTS Vocabulary & Skills" width="100%" style="border-radius: 12px; margin-bottom: 24px;">
+<img src="docs/assets/cover-v2.jpg" alt="Stella — illustrated IELTS vocabulary" width="100%">
 
 # Stella
 
-### ✨ One word, one canvas. Light up your stars. ✨
-*Mỗi từ một bức tranh. Thắp sáng hành trình IELTS.*
+An illustrated IELTS vocabulary and practice app. Every word gets its own painting, native UK/US audio, and FSRS scheduling.
 
-<p align="center">
-  <b>7,298 Illustrated Words</b> · <b>Native UK/US Audio</b> · <b>FSRS Spaced Repetition</b> · <b>3D WebGL Galaxy</b> · <b>Human-Edited Vietnamese Insights</b>
-</p>
+[**Live app**](https://stella.zhugez.workers.dev) · [**Dataset**](data/) · [**Brandkit**](BRANDKIT.md) · [**Roadmap**](#roadmap)
 
-[![Live App](https://img.shields.io/badge/Live_App-lexastra.zhugez.workers.dev-F59E0B?style=for-the-badge&logo=cloudflare&logoColor=white)](https://lexastra.zhugez.workers.dev)
-[![GitHub stars](https://img.shields.io/github/stars/zhugez/stella?style=for-the-badge&color=2563eb)](https://github.com/zhugez/stella)
-
-<br/>
-
-[![Code: MIT](https://img.shields.io/badge/Code-MIT-17283B?style=flat-square)](LICENSE)
-[![Dataset: CC BY 4.0](https://img.shields.io/badge/Dataset-CC_BY_4.0-E07A5F?style=flat-square)](CONTENT_LICENSE.md)
-[![Package Manager: pnpm](https://img.shields.io/badge/pnpm-12.x-F69220?style=flat-square&logo=pnpm&logoColor=white)](https://pnpm.io/)
-[![Linter: Oxc](https://img.shields.io/badge/Linter-Oxc-cyan?style=flat-square&logo=rust&logoColor=white)](https://oxc.rs/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![React 19](https://img.shields.io/badge/React-19.2-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev/)
-[![FSRS Engine](https://img.shields.io/badge/Scheduler-ts--fsrs-4EBA87?style=flat-square)](https://github.com/open-spaced-repetition/ts-fsrs)
-
-<br/>
-
-[**Live Demo**](https://lexastra.zhugez.workers.dev) · [**Brandkit & Design System**](BRANDKIT.md) · [**Explore Dataset**](data/) · [**Roadmap**](#-roadmap-the-4-skill-ielts-ecosystem)
+[![Code: MIT](https://img.shields.io/badge/code-MIT-17283B?style=flat-square)](LICENSE)
+[![Dataset: CC BY 4.0](https://img.shields.io/badge/dataset-CC%20BY%204.0-AD5038?style=flat-square)](CONTENT_LICENSE.md)
 
 </div>
 
 ---
 
-## 🌟 Overview
+Stella is a local-first web app for building IELTS vocabulary. It covers 7,298 words across the six CEFR levels, each with an original illustration, a context sentence, native UK and US recordings, collocations, and a Vietnamese gloss and usage note.
 
-**Stella** is an open-source, local-first IELTS vocabulary and skill ecosystem designed around visual learning, scientific spaced repetition, and authentic human explanation. 
-
-Instead of dry dictionary definitions or artificial AI-generated templates, Stella pairs every word with an original painting, dual UK/US native audio recordings, real exam collocations, and practical Vietnamese scoring tips written by experienced language learners.
+There is no account and no server-side state. Progress lives in the browser and can be exported as JSON.
 
 <table>
   <tr>
-    <td width="50%"><img src="docs/assets/atlas-desktop.jpg" alt="Illustrated Vocabulary Atlas" width="100%"></td>
-    <td width="50%"><img src="docs/assets/galaxy.jpg" alt="3D WebGL Word Galaxy" width="100%"></td>
+    <td width="50%"><img src="docs/assets/atlas-desktop.jpg" alt="Illustrated word atlas" width="100%"></td>
+    <td width="50%"><img src="docs/assets/galaxy.jpg" alt="3D word galaxy" width="100%"></td>
   </tr>
   <tr>
-    <td align="center"><b>Illustrated Atlas</b>: 7,298 hand-curated paintings & context</td>
-    <td align="center"><b>3D WebGL Galaxy</b>: Interactive celestial map across 19 topics</td>
+    <td align="center"><sub>Atlas — browse and filter all 7,298 words</sub></td>
+    <td align="center"><sub>Galaxy — the same words as an interactive star map</sub></td>
   </tr>
 </table>
 
----
+## Features
 
-## 💎 Key Highlights
+**Atlas.** Every entry pairs a word with a painting that shows the scenario from its example sentence, so meaning is anchored to a scene rather than a translation. Filter by CEFR level or by one of 19 IELTS topic clusters.
 
-### 🎨 Visual-First Vocabulary (7,298 Words)
-- Every single vocabulary item includes a dedicated, context-rich painting visualizing the exact scenario used in example sentences.
-- Filter effortlessly across **6 CEFR levels (A1 to C2)** and **19 high-yield IELTS topic clusters** (Education, Technology, Environment, Society, Law & Politics, Economy, etc.).
+**Study cards.** Definitions, example sentences, word family, synonyms, antonyms, and collocations, plus a note on register and prepositions that trip up Vietnamese speakers.
 
-### ✍️ Human Editorial Vietnamese Voice (No AI Clichés)
-- Definitions, everyday sentences, and academic IELTS examples translated with natural cadence and realistic pauses.
-- **Strict Anti-AI Voice Standard:** Zero robotic buzzwords (*"mở khóa", "đào sâu", "bức tranh tổng thể", "mang tính then chốt", "trong thế giới ngày nay", "hơn nữa", "bên cạnh đó"*).
-- Practical examiner notes: what native speakers actually say, prepositions to watch out for, and natural collocations for IELTS Writing Task 2 and Speaking.
+**Multilingual cards.** All 7,298 entries and 24,722 collocations carry Vietnamese, Chinese, and French glosses alongside the English. The language-pair picker flips the card between EN→VI, VI→EN, ZH→VI, VI→ZH, FR→VI, and VI→FR.
 
-### 🧠 Modern FSRS Spaced Repetition
-- Powered by the **Free Spaced Repetition Scheduler (FSRS)** — the state-of-the-art memory algorithm adopted by modern Anki.
-- Accurately predicts memory stability ($S$) and retrievability ($R$), scheduling reviews right before decay occurs to eliminate burnout.
+**FSRS scheduling.** Review timing comes from [`ts-fsrs`](https://github.com/open-spaced-repetition/ts-fsrs), the scheduler behind modern Anki. It estimates memory stability and retrievability per card and queues reviews just before recall drops.
 
-### 🌌 Interactive 3D WebGL Galaxy
-- All 7,298 words mapped as stars across celestial arms.
-- Drag to orbit, scroll to zoom, click stars to inspect cards.
-- Star brightness reflects personal mastery: newly learned words shine bright in gold.
+**Galaxy.** All 7,298 words laid out as stars in a WebGL2 particle field. Orbit to explore, click a star to open its card. Mastery drives brightness.
 
-### ⌨️ Typing Studio & Dictation
-- Build tactile finger memory through 3 interactive typing modes:
-  - **Word:** Identify the painting and type the target word.
-  - **Sentence:** Transcribe full sentences to absorb natural grammar and rhythm.
-  - **Dictation:** Listen to native audio and write out the exact words.
+**Practice.** Three typing modes for active recall: type the word from its painting, transcribe a sentence, or write out what you hear from native audio.
 
-### 🌧️ Focus Soundscapes
-- Built-in ambient background soundscapes (Rainy Library, Starlight Music, Morning Coast, Forest, Evening Fireplace, Quiet Cafe).
-- Intelligent ducking: background audio automatically softens whenever pronunciation audio plays.
+**Soundscapes.** Optional background audio (rain, cafe, coast, forest, fireplace) that ducks automatically when a pronunciation clip plays.
 
-### 🛡️ 100% Local-First & Private
-- Zero sign-ups, zero tracking, zero passwords.
-- All learning history lives in your device's browser and can be exported as a clean JSON backup at any time.
+**Offline.** A service worker caches the app shell and audio for use without a connection.
 
----
+## Dataset
 
-## 🛠️ Modern Tech Stack
+| | |
+|---|---|
+| Words | 7,298 |
+| CEFR levels | A1 (785) · A2 (1,039) · B1 (1,465) · B2 (2,127) · C1 (1,608) · C2 (274) |
+| Topic clusters | 19 |
+| Collocations | 24,722 |
+| Audio | 22,905 native UK and US clips |
+| Gloss languages | English, Vietnamese, Chinese, French (full coverage) |
+| Files | [`public/atlas/entries/`](public/atlas/entries/) (73 chunks) · [`data/word-atlas.json`](data/word-atlas.json) |
 
-- **Framework:** [React 19](https://react.dev/) + [TypeScript 5.9](https://www.typescriptlang.org/)
-- **Bundler:** [Vite 6](https://vite.dev/)
-- **Package Manager:** [pnpm 12](https://pnpm.io/)
-- **Tooling & Linting:** [Oxc (oxlint)](https://oxc.rs/) — sub-20ms ultra-fast Rust-based static analysis
-- **Spaced Repetition:** [`ts-fsrs`](https://github.com/open-spaced-repetition/ts-fsrs)
-- **3D Graphics:** WebGL2 custom particle rendering engine
-- **Typography:** `Fraunces` Variable Serif + `Plus Jakarta Sans`
-- **Hosting:** [Cloudflare Workers](https://workers.cloudflare.com/) with Edge Static Assets & Audio Proxy
+## Stack
 
----
+React 19 · TypeScript 5.9 · Vite 6 · pnpm · `ts-fsrs` · WebGL2 · Cloudflare Workers
 
-## 🚀 Getting Started
+Linting runs on [Oxc](https://oxc.rs/). The Worker serves static assets and proxies audio from the repository, which keeps the deployment under Cloudflare's per-deployment file limit.
 
-### Prerequisites
-- [Node.js](https://nodejs.org/) v20+
-- [pnpm](https://pnpm.io/installation) v10+
+## Getting started
 
-### Installation & Development
+Requires Node.js 20+ and pnpm 10+.
 
 ```bash
-# Clone the repository
 git clone https://github.com/zhugez/stella.git
 cd stella
-
-# Install dependencies using pnpm
 pnpm install
-
-# Run ultra-fast linting with Oxc
-pnpm run oxlint
-
-# Start local development server
-pnpm run dev
+pnpm dev          # http://localhost:5188
 ```
 
-Open your browser at **http://localhost:5188**.
-
-### Production Build
+Other scripts:
 
 ```bash
-# Build optimized production bundle
-pnpm run build
-
-# Preview locally
-pnpm run preview
+pnpm build        # type-check and build to dist/
+pnpm preview      # serve the production build
+pnpm test         # unit tests (node:test + tsx)
+pnpm oxlint       # lint
+pnpm check:atlas  # validate the word dataset
 ```
 
----
+Deploying needs a Cloudflare account and `pnpm dlx wrangler login`:
 
-## 🗺️ Roadmap: The 4-Skill IELTS Ecosystem
+```bash
+pnpm deploy
+```
 
-- [x] **Lexicon & Atlas:** 7,298 illustrated words with UK/US audio and FSRS scheduling.
-- [x] **Human Editorial Vietnamese Voice:** Rigorous human-written scoring advice and nuances.
-- [x] **Typing & Dictation Studio:** Muscle memory spelling practice.
-- [x] **PWA & Edge Deployment:** Cloudflare Workers static asset architecture.
-- [ ] **IELTS Listening:** Contextual cloze tests with audio speed control and transcript analysis.
-- [ ] **IELTS Reading:** Academic passages matched with the 19 IELTS topics with interactive tap-to-inspect vocabulary.
-- [ ] **IELTS Writing:** Task 1 & Task 2 prompts with topic-specific collocation banks and criterion scoring assistance.
+## Roadmap
 
----
+Vocabulary, illustration, audio, and spaced repetition are complete. The remaining IELTS skills are not built yet.
 
-## 📜 Attribution & Credits
+- [x] Atlas — 7,298 illustrated words with UK/US audio
+- [x] FSRS review scheduling
+- [x] Typing and dictation practice
+- [x] PWA and edge deployment
+- [ ] Listening — cloze tests with audio speed control and transcripts
+- [ ] Reading — academic passages with tap-to-inspect vocabulary
+- [ ] Writing — Task 1 and Task 2 prompts with collocation banks
 
-Stella is crafted and maintained by **[zhugez](https://github.com/zhugez)**.
+## Attribution
 
-This project is directly inspired by and built upon the open-source foundation of **[Word Atlas](https://github.com/designfuchen/word-atlas)** by [Yang Lei (@designfuchen)](https://github.com/designfuchen).
+Built and maintained by [zhugez](https://github.com/zhugez).
 
-- **Code:** Licensed under the [MIT License](LICENSE).
-- **Dataset & Illustrations:** Licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](CONTENT_LICENSE.md).
+Stella is a fork of [Word Atlas](https://github.com/designfuchen/word-atlas) by [Yang Lei (@designfuchen)](https://github.com/designfuchen). The application itself — the atlas, the WebGL galaxy, the FSRS scheduler, the typing studio, and the soundscapes — is upstream work and is reused under its licenses.
 
----
+What this fork adds:
 
-<div align="center">
-  <sub>Built with care for every learner striving for authentic language mastery.</sub>
-</div>
+- Vietnamese, Chinese, and French glosses for all 7,298 entries and 24,722 collocations
+- A bidirectional language-pair picker across the card, filter, and practice views
+- pnpm and Oxc tooling in place of npm and ESLint
+- Cloudflare Workers deployment with an edge audio proxy, plus a PWA service worker
+
+## License
+
+- Code: [MIT](LICENSE)
+- Dataset and illustrations: [CC BY 4.0](CONTENT_LICENSE.md)
