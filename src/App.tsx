@@ -3,7 +3,7 @@ import { useCallback, useEffect, useRef, useState, lazy, Suspense } from "react"
 import { AtlasContext, useAtlas, useEntry } from "./atlas/context";
 import { loadOpenAtlas, loadPrivateAtlas } from "./atlas/data";
 import type { Atlas } from "./atlas/types";
-import { REPO_URL } from "./config";
+import { REPO_URL, SUPPORT_URL } from "./config";
 import { closeWord, currentLocation, go, openWord, useLocation, type Route } from "./lib/router";
 import { AtlasPage } from "./pages/Atlas";
 
@@ -188,7 +188,11 @@ function Shell({ privateAvailable }: { privateAvailable: boolean }) {
             <a href={REPO_URL} target="_blank" rel="noreferrer">
               GitHub
             </a>{" "}
-            · <a href="#/about">{t("about")}</a>
+            · <a href="#/about">{t("about")}</a>{" "}
+            ·{" "}
+            <a href={SUPPORT_URL} target="_blank" rel="noreferrer">
+              {t("support")}
+            </a>
           </p>
         </footer>
       )}
