@@ -64,6 +64,8 @@ export interface Settings {
   ambience: "off" | "stars" | "rain" | "sea" | "forest" | "fire" | "voyage" | "cafe";
   ambienceVolume: number;
   splash: boolean;
+  /** Ko-fi prompt already shown and dismissed; never ask again. */
+  supportPrompted: boolean;
 }
 
 export const defaultSettings: Settings = {
@@ -82,6 +84,7 @@ export const defaultSettings: Settings = {
   ambience: "stars",
   ambienceVolume: 0.45,
   splash: true,
+  supportPrompted: false,
 };
 
 export const emptyProgress = (datasetId: string): Progress => ({
@@ -183,6 +186,7 @@ export function sanitizeSettings(v: unknown): Settings {
   if (["off", "stars", "rain", "sea", "forest", "fire", "voyage", "cafe"].includes(v.ambience as string)) s.ambience = v.ambience as Settings["ambience"];
   if (num(v.ambienceVolume, 0, 1)) s.ambienceVolume = v.ambienceVolume as number;
   if (typeof v.splash === "boolean") s.splash = v.splash;
+  if (typeof v.supportPrompted === "boolean") s.supportPrompted = v.supportPrompted;
   return s;
 }
 

@@ -197,6 +197,8 @@ function Shell({ privateAvailable }: { privateAvailable: boolean }) {
         </footer>
       )}
 
+      {!focus && <SupportPrompt />}
+
       {!focus && (
         <nav className="tabbar" aria-label="Main navigation">
           {NAV_ITEMS.map(({ page, key, icon: Icon }) => (
@@ -271,3 +273,42 @@ function WordSheet({ id }: { id: string | null }) {
 }
 
 export { openWord };
+
+/**
+ * One-time Ko-fi prompt. Skipped during onboarding, focus mode, and after dismissal.
+ * ponytail: fires 12s after landing on Today, once ever — no A/B, no frequency cap knobs.
+ */
+function SupportPrompt() {
+  const t = useT();
+  const { onboarded, supportPrompted } = useStore((s) => s.settings);
+  const { route } = useLocation();
+  const page = route.page;
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    if (!onboarded || supportPrompted || page !== "today") return;
+    const id = setTimeout(() => setOpen(true), 12_000);
+    return () => clearTimeout(id);
+  }, [onboarded, supportPrompted, page]);
+
+  const dismiss = useCallback(() => {
+    setOpen(false);
+    store.settings({ supportPrompted: true });
+  }, []);
+
+  if (!open) return null;
+  return (
+    <Sheet open onClose={dismiss} label={t("support_title")}>
+      <p className="eyebrow">{t("support_title")}</p>
+      <p className="lede">{t("support_body")}</p>
+      <div className="about-actions">
+        <a className="btn btn-primary" href={SUPPORT_URL} target="_blank" rel="noreferrer" onClick={dismiss}>
+          {t("support_cta")}
+        </a>
+        <button className="btn btn-ghost" onClick={dismiss}>
+          {t("support_later")}
+        </button>
+      </div>
+    </Sheet>
+  );
+}

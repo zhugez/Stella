@@ -89,6 +89,11 @@ export const dict = {
 
     // Footer
     footer_text: "Stella",
+    support_title: "Keep Stella free",
+    support_body:
+      "Stella stays free, local-first, and ad-free. If it helps your IELTS prep, you can buy me a coffee on Ko-fi. Entirely optional — every feature stays unlocked either way.",
+    support_cta: "Support on Ko-fi",
+    support_later: "Maybe later",
   },
   zh: {
     today: "今日",
@@ -167,6 +172,10 @@ export const dict = {
     completed_rounds: "完成轮次",
     wpm_note: "WPM 按标准每 5 个字符计 1 词，只统计正确输入。",
     footer_text: "一词一画，点亮雅思 · 免费开源",
+    support_title: "让 Stella 保持免费",
+    support_body: "Stella 一直免费、本地优先、无广告。如果它对你的雅思备考有帮助，可以在 Ko-fi 上请我喝杯咖啡。完全自愿 —— 所有功能都会继续免费开放。",
+    support_cta: "在 Ko-fi 支持",
+    support_later: "以后再说",
   },
 } as const;
 

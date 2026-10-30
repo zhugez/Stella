@@ -1,6 +1,6 @@
-import { ArrowUpRight, Database, Github, Sparkles } from "lucide-react";
+import { ArrowUpRight, Coffee, Database, Github, Sparkles } from "lucide-react";
 import { useAtlas } from "../atlas/context";
-import { REPO_URL, UPSTREAM_URL } from "../config";
+import { REPO_URL, SUPPORT_URL, UPSTREAM_URL } from "../config";
 
 const BASE = import.meta.env.BASE_URL;
 
@@ -25,6 +25,9 @@ export function About() {
             </a>
             <a className="btn btn-ghost" href={`${REPO_URL}/tree/main/data`} target="_blank" rel="noreferrer">
               <Database size={18} /> Download Dataset (JSON / CSV)
+            </a>
+            <a className="btn btn-ghost" href={SUPPORT_URL} target="_blank" rel="noreferrer">
+              <Coffee size={18} /> Support on Ko-fi
             </a>
           </div>
         </div>
