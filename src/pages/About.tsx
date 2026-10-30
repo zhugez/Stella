@@ -80,6 +80,12 @@ export function About() {
               </dt>
               <dd>Close dialog</dd>
             </div>
+            <div>
+              <dt>
+                <kbd>Ctrl</kbd> + <kbd>Space</kbd>
+              </dt>
+              <dd>Replay the sentence audio (dictation)</dd>
+            </div>
           </dl>
         </section>
 

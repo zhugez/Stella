@@ -87,7 +87,7 @@ export const dict = {
     wpm_note: "Standard 5 chars per word, counting correct input only.",
 
     // Footer
-    footer_text: "Stella · Open-source illustrated IELTS vocabulary",
+    footer_text: "Stella",
   },
   zh: {
     today: "今日",
