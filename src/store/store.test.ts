@@ -29,3 +29,10 @@ test("rejects other versions and unknown settings", () => {
   assert.equal(s.theme, "dark");
   assert.equal(s.retention, 0.9);
 });
+
+test("display name is trimmed, capped and defaults to empty", () => {
+  assert.equal(sanitizeSettings({}).name, "");
+  assert.equal(sanitizeSettings({ name: "  Linh  " }).name, "Linh");
+  assert.equal(sanitizeSettings({ name: 42 }).name, "");
+  assert.equal(sanitizeSettings({ name: "x".repeat(50) }).name.length, 30);
+});

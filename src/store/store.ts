@@ -50,6 +50,8 @@ export type LangPair = "en-vi" | "vi-en" | "zh-vi" | "vi-zh" | "fr-vi" | "vi-fr"
 
 export interface Settings {
   lang: "vi" | "zh";
+  /** Display name shown on the profile page. Empty means unnamed. */
+  name: string;
   langPair: LangPair;
   accent: Accent;
   autoplay: boolean;
@@ -70,6 +72,7 @@ export interface Settings {
 
 export const defaultSettings: Settings = {
   lang: "vi",
+  name: "",
   langPair: "en-vi",
   accent: "uk",
   autoplay: true,
@@ -170,6 +173,7 @@ export function sanitizeSettings(v: unknown): Settings {
   const s = { ...defaultSettings };
   if (!isObj(v)) return s;
   if (v.lang === "vi" || v.lang === "zh") s.lang = v.lang;
+  if (typeof v.name === "string") s.name = v.name.trim().slice(0, 30);
   if (["en-vi", "vi-en", "zh-vi", "vi-zh", "fr-vi", "vi-fr"].includes(v.langPair as string)) {
     s.langPair = v.langPair as LangPair;
   }

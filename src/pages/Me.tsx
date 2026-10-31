@@ -1,5 +1,5 @@
-import { Download, RotateCcw, Upload } from "lucide-react";
-import { useMemo, useRef } from "react";
+import { Download, Pencil, RotateCcw, Upload } from "lucide-react";
+import { useMemo, useRef, useState } from "react";
 import { useAtlas } from "../atlas/context";
 import { isMastered } from "../store/srs";
 import { dayKey, exportBackup, importBackup, resetProgress, store, useStore, type Settings } from "../store/store";
@@ -12,6 +12,21 @@ export function Me({ privateAvailable: _privateAvailable }: { privateAvailable: 
   const settings = useStore((s) => s.settings);
   const saveError = useStore((s) => s.saveError);
   const file = useRef<HTMLInputElement>(null);
+  const [naming, setNaming] = useState(false);
+  const [draftName, setDraftName] = useState("");
+  const draft = useRef("");
+  const editButton = useRef<HTMLButtonElement>(null);
+
+  const openName = () => {
+    draft.current = settings.name;
+    setDraftName(settings.name);
+    setNaming(true);
+  };
+  const commitName = (refocus = false) => {
+    store.settings({ name: draft.current.trim() });
+    setNaming(false);
+    if (refocus) requestAnimationFrame(() => editButton.current?.focus());
+  };
 
   const stats = useMemo(() => {
     const cards = Object.values(progress.cards);
@@ -52,7 +67,47 @@ export function Me({ privateAvailable: _privateAvailable }: { privateAvailable: 
     <div className="page me">
       <header className="page-head">
         <p className="eyebrow">Profile</p>
-        <h1 className="display">Your Cosmos</h1>
+        {naming ? (
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              commitName(true);
+            }}
+          >
+            <input
+              className="display name-input"
+              autoFocus
+              maxLength={30}
+              value={draftName}
+              placeholder="Your Cosmos"
+              aria-label="Your name"
+              onChange={(e) => {
+                draft.current = e.target.value;
+                setDraftName(e.target.value);
+              }}
+              onBlur={() => commitName()}
+              onKeyDown={(e) => {
+                if (e.key !== "Escape") return;
+                draft.current = settings.name;
+                setDraftName(settings.name);
+                commitName(true);
+              }}
+            />
+          </form>
+        ) : (
+          <h1 className="display">
+            {settings.name ? `Hi, ${settings.name}` : "Your Cosmos"}
+            <button
+              className="name-edit"
+              ref={editButton}
+              aria-label="Edit your name"
+              title="Edit your name"
+              onClick={openName}
+            >
+              <Pencil size={16} />
+            </button>
+          </h1>
+        )}
       </header>
 
       <section className="stat-strip">

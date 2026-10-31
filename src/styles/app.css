@@ -568,6 +568,39 @@ code {
 .page-head .eyebrow {
   margin-bottom: 12px;
 }
+.me .page-head .display {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  overflow-wrap: anywhere;
+}
+.name-edit {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--line-strong);
+  background: var(--card);
+  color: var(--ink-3);
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+.name-edit:hover {
+  color: var(--ink);
+  border-color: var(--ink-3);
+}
+.name-input {
+  width: 100%;
+  max-width: 460px;
+  padding: 0 0 4px;
+  border: 0;
+  border-bottom: 2px solid var(--terra);
+  background: none;
+  color: var(--ink);
+  outline: 0;
+}
 
 .topbar {
   position: sticky;
