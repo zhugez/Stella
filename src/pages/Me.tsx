@@ -1,8 +1,12 @@
-import { Download, Pencil, RotateCcw, Upload } from "lucide-react";
+import { Download, Pencil, RotateCcw, Sparkles, Upload } from "lucide-react";
 import { useMemo, useRef, useState } from "react";
 import { useAtlas } from "../atlas/context";
+import { weakWords } from "../lib/drills";
+import { go, openWord } from "../lib/router";
+import { buildSession } from "../store/session";
 import { isMastered } from "../store/srs";
 import { dayKey, exportBackup, importBackup, resetProgress, store, useStore, type Settings } from "../store/store";
+import { Illustration } from "../ui/Illustration";
 import { toast } from "../ui/Toast";
 import { streakOf } from "./Today";
 
@@ -162,6 +166,8 @@ export function Me({ privateAvailable: _privateAvailable }: { privateAvailable: 
           </ol>
         </section>
 
+        <WeakWords />
+
         <section className="panel settings">
           <h3 className="eyebrow">Learning Settings</h3>
           <Field label="Daily New Words" hint="Reviews have no cap; FSRS only schedules words you're about to forget.">
@@ -249,6 +255,53 @@ export function Me({ privateAvailable: _privateAvailable }: { privateAvailable: 
         </section>
       </div>
     </div>
+  );
+}
+
+function WeakWords() {
+  const atlas = useAtlas();
+  const progress = useStore((s) => s.progress);
+  const ids = useMemo(() => weakWords(progress, 8).filter((id) => atlas.byId.has(id)), [progress, atlas]);
+
+  const drill = () => {
+    if (progress.session && !progress.session.finished) return toast("Finish or pause your current session first.", "warn");
+    const { progress: p, settings } = store.get();
+    const s = buildSession(atlas, p, settings, { ids });
+    if (!s.steps.length) return toast("Nothing to drill yet.", "warn");
+    store.progress((prev) => ({ ...prev, session: s }));
+    go({ page: "learn" });
+  };
+
+  return (
+    <section className="panel weak-words">
+      <div className="panel-head">
+        <h3 className="eyebrow">Words That Slip Away</h3>
+        <span className="muted">Ranked by forgotten reviews</span>
+      </div>
+      {ids.length ? (
+        <ul>
+          {ids.map((id) => {
+            const ref = atlas.byId.get(id)!;
+            const card = progress.cards[id];
+            return (
+              <li key={id}>
+                <button onClick={() => openWord(id)}>
+                  <Illustration src={atlas.img(ref, "thumb")} word={ref.word} topic={ref.topic} />
+                  <span lang="en">{ref.word}</span>
+                  <small>{ref.vi || (!/[\u4e00-\u9fff]/.test(ref.zh) ? ref.zh : "")}</small>
+                  <em>{card.lapses}×</em>
+                </button>
+              </li>
+            );
+          })}
+        </ul>
+      ) : (
+        <p className="muted">No lapsed words yet. Words you forget in review will collect here.</p>
+      )}
+      <button className="btn btn-ghost" onClick={drill} disabled={!ids.length}>
+        <Sparkles size={18} /> Drill these {ids.length || ""}
+      </button>
+    </section>
   );
 }
 

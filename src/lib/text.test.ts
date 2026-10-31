@@ -19,6 +19,11 @@ test("gaps the sentence for cloze questions", () => {
   assert.equal(g?.after, ".");
 });
 
+test("cloze blanks the inflected form so the typed answer matches the audio", () => {
+  assert.equal(gap("The sun shone through my bedroom window.", "shine")?.hidden, "shone");
+  assert.equal(gap("My grandfather is learning to swim.", "learn")?.hidden, "learning");
+});
+
 test("normalizes typography from mobile keyboards", () => {
   assert.equal(normalize("  Don’t  "), "don't");
 });

@@ -1,22 +1,26 @@
-import { Headphones, Keyboard, RotateCcw, Type } from "lucide-react";
+import { ArrowRight, Blocks, Check, Ear, Headphones, Keyboard, RotateCcw, Type, X } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { prefetch, useAtlas } from "../atlas/context";
 import type { Entry } from "../atlas/types";
+import { clozeTarget, collocationQuestion } from "../lib/drills";
 import { play, stopAudio } from "../lib/audio";
 import { cue } from "../lib/sound";
-import { hashSeed, shuffle } from "../lib/text";
-import { clean, correctCharacterCount, same, typingDelta, typingMetrics } from "../lib/typing";
+import { gap, hashSeed, shuffle } from "../lib/text";
+import { correctCharacterCount, hidesAnswer, isComplete, maskChar, same, typingDelta, typingMetrics } from "../lib/typing";
 import { store, useStore } from "../store/store";
 import { AmbiencePicker } from "../ui/Ambience";
 import { Illustration } from "../ui/Illustration";
 
-type Mode = "word" | "sentence" | "dictation";
+type Mode = "word" | "sentence" | "dictation" | "cloze" | "collocation";
 type Source = "recent" | "mistakes" | "saved" | "path";
+type TypeMode = Exclude<Mode, "collocation">;
 
 const MODES: [Mode, string, string, typeof Type][] = [
   ["word", "Word", "Type the word from the illustration", Type],
   ["sentence", "Sentence", "Type the full sentence to build muscle memory", Keyboard],
   ["dictation", "Dictation", "Listen to audio and type the sentence", Headphones],
+  ["cloze", "Cloze", "Hear the sentence, type the missing word", Ear],
+  ["collocation", "Collocations", "Pick the phrase that really goes with the word", Blocks],
 ];
 const SOURCES: [Source, string][] = [
   ["recent", "Recent"],
@@ -44,11 +48,19 @@ export function Practice() {
 
   const start = async () => {
     const ids = shuffle(pool.slice(0, 60), hashSeed(String(Date.now()))).slice(0, 10);
-    const entries = (await prefetch(atlas, ids)).filter((e): e is Entry => !!e && (mode === "word" || e.ex.length > 0));
+    const entries = (await prefetch(atlas, ids)).filter(
+      (e): e is Entry =>
+        !!e && (mode === "word" || e.ex.length > 0) && (mode !== "collocation" || e.col.length > 0) && (mode !== "cloze" || !!clozeTarget(e)),
+    );
     if (entries.length) setRound({ entries, key: Date.now() });
   };
 
-  if (round) return <TypingRound key={round.key} mode={mode} entries={round.entries} onExit={() => setRound(null)} onAgain={start} />;
+  if (round)
+    return mode === "collocation" ? (
+      <CollocationRound key={round.key} entries={round.entries} onExit={() => setRound(null)} onAgain={start} />
+    ) : (
+      <TypingRound key={round.key} mode={mode} entries={round.entries} onExit={() => setRound(null)} onAgain={start} />
+    );
 
   const best = progress.typing.filter((t) => t.mode === mode).reduce((m, t) => Math.max(m, t.wpm), 0);
   return (
@@ -93,10 +105,10 @@ export function Practice() {
           <img src={`${import.meta.env.BASE_URL}brand/${mode === "dictation" ? "listen" : "typing"}.webp`} alt="" />
           <dl className="mini-stats">
             <div>
-              <dt>Best Speed</dt>
+              <dt>{mode === "collocation" ? "Words in Pool" : "Best Speed"}</dt>
               <dd>
-                {best}
-                <small>WPM</small>
+                {mode === "collocation" ? pool.length : best}
+                {mode !== "collocation" && <small>WPM</small>}
               </dd>
             </div>
             <div>
@@ -104,14 +116,18 @@ export function Practice() {
               <dd>{progress.typing.length}</dd>
             </div>
           </dl>
-          <p className="muted">WPM counts standard 5 characters per word, valid entries only.</p>
+          <p className="muted">
+            {mode === "collocation"
+              ? "One real collocation per word, three borrowed from other words. No effect on your review intervals."
+              : "WPM counts standard 5 characters per word, valid entries only."}
+          </p>
         </section>
       </div>
     </div>
   );
 }
 
-function TypingRound({ mode, entries, onExit, onAgain }: { mode: Mode; entries: Entry[]; onExit: () => void; onAgain: () => void }) {
+function TypingRound({ mode, entries, onExit, onAgain }: { mode: TypeMode; entries: Entry[]; onExit: () => void; onAgain: () => void }) {
   const atlas = useAtlas();
   const settings = useStore((s) => s.settings);
   const [i, setI] = useState(0);
@@ -123,20 +139,20 @@ function TypingRound({ mode, entries, onExit, onAgain }: { mode: Mode; entries: 
   const started = useRef<number | null>(null);
   const input = useRef<HTMLInputElement>(null);
   const e = entries[i];
-  const target = mode === "word" ? e.w : e.ex[0].en;
+  const target = mode === "cloze" ? (clozeTarget(e) ?? e.w) : mode === "word" ? e.w : e.ex[0].en;
 
   useEffect(() => {
     setValue("");
     started.current = null;
     input.current?.focus();
-    if (mode === "dictation") void play(atlas.audio(e, "ex"), e.ex[0].en, settings.accent);
+    if (mode === "dictation" || mode === "cloze") void play(atlas.audio(e, "ex"), e.ex[0].en, settings.accent);
     if (mode === "word" && settings.autoplay) void play(atlas.audio(e, settings.accent), e.w, settings.accent);
   }, [i]); // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => () => stopAudio(), []);
 
   // Ctrl+Space replays the sentence audio without leaving the keyboard.
   useEffect(() => {
-    if (mode !== "dictation") return;
+    if (mode !== "dictation" && mode !== "cloze") return;
     const onKey = (ev: KeyboardEvent) => {
       if (!ev.ctrlKey || ev.key !== " " || ev.repeat) return;
       ev.preventDefault();
@@ -155,7 +171,7 @@ function TypingRound({ mode, entries, onExit, onAgain }: { mode: Mode; entries: 
     totalsRef.current = { ...t, typed: t.typed + d.total, correct: t.correct + d.correct };
     setTotals(totalsRef.current);
     setValue(next);
-    if (clean(next).length >= clean(target).length && same(next.trimEnd(), target)) finishItem(next);
+    if (isComplete(next, target)) finishItem(next);
   };
 
   const finishItem = (final: string) => {
@@ -237,19 +253,19 @@ function TypingRound({ mode, entries, onExit, onAgain }: { mode: Mode; entries: 
         )}
         {mode !== "word" && (
           <p className="typing-zh">
-            {mode === "dictation" && (
+            {(mode === "dictation" || mode === "cloze") && (
               <button className="link" onClick={() => play(atlas.audio(e, "ex"), e.ex[0].en, settings.accent)}>
                 Listen again
               </button>
             )}
-            {cueSentence}
+            {mode === "cloze" ? <ClozeSentence entry={e} /> : cueSentence}
           </p>
         )}
-        <p className={`typing-text ${mode === "word" ? "is-word" : ""} ${mode === "dictation" ? "is-hidden" : ""}`} lang="en" aria-hidden="true">
+        <p className={`typing-text ${mode === "word" || mode === "cloze" ? "is-word" : ""}`} lang="en" aria-hidden="true">
           {chars.map((ch, k) => {
             const t = typed[k];
             const cls = t === undefined ? (k === typed.length ? "is-caret" : "") : same(t, ch) ? "is-ok" : "is-bad";
-            const show = mode === "dictation" && t === undefined ? (ch === " " ? " " : /[A-Za-z]/.test(ch) ? "·" : ch) : ch;
+            const show = t === undefined && hidesAnswer(mode) ? maskChar(ch) : ch;
             return (
               <span key={k} className={cls}>
                 {show}
@@ -270,8 +286,162 @@ function TypingRound({ mode, entries, onExit, onAgain }: { mode: Mode; entries: 
           aria-label="Type here"
         />
         <p className="muted typing-help">
-          {mode === "dictation" ? "Click 'Listen again' if you need another listen." : "Start typing. Automatically advances once completed."} Item {i + 1}/{entries.length}
+          {mode === "dictation" ? "Click 'Listen again' if you need another listen." : mode === "cloze" ? "The sentence is on screen; type the missing word." : "Start typing. Automatically advances once completed."} Item {i + 1}/{entries.length}
         </p>
+      </section>
+    </div>
+  );
+}
+
+function ClozeSentence({ entry }: { entry: Entry }) {
+  const g = gap(entry.ex[0].en, entry.w);
+  if (!g) return <span lang="en">{entry.ex[0].en}</span>;
+  return (
+    <span className="cloze" lang="en">
+      {g.before}
+      <span className="blank">{"＿".repeat(Math.min(7, Math.max(3, g.hidden.length)))}</span>
+      {g.after}
+    </span>
+  );
+}
+
+type Question = { entry: Entry; answer: string; options: string[] };
+
+function CollocationRound({ entries, onExit, onAgain }: { entries: Entry[]; onExit: () => void; onAgain: () => void }) {
+  const settings = useStore((s) => s.settings);
+  const questions = useMemo(
+    () =>
+      entries.flatMap((entry) => {
+        const q = collocationQuestion(entry, entries, hashSeed(entry.id));
+        return q ? [{ entry, ...q }] : [];
+      }),
+    [entries],
+  );
+  const [i, setI] = useState(0);
+  const [picked, setPicked] = useState<string | null>(null);
+  const [score, setScore] = useState(0);
+  const [done, setDone] = useState(false);
+  const q: Question | undefined = questions[i];
+
+  const pick = (option: string) => {
+    if (picked || !q) return;
+    setPicked(option);
+    if (settings.sfx) void cue(option === q.answer ? "correct" : "wrong");
+    if (option === q.answer) setScore((n) => n + 1);
+  };
+  const next = () => {
+    if (i + 1 >= questions.length) setDone(true);
+    else {
+      setI(i + 1);
+      setPicked(null);
+    }
+  };
+
+  useEffect(() => {
+    const on = (e: KeyboardEvent) => {
+      if (e.metaKey || e.ctrlKey || e.altKey || e.repeat || !q) return;
+      if (picked) {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          next();
+        }
+        return;
+      }
+      const n = Number(e.key);
+      if (n >= 1 && n <= q.options.length) {
+        e.preventDefault();
+        pick(q.options[n - 1]);
+      }
+    };
+    window.addEventListener("keydown", on);
+    return () => window.removeEventListener("keydown", on);
+  });
+
+  if (done)
+    return (
+      <div className="page practice">
+        <section className="panel typing-done">
+          <p className="eyebrow">Round Complete</p>
+          <h1 className="display">
+            {score} <small>/ {questions.length}</small>
+          </h1>
+          <p className="lede">Collocations you already recognise in context.</p>
+          <div className="summary-actions">
+            <button className="btn btn-ghost" onClick={onExit}>
+              Back
+            </button>
+            <button className="btn btn-primary btn-xl" onClick={onAgain} autoFocus>
+              <RotateCcw size={18} /> Practice Again
+            </button>
+          </div>
+        </section>
+      </div>
+    );
+
+  if (!q)
+    return (
+      <div className="page practice">
+        <section className="panel typing-done">
+          <p className="eyebrow">No collocations</p>
+          <p className="lede">None of these words carry a collocation yet. Try another word source.</p>
+          <div className="summary-actions">
+            <button className="btn btn-ghost" onClick={onExit}>
+              Back
+            </button>
+          </div>
+        </section>
+      </div>
+    );
+
+  const gloss = q.entry.senses[0]?.vi || (!/[\u4e00-\u9fff]/.test(q.entry.senses[0]?.zh ?? "") ? q.entry.senses[0]?.zh : "");
+
+  return (
+    <div className="page practice typing">
+      <header className="typing-top">
+        <button className="btn btn-ghost" onClick={onExit}>
+          Exit
+        </button>
+        <div className="learn-progress">
+          <span style={{ transform: `scaleX(${Math.max(0.01, i / Math.max(1, questions.length))})` }} />
+        </div>
+        <span className="typing-meter">
+          <b>{score}</b> / {questions.length}
+        </span>
+      </header>
+      <section className="typing-stage">
+        <p className="stage-label">
+          <span className="dot dot-review" /> Which phrase really goes with this word?
+        </p>
+        <div className="collocation-prompt">
+          <h2 className="headword" lang="en">
+            {q.entry.w}
+          </h2>
+          {gloss && <p className="muted">{gloss}</p>}
+        </div>
+        <ul className="options options-en">
+          {q.options.map((option, k) => {
+            const isAnswer = option === q.answer;
+            const chosen = picked === option;
+            const cls = picked ? (isAnswer ? "is-answer" : chosen ? "is-chosen" : "is-dim") : "";
+            return (
+              <li key={option}>
+                <button className={`option ${cls}`} data-option={option} onClick={() => pick(option)} disabled={!!picked}>
+                  <kbd>{k + 1}</kbd>
+                  <span lang="en">{option}</span>
+                  {picked && isAnswer && <Check size={20} className="option-mark" />}
+                  {picked && chosen && !isAnswer && <X size={20} className="option-mark" />}
+                </button>
+              </li>
+            );
+          })}
+        </ul>
+        {picked && (
+          <div className="collocation-next">
+            <button className="btn btn-primary btn-xl" onClick={next} autoFocus>
+              {i + 1 >= questions.length ? "See result" : "Continue"} <ArrowRight size={20} />
+            </button>
+          </div>
+        )}
       </section>
     </div>
   );

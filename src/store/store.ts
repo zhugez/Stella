@@ -28,7 +28,7 @@ export interface DayStat {
 
 export interface TypingRound {
   at: number;
-  mode: "word" | "sentence" | "dictation";
+  mode: "word" | "sentence" | "dictation" | "cloze";
   items: number;
   wpm: number;
   accuracy: number;
@@ -160,7 +160,7 @@ export function sanitizeProgress(v: unknown, datasetId: string): Progress {
     out.typing = v.typing
       .filter(
         (t): t is TypingRound =>
-          isObj(t) && num(t.at, 0) && ["word", "sentence", "dictation"].includes(t.mode as string) && num(t.items, 0) && num(t.wpm, 0, 400) && num(t.accuracy, 0, 100),
+          isObj(t) && num(t.at, 0) && ["word", "sentence", "dictation", "cloze"].includes(t.mode as string) && num(t.items, 0) && num(t.wpm, 0, 400) && num(t.accuracy, 0, 100),
       )
       .slice(-500);
   const s = v.session;

@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { clean, same, typingDelta, typingMetrics } from "./typing";
+import { clean, hidesAnswer, isComplete, maskChar, same, typingDelta, typingMetrics } from "./typing";
 
 test("typing counts inserted characters and does not reward deletions", () => {
   assert.deepEqual(typingDelta("", "c", "cat"), { total: 1, correct: 1 });
@@ -99,4 +99,41 @@ test("metrics never emit NaN, Infinity, negatives or accuracy above 100", () => 
   assert.deepEqual(typingMetrics(20, 10, 10, 60000), { accuracy: 100, wpm: 2 });
   assert.deepEqual(typingMetrics(-1, 10, -10, 60000), { accuracy: 0, wpm: 0 });
   assert.deepEqual(typingMetrics(NaN, Infinity, 2, Infinity), { accuracy: 100, wpm: 0 });
+});
+
+/** Mirrors the preview row in Practice: untyped characters are masked only when the mode hides the answer. */
+const preview = (target: string, typed: string, mode: string) =>
+  Array.from(target)
+    .map((ch, i) => (typed[i] === undefined && hidesAnswer(mode) ? maskChar(ch) : (typed[i] ?? ch)))
+    .join("");
+
+test("cloze and dictation keep the answer hidden, other modes show it", () => {
+  assert.ok(hidesAnswer("cloze"));
+  assert.ok(hidesAnswer("dictation"));
+  assert.ok(!hidesAnswer("word"));
+  assert.ok(!hidesAnswer("sentence"));
+  assert.ok(!hidesAnswer("collocation"));
+  assert.equal(preview("picture", "", "cloze"), "·······");
+  assert.equal(preview("picture", "pic", "cloze"), "pic····");
+  assert.equal(preview("picture", "", "word"), "picture");
+  assert.equal(preview("a fine day", "", "dictation"), "· ···· ···");
+});
+
+test("a hidden cloze answer never leaks letters before they are typed", () => {
+  const target = "picture";
+  for (const typed of ["", "p", "pic", "pictu"]) {
+    const shown = preview(target, typed, "cloze");
+    const letters = Array.from(shown).filter((ch) => /[A-Za-z]/.test(ch)).join("");
+    assert.equal(letters, typed, `leaked letters after typing "${typed}"`);
+  }
+});
+
+test("completion needs the whole answer, ignoring case and typography", () => {
+  assert.ok(isComplete("picture", "picture"));
+  assert.ok(isComplete("Picture", "picture"));
+  assert.ok(isComplete("picture", "picture".replace("c", "c")));
+  assert.ok(isComplete("It’s fine.", "It's fine."));
+  assert.ok(!isComplete("pictur", "picture"));
+  assert.ok(!isComplete("pictures", "picture"));
+  assert.ok(!isComplete("", "picture"));
 });

@@ -9,6 +9,16 @@ export const clean = (text: string) =>
 export const same = (a: string, b: string) =>
   clean(a).toLowerCase() === clean(b).toLowerCase();
 
+/** Modes where the answer must stay hidden until the learner types it. */
+export const hidesAnswer = (mode: string) => mode === "dictation" || mode === "cloze";
+
+/** What to show for a character the learner has not typed yet: keep spacing, hide letters. */
+export const maskChar = (ch: string) => (ch === " " ? " " : /[A-Za-z]/.test(ch) ? "·" : ch);
+
+/** True once the typed text completes the target, ignoring case and typography. */
+export const isComplete = (value: string, target: string) =>
+  clean(value).length >= clean(target).length && same(value.trimEnd(), target);
+
 /** Use normalized Unicode code points consistently for scoring and highlighting. */
 export function correctCharacterCount(value: string, target: string) {
   const expected = Array.from(clean(target));
