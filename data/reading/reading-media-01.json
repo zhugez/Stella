@@ -1,0 +1,236 @@
+{
+  "id": "reading-media-01",
+  "topic": "media",
+  "topicName": "Media",
+  "title": "Algorithmic Curation and the Fragmentation of the Public Sphere",
+  "cefr": "B2",
+  "paragraphs": [
+    "The 20th-century media ecosystem was dominated by broadcast journalism and mass-circulation print periodicals that served as centralized civic gatekeepers. While not devoid of editorial bias, legacy media institutions provided a shared informational substrate, exposing broad populations to common factual narratives and deliberative public debates across societal cleavages.",
+    "The advent of algorithmically driven social media platforms has disintermediated this traditional landscape. Digital platforms employ optimization algorithms calibrated to maximize user engagement, retention, and advertising impressions. Because emotionally polarizing and sensationalist material consistently elicits higher click-through rates than nuanced reporting, algorithmic curation systematically amplifies controversial content, cultivating insular ideological echo chambers.",
+    "This informational balkanization impairs democratic deliberation by undermining common consensus on basic scientific and empirical facts. Furthermore, the commercial decline of investigative local journalism leaves institutional corruption unscrutinized at municipal levels. Rebuilding a resilient civic ecosystem requires fostering media literacy, enacting algorithmic transparency mandates, and exploring philanthropic business models for independent journalism."
+  ],
+  "questions": [
+    {
+      "type": "mcq",
+      "question": "Why do social media algorithms tend to amplify polarizing content?",
+      "options": [
+        "Because users explicitly request academic peer-reviewed studies.",
+        "Because emotionally polarizing material elicits higher engagement and click-through rates.",
+        "Because governments legally mandate that all news must be controversial.",
+        "Because sensationalist articles cost less electricity to transmit."
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 2 states that 'emotionally polarizing and sensationalist material consistently elicits higher click-through rates than nuanced reporting'."
+    },
+    {
+      "type": "tfng",
+      "question": "Investigative local journalism has experienced significant financial expansion due to social media platforms.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 3 points to 'the commercial decline of investigative local journalism'."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "across",
+      "id": "across"
+    },
+    {
+      "word": "advent",
+      "id": "advent"
+    },
+    {
+      "word": "advertising",
+      "id": "advertising"
+    },
+    {
+      "word": "and",
+      "id": "and"
+    },
+    {
+      "word": "basic",
+      "id": "basic"
+    },
+    {
+      "word": "because",
+      "id": "because"
+    },
+    {
+      "word": "bias",
+      "id": "bias"
+    },
+    {
+      "word": "broadcast",
+      "id": "broadcast"
+    },
+    {
+      "word": "business",
+      "id": "business"
+    },
+    {
+      "word": "century",
+      "id": "century"
+    },
+    {
+      "word": "civic",
+      "id": "civic"
+    },
+    {
+      "word": "click",
+      "id": "click"
+    },
+    {
+      "word": "commercial",
+      "id": "commercial"
+    },
+    {
+      "word": "common",
+      "id": "common"
+    },
+    {
+      "word": "consensus",
+      "id": "consensus"
+    },
+    {
+      "word": "content",
+      "id": "content"
+    },
+    {
+      "word": "controversial",
+      "id": "controversial"
+    },
+    {
+      "word": "decline",
+      "id": "decline"
+    },
+    {
+      "word": "deliberation",
+      "id": "deliberation"
+    },
+    {
+      "word": "democratic",
+      "id": "democratic"
+    },
+    {
+      "word": "digital",
+      "id": "digital"
+    },
+    {
+      "word": "ecosystem",
+      "id": "ecosystem"
+    },
+    {
+      "word": "empirical",
+      "id": "empirical"
+    },
+    {
+      "word": "employ",
+      "id": "employ"
+    },
+    {
+      "word": "factual",
+      "id": "factual"
+    },
+    {
+      "word": "furthermore",
+      "id": "furthermore"
+    },
+    {
+      "word": "independent",
+      "id": "independent"
+    },
+    {
+      "word": "landscape",
+      "id": "landscape"
+    },
+    {
+      "word": "leaves",
+      "id": "leaves"
+    },
+    {
+      "word": "literacy",
+      "id": "literacy"
+    },
+    {
+      "word": "local",
+      "id": "local"
+    },
+    {
+      "word": "mass",
+      "id": "mass"
+    },
+    {
+      "word": "material",
+      "id": "material"
+    },
+    {
+      "word": "maximize",
+      "id": "maximize"
+    },
+    {
+      "word": "media",
+      "id": "media"
+    },
+    {
+      "word": "municipal",
+      "id": "municipal"
+    },
+    {
+      "word": "print",
+      "id": "print"
+    },
+    {
+      "word": "provided",
+      "id": "provided"
+    },
+    {
+      "word": "public",
+      "id": "public"
+    },
+    {
+      "word": "resilient",
+      "id": "resilient"
+    },
+    {
+      "word": "retention",
+      "id": "retention"
+    },
+    {
+      "word": "scientific",
+      "id": "scientific"
+    },
+    {
+      "word": "shared",
+      "id": "shared"
+    },
+    {
+      "word": "social",
+      "id": "social"
+    },
+    {
+      "word": "than",
+      "id": "than"
+    },
+    {
+      "word": "that",
+      "id": "that"
+    },
+    {
+      "word": "through",
+      "id": "through"
+    },
+    {
+      "word": "traditional",
+      "id": "traditional"
+    },
+    {
+      "word": "user",
+      "id": "user"
+    }
+  ],
+  "wordCount": 151
+}

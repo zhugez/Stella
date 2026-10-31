@@ -1,0 +1,312 @@
+{
+  "id": "reading-technology-01",
+  "topic": "technology",
+  "topicName": "Technology",
+  "title": "Autonomous Systems and Algorithmic Decision-Making",
+  "cefr": "C1",
+  "paragraphs": [
+    "Artificial intelligence and autonomous decision-making architectures are penetrating critical domains of human society, ranging from diagnostic medical imaging to automated judicial risk assessment and algorithmic financial trading. Unlike deterministic software routines characterized by explicit rules, modern neural networks construct statistical representations derived from vast empirical training corpora. This enables unprecedented pattern recognition capabilities across high-dimensional and non-linear data distributions.",
+    "However, the opacity of deep neural representations—colloquially recognized as the black box phenomenon—introduces profound ethical and operational dilemmas. When an algorithmic classifier denies an applicant a line of credit or suggests a surgical intervention, tracing the causal rationale underlying the computation is exceptionally arduous. If historical training records embody societal prejudice or sampling anomalies, the resulting inference engine will systematically perpetuate and amplify systemic discrimination under the guise of mathematical neutrality.",
+    "To mitigate these hazards, computer scientists and regulatory agencies are formulating frameworks for explainable artificial intelligence (XAI) and algorithmic accountability. Legislative mandates increasingly mandate that critical automated pipelines incorporate interpretability mechanisms, rigorous audit trails, and mandatory human-in-the-loop oversight. Achieving a balance between predictive efficacy and procedural transparency remains one of the preeminent engineering imperatives of our generation."
+  ],
+  "questions": [
+    {
+      "type": "mcq",
+      "question": "What is the primary operational concern associated with the 'black box' phenomenon in neural networks?",
+      "options": [
+        "The algorithms consume too little computational memory.",
+        "It is exceptionally arduous to trace the causal rationale behind automated decisions.",
+        "Machines refuse to process statistical representations.",
+        "Hardware components physically overheat inside black enclosures."
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 2 explains that tracing the causal rationale underlying the computation is exceptionally arduous."
+    },
+    {
+      "type": "tfng",
+      "question": "Regulatory bodies are beginning to require human oversight in critical automated pipelines.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 0,
+      "explanation": "Paragraph 3 explicitly confirms that legislative mandates require 'mandatory human-in-the-loop oversight'."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "across",
+      "id": "across"
+    },
+    {
+      "word": "amplify",
+      "id": "amplify"
+    },
+    {
+      "word": "and",
+      "id": "and"
+    },
+    {
+      "word": "applicant",
+      "id": "applicant"
+    },
+    {
+      "word": "arduous",
+      "id": "arduous"
+    },
+    {
+      "word": "artificial",
+      "id": "artificial"
+    },
+    {
+      "word": "assessment",
+      "id": "assessment"
+    },
+    {
+      "word": "balance",
+      "id": "balance"
+    },
+    {
+      "word": "between",
+      "id": "between"
+    },
+    {
+      "word": "black",
+      "id": "black"
+    },
+    {
+      "word": "box",
+      "id": "box"
+    },
+    {
+      "word": "computation",
+      "id": "computation"
+    },
+    {
+      "word": "computer",
+      "id": "computer"
+    },
+    {
+      "word": "construct",
+      "id": "construct"
+    },
+    {
+      "word": "credit",
+      "id": "credit"
+    },
+    {
+      "word": "critical",
+      "id": "critical"
+    },
+    {
+      "word": "data",
+      "id": "data"
+    },
+    {
+      "word": "decision",
+      "id": "decision"
+    },
+    {
+      "word": "dimensional",
+      "id": "dimensional"
+    },
+    {
+      "word": "discrimination",
+      "id": "discrimination"
+    },
+    {
+      "word": "embody",
+      "id": "embody"
+    },
+    {
+      "word": "empirical",
+      "id": "empirical"
+    },
+    {
+      "word": "engine",
+      "id": "engine"
+    },
+    {
+      "word": "engineering",
+      "id": "engineering"
+    },
+    {
+      "word": "explicit",
+      "id": "explicit"
+    },
+    {
+      "word": "financial",
+      "id": "financial"
+    },
+    {
+      "word": "from",
+      "id": "from"
+    },
+    {
+      "word": "generation",
+      "id": "generation"
+    },
+    {
+      "word": "high",
+      "id": "high"
+    },
+    {
+      "word": "historical",
+      "id": "historical"
+    },
+    {
+      "word": "however",
+      "id": "however"
+    },
+    {
+      "word": "human",
+      "id": "human"
+    },
+    {
+      "word": "increasingly",
+      "id": "increasingly"
+    },
+    {
+      "word": "inference",
+      "id": "inference"
+    },
+    {
+      "word": "intelligence",
+      "id": "intelligence"
+    },
+    {
+      "word": "judicial",
+      "id": "judicial"
+    },
+    {
+      "word": "line",
+      "id": "line"
+    },
+    {
+      "word": "loop",
+      "id": "loop"
+    },
+    {
+      "word": "making",
+      "id": "making"
+    },
+    {
+      "word": "mandatory",
+      "id": "mandatory"
+    },
+    {
+      "word": "mathematical",
+      "id": "mathematical"
+    },
+    {
+      "word": "medical",
+      "id": "medical"
+    },
+    {
+      "word": "mitigate",
+      "id": "mitigate"
+    },
+    {
+      "word": "modern",
+      "id": "modern"
+    },
+    {
+      "word": "one",
+      "id": "one"
+    },
+    {
+      "word": "operational",
+      "id": "operational"
+    },
+    {
+      "word": "our",
+      "id": "our"
+    },
+    {
+      "word": "oversight",
+      "id": "oversight"
+    },
+    {
+      "word": "pattern",
+      "id": "pattern"
+    },
+    {
+      "word": "prejudice",
+      "id": "prejudice"
+    },
+    {
+      "word": "profound",
+      "id": "profound"
+    },
+    {
+      "word": "recognition",
+      "id": "recognition"
+    },
+    {
+      "word": "remains",
+      "id": "remains"
+    },
+    {
+      "word": "rigorous",
+      "id": "rigorous"
+    },
+    {
+      "word": "risk",
+      "id": "risk"
+    },
+    {
+      "word": "sampling",
+      "id": "sampling"
+    },
+    {
+      "word": "society",
+      "id": "society"
+    },
+    {
+      "word": "software",
+      "id": "software"
+    },
+    {
+      "word": "statistical",
+      "id": "statistical"
+    },
+    {
+      "word": "that",
+      "id": "that"
+    },
+    {
+      "word": "these",
+      "id": "these"
+    },
+    {
+      "word": "training",
+      "id": "training"
+    },
+    {
+      "word": "under",
+      "id": "under"
+    },
+    {
+      "word": "underlying",
+      "id": "underlying"
+    },
+    {
+      "word": "unlike",
+      "id": "unlike"
+    },
+    {
+      "word": "unprecedented",
+      "id": "unprecedented"
+    },
+    {
+      "word": "vast",
+      "id": "vast"
+    },
+    {
+      "word": "when",
+      "id": "when"
+    }
+  ],
+  "wordCount": 187
+}

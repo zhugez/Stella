@@ -1,0 +1,212 @@
+{
+  "id": "reading-daily-01",
+  "topic": "daily",
+  "topicName": "Daily Life",
+  "title": "Circadian Rhythms and the Architecture of Sleep",
+  "cefr": "B1",
+  "paragraphs": [
+    "Human physiology is synchronized to an endogenous 24-hour cycle known as the circadian rhythm. Governed by the suprachiasmatic nucleus located in the hypothalamus of the brain, this biological clock orchestrates core body temperature, hormone secretion, digestive enzyme production, and sleep-wake cycles in response to environmental light cues.",
+    "The ubiquity of artificial illumination and electronic device screens emitting high-energy blue wavelength light has disrupted this evolutionary synchronization. Exposure to bright luminescence in the late evening suppresses the secretion of melatonin, the neurohormone responsible for signaling sleep readiness to the brain. Chronic circadian misalignment results in fragmented sleep architecture, diminished cognitive performance, and elevated risks of cardiovascular disease and metabolic dysfunction.",
+    "Sleep hygiene researchers advise cultivating proactive behavioral rituals to optimize nocturnal rest. Key practices include maintaining consistent sleep and wake timings, dimming ambient lighting two hours prior to slumber, eliminating caffeine consumption in the late afternoon, and keeping sleeping quarters cool and quiet. Prioritizing restorative sleep is increasingly recognized as a foundational pillar of daily vitality."
+  ],
+  "questions": [
+    {
+      "type": "mcq",
+      "question": "Which hormone is suppressed by exposure to blue light late in the evening?",
+      "options": [
+        "Adrenaline",
+        "Melatonin",
+        "Insulin",
+        "Thyroxine"
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 2 states that evening blue light 'suppresses the secretion of melatonin'."
+    },
+    {
+      "type": "tfng",
+      "question": "Maintaining consistent bedtimes and wake times helps optimize circadian rhythm health.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 0,
+      "explanation": "Paragraph 3 notes key practices including 'maintaining consistent sleep and wake timings'."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "advise",
+      "id": "advise"
+    },
+    {
+      "word": "afternoon",
+      "id": "afternoon"
+    },
+    {
+      "word": "and",
+      "id": "and"
+    },
+    {
+      "word": "architecture",
+      "id": "architecture"
+    },
+    {
+      "word": "artificial",
+      "id": "artificial"
+    },
+    {
+      "word": "blue",
+      "id": "blue"
+    },
+    {
+      "word": "body",
+      "id": "body"
+    },
+    {
+      "word": "brain",
+      "id": "brain"
+    },
+    {
+      "word": "bright",
+      "id": "bright"
+    },
+    {
+      "word": "chronic",
+      "id": "chronic"
+    },
+    {
+      "word": "clock",
+      "id": "clock"
+    },
+    {
+      "word": "cognitive",
+      "id": "cognitive"
+    },
+    {
+      "word": "consumption",
+      "id": "consumption"
+    },
+    {
+      "word": "cool",
+      "id": "cool"
+    },
+    {
+      "word": "core",
+      "id": "core"
+    },
+    {
+      "word": "cycle",
+      "id": "cycle"
+    },
+    {
+      "word": "device",
+      "id": "device"
+    },
+    {
+      "word": "disease",
+      "id": "disease"
+    },
+    {
+      "word": "electronic",
+      "id": "electronic"
+    },
+    {
+      "word": "energy",
+      "id": "energy"
+    },
+    {
+      "word": "environmental",
+      "id": "environmental"
+    },
+    {
+      "word": "evening",
+      "id": "evening"
+    },
+    {
+      "word": "high",
+      "id": "high"
+    },
+    {
+      "word": "hour",
+      "id": "hour"
+    },
+    {
+      "word": "human",
+      "id": "human"
+    },
+    {
+      "word": "include",
+      "id": "include"
+    },
+    {
+      "word": "increasingly",
+      "id": "increasingly"
+    },
+    {
+      "word": "key",
+      "id": "key"
+    },
+    {
+      "word": "late",
+      "id": "late"
+    },
+    {
+      "word": "light",
+      "id": "light"
+    },
+    {
+      "word": "lighting",
+      "id": "lighting"
+    },
+    {
+      "word": "nucleus",
+      "id": "nucleus"
+    },
+    {
+      "word": "performance",
+      "id": "performance"
+    },
+    {
+      "word": "pillar",
+      "id": "pillar"
+    },
+    {
+      "word": "prior",
+      "id": "prior"
+    },
+    {
+      "word": "production",
+      "id": "production"
+    },
+    {
+      "word": "quiet",
+      "id": "quiet"
+    },
+    {
+      "word": "response",
+      "id": "response"
+    },
+    {
+      "word": "responsible",
+      "id": "responsible"
+    },
+    {
+      "word": "rest",
+      "id": "rest"
+    },
+    {
+      "word": "sleep",
+      "id": "sleep"
+    },
+    {
+      "word": "temperature",
+      "id": "temperature"
+    },
+    {
+      "word": "wake",
+      "id": "wake"
+    }
+  ],
+  "wordCount": 165
+}

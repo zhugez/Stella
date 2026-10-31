@@ -99,8 +99,8 @@ function Intro({ step }: { step: Step }) {
   const next = useCallback(() => {
     stopAudio();
     if (store.get().settings.sfx) void cue("flip");
-    advance(elapsed());
-  }, [elapsed]);
+    advance(elapsed(), step);
+  }, [elapsed, step]);
   useKeys({ Enter: next, " ": next });
   if (!entry) return <span className="spinner" />;
   return (
@@ -140,7 +140,7 @@ function Quiz({ step, session }: { step: Step & { kind: QuizKind }; session: Act
 
   const submit = useCallback(
     (value: string, correct: boolean) => {
-      if (pending) return;
+      if (pending || !entry) return;
       const ms = elapsed() * 1000;
       if (correct) {
         const el = document.querySelector<HTMLElement>(step.kind === "spell" ? ".slots" : `[data-option="${value}"]`);
@@ -156,8 +156,8 @@ function Quiz({ step, session }: { step: Step & { kind: QuizKind }; session: Act
 
   const next = useCallback(() => {
     stopAudio();
-    advance(elapsed());
-  }, [elapsed]);
+    advance(elapsed(), step);
+  }, [elapsed, step]);
 
   useEffect(() => {
     if (step.kind === "listen" && entry && !pending) void play(atlas.audio(entry, settings.accent), entry.w, settings.accent);

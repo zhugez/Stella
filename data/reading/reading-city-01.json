@@ -1,0 +1,288 @@
+{
+  "id": "reading-city-01",
+  "topic": "city",
+  "topicName": "City Life",
+  "title": "The 15-Minute City and Urban Human-Centric Design",
+  "cefr": "B2",
+  "paragraphs": [
+    "Modern urban planning was largely shaped by 20th-century functional zoning principles that segregated residential suburbs from industrial complexes and commercial office districts. This paradigm necessitated lengthy automotive commutes, exacerbating vehicular congestion, atmospheric pollution, and social atomization. In response, contemporary urbanists advocate for a radically decentralized human-centric alternative: the 15-Minute City.",
+    "Pioneered by urban scholar Carlos Moreno and championed by cities like Paris, the 15-Minute City model posits that all daily necessities—including employment, education, nutritious groceries, medical healthcare, and cultural recreation—should be accessible within a fifteen-minute walk or bicycle ride from an individual's doorstep. Achieving this requires repurposing public space from private vehicle thoroughfares toward pedestrian walkways, dedicated cycling corridors, and multifunctional community hubs.",
+    "Skeptics argue that retrofitting sprawling low-density suburban peripheries poses severe logistical and financial challenges. Additionally, without deliberate equity policies, vibrant hyper-local neighborhoods could exacerbate gentrification and deepen spatial inequality. Nonetheless, the framework provides an inspiring blueprint for resilient, low-carbon urban ecosystems that foster public health and communal solidarity."
+  ],
+  "questions": [
+    {
+      "type": "mcq",
+      "question": "What is the core premise of the 15-Minute City urban model?",
+      "options": [
+        "All citizens must commute by high-speed trains for at least 15 minutes.",
+        "All daily necessities should be reachable within a 15-minute walk or bike ride.",
+        "Cities should shut down all vehicular traffic for 15 minutes every hour.",
+        "Office buildings must be limited to 15 floors in height."
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 2 specifies that 'all daily necessities... should be accessible within a fifteen-minute walk or bicycle ride from an individual's doorstep'."
+    },
+    {
+      "type": "tfng",
+      "question": "Retrofitting sprawling low-density suburbs into 15-minute neighborhoods is quick and requires no substantial financial expenditure.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 3 notes that retrofitting sprawling suburbs 'poses severe logistical and financial challenges'."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "accessible",
+      "id": "accessible"
+    },
+    {
+      "word": "advocate",
+      "id": "advocate"
+    },
+    {
+      "word": "all",
+      "id": "all"
+    },
+    {
+      "word": "alternative",
+      "id": "alternative"
+    },
+    {
+      "word": "and",
+      "id": "and"
+    },
+    {
+      "word": "argue",
+      "id": "argue"
+    },
+    {
+      "word": "atmospheric",
+      "id": "atmospheric"
+    },
+    {
+      "word": "bicycle",
+      "id": "bicycle"
+    },
+    {
+      "word": "carbon",
+      "id": "carbon"
+    },
+    {
+      "word": "century",
+      "id": "century"
+    },
+    {
+      "word": "city",
+      "id": "city"
+    },
+    {
+      "word": "commercial",
+      "id": "commercial"
+    },
+    {
+      "word": "community",
+      "id": "community"
+    },
+    {
+      "word": "congestion",
+      "id": "congestion"
+    },
+    {
+      "word": "contemporary",
+      "id": "contemporary"
+    },
+    {
+      "word": "cultural",
+      "id": "cultural"
+    },
+    {
+      "word": "cycling",
+      "id": "cycling"
+    },
+    {
+      "word": "deepen",
+      "id": "deepen"
+    },
+    {
+      "word": "deliberate",
+      "id": "deliberate"
+    },
+    {
+      "word": "education",
+      "id": "education"
+    },
+    {
+      "word": "employment",
+      "id": "employment"
+    },
+    {
+      "word": "financial",
+      "id": "financial"
+    },
+    {
+      "word": "foster",
+      "id": "foster"
+    },
+    {
+      "word": "framework",
+      "id": "framework"
+    },
+    {
+      "word": "from",
+      "id": "from"
+    },
+    {
+      "word": "functional",
+      "id": "functional"
+    },
+    {
+      "word": "health",
+      "id": "health"
+    },
+    {
+      "word": "human",
+      "id": "human"
+    },
+    {
+      "word": "including",
+      "id": "including"
+    },
+    {
+      "word": "individual",
+      "id": "individual"
+    },
+    {
+      "word": "industrial",
+      "id": "industrial"
+    },
+    {
+      "word": "largely",
+      "id": "largely"
+    },
+    {
+      "word": "like",
+      "id": "like"
+    },
+    {
+      "word": "local",
+      "id": "local"
+    },
+    {
+      "word": "low",
+      "id": "low"
+    },
+    {
+      "word": "medical",
+      "id": "medical"
+    },
+    {
+      "word": "minute",
+      "id": "minute"
+    },
+    {
+      "word": "model",
+      "id": "model"
+    },
+    {
+      "word": "modern",
+      "id": "modern"
+    },
+    {
+      "word": "office",
+      "id": "office"
+    },
+    {
+      "word": "pedestrian",
+      "id": "pedestrian"
+    },
+    {
+      "word": "pollution",
+      "id": "pollution"
+    },
+    {
+      "word": "private",
+      "id": "private"
+    },
+    {
+      "word": "public",
+      "id": "public"
+    },
+    {
+      "word": "recreation",
+      "id": "recreation"
+    },
+    {
+      "word": "resilient",
+      "id": "resilient"
+    },
+    {
+      "word": "response",
+      "id": "response"
+    },
+    {
+      "word": "ride",
+      "id": "ride"
+    },
+    {
+      "word": "scholar",
+      "id": "scholar"
+    },
+    {
+      "word": "severe",
+      "id": "severe"
+    },
+    {
+      "word": "should",
+      "id": "should"
+    },
+    {
+      "word": "social",
+      "id": "social"
+    },
+    {
+      "word": "solidarity",
+      "id": "solidarity"
+    },
+    {
+      "word": "space",
+      "id": "space"
+    },
+    {
+      "word": "spatial",
+      "id": "spatial"
+    },
+    {
+      "word": "that",
+      "id": "that"
+    },
+    {
+      "word": "toward",
+      "id": "toward"
+    },
+    {
+      "word": "urban",
+      "id": "urban"
+    },
+    {
+      "word": "vehicle",
+      "id": "vehicle"
+    },
+    {
+      "word": "walk",
+      "id": "walk"
+    },
+    {
+      "word": "within",
+      "id": "within"
+    },
+    {
+      "word": "without",
+      "id": "without"
+    }
+  ],
+  "wordCount": 161
+}

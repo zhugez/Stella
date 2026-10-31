@@ -1,0 +1,236 @@
+{
+  "id": "reading-thinking-01",
+  "topic": "thinking",
+  "topicName": "Mind & Logic",
+  "title": "Cognitive Biases and Dual-Process Reasoning Theories",
+  "cefr": "B2",
+  "paragraphs": [
+    "Human judgment is not a dispassionate, purely rational computation, but rather the output of evolutionary compromises designed to balance analytical accuracy with cognitive speed. In their pioneering dual-process theory, psychologists Daniel Kahneman and Amos Tversky conceptualized human cognition as comprising two distinct operating modes: System 1 and System 2.",
+    "System 1 operates automatically, effortlessly, and rapidly, relying on associative memory and intuitive heuristics to navigate daily tasks without computational paralysis. While remarkably effective for immediate perceptual tasks, System 1 is vulnerable to predictable cognitive biases, such as confirmation bias (favoring evidence that affirms pre-existing beliefs) and the availability heuristic (overestimating the likelihood of memorable events).",
+    "In contrast, System 2 is deliberate, analytical, and effortful, required for solving complex mathematical theorems, evaluating logical syllogisms, and weighing conflicting empirical hypotheses. However, because System 2 demands substantial metabolic and attentional resources, humans naturally default to cognitive miserliness. Training individuals in metacognition—the deliberate monitoring of one's own thought processes—serves as an indispensable defense against cognitive traps."
+  ],
+  "questions": [
+    {
+      "type": "mcq",
+      "question": "What is the defining trait of System 1 in dual-process cognitive theory?",
+      "options": [
+        "It is slow, deliberate, and requires heavy concentration.",
+        "It operates automatically, effortlessly, and rapidly using heuristics.",
+        "It can only be activated while a person is asleep.",
+        "It is solely responsible for solving multi-step calculus problems."
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 2 states: 'System 1 operates automatically, effortlessly, and rapidly, relying on associative memory and intuitive heuristics'."
+    },
+    {
+      "type": "tfng",
+      "question": "Confirmation bias involves favoring evidence that confirms existing beliefs.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 0,
+      "explanation": "Paragraph 2 describes confirmation bias as 'favoring evidence that affirms pre-existing beliefs'."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "accuracy",
+      "id": "accuracy"
+    },
+    {
+      "word": "against",
+      "id": "against"
+    },
+    {
+      "word": "and",
+      "id": "and"
+    },
+    {
+      "word": "balance",
+      "id": "balance"
+    },
+    {
+      "word": "because",
+      "id": "because"
+    },
+    {
+      "word": "bias",
+      "id": "bias"
+    },
+    {
+      "word": "but",
+      "id": "but"
+    },
+    {
+      "word": "cognitive",
+      "id": "cognitive"
+    },
+    {
+      "word": "complex",
+      "id": "complex"
+    },
+    {
+      "word": "computation",
+      "id": "computation"
+    },
+    {
+      "word": "confirmation",
+      "id": "confirmation"
+    },
+    {
+      "word": "default",
+      "id": "default"
+    },
+    {
+      "word": "deliberate",
+      "id": "deliberate"
+    },
+    {
+      "word": "distinct",
+      "id": "distinct"
+    },
+    {
+      "word": "dual",
+      "id": "dual"
+    },
+    {
+      "word": "effective",
+      "id": "effective"
+    },
+    {
+      "word": "empirical",
+      "id": "empirical"
+    },
+    {
+      "word": "evidence",
+      "id": "evidence"
+    },
+    {
+      "word": "existing",
+      "id": "existing"
+    },
+    {
+      "word": "however",
+      "id": "however"
+    },
+    {
+      "word": "human",
+      "id": "human"
+    },
+    {
+      "word": "immediate",
+      "id": "immediate"
+    },
+    {
+      "word": "indispensable",
+      "id": "indispensable"
+    },
+    {
+      "word": "likelihood",
+      "id": "likelihood"
+    },
+    {
+      "word": "logical",
+      "id": "logical"
+    },
+    {
+      "word": "mathematical",
+      "id": "mathematical"
+    },
+    {
+      "word": "memorable",
+      "id": "memorable"
+    },
+    {
+      "word": "memory",
+      "id": "memory"
+    },
+    {
+      "word": "naturally",
+      "id": "naturally"
+    },
+    {
+      "word": "navigate",
+      "id": "navigate"
+    },
+    {
+      "word": "one",
+      "id": "one"
+    },
+    {
+      "word": "own",
+      "id": "own"
+    },
+    {
+      "word": "paralysis",
+      "id": "paralysis"
+    },
+    {
+      "word": "pioneering",
+      "id": "pioneering"
+    },
+    {
+      "word": "predictable",
+      "id": "predictable"
+    },
+    {
+      "word": "process",
+      "id": "process"
+    },
+    {
+      "word": "purely",
+      "id": "purely"
+    },
+    {
+      "word": "rapidly",
+      "id": "rapidly"
+    },
+    {
+      "word": "rather",
+      "id": "rather"
+    },
+    {
+      "word": "speed",
+      "id": "speed"
+    },
+    {
+      "word": "such",
+      "id": "such"
+    },
+    {
+      "word": "system",
+      "id": "system"
+    },
+    {
+      "word": "that",
+      "id": "that"
+    },
+    {
+      "word": "theory",
+      "id": "theory"
+    },
+    {
+      "word": "thought",
+      "id": "thought"
+    },
+    {
+      "word": "training",
+      "id": "training"
+    },
+    {
+      "word": "vulnerable",
+      "id": "vulnerable"
+    },
+    {
+      "word": "with",
+      "id": "with"
+    },
+    {
+      "word": "without",
+      "id": "without"
+    }
+  ],
+  "wordCount": 162
+}

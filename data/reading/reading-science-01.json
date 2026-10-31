@@ -1,0 +1,256 @@
+{
+  "id": "reading-science-01",
+  "topic": "science",
+  "topicName": "Science",
+  "title": "CRISPR-Cas9 and the Precision Revolution in Molecular Genetics",
+  "cefr": "C1",
+  "paragraphs": [
+    "The elucidation of the CRISPR-Cas9 microbial adaptive immune mechanism has catalyzed a transformative epoch in biotechnology and functional genomics. Originally identified as an enzymatic defense system utilized by bacteria to cleave foreign bacteriophage nucleic acids, CRISPR has been repurposed into an extraordinarily versatile molecular scalpel capable of site-specific genome engineering across eukaryotic organisms.",
+    "The operational elegance of CRISPR lies in its dual-component architecture: a synthetic single-guide RNA sequence designed to identify a homologous genomic locus, coupled with a Cas endonuclease that introduces a double-strand break in the phosphodiester backbone of the target DNA. Cellular repair pathways—either non-homologous end joining or homology-directed repair—are subsequently harnessed to disrupt deleterious gene expressions or insert corrective therapeutic sequences with atomic precision.",
+    "Clinical trials targeting hereditary hematologic conditions, such as sickle cell anemia and beta-thalassemia, have yielded promising therapeutic benchmarks. Nonetheless, significant technical impediments persist, specifically off-target enzymatic cleavage events where Cas endonucleases inadvertently cleave non-targeted genomic sequences possessing sequence similarity. Bioethicists concurrently advocate for stringent international governance to prevent germline modifications that would introduce heritable alterations into the human gene pool."
+  ],
+  "questions": [
+    {
+      "type": "mcq",
+      "question": "Where was the CRISPR mechanism originally identified before being adapted for genetic engineering?",
+      "options": [
+        "In synthesized laboratory polymers.",
+        "As an enzymatic defense system in bacteria against viruses.",
+        "In human hematopoietic stem cells.",
+        "In ancient geological fossil layers."
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 1 mentions it was 'Originally identified as an enzymatic defense system utilized by bacteria to cleave foreign bacteriophage nucleic acids'."
+    },
+    {
+      "type": "tfng",
+      "question": "Off-target cleavage is no longer a technical concern in CRISPR applications.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 3 states that 'significant technical impediments persist, specifically off-target enzymatic cleavage events'."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "across",
+      "id": "across"
+    },
+    {
+      "word": "advocate",
+      "id": "advocate"
+    },
+    {
+      "word": "and",
+      "id": "and"
+    },
+    {
+      "word": "architecture",
+      "id": "architecture"
+    },
+    {
+      "word": "atomic",
+      "id": "atomic"
+    },
+    {
+      "word": "break",
+      "id": "break"
+    },
+    {
+      "word": "capable",
+      "id": "capable"
+    },
+    {
+      "word": "cell",
+      "id": "cell"
+    },
+    {
+      "word": "cellular",
+      "id": "cellular"
+    },
+    {
+      "word": "component",
+      "id": "component"
+    },
+    {
+      "word": "disrupt",
+      "id": "disrupt"
+    },
+    {
+      "word": "double",
+      "id": "double"
+    },
+    {
+      "word": "dual",
+      "id": "dual"
+    },
+    {
+      "word": "either",
+      "id": "either"
+    },
+    {
+      "word": "end",
+      "id": "end"
+    },
+    {
+      "word": "engineering",
+      "id": "engineering"
+    },
+    {
+      "word": "epoch",
+      "id": "epoch"
+    },
+    {
+      "word": "foreign",
+      "id": "foreign"
+    },
+    {
+      "word": "functional",
+      "id": "functional"
+    },
+    {
+      "word": "gene",
+      "id": "gene"
+    },
+    {
+      "word": "guide",
+      "id": "guide"
+    },
+    {
+      "word": "hereditary",
+      "id": "hereditary"
+    },
+    {
+      "word": "human",
+      "id": "human"
+    },
+    {
+      "word": "identify",
+      "id": "identify"
+    },
+    {
+      "word": "immune",
+      "id": "immune"
+    },
+    {
+      "word": "insert",
+      "id": "insert"
+    },
+    {
+      "word": "international",
+      "id": "international"
+    },
+    {
+      "word": "into",
+      "id": "into"
+    },
+    {
+      "word": "introduce",
+      "id": "introduce"
+    },
+    {
+      "word": "joining",
+      "id": "joining"
+    },
+    {
+      "word": "mechanism",
+      "id": "mechanism"
+    },
+    {
+      "word": "off",
+      "id": "off"
+    },
+    {
+      "word": "operational",
+      "id": "operational"
+    },
+    {
+      "word": "originally",
+      "id": "originally"
+    },
+    {
+      "word": "pool",
+      "id": "pool"
+    },
+    {
+      "word": "prevent",
+      "id": "prevent"
+    },
+    {
+      "word": "promising",
+      "id": "promising"
+    },
+    {
+      "word": "repair",
+      "id": "repair"
+    },
+    {
+      "word": "scalpel",
+      "id": "scalpel"
+    },
+    {
+      "word": "sequence",
+      "id": "sequence"
+    },
+    {
+      "word": "significant",
+      "id": "significant"
+    },
+    {
+      "word": "similarity",
+      "id": "similarity"
+    },
+    {
+      "word": "single",
+      "id": "single"
+    },
+    {
+      "word": "site",
+      "id": "site"
+    },
+    {
+      "word": "specific",
+      "id": "specific"
+    },
+    {
+      "word": "specifically",
+      "id": "specifically"
+    },
+    {
+      "word": "strand",
+      "id": "strand"
+    },
+    {
+      "word": "such",
+      "id": "such"
+    },
+    {
+      "word": "system",
+      "id": "system"
+    },
+    {
+      "word": "target",
+      "id": "target"
+    },
+    {
+      "word": "technical",
+      "id": "technical"
+    },
+    {
+      "word": "that",
+      "id": "that"
+    },
+    {
+      "word": "versatile",
+      "id": "versatile"
+    },
+    {
+      "word": "with",
+      "id": "with"
+    }
+  ],
+  "wordCount": 177
+}

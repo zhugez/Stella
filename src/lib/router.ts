@@ -53,6 +53,7 @@ window.addEventListener("hashchange", () => {
   const pageChange = next.route.page !== loc.route.page;
   const update = () => {
     loc = next;
+    if (next.word) window.dispatchEvent(new Event("stella:dictionary"));
     subs.forEach((f) => f());
   };
   // Crossfade between pages; the word sheet animates on its own.
@@ -77,6 +78,7 @@ export function go(route: Route, word?: string | null, replace = false) {
   const pageChange = next.route.page !== loc.route.page;
   const update = () => {
     loc = next;
+    if (next.word) window.dispatchEvent(new Event("stella:dictionary"));
     subs.forEach((f) => f());
   };
   if (pageChange && !replace) transition(update);

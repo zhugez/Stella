@@ -1,0 +1,5178 @@
+[
+  {
+    "id": "reading-arts-01",
+    "topic": "arts",
+    "topicName": "Arts",
+    "title": "The Reproduction of Art and Authenticity in the Digital Age",
+    "cefr": "B2",
+    "paragraphs": [
+      "In his seminal 1935 philosophical essay, German cultural theorist Walter Benjamin examined how mechanical reproduction stripped original artworks of their singular aura—their unique existence within a specific physical space and historical lineage. When an oil masterpiece is reproduced across millions of postcards, posters, and photographic prints, its tactile presence and venerated authenticity are altered.",
+      "In the contemporary epoch of digital distribution and generative synthesis, this query has acquired acute urgency. High-resolution digital scans, immersive virtual galleries, and non-fungible digital tokens (NFTs) introduce unprecedented questions regarding creative ownership, artistic provenance, and aesthetic value. An original canvas retains physical brushstrokes, chemical aging, and archival authenticity that cannot be fully replicated across pixel arrays.",
+      "Simultaneously, democratized digital tools have emancipated artistic production from elite institutions. Independent musicians, graphic illustrators, and experimental animators can reach global audiences without corporate patronage or gallery representation. Rather than annihilating artistic expression, the digital medium redefines the boundaries of creative authorship and community participation."
+    ],
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "What did Walter Benjamin argue was lost when artworks were mechanically reproduced?",
+        "options": [
+          "Their financial value on auction floors.",
+          "Their singular 'aura' and unique physical-historical presence.",
+          "Their physical colors completely faded to monochrome.",
+          "Their legal protection under patent statutes."
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 1 explains that mechanical reproduction 'stripped original artworks of their singular aura—their unique existence within a specific physical space and historical lineage'."
+      },
+      {
+        "type": "tfng",
+        "question": "Digital distribution tools have made it harder for independent artists to reach global audiences.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 3 explains that independent musicians and illustrators 'can reach global audiences without corporate patronage'."
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "across",
+        "id": "across"
+      },
+      {
+        "word": "acute",
+        "id": "acute"
+      },
+      {
+        "word": "aesthetic",
+        "id": "aesthetic"
+      },
+      {
+        "word": "and",
+        "id": "and"
+      },
+      {
+        "word": "artistic",
+        "id": "artistic"
+      },
+      {
+        "word": "can",
+        "id": "can"
+      },
+      {
+        "word": "canvas",
+        "id": "canvas"
+      },
+      {
+        "word": "chemical",
+        "id": "chemical"
+      },
+      {
+        "word": "community",
+        "id": "community"
+      },
+      {
+        "word": "contemporary",
+        "id": "contemporary"
+      },
+      {
+        "word": "corporate",
+        "id": "corporate"
+      },
+      {
+        "word": "creative",
+        "id": "creative"
+      },
+      {
+        "word": "cultural",
+        "id": "cultural"
+      },
+      {
+        "word": "digital",
+        "id": "digital"
+      },
+      {
+        "word": "distribution",
+        "id": "distribution"
+      },
+      {
+        "word": "epoch",
+        "id": "epoch"
+      },
+      {
+        "word": "essay",
+        "id": "essay"
+      },
+      {
+        "word": "existence",
+        "id": "existence"
+      },
+      {
+        "word": "experimental",
+        "id": "experimental"
+      },
+      {
+        "word": "expression",
+        "id": "expression"
+      },
+      {
+        "word": "from",
+        "id": "from"
+      },
+      {
+        "word": "fully",
+        "id": "fully"
+      },
+      {
+        "word": "gallery",
+        "id": "gallery"
+      },
+      {
+        "word": "german",
+        "id": "german"
+      },
+      {
+        "word": "global",
+        "id": "global"
+      },
+      {
+        "word": "graphic",
+        "id": "graphic"
+      },
+      {
+        "word": "high",
+        "id": "high"
+      },
+      {
+        "word": "historical",
+        "id": "historical"
+      },
+      {
+        "word": "independent",
+        "id": "independent"
+      },
+      {
+        "word": "introduce",
+        "id": "introduce"
+      },
+      {
+        "word": "masterpiece",
+        "id": "masterpiece"
+      },
+      {
+        "word": "mechanical",
+        "id": "mechanical"
+      },
+      {
+        "word": "medium",
+        "id": "medium"
+      },
+      {
+        "word": "oil",
+        "id": "oil"
+      },
+      {
+        "word": "original",
+        "id": "original"
+      },
+      {
+        "word": "ownership",
+        "id": "ownership"
+      },
+      {
+        "word": "participation",
+        "id": "participation"
+      },
+      {
+        "word": "philosophical",
+        "id": "philosophical"
+      },
+      {
+        "word": "photographic",
+        "id": "photographic"
+      },
+      {
+        "word": "physical",
+        "id": "physical"
+      },
+      {
+        "word": "presence",
+        "id": "presence"
+      },
+      {
+        "word": "production",
+        "id": "production"
+      },
+      {
+        "word": "query",
+        "id": "query"
+      },
+      {
+        "word": "rather",
+        "id": "rather"
+      },
+      {
+        "word": "reach",
+        "id": "reach"
+      },
+      {
+        "word": "regarding",
+        "id": "regarding"
+      },
+      {
+        "word": "representation",
+        "id": "representation"
+      },
+      {
+        "word": "reproduction",
+        "id": "reproduction"
+      },
+      {
+        "word": "space",
+        "id": "space"
+      },
+      {
+        "word": "specific",
+        "id": "specific"
+      },
+      {
+        "word": "synthesis",
+        "id": "synthesis"
+      },
+      {
+        "word": "than",
+        "id": "than"
+      },
+      {
+        "word": "that",
+        "id": "that"
+      },
+      {
+        "word": "unique",
+        "id": "unique"
+      },
+      {
+        "word": "unprecedented",
+        "id": "unprecedented"
+      },
+      {
+        "word": "value",
+        "id": "value"
+      },
+      {
+        "word": "virtual",
+        "id": "virtual"
+      },
+      {
+        "word": "when",
+        "id": "when"
+      },
+      {
+        "word": "within",
+        "id": "within"
+      },
+      {
+        "word": "without",
+        "id": "without"
+      }
+    ],
+    "wordCount": 156
+  },
+  {
+    "id": "reading-city-01",
+    "topic": "city",
+    "topicName": "City Life",
+    "title": "The 15-Minute City and Urban Human-Centric Design",
+    "cefr": "B2",
+    "paragraphs": [
+      "Modern urban planning was largely shaped by 20th-century functional zoning principles that segregated residential suburbs from industrial complexes and commercial office districts. This paradigm necessitated lengthy automotive commutes, exacerbating vehicular congestion, atmospheric pollution, and social atomization. In response, contemporary urbanists advocate for a radically decentralized human-centric alternative: the 15-Minute City.",
+      "Pioneered by urban scholar Carlos Moreno and championed by cities like Paris, the 15-Minute City model posits that all daily necessities—including employment, education, nutritious groceries, medical healthcare, and cultural recreation—should be accessible within a fifteen-minute walk or bicycle ride from an individual's doorstep. Achieving this requires repurposing public space from private vehicle thoroughfares toward pedestrian walkways, dedicated cycling corridors, and multifunctional community hubs.",
+      "Skeptics argue that retrofitting sprawling low-density suburban peripheries poses severe logistical and financial challenges. Additionally, without deliberate equity policies, vibrant hyper-local neighborhoods could exacerbate gentrification and deepen spatial inequality. Nonetheless, the framework provides an inspiring blueprint for resilient, low-carbon urban ecosystems that foster public health and communal solidarity."
+    ],
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "What is the core premise of the 15-Minute City urban model?",
+        "options": [
+          "All citizens must commute by high-speed trains for at least 15 minutes.",
+          "All daily necessities should be reachable within a 15-minute walk or bike ride.",
+          "Cities should shut down all vehicular traffic for 15 minutes every hour.",
+          "Office buildings must be limited to 15 floors in height."
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 2 specifies that 'all daily necessities... should be accessible within a fifteen-minute walk or bicycle ride from an individual's doorstep'."
+      },
+      {
+        "type": "tfng",
+        "question": "Retrofitting sprawling low-density suburbs into 15-minute neighborhoods is quick and requires no substantial financial expenditure.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 3 notes that retrofitting sprawling suburbs 'poses severe logistical and financial challenges'."
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "accessible",
+        "id": "accessible"
+      },
+      {
+        "word": "advocate",
+        "id": "advocate"
+      },
+      {
+        "word": "all",
+        "id": "all"
+      },
+      {
+        "word": "alternative",
+        "id": "alternative"
+      },
+      {
+        "word": "and",
+        "id": "and"
+      },
+      {
+        "word": "argue",
+        "id": "argue"
+      },
+      {
+        "word": "atmospheric",
+        "id": "atmospheric"
+      },
+      {
+        "word": "bicycle",
+        "id": "bicycle"
+      },
+      {
+        "word": "carbon",
+        "id": "carbon"
+      },
+      {
+        "word": "century",
+        "id": "century"
+      },
+      {
+        "word": "city",
+        "id": "city"
+      },
+      {
+        "word": "commercial",
+        "id": "commercial"
+      },
+      {
+        "word": "community",
+        "id": "community"
+      },
+      {
+        "word": "congestion",
+        "id": "congestion"
+      },
+      {
+        "word": "contemporary",
+        "id": "contemporary"
+      },
+      {
+        "word": "cultural",
+        "id": "cultural"
+      },
+      {
+        "word": "cycling",
+        "id": "cycling"
+      },
+      {
+        "word": "deepen",
+        "id": "deepen"
+      },
+      {
+        "word": "deliberate",
+        "id": "deliberate"
+      },
+      {
+        "word": "education",
+        "id": "education"
+      },
+      {
+        "word": "employment",
+        "id": "employment"
+      },
+      {
+        "word": "financial",
+        "id": "financial"
+      },
+      {
+        "word": "foster",
+        "id": "foster"
+      },
+      {
+        "word": "framework",
+        "id": "framework"
+      },
+      {
+        "word": "from",
+        "id": "from"
+      },
+      {
+        "word": "functional",
+        "id": "functional"
+      },
+      {
+        "word": "health",
+        "id": "health"
+      },
+      {
+        "word": "human",
+        "id": "human"
+      },
+      {
+        "word": "including",
+        "id": "including"
+      },
+      {
+        "word": "individual",
+        "id": "individual"
+      },
+      {
+        "word": "industrial",
+        "id": "industrial"
+      },
+      {
+        "word": "largely",
+        "id": "largely"
+      },
+      {
+        "word": "like",
+        "id": "like"
+      },
+      {
+        "word": "local",
+        "id": "local"
+      },
+      {
+        "word": "low",
+        "id": "low"
+      },
+      {
+        "word": "medical",
+        "id": "medical"
+      },
+      {
+        "word": "minute",
+        "id": "minute"
+      },
+      {
+        "word": "model",
+        "id": "model"
+      },
+      {
+        "word": "modern",
+        "id": "modern"
+      },
+      {
+        "word": "office",
+        "id": "office"
+      },
+      {
+        "word": "pedestrian",
+        "id": "pedestrian"
+      },
+      {
+        "word": "pollution",
+        "id": "pollution"
+      },
+      {
+        "word": "private",
+        "id": "private"
+      },
+      {
+        "word": "public",
+        "id": "public"
+      },
+      {
+        "word": "recreation",
+        "id": "recreation"
+      },
+      {
+        "word": "resilient",
+        "id": "resilient"
+      },
+      {
+        "word": "response",
+        "id": "response"
+      },
+      {
+        "word": "ride",
+        "id": "ride"
+      },
+      {
+        "word": "scholar",
+        "id": "scholar"
+      },
+      {
+        "word": "severe",
+        "id": "severe"
+      },
+      {
+        "word": "should",
+        "id": "should"
+      },
+      {
+        "word": "social",
+        "id": "social"
+      },
+      {
+        "word": "solidarity",
+        "id": "solidarity"
+      },
+      {
+        "word": "space",
+        "id": "space"
+      },
+      {
+        "word": "spatial",
+        "id": "spatial"
+      },
+      {
+        "word": "that",
+        "id": "that"
+      },
+      {
+        "word": "toward",
+        "id": "toward"
+      },
+      {
+        "word": "urban",
+        "id": "urban"
+      },
+      {
+        "word": "vehicle",
+        "id": "vehicle"
+      },
+      {
+        "word": "walk",
+        "id": "walk"
+      },
+      {
+        "word": "within",
+        "id": "within"
+      },
+      {
+        "word": "without",
+        "id": "without"
+      }
+    ],
+    "wordCount": 161
+  },
+  {
+    "id": "reading-daily-01",
+    "topic": "daily",
+    "topicName": "Daily Life",
+    "title": "Circadian Rhythms and the Architecture of Sleep",
+    "cefr": "B1",
+    "paragraphs": [
+      "Human physiology is synchronized to an endogenous 24-hour cycle known as the circadian rhythm. Governed by the suprachiasmatic nucleus located in the hypothalamus of the brain, this biological clock orchestrates core body temperature, hormone secretion, digestive enzyme production, and sleep-wake cycles in response to environmental light cues.",
+      "The ubiquity of artificial illumination and electronic device screens emitting high-energy blue wavelength light has disrupted this evolutionary synchronization. Exposure to bright luminescence in the late evening suppresses the secretion of melatonin, the neurohormone responsible for signaling sleep readiness to the brain. Chronic circadian misalignment results in fragmented sleep architecture, diminished cognitive performance, and elevated risks of cardiovascular disease and metabolic dysfunction.",
+      "Sleep hygiene researchers advise cultivating proactive behavioral rituals to optimize nocturnal rest. Key practices include maintaining consistent sleep and wake timings, dimming ambient lighting two hours prior to slumber, eliminating caffeine consumption in the late afternoon, and keeping sleeping quarters cool and quiet. Prioritizing restorative sleep is increasingly recognized as a foundational pillar of daily vitality."
+    ],
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Which hormone is suppressed by exposure to blue light late in the evening?",
+        "options": [
+          "Adrenaline",
+          "Melatonin",
+          "Insulin",
+          "Thyroxine"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 2 states that evening blue light 'suppresses the secretion of melatonin'."
+      },
+      {
+        "type": "tfng",
+        "question": "Maintaining consistent bedtimes and wake times helps optimize circadian rhythm health.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 3 notes key practices including 'maintaining consistent sleep and wake timings'."
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "advise",
+        "id": "advise"
+      },
+      {
+        "word": "afternoon",
+        "id": "afternoon"
+      },
+      {
+        "word": "and",
+        "id": "and"
+      },
+      {
+        "word": "architecture",
+        "id": "architecture"
+      },
+      {
+        "word": "artificial",
+        "id": "artificial"
+      },
+      {
+        "word": "blue",
+        "id": "blue"
+      },
+      {
+        "word": "body",
+        "id": "body"
+      },
+      {
+        "word": "brain",
+        "id": "brain"
+      },
+      {
+        "word": "bright",
+        "id": "bright"
+      },
+      {
+        "word": "chronic",
+        "id": "chronic"
+      },
+      {
+        "word": "clock",
+        "id": "clock"
+      },
+      {
+        "word": "cognitive",
+        "id": "cognitive"
+      },
+      {
+        "word": "consumption",
+        "id": "consumption"
+      },
+      {
+        "word": "cool",
+        "id": "cool"
+      },
+      {
+        "word": "core",
+        "id": "core"
+      },
+      {
+        "word": "cycle",
+        "id": "cycle"
+      },
+      {
+        "word": "device",
+        "id": "device"
+      },
+      {
+        "word": "disease",
+        "id": "disease"
+      },
+      {
+        "word": "electronic",
+        "id": "electronic"
+      },
+      {
+        "word": "energy",
+        "id": "energy"
+      },
+      {
+        "word": "environmental",
+        "id": "environmental"
+      },
+      {
+        "word": "evening",
+        "id": "evening"
+      },
+      {
+        "word": "high",
+        "id": "high"
+      },
+      {
+        "word": "hour",
+        "id": "hour"
+      },
+      {
+        "word": "human",
+        "id": "human"
+      },
+      {
+        "word": "include",
+        "id": "include"
+      },
+      {
+        "word": "increasingly",
+        "id": "increasingly"
+      },
+      {
+        "word": "key",
+        "id": "key"
+      },
+      {
+        "word": "late",
+        "id": "late"
+      },
+      {
+        "word": "light",
+        "id": "light"
+      },
+      {
+        "word": "lighting",
+        "id": "lighting"
+      },
+      {
+        "word": "nucleus",
+        "id": "nucleus"
+      },
+      {
+        "word": "performance",
+        "id": "performance"
+      },
+      {
+        "word": "pillar",
+        "id": "pillar"
+      },
+      {
+        "word": "prior",
+        "id": "prior"
+      },
+      {
+        "word": "production",
+        "id": "production"
+      },
+      {
+        "word": "quiet",
+        "id": "quiet"
+      },
+      {
+        "word": "response",
+        "id": "response"
+      },
+      {
+        "word": "responsible",
+        "id": "responsible"
+      },
+      {
+        "word": "rest",
+        "id": "rest"
+      },
+      {
+        "word": "sleep",
+        "id": "sleep"
+      },
+      {
+        "word": "temperature",
+        "id": "temperature"
+      },
+      {
+        "word": "wake",
+        "id": "wake"
+      }
+    ],
+    "wordCount": 165
+  },
+  {
+    "id": "reading-economy-01",
+    "topic": "economy",
+    "topicName": "Economy",
+    "title": "Monetary Policy Transmission and Central Bank Digital Currencies",
+    "cefr": "B2",
+    "paragraphs": [
+      "Central banks occupy a pivotal role in macroeconomic stability, employing interest rate adjustments and open market asset purchases to steer price inflation and employment levels toward optimal targets. In conventional financial architectures, commercial banking intermediaries transmit central bank monetary policy adjustments into the broader real economy by altering the lending rates charged on retail mortgages and corporate credit lines.",
+      "The secular decline of physical cash transactions and the emergence of decentralized cryptocurrencies have prompted monetary authorities worldwide to explore Central Bank Digital Currencies (CBDCs). Unlike private decentralized tokens characterized by pronounced speculative volatility, a CBDC represents a sovereign, digital liability of the central bank, conferring the security and legal tender status of sovereign currency within an electronic payment architecture.",
+      "Proponents argue that CBDCs can streamline cross-border remittances, curtail domestic transaction costs, and enhance financial inclusion for unbanked demographics. Nevertheless, economists articulate valid apprehensions regarding commercial bank disintermediation. If depositors transfer retail deposits en masse into direct central bank accounts during systemic liquidity distress, private banks could experience severe deposit flight, destabilizing credit origination throughout commercial markets."
+    ],
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "How do CBDCs fundamentally differ from private decentralized cryptocurrencies according to the text?",
+        "options": [
+          "CBDCs are only printed on physical paper tokens.",
+          "CBDCs represent a direct sovereign liability of the central bank with legal tender status.",
+          "CBDCs are completely unregulated and anonymous.",
+          "CBDCs cannot be used for electronic payments."
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 2 highlights that 'a CBDC represents a sovereign, digital liability of the central bank, conferring the security and legal tender status of sovereign currency'."
+      },
+      {
+        "type": "tfng",
+        "question": "Commercial banks could face deposit flight if consumers shift their funds to direct central bank accounts.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 3 explains that if depositors transfer retail deposits en masse into direct central bank accounts, private banks could experience severe deposit flight."
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "and",
+        "id": "and"
+      },
+      {
+        "word": "architecture",
+        "id": "architecture"
+      },
+      {
+        "word": "argue",
+        "id": "argue"
+      },
+      {
+        "word": "articulate",
+        "id": "articulate"
+      },
+      {
+        "word": "bank",
+        "id": "bank"
+      },
+      {
+        "word": "border",
+        "id": "border"
+      },
+      {
+        "word": "can",
+        "id": "can"
+      },
+      {
+        "word": "cash",
+        "id": "cash"
+      },
+      {
+        "word": "central",
+        "id": "central"
+      },
+      {
+        "word": "commercial",
+        "id": "commercial"
+      },
+      {
+        "word": "conventional",
+        "id": "conventional"
+      },
+      {
+        "word": "corporate",
+        "id": "corporate"
+      },
+      {
+        "word": "credit",
+        "id": "credit"
+      },
+      {
+        "word": "cross",
+        "id": "cross"
+      },
+      {
+        "word": "currency",
+        "id": "currency"
+      },
+      {
+        "word": "decline",
+        "id": "decline"
+      },
+      {
+        "word": "deposit",
+        "id": "deposit"
+      },
+      {
+        "word": "digital",
+        "id": "digital"
+      },
+      {
+        "word": "direct",
+        "id": "direct"
+      },
+      {
+        "word": "distress",
+        "id": "distress"
+      },
+      {
+        "word": "domestic",
+        "id": "domestic"
+      },
+      {
+        "word": "during",
+        "id": "during"
+      },
+      {
+        "word": "economy",
+        "id": "economy"
+      },
+      {
+        "word": "electronic",
+        "id": "electronic"
+      },
+      {
+        "word": "employment",
+        "id": "employment"
+      },
+      {
+        "word": "enhance",
+        "id": "enhance"
+      },
+      {
+        "word": "experience",
+        "id": "experience"
+      },
+      {
+        "word": "explore",
+        "id": "explore"
+      },
+      {
+        "word": "financial",
+        "id": "financial"
+      },
+      {
+        "word": "flight",
+        "id": "flight"
+      },
+      {
+        "word": "inflation",
+        "id": "inflation"
+      },
+      {
+        "word": "interest",
+        "id": "interest"
+      },
+      {
+        "word": "into",
+        "id": "into"
+      },
+      {
+        "word": "legal",
+        "id": "legal"
+      },
+      {
+        "word": "liability",
+        "id": "liability"
+      },
+      {
+        "word": "market",
+        "id": "market"
+      },
+      {
+        "word": "nevertheless",
+        "id": "nevertheless"
+      },
+      {
+        "word": "occupy",
+        "id": "occupy"
+      },
+      {
+        "word": "open",
+        "id": "open"
+      },
+      {
+        "word": "optimal",
+        "id": "optimal"
+      },
+      {
+        "word": "payment",
+        "id": "payment"
+      },
+      {
+        "word": "physical",
+        "id": "physical"
+      },
+      {
+        "word": "policy",
+        "id": "policy"
+      },
+      {
+        "word": "price",
+        "id": "price"
+      },
+      {
+        "word": "private",
+        "id": "private"
+      },
+      {
+        "word": "rate",
+        "id": "rate"
+      },
+      {
+        "word": "real",
+        "id": "real"
+      },
+      {
+        "word": "regarding",
+        "id": "regarding"
+      },
+      {
+        "word": "retail",
+        "id": "retail"
+      },
+      {
+        "word": "role",
+        "id": "role"
+      },
+      {
+        "word": "security",
+        "id": "security"
+      },
+      {
+        "word": "severe",
+        "id": "severe"
+      },
+      {
+        "word": "stability",
+        "id": "stability"
+      },
+      {
+        "word": "status",
+        "id": "status"
+      },
+      {
+        "word": "steer",
+        "id": "steer"
+      },
+      {
+        "word": "streamline",
+        "id": "streamline"
+      },
+      {
+        "word": "tender",
+        "id": "tender"
+      },
+      {
+        "word": "that",
+        "id": "that"
+      },
+      {
+        "word": "throughout",
+        "id": "throughout"
+      },
+      {
+        "word": "toward",
+        "id": "toward"
+      },
+      {
+        "word": "transaction",
+        "id": "transaction"
+      },
+      {
+        "word": "transfer",
+        "id": "transfer"
+      },
+      {
+        "word": "transmit",
+        "id": "transmit"
+      },
+      {
+        "word": "unlike",
+        "id": "unlike"
+      },
+      {
+        "word": "valid",
+        "id": "valid"
+      },
+      {
+        "word": "within",
+        "id": "within"
+      },
+      {
+        "word": "worldwide",
+        "id": "worldwide"
+      }
+    ],
+    "wordCount": 176
+  },
+  {
+    "id": "reading-education-01",
+    "topic": "education",
+    "topicName": "Education",
+    "title": "The Transformation of Pedagogy in the Digital Era",
+    "cefr": "B2",
+    "paragraphs": [
+      "Traditional models of formal education long emphasized rote memorization and passive reception of lecture material within a rigid classroom structure. Under this paradigm, the teacher operated as the sole repository of knowledge, dispensing facts that students were expected to reproduce during standardized examinations. However, contemporary cognitive science has demonstrated that meaningful learning requires active engagement, critical inquiry, and iterative feedback.",
+      "The integration of digital technology into tertiary and secondary institutions has accelerated this pedagogical transformation. Digital libraries, adaptive learning algorithms, and collaborative virtual workspaces allow learners to navigate complex syllabi at an individualized pace. Furthermore, the flipped classroom approach reverses conventional instruction by presenting theoretical concepts through asynchronous multimedia lectures prior to class, reserving physical sessions for analytical debates and practical problem-solving.",
+      "Despite these advancements, educational researchers caution that technological infrastructure alone cannot guarantee academic attainment. Disparities in access to high-speed internet and hardware—frequently termed the digital divide—threaten to exacerbate socioeconomic inequalities among pupils. Consequently, educators and policymakers must balance digital innovation with equitable curricular reform, ensuring that pedagogical goals drive technological adoption rather than commercial expediency."
+    ],
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "What is the primary characteristic of the flipped classroom model described in the passage?",
+        "options": [
+          "Students spend all classroom time taking standardized tests.",
+          "Theoretical concepts are studied before class so classroom time is devoted to discussion.",
+          "Teachers stop giving lectures and rely entirely on rote memorization.",
+          "Pupils no longer require any physical classroom attendance."
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 2 explains that flipped classrooms present theoretical concepts via asynchronous lectures before class, reserving physical sessions for analytical debates."
+      },
+      {
+        "type": "tfng",
+        "question": "Digital infrastructure by itself is sufficient to ensure high academic performance.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 3 explicitly states: 'technological infrastructure alone cannot guarantee academic attainment'."
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "academic",
+        "id": "academic"
+      },
+      {
+        "word": "access",
+        "id": "access"
+      },
+      {
+        "word": "active",
+        "id": "active"
+      },
+      {
+        "word": "adoption",
+        "id": "adoption"
+      },
+      {
+        "word": "allow",
+        "id": "allow"
+      },
+      {
+        "word": "alone",
+        "id": "alone"
+      },
+      {
+        "word": "among",
+        "id": "among"
+      },
+      {
+        "word": "and",
+        "id": "and"
+      },
+      {
+        "word": "approach",
+        "id": "approach"
+      },
+      {
+        "word": "balance",
+        "id": "balance"
+      },
+      {
+        "word": "caution",
+        "id": "caution"
+      },
+      {
+        "word": "class",
+        "id": "class"
+      },
+      {
+        "word": "classroom",
+        "id": "classroom"
+      },
+      {
+        "word": "cognitive",
+        "id": "cognitive"
+      },
+      {
+        "word": "commercial",
+        "id": "commercial"
+      },
+      {
+        "word": "complex",
+        "id": "complex"
+      },
+      {
+        "word": "consequently",
+        "id": "consequently"
+      },
+      {
+        "word": "contemporary",
+        "id": "contemporary"
+      },
+      {
+        "word": "conventional",
+        "id": "conventional"
+      },
+      {
+        "word": "critical",
+        "id": "critical"
+      },
+      {
+        "word": "despite",
+        "id": "despite"
+      },
+      {
+        "word": "digital",
+        "id": "digital"
+      },
+      {
+        "word": "divide",
+        "id": "divide"
+      },
+      {
+        "word": "drive",
+        "id": "drive"
+      },
+      {
+        "word": "during",
+        "id": "during"
+      },
+      {
+        "word": "education",
+        "id": "education"
+      },
+      {
+        "word": "equitable",
+        "id": "equitable"
+      },
+      {
+        "word": "feedback",
+        "id": "feedback"
+      },
+      {
+        "word": "formal",
+        "id": "formal"
+      },
+      {
+        "word": "frequently",
+        "id": "frequently"
+      },
+      {
+        "word": "furthermore",
+        "id": "furthermore"
+      },
+      {
+        "word": "guarantee",
+        "id": "guarantee"
+      },
+      {
+        "word": "hardware",
+        "id": "hardware"
+      },
+      {
+        "word": "high",
+        "id": "high"
+      },
+      {
+        "word": "however",
+        "id": "however"
+      },
+      {
+        "word": "innovation",
+        "id": "innovation"
+      },
+      {
+        "word": "inquiry",
+        "id": "inquiry"
+      },
+      {
+        "word": "instruction",
+        "id": "instruction"
+      },
+      {
+        "word": "internet",
+        "id": "internet"
+      },
+      {
+        "word": "into",
+        "id": "into"
+      },
+      {
+        "word": "knowledge",
+        "id": "knowledge"
+      },
+      {
+        "word": "learning",
+        "id": "learning"
+      },
+      {
+        "word": "lecture",
+        "id": "lecture"
+      },
+      {
+        "word": "long",
+        "id": "long"
+      },
+      {
+        "word": "material",
+        "id": "material"
+      },
+      {
+        "word": "must",
+        "id": "must"
+      },
+      {
+        "word": "navigate",
+        "id": "navigate"
+      },
+      {
+        "word": "pace",
+        "id": "pace"
+      },
+      {
+        "word": "physical",
+        "id": "physical"
+      },
+      {
+        "word": "practical",
+        "id": "practical"
+      },
+      {
+        "word": "prior",
+        "id": "prior"
+      },
+      {
+        "word": "problem",
+        "id": "problem"
+      },
+      {
+        "word": "rather",
+        "id": "rather"
+      },
+      {
+        "word": "reception",
+        "id": "reception"
+      },
+      {
+        "word": "reform",
+        "id": "reform"
+      },
+      {
+        "word": "reproduce",
+        "id": "reproduce"
+      },
+      {
+        "word": "science",
+        "id": "science"
+      },
+      {
+        "word": "secondary",
+        "id": "secondary"
+      },
+      {
+        "word": "sole",
+        "id": "sole"
+      },
+      {
+        "word": "speed",
+        "id": "speed"
+      },
+      {
+        "word": "structure",
+        "id": "structure"
+      },
+      {
+        "word": "teacher",
+        "id": "teacher"
+      },
+      {
+        "word": "technological",
+        "id": "technological"
+      },
+      {
+        "word": "technology",
+        "id": "technology"
+      },
+      {
+        "word": "tertiary",
+        "id": "tertiary"
+      },
+      {
+        "word": "than",
+        "id": "than"
+      },
+      {
+        "word": "that",
+        "id": "that"
+      },
+      {
+        "word": "these",
+        "id": "these"
+      },
+      {
+        "word": "threaten",
+        "id": "threaten"
+      },
+      {
+        "word": "through",
+        "id": "through"
+      },
+      {
+        "word": "traditional",
+        "id": "traditional"
+      },
+      {
+        "word": "transformation",
+        "id": "transformation"
+      },
+      {
+        "word": "under",
+        "id": "under"
+      },
+      {
+        "word": "virtual",
+        "id": "virtual"
+      },
+      {
+        "word": "with",
+        "id": "with"
+      },
+      {
+        "word": "within",
+        "id": "within"
+      }
+    ],
+    "wordCount": 177
+  },
+  {
+    "id": "reading-emotion-01",
+    "topic": "emotion",
+    "topicName": "Emotions",
+    "title": "Emotional Regulation and Affective Neuroscience",
+    "cefr": "B2",
+    "paragraphs": [
+      "Emotions are complex psycho-physiological reactions triggered by internal evaluations and external environmental stimuli. While evolutionary biologists perceive primary affective states—such as fear, anger, and joy—as adaptive survival heuristics, modern living requires sophisticated regulatory capabilities to modulate intense emotional reactions within intricate social structures.",
+      "Affective neuroscience highlights the dynamic reciprocal dialogue between subcortical limbic circuits (such as the amygdala) and higher-order prefrontal cortical structures. Cognitive reappraisal—a cornerstone strategy in cognitive behavioral therapy—involves reframing the subjective meaning of an adverse event prior to an automatic emotional response. Neuroimaging studies confirm that successful reappraisal elevates prefrontal activation while dampening autonomic limbic reactivity.",
+      "Conversely, habitual expressive suppression—inwardly burying overt signs of emotional distress—exacts significant physiological and psychological costs. Individuals who rely chronically on emotional suppression exhibit elevated vascular cardiovascular strain and experience diminished subjective well-being. Cultivating emotional granularity and mindfulness practices empowers individuals to label emotional states accurately without falling victim to reactive behavioral impulses."
+    ],
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "What does cognitive reappraisal involve in psychological therapy?",
+        "options": [
+          "Suppressing all emotions until they permanently disappear.",
+          "Reframing the subjective meaning of an adverse event to modulate the response.",
+          "Avoiding all social interaction with other human beings.",
+          "Taking pharmaceutical tranquilizers every morning."
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 2 defines cognitive reappraisal as 'reframing the subjective meaning of an adverse event prior to an automatic emotional response'."
+      },
+      {
+        "type": "tfng",
+        "question": "Habitual expressive suppression of emotions improves cardiovascular health.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 3 notes that individuals who chronically suppress emotions 'exhibit elevated vascular cardiovascular strain'."
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "adverse",
+        "id": "adverse"
+      },
+      {
+        "word": "and",
+        "id": "and"
+      },
+      {
+        "word": "anger",
+        "id": "anger"
+      },
+      {
+        "word": "automatic",
+        "id": "automatic"
+      },
+      {
+        "word": "being",
+        "id": "being"
+      },
+      {
+        "word": "between",
+        "id": "between"
+      },
+      {
+        "word": "cognitive",
+        "id": "cognitive"
+      },
+      {
+        "word": "complex",
+        "id": "complex"
+      },
+      {
+        "word": "confirm",
+        "id": "confirm"
+      },
+      {
+        "word": "conversely",
+        "id": "conversely"
+      },
+      {
+        "word": "dialogue",
+        "id": "dialogue"
+      },
+      {
+        "word": "distress",
+        "id": "distress"
+      },
+      {
+        "word": "dynamic",
+        "id": "dynamic"
+      },
+      {
+        "word": "emotional",
+        "id": "emotional"
+      },
+      {
+        "word": "environmental",
+        "id": "environmental"
+      },
+      {
+        "word": "event",
+        "id": "event"
+      },
+      {
+        "word": "exhibit",
+        "id": "exhibit"
+      },
+      {
+        "word": "experience",
+        "id": "experience"
+      },
+      {
+        "word": "external",
+        "id": "external"
+      },
+      {
+        "word": "fear",
+        "id": "fear"
+      },
+      {
+        "word": "habitual",
+        "id": "habitual"
+      },
+      {
+        "word": "intense",
+        "id": "intense"
+      },
+      {
+        "word": "joy",
+        "id": "joy"
+      },
+      {
+        "word": "label",
+        "id": "label"
+      },
+      {
+        "word": "living",
+        "id": "living"
+      },
+      {
+        "word": "meaning",
+        "id": "meaning"
+      },
+      {
+        "word": "modern",
+        "id": "modern"
+      },
+      {
+        "word": "order",
+        "id": "order"
+      },
+      {
+        "word": "primary",
+        "id": "primary"
+      },
+      {
+        "word": "prior",
+        "id": "prior"
+      },
+      {
+        "word": "reappraisal",
+        "id": "reappraisal"
+      },
+      {
+        "word": "rely",
+        "id": "rely"
+      },
+      {
+        "word": "response",
+        "id": "response"
+      },
+      {
+        "word": "significant",
+        "id": "significant"
+      },
+      {
+        "word": "social",
+        "id": "social"
+      },
+      {
+        "word": "sophisticated",
+        "id": "sophisticated"
+      },
+      {
+        "word": "strain",
+        "id": "strain"
+      },
+      {
+        "word": "strategy",
+        "id": "strategy"
+      },
+      {
+        "word": "subjective",
+        "id": "subjective"
+      },
+      {
+        "word": "successful",
+        "id": "successful"
+      },
+      {
+        "word": "such",
+        "id": "such"
+      },
+      {
+        "word": "suppression",
+        "id": "suppression"
+      },
+      {
+        "word": "survival",
+        "id": "survival"
+      },
+      {
+        "word": "that",
+        "id": "that"
+      },
+      {
+        "word": "therapy",
+        "id": "therapy"
+      },
+      {
+        "word": "victim",
+        "id": "victim"
+      },
+      {
+        "word": "within",
+        "id": "within"
+      },
+      {
+        "word": "without",
+        "id": "without"
+      }
+    ],
+    "wordCount": 151
+  },
+  {
+    "id": "reading-environment-01",
+    "topic": "environment",
+    "topicName": "Environment",
+    "title": "Ocean Acidification and Marine Trophic Cascades",
+    "cefr": "B2",
+    "paragraphs": [
+      "Anthropogenic carbon dioxide emissions pose an existential threat not solely to atmospheric equilibrium, but equally to marine chemistry through the process of ocean acidification. Approximately thirty percent of carbon dioxide released into the atmosphere by fossil fuel combustion is absorbed by the surface layers of global oceans. When carbon dioxide dissolves in seawater, it reacts with water molecules to form carbonic acid, which subsequently dissociates into hydrogen ions, precipitating a measurable decline in seawater pH.",
+      "The heightened concentration of hydrogen ions exerts a direct chemical toll on marine calcifying organisms, including corals, mollusks, and microscopic pteropods. These species rely on abundant carbonate ions to construct their protective calcium carbonate skeletons and shells. As ambient hydrogen ions bind available carbonate to form bicarbonate, the saturation state of aragonite and calcite plummets, causing existing shells to dissolve and impeding the calcification rates of juvenile organisms.",
+      "Because pteropods and zooplankton constitute foundational trophic links in pelagic food webs, their numerical decline cascades upward through higher ecological tiers. Commercial fisheries reliant on salmon, cod, and herring face severe biomass reductions as foundational prey species dwindle. Preserving marine biodiversity consequently demands rapid global decarbonization alongside localized conservation initiatives to protect fragile coastal refugia."
+    ],
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "What chemical compound is initially formed when carbon dioxide dissolves in ocean seawater?",
+        "options": [
+          "Methane gas",
+          "Carbonic acid",
+          "Calcium carbonate",
+          "Pure nitrogen"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 1 explains that 'When carbon dioxide dissolves in seawater, it reacts with water molecules to form carbonic acid'."
+      },
+      {
+        "type": "tfng",
+        "question": "Declines in pteropod populations can negatively affect commercial fish species like salmon and cod.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 3 confirms that because pteropods are foundational prey, commercial fisheries reliant on salmon, cod, and herring face severe biomass reductions."
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "abundant",
+        "id": "abundant"
+      },
+      {
+        "word": "acid",
+        "id": "acid"
+      },
+      {
+        "word": "alongside",
+        "id": "alongside"
+      },
+      {
+        "word": "and",
+        "id": "and"
+      },
+      {
+        "word": "approximately",
+        "id": "approximately"
+      },
+      {
+        "word": "atmosphere",
+        "id": "atmosphere"
+      },
+      {
+        "word": "atmospheric",
+        "id": "atmospheric"
+      },
+      {
+        "word": "available",
+        "id": "available"
+      },
+      {
+        "word": "because",
+        "id": "because"
+      },
+      {
+        "word": "but",
+        "id": "but"
+      },
+      {
+        "word": "calcium",
+        "id": "calcium"
+      },
+      {
+        "word": "carbon",
+        "id": "carbon"
+      },
+      {
+        "word": "chemical",
+        "id": "chemical"
+      },
+      {
+        "word": "chemistry",
+        "id": "chemistry"
+      },
+      {
+        "word": "cod",
+        "id": "cod"
+      },
+      {
+        "word": "combustion",
+        "id": "combustion"
+      },
+      {
+        "word": "commercial",
+        "id": "commercial"
+      },
+      {
+        "word": "concentration",
+        "id": "concentration"
+      },
+      {
+        "word": "consequently",
+        "id": "consequently"
+      },
+      {
+        "word": "conservation",
+        "id": "conservation"
+      },
+      {
+        "word": "constitute",
+        "id": "constitute"
+      },
+      {
+        "word": "construct",
+        "id": "construct"
+      },
+      {
+        "word": "decline",
+        "id": "decline"
+      },
+      {
+        "word": "direct",
+        "id": "direct"
+      },
+      {
+        "word": "dwindle",
+        "id": "dwindle"
+      },
+      {
+        "word": "equilibrium",
+        "id": "equilibrium"
+      },
+      {
+        "word": "existing",
+        "id": "existing"
+      },
+      {
+        "word": "face",
+        "id": "face"
+      },
+      {
+        "word": "food",
+        "id": "food"
+      },
+      {
+        "word": "form",
+        "id": "form"
+      },
+      {
+        "word": "fossil",
+        "id": "fossil"
+      },
+      {
+        "word": "fragile",
+        "id": "fragile"
+      },
+      {
+        "word": "fuel",
+        "id": "fuel"
+      },
+      {
+        "word": "global",
+        "id": "global"
+      },
+      {
+        "word": "hydrogen",
+        "id": "hydrogen"
+      },
+      {
+        "word": "including",
+        "id": "including"
+      },
+      {
+        "word": "into",
+        "id": "into"
+      },
+      {
+        "word": "marine",
+        "id": "marine"
+      },
+      {
+        "word": "numerical",
+        "id": "numerical"
+      },
+      {
+        "word": "ocean",
+        "id": "ocean"
+      },
+      {
+        "word": "percent",
+        "id": "percent"
+      },
+      {
+        "word": "prey",
+        "id": "prey"
+      },
+      {
+        "word": "process",
+        "id": "process"
+      },
+      {
+        "word": "protect",
+        "id": "protect"
+      },
+      {
+        "word": "protective",
+        "id": "protective"
+      },
+      {
+        "word": "rapid",
+        "id": "rapid"
+      },
+      {
+        "word": "reliant",
+        "id": "reliant"
+      },
+      {
+        "word": "rely",
+        "id": "rely"
+      },
+      {
+        "word": "salmon",
+        "id": "salmon"
+      },
+      {
+        "word": "severe",
+        "id": "severe"
+      },
+      {
+        "word": "solely",
+        "id": "solely"
+      },
+      {
+        "word": "species",
+        "id": "species"
+      },
+      {
+        "word": "state",
+        "id": "state"
+      },
+      {
+        "word": "surface",
+        "id": "surface"
+      },
+      {
+        "word": "these",
+        "id": "these"
+      },
+      {
+        "word": "thirty",
+        "id": "thirty"
+      },
+      {
+        "word": "threat",
+        "id": "threat"
+      },
+      {
+        "word": "through",
+        "id": "through"
+      },
+      {
+        "word": "toll",
+        "id": "toll"
+      },
+      {
+        "word": "water",
+        "id": "water"
+      },
+      {
+        "word": "when",
+        "id": "when"
+      },
+      {
+        "word": "which",
+        "id": "which"
+      },
+      {
+        "word": "with",
+        "id": "with"
+      }
+    ],
+    "wordCount": 198
+  },
+  {
+    "id": "reading-government-01",
+    "topic": "government",
+    "topicName": "Law & Politics",
+    "title": "Constitutional Checks and the Rule of Law in Contemporary Governance",
+    "cefr": "C1",
+    "paragraphs": [
+      "The foundation of democratic constitutionalism rests upon the doctrine of the separation of powers and the institutional entrenchment of the rule of law. Formulated historically to avert arbitrary tyranny, this framework distributes executive, legislative, and judicial authorities among autonomous institutions, ensuring that no solitary governing body possesses unbridled hegemony over the state apparatus.",
+      "Judicial review serves as an indispensable constitutional fulcrum within this tripartite schema. Independent courts are empowered to scrutinize legislative statutes and executive decrees against foundational constitutional benchmarks, invalidating measures that infringe upon civil liberties or exceed statutory jurisdiction. When judicial independence is compromised—through political court-packing, fiscal coercion, or legislative preemption—the institutional safeguards protecting individual citizens against state overreach deteriorate precipitously.",
+      "In an era marked by rapid emergency decrees and administrative centralization, preserving robust constitutional equilibrium requires continuous institutional vigilance. Parliaments must retain uninhibited oversight competencies over executive expenditure and surveillance mandates, while civil society and independent media act as public watchdogs. Without pervasive cultural adherence to procedural norms, statutory constitutional guarantees risk deteriorating into nominal parchment barriers."
+    ],
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "What is the primary function of judicial review according to the text?",
+        "options": [
+          "To draft commercial budgets for private enterprises.",
+          "To assess statutes and executive decrees against constitutional benchmarks and invalidate unlawful measures.",
+          "To command military expeditions abroad.",
+          "To supervise parliamentary elections on behalf of political parties."
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 2 notes that independent courts 'scrutinize legislative statutes and executive decrees against foundational constitutional benchmarks, invalidating measures that infringe upon civil liberties'."
+      },
+      {
+        "type": "tfng",
+        "question": "Independent media and civil society play no significant role in monitoring government authority.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 3 notes that 'civil society and independent media act as public watchdogs'."
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "act",
+        "id": "act"
+      },
+      {
+        "word": "administrative",
+        "id": "administrative"
+      },
+      {
+        "word": "against",
+        "id": "against"
+      },
+      {
+        "word": "among",
+        "id": "among"
+      },
+      {
+        "word": "and",
+        "id": "and"
+      },
+      {
+        "word": "arbitrary",
+        "id": "arbitrary"
+      },
+      {
+        "word": "body",
+        "id": "body"
+      },
+      {
+        "word": "civil",
+        "id": "civil"
+      },
+      {
+        "word": "continuous",
+        "id": "continuous"
+      },
+      {
+        "word": "court",
+        "id": "court"
+      },
+      {
+        "word": "cultural",
+        "id": "cultural"
+      },
+      {
+        "word": "democratic",
+        "id": "democratic"
+      },
+      {
+        "word": "doctrine",
+        "id": "doctrine"
+      },
+      {
+        "word": "emergency",
+        "id": "emergency"
+      },
+      {
+        "word": "equilibrium",
+        "id": "equilibrium"
+      },
+      {
+        "word": "era",
+        "id": "era"
+      },
+      {
+        "word": "exceed",
+        "id": "exceed"
+      },
+      {
+        "word": "executive",
+        "id": "executive"
+      },
+      {
+        "word": "expenditure",
+        "id": "expenditure"
+      },
+      {
+        "word": "framework",
+        "id": "framework"
+      },
+      {
+        "word": "independence",
+        "id": "independence"
+      },
+      {
+        "word": "independent",
+        "id": "independent"
+      },
+      {
+        "word": "indispensable",
+        "id": "indispensable"
+      },
+      {
+        "word": "individual",
+        "id": "individual"
+      },
+      {
+        "word": "into",
+        "id": "into"
+      },
+      {
+        "word": "judicial",
+        "id": "judicial"
+      },
+      {
+        "word": "law",
+        "id": "law"
+      },
+      {
+        "word": "marked",
+        "id": "marked"
+      },
+      {
+        "word": "media",
+        "id": "media"
+      },
+      {
+        "word": "must",
+        "id": "must"
+      },
+      {
+        "word": "over",
+        "id": "over"
+      },
+      {
+        "word": "oversight",
+        "id": "oversight"
+      },
+      {
+        "word": "political",
+        "id": "political"
+      },
+      {
+        "word": "public",
+        "id": "public"
+      },
+      {
+        "word": "rapid",
+        "id": "rapid"
+      },
+      {
+        "word": "retain",
+        "id": "retain"
+      },
+      {
+        "word": "review",
+        "id": "review"
+      },
+      {
+        "word": "risk",
+        "id": "risk"
+      },
+      {
+        "word": "robust",
+        "id": "robust"
+      },
+      {
+        "word": "rule",
+        "id": "rule"
+      },
+      {
+        "word": "society",
+        "id": "society"
+      },
+      {
+        "word": "solitary",
+        "id": "solitary"
+      },
+      {
+        "word": "state",
+        "id": "state"
+      },
+      {
+        "word": "that",
+        "id": "that"
+      },
+      {
+        "word": "through",
+        "id": "through"
+      },
+      {
+        "word": "tyranny",
+        "id": "tyranny"
+      },
+      {
+        "word": "upon",
+        "id": "upon"
+      },
+      {
+        "word": "when",
+        "id": "when"
+      },
+      {
+        "word": "within",
+        "id": "within"
+      },
+      {
+        "word": "without",
+        "id": "without"
+      }
+    ],
+    "wordCount": 170
+  },
+  {
+    "id": "reading-health-01",
+    "topic": "health",
+    "topicName": "Health",
+    "title": "The Human Gut Microbiome and Metabolic Homeostasis",
+    "cefr": "B2",
+    "paragraphs": [
+      "In recent decades, biomedical research has unveiled the critical role played by the human gastrointestinal microbiome in maintaining systemic health and physiological homeostasis. The human digestive tract harbors trillions of symbiotic microorganisms, predominantly bacteria, whose aggregate genomic repertoire exceeds the human genome by several orders of magnitude. Rather than operating as passive commensals, these microbes actively modulate nutrient absorption, immune system calibration, and neuroendocrine signaling.",
+      "A primary mechanism through which gut microbiota influence human metabolism is the anaerobic fermentation of non-digestible dietary fibers into short-chain fatty acids (SCFAs), notably acetate, propionate, and butyrate. These metabolic byproducts serve as essential energy substrates for colonocytes and function as potent signaling ligands, regulating glucose metabolism, lipid accumulation, and systemic anti-inflammatory cascades throughout peripheral tissues.",
+      "Perturbations in microbial diversity and community composition—clinically designated as dysbiosis—are strongly implicated in an array of chronic non-communicable diseases. Diets saturated with ultra-processed foods, chronic psychological stress, and the indiscriminate administration of broad-spectrum antibiotics severely diminish protective bacterial taxa. Restoring symbiotic microbial equilibrium through tailored prebiotic nutrition, probiotic therapies, and fecal microbiota transplantation represents an advancing frontier in personalized medicine."
+    ],
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "What are short-chain fatty acids produced from in the human gastrointestinal tract?",
+        "options": [
+          "From the breakdown of artificial food colorings.",
+          "From the anaerobic fermentation of non-digestible dietary fibers.",
+          "Directly synthesized from bone marrow cells.",
+          "From synthetic vitamin supplements."
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 2 highlights 'anaerobic fermentation of non-digestible dietary fibers into short-chain fatty acids (SCFAs)'."
+      },
+      {
+        "type": "tfng",
+        "question": "Diets rich in ultra-processed foods help enhance protective gut bacterial diversity.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 3 explicitly states that ultra-processed diets 'severely diminish protective bacterial taxa'."
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "accumulation",
+        "id": "accumulation"
+      },
+      {
+        "word": "administration",
+        "id": "administration"
+      },
+      {
+        "word": "and",
+        "id": "and"
+      },
+      {
+        "word": "antibiotics",
+        "id": "antibiotics"
+      },
+      {
+        "word": "array",
+        "id": "array"
+      },
+      {
+        "word": "chain",
+        "id": "chain"
+      },
+      {
+        "word": "chronic",
+        "id": "chronic"
+      },
+      {
+        "word": "community",
+        "id": "community"
+      },
+      {
+        "word": "composition",
+        "id": "composition"
+      },
+      {
+        "word": "critical",
+        "id": "critical"
+      },
+      {
+        "word": "diminish",
+        "id": "diminish"
+      },
+      {
+        "word": "diversity",
+        "id": "diversity"
+      },
+      {
+        "word": "energy",
+        "id": "energy"
+      },
+      {
+        "word": "equilibrium",
+        "id": "equilibrium"
+      },
+      {
+        "word": "essential",
+        "id": "essential"
+      },
+      {
+        "word": "fatty",
+        "id": "fatty"
+      },
+      {
+        "word": "fermentation",
+        "id": "fermentation"
+      },
+      {
+        "word": "function",
+        "id": "function"
+      },
+      {
+        "word": "health",
+        "id": "health"
+      },
+      {
+        "word": "human",
+        "id": "human"
+      },
+      {
+        "word": "immune",
+        "id": "immune"
+      },
+      {
+        "word": "influence",
+        "id": "influence"
+      },
+      {
+        "word": "into",
+        "id": "into"
+      },
+      {
+        "word": "magnitude",
+        "id": "magnitude"
+      },
+      {
+        "word": "mechanism",
+        "id": "mechanism"
+      },
+      {
+        "word": "medicine",
+        "id": "medicine"
+      },
+      {
+        "word": "nutrition",
+        "id": "nutrition"
+      },
+      {
+        "word": "peripheral",
+        "id": "peripheral"
+      },
+      {
+        "word": "potent",
+        "id": "potent"
+      },
+      {
+        "word": "primary",
+        "id": "primary"
+      },
+      {
+        "word": "protective",
+        "id": "protective"
+      },
+      {
+        "word": "rather",
+        "id": "rather"
+      },
+      {
+        "word": "recent",
+        "id": "recent"
+      },
+      {
+        "word": "repertoire",
+        "id": "repertoire"
+      },
+      {
+        "word": "research",
+        "id": "research"
+      },
+      {
+        "word": "role",
+        "id": "role"
+      },
+      {
+        "word": "serve",
+        "id": "serve"
+      },
+      {
+        "word": "several",
+        "id": "several"
+      },
+      {
+        "word": "severely",
+        "id": "severely"
+      },
+      {
+        "word": "short",
+        "id": "short"
+      },
+      {
+        "word": "spectrum",
+        "id": "spectrum"
+      },
+      {
+        "word": "stress",
+        "id": "stress"
+      },
+      {
+        "word": "strongly",
+        "id": "strongly"
+      },
+      {
+        "word": "system",
+        "id": "system"
+      },
+      {
+        "word": "than",
+        "id": "than"
+      },
+      {
+        "word": "these",
+        "id": "these"
+      },
+      {
+        "word": "through",
+        "id": "through"
+      },
+      {
+        "word": "throughout",
+        "id": "throughout"
+      },
+      {
+        "word": "tract",
+        "id": "tract"
+      },
+      {
+        "word": "which",
+        "id": "which"
+      },
+      {
+        "word": "whose",
+        "id": "whose"
+      },
+      {
+        "word": "with",
+        "id": "with"
+      }
+    ],
+    "wordCount": 181
+  },
+  {
+    "id": "reading-history-01",
+    "topic": "history",
+    "topicName": "History",
+    "title": "The Silk Road and Cross-Eurasian Cultural Transmissions",
+    "cefr": "B2",
+    "paragraphs": [
+      "Rather than denoting a single paved thoroughfare, the Silk Road comprised an intricate network of overland trade conduits and maritime routes traversing the Eurasian landmass from China to the Mediterranean basin. Originating during the Han Dynasty, these commercial arteries bridged disparate civilizations across arid deserts, high mountain passes, and maritime straits.",
+      "While luxury commodities such as raw silk, porcelain, spices, and precious jade stimulated the initial mercantile incentives, the most profound and enduring consequence of the Silk Road was cross-cultural and intellectual transmission. Oases cities along the Tarim Basin blossomed into multilingual cosmopolises where Buddhist philosophy, Nestorian Christianity, and Zoroastrianism intersected, fostering remarkable syncretic art and scholarly translations.",
+      "Furthermore, foundational technological innovations traversed these pathways, reshaping European and Middle Eastern development. The westward dissemination of papermaking, gunpowder formulation, sericulture, and the magnetic compass laid the material groundwork for the Renaissance and the Age of Discovery. Studying the Silk Road illuminates how human progress has consistently flourished through transcontinental dialogue and commercial interdependence."
+    ],
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "According to the passage, what was the most enduring consequence of the Silk Road?",
+        "options": [
+          "The permanent exhaustion of world gold reserves.",
+          "Cross-cultural and intellectual transmission across disparate civilizations.",
+          "The complete destruction of all desert oasis cities.",
+          "The ban of all maritime merchant fleets."
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 2 states that 'the most profound and enduring consequence of the Silk Road was cross-cultural and intellectual transmission'."
+      },
+      {
+        "type": "tfng",
+        "question": "Technological innovations such as papermaking and the magnetic compass traveled westward along these trade routes.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 3 notes 'The westward dissemination of papermaking, gunpowder formulation, sericulture, and the magnetic compass'."
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "across",
+        "id": "across"
+      },
+      {
+        "word": "age",
+        "id": "age"
+      },
+      {
+        "word": "along",
+        "id": "along"
+      },
+      {
+        "word": "and",
+        "id": "and"
+      },
+      {
+        "word": "art",
+        "id": "art"
+      },
+      {
+        "word": "basin",
+        "id": "basin"
+      },
+      {
+        "word": "china",
+        "id": "china"
+      },
+      {
+        "word": "commercial",
+        "id": "commercial"
+      },
+      {
+        "word": "consequence",
+        "id": "consequence"
+      },
+      {
+        "word": "cross",
+        "id": "cross"
+      },
+      {
+        "word": "cultural",
+        "id": "cultural"
+      },
+      {
+        "word": "development",
+        "id": "development"
+      },
+      {
+        "word": "dialogue",
+        "id": "dialogue"
+      },
+      {
+        "word": "discovery",
+        "id": "discovery"
+      },
+      {
+        "word": "during",
+        "id": "during"
+      },
+      {
+        "word": "eastern",
+        "id": "eastern"
+      },
+      {
+        "word": "european",
+        "id": "european"
+      },
+      {
+        "word": "formulation",
+        "id": "formulation"
+      },
+      {
+        "word": "from",
+        "id": "from"
+      },
+      {
+        "word": "furthermore",
+        "id": "furthermore"
+      },
+      {
+        "word": "gunpowder",
+        "id": "gunpowder"
+      },
+      {
+        "word": "high",
+        "id": "high"
+      },
+      {
+        "word": "human",
+        "id": "human"
+      },
+      {
+        "word": "initial",
+        "id": "initial"
+      },
+      {
+        "word": "intellectual",
+        "id": "intellectual"
+      },
+      {
+        "word": "into",
+        "id": "into"
+      },
+      {
+        "word": "luxury",
+        "id": "luxury"
+      },
+      {
+        "word": "material",
+        "id": "material"
+      },
+      {
+        "word": "mediterranean",
+        "id": "mediterranean"
+      },
+      {
+        "word": "middle",
+        "id": "middle"
+      },
+      {
+        "word": "most",
+        "id": "most"
+      },
+      {
+        "word": "mountain",
+        "id": "mountain"
+      },
+      {
+        "word": "network",
+        "id": "network"
+      },
+      {
+        "word": "philosophy",
+        "id": "philosophy"
+      },
+      {
+        "word": "precious",
+        "id": "precious"
+      },
+      {
+        "word": "profound",
+        "id": "profound"
+      },
+      {
+        "word": "progress",
+        "id": "progress"
+      },
+      {
+        "word": "rather",
+        "id": "rather"
+      },
+      {
+        "word": "raw",
+        "id": "raw"
+      },
+      {
+        "word": "remarkable",
+        "id": "remarkable"
+      },
+      {
+        "word": "renaissance",
+        "id": "renaissance"
+      },
+      {
+        "word": "road",
+        "id": "road"
+      },
+      {
+        "word": "silk",
+        "id": "silk"
+      },
+      {
+        "word": "single",
+        "id": "single"
+      },
+      {
+        "word": "such",
+        "id": "such"
+      },
+      {
+        "word": "technological",
+        "id": "technological"
+      },
+      {
+        "word": "than",
+        "id": "than"
+      },
+      {
+        "word": "these",
+        "id": "these"
+      },
+      {
+        "word": "through",
+        "id": "through"
+      },
+      {
+        "word": "trade",
+        "id": "trade"
+      },
+      {
+        "word": "transmission",
+        "id": "transmission"
+      },
+      {
+        "word": "westward",
+        "id": "westward"
+      }
+    ],
+    "wordCount": 162
+  },
+  {
+    "id": "reading-media-01",
+    "topic": "media",
+    "topicName": "Media",
+    "title": "Algorithmic Curation and the Fragmentation of the Public Sphere",
+    "cefr": "B2",
+    "paragraphs": [
+      "The 20th-century media ecosystem was dominated by broadcast journalism and mass-circulation print periodicals that served as centralized civic gatekeepers. While not devoid of editorial bias, legacy media institutions provided a shared informational substrate, exposing broad populations to common factual narratives and deliberative public debates across societal cleavages.",
+      "The advent of algorithmically driven social media platforms has disintermediated this traditional landscape. Digital platforms employ optimization algorithms calibrated to maximize user engagement, retention, and advertising impressions. Because emotionally polarizing and sensationalist material consistently elicits higher click-through rates than nuanced reporting, algorithmic curation systematically amplifies controversial content, cultivating insular ideological echo chambers.",
+      "This informational balkanization impairs democratic deliberation by undermining common consensus on basic scientific and empirical facts. Furthermore, the commercial decline of investigative local journalism leaves institutional corruption unscrutinized at municipal levels. Rebuilding a resilient civic ecosystem requires fostering media literacy, enacting algorithmic transparency mandates, and exploring philanthropic business models for independent journalism."
+    ],
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Why do social media algorithms tend to amplify polarizing content?",
+        "options": [
+          "Because users explicitly request academic peer-reviewed studies.",
+          "Because emotionally polarizing material elicits higher engagement and click-through rates.",
+          "Because governments legally mandate that all news must be controversial.",
+          "Because sensationalist articles cost less electricity to transmit."
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 2 states that 'emotionally polarizing and sensationalist material consistently elicits higher click-through rates than nuanced reporting'."
+      },
+      {
+        "type": "tfng",
+        "question": "Investigative local journalism has experienced significant financial expansion due to social media platforms.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 3 points to 'the commercial decline of investigative local journalism'."
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "across",
+        "id": "across"
+      },
+      {
+        "word": "advent",
+        "id": "advent"
+      },
+      {
+        "word": "advertising",
+        "id": "advertising"
+      },
+      {
+        "word": "and",
+        "id": "and"
+      },
+      {
+        "word": "basic",
+        "id": "basic"
+      },
+      {
+        "word": "because",
+        "id": "because"
+      },
+      {
+        "word": "bias",
+        "id": "bias"
+      },
+      {
+        "word": "broadcast",
+        "id": "broadcast"
+      },
+      {
+        "word": "business",
+        "id": "business"
+      },
+      {
+        "word": "century",
+        "id": "century"
+      },
+      {
+        "word": "civic",
+        "id": "civic"
+      },
+      {
+        "word": "click",
+        "id": "click"
+      },
+      {
+        "word": "commercial",
+        "id": "commercial"
+      },
+      {
+        "word": "common",
+        "id": "common"
+      },
+      {
+        "word": "consensus",
+        "id": "consensus"
+      },
+      {
+        "word": "content",
+        "id": "content"
+      },
+      {
+        "word": "controversial",
+        "id": "controversial"
+      },
+      {
+        "word": "decline",
+        "id": "decline"
+      },
+      {
+        "word": "deliberation",
+        "id": "deliberation"
+      },
+      {
+        "word": "democratic",
+        "id": "democratic"
+      },
+      {
+        "word": "digital",
+        "id": "digital"
+      },
+      {
+        "word": "ecosystem",
+        "id": "ecosystem"
+      },
+      {
+        "word": "empirical",
+        "id": "empirical"
+      },
+      {
+        "word": "employ",
+        "id": "employ"
+      },
+      {
+        "word": "factual",
+        "id": "factual"
+      },
+      {
+        "word": "furthermore",
+        "id": "furthermore"
+      },
+      {
+        "word": "independent",
+        "id": "independent"
+      },
+      {
+        "word": "landscape",
+        "id": "landscape"
+      },
+      {
+        "word": "leaves",
+        "id": "leaves"
+      },
+      {
+        "word": "literacy",
+        "id": "literacy"
+      },
+      {
+        "word": "local",
+        "id": "local"
+      },
+      {
+        "word": "mass",
+        "id": "mass"
+      },
+      {
+        "word": "material",
+        "id": "material"
+      },
+      {
+        "word": "maximize",
+        "id": "maximize"
+      },
+      {
+        "word": "media",
+        "id": "media"
+      },
+      {
+        "word": "municipal",
+        "id": "municipal"
+      },
+      {
+        "word": "print",
+        "id": "print"
+      },
+      {
+        "word": "provided",
+        "id": "provided"
+      },
+      {
+        "word": "public",
+        "id": "public"
+      },
+      {
+        "word": "resilient",
+        "id": "resilient"
+      },
+      {
+        "word": "retention",
+        "id": "retention"
+      },
+      {
+        "word": "scientific",
+        "id": "scientific"
+      },
+      {
+        "word": "shared",
+        "id": "shared"
+      },
+      {
+        "word": "social",
+        "id": "social"
+      },
+      {
+        "word": "than",
+        "id": "than"
+      },
+      {
+        "word": "that",
+        "id": "that"
+      },
+      {
+        "word": "through",
+        "id": "through"
+      },
+      {
+        "word": "traditional",
+        "id": "traditional"
+      },
+      {
+        "word": "user",
+        "id": "user"
+      }
+    ],
+    "wordCount": 151
+  },
+  {
+    "id": "reading-nature-01",
+    "topic": "nature",
+    "topicName": "Nature",
+    "title": "Rewilding and Ecological Restoration in Degraded Landscapes",
+    "cefr": "B2",
+    "paragraphs": [
+      "Conventional conservation strategies historically focused on establishing static protected reserves and preventing human encroachment upon pristine wilderness. While indispensable, passive protection often proves inadequate for rejuvenating ecosystems that have already suffered severe biodiversity attrition, soil erosion, and habitat fragmentation through intensive monoculture agriculture and deforestation.",
+      "Ecological rewilding represents an ambitious proactive paradigm that emphasizes restoring natural ecological processes and trophic cascades. A cornerstone of rewilding initiatives is the reintroduction of apex predators and keystone herbivores—such as wolves, beavers, and wild bison—into historical habitats. The reintroduction of wolves into Yellowstone National Park famously transformed the landscape: by curbing overgrazing by elk along riverbanks, vegetation rebounded, stabilizing riverbanks and enabling songbirds, beavers, and aquatic insects to flourish.",
+      "Despite widespread scientific enthusiasm, rewilding projects frequently encounter socio-political friction with agricultural stakeholders and pastoral communities who fear livestock predation and property damage. Successful rewilding consequently requires collaborative governance frameworks that compensate farmers for losses, integrate local ecological knowledge, and foster rural ecotourism economies alongside ecological revitalization."
+    ],
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "How did the reintroduction of wolves into Yellowstone National Park benefit riparian vegetation?",
+        "options": [
+          "Wolves physically planted native willow trees along the riverbanks.",
+          "Wolves controlled elk overgrazing along rivers, allowing plant life to recover.",
+          "Wolves frightened away floodwaters during spring storms.",
+          "Wolves eliminated all aquatic insects from the river systems."
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 2 explains: 'by curbing overgrazing by elk along riverbanks, vegetation rebounded, stabilizing riverbanks'."
+      },
+      {
+        "type": "tfng",
+        "question": "Rewilding projects never face resistance from agricultural communities or farmers.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 3 points out that rewilding projects 'frequently encounter socio-political friction with agricultural stakeholders'."
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "agricultural",
+        "id": "agricultural"
+      },
+      {
+        "word": "agriculture",
+        "id": "agriculture"
+      },
+      {
+        "word": "along",
+        "id": "along"
+      },
+      {
+        "word": "alongside",
+        "id": "alongside"
+      },
+      {
+        "word": "already",
+        "id": "already"
+      },
+      {
+        "word": "ambitious",
+        "id": "ambitious"
+      },
+      {
+        "word": "and",
+        "id": "and"
+      },
+      {
+        "word": "compensate",
+        "id": "compensate"
+      },
+      {
+        "word": "consequently",
+        "id": "consequently"
+      },
+      {
+        "word": "conservation",
+        "id": "conservation"
+      },
+      {
+        "word": "conventional",
+        "id": "conventional"
+      },
+      {
+        "word": "damage",
+        "id": "damage"
+      },
+      {
+        "word": "deforestation",
+        "id": "deforestation"
+      },
+      {
+        "word": "despite",
+        "id": "despite"
+      },
+      {
+        "word": "encounter",
+        "id": "encounter"
+      },
+      {
+        "word": "enthusiasm",
+        "id": "enthusiasm"
+      },
+      {
+        "word": "erosion",
+        "id": "erosion"
+      },
+      {
+        "word": "fear",
+        "id": "fear"
+      },
+      {
+        "word": "flourish",
+        "id": "flourish"
+      },
+      {
+        "word": "foster",
+        "id": "foster"
+      },
+      {
+        "word": "frequently",
+        "id": "frequently"
+      },
+      {
+        "word": "friction",
+        "id": "friction"
+      },
+      {
+        "word": "habitat",
+        "id": "habitat"
+      },
+      {
+        "word": "historical",
+        "id": "historical"
+      },
+      {
+        "word": "human",
+        "id": "human"
+      },
+      {
+        "word": "inadequate",
+        "id": "inadequate"
+      },
+      {
+        "word": "indispensable",
+        "id": "indispensable"
+      },
+      {
+        "word": "integrate",
+        "id": "integrate"
+      },
+      {
+        "word": "intensive",
+        "id": "intensive"
+      },
+      {
+        "word": "into",
+        "id": "into"
+      },
+      {
+        "word": "knowledge",
+        "id": "knowledge"
+      },
+      {
+        "word": "landscape",
+        "id": "landscape"
+      },
+      {
+        "word": "livestock",
+        "id": "livestock"
+      },
+      {
+        "word": "local",
+        "id": "local"
+      },
+      {
+        "word": "national",
+        "id": "national"
+      },
+      {
+        "word": "natural",
+        "id": "natural"
+      },
+      {
+        "word": "often",
+        "id": "often"
+      },
+      {
+        "word": "park",
+        "id": "park"
+      },
+      {
+        "word": "political",
+        "id": "political"
+      },
+      {
+        "word": "property",
+        "id": "property"
+      },
+      {
+        "word": "protection",
+        "id": "protection"
+      },
+      {
+        "word": "rural",
+        "id": "rural"
+      },
+      {
+        "word": "scientific",
+        "id": "scientific"
+      },
+      {
+        "word": "severe",
+        "id": "severe"
+      },
+      {
+        "word": "soil",
+        "id": "soil"
+      },
+      {
+        "word": "static",
+        "id": "static"
+      },
+      {
+        "word": "successful",
+        "id": "successful"
+      },
+      {
+        "word": "such",
+        "id": "such"
+      },
+      {
+        "word": "that",
+        "id": "that"
+      },
+      {
+        "word": "through",
+        "id": "through"
+      },
+      {
+        "word": "upon",
+        "id": "upon"
+      },
+      {
+        "word": "vegetation",
+        "id": "vegetation"
+      },
+      {
+        "word": "wild",
+        "id": "wild"
+      },
+      {
+        "word": "with",
+        "id": "with"
+      }
+    ],
+    "wordCount": 162
+  },
+  {
+    "id": "reading-science-01",
+    "topic": "science",
+    "topicName": "Science",
+    "title": "CRISPR-Cas9 and the Precision Revolution in Molecular Genetics",
+    "cefr": "C1",
+    "paragraphs": [
+      "The elucidation of the CRISPR-Cas9 microbial adaptive immune mechanism has catalyzed a transformative epoch in biotechnology and functional genomics. Originally identified as an enzymatic defense system utilized by bacteria to cleave foreign bacteriophage nucleic acids, CRISPR has been repurposed into an extraordinarily versatile molecular scalpel capable of site-specific genome engineering across eukaryotic organisms.",
+      "The operational elegance of CRISPR lies in its dual-component architecture: a synthetic single-guide RNA sequence designed to identify a homologous genomic locus, coupled with a Cas endonuclease that introduces a double-strand break in the phosphodiester backbone of the target DNA. Cellular repair pathways—either non-homologous end joining or homology-directed repair—are subsequently harnessed to disrupt deleterious gene expressions or insert corrective therapeutic sequences with atomic precision.",
+      "Clinical trials targeting hereditary hematologic conditions, such as sickle cell anemia and beta-thalassemia, have yielded promising therapeutic benchmarks. Nonetheless, significant technical impediments persist, specifically off-target enzymatic cleavage events where Cas endonucleases inadvertently cleave non-targeted genomic sequences possessing sequence similarity. Bioethicists concurrently advocate for stringent international governance to prevent germline modifications that would introduce heritable alterations into the human gene pool."
+    ],
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Where was the CRISPR mechanism originally identified before being adapted for genetic engineering?",
+        "options": [
+          "In synthesized laboratory polymers.",
+          "As an enzymatic defense system in bacteria against viruses.",
+          "In human hematopoietic stem cells.",
+          "In ancient geological fossil layers."
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 1 mentions it was 'Originally identified as an enzymatic defense system utilized by bacteria to cleave foreign bacteriophage nucleic acids'."
+      },
+      {
+        "type": "tfng",
+        "question": "Off-target cleavage is no longer a technical concern in CRISPR applications.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 3 states that 'significant technical impediments persist, specifically off-target enzymatic cleavage events'."
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "across",
+        "id": "across"
+      },
+      {
+        "word": "advocate",
+        "id": "advocate"
+      },
+      {
+        "word": "and",
+        "id": "and"
+      },
+      {
+        "word": "architecture",
+        "id": "architecture"
+      },
+      {
+        "word": "atomic",
+        "id": "atomic"
+      },
+      {
+        "word": "break",
+        "id": "break"
+      },
+      {
+        "word": "capable",
+        "id": "capable"
+      },
+      {
+        "word": "cell",
+        "id": "cell"
+      },
+      {
+        "word": "cellular",
+        "id": "cellular"
+      },
+      {
+        "word": "component",
+        "id": "component"
+      },
+      {
+        "word": "disrupt",
+        "id": "disrupt"
+      },
+      {
+        "word": "double",
+        "id": "double"
+      },
+      {
+        "word": "dual",
+        "id": "dual"
+      },
+      {
+        "word": "either",
+        "id": "either"
+      },
+      {
+        "word": "end",
+        "id": "end"
+      },
+      {
+        "word": "engineering",
+        "id": "engineering"
+      },
+      {
+        "word": "epoch",
+        "id": "epoch"
+      },
+      {
+        "word": "foreign",
+        "id": "foreign"
+      },
+      {
+        "word": "functional",
+        "id": "functional"
+      },
+      {
+        "word": "gene",
+        "id": "gene"
+      },
+      {
+        "word": "guide",
+        "id": "guide"
+      },
+      {
+        "word": "hereditary",
+        "id": "hereditary"
+      },
+      {
+        "word": "human",
+        "id": "human"
+      },
+      {
+        "word": "identify",
+        "id": "identify"
+      },
+      {
+        "word": "immune",
+        "id": "immune"
+      },
+      {
+        "word": "insert",
+        "id": "insert"
+      },
+      {
+        "word": "international",
+        "id": "international"
+      },
+      {
+        "word": "into",
+        "id": "into"
+      },
+      {
+        "word": "introduce",
+        "id": "introduce"
+      },
+      {
+        "word": "joining",
+        "id": "joining"
+      },
+      {
+        "word": "mechanism",
+        "id": "mechanism"
+      },
+      {
+        "word": "off",
+        "id": "off"
+      },
+      {
+        "word": "operational",
+        "id": "operational"
+      },
+      {
+        "word": "originally",
+        "id": "originally"
+      },
+      {
+        "word": "pool",
+        "id": "pool"
+      },
+      {
+        "word": "prevent",
+        "id": "prevent"
+      },
+      {
+        "word": "promising",
+        "id": "promising"
+      },
+      {
+        "word": "repair",
+        "id": "repair"
+      },
+      {
+        "word": "scalpel",
+        "id": "scalpel"
+      },
+      {
+        "word": "sequence",
+        "id": "sequence"
+      },
+      {
+        "word": "significant",
+        "id": "significant"
+      },
+      {
+        "word": "similarity",
+        "id": "similarity"
+      },
+      {
+        "word": "single",
+        "id": "single"
+      },
+      {
+        "word": "site",
+        "id": "site"
+      },
+      {
+        "word": "specific",
+        "id": "specific"
+      },
+      {
+        "word": "specifically",
+        "id": "specifically"
+      },
+      {
+        "word": "strand",
+        "id": "strand"
+      },
+      {
+        "word": "such",
+        "id": "such"
+      },
+      {
+        "word": "system",
+        "id": "system"
+      },
+      {
+        "word": "target",
+        "id": "target"
+      },
+      {
+        "word": "technical",
+        "id": "technical"
+      },
+      {
+        "word": "that",
+        "id": "that"
+      },
+      {
+        "word": "versatile",
+        "id": "versatile"
+      },
+      {
+        "word": "with",
+        "id": "with"
+      }
+    ],
+    "wordCount": 177
+  },
+  {
+    "id": "reading-society-01",
+    "topic": "society",
+    "topicName": "Society",
+    "title": "Demographic Aging and the Restructuring of Social Contracts",
+    "cefr": "B2",
+    "paragraphs": [
+      "Many developed and middle-income nations are undergoing an unprecedented demographic transition characterized by declining fertility rates and rising life expectancies. As post-war generations attain retirement age, the old-age dependency ratio—the proportion of elderly dependents relative to the active working-age population—is expanding substantially. This shift imposes acute fiscal strains on pay-as-you-go pension architectures, public healthcare systems, and long-term geriatric infrastructure.",
+      "Economists warn that a shrinking domestic labor supply can dampen aggregate economic growth and tax revenues unless accompanied by robust productivity enhancements. Furthermore, municipal communities face shrinking service provision in rural localities as younger cohorts migrate to urban metropolises in pursuit of employment opportunities. Consequently, public discourse increasingly debates the longevity of prevailing social contracts and the necessity of raising statutory retirement thresholds.",
+      "Navigating this demographic reality necessitates multi-faceted structural policy interventions. Encouraging active aging through continuous professional retraining, incentivizing voluntary deferred retirement, and investing in assistive robotics can maintain workforce productivity. Concurrently, nations are revamping family support policies, subsidizing early childhood education, and modernizing immigration regimes to replenish the labor force and sustain intergenerational solidarity."
+    ],
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "What is the old-age dependency ratio as defined in the reading passage?",
+        "options": [
+          "The number of schools divided by the number of hospitals.",
+          "The proportion of elderly dependents relative to the active working-age population.",
+          "The total financial debt of retired individuals.",
+          "The percentage of urban citizens compared to rural workers."
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 1 defines it as 'the proportion of elderly dependents relative to the active working-age population'."
+      },
+      {
+        "type": "tfng",
+        "question": "Immigration policies are one of the strategies utilized to replenish shrinking labor forces.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 3 states nations are 'modernizing immigration regimes to replenish the labor force'."
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "active",
+        "id": "active"
+      },
+      {
+        "word": "acute",
+        "id": "acute"
+      },
+      {
+        "word": "age",
+        "id": "age"
+      },
+      {
+        "word": "and",
+        "id": "and"
+      },
+      {
+        "word": "attain",
+        "id": "attain"
+      },
+      {
+        "word": "can",
+        "id": "can"
+      },
+      {
+        "word": "childhood",
+        "id": "childhood"
+      },
+      {
+        "word": "consequently",
+        "id": "consequently"
+      },
+      {
+        "word": "continuous",
+        "id": "continuous"
+      },
+      {
+        "word": "discourse",
+        "id": "discourse"
+      },
+      {
+        "word": "domestic",
+        "id": "domestic"
+      },
+      {
+        "word": "early",
+        "id": "early"
+      },
+      {
+        "word": "economic",
+        "id": "economic"
+      },
+      {
+        "word": "education",
+        "id": "education"
+      },
+      {
+        "word": "elderly",
+        "id": "elderly"
+      },
+      {
+        "word": "employment",
+        "id": "employment"
+      },
+      {
+        "word": "face",
+        "id": "face"
+      },
+      {
+        "word": "family",
+        "id": "family"
+      },
+      {
+        "word": "force",
+        "id": "force"
+      },
+      {
+        "word": "furthermore",
+        "id": "furthermore"
+      },
+      {
+        "word": "growth",
+        "id": "growth"
+      },
+      {
+        "word": "immigration",
+        "id": "immigration"
+      },
+      {
+        "word": "income",
+        "id": "income"
+      },
+      {
+        "word": "increasingly",
+        "id": "increasingly"
+      },
+      {
+        "word": "labor",
+        "id": "labor"
+      },
+      {
+        "word": "life",
+        "id": "life"
+      },
+      {
+        "word": "long",
+        "id": "long"
+      },
+      {
+        "word": "maintain",
+        "id": "maintain"
+      },
+      {
+        "word": "many",
+        "id": "many"
+      },
+      {
+        "word": "middle",
+        "id": "middle"
+      },
+      {
+        "word": "migrate",
+        "id": "migrate"
+      },
+      {
+        "word": "municipal",
+        "id": "municipal"
+      },
+      {
+        "word": "necessity",
+        "id": "necessity"
+      },
+      {
+        "word": "old",
+        "id": "old"
+      },
+      {
+        "word": "pay",
+        "id": "pay"
+      },
+      {
+        "word": "policy",
+        "id": "policy"
+      },
+      {
+        "word": "population",
+        "id": "population"
+      },
+      {
+        "word": "post",
+        "id": "post"
+      },
+      {
+        "word": "prevailing",
+        "id": "prevailing"
+      },
+      {
+        "word": "professional",
+        "id": "professional"
+      },
+      {
+        "word": "proportion",
+        "id": "proportion"
+      },
+      {
+        "word": "provision",
+        "id": "provision"
+      },
+      {
+        "word": "public",
+        "id": "public"
+      },
+      {
+        "word": "pursuit",
+        "id": "pursuit"
+      },
+      {
+        "word": "ratio",
+        "id": "ratio"
+      },
+      {
+        "word": "reality",
+        "id": "reality"
+      },
+      {
+        "word": "relative",
+        "id": "relative"
+      },
+      {
+        "word": "robust",
+        "id": "robust"
+      },
+      {
+        "word": "rural",
+        "id": "rural"
+      },
+      {
+        "word": "service",
+        "id": "service"
+      },
+      {
+        "word": "shift",
+        "id": "shift"
+      },
+      {
+        "word": "social",
+        "id": "social"
+      },
+      {
+        "word": "solidarity",
+        "id": "solidarity"
+      },
+      {
+        "word": "structural",
+        "id": "structural"
+      },
+      {
+        "word": "supply",
+        "id": "supply"
+      },
+      {
+        "word": "support",
+        "id": "support"
+      },
+      {
+        "word": "tax",
+        "id": "tax"
+      },
+      {
+        "word": "term",
+        "id": "term"
+      },
+      {
+        "word": "that",
+        "id": "that"
+      },
+      {
+        "word": "through",
+        "id": "through"
+      },
+      {
+        "word": "transition",
+        "id": "transition"
+      },
+      {
+        "word": "unless",
+        "id": "unless"
+      },
+      {
+        "word": "unprecedented",
+        "id": "unprecedented"
+      },
+      {
+        "word": "urban",
+        "id": "urban"
+      },
+      {
+        "word": "voluntary",
+        "id": "voluntary"
+      },
+      {
+        "word": "war",
+        "id": "war"
+      },
+      {
+        "word": "warn",
+        "id": "warn"
+      }
+    ],
+    "wordCount": 175
+  },
+  {
+    "id": "reading-sport-01",
+    "topic": "sport",
+    "topicName": "Sports",
+    "title": "Biomechanics and High-Performance Sports Analytics",
+    "cefr": "B2",
+    "paragraphs": [
+      "Elite athletic performance was traditionally guided by intuitive coaching philosophies and experiential observation. Over the past two decades, however, competitive sports have been revolutionized by high-resolution sports science, computational biomechanics, and kinematic tracking technologies.",
+      "Wearable micro-electromechanical sensors, high-speed stereoscopic cameras, and optical tracking systems record millisecond-by-millisecond metrics of athletic movement, including joint torque, force application angles, and cardiovascular exertion. In professional football and basketball, kinematic spatial data reveals tactical movement patterns and passing efficiencies that elude human visual tracking, allowing tactical strategists to optimize team formations mathematically.",
+      "Equally critical is the application of predictive analytics in athletic injury prevention. By continuously monitoring external physical load against internal physiological biomarkers, sports physiologists can detect acute muscle fatigue patterns before clinical structural tears or stress fractures materialize. Balancing computational precision with holistic athlete wellness represents the defining benchmark of elite sporting organizations."
+    ],
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "What is one key benefit of predictive analytics in sports science mentioned in the passage?",
+        "options": [
+          "Replacing human players with autonomous androids.",
+          "Detecting acute muscle fatigue to prevent severe physical injuries before they happen.",
+          "Eliminating the need for physical exercise.",
+          "Allowing referees to cancel all outdoor tournaments."
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 3 explains that monitoring workload and biomarkers allows physiologists to 'detect acute muscle fatigue patterns before clinical structural tears or stress fractures materialize'."
+      },
+      {
+        "type": "tfng",
+        "question": "Tactical strategists in football and basketball rely exclusively on human visual tracking without any digital data.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 2 states that kinematic spatial data reveals tactical patterns that 'elude human visual tracking'."
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "acute",
+        "id": "acute"
+      },
+      {
+        "word": "against",
+        "id": "against"
+      },
+      {
+        "word": "and",
+        "id": "and"
+      },
+      {
+        "word": "application",
+        "id": "application"
+      },
+      {
+        "word": "athlete",
+        "id": "athlete"
+      },
+      {
+        "word": "basketball",
+        "id": "basketball"
+      },
+      {
+        "word": "before",
+        "id": "before"
+      },
+      {
+        "word": "can",
+        "id": "can"
+      },
+      {
+        "word": "competitive",
+        "id": "competitive"
+      },
+      {
+        "word": "critical",
+        "id": "critical"
+      },
+      {
+        "word": "data",
+        "id": "data"
+      },
+      {
+        "word": "exertion",
+        "id": "exertion"
+      },
+      {
+        "word": "external",
+        "id": "external"
+      },
+      {
+        "word": "fatigue",
+        "id": "fatigue"
+      },
+      {
+        "word": "football",
+        "id": "football"
+      },
+      {
+        "word": "force",
+        "id": "force"
+      },
+      {
+        "word": "guided",
+        "id": "guided"
+      },
+      {
+        "word": "high",
+        "id": "high"
+      },
+      {
+        "word": "however",
+        "id": "however"
+      },
+      {
+        "word": "human",
+        "id": "human"
+      },
+      {
+        "word": "including",
+        "id": "including"
+      },
+      {
+        "word": "injury",
+        "id": "injury"
+      },
+      {
+        "word": "joint",
+        "id": "joint"
+      },
+      {
+        "word": "load",
+        "id": "load"
+      },
+      {
+        "word": "materialize",
+        "id": "materialize"
+      },
+      {
+        "word": "movement",
+        "id": "movement"
+      },
+      {
+        "word": "muscle",
+        "id": "muscle"
+      },
+      {
+        "word": "observation",
+        "id": "observation"
+      },
+      {
+        "word": "optical",
+        "id": "optical"
+      },
+      {
+        "word": "over",
+        "id": "over"
+      },
+      {
+        "word": "performance",
+        "id": "performance"
+      },
+      {
+        "word": "physical",
+        "id": "physical"
+      },
+      {
+        "word": "prevention",
+        "id": "prevention"
+      },
+      {
+        "word": "professional",
+        "id": "professional"
+      },
+      {
+        "word": "record",
+        "id": "record"
+      },
+      {
+        "word": "science",
+        "id": "science"
+      },
+      {
+        "word": "spatial",
+        "id": "spatial"
+      },
+      {
+        "word": "speed",
+        "id": "speed"
+      },
+      {
+        "word": "stress",
+        "id": "stress"
+      },
+      {
+        "word": "structural",
+        "id": "structural"
+      },
+      {
+        "word": "team",
+        "id": "team"
+      },
+      {
+        "word": "that",
+        "id": "that"
+      },
+      {
+        "word": "tracking",
+        "id": "tracking"
+      },
+      {
+        "word": "visual",
+        "id": "visual"
+      },
+      {
+        "word": "with",
+        "id": "with"
+      }
+    ],
+    "wordCount": 140
+  },
+  {
+    "id": "reading-technology-01",
+    "topic": "technology",
+    "topicName": "Technology",
+    "title": "Autonomous Systems and Algorithmic Decision-Making",
+    "cefr": "C1",
+    "paragraphs": [
+      "Artificial intelligence and autonomous decision-making architectures are penetrating critical domains of human society, ranging from diagnostic medical imaging to automated judicial risk assessment and algorithmic financial trading. Unlike deterministic software routines characterized by explicit rules, modern neural networks construct statistical representations derived from vast empirical training corpora. This enables unprecedented pattern recognition capabilities across high-dimensional and non-linear data distributions.",
+      "However, the opacity of deep neural representations—colloquially recognized as the black box phenomenon—introduces profound ethical and operational dilemmas. When an algorithmic classifier denies an applicant a line of credit or suggests a surgical intervention, tracing the causal rationale underlying the computation is exceptionally arduous. If historical training records embody societal prejudice or sampling anomalies, the resulting inference engine will systematically perpetuate and amplify systemic discrimination under the guise of mathematical neutrality.",
+      "To mitigate these hazards, computer scientists and regulatory agencies are formulating frameworks for explainable artificial intelligence (XAI) and algorithmic accountability. Legislative mandates increasingly mandate that critical automated pipelines incorporate interpretability mechanisms, rigorous audit trails, and mandatory human-in-the-loop oversight. Achieving a balance between predictive efficacy and procedural transparency remains one of the preeminent engineering imperatives of our generation."
+    ],
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "What is the primary operational concern associated with the 'black box' phenomenon in neural networks?",
+        "options": [
+          "The algorithms consume too little computational memory.",
+          "It is exceptionally arduous to trace the causal rationale behind automated decisions.",
+          "Machines refuse to process statistical representations.",
+          "Hardware components physically overheat inside black enclosures."
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 2 explains that tracing the causal rationale underlying the computation is exceptionally arduous."
+      },
+      {
+        "type": "tfng",
+        "question": "Regulatory bodies are beginning to require human oversight in critical automated pipelines.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 3 explicitly confirms that legislative mandates require 'mandatory human-in-the-loop oversight'."
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "across",
+        "id": "across"
+      },
+      {
+        "word": "amplify",
+        "id": "amplify"
+      },
+      {
+        "word": "and",
+        "id": "and"
+      },
+      {
+        "word": "applicant",
+        "id": "applicant"
+      },
+      {
+        "word": "arduous",
+        "id": "arduous"
+      },
+      {
+        "word": "artificial",
+        "id": "artificial"
+      },
+      {
+        "word": "assessment",
+        "id": "assessment"
+      },
+      {
+        "word": "balance",
+        "id": "balance"
+      },
+      {
+        "word": "between",
+        "id": "between"
+      },
+      {
+        "word": "black",
+        "id": "black"
+      },
+      {
+        "word": "box",
+        "id": "box"
+      },
+      {
+        "word": "computation",
+        "id": "computation"
+      },
+      {
+        "word": "computer",
+        "id": "computer"
+      },
+      {
+        "word": "construct",
+        "id": "construct"
+      },
+      {
+        "word": "credit",
+        "id": "credit"
+      },
+      {
+        "word": "critical",
+        "id": "critical"
+      },
+      {
+        "word": "data",
+        "id": "data"
+      },
+      {
+        "word": "decision",
+        "id": "decision"
+      },
+      {
+        "word": "dimensional",
+        "id": "dimensional"
+      },
+      {
+        "word": "discrimination",
+        "id": "discrimination"
+      },
+      {
+        "word": "embody",
+        "id": "embody"
+      },
+      {
+        "word": "empirical",
+        "id": "empirical"
+      },
+      {
+        "word": "engine",
+        "id": "engine"
+      },
+      {
+        "word": "engineering",
+        "id": "engineering"
+      },
+      {
+        "word": "explicit",
+        "id": "explicit"
+      },
+      {
+        "word": "financial",
+        "id": "financial"
+      },
+      {
+        "word": "from",
+        "id": "from"
+      },
+      {
+        "word": "generation",
+        "id": "generation"
+      },
+      {
+        "word": "high",
+        "id": "high"
+      },
+      {
+        "word": "historical",
+        "id": "historical"
+      },
+      {
+        "word": "however",
+        "id": "however"
+      },
+      {
+        "word": "human",
+        "id": "human"
+      },
+      {
+        "word": "increasingly",
+        "id": "increasingly"
+      },
+      {
+        "word": "inference",
+        "id": "inference"
+      },
+      {
+        "word": "intelligence",
+        "id": "intelligence"
+      },
+      {
+        "word": "judicial",
+        "id": "judicial"
+      },
+      {
+        "word": "line",
+        "id": "line"
+      },
+      {
+        "word": "loop",
+        "id": "loop"
+      },
+      {
+        "word": "making",
+        "id": "making"
+      },
+      {
+        "word": "mandatory",
+        "id": "mandatory"
+      },
+      {
+        "word": "mathematical",
+        "id": "mathematical"
+      },
+      {
+        "word": "medical",
+        "id": "medical"
+      },
+      {
+        "word": "mitigate",
+        "id": "mitigate"
+      },
+      {
+        "word": "modern",
+        "id": "modern"
+      },
+      {
+        "word": "one",
+        "id": "one"
+      },
+      {
+        "word": "operational",
+        "id": "operational"
+      },
+      {
+        "word": "our",
+        "id": "our"
+      },
+      {
+        "word": "oversight",
+        "id": "oversight"
+      },
+      {
+        "word": "pattern",
+        "id": "pattern"
+      },
+      {
+        "word": "prejudice",
+        "id": "prejudice"
+      },
+      {
+        "word": "profound",
+        "id": "profound"
+      },
+      {
+        "word": "recognition",
+        "id": "recognition"
+      },
+      {
+        "word": "remains",
+        "id": "remains"
+      },
+      {
+        "word": "rigorous",
+        "id": "rigorous"
+      },
+      {
+        "word": "risk",
+        "id": "risk"
+      },
+      {
+        "word": "sampling",
+        "id": "sampling"
+      },
+      {
+        "word": "society",
+        "id": "society"
+      },
+      {
+        "word": "software",
+        "id": "software"
+      },
+      {
+        "word": "statistical",
+        "id": "statistical"
+      },
+      {
+        "word": "that",
+        "id": "that"
+      },
+      {
+        "word": "these",
+        "id": "these"
+      },
+      {
+        "word": "training",
+        "id": "training"
+      },
+      {
+        "word": "under",
+        "id": "under"
+      },
+      {
+        "word": "underlying",
+        "id": "underlying"
+      },
+      {
+        "word": "unlike",
+        "id": "unlike"
+      },
+      {
+        "word": "unprecedented",
+        "id": "unprecedented"
+      },
+      {
+        "word": "vast",
+        "id": "vast"
+      },
+      {
+        "word": "when",
+        "id": "when"
+      }
+    ],
+    "wordCount": 187
+  },
+  {
+    "id": "reading-thinking-01",
+    "topic": "thinking",
+    "topicName": "Mind & Logic",
+    "title": "Cognitive Biases and Dual-Process Reasoning Theories",
+    "cefr": "B2",
+    "paragraphs": [
+      "Human judgment is not a dispassionate, purely rational computation, but rather the output of evolutionary compromises designed to balance analytical accuracy with cognitive speed. In their pioneering dual-process theory, psychologists Daniel Kahneman and Amos Tversky conceptualized human cognition as comprising two distinct operating modes: System 1 and System 2.",
+      "System 1 operates automatically, effortlessly, and rapidly, relying on associative memory and intuitive heuristics to navigate daily tasks without computational paralysis. While remarkably effective for immediate perceptual tasks, System 1 is vulnerable to predictable cognitive biases, such as confirmation bias (favoring evidence that affirms pre-existing beliefs) and the availability heuristic (overestimating the likelihood of memorable events).",
+      "In contrast, System 2 is deliberate, analytical, and effortful, required for solving complex mathematical theorems, evaluating logical syllogisms, and weighing conflicting empirical hypotheses. However, because System 2 demands substantial metabolic and attentional resources, humans naturally default to cognitive miserliness. Training individuals in metacognition—the deliberate monitoring of one's own thought processes—serves as an indispensable defense against cognitive traps."
+    ],
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "What is the defining trait of System 1 in dual-process cognitive theory?",
+        "options": [
+          "It is slow, deliberate, and requires heavy concentration.",
+          "It operates automatically, effortlessly, and rapidly using heuristics.",
+          "It can only be activated while a person is asleep.",
+          "It is solely responsible for solving multi-step calculus problems."
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 2 states: 'System 1 operates automatically, effortlessly, and rapidly, relying on associative memory and intuitive heuristics'."
+      },
+      {
+        "type": "tfng",
+        "question": "Confirmation bias involves favoring evidence that confirms existing beliefs.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 2 describes confirmation bias as 'favoring evidence that affirms pre-existing beliefs'."
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "accuracy",
+        "id": "accuracy"
+      },
+      {
+        "word": "against",
+        "id": "against"
+      },
+      {
+        "word": "and",
+        "id": "and"
+      },
+      {
+        "word": "balance",
+        "id": "balance"
+      },
+      {
+        "word": "because",
+        "id": "because"
+      },
+      {
+        "word": "bias",
+        "id": "bias"
+      },
+      {
+        "word": "but",
+        "id": "but"
+      },
+      {
+        "word": "cognitive",
+        "id": "cognitive"
+      },
+      {
+        "word": "complex",
+        "id": "complex"
+      },
+      {
+        "word": "computation",
+        "id": "computation"
+      },
+      {
+        "word": "confirmation",
+        "id": "confirmation"
+      },
+      {
+        "word": "default",
+        "id": "default"
+      },
+      {
+        "word": "deliberate",
+        "id": "deliberate"
+      },
+      {
+        "word": "distinct",
+        "id": "distinct"
+      },
+      {
+        "word": "dual",
+        "id": "dual"
+      },
+      {
+        "word": "effective",
+        "id": "effective"
+      },
+      {
+        "word": "empirical",
+        "id": "empirical"
+      },
+      {
+        "word": "evidence",
+        "id": "evidence"
+      },
+      {
+        "word": "existing",
+        "id": "existing"
+      },
+      {
+        "word": "however",
+        "id": "however"
+      },
+      {
+        "word": "human",
+        "id": "human"
+      },
+      {
+        "word": "immediate",
+        "id": "immediate"
+      },
+      {
+        "word": "indispensable",
+        "id": "indispensable"
+      },
+      {
+        "word": "likelihood",
+        "id": "likelihood"
+      },
+      {
+        "word": "logical",
+        "id": "logical"
+      },
+      {
+        "word": "mathematical",
+        "id": "mathematical"
+      },
+      {
+        "word": "memorable",
+        "id": "memorable"
+      },
+      {
+        "word": "memory",
+        "id": "memory"
+      },
+      {
+        "word": "naturally",
+        "id": "naturally"
+      },
+      {
+        "word": "navigate",
+        "id": "navigate"
+      },
+      {
+        "word": "one",
+        "id": "one"
+      },
+      {
+        "word": "own",
+        "id": "own"
+      },
+      {
+        "word": "paralysis",
+        "id": "paralysis"
+      },
+      {
+        "word": "pioneering",
+        "id": "pioneering"
+      },
+      {
+        "word": "predictable",
+        "id": "predictable"
+      },
+      {
+        "word": "process",
+        "id": "process"
+      },
+      {
+        "word": "purely",
+        "id": "purely"
+      },
+      {
+        "word": "rapidly",
+        "id": "rapidly"
+      },
+      {
+        "word": "rather",
+        "id": "rather"
+      },
+      {
+        "word": "speed",
+        "id": "speed"
+      },
+      {
+        "word": "such",
+        "id": "such"
+      },
+      {
+        "word": "system",
+        "id": "system"
+      },
+      {
+        "word": "that",
+        "id": "that"
+      },
+      {
+        "word": "theory",
+        "id": "theory"
+      },
+      {
+        "word": "thought",
+        "id": "thought"
+      },
+      {
+        "word": "training",
+        "id": "training"
+      },
+      {
+        "word": "vulnerable",
+        "id": "vulnerable"
+      },
+      {
+        "word": "with",
+        "id": "with"
+      },
+      {
+        "word": "without",
+        "id": "without"
+      }
+    ],
+    "wordCount": 162
+  },
+  {
+    "id": "reading-travel-01",
+    "topic": "travel",
+    "topicName": "Travel",
+    "title": "Overtourism and the Preservation of Heritage Ecosystems",
+    "cefr": "B2",
+    "paragraphs": [
+      "The democratization of international aviation and the expansion of online booking platforms have stimulated phenomenal growth in global leisure travel. While tourism constitutes a vital driver of employment, infrastructure development, and foreign currency inflows for recipient economies, unregulated tourist influxes increasingly imperil the cultural integrity and ecological equilibrium of iconic destinations.",
+      "Historic European metropolises such as Venice, Amsterdam, and Dubrovnik have become epicenters of overtourism. Excessive visitor density strains municipal waste management systems, degrades fragile historical masonry, and prices local residents out of residential neighborhoods as apartments convert into short-term holiday rentals. Consequently, urban centers risk transforming into sterile tourist enclaves devoid of indigenous neighborhood life.",
+      "In response, municipal authorities and national tourism ministries are pioneering sustainable stewardship models. Strategies encompass implementing day-tripper entry levies, establishing dynamic quota systems for congested archaeological heritage zones, and actively marketing peripheral regional attractions to disperse geographic footfall. Sustainable tourism seeks an equilibrium where economic benefits enrich local communities without eroding the natural and cultural assets that inspire visitation."
+    ],
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "What is one direct negative consequence of converting residential apartments into holiday rentals?",
+        "options": [
+          "Local residents are priced out of housing in their historic neighborhoods.",
+          "Municipal tax revenues drop to zero immediately.",
+          "Aviation companies go bankrupt.",
+          "Archaeological sites become completely empty."
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 2 notes that holiday rental conversion 'prices local residents out of residential neighborhoods'."
+      },
+      {
+        "type": "tfng",
+        "question": "Marketing peripheral regional attractions helps alleviate congestion in major tourist hubs.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 3 highlights 'actively marketing peripheral regional attractions to disperse geographic footfall'."
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "and",
+        "id": "and"
+      },
+      {
+        "word": "aviation",
+        "id": "aviation"
+      },
+      {
+        "word": "become",
+        "id": "become"
+      },
+      {
+        "word": "booking",
+        "id": "booking"
+      },
+      {
+        "word": "congested",
+        "id": "congested"
+      },
+      {
+        "word": "consequently",
+        "id": "consequently"
+      },
+      {
+        "word": "convert",
+        "id": "convert"
+      },
+      {
+        "word": "cultural",
+        "id": "cultural"
+      },
+      {
+        "word": "currency",
+        "id": "currency"
+      },
+      {
+        "word": "day",
+        "id": "day"
+      },
+      {
+        "word": "development",
+        "id": "development"
+      },
+      {
+        "word": "disperse",
+        "id": "disperse"
+      },
+      {
+        "word": "driver",
+        "id": "driver"
+      },
+      {
+        "word": "dynamic",
+        "id": "dynamic"
+      },
+      {
+        "word": "economic",
+        "id": "economic"
+      },
+      {
+        "word": "employment",
+        "id": "employment"
+      },
+      {
+        "word": "enrich",
+        "id": "enrich"
+      },
+      {
+        "word": "entry",
+        "id": "entry"
+      },
+      {
+        "word": "equilibrium",
+        "id": "equilibrium"
+      },
+      {
+        "word": "european",
+        "id": "european"
+      },
+      {
+        "word": "excessive",
+        "id": "excessive"
+      },
+      {
+        "word": "expansion",
+        "id": "expansion"
+      },
+      {
+        "word": "foreign",
+        "id": "foreign"
+      },
+      {
+        "word": "fragile",
+        "id": "fragile"
+      },
+      {
+        "word": "global",
+        "id": "global"
+      },
+      {
+        "word": "growth",
+        "id": "growth"
+      },
+      {
+        "word": "heritage",
+        "id": "heritage"
+      },
+      {
+        "word": "historic",
+        "id": "historic"
+      },
+      {
+        "word": "historical",
+        "id": "historical"
+      },
+      {
+        "word": "holiday",
+        "id": "holiday"
+      },
+      {
+        "word": "iconic",
+        "id": "iconic"
+      },
+      {
+        "word": "increasingly",
+        "id": "increasingly"
+      },
+      {
+        "word": "indigenous",
+        "id": "indigenous"
+      },
+      {
+        "word": "inspire",
+        "id": "inspire"
+      },
+      {
+        "word": "integrity",
+        "id": "integrity"
+      },
+      {
+        "word": "international",
+        "id": "international"
+      },
+      {
+        "word": "into",
+        "id": "into"
+      },
+      {
+        "word": "leisure",
+        "id": "leisure"
+      },
+      {
+        "word": "life",
+        "id": "life"
+      },
+      {
+        "word": "local",
+        "id": "local"
+      },
+      {
+        "word": "management",
+        "id": "management"
+      },
+      {
+        "word": "marketing",
+        "id": "marketing"
+      },
+      {
+        "word": "municipal",
+        "id": "municipal"
+      },
+      {
+        "word": "national",
+        "id": "national"
+      },
+      {
+        "word": "natural",
+        "id": "natural"
+      },
+      {
+        "word": "online",
+        "id": "online"
+      },
+      {
+        "word": "out",
+        "id": "out"
+      },
+      {
+        "word": "peripheral",
+        "id": "peripheral"
+      },
+      {
+        "word": "pioneering",
+        "id": "pioneering"
+      },
+      {
+        "word": "quota",
+        "id": "quota"
+      },
+      {
+        "word": "recipient",
+        "id": "recipient"
+      },
+      {
+        "word": "regional",
+        "id": "regional"
+      },
+      {
+        "word": "response",
+        "id": "response"
+      },
+      {
+        "word": "risk",
+        "id": "risk"
+      },
+      {
+        "word": "short",
+        "id": "short"
+      },
+      {
+        "word": "such",
+        "id": "such"
+      },
+      {
+        "word": "sustainable",
+        "id": "sustainable"
+      },
+      {
+        "word": "term",
+        "id": "term"
+      },
+      {
+        "word": "that",
+        "id": "that"
+      },
+      {
+        "word": "tourism",
+        "id": "tourism"
+      },
+      {
+        "word": "tourist",
+        "id": "tourist"
+      },
+      {
+        "word": "travel",
+        "id": "travel"
+      },
+      {
+        "word": "urban",
+        "id": "urban"
+      },
+      {
+        "word": "visitor",
+        "id": "visitor"
+      },
+      {
+        "word": "vital",
+        "id": "vital"
+      },
+      {
+        "word": "waste",
+        "id": "waste"
+      },
+      {
+        "word": "without",
+        "id": "without"
+      }
+    ],
+    "wordCount": 165
+  },
+  {
+    "id": "reading-work-01",
+    "topic": "work",
+    "topicName": "Work & Career",
+    "title": "Remote Work and the Evolution of Organizational Culture",
+    "cefr": "B2",
+    "paragraphs": [
+      "The rapid proliferation of telecommuting and hybrid employment models has permanently altered the landscape of the modern workplace. Historically, corporate productivity was closely tethered to physical presence within centralized office buildings, where managerial oversight relied on direct visual supervision. Today, organizations across diverse economic sectors are transitioning toward outcome-oriented evaluation metrics, assessing employees on tangible deliverables rather than hours spent seated at a desk.",
+      "This structural shift provides notable advantages for both enterprise employers and remote personnel. Companies can recruit skilled professionals from international talent pools without geographic constraints, while reducing overhead expenses associated with maintaining commercial real estate. Simultaneously, workers report greater autonomy, reduced commuter stress, and enhanced work-life balance, which frequently translates into elevated job satisfaction and organizational loyalty.",
+      "Nevertheless, distributed workforces present distinct managerial dilemmas. The attenuation of spontaneous interpersonal interaction can diminish social cohesion and weaken corporate identity, making long-term retention of junior staff challenging. Additionally, blurred boundaries between occupational duties and personal life elevate the risk of occupational burnout. Progressive firms address these liabilities by instituting asynchronous communication protocols and intentional in-person summits."
+    ],
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "How has managerial evaluation changed according to the passage?",
+        "options": [
+          "By inspecting physical desks daily.",
+          "By assessing tangible deliverables rather than hours seated at an office desk.",
+          "By eliminating all supervision completely.",
+          "By requiring workers to relocate closer to enterprise headquarters."
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 1 notes that organizations are 'assessing employees on tangible deliverables rather than hours spent seated at a desk'."
+      },
+      {
+        "type": "tfng",
+        "question": "Remote work has completely eliminated the danger of employee burnout.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 3 states that blurred boundaries between work and personal life actually 'elevate the risk of occupational burnout'."
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "across",
+        "id": "across"
+      },
+      {
+        "word": "address",
+        "id": "address"
+      },
+      {
+        "word": "and",
+        "id": "and"
+      },
+      {
+        "word": "autonomy",
+        "id": "autonomy"
+      },
+      {
+        "word": "balance",
+        "id": "balance"
+      },
+      {
+        "word": "between",
+        "id": "between"
+      },
+      {
+        "word": "both",
+        "id": "both"
+      },
+      {
+        "word": "can",
+        "id": "can"
+      },
+      {
+        "word": "challenging",
+        "id": "challenging"
+      },
+      {
+        "word": "closely",
+        "id": "closely"
+      },
+      {
+        "word": "cohesion",
+        "id": "cohesion"
+      },
+      {
+        "word": "commercial",
+        "id": "commercial"
+      },
+      {
+        "word": "communication",
+        "id": "communication"
+      },
+      {
+        "word": "corporate",
+        "id": "corporate"
+      },
+      {
+        "word": "desk",
+        "id": "desk"
+      },
+      {
+        "word": "diminish",
+        "id": "diminish"
+      },
+      {
+        "word": "direct",
+        "id": "direct"
+      },
+      {
+        "word": "distinct",
+        "id": "distinct"
+      },
+      {
+        "word": "diverse",
+        "id": "diverse"
+      },
+      {
+        "word": "economic",
+        "id": "economic"
+      },
+      {
+        "word": "elevate",
+        "id": "elevate"
+      },
+      {
+        "word": "employment",
+        "id": "employment"
+      },
+      {
+        "word": "estate",
+        "id": "estate"
+      },
+      {
+        "word": "evaluation",
+        "id": "evaluation"
+      },
+      {
+        "word": "frequently",
+        "id": "frequently"
+      },
+      {
+        "word": "from",
+        "id": "from"
+      },
+      {
+        "word": "identity",
+        "id": "identity"
+      },
+      {
+        "word": "international",
+        "id": "international"
+      },
+      {
+        "word": "into",
+        "id": "into"
+      },
+      {
+        "word": "job",
+        "id": "job"
+      },
+      {
+        "word": "junior",
+        "id": "junior"
+      },
+      {
+        "word": "landscape",
+        "id": "landscape"
+      },
+      {
+        "word": "life",
+        "id": "life"
+      },
+      {
+        "word": "long",
+        "id": "long"
+      },
+      {
+        "word": "making",
+        "id": "making"
+      },
+      {
+        "word": "modern",
+        "id": "modern"
+      },
+      {
+        "word": "nevertheless",
+        "id": "nevertheless"
+      },
+      {
+        "word": "notable",
+        "id": "notable"
+      },
+      {
+        "word": "office",
+        "id": "office"
+      },
+      {
+        "word": "organizational",
+        "id": "organizational"
+      },
+      {
+        "word": "outcome",
+        "id": "outcome"
+      },
+      {
+        "word": "overhead",
+        "id": "overhead"
+      },
+      {
+        "word": "oversight",
+        "id": "oversight"
+      },
+      {
+        "word": "person",
+        "id": "person"
+      },
+      {
+        "word": "personal",
+        "id": "personal"
+      },
+      {
+        "word": "physical",
+        "id": "physical"
+      },
+      {
+        "word": "presence",
+        "id": "presence"
+      },
+      {
+        "word": "present",
+        "id": "present"
+      },
+      {
+        "word": "progressive",
+        "id": "progressive"
+      },
+      {
+        "word": "rapid",
+        "id": "rapid"
+      },
+      {
+        "word": "rather",
+        "id": "rather"
+      },
+      {
+        "word": "real",
+        "id": "real"
+      },
+      {
+        "word": "recruit",
+        "id": "recruit"
+      },
+      {
+        "word": "remote",
+        "id": "remote"
+      },
+      {
+        "word": "report",
+        "id": "report"
+      },
+      {
+        "word": "retention",
+        "id": "retention"
+      },
+      {
+        "word": "risk",
+        "id": "risk"
+      },
+      {
+        "word": "satisfaction",
+        "id": "satisfaction"
+      },
+      {
+        "word": "shift",
+        "id": "shift"
+      },
+      {
+        "word": "skilled",
+        "id": "skilled"
+      },
+      {
+        "word": "social",
+        "id": "social"
+      },
+      {
+        "word": "spontaneous",
+        "id": "spontaneous"
+      },
+      {
+        "word": "staff",
+        "id": "staff"
+      },
+      {
+        "word": "stress",
+        "id": "stress"
+      },
+      {
+        "word": "structural",
+        "id": "structural"
+      },
+      {
+        "word": "talent",
+        "id": "talent"
+      },
+      {
+        "word": "term",
+        "id": "term"
+      },
+      {
+        "word": "than",
+        "id": "than"
+      },
+      {
+        "word": "these",
+        "id": "these"
+      },
+      {
+        "word": "today",
+        "id": "today"
+      },
+      {
+        "word": "toward",
+        "id": "toward"
+      },
+      {
+        "word": "visual",
+        "id": "visual"
+      },
+      {
+        "word": "weaken",
+        "id": "weaken"
+      },
+      {
+        "word": "which",
+        "id": "which"
+      },
+      {
+        "word": "with",
+        "id": "with"
+      },
+      {
+        "word": "within",
+        "id": "within"
+      },
+      {
+        "word": "without",
+        "id": "without"
+      },
+      {
+        "word": "workplace",
+        "id": "workplace"
+      }
+    ],
+    "wordCount": 178
+  }
+]

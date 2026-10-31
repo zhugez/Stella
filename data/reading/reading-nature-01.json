@@ -1,0 +1,256 @@
+{
+  "id": "reading-nature-01",
+  "topic": "nature",
+  "topicName": "Nature",
+  "title": "Rewilding and Ecological Restoration in Degraded Landscapes",
+  "cefr": "B2",
+  "paragraphs": [
+    "Conventional conservation strategies historically focused on establishing static protected reserves and preventing human encroachment upon pristine wilderness. While indispensable, passive protection often proves inadequate for rejuvenating ecosystems that have already suffered severe biodiversity attrition, soil erosion, and habitat fragmentation through intensive monoculture agriculture and deforestation.",
+    "Ecological rewilding represents an ambitious proactive paradigm that emphasizes restoring natural ecological processes and trophic cascades. A cornerstone of rewilding initiatives is the reintroduction of apex predators and keystone herbivores—such as wolves, beavers, and wild bison—into historical habitats. The reintroduction of wolves into Yellowstone National Park famously transformed the landscape: by curbing overgrazing by elk along riverbanks, vegetation rebounded, stabilizing riverbanks and enabling songbirds, beavers, and aquatic insects to flourish.",
+    "Despite widespread scientific enthusiasm, rewilding projects frequently encounter socio-political friction with agricultural stakeholders and pastoral communities who fear livestock predation and property damage. Successful rewilding consequently requires collaborative governance frameworks that compensate farmers for losses, integrate local ecological knowledge, and foster rural ecotourism economies alongside ecological revitalization."
+  ],
+  "questions": [
+    {
+      "type": "mcq",
+      "question": "How did the reintroduction of wolves into Yellowstone National Park benefit riparian vegetation?",
+      "options": [
+        "Wolves physically planted native willow trees along the riverbanks.",
+        "Wolves controlled elk overgrazing along rivers, allowing plant life to recover.",
+        "Wolves frightened away floodwaters during spring storms.",
+        "Wolves eliminated all aquatic insects from the river systems."
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 2 explains: 'by curbing overgrazing by elk along riverbanks, vegetation rebounded, stabilizing riverbanks'."
+    },
+    {
+      "type": "tfng",
+      "question": "Rewilding projects never face resistance from agricultural communities or farmers.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 3 points out that rewilding projects 'frequently encounter socio-political friction with agricultural stakeholders'."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "agricultural",
+      "id": "agricultural"
+    },
+    {
+      "word": "agriculture",
+      "id": "agriculture"
+    },
+    {
+      "word": "along",
+      "id": "along"
+    },
+    {
+      "word": "alongside",
+      "id": "alongside"
+    },
+    {
+      "word": "already",
+      "id": "already"
+    },
+    {
+      "word": "ambitious",
+      "id": "ambitious"
+    },
+    {
+      "word": "and",
+      "id": "and"
+    },
+    {
+      "word": "compensate",
+      "id": "compensate"
+    },
+    {
+      "word": "consequently",
+      "id": "consequently"
+    },
+    {
+      "word": "conservation",
+      "id": "conservation"
+    },
+    {
+      "word": "conventional",
+      "id": "conventional"
+    },
+    {
+      "word": "damage",
+      "id": "damage"
+    },
+    {
+      "word": "deforestation",
+      "id": "deforestation"
+    },
+    {
+      "word": "despite",
+      "id": "despite"
+    },
+    {
+      "word": "encounter",
+      "id": "encounter"
+    },
+    {
+      "word": "enthusiasm",
+      "id": "enthusiasm"
+    },
+    {
+      "word": "erosion",
+      "id": "erosion"
+    },
+    {
+      "word": "fear",
+      "id": "fear"
+    },
+    {
+      "word": "flourish",
+      "id": "flourish"
+    },
+    {
+      "word": "foster",
+      "id": "foster"
+    },
+    {
+      "word": "frequently",
+      "id": "frequently"
+    },
+    {
+      "word": "friction",
+      "id": "friction"
+    },
+    {
+      "word": "habitat",
+      "id": "habitat"
+    },
+    {
+      "word": "historical",
+      "id": "historical"
+    },
+    {
+      "word": "human",
+      "id": "human"
+    },
+    {
+      "word": "inadequate",
+      "id": "inadequate"
+    },
+    {
+      "word": "indispensable",
+      "id": "indispensable"
+    },
+    {
+      "word": "integrate",
+      "id": "integrate"
+    },
+    {
+      "word": "intensive",
+      "id": "intensive"
+    },
+    {
+      "word": "into",
+      "id": "into"
+    },
+    {
+      "word": "knowledge",
+      "id": "knowledge"
+    },
+    {
+      "word": "landscape",
+      "id": "landscape"
+    },
+    {
+      "word": "livestock",
+      "id": "livestock"
+    },
+    {
+      "word": "local",
+      "id": "local"
+    },
+    {
+      "word": "national",
+      "id": "national"
+    },
+    {
+      "word": "natural",
+      "id": "natural"
+    },
+    {
+      "word": "often",
+      "id": "often"
+    },
+    {
+      "word": "park",
+      "id": "park"
+    },
+    {
+      "word": "political",
+      "id": "political"
+    },
+    {
+      "word": "property",
+      "id": "property"
+    },
+    {
+      "word": "protection",
+      "id": "protection"
+    },
+    {
+      "word": "rural",
+      "id": "rural"
+    },
+    {
+      "word": "scientific",
+      "id": "scientific"
+    },
+    {
+      "word": "severe",
+      "id": "severe"
+    },
+    {
+      "word": "soil",
+      "id": "soil"
+    },
+    {
+      "word": "static",
+      "id": "static"
+    },
+    {
+      "word": "successful",
+      "id": "successful"
+    },
+    {
+      "word": "such",
+      "id": "such"
+    },
+    {
+      "word": "that",
+      "id": "that"
+    },
+    {
+      "word": "through",
+      "id": "through"
+    },
+    {
+      "word": "upon",
+      "id": "upon"
+    },
+    {
+      "word": "vegetation",
+      "id": "vegetation"
+    },
+    {
+      "word": "wild",
+      "id": "wild"
+    },
+    {
+      "word": "with",
+      "id": "with"
+    }
+  ],
+  "wordCount": 162
+}

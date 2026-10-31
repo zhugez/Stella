@@ -1,0 +1,352 @@
+{
+  "id": "reading-work-01",
+  "topic": "work",
+  "topicName": "Work & Career",
+  "title": "Remote Work and the Evolution of Organizational Culture",
+  "cefr": "B2",
+  "paragraphs": [
+    "The rapid proliferation of telecommuting and hybrid employment models has permanently altered the landscape of the modern workplace. Historically, corporate productivity was closely tethered to physical presence within centralized office buildings, where managerial oversight relied on direct visual supervision. Today, organizations across diverse economic sectors are transitioning toward outcome-oriented evaluation metrics, assessing employees on tangible deliverables rather than hours spent seated at a desk.",
+    "This structural shift provides notable advantages for both enterprise employers and remote personnel. Companies can recruit skilled professionals from international talent pools without geographic constraints, while reducing overhead expenses associated with maintaining commercial real estate. Simultaneously, workers report greater autonomy, reduced commuter stress, and enhanced work-life balance, which frequently translates into elevated job satisfaction and organizational loyalty.",
+    "Nevertheless, distributed workforces present distinct managerial dilemmas. The attenuation of spontaneous interpersonal interaction can diminish social cohesion and weaken corporate identity, making long-term retention of junior staff challenging. Additionally, blurred boundaries between occupational duties and personal life elevate the risk of occupational burnout. Progressive firms address these liabilities by instituting asynchronous communication protocols and intentional in-person summits."
+  ],
+  "questions": [
+    {
+      "type": "mcq",
+      "question": "How has managerial evaluation changed according to the passage?",
+      "options": [
+        "By inspecting physical desks daily.",
+        "By assessing tangible deliverables rather than hours seated at an office desk.",
+        "By eliminating all supervision completely.",
+        "By requiring workers to relocate closer to enterprise headquarters."
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 1 notes that organizations are 'assessing employees on tangible deliverables rather than hours spent seated at a desk'."
+    },
+    {
+      "type": "tfng",
+      "question": "Remote work has completely eliminated the danger of employee burnout.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 3 states that blurred boundaries between work and personal life actually 'elevate the risk of occupational burnout'."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "across",
+      "id": "across"
+    },
+    {
+      "word": "address",
+      "id": "address"
+    },
+    {
+      "word": "and",
+      "id": "and"
+    },
+    {
+      "word": "autonomy",
+      "id": "autonomy"
+    },
+    {
+      "word": "balance",
+      "id": "balance"
+    },
+    {
+      "word": "between",
+      "id": "between"
+    },
+    {
+      "word": "both",
+      "id": "both"
+    },
+    {
+      "word": "can",
+      "id": "can"
+    },
+    {
+      "word": "challenging",
+      "id": "challenging"
+    },
+    {
+      "word": "closely",
+      "id": "closely"
+    },
+    {
+      "word": "cohesion",
+      "id": "cohesion"
+    },
+    {
+      "word": "commercial",
+      "id": "commercial"
+    },
+    {
+      "word": "communication",
+      "id": "communication"
+    },
+    {
+      "word": "corporate",
+      "id": "corporate"
+    },
+    {
+      "word": "desk",
+      "id": "desk"
+    },
+    {
+      "word": "diminish",
+      "id": "diminish"
+    },
+    {
+      "word": "direct",
+      "id": "direct"
+    },
+    {
+      "word": "distinct",
+      "id": "distinct"
+    },
+    {
+      "word": "diverse",
+      "id": "diverse"
+    },
+    {
+      "word": "economic",
+      "id": "economic"
+    },
+    {
+      "word": "elevate",
+      "id": "elevate"
+    },
+    {
+      "word": "employment",
+      "id": "employment"
+    },
+    {
+      "word": "estate",
+      "id": "estate"
+    },
+    {
+      "word": "evaluation",
+      "id": "evaluation"
+    },
+    {
+      "word": "frequently",
+      "id": "frequently"
+    },
+    {
+      "word": "from",
+      "id": "from"
+    },
+    {
+      "word": "identity",
+      "id": "identity"
+    },
+    {
+      "word": "international",
+      "id": "international"
+    },
+    {
+      "word": "into",
+      "id": "into"
+    },
+    {
+      "word": "job",
+      "id": "job"
+    },
+    {
+      "word": "junior",
+      "id": "junior"
+    },
+    {
+      "word": "landscape",
+      "id": "landscape"
+    },
+    {
+      "word": "life",
+      "id": "life"
+    },
+    {
+      "word": "long",
+      "id": "long"
+    },
+    {
+      "word": "making",
+      "id": "making"
+    },
+    {
+      "word": "modern",
+      "id": "modern"
+    },
+    {
+      "word": "nevertheless",
+      "id": "nevertheless"
+    },
+    {
+      "word": "notable",
+      "id": "notable"
+    },
+    {
+      "word": "office",
+      "id": "office"
+    },
+    {
+      "word": "organizational",
+      "id": "organizational"
+    },
+    {
+      "word": "outcome",
+      "id": "outcome"
+    },
+    {
+      "word": "overhead",
+      "id": "overhead"
+    },
+    {
+      "word": "oversight",
+      "id": "oversight"
+    },
+    {
+      "word": "person",
+      "id": "person"
+    },
+    {
+      "word": "personal",
+      "id": "personal"
+    },
+    {
+      "word": "physical",
+      "id": "physical"
+    },
+    {
+      "word": "presence",
+      "id": "presence"
+    },
+    {
+      "word": "present",
+      "id": "present"
+    },
+    {
+      "word": "progressive",
+      "id": "progressive"
+    },
+    {
+      "word": "rapid",
+      "id": "rapid"
+    },
+    {
+      "word": "rather",
+      "id": "rather"
+    },
+    {
+      "word": "real",
+      "id": "real"
+    },
+    {
+      "word": "recruit",
+      "id": "recruit"
+    },
+    {
+      "word": "remote",
+      "id": "remote"
+    },
+    {
+      "word": "report",
+      "id": "report"
+    },
+    {
+      "word": "retention",
+      "id": "retention"
+    },
+    {
+      "word": "risk",
+      "id": "risk"
+    },
+    {
+      "word": "satisfaction",
+      "id": "satisfaction"
+    },
+    {
+      "word": "shift",
+      "id": "shift"
+    },
+    {
+      "word": "skilled",
+      "id": "skilled"
+    },
+    {
+      "word": "social",
+      "id": "social"
+    },
+    {
+      "word": "spontaneous",
+      "id": "spontaneous"
+    },
+    {
+      "word": "staff",
+      "id": "staff"
+    },
+    {
+      "word": "stress",
+      "id": "stress"
+    },
+    {
+      "word": "structural",
+      "id": "structural"
+    },
+    {
+      "word": "talent",
+      "id": "talent"
+    },
+    {
+      "word": "term",
+      "id": "term"
+    },
+    {
+      "word": "than",
+      "id": "than"
+    },
+    {
+      "word": "these",
+      "id": "these"
+    },
+    {
+      "word": "today",
+      "id": "today"
+    },
+    {
+      "word": "toward",
+      "id": "toward"
+    },
+    {
+      "word": "visual",
+      "id": "visual"
+    },
+    {
+      "word": "weaken",
+      "id": "weaken"
+    },
+    {
+      "word": "which",
+      "id": "which"
+    },
+    {
+      "word": "with",
+      "id": "with"
+    },
+    {
+      "word": "within",
+      "id": "within"
+    },
+    {
+      "word": "without",
+      "id": "without"
+    },
+    {
+      "word": "workplace",
+      "id": "workplace"
+    }
+  ],
+  "wordCount": 178
+}

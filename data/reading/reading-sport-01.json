@@ -1,0 +1,220 @@
+{
+  "id": "reading-sport-01",
+  "topic": "sport",
+  "topicName": "Sports",
+  "title": "Biomechanics and High-Performance Sports Analytics",
+  "cefr": "B2",
+  "paragraphs": [
+    "Elite athletic performance was traditionally guided by intuitive coaching philosophies and experiential observation. Over the past two decades, however, competitive sports have been revolutionized by high-resolution sports science, computational biomechanics, and kinematic tracking technologies.",
+    "Wearable micro-electromechanical sensors, high-speed stereoscopic cameras, and optical tracking systems record millisecond-by-millisecond metrics of athletic movement, including joint torque, force application angles, and cardiovascular exertion. In professional football and basketball, kinematic spatial data reveals tactical movement patterns and passing efficiencies that elude human visual tracking, allowing tactical strategists to optimize team formations mathematically.",
+    "Equally critical is the application of predictive analytics in athletic injury prevention. By continuously monitoring external physical load against internal physiological biomarkers, sports physiologists can detect acute muscle fatigue patterns before clinical structural tears or stress fractures materialize. Balancing computational precision with holistic athlete wellness represents the defining benchmark of elite sporting organizations."
+  ],
+  "questions": [
+    {
+      "type": "mcq",
+      "question": "What is one key benefit of predictive analytics in sports science mentioned in the passage?",
+      "options": [
+        "Replacing human players with autonomous androids.",
+        "Detecting acute muscle fatigue to prevent severe physical injuries before they happen.",
+        "Eliminating the need for physical exercise.",
+        "Allowing referees to cancel all outdoor tournaments."
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 3 explains that monitoring workload and biomarkers allows physiologists to 'detect acute muscle fatigue patterns before clinical structural tears or stress fractures materialize'."
+    },
+    {
+      "type": "tfng",
+      "question": "Tactical strategists in football and basketball rely exclusively on human visual tracking without any digital data.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 2 states that kinematic spatial data reveals tactical patterns that 'elude human visual tracking'."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "acute",
+      "id": "acute"
+    },
+    {
+      "word": "against",
+      "id": "against"
+    },
+    {
+      "word": "and",
+      "id": "and"
+    },
+    {
+      "word": "application",
+      "id": "application"
+    },
+    {
+      "word": "athlete",
+      "id": "athlete"
+    },
+    {
+      "word": "basketball",
+      "id": "basketball"
+    },
+    {
+      "word": "before",
+      "id": "before"
+    },
+    {
+      "word": "can",
+      "id": "can"
+    },
+    {
+      "word": "competitive",
+      "id": "competitive"
+    },
+    {
+      "word": "critical",
+      "id": "critical"
+    },
+    {
+      "word": "data",
+      "id": "data"
+    },
+    {
+      "word": "exertion",
+      "id": "exertion"
+    },
+    {
+      "word": "external",
+      "id": "external"
+    },
+    {
+      "word": "fatigue",
+      "id": "fatigue"
+    },
+    {
+      "word": "football",
+      "id": "football"
+    },
+    {
+      "word": "force",
+      "id": "force"
+    },
+    {
+      "word": "guided",
+      "id": "guided"
+    },
+    {
+      "word": "high",
+      "id": "high"
+    },
+    {
+      "word": "however",
+      "id": "however"
+    },
+    {
+      "word": "human",
+      "id": "human"
+    },
+    {
+      "word": "including",
+      "id": "including"
+    },
+    {
+      "word": "injury",
+      "id": "injury"
+    },
+    {
+      "word": "joint",
+      "id": "joint"
+    },
+    {
+      "word": "load",
+      "id": "load"
+    },
+    {
+      "word": "materialize",
+      "id": "materialize"
+    },
+    {
+      "word": "movement",
+      "id": "movement"
+    },
+    {
+      "word": "muscle",
+      "id": "muscle"
+    },
+    {
+      "word": "observation",
+      "id": "observation"
+    },
+    {
+      "word": "optical",
+      "id": "optical"
+    },
+    {
+      "word": "over",
+      "id": "over"
+    },
+    {
+      "word": "performance",
+      "id": "performance"
+    },
+    {
+      "word": "physical",
+      "id": "physical"
+    },
+    {
+      "word": "prevention",
+      "id": "prevention"
+    },
+    {
+      "word": "professional",
+      "id": "professional"
+    },
+    {
+      "word": "record",
+      "id": "record"
+    },
+    {
+      "word": "science",
+      "id": "science"
+    },
+    {
+      "word": "spatial",
+      "id": "spatial"
+    },
+    {
+      "word": "speed",
+      "id": "speed"
+    },
+    {
+      "word": "stress",
+      "id": "stress"
+    },
+    {
+      "word": "structural",
+      "id": "structural"
+    },
+    {
+      "word": "team",
+      "id": "team"
+    },
+    {
+      "word": "that",
+      "id": "that"
+    },
+    {
+      "word": "tracking",
+      "id": "tracking"
+    },
+    {
+      "word": "visual",
+      "id": "visual"
+    },
+    {
+      "word": "with",
+      "id": "with"
+    }
+  ],
+  "wordCount": 140
+}

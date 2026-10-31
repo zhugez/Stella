@@ -1,0 +1,154 @@
+[
+  {
+    "id": "reading-arts-01",
+    "topic": "arts",
+    "title": "The Reproduction of Art and Authenticity in the Digital Age",
+    "cefr": "B2",
+    "wordCount": 156,
+    "status": "draft-practice"
+  },
+  {
+    "id": "reading-city-01",
+    "topic": "city",
+    "title": "The 15-Minute City and Urban Human-Centric Design",
+    "cefr": "B2",
+    "wordCount": 161,
+    "status": "draft-practice"
+  },
+  {
+    "id": "reading-daily-01",
+    "topic": "daily",
+    "title": "Circadian Rhythms and the Architecture of Sleep",
+    "cefr": "B1",
+    "wordCount": 165,
+    "status": "draft-practice"
+  },
+  {
+    "id": "reading-economy-01",
+    "topic": "economy",
+    "title": "Monetary Policy Transmission and Central Bank Digital Currencies",
+    "cefr": "B2",
+    "wordCount": 176,
+    "status": "draft-practice"
+  },
+  {
+    "id": "reading-education-01",
+    "topic": "education",
+    "title": "The Transformation of Pedagogy in the Digital Era",
+    "cefr": "B2",
+    "wordCount": 177,
+    "status": "draft-practice"
+  },
+  {
+    "id": "reading-emotion-01",
+    "topic": "emotion",
+    "title": "Emotional Regulation and Affective Neuroscience",
+    "cefr": "B2",
+    "wordCount": 151,
+    "status": "draft-practice"
+  },
+  {
+    "id": "reading-environment-01",
+    "topic": "environment",
+    "title": "Ocean Acidification and Marine Trophic Cascades",
+    "cefr": "B2",
+    "wordCount": 198,
+    "status": "draft-practice"
+  },
+  {
+    "id": "reading-government-01",
+    "topic": "government",
+    "title": "Constitutional Checks and the Rule of Law in Contemporary Governance",
+    "cefr": "C1",
+    "wordCount": 170,
+    "status": "draft-practice"
+  },
+  {
+    "id": "reading-health-01",
+    "topic": "health",
+    "title": "The Human Gut Microbiome and Metabolic Homeostasis",
+    "cefr": "B2",
+    "wordCount": 181,
+    "status": "draft-practice"
+  },
+  {
+    "id": "reading-history-01",
+    "topic": "history",
+    "title": "The Silk Road and Cross-Eurasian Cultural Transmissions",
+    "cefr": "B2",
+    "wordCount": 162,
+    "status": "draft-practice"
+  },
+  {
+    "id": "reading-media-01",
+    "topic": "media",
+    "title": "Algorithmic Curation and the Fragmentation of the Public Sphere",
+    "cefr": "B2",
+    "wordCount": 151,
+    "status": "draft-practice"
+  },
+  {
+    "id": "reading-nature-01",
+    "topic": "nature",
+    "title": "Rewilding and Ecological Restoration in Degraded Landscapes",
+    "cefr": "B2",
+    "wordCount": 162,
+    "status": "draft-practice"
+  },
+  {
+    "id": "reading-science-01",
+    "topic": "science",
+    "title": "CRISPR-Cas9 and the Precision Revolution in Molecular Genetics",
+    "cefr": "C1",
+    "wordCount": 177,
+    "status": "draft-practice"
+  },
+  {
+    "id": "reading-society-01",
+    "topic": "society",
+    "title": "Demographic Aging and the Restructuring of Social Contracts",
+    "cefr": "B2",
+    "wordCount": 175,
+    "status": "draft-practice"
+  },
+  {
+    "id": "reading-sport-01",
+    "topic": "sport",
+    "title": "Biomechanics and High-Performance Sports Analytics",
+    "cefr": "B2",
+    "wordCount": 140,
+    "status": "draft-practice"
+  },
+  {
+    "id": "reading-technology-01",
+    "topic": "technology",
+    "title": "Autonomous Systems and Algorithmic Decision-Making",
+    "cefr": "C1",
+    "wordCount": 187,
+    "status": "draft-practice"
+  },
+  {
+    "id": "reading-thinking-01",
+    "topic": "thinking",
+    "title": "Cognitive Biases and Dual-Process Reasoning Theories",
+    "cefr": "B2",
+    "wordCount": 162,
+    "status": "draft-practice"
+  },
+  {
+    "id": "reading-travel-01",
+    "topic": "travel",
+    "title": "Overtourism and the Preservation of Heritage Ecosystems",
+    "cefr": "B2",
+    "wordCount": 165,
+    "status": "draft-practice"
+  },
+  {
+    "id": "reading-work-01",
+    "topic": "work",
+    "title": "Remote Work and the Evolution of Organizational Culture",
+    "cefr": "B2",
+    "wordCount": 178,
+    "status": "draft-practice"
+  }
+]

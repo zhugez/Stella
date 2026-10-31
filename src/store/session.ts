@@ -120,7 +120,7 @@ export function answer(atlas: Atlas, step: Step & { kind: QuizKind }, correct: b
   const { settings } = store.get();
   store.progress((p) => {
     const sess = p.session;
-    if (!sess) return p;
+    if (!sess || sess.finished || sess.pending || sess.steps[sess.index] !== step) return p;
     let next: Progress = { ...p, session: { ...sess, pending: { correct, value } } };
     const first = !(step.id in sess.graded) && !step.retry;
     if (first) {
@@ -149,10 +149,10 @@ export function answer(atlas: Atlas, step: Step & { kind: QuizKind }, correct: b
 }
 
 /** Move to the next step; `seconds` is time spent on this step, capped so idle tabs don't inflate stats. */
-export function advance(seconds: number) {
+export function advance(seconds: number, step: Step) {
   store.progress((p) => {
     const s = p.session;
-    if (!s) return p;
+    if (!s || s.finished || s.steps[s.index] !== step || (step.kind !== "intro" && !s.pending)) return p;
     const index = s.index + 1;
     const finished = index >= s.steps.length ? Date.now() : undefined;
     const next = bumpDay(p, { t: Math.max(0, Math.min(90, Math.round(seconds))) });

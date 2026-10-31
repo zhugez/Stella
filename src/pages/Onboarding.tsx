@@ -4,16 +4,17 @@ import { useAtlas } from "../atlas/context";
 import { store } from "../store/store";
 
 const LEVELS = [
+  ["A1", "Beginner", "Familiar words and simple phrases"],
   ["A2", "Elementary", "Basic day-to-day vocabulary"],
-  ["B1", "Intermediate", "Target IELTS 5.5 – 6.0"],
-  ["B2", "Upper-Int", "Target IELTS 6.5 – 7.0"],
-  ["C1", "Advanced", "Aiming for IELTS 7.5+"],
-  ["C2", "Proficient", "Aiming for IELTS 8.0+"],
+  ["B1", "Intermediate", "Everyday topics and familiar texts"],
+  ["B2", "Upper-Int", "Detailed texts and abstract topics"],
+  ["C1", "Advanced", "Complex texts and nuanced meanings"],
+  ["C2", "Proficient", "Subtle distinctions and idiomatic language"],
 ];
 
 export function Onboarding() {
   const atlas = useAtlas();
-  const [level, setLevel] = useState(1);
+  const [level, setLevel] = useState(2);
   const [goal, setGoal] = useState(10);
   const [name, setName] = useState("");
   const finish = () =>
@@ -48,7 +49,8 @@ export function Onboarding() {
               />
             </fieldset>
             <fieldset>
-              <legend>Where would you like to begin?</legend>
+              <legend>Which vocabulary feels familiar?</legend>
+              <p className="muted">Choose a starting point, not a certified level or IELTS score. You can change it later.</p>
               <div className="choice-grid">
                 {LEVELS.map(([code, label, desc], i) => (
                   <button key={code} type="button" className={`choice ${level === i ? "is-on" : ""}`} onClick={() => setLevel(i)} aria-pressed={level === i}>

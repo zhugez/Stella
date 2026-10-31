@@ -1,0 +1,240 @@
+{
+  "id": "reading-government-01",
+  "topic": "government",
+  "topicName": "Law & Politics",
+  "title": "Constitutional Checks and the Rule of Law in Contemporary Governance",
+  "cefr": "C1",
+  "paragraphs": [
+    "The foundation of democratic constitutionalism rests upon the doctrine of the separation of powers and the institutional entrenchment of the rule of law. Formulated historically to avert arbitrary tyranny, this framework distributes executive, legislative, and judicial authorities among autonomous institutions, ensuring that no solitary governing body possesses unbridled hegemony over the state apparatus.",
+    "Judicial review serves as an indispensable constitutional fulcrum within this tripartite schema. Independent courts are empowered to scrutinize legislative statutes and executive decrees against foundational constitutional benchmarks, invalidating measures that infringe upon civil liberties or exceed statutory jurisdiction. When judicial independence is compromised—through political court-packing, fiscal coercion, or legislative preemption—the institutional safeguards protecting individual citizens against state overreach deteriorate precipitously.",
+    "In an era marked by rapid emergency decrees and administrative centralization, preserving robust constitutional equilibrium requires continuous institutional vigilance. Parliaments must retain uninhibited oversight competencies over executive expenditure and surveillance mandates, while civil society and independent media act as public watchdogs. Without pervasive cultural adherence to procedural norms, statutory constitutional guarantees risk deteriorating into nominal parchment barriers."
+  ],
+  "questions": [
+    {
+      "type": "mcq",
+      "question": "What is the primary function of judicial review according to the text?",
+      "options": [
+        "To draft commercial budgets for private enterprises.",
+        "To assess statutes and executive decrees against constitutional benchmarks and invalidate unlawful measures.",
+        "To command military expeditions abroad.",
+        "To supervise parliamentary elections on behalf of political parties."
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 2 notes that independent courts 'scrutinize legislative statutes and executive decrees against foundational constitutional benchmarks, invalidating measures that infringe upon civil liberties'."
+    },
+    {
+      "type": "tfng",
+      "question": "Independent media and civil society play no significant role in monitoring government authority.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 3 notes that 'civil society and independent media act as public watchdogs'."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "act",
+      "id": "act"
+    },
+    {
+      "word": "administrative",
+      "id": "administrative"
+    },
+    {
+      "word": "against",
+      "id": "against"
+    },
+    {
+      "word": "among",
+      "id": "among"
+    },
+    {
+      "word": "and",
+      "id": "and"
+    },
+    {
+      "word": "arbitrary",
+      "id": "arbitrary"
+    },
+    {
+      "word": "body",
+      "id": "body"
+    },
+    {
+      "word": "civil",
+      "id": "civil"
+    },
+    {
+      "word": "continuous",
+      "id": "continuous"
+    },
+    {
+      "word": "court",
+      "id": "court"
+    },
+    {
+      "word": "cultural",
+      "id": "cultural"
+    },
+    {
+      "word": "democratic",
+      "id": "democratic"
+    },
+    {
+      "word": "doctrine",
+      "id": "doctrine"
+    },
+    {
+      "word": "emergency",
+      "id": "emergency"
+    },
+    {
+      "word": "equilibrium",
+      "id": "equilibrium"
+    },
+    {
+      "word": "era",
+      "id": "era"
+    },
+    {
+      "word": "exceed",
+      "id": "exceed"
+    },
+    {
+      "word": "executive",
+      "id": "executive"
+    },
+    {
+      "word": "expenditure",
+      "id": "expenditure"
+    },
+    {
+      "word": "framework",
+      "id": "framework"
+    },
+    {
+      "word": "independence",
+      "id": "independence"
+    },
+    {
+      "word": "independent",
+      "id": "independent"
+    },
+    {
+      "word": "indispensable",
+      "id": "indispensable"
+    },
+    {
+      "word": "individual",
+      "id": "individual"
+    },
+    {
+      "word": "into",
+      "id": "into"
+    },
+    {
+      "word": "judicial",
+      "id": "judicial"
+    },
+    {
+      "word": "law",
+      "id": "law"
+    },
+    {
+      "word": "marked",
+      "id": "marked"
+    },
+    {
+      "word": "media",
+      "id": "media"
+    },
+    {
+      "word": "must",
+      "id": "must"
+    },
+    {
+      "word": "over",
+      "id": "over"
+    },
+    {
+      "word": "oversight",
+      "id": "oversight"
+    },
+    {
+      "word": "political",
+      "id": "political"
+    },
+    {
+      "word": "public",
+      "id": "public"
+    },
+    {
+      "word": "rapid",
+      "id": "rapid"
+    },
+    {
+      "word": "retain",
+      "id": "retain"
+    },
+    {
+      "word": "review",
+      "id": "review"
+    },
+    {
+      "word": "risk",
+      "id": "risk"
+    },
+    {
+      "word": "robust",
+      "id": "robust"
+    },
+    {
+      "word": "rule",
+      "id": "rule"
+    },
+    {
+      "word": "society",
+      "id": "society"
+    },
+    {
+      "word": "solitary",
+      "id": "solitary"
+    },
+    {
+      "word": "state",
+      "id": "state"
+    },
+    {
+      "word": "that",
+      "id": "that"
+    },
+    {
+      "word": "through",
+      "id": "through"
+    },
+    {
+      "word": "tyranny",
+      "id": "tyranny"
+    },
+    {
+      "word": "upon",
+      "id": "upon"
+    },
+    {
+      "word": "when",
+      "id": "when"
+    },
+    {
+      "word": "within",
+      "id": "within"
+    },
+    {
+      "word": "without",
+      "id": "without"
+    }
+  ],
+  "wordCount": 170
+}

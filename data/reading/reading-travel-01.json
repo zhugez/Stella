@@ -1,0 +1,308 @@
+{
+  "id": "reading-travel-01",
+  "topic": "travel",
+  "topicName": "Travel",
+  "title": "Overtourism and the Preservation of Heritage Ecosystems",
+  "cefr": "B2",
+  "paragraphs": [
+    "The democratization of international aviation and the expansion of online booking platforms have stimulated phenomenal growth in global leisure travel. While tourism constitutes a vital driver of employment, infrastructure development, and foreign currency inflows for recipient economies, unregulated tourist influxes increasingly imperil the cultural integrity and ecological equilibrium of iconic destinations.",
+    "Historic European metropolises such as Venice, Amsterdam, and Dubrovnik have become epicenters of overtourism. Excessive visitor density strains municipal waste management systems, degrades fragile historical masonry, and prices local residents out of residential neighborhoods as apartments convert into short-term holiday rentals. Consequently, urban centers risk transforming into sterile tourist enclaves devoid of indigenous neighborhood life.",
+    "In response, municipal authorities and national tourism ministries are pioneering sustainable stewardship models. Strategies encompass implementing day-tripper entry levies, establishing dynamic quota systems for congested archaeological heritage zones, and actively marketing peripheral regional attractions to disperse geographic footfall. Sustainable tourism seeks an equilibrium where economic benefits enrich local communities without eroding the natural and cultural assets that inspire visitation."
+  ],
+  "questions": [
+    {
+      "type": "mcq",
+      "question": "What is one direct negative consequence of converting residential apartments into holiday rentals?",
+      "options": [
+        "Local residents are priced out of housing in their historic neighborhoods.",
+        "Municipal tax revenues drop to zero immediately.",
+        "Aviation companies go bankrupt.",
+        "Archaeological sites become completely empty."
+      ],
+      "answer": 0,
+      "explanation": "Paragraph 2 notes that holiday rental conversion 'prices local residents out of residential neighborhoods'."
+    },
+    {
+      "type": "tfng",
+      "question": "Marketing peripheral regional attractions helps alleviate congestion in major tourist hubs.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 0,
+      "explanation": "Paragraph 3 highlights 'actively marketing peripheral regional attractions to disperse geographic footfall'."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "and",
+      "id": "and"
+    },
+    {
+      "word": "aviation",
+      "id": "aviation"
+    },
+    {
+      "word": "become",
+      "id": "become"
+    },
+    {
+      "word": "booking",
+      "id": "booking"
+    },
+    {
+      "word": "congested",
+      "id": "congested"
+    },
+    {
+      "word": "consequently",
+      "id": "consequently"
+    },
+    {
+      "word": "convert",
+      "id": "convert"
+    },
+    {
+      "word": "cultural",
+      "id": "cultural"
+    },
+    {
+      "word": "currency",
+      "id": "currency"
+    },
+    {
+      "word": "day",
+      "id": "day"
+    },
+    {
+      "word": "development",
+      "id": "development"
+    },
+    {
+      "word": "disperse",
+      "id": "disperse"
+    },
+    {
+      "word": "driver",
+      "id": "driver"
+    },
+    {
+      "word": "dynamic",
+      "id": "dynamic"
+    },
+    {
+      "word": "economic",
+      "id": "economic"
+    },
+    {
+      "word": "employment",
+      "id": "employment"
+    },
+    {
+      "word": "enrich",
+      "id": "enrich"
+    },
+    {
+      "word": "entry",
+      "id": "entry"
+    },
+    {
+      "word": "equilibrium",
+      "id": "equilibrium"
+    },
+    {
+      "word": "european",
+      "id": "european"
+    },
+    {
+      "word": "excessive",
+      "id": "excessive"
+    },
+    {
+      "word": "expansion",
+      "id": "expansion"
+    },
+    {
+      "word": "foreign",
+      "id": "foreign"
+    },
+    {
+      "word": "fragile",
+      "id": "fragile"
+    },
+    {
+      "word": "global",
+      "id": "global"
+    },
+    {
+      "word": "growth",
+      "id": "growth"
+    },
+    {
+      "word": "heritage",
+      "id": "heritage"
+    },
+    {
+      "word": "historic",
+      "id": "historic"
+    },
+    {
+      "word": "historical",
+      "id": "historical"
+    },
+    {
+      "word": "holiday",
+      "id": "holiday"
+    },
+    {
+      "word": "iconic",
+      "id": "iconic"
+    },
+    {
+      "word": "increasingly",
+      "id": "increasingly"
+    },
+    {
+      "word": "indigenous",
+      "id": "indigenous"
+    },
+    {
+      "word": "inspire",
+      "id": "inspire"
+    },
+    {
+      "word": "integrity",
+      "id": "integrity"
+    },
+    {
+      "word": "international",
+      "id": "international"
+    },
+    {
+      "word": "into",
+      "id": "into"
+    },
+    {
+      "word": "leisure",
+      "id": "leisure"
+    },
+    {
+      "word": "life",
+      "id": "life"
+    },
+    {
+      "word": "local",
+      "id": "local"
+    },
+    {
+      "word": "management",
+      "id": "management"
+    },
+    {
+      "word": "marketing",
+      "id": "marketing"
+    },
+    {
+      "word": "municipal",
+      "id": "municipal"
+    },
+    {
+      "word": "national",
+      "id": "national"
+    },
+    {
+      "word": "natural",
+      "id": "natural"
+    },
+    {
+      "word": "online",
+      "id": "online"
+    },
+    {
+      "word": "out",
+      "id": "out"
+    },
+    {
+      "word": "peripheral",
+      "id": "peripheral"
+    },
+    {
+      "word": "pioneering",
+      "id": "pioneering"
+    },
+    {
+      "word": "quota",
+      "id": "quota"
+    },
+    {
+      "word": "recipient",
+      "id": "recipient"
+    },
+    {
+      "word": "regional",
+      "id": "regional"
+    },
+    {
+      "word": "response",
+      "id": "response"
+    },
+    {
+      "word": "risk",
+      "id": "risk"
+    },
+    {
+      "word": "short",
+      "id": "short"
+    },
+    {
+      "word": "such",
+      "id": "such"
+    },
+    {
+      "word": "sustainable",
+      "id": "sustainable"
+    },
+    {
+      "word": "term",
+      "id": "term"
+    },
+    {
+      "word": "that",
+      "id": "that"
+    },
+    {
+      "word": "tourism",
+      "id": "tourism"
+    },
+    {
+      "word": "tourist",
+      "id": "tourist"
+    },
+    {
+      "word": "travel",
+      "id": "travel"
+    },
+    {
+      "word": "urban",
+      "id": "urban"
+    },
+    {
+      "word": "visitor",
+      "id": "visitor"
+    },
+    {
+      "word": "vital",
+      "id": "vital"
+    },
+    {
+      "word": "waste",
+      "id": "waste"
+    },
+    {
+      "word": "without",
+      "id": "without"
+    }
+  ],
+  "wordCount": 165
+}

@@ -1,0 +1,344 @@
+{
+  "id": "reading-education-01",
+  "topic": "education",
+  "topicName": "Education",
+  "title": "The Transformation of Pedagogy in the Digital Era",
+  "cefr": "B2",
+  "paragraphs": [
+    "Traditional models of formal education long emphasized rote memorization and passive reception of lecture material within a rigid classroom structure. Under this paradigm, the teacher operated as the sole repository of knowledge, dispensing facts that students were expected to reproduce during standardized examinations. However, contemporary cognitive science has demonstrated that meaningful learning requires active engagement, critical inquiry, and iterative feedback.",
+    "The integration of digital technology into tertiary and secondary institutions has accelerated this pedagogical transformation. Digital libraries, adaptive learning algorithms, and collaborative virtual workspaces allow learners to navigate complex syllabi at an individualized pace. Furthermore, the flipped classroom approach reverses conventional instruction by presenting theoretical concepts through asynchronous multimedia lectures prior to class, reserving physical sessions for analytical debates and practical problem-solving.",
+    "Despite these advancements, educational researchers caution that technological infrastructure alone cannot guarantee academic attainment. Disparities in access to high-speed internet and hardware—frequently termed the digital divide—threaten to exacerbate socioeconomic inequalities among pupils. Consequently, educators and policymakers must balance digital innovation with equitable curricular reform, ensuring that pedagogical goals drive technological adoption rather than commercial expediency."
+  ],
+  "questions": [
+    {
+      "type": "mcq",
+      "question": "What is the primary characteristic of the flipped classroom model described in the passage?",
+      "options": [
+        "Students spend all classroom time taking standardized tests.",
+        "Theoretical concepts are studied before class so classroom time is devoted to discussion.",
+        "Teachers stop giving lectures and rely entirely on rote memorization.",
+        "Pupils no longer require any physical classroom attendance."
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 2 explains that flipped classrooms present theoretical concepts via asynchronous lectures before class, reserving physical sessions for analytical debates."
+    },
+    {
+      "type": "tfng",
+      "question": "Digital infrastructure by itself is sufficient to ensure high academic performance.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 3 explicitly states: 'technological infrastructure alone cannot guarantee academic attainment'."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "academic",
+      "id": "academic"
+    },
+    {
+      "word": "access",
+      "id": "access"
+    },
+    {
+      "word": "active",
+      "id": "active"
+    },
+    {
+      "word": "adoption",
+      "id": "adoption"
+    },
+    {
+      "word": "allow",
+      "id": "allow"
+    },
+    {
+      "word": "alone",
+      "id": "alone"
+    },
+    {
+      "word": "among",
+      "id": "among"
+    },
+    {
+      "word": "and",
+      "id": "and"
+    },
+    {
+      "word": "approach",
+      "id": "approach"
+    },
+    {
+      "word": "balance",
+      "id": "balance"
+    },
+    {
+      "word": "caution",
+      "id": "caution"
+    },
+    {
+      "word": "class",
+      "id": "class"
+    },
+    {
+      "word": "classroom",
+      "id": "classroom"
+    },
+    {
+      "word": "cognitive",
+      "id": "cognitive"
+    },
+    {
+      "word": "commercial",
+      "id": "commercial"
+    },
+    {
+      "word": "complex",
+      "id": "complex"
+    },
+    {
+      "word": "consequently",
+      "id": "consequently"
+    },
+    {
+      "word": "contemporary",
+      "id": "contemporary"
+    },
+    {
+      "word": "conventional",
+      "id": "conventional"
+    },
+    {
+      "word": "critical",
+      "id": "critical"
+    },
+    {
+      "word": "despite",
+      "id": "despite"
+    },
+    {
+      "word": "digital",
+      "id": "digital"
+    },
+    {
+      "word": "divide",
+      "id": "divide"
+    },
+    {
+      "word": "drive",
+      "id": "drive"
+    },
+    {
+      "word": "during",
+      "id": "during"
+    },
+    {
+      "word": "education",
+      "id": "education"
+    },
+    {
+      "word": "equitable",
+      "id": "equitable"
+    },
+    {
+      "word": "feedback",
+      "id": "feedback"
+    },
+    {
+      "word": "formal",
+      "id": "formal"
+    },
+    {
+      "word": "frequently",
+      "id": "frequently"
+    },
+    {
+      "word": "furthermore",
+      "id": "furthermore"
+    },
+    {
+      "word": "guarantee",
+      "id": "guarantee"
+    },
+    {
+      "word": "hardware",
+      "id": "hardware"
+    },
+    {
+      "word": "high",
+      "id": "high"
+    },
+    {
+      "word": "however",
+      "id": "however"
+    },
+    {
+      "word": "innovation",
+      "id": "innovation"
+    },
+    {
+      "word": "inquiry",
+      "id": "inquiry"
+    },
+    {
+      "word": "instruction",
+      "id": "instruction"
+    },
+    {
+      "word": "internet",
+      "id": "internet"
+    },
+    {
+      "word": "into",
+      "id": "into"
+    },
+    {
+      "word": "knowledge",
+      "id": "knowledge"
+    },
+    {
+      "word": "learning",
+      "id": "learning"
+    },
+    {
+      "word": "lecture",
+      "id": "lecture"
+    },
+    {
+      "word": "long",
+      "id": "long"
+    },
+    {
+      "word": "material",
+      "id": "material"
+    },
+    {
+      "word": "must",
+      "id": "must"
+    },
+    {
+      "word": "navigate",
+      "id": "navigate"
+    },
+    {
+      "word": "pace",
+      "id": "pace"
+    },
+    {
+      "word": "physical",
+      "id": "physical"
+    },
+    {
+      "word": "practical",
+      "id": "practical"
+    },
+    {
+      "word": "prior",
+      "id": "prior"
+    },
+    {
+      "word": "problem",
+      "id": "problem"
+    },
+    {
+      "word": "rather",
+      "id": "rather"
+    },
+    {
+      "word": "reception",
+      "id": "reception"
+    },
+    {
+      "word": "reform",
+      "id": "reform"
+    },
+    {
+      "word": "reproduce",
+      "id": "reproduce"
+    },
+    {
+      "word": "science",
+      "id": "science"
+    },
+    {
+      "word": "secondary",
+      "id": "secondary"
+    },
+    {
+      "word": "sole",
+      "id": "sole"
+    },
+    {
+      "word": "speed",
+      "id": "speed"
+    },
+    {
+      "word": "structure",
+      "id": "structure"
+    },
+    {
+      "word": "teacher",
+      "id": "teacher"
+    },
+    {
+      "word": "technological",
+      "id": "technological"
+    },
+    {
+      "word": "technology",
+      "id": "technology"
+    },
+    {
+      "word": "tertiary",
+      "id": "tertiary"
+    },
+    {
+      "word": "than",
+      "id": "than"
+    },
+    {
+      "word": "that",
+      "id": "that"
+    },
+    {
+      "word": "these",
+      "id": "these"
+    },
+    {
+      "word": "threaten",
+      "id": "threaten"
+    },
+    {
+      "word": "through",
+      "id": "through"
+    },
+    {
+      "word": "traditional",
+      "id": "traditional"
+    },
+    {
+      "word": "transformation",
+      "id": "transformation"
+    },
+    {
+      "word": "under",
+      "id": "under"
+    },
+    {
+      "word": "virtual",
+      "id": "virtual"
+    },
+    {
+      "word": "with",
+      "id": "with"
+    },
+    {
+      "word": "within",
+      "id": "within"
+    }
+  ],
+  "wordCount": 177
+}

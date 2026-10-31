@@ -1,0 +1,248 @@
+{
+  "id": "reading-health-01",
+  "topic": "health",
+  "topicName": "Health",
+  "title": "The Human Gut Microbiome and Metabolic Homeostasis",
+  "cefr": "B2",
+  "paragraphs": [
+    "In recent decades, biomedical research has unveiled the critical role played by the human gastrointestinal microbiome in maintaining systemic health and physiological homeostasis. The human digestive tract harbors trillions of symbiotic microorganisms, predominantly bacteria, whose aggregate genomic repertoire exceeds the human genome by several orders of magnitude. Rather than operating as passive commensals, these microbes actively modulate nutrient absorption, immune system calibration, and neuroendocrine signaling.",
+    "A primary mechanism through which gut microbiota influence human metabolism is the anaerobic fermentation of non-digestible dietary fibers into short-chain fatty acids (SCFAs), notably acetate, propionate, and butyrate. These metabolic byproducts serve as essential energy substrates for colonocytes and function as potent signaling ligands, regulating glucose metabolism, lipid accumulation, and systemic anti-inflammatory cascades throughout peripheral tissues.",
+    "Perturbations in microbial diversity and community composition—clinically designated as dysbiosis—are strongly implicated in an array of chronic non-communicable diseases. Diets saturated with ultra-processed foods, chronic psychological stress, and the indiscriminate administration of broad-spectrum antibiotics severely diminish protective bacterial taxa. Restoring symbiotic microbial equilibrium through tailored prebiotic nutrition, probiotic therapies, and fecal microbiota transplantation represents an advancing frontier in personalized medicine."
+  ],
+  "questions": [
+    {
+      "type": "mcq",
+      "question": "What are short-chain fatty acids produced from in the human gastrointestinal tract?",
+      "options": [
+        "From the breakdown of artificial food colorings.",
+        "From the anaerobic fermentation of non-digestible dietary fibers.",
+        "Directly synthesized from bone marrow cells.",
+        "From synthetic vitamin supplements."
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 2 highlights 'anaerobic fermentation of non-digestible dietary fibers into short-chain fatty acids (SCFAs)'."
+    },
+    {
+      "type": "tfng",
+      "question": "Diets rich in ultra-processed foods help enhance protective gut bacterial diversity.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 3 explicitly states that ultra-processed diets 'severely diminish protective bacterial taxa'."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "accumulation",
+      "id": "accumulation"
+    },
+    {
+      "word": "administration",
+      "id": "administration"
+    },
+    {
+      "word": "and",
+      "id": "and"
+    },
+    {
+      "word": "antibiotics",
+      "id": "antibiotics"
+    },
+    {
+      "word": "array",
+      "id": "array"
+    },
+    {
+      "word": "chain",
+      "id": "chain"
+    },
+    {
+      "word": "chronic",
+      "id": "chronic"
+    },
+    {
+      "word": "community",
+      "id": "community"
+    },
+    {
+      "word": "composition",
+      "id": "composition"
+    },
+    {
+      "word": "critical",
+      "id": "critical"
+    },
+    {
+      "word": "diminish",
+      "id": "diminish"
+    },
+    {
+      "word": "diversity",
+      "id": "diversity"
+    },
+    {
+      "word": "energy",
+      "id": "energy"
+    },
+    {
+      "word": "equilibrium",
+      "id": "equilibrium"
+    },
+    {
+      "word": "essential",
+      "id": "essential"
+    },
+    {
+      "word": "fatty",
+      "id": "fatty"
+    },
+    {
+      "word": "fermentation",
+      "id": "fermentation"
+    },
+    {
+      "word": "function",
+      "id": "function"
+    },
+    {
+      "word": "health",
+      "id": "health"
+    },
+    {
+      "word": "human",
+      "id": "human"
+    },
+    {
+      "word": "immune",
+      "id": "immune"
+    },
+    {
+      "word": "influence",
+      "id": "influence"
+    },
+    {
+      "word": "into",
+      "id": "into"
+    },
+    {
+      "word": "magnitude",
+      "id": "magnitude"
+    },
+    {
+      "word": "mechanism",
+      "id": "mechanism"
+    },
+    {
+      "word": "medicine",
+      "id": "medicine"
+    },
+    {
+      "word": "nutrition",
+      "id": "nutrition"
+    },
+    {
+      "word": "peripheral",
+      "id": "peripheral"
+    },
+    {
+      "word": "potent",
+      "id": "potent"
+    },
+    {
+      "word": "primary",
+      "id": "primary"
+    },
+    {
+      "word": "protective",
+      "id": "protective"
+    },
+    {
+      "word": "rather",
+      "id": "rather"
+    },
+    {
+      "word": "recent",
+      "id": "recent"
+    },
+    {
+      "word": "repertoire",
+      "id": "repertoire"
+    },
+    {
+      "word": "research",
+      "id": "research"
+    },
+    {
+      "word": "role",
+      "id": "role"
+    },
+    {
+      "word": "serve",
+      "id": "serve"
+    },
+    {
+      "word": "several",
+      "id": "several"
+    },
+    {
+      "word": "severely",
+      "id": "severely"
+    },
+    {
+      "word": "short",
+      "id": "short"
+    },
+    {
+      "word": "spectrum",
+      "id": "spectrum"
+    },
+    {
+      "word": "stress",
+      "id": "stress"
+    },
+    {
+      "word": "strongly",
+      "id": "strongly"
+    },
+    {
+      "word": "system",
+      "id": "system"
+    },
+    {
+      "word": "than",
+      "id": "than"
+    },
+    {
+      "word": "these",
+      "id": "these"
+    },
+    {
+      "word": "through",
+      "id": "through"
+    },
+    {
+      "word": "throughout",
+      "id": "throughout"
+    },
+    {
+      "word": "tract",
+      "id": "tract"
+    },
+    {
+      "word": "which",
+      "id": "which"
+    },
+    {
+      "word": "whose",
+      "id": "whose"
+    },
+    {
+      "word": "with",
+      "id": "with"
+    }
+  ],
+  "wordCount": 181
+}

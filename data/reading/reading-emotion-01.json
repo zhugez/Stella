@@ -1,0 +1,232 @@
+{
+  "id": "reading-emotion-01",
+  "topic": "emotion",
+  "topicName": "Emotions",
+  "title": "Emotional Regulation and Affective Neuroscience",
+  "cefr": "B2",
+  "paragraphs": [
+    "Emotions are complex psycho-physiological reactions triggered by internal evaluations and external environmental stimuli. While evolutionary biologists perceive primary affective states—such as fear, anger, and joy—as adaptive survival heuristics, modern living requires sophisticated regulatory capabilities to modulate intense emotional reactions within intricate social structures.",
+    "Affective neuroscience highlights the dynamic reciprocal dialogue between subcortical limbic circuits (such as the amygdala) and higher-order prefrontal cortical structures. Cognitive reappraisal—a cornerstone strategy in cognitive behavioral therapy—involves reframing the subjective meaning of an adverse event prior to an automatic emotional response. Neuroimaging studies confirm that successful reappraisal elevates prefrontal activation while dampening autonomic limbic reactivity.",
+    "Conversely, habitual expressive suppression—inwardly burying overt signs of emotional distress—exacts significant physiological and psychological costs. Individuals who rely chronically on emotional suppression exhibit elevated vascular cardiovascular strain and experience diminished subjective well-being. Cultivating emotional granularity and mindfulness practices empowers individuals to label emotional states accurately without falling victim to reactive behavioral impulses."
+  ],
+  "questions": [
+    {
+      "type": "mcq",
+      "question": "What does cognitive reappraisal involve in psychological therapy?",
+      "options": [
+        "Suppressing all emotions until they permanently disappear.",
+        "Reframing the subjective meaning of an adverse event to modulate the response.",
+        "Avoiding all social interaction with other human beings.",
+        "Taking pharmaceutical tranquilizers every morning."
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 2 defines cognitive reappraisal as 'reframing the subjective meaning of an adverse event prior to an automatic emotional response'."
+    },
+    {
+      "type": "tfng",
+      "question": "Habitual expressive suppression of emotions improves cardiovascular health.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 3 notes that individuals who chronically suppress emotions 'exhibit elevated vascular cardiovascular strain'."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "adverse",
+      "id": "adverse"
+    },
+    {
+      "word": "and",
+      "id": "and"
+    },
+    {
+      "word": "anger",
+      "id": "anger"
+    },
+    {
+      "word": "automatic",
+      "id": "automatic"
+    },
+    {
+      "word": "being",
+      "id": "being"
+    },
+    {
+      "word": "between",
+      "id": "between"
+    },
+    {
+      "word": "cognitive",
+      "id": "cognitive"
+    },
+    {
+      "word": "complex",
+      "id": "complex"
+    },
+    {
+      "word": "confirm",
+      "id": "confirm"
+    },
+    {
+      "word": "conversely",
+      "id": "conversely"
+    },
+    {
+      "word": "dialogue",
+      "id": "dialogue"
+    },
+    {
+      "word": "distress",
+      "id": "distress"
+    },
+    {
+      "word": "dynamic",
+      "id": "dynamic"
+    },
+    {
+      "word": "emotional",
+      "id": "emotional"
+    },
+    {
+      "word": "environmental",
+      "id": "environmental"
+    },
+    {
+      "word": "event",
+      "id": "event"
+    },
+    {
+      "word": "exhibit",
+      "id": "exhibit"
+    },
+    {
+      "word": "experience",
+      "id": "experience"
+    },
+    {
+      "word": "external",
+      "id": "external"
+    },
+    {
+      "word": "fear",
+      "id": "fear"
+    },
+    {
+      "word": "habitual",
+      "id": "habitual"
+    },
+    {
+      "word": "intense",
+      "id": "intense"
+    },
+    {
+      "word": "joy",
+      "id": "joy"
+    },
+    {
+      "word": "label",
+      "id": "label"
+    },
+    {
+      "word": "living",
+      "id": "living"
+    },
+    {
+      "word": "meaning",
+      "id": "meaning"
+    },
+    {
+      "word": "modern",
+      "id": "modern"
+    },
+    {
+      "word": "order",
+      "id": "order"
+    },
+    {
+      "word": "primary",
+      "id": "primary"
+    },
+    {
+      "word": "prior",
+      "id": "prior"
+    },
+    {
+      "word": "reappraisal",
+      "id": "reappraisal"
+    },
+    {
+      "word": "rely",
+      "id": "rely"
+    },
+    {
+      "word": "response",
+      "id": "response"
+    },
+    {
+      "word": "significant",
+      "id": "significant"
+    },
+    {
+      "word": "social",
+      "id": "social"
+    },
+    {
+      "word": "sophisticated",
+      "id": "sophisticated"
+    },
+    {
+      "word": "strain",
+      "id": "strain"
+    },
+    {
+      "word": "strategy",
+      "id": "strategy"
+    },
+    {
+      "word": "subjective",
+      "id": "subjective"
+    },
+    {
+      "word": "successful",
+      "id": "successful"
+    },
+    {
+      "word": "such",
+      "id": "such"
+    },
+    {
+      "word": "suppression",
+      "id": "suppression"
+    },
+    {
+      "word": "survival",
+      "id": "survival"
+    },
+    {
+      "word": "that",
+      "id": "that"
+    },
+    {
+      "word": "therapy",
+      "id": "therapy"
+    },
+    {
+      "word": "victim",
+      "id": "victim"
+    },
+    {
+      "word": "within",
+      "id": "within"
+    },
+    {
+      "word": "without",
+      "id": "without"
+    }
+  ],
+  "wordCount": 151
+}

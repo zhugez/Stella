@@ -1,0 +1,248 @@
+{
+  "id": "reading-history-01",
+  "topic": "history",
+  "topicName": "History",
+  "title": "The Silk Road and Cross-Eurasian Cultural Transmissions",
+  "cefr": "B2",
+  "paragraphs": [
+    "Rather than denoting a single paved thoroughfare, the Silk Road comprised an intricate network of overland trade conduits and maritime routes traversing the Eurasian landmass from China to the Mediterranean basin. Originating during the Han Dynasty, these commercial arteries bridged disparate civilizations across arid deserts, high mountain passes, and maritime straits.",
+    "While luxury commodities such as raw silk, porcelain, spices, and precious jade stimulated the initial mercantile incentives, the most profound and enduring consequence of the Silk Road was cross-cultural and intellectual transmission. Oases cities along the Tarim Basin blossomed into multilingual cosmopolises where Buddhist philosophy, Nestorian Christianity, and Zoroastrianism intersected, fostering remarkable syncretic art and scholarly translations.",
+    "Furthermore, foundational technological innovations traversed these pathways, reshaping European and Middle Eastern development. The westward dissemination of papermaking, gunpowder formulation, sericulture, and the magnetic compass laid the material groundwork for the Renaissance and the Age of Discovery. Studying the Silk Road illuminates how human progress has consistently flourished through transcontinental dialogue and commercial interdependence."
+  ],
+  "questions": [
+    {
+      "type": "mcq",
+      "question": "According to the passage, what was the most enduring consequence of the Silk Road?",
+      "options": [
+        "The permanent exhaustion of world gold reserves.",
+        "Cross-cultural and intellectual transmission across disparate civilizations.",
+        "The complete destruction of all desert oasis cities.",
+        "The ban of all maritime merchant fleets."
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 2 states that 'the most profound and enduring consequence of the Silk Road was cross-cultural and intellectual transmission'."
+    },
+    {
+      "type": "tfng",
+      "question": "Technological innovations such as papermaking and the magnetic compass traveled westward along these trade routes.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 0,
+      "explanation": "Paragraph 3 notes 'The westward dissemination of papermaking, gunpowder formulation, sericulture, and the magnetic compass'."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "across",
+      "id": "across"
+    },
+    {
+      "word": "age",
+      "id": "age"
+    },
+    {
+      "word": "along",
+      "id": "along"
+    },
+    {
+      "word": "and",
+      "id": "and"
+    },
+    {
+      "word": "art",
+      "id": "art"
+    },
+    {
+      "word": "basin",
+      "id": "basin"
+    },
+    {
+      "word": "china",
+      "id": "china"
+    },
+    {
+      "word": "commercial",
+      "id": "commercial"
+    },
+    {
+      "word": "consequence",
+      "id": "consequence"
+    },
+    {
+      "word": "cross",
+      "id": "cross"
+    },
+    {
+      "word": "cultural",
+      "id": "cultural"
+    },
+    {
+      "word": "development",
+      "id": "development"
+    },
+    {
+      "word": "dialogue",
+      "id": "dialogue"
+    },
+    {
+      "word": "discovery",
+      "id": "discovery"
+    },
+    {
+      "word": "during",
+      "id": "during"
+    },
+    {
+      "word": "eastern",
+      "id": "eastern"
+    },
+    {
+      "word": "european",
+      "id": "european"
+    },
+    {
+      "word": "formulation",
+      "id": "formulation"
+    },
+    {
+      "word": "from",
+      "id": "from"
+    },
+    {
+      "word": "furthermore",
+      "id": "furthermore"
+    },
+    {
+      "word": "gunpowder",
+      "id": "gunpowder"
+    },
+    {
+      "word": "high",
+      "id": "high"
+    },
+    {
+      "word": "human",
+      "id": "human"
+    },
+    {
+      "word": "initial",
+      "id": "initial"
+    },
+    {
+      "word": "intellectual",
+      "id": "intellectual"
+    },
+    {
+      "word": "into",
+      "id": "into"
+    },
+    {
+      "word": "luxury",
+      "id": "luxury"
+    },
+    {
+      "word": "material",
+      "id": "material"
+    },
+    {
+      "word": "mediterranean",
+      "id": "mediterranean"
+    },
+    {
+      "word": "middle",
+      "id": "middle"
+    },
+    {
+      "word": "most",
+      "id": "most"
+    },
+    {
+      "word": "mountain",
+      "id": "mountain"
+    },
+    {
+      "word": "network",
+      "id": "network"
+    },
+    {
+      "word": "philosophy",
+      "id": "philosophy"
+    },
+    {
+      "word": "precious",
+      "id": "precious"
+    },
+    {
+      "word": "profound",
+      "id": "profound"
+    },
+    {
+      "word": "progress",
+      "id": "progress"
+    },
+    {
+      "word": "rather",
+      "id": "rather"
+    },
+    {
+      "word": "raw",
+      "id": "raw"
+    },
+    {
+      "word": "remarkable",
+      "id": "remarkable"
+    },
+    {
+      "word": "renaissance",
+      "id": "renaissance"
+    },
+    {
+      "word": "road",
+      "id": "road"
+    },
+    {
+      "word": "silk",
+      "id": "silk"
+    },
+    {
+      "word": "single",
+      "id": "single"
+    },
+    {
+      "word": "such",
+      "id": "such"
+    },
+    {
+      "word": "technological",
+      "id": "technological"
+    },
+    {
+      "word": "than",
+      "id": "than"
+    },
+    {
+      "word": "these",
+      "id": "these"
+    },
+    {
+      "word": "through",
+      "id": "through"
+    },
+    {
+      "word": "trade",
+      "id": "trade"
+    },
+    {
+      "word": "transmission",
+      "id": "transmission"
+    },
+    {
+      "word": "westward",
+      "id": "westward"
+    }
+  ],
+  "wordCount": 162
+}

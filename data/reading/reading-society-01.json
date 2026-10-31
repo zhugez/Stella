@@ -1,0 +1,308 @@
+{
+  "id": "reading-society-01",
+  "topic": "society",
+  "topicName": "Society",
+  "title": "Demographic Aging and the Restructuring of Social Contracts",
+  "cefr": "B2",
+  "paragraphs": [
+    "Many developed and middle-income nations are undergoing an unprecedented demographic transition characterized by declining fertility rates and rising life expectancies. As post-war generations attain retirement age, the old-age dependency ratio—the proportion of elderly dependents relative to the active working-age population—is expanding substantially. This shift imposes acute fiscal strains on pay-as-you-go pension architectures, public healthcare systems, and long-term geriatric infrastructure.",
+    "Economists warn that a shrinking domestic labor supply can dampen aggregate economic growth and tax revenues unless accompanied by robust productivity enhancements. Furthermore, municipal communities face shrinking service provision in rural localities as younger cohorts migrate to urban metropolises in pursuit of employment opportunities. Consequently, public discourse increasingly debates the longevity of prevailing social contracts and the necessity of raising statutory retirement thresholds.",
+    "Navigating this demographic reality necessitates multi-faceted structural policy interventions. Encouraging active aging through continuous professional retraining, incentivizing voluntary deferred retirement, and investing in assistive robotics can maintain workforce productivity. Concurrently, nations are revamping family support policies, subsidizing early childhood education, and modernizing immigration regimes to replenish the labor force and sustain intergenerational solidarity."
+  ],
+  "questions": [
+    {
+      "type": "mcq",
+      "question": "What is the old-age dependency ratio as defined in the reading passage?",
+      "options": [
+        "The number of schools divided by the number of hospitals.",
+        "The proportion of elderly dependents relative to the active working-age population.",
+        "The total financial debt of retired individuals.",
+        "The percentage of urban citizens compared to rural workers."
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 1 defines it as 'the proportion of elderly dependents relative to the active working-age population'."
+    },
+    {
+      "type": "tfng",
+      "question": "Immigration policies are one of the strategies utilized to replenish shrinking labor forces.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 0,
+      "explanation": "Paragraph 3 states nations are 'modernizing immigration regimes to replenish the labor force'."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "active",
+      "id": "active"
+    },
+    {
+      "word": "acute",
+      "id": "acute"
+    },
+    {
+      "word": "age",
+      "id": "age"
+    },
+    {
+      "word": "and",
+      "id": "and"
+    },
+    {
+      "word": "attain",
+      "id": "attain"
+    },
+    {
+      "word": "can",
+      "id": "can"
+    },
+    {
+      "word": "childhood",
+      "id": "childhood"
+    },
+    {
+      "word": "consequently",
+      "id": "consequently"
+    },
+    {
+      "word": "continuous",
+      "id": "continuous"
+    },
+    {
+      "word": "discourse",
+      "id": "discourse"
+    },
+    {
+      "word": "domestic",
+      "id": "domestic"
+    },
+    {
+      "word": "early",
+      "id": "early"
+    },
+    {
+      "word": "economic",
+      "id": "economic"
+    },
+    {
+      "word": "education",
+      "id": "education"
+    },
+    {
+      "word": "elderly",
+      "id": "elderly"
+    },
+    {
+      "word": "employment",
+      "id": "employment"
+    },
+    {
+      "word": "face",
+      "id": "face"
+    },
+    {
+      "word": "family",
+      "id": "family"
+    },
+    {
+      "word": "force",
+      "id": "force"
+    },
+    {
+      "word": "furthermore",
+      "id": "furthermore"
+    },
+    {
+      "word": "growth",
+      "id": "growth"
+    },
+    {
+      "word": "immigration",
+      "id": "immigration"
+    },
+    {
+      "word": "income",
+      "id": "income"
+    },
+    {
+      "word": "increasingly",
+      "id": "increasingly"
+    },
+    {
+      "word": "labor",
+      "id": "labor"
+    },
+    {
+      "word": "life",
+      "id": "life"
+    },
+    {
+      "word": "long",
+      "id": "long"
+    },
+    {
+      "word": "maintain",
+      "id": "maintain"
+    },
+    {
+      "word": "many",
+      "id": "many"
+    },
+    {
+      "word": "middle",
+      "id": "middle"
+    },
+    {
+      "word": "migrate",
+      "id": "migrate"
+    },
+    {
+      "word": "municipal",
+      "id": "municipal"
+    },
+    {
+      "word": "necessity",
+      "id": "necessity"
+    },
+    {
+      "word": "old",
+      "id": "old"
+    },
+    {
+      "word": "pay",
+      "id": "pay"
+    },
+    {
+      "word": "policy",
+      "id": "policy"
+    },
+    {
+      "word": "population",
+      "id": "population"
+    },
+    {
+      "word": "post",
+      "id": "post"
+    },
+    {
+      "word": "prevailing",
+      "id": "prevailing"
+    },
+    {
+      "word": "professional",
+      "id": "professional"
+    },
+    {
+      "word": "proportion",
+      "id": "proportion"
+    },
+    {
+      "word": "provision",
+      "id": "provision"
+    },
+    {
+      "word": "public",
+      "id": "public"
+    },
+    {
+      "word": "pursuit",
+      "id": "pursuit"
+    },
+    {
+      "word": "ratio",
+      "id": "ratio"
+    },
+    {
+      "word": "reality",
+      "id": "reality"
+    },
+    {
+      "word": "relative",
+      "id": "relative"
+    },
+    {
+      "word": "robust",
+      "id": "robust"
+    },
+    {
+      "word": "rural",
+      "id": "rural"
+    },
+    {
+      "word": "service",
+      "id": "service"
+    },
+    {
+      "word": "shift",
+      "id": "shift"
+    },
+    {
+      "word": "social",
+      "id": "social"
+    },
+    {
+      "word": "solidarity",
+      "id": "solidarity"
+    },
+    {
+      "word": "structural",
+      "id": "structural"
+    },
+    {
+      "word": "supply",
+      "id": "supply"
+    },
+    {
+      "word": "support",
+      "id": "support"
+    },
+    {
+      "word": "tax",
+      "id": "tax"
+    },
+    {
+      "word": "term",
+      "id": "term"
+    },
+    {
+      "word": "that",
+      "id": "that"
+    },
+    {
+      "word": "through",
+      "id": "through"
+    },
+    {
+      "word": "transition",
+      "id": "transition"
+    },
+    {
+      "word": "unless",
+      "id": "unless"
+    },
+    {
+      "word": "unprecedented",
+      "id": "unprecedented"
+    },
+    {
+      "word": "urban",
+      "id": "urban"
+    },
+    {
+      "word": "voluntary",
+      "id": "voluntary"
+    },
+    {
+      "word": "war",
+      "id": "war"
+    },
+    {
+      "word": "warn",
+      "id": "warn"
+    }
+  ],
+  "wordCount": 175
+}

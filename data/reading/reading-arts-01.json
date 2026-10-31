@@ -1,0 +1,280 @@
+{
+  "id": "reading-arts-01",
+  "topic": "arts",
+  "topicName": "Arts",
+  "title": "The Reproduction of Art and Authenticity in the Digital Age",
+  "cefr": "B2",
+  "paragraphs": [
+    "In his seminal 1935 philosophical essay, German cultural theorist Walter Benjamin examined how mechanical reproduction stripped original artworks of their singular aura—their unique existence within a specific physical space and historical lineage. When an oil masterpiece is reproduced across millions of postcards, posters, and photographic prints, its tactile presence and venerated authenticity are altered.",
+    "In the contemporary epoch of digital distribution and generative synthesis, this query has acquired acute urgency. High-resolution digital scans, immersive virtual galleries, and non-fungible digital tokens (NFTs) introduce unprecedented questions regarding creative ownership, artistic provenance, and aesthetic value. An original canvas retains physical brushstrokes, chemical aging, and archival authenticity that cannot be fully replicated across pixel arrays.",
+    "Simultaneously, democratized digital tools have emancipated artistic production from elite institutions. Independent musicians, graphic illustrators, and experimental animators can reach global audiences without corporate patronage or gallery representation. Rather than annihilating artistic expression, the digital medium redefines the boundaries of creative authorship and community participation."
+  ],
+  "questions": [
+    {
+      "type": "mcq",
+      "question": "What did Walter Benjamin argue was lost when artworks were mechanically reproduced?",
+      "options": [
+        "Their financial value on auction floors.",
+        "Their singular 'aura' and unique physical-historical presence.",
+        "Their physical colors completely faded to monochrome.",
+        "Their legal protection under patent statutes."
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 1 explains that mechanical reproduction 'stripped original artworks of their singular aura—their unique existence within a specific physical space and historical lineage'."
+    },
+    {
+      "type": "tfng",
+      "question": "Digital distribution tools have made it harder for independent artists to reach global audiences.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 3 explains that independent musicians and illustrators 'can reach global audiences without corporate patronage'."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "across",
+      "id": "across"
+    },
+    {
+      "word": "acute",
+      "id": "acute"
+    },
+    {
+      "word": "aesthetic",
+      "id": "aesthetic"
+    },
+    {
+      "word": "and",
+      "id": "and"
+    },
+    {
+      "word": "artistic",
+      "id": "artistic"
+    },
+    {
+      "word": "can",
+      "id": "can"
+    },
+    {
+      "word": "canvas",
+      "id": "canvas"
+    },
+    {
+      "word": "chemical",
+      "id": "chemical"
+    },
+    {
+      "word": "community",
+      "id": "community"
+    },
+    {
+      "word": "contemporary",
+      "id": "contemporary"
+    },
+    {
+      "word": "corporate",
+      "id": "corporate"
+    },
+    {
+      "word": "creative",
+      "id": "creative"
+    },
+    {
+      "word": "cultural",
+      "id": "cultural"
+    },
+    {
+      "word": "digital",
+      "id": "digital"
+    },
+    {
+      "word": "distribution",
+      "id": "distribution"
+    },
+    {
+      "word": "epoch",
+      "id": "epoch"
+    },
+    {
+      "word": "essay",
+      "id": "essay"
+    },
+    {
+      "word": "existence",
+      "id": "existence"
+    },
+    {
+      "word": "experimental",
+      "id": "experimental"
+    },
+    {
+      "word": "expression",
+      "id": "expression"
+    },
+    {
+      "word": "from",
+      "id": "from"
+    },
+    {
+      "word": "fully",
+      "id": "fully"
+    },
+    {
+      "word": "gallery",
+      "id": "gallery"
+    },
+    {
+      "word": "german",
+      "id": "german"
+    },
+    {
+      "word": "global",
+      "id": "global"
+    },
+    {
+      "word": "graphic",
+      "id": "graphic"
+    },
+    {
+      "word": "high",
+      "id": "high"
+    },
+    {
+      "word": "historical",
+      "id": "historical"
+    },
+    {
+      "word": "independent",
+      "id": "independent"
+    },
+    {
+      "word": "introduce",
+      "id": "introduce"
+    },
+    {
+      "word": "masterpiece",
+      "id": "masterpiece"
+    },
+    {
+      "word": "mechanical",
+      "id": "mechanical"
+    },
+    {
+      "word": "medium",
+      "id": "medium"
+    },
+    {
+      "word": "oil",
+      "id": "oil"
+    },
+    {
+      "word": "original",
+      "id": "original"
+    },
+    {
+      "word": "ownership",
+      "id": "ownership"
+    },
+    {
+      "word": "participation",
+      "id": "participation"
+    },
+    {
+      "word": "philosophical",
+      "id": "philosophical"
+    },
+    {
+      "word": "photographic",
+      "id": "photographic"
+    },
+    {
+      "word": "physical",
+      "id": "physical"
+    },
+    {
+      "word": "presence",
+      "id": "presence"
+    },
+    {
+      "word": "production",
+      "id": "production"
+    },
+    {
+      "word": "query",
+      "id": "query"
+    },
+    {
+      "word": "rather",
+      "id": "rather"
+    },
+    {
+      "word": "reach",
+      "id": "reach"
+    },
+    {
+      "word": "regarding",
+      "id": "regarding"
+    },
+    {
+      "word": "representation",
+      "id": "representation"
+    },
+    {
+      "word": "reproduction",
+      "id": "reproduction"
+    },
+    {
+      "word": "space",
+      "id": "space"
+    },
+    {
+      "word": "specific",
+      "id": "specific"
+    },
+    {
+      "word": "synthesis",
+      "id": "synthesis"
+    },
+    {
+      "word": "than",
+      "id": "than"
+    },
+    {
+      "word": "that",
+      "id": "that"
+    },
+    {
+      "word": "unique",
+      "id": "unique"
+    },
+    {
+      "word": "unprecedented",
+      "id": "unprecedented"
+    },
+    {
+      "word": "value",
+      "id": "value"
+    },
+    {
+      "word": "virtual",
+      "id": "virtual"
+    },
+    {
+      "word": "when",
+      "id": "when"
+    },
+    {
+      "word": "within",
+      "id": "within"
+    },
+    {
+      "word": "without",
+      "id": "without"
+    }
+  ],
+  "wordCount": 156
+}

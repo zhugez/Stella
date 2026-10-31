@@ -3337,6 +3337,15 @@ code {
   color: var(--terra);
 }
 
+.reading-questions { margin-top: 32px; display: grid; gap: 20px; }
+.reading-question { min-width: 0; border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+.reading-question legend { font-weight: 600; padding: 0 6px; }
+.reading-option { display: flex; align-items: baseline; gap: 10px; padding: 10px 0; cursor: pointer; }
+.reading-option input { flex-shrink: 0; accent-color: var(--terra); }
+.reading-feedback { margin-top: 12px; color: var(--ink-2); }
+.reading .passage-body { max-width: 75ch; }
+.reading .passage-actions { flex-wrap: wrap; }
+
 /* ---------- onboarding ---------- */
 
 .onboard {

@@ -1,0 +1,292 @@
+{
+  "id": "reading-environment-01",
+  "topic": "environment",
+  "topicName": "Environment",
+  "title": "Ocean Acidification and Marine Trophic Cascades",
+  "cefr": "B2",
+  "paragraphs": [
+    "Anthropogenic carbon dioxide emissions pose an existential threat not solely to atmospheric equilibrium, but equally to marine chemistry through the process of ocean acidification. Approximately thirty percent of carbon dioxide released into the atmosphere by fossil fuel combustion is absorbed by the surface layers of global oceans. When carbon dioxide dissolves in seawater, it reacts with water molecules to form carbonic acid, which subsequently dissociates into hydrogen ions, precipitating a measurable decline in seawater pH.",
+    "The heightened concentration of hydrogen ions exerts a direct chemical toll on marine calcifying organisms, including corals, mollusks, and microscopic pteropods. These species rely on abundant carbonate ions to construct their protective calcium carbonate skeletons and shells. As ambient hydrogen ions bind available carbonate to form bicarbonate, the saturation state of aragonite and calcite plummets, causing existing shells to dissolve and impeding the calcification rates of juvenile organisms.",
+    "Because pteropods and zooplankton constitute foundational trophic links in pelagic food webs, their numerical decline cascades upward through higher ecological tiers. Commercial fisheries reliant on salmon, cod, and herring face severe biomass reductions as foundational prey species dwindle. Preserving marine biodiversity consequently demands rapid global decarbonization alongside localized conservation initiatives to protect fragile coastal refugia."
+  ],
+  "questions": [
+    {
+      "type": "mcq",
+      "question": "What chemical compound is initially formed when carbon dioxide dissolves in ocean seawater?",
+      "options": [
+        "Methane gas",
+        "Carbonic acid",
+        "Calcium carbonate",
+        "Pure nitrogen"
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 1 explains that 'When carbon dioxide dissolves in seawater, it reacts with water molecules to form carbonic acid'."
+    },
+    {
+      "type": "tfng",
+      "question": "Declines in pteropod populations can negatively affect commercial fish species like salmon and cod.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 0,
+      "explanation": "Paragraph 3 confirms that because pteropods are foundational prey, commercial fisheries reliant on salmon, cod, and herring face severe biomass reductions."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "abundant",
+      "id": "abundant"
+    },
+    {
+      "word": "acid",
+      "id": "acid"
+    },
+    {
+      "word": "alongside",
+      "id": "alongside"
+    },
+    {
+      "word": "and",
+      "id": "and"
+    },
+    {
+      "word": "approximately",
+      "id": "approximately"
+    },
+    {
+      "word": "atmosphere",
+      "id": "atmosphere"
+    },
+    {
+      "word": "atmospheric",
+      "id": "atmospheric"
+    },
+    {
+      "word": "available",
+      "id": "available"
+    },
+    {
+      "word": "because",
+      "id": "because"
+    },
+    {
+      "word": "but",
+      "id": "but"
+    },
+    {
+      "word": "calcium",
+      "id": "calcium"
+    },
+    {
+      "word": "carbon",
+      "id": "carbon"
+    },
+    {
+      "word": "chemical",
+      "id": "chemical"
+    },
+    {
+      "word": "chemistry",
+      "id": "chemistry"
+    },
+    {
+      "word": "cod",
+      "id": "cod"
+    },
+    {
+      "word": "combustion",
+      "id": "combustion"
+    },
+    {
+      "word": "commercial",
+      "id": "commercial"
+    },
+    {
+      "word": "concentration",
+      "id": "concentration"
+    },
+    {
+      "word": "consequently",
+      "id": "consequently"
+    },
+    {
+      "word": "conservation",
+      "id": "conservation"
+    },
+    {
+      "word": "constitute",
+      "id": "constitute"
+    },
+    {
+      "word": "construct",
+      "id": "construct"
+    },
+    {
+      "word": "decline",
+      "id": "decline"
+    },
+    {
+      "word": "direct",
+      "id": "direct"
+    },
+    {
+      "word": "dwindle",
+      "id": "dwindle"
+    },
+    {
+      "word": "equilibrium",
+      "id": "equilibrium"
+    },
+    {
+      "word": "existing",
+      "id": "existing"
+    },
+    {
+      "word": "face",
+      "id": "face"
+    },
+    {
+      "word": "food",
+      "id": "food"
+    },
+    {
+      "word": "form",
+      "id": "form"
+    },
+    {
+      "word": "fossil",
+      "id": "fossil"
+    },
+    {
+      "word": "fragile",
+      "id": "fragile"
+    },
+    {
+      "word": "fuel",
+      "id": "fuel"
+    },
+    {
+      "word": "global",
+      "id": "global"
+    },
+    {
+      "word": "hydrogen",
+      "id": "hydrogen"
+    },
+    {
+      "word": "including",
+      "id": "including"
+    },
+    {
+      "word": "into",
+      "id": "into"
+    },
+    {
+      "word": "marine",
+      "id": "marine"
+    },
+    {
+      "word": "numerical",
+      "id": "numerical"
+    },
+    {
+      "word": "ocean",
+      "id": "ocean"
+    },
+    {
+      "word": "percent",
+      "id": "percent"
+    },
+    {
+      "word": "prey",
+      "id": "prey"
+    },
+    {
+      "word": "process",
+      "id": "process"
+    },
+    {
+      "word": "protect",
+      "id": "protect"
+    },
+    {
+      "word": "protective",
+      "id": "protective"
+    },
+    {
+      "word": "rapid",
+      "id": "rapid"
+    },
+    {
+      "word": "reliant",
+      "id": "reliant"
+    },
+    {
+      "word": "rely",
+      "id": "rely"
+    },
+    {
+      "word": "salmon",
+      "id": "salmon"
+    },
+    {
+      "word": "severe",
+      "id": "severe"
+    },
+    {
+      "word": "solely",
+      "id": "solely"
+    },
+    {
+      "word": "species",
+      "id": "species"
+    },
+    {
+      "word": "state",
+      "id": "state"
+    },
+    {
+      "word": "surface",
+      "id": "surface"
+    },
+    {
+      "word": "these",
+      "id": "these"
+    },
+    {
+      "word": "thirty",
+      "id": "thirty"
+    },
+    {
+      "word": "threat",
+      "id": "threat"
+    },
+    {
+      "word": "through",
+      "id": "through"
+    },
+    {
+      "word": "toll",
+      "id": "toll"
+    },
+    {
+      "word": "water",
+      "id": "water"
+    },
+    {
+      "word": "when",
+      "id": "when"
+    },
+    {
+      "word": "which",
+      "id": "which"
+    },
+    {
+      "word": "with",
+      "id": "with"
+    }
+  ],
+  "wordCount": 198
+}

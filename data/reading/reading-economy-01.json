@@ -1,0 +1,308 @@
+{
+  "id": "reading-economy-01",
+  "topic": "economy",
+  "topicName": "Economy",
+  "title": "Monetary Policy Transmission and Central Bank Digital Currencies",
+  "cefr": "B2",
+  "paragraphs": [
+    "Central banks occupy a pivotal role in macroeconomic stability, employing interest rate adjustments and open market asset purchases to steer price inflation and employment levels toward optimal targets. In conventional financial architectures, commercial banking intermediaries transmit central bank monetary policy adjustments into the broader real economy by altering the lending rates charged on retail mortgages and corporate credit lines.",
+    "The secular decline of physical cash transactions and the emergence of decentralized cryptocurrencies have prompted monetary authorities worldwide to explore Central Bank Digital Currencies (CBDCs). Unlike private decentralized tokens characterized by pronounced speculative volatility, a CBDC represents a sovereign, digital liability of the central bank, conferring the security and legal tender status of sovereign currency within an electronic payment architecture.",
+    "Proponents argue that CBDCs can streamline cross-border remittances, curtail domestic transaction costs, and enhance financial inclusion for unbanked demographics. Nevertheless, economists articulate valid apprehensions regarding commercial bank disintermediation. If depositors transfer retail deposits en masse into direct central bank accounts during systemic liquidity distress, private banks could experience severe deposit flight, destabilizing credit origination throughout commercial markets."
+  ],
+  "questions": [
+    {
+      "type": "mcq",
+      "question": "How do CBDCs fundamentally differ from private decentralized cryptocurrencies according to the text?",
+      "options": [
+        "CBDCs are only printed on physical paper tokens.",
+        "CBDCs represent a direct sovereign liability of the central bank with legal tender status.",
+        "CBDCs are completely unregulated and anonymous.",
+        "CBDCs cannot be used for electronic payments."
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 2 highlights that 'a CBDC represents a sovereign, digital liability of the central bank, conferring the security and legal tender status of sovereign currency'."
+    },
+    {
+      "type": "tfng",
+      "question": "Commercial banks could face deposit flight if consumers shift their funds to direct central bank accounts.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 0,
+      "explanation": "Paragraph 3 explains that if depositors transfer retail deposits en masse into direct central bank accounts, private banks could experience severe deposit flight."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "and",
+      "id": "and"
+    },
+    {
+      "word": "architecture",
+      "id": "architecture"
+    },
+    {
+      "word": "argue",
+      "id": "argue"
+    },
+    {
+      "word": "articulate",
+      "id": "articulate"
+    },
+    {
+      "word": "bank",
+      "id": "bank"
+    },
+    {
+      "word": "border",
+      "id": "border"
+    },
+    {
+      "word": "can",
+      "id": "can"
+    },
+    {
+      "word": "cash",
+      "id": "cash"
+    },
+    {
+      "word": "central",
+      "id": "central"
+    },
+    {
+      "word": "commercial",
+      "id": "commercial"
+    },
+    {
+      "word": "conventional",
+      "id": "conventional"
+    },
+    {
+      "word": "corporate",
+      "id": "corporate"
+    },
+    {
+      "word": "credit",
+      "id": "credit"
+    },
+    {
+      "word": "cross",
+      "id": "cross"
+    },
+    {
+      "word": "currency",
+      "id": "currency"
+    },
+    {
+      "word": "decline",
+      "id": "decline"
+    },
+    {
+      "word": "deposit",
+      "id": "deposit"
+    },
+    {
+      "word": "digital",
+      "id": "digital"
+    },
+    {
+      "word": "direct",
+      "id": "direct"
+    },
+    {
+      "word": "distress",
+      "id": "distress"
+    },
+    {
+      "word": "domestic",
+      "id": "domestic"
+    },
+    {
+      "word": "during",
+      "id": "during"
+    },
+    {
+      "word": "economy",
+      "id": "economy"
+    },
+    {
+      "word": "electronic",
+      "id": "electronic"
+    },
+    {
+      "word": "employment",
+      "id": "employment"
+    },
+    {
+      "word": "enhance",
+      "id": "enhance"
+    },
+    {
+      "word": "experience",
+      "id": "experience"
+    },
+    {
+      "word": "explore",
+      "id": "explore"
+    },
+    {
+      "word": "financial",
+      "id": "financial"
+    },
+    {
+      "word": "flight",
+      "id": "flight"
+    },
+    {
+      "word": "inflation",
+      "id": "inflation"
+    },
+    {
+      "word": "interest",
+      "id": "interest"
+    },
+    {
+      "word": "into",
+      "id": "into"
+    },
+    {
+      "word": "legal",
+      "id": "legal"
+    },
+    {
+      "word": "liability",
+      "id": "liability"
+    },
+    {
+      "word": "market",
+      "id": "market"
+    },
+    {
+      "word": "nevertheless",
+      "id": "nevertheless"
+    },
+    {
+      "word": "occupy",
+      "id": "occupy"
+    },
+    {
+      "word": "open",
+      "id": "open"
+    },
+    {
+      "word": "optimal",
+      "id": "optimal"
+    },
+    {
+      "word": "payment",
+      "id": "payment"
+    },
+    {
+      "word": "physical",
+      "id": "physical"
+    },
+    {
+      "word": "policy",
+      "id": "policy"
+    },
+    {
+      "word": "price",
+      "id": "price"
+    },
+    {
+      "word": "private",
+      "id": "private"
+    },
+    {
+      "word": "rate",
+      "id": "rate"
+    },
+    {
+      "word": "real",
+      "id": "real"
+    },
+    {
+      "word": "regarding",
+      "id": "regarding"
+    },
+    {
+      "word": "retail",
+      "id": "retail"
+    },
+    {
+      "word": "role",
+      "id": "role"
+    },
+    {
+      "word": "security",
+      "id": "security"
+    },
+    {
+      "word": "severe",
+      "id": "severe"
+    },
+    {
+      "word": "stability",
+      "id": "stability"
+    },
+    {
+      "word": "status",
+      "id": "status"
+    },
+    {
+      "word": "steer",
+      "id": "steer"
+    },
+    {
+      "word": "streamline",
+      "id": "streamline"
+    },
+    {
+      "word": "tender",
+      "id": "tender"
+    },
+    {
+      "word": "that",
+      "id": "that"
+    },
+    {
+      "word": "throughout",
+      "id": "throughout"
+    },
+    {
+      "word": "toward",
+      "id": "toward"
+    },
+    {
+      "word": "transaction",
+      "id": "transaction"
+    },
+    {
+      "word": "transfer",
+      "id": "transfer"
+    },
+    {
+      "word": "transmit",
+      "id": "transmit"
+    },
+    {
+      "word": "unlike",
+      "id": "unlike"
+    },
+    {
+      "word": "valid",
+      "id": "valid"
+    },
+    {
+      "word": "within",
+      "id": "within"
+    },
+    {
+      "word": "worldwide",
+      "id": "worldwide"
+    }
+  ],
+  "wordCount": 176
+}
