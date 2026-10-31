@@ -1,0 +1,231 @@
+\documentclass[conference,10pt]{IEEEtran}
+\usepackage{fontspec}
+\setmainfont{Liberation Serif}
+\setsansfont{Liberation Sans}
+\setmonofont{DejaVu Sans Mono}
+\usepackage[main=vietnamese,english]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,array,tabularx}
+\usepackage{url}
+\usepackage{enumitem}
+\usepackage{balance}
+\setlist[itemize]{leftmargin=*,nosep,topsep=2pt}
+\setlist[enumerate]{leftmargin=*,nosep,topsep=2pt}
+\renewcommand{\arraystretch}{1.12}
+\begin{document}
+\title{Từ ghi nhớ từ vựng đến đọc hiểu văn bản mới:\\Thiết kế học tập CEFR--IELTS dựa trên bằng chứng cho Stella}
+\author{\IEEEauthorblockN{Cần bổ sung thông tin tác giả}\IEEEauthorblockA{Nghiên cứu độc lập và thiết kế phần mềm mã nguồn mở\\Bản thảo --- ngày 31 tháng 10 năm 2026}}
+\maketitle
+\begin{abstract}
+Nhiều ứng dụng từ vựng đếm được số từ đã học nhưng chưa xác định liệu người học có hiểu văn bản chưa từng gặp hay không. Stella cho thấy khoảng cách đó. Mã nguồn hiện có cung cấp 7.298 mục từ, nhãn trình độ thuộc Khung tham chiếu ngôn ngữ chung châu Âu (CEFR), câu ví dụ theo chủ đề và lịch ôn tập cách quãng. Tuy nhiên, màn hình Reading chọn sáu câu ví dụ độc lập thay vì bài đọc liên kết. Chúng tôi tổng hợp nghiên cứu đã công bố và kiểm tra mã nguồn để đề xuất kiến trúc học đọc có thể kiểm chứng. Chúng tôi tách bằng chứng về đọc mở rộng, chú giải từ, truy xuất kiến thức, ôn tập phân tán và phản hồi khỏi các giả thuyết triển khai trong ứng dụng. Thiết kế gồm bài đọc phân trình độ, đo hiểu bài ở lần trả lời đầu, phản hồi gắn với chứng cứ văn bản, ôn từ theo ngữ cảnh và hai hồ sơ đánh giá riêng cho CEFR và IELTS Academic. Chúng tôi quy định quy trình kiểm định nội dung và thí nghiệm dùng bài đọc mới tương đương độ khó, có phép đo trì hoãn. Nghiên cứu chưa thử nghiệm trên người học và không tuyên bố Stella đã cải thiện kết quả. Đóng góp chính là đặc tả thiết kế có căn cứ cùng các điều kiện có thể bác bỏ giả thuyết hiệu quả.
+\end{abstract}
+\begin{IEEEkeywords}
+học ngôn ngữ thứ hai, đọc hiểu, CEFR, IELTS Academic, truy xuất kiến thức
+\end{IEEEkeywords}
+
+\section{Giới thiệu}
+Người học có thể nhớ nghĩa của \emph{however} nhưng vẫn không nhận ra từ này đảo chiều lập luận giữa hai đoạn văn. Một thẻ từ vựng đo một loại kiến thức; một bài đọc yêu cầu người học tích hợp nhiều loại kiến thức trong giới hạn thời gian và sự chú ý. Đánh đồng hai kết quả ấy dẫn đến sai lầm thiết kế. Vấn đề xuất hiện trực tiếp trong ứng dụng mã nguồn mở Stella \cite{stellarepo}. Atlas hỗ trợ từ vựng có chỉ mục, ví dụ, phát âm và ôn tập cách quãng; còn trang Reading hiện lắp ghép các câu ví dụ cùng chủ đề. Những câu đó hữu ích khi gặp từ trong ngữ cảnh, nhưng riêng chúng chưa đủ để đặt câu hỏi đáng tin cậy về luận điểm của tác giả qua nhiều đoạn văn.
+
+Bài báo đặt ra ba câu hỏi: \emph{(RQ1)} Những cơ chế học nào có bằng chứng liên quan đến đọc hiểu và học từ vựng ngôn ngữ thứ hai? \emph{(RQ2)} Làm thế nào kết hợp các cơ chế đó vào Stella mà không đánh đồng trí nhớ từ vựng, năng lực đọc hiểu và hiệu quả làm bài thi? \emph{(RQ3)} Một phép đánh giá trong tương lai cần làm gì để kiểm tra khả năng chuyển giao sang văn bản mới? Chúng tôi tách biệt hành vi đã quan sát trong mã nguồn, kết quả thực nghiệm đã công bố và quyết định sản phẩm được đề xuất. Một giao diện hợp lý chưa phải bằng chứng rằng người học tiến bộ.
+
+\section{Tư liệu và Phương pháp}
+\subsection{Phạm vi tổng hợp bằng chứng}
+Đây là \emph{tổng quan tường thuật có chủ đích}, không phải tổng quan hệ thống theo PRISMA. Nguồn được chọn theo mức độ liên quan đến đọc mở rộng, học từ trong ngữ cảnh, truy xuất kiến thức, ôn tập phân tán, hiểu cấu trúc văn bản và phản hồi có thể hành động. Chúng tôi ưu tiên phân tích tổng hợp và tổng quan bình duyệt, sau đó dùng nghiên cứu thực nghiệm để làm rõ cơ chế; tài liệu chính thức của CEFR và IELTS dùng để xác định phạm vi của hai hệ đánh giá \cite{sangers2025,yanagisawa2020,roediger2006,coe2020,ieltsformat}. Bài báo không tuyên bố đã tìm hết tài liệu hay thực hiện phép gộp hiệu ứng mới. Các tỷ lệ và cỡ hiệu ứng chỉ có ý nghĩa trong quần thể và phép đo của nghiên cứu gốc.
+
+Quy trình chuyển bằng chứng thành quyết định thiết kế gồm bốn bước. Trước hết, xác định kết quả mà nghiên cứu đã đo. Tiếp theo, mô tả hành động người học có thể kích hoạt cơ chế đó. Sau đó, xác định thành phần phần mềm cần xây dựng. Cuối cùng, quy định kết quả có thể kiểm định và giới hạn diễn giải. Các ngưỡng và trọng số thích ứng được trình bày như cấu hình thử nghiệm, không phải kết luận khoa học.
+
+\subsection{Kiểm tra mã nguồn}
+Trường hợp nghiên cứu là repository công khai \texttt{zhugez/Stella}, được đọc ngày 31/10/2026 \cite{stellarepo}. Các tệp kiểm tra chính gồm \texttt{src/pages/Reading.tsx}, \texttt{src/lib/drills.ts}, \texttt{src/atlas/data.ts}, \texttt{src/atlas/context.tsx}, \texttt{src/store/store.ts}, \texttt{src/store/session.ts} và \texttt{src/store/srs.ts}. Đây là kiểm tra tĩnh; nó không chứng minh lỗi lúc chạy và không đo lưu lượng production. Mọi nguy cơ suy luận từ code cần được xác minh bằng test riêng.
+
+\section{Khoảng cách Chức năng trong Stella}
+\subsection{Reading hiện là hoạt động khám phá câu}
+Component Reading lọc từ theo topic, xáo trộn danh sách, tải trước các mục từ rồi chuyển sang \texttt{passage(..., 6)}. Trong \texttt{drills.ts}, hàm đó giữ các mục có câu ví dụ đầu tiên dài hơn 30 ký tự và có thể làm nổi bật từ mục tiêu, sau đó lấy tối đa sáu mục. Giao diện cũng nói rõ sáu câu chỉ cùng chủ đề, không tạo thành một câu chuyện \cite{stellarepo}. Vì vậy, chức năng hiện tại nên được gọi là \emph{Sentence Exploration}; nó chưa phải một bài đánh giá đọc hiểu nhiều đoạn.
+
+Hệ quả rất cụ thể. Người dùng có thể tiếp xúc từ vựng và mở thẻ Atlas, nhưng hệ thống chưa có đối tượng passage lưu trữ ranh giới đoạn, bộ câu hỏi, khóa đáp án, vị trí bằng chứng, lần trả lời đầu tiên hay kết quả đọc hiểu. Do đó, hoạt động Reading hiện tại chưa thể dùng để kết luận rằng người dùng tiến bộ ở kỹ năng suy luận, nhận diện cấu trúc lập luận hay đọc học thuật.
+
+\subsection{Tận dụng hạ tầng và tôn trọng ranh giới dữ liệu}
+Stella có 7.298 từ được lập chỉ mục, kèm metadata CEFR và topic. Nội dung mục từ được tải theo chunk; store hiện có lưu thẻ ôn tập, tiến độ và hỗ trợ xuất/nhập bản sao lưu \cite{stellarepo}. Nhờ vậy, chức năng tra từ tại chỗ có thể tái sử dụng Atlas mà không cần xây từ điển mới. Tuy nhiên, \texttt{Progress} hiện phục vụ thẻ từ, thống kê hằng ngày, bài gõ và phiên ôn từ. Nhét câu trả lời Reading vào cùng cấu trúc phiên sẽ làm mờ ý nghĩa của điểm số và gây khó cho migration. Chúng tôi đề xuất lưu attempt của Reading trong domain riêng, đồng thời cho phép từ trong passage tham chiếu tới ID Atlas.
+
+\section{Kết quả Tổng hợp và Hàm ý Thiết kế}
+\subsection{Lượng đọc và tính mạch lạc của văn bản}
+Sangers và cộng sự tổng hợp 73 nghiên cứu với 82 can thiệp đọc mở rộng. Các phép so sánh ngay sau can thiệp cho cỡ hiệu ứng trung bình Cohen's $d=0{,}38$; số phép theo dõi dài hạn quá ít để xác định chắc chắn hiệu quả lâu dài \cite{sangers2025}. Kết quả đó ủng hộ việc cung cấp các văn bản hoàn chỉnh và phù hợp trình độ để đọc thường xuyên. Nó không bảo đảm người học tăng một mức điểm IELTS cụ thể. Ở Stella, chế độ \emph{Explore} nên cho phép chọn chủ đề và đọc theo nhịp riêng. Thành công phải được kiểm tra bằng khả năng hiểu văn bản mới, không chỉ bằng số phút đọc hoặc số bài đã mở.
+
+Phân biệt \emph{đọc mở rộng} với \emph{luyện đọc chuyên sâu} có ý nghĩa thiết kế. Explore ưu tiên hiểu nội dung và giữ mạch đọc. Learn thêm câu hỏi và phản hồi. Cả hai phải sử dụng bài đọc có liên kết, nhưng yêu cầu nhiệm vụ khác nhau. Đặt câu hỏi theo kiểu thi sau mỗi đoạn có thể làm đứt mạch đọc mở rộng. Ngược lại, chỉ cho đọc mà không có lần nào yêu cầu phản hồi thì không đo được khả năng hiểu \cite{grabe2004,nation2007}.
+
+\subsection{Chú giải từ theo ngữ cảnh và kiến thức từ vựng}
+Trong phân tích hồi quy tổng hợp 42 nghiên cứu với 3.802 người tham gia, Yanagisawa và cộng sự ghi nhận việc đọc có chú giải mang lại mức học từ mục tiêu cao hơn đọc không chú giải ở cả phép đo ngay và phép đo trì hoãn \cite{yanagisawa2020}. Đây là kết quả về tiếp thu từ vựng, không phải bằng chứng trực tiếp rằng đọc hiểu độc lập chắc chắn tăng. Hiệu quả cũng thay đổi theo kiểu chú giải. Do đó, Stella nên hiện nghĩa theo đúng ngữ cảnh khi người học yêu cầu; thẻ Atlas đầy đủ là bước tra cứu thứ hai. Ứng dụng phải ghi lại việc dùng hỗ trợ vì điểm có gợi ý và điểm tự làm không thể được diễn giải như nhau.
+
+Mức độ biết từ nên hướng dẫn lựa chọn bài, chứ không đóng vai trò cổng chặn cứng. Nation phân tích lượng từ cần cho đọc không hỗ trợ trong giả định mức bao phủ 98\% \cite{nation2006}. Với 661 người tham gia, Schmitt và cộng sự tìm thấy quan hệ gần tuyến tính giữa mức biết từ và hiểu bài, chứ không phát hiện ngưỡng khiến điểm đọc đột ngột tăng \cite{schmitt2011}. Stella có thể gợi ý bài \emph{vừa sức} và bài \emph{thử thách}. Không nên từ chối mọi bài có mức bao phủ ước tính thấp hơn một con số cố định, nhất là trong chế độ có hỗ trợ. Nhãn CEFR của từng từ trong Atlas cũng không đủ để khẳng định trình độ CEFR của cả passage.
+
+Nghiên cứu lặp lại có kiểm soát cho thấy việc gặp lại từ góp phần phát triển nhiều khía cạnh kiến thức từ, nhưng số lần gặp cần thiết không giống nhau \cite{webb2007}. Các hoạt động học từ có chủ ý tạo ra lợi ích, song mức hiệu quả phân tán và kết quả nhớ trì hoãn thường thấp hơn kết quả ngay sau học \cite{webb2020intentional}. Vì vậy, người học có thể đưa từ chọn từ passage vào lịch FSRS hiện có. Điểm đọc hiểu phải được lưu độc lập với điểm ôn thẻ từ vựng.
+
+\subsection{Truy xuất kiến thức, ôn tập phân tán và chuyển giao}
+Trong các thí nghiệm dùng văn bản xuôi, Roediger và Karpicke ghi nhận kiểm tra truy xuất giúp nhớ tốt hơn ở phép kiểm tra trì hoãn so với việc đọc lại theo điều kiện thí nghiệm của họ \cite{roediger2006}. Cepeda và cộng sự tổng hợp 317 thí nghiệm về ôn tập phân tán; hiệu quả của lịch ôn còn phụ thuộc khoảng thời gian đến bài kiểm tra cuối \cite{cepeda2006}. Dunlosky và cộng sự cũng đánh giá cao phương pháp tự kiểm tra và học phân tán trong nhiều bối cảnh \cite{dunlosky2013}. Không kết quả nào chứng minh rằng bộ lập lịch FSRS của Stella có thể suy ra năng lực nhận diện thái độ tác giả hoặc suy luận ngụ ý.
+
+Vì vậy cần tách hai cơ chế. FSRS tiếp tục lập lịch \emph{nhớ lại từ và cụm từ}. Mô hình kỹ năng Reading chỉ cập nhật từ các lần trả lời đầu tiên, độc lập, trên nhiều văn bản chưa gặp. Câu hỏi đã xem đáp án có thể dùng để chữa lỗi, nhưng không được tính như bằng chứng độc lập cho việc tăng năng lực.
+
+\subsection{Phản hồi phải trở lại đúng câu chữ của bài}
+Tổng quan của Shute ủng hộ phản hồi cụ thể, hướng vào nhiệm vụ và chia thành lượng thông tin vừa đủ; đồng thời cảnh báo việc tiết lộ đáp án trước lần thử của người học \cite{shute2008}. Hattie và Timperley cho thấy tác dụng của phản hồi phụ thuộc mạnh vào nội dung và cách truyền đạt \cite{hattie2007}. Trong Stella, mỗi câu hỏi có chấm điểm phải gắn với một vị trí bằng chứng có thể bảo vệ được, chẳng hạn ID của đoạn và câu. Phần chữa cần chỉ rõ đáp án, bằng chứng và lối suy luận khiến lựa chọn sai trở nên hấp dẫn. Với \emph{Not Given}, lời giải phải cho thấy văn bản chưa cung cấp đủ thông tin để kết luận; hệ thống không được tự bịa một câu ``bằng chứng''.
+
+\begin{table}[t]
+\caption{Truy vết từ Bằng chứng đến Quyết định Thiết kế}
+\label{tab:evidence}
+\centering\footnotesize
+\begin{tabularx}{\columnwidth}{@{}p{.22\columnwidth}X p{.24\columnwidth}@{}}
+\toprule
+Bằng chứng & Quyết định trong Stella & Kết quả cần đo\\
+\midrule
+Đọc mở rộng \cite{sangers2025} & Thư viện bài liên kết, tự chọn bài & Hiểu văn bản mới\\
+Chú giải từ \cite{yanagisawa2020} & Tra nghĩa đúng ngữ cảnh khi cần & Nhớ từ sau trì hoãn\\
+Truy xuất \cite{roediger2006} & Trả lời trước khi xem giải thích & Làm bài mới sau trì hoãn\\
+Phản hồi \cite{shute2008} & Giải thích theo chứng cứ câu chữ & Chuyển giao cách sửa lỗi\\
+Mức biết từ \cite{schmitt2011} & Mức độ vừa sức và thử thách & Phù hợp và bỏ dở\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Kiến trúc Học tập CEFR--IELTS Thống nhất}
+\subsection{Một thư viện, hai mục tiêu đo lường}
+CEFR cung cấp các mô tả năng lực, trong đó có những điều người học có thể làm với các loại văn bản đọc khác nhau \cite{coe2020}. Bài thi IELTS Academic Reading có 60 phút, ba phần, 40 câu hỏi và tổng độ dài văn bản khoảng 2.150--2.750 từ \cite{ieltsformat}. Hướng dẫn IELTS chính thức nhấn mạnh điểm band không tương ứng một-một với bậc CEFR \cite{ieltscefr}. Do đó, một đường học Reading trong Stella có thể phục vụ cả hai hệ mà không trộn lẫn thước đo:
+\begin{itemize}
+\item \emph{Hồ sơ đọc theo CEFR}: nhiệm vụ dựa trên can-do descriptors, mức hiểu trên nhiều loại văn bản và độ tin cậy theo số kỹ năng đã được đánh giá.
+\item \emph{Mức sẵn sàng cho IELTS}: kết quả theo nhóm câu hỏi, xử lý paraphrase và bằng chứng, cùng hiệu quả khi có giới hạn thời gian.
+\item \emph{Trí nhớ từ vựng}: trạng thái FSRS của từng mục từ, không tự động chuyển thành điểm CEFR hay IELTS.
+\end{itemize}
+
+Nội dung A1--A2 nên tập trung vào đọc hiểu đời sống với hỗ trợ tùy chọn. Ở B1--B2, người học tiếp xúc văn bản dài hơn, quan hệ lập luận và dần làm quen dạng câu IELTS. Ở C1--C2, trọng tâm chuyển sang lập luận phức tạp và thái độ tác giả. Đây là \emph{gợi ý chương trình học}, không phải quy tắc chính thức gắn dạng câu IELTS với từng bậc CEFR.
+
+\subsection{Các chế độ học}
+\textbf{Explore} hỗ trợ đọc tự chọn, tra từ khi cần và kiểm tra ý chính ngắn. \textbf{Learn} yêu cầu trả lời độc lập trước khi hiển thị bằng chứng và lời giải. \textbf{Challenge} đưa dạng câu IELTS vào văn bản có độ khó phù hợp. \textbf{Exam} tuân thủ thời gian và cấu trúc bài thi liên quan, tắt gợi ý và chỉ tính câu trả lời đầu được nộp. Mỗi hoạt động cần lưu mode, chính sách hint, phiên bản nội dung và chính sách chấm để kết quả có thể giải thích được.
+
+\subsection{Hợp đồng dữ liệu và tính toàn vẹn nội dung}
+Mỗi passage cần ID, phiên bản bất biến, các đoạn văn có ID câu ổn định, trình độ mục tiêu, chủ đề và trạng thái biên tập. Mỗi câu hỏi cần kiểu câu trả lời, nhãn kỹ năng, quy tắc chấm điểm và bằng chứng được kiểm định riêng. Bảng~\ref{tab:contract} nêu hợp đồng tối thiểu. Khi sửa nội dung, hệ thống không được âm thầm làm thay đổi ý nghĩa của attempt đã lưu.
+
+\begin{table}[t]
+\caption{Hợp đồng Dữ liệu Tối thiểu cho Reading}
+\label{tab:contract}
+\centering\footnotesize
+\begin{tabularx}{\columnwidth}{@{}p{.33\columnwidth}X@{}}
+\toprule
+Đối tượng & Trường bắt buộc và điều kiện\\
+\midrule
+Passage & \texttt{id}, \texttt{version}, \texttt{level}, \texttt{paragraphs}, \texttt{status}\\
+Question & \texttt{id}, \texttt{type}, \texttt{skill}, \texttt{key}, \texttt{evidenceIds}\\
+Attempt & \texttt{sessionId}, \texttt{questionId}, đáp án, trợ giúp, thời gian\\
+Assessment & phiên bản passage, điểm lần đầu, thời lượng, cờ hợp lệ\\
+Skill profile & kỹ năng, ước lượng, số mẫu, độ bất định, thời điểm\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Kho văn bản JSON tĩnh với manifest phù hợp mô hình triển khai Cloudflare và tải lười của Stella hiện tại. Attempt của Reading nên lưu theo một schema local-first có version. Khi lịch sử lớn dần, IndexedDB phù hợp hơn; quy trình xuất/nhập backup phải bao gồm migration. Nếu tải passage hoặc câu hỏi không đầy đủ, hệ thống phải dừng chấm thay vì tự bỏ qua mục bị lỗi. Vì nội dung lưu trên thiết bị có thể lộ khóa đáp án, Exam hoàn toàn offline chỉ là \emph{môi trường luyện tập}, không phải kỳ thi có tính bảo mật cao.
+
+\subsection{Quy tắc thích ứng thận trọng}
+Gọi $s$ là kỹ năng đọc và $q$ là câu hỏi ứng viên. Một \emph{heuristic kỹ thuật ban đầu} có thể ưu tiên câu hỏi mới theo
+\begin{equation}
+U(q)=w_1W_s+w_2F_q+w_3R_s+w_4D_q,\quad \sum_iw_i=1,
+\label{eq:selection}
+\end{equation}
+trong đó $W_s$ biểu diễn điểm yếu quan sát được, $F_q$ là mức khớp trình độ, $R_s$ biểu diễn nhu cầu luyện lại và $D_q$ khuyến khích bao phủ kỹ năng ít gặp. Bài báo không ước lượng bất kỳ hệ số nào. Trước khi dùng thực tế cần hiệu chuẩn, đặt số mẫu tối thiểu và ngăn thuật toán liên tục chọn một dạng câu quá dễ. Khi dữ liệu chưa đủ, Stella nên báo \emph{chưa đủ bằng chứng} thay vì hiển thị một bậc CEFR có vẻ chính xác.
+
+
+\section{Kiểm định Nội dung và Ví dụ Chấm điểm}
+\subsection{Một passage có thể đánh giá cần những gì?}
+Không thể kết luận bài đọc hợp lệ chỉ vì từ vựng của nó giống một danh sách CEFR. Bài phải hình thành diễn ngôn mạch lạc: đối tượng được nhắc đến nhất quán giữa các đoạn, phạm vi khẳng định rõ ràng và các tiền đề cần thiết thực sự xuất hiện. Người biên soạn nên viết trước một bản mô tả ngắn về kỹ năng đọc muốn đo rồi mới tạo câu hỏi. Chẳng hạn, bài B2 về môi trường có thể so sánh hai giải pháp, giới hạn một kết quả và nêu độ bất định của kết quả khác. Nếu tất cả câu hỏi chỉ cần dò một từ trùng khớp, bộ câu chưa đo được phạm vi kỹ năng đọc đã tuyên bố.
+
+Quy trình nội dung nên tách hai payload hoặc hai quyền truy cập. \emph{Payload cho người học} gồm bài đọc và câu hỏi. \emph{Payload kiểm duyệt} gồm đáp án, biến thể được chấp nhận, lời giải, vị trí bằng chứng và quyết định của người duyệt. Mọi câu hỏi tạo tự động chỉ là bản nháp cho đến khi có người thứ hai kiểm tra tính mơ hồ và đối chiếu bằng chứng. Hai payload phải cùng phiên bản bất biến. Khi sửa đáp án hoặc vị trí chứng cứ, cần tạo version mới thay vì âm thầm sửa lịch sử chấm điểm.
+
+\subsection{Ví dụ câu hỏi do nghiên cứu này xây dựng}
+Xét đoạn minh họa \emph{do chúng tôi viết cho bài báo này}: ``Hội đồng thành phố đã trồng cây ở hai quận vào năm ngoái. Họ chưa đo tác động của việc đó lên nhiệt độ mùa hè.'' Câu cần đánh giá là: ``Chương trình trồng cây đã làm nhiệt độ trung bình mùa hè giảm.'' Theo dạng True/False/Not Given, đáp án hợp lý là \emph{Not Given}. Văn bản chỉ xác nhận hoạt động trồng cây và việc chưa đo kết quả. Nó không cho biết nhiệt độ giảm hay không giảm. Một lời giải tốt chỉ rõ giới hạn của câu thứ hai; lời giải kém sẽ bịa ra số liệu nhiệt độ. Ví dụ này làm rõ vì sao mỗi câu hỏi phải có cả đáp án lẫn lý do dựa trên chứng cứ. Stella chưa được khẳng định là đã chứa câu hỏi này.
+
+Mỗi dạng câu IELTS cần những điều kiện chấm riêng. \emph{Matching headings} yêu cầu ý trung tâm của từng đoạn đủ phân biệt. \emph{Multiple choice} cần phương án nhiễu hợp lý nhưng sai vì mâu thuẫn, thiếu cơ sở hoặc kém chính xác hơn đáp án tốt nhất. \emph{Summary completion} cần quy định rõ chính tả, chữ hoa, mạo từ và số từ tối đa. \emph{True/False/Not Given} phải phân biệt văn bản phủ định một mệnh đề với văn bản không đủ dữ liệu về mệnh đề đó. Một hàm so khớp chuỗi chung không thể chấm tin cậy mọi dạng câu.
+
+\subsection{Rubric cho người phản biện}
+Hai người duyệt nên chấm độc lập bốn mặt: (a) độ mạch lạc và tính chính xác có thể bảo vệ được của bài; (b) sự phù hợp giữa kỹ năng gắn nhãn và thao tác thực sự cần để trả lời; (c) tính duy nhất, khả năng truy vết đáp án; và (d) mức độ phù hợp ngôn ngữ với người học dự kiến. Mỗi lỗi cần ghi lý do cụ thể thay vì chỉ trả kết quả đạt/không đạt. Nếu hai người thường xuyên bất đồng về đáp án, phải sửa hoặc loại bỏ câu hỏi, không lấy trung bình hai đáp án. Nhãn CEFR ban đầu chỉ nên là \emph{mức biên tập nhắm tới}; để trở thành kết luận đánh giá, nó còn cần phân tích item và đối chiếu descriptor trên dữ liệu người học.
+
+\section{Chi tiết Triển khai và Các Trường hợp Hỏng}
+\subsection{Tách bằng chứng học tập khỏi chức năng tiện lợi}
+Trong chế độ Learn, người học có thể bấm một từ được làm nổi bật để xem nghĩa theo ngữ cảnh rồi lưu từ đó để ôn tiếp bằng Atlas. Phần mềm cần ghi việc dùng hỗ trợ ở câu hỏi hiện tại, nhưng không được xem thao tác tra từ tự thân là lỗi. Thay vào đó, điểm luyện có hỗ trợ và bằng chứng về năng lực tự làm phải được báo cáo riêng. Người dùng cũng có thể chủ động chọn bài khó để khám phá; thuật toán cần tôn trọng lựa chọn đó và không diễn giải điểm luyện có hỗ trợ như điểm năng lực độc lập.
+
+Tra từ trong passage phức tạp hơn phép so sánh từ nhìn thấy với headword. \emph{Developing} có thể là dạng của \emph{develop}, còn \emph{development} là danh từ liên quan với nghĩa có thể khác. Bộ kết nối từ cần tách token, chuẩn hóa, ánh xạ lemma hoặc hình thái học, đồng thời có phương án chọn nghĩa khi không chắc. Không nên gắn một nghĩa sai cho mọi chuỗi ký tự. Có thể đo độ chính xác bằng bộ ví dụ gắn nhãn gồm từ biến thể, cụm từ nhiều tiếng, từ đồng hình và từ chưa có trong Atlas.
+
+\subsection{Chấm điểm, lưu trữ và truy nguyên}
+Bộ chấm của các dạng câu có đáp án xác định nên là hàm thuần, cho cùng đầu vào thì cho cùng kết quả. Đầu vào gồm version nội dung, schema câu hỏi, câu trả lời đã ghi và chính sách chấm. Đầu ra gồm đúng/sai, câu trả lời chuẩn hóa, cờ hợp lệ và tham chiếu lời giải. Attempt cũng lưu việc câu đã gặp trước đó hay chưa, dùng hint hoặc gloss hay không và khoảng thời gian làm. Cần ghi nhận lần trả lời đầu \emph{trước khi} hiển thị lời giải để lượt sửa sau đó không ghi đè bằng chứng ban đầu.
+
+Cách lưu local-first hiện tại đem lại lợi ích rõ: có thể học offline và không bắt buộc có tài khoản trên máy chủ. Tuy nhiên, dữ liệu trình duyệt có thể bị xóa, hai tab có thể cập nhật gần nhau và khóa đáp án trong file tĩnh có thể bị đọc. Vì vậy Reading store cần migration theo version và kiểm tra backup, chứ không được quảng cáo là hệ thống thi bảo mật. Bộ test phải gồm tải lại trang giữa lúc nộp bài, thiếu chunk nội dung, phục hồi backup phiên bản cũ và hai tab chỉnh đồng thời. Mức bảo mật tùy mục tiêu: học hình thành kỹ năng có thể chạy cục bộ; thi giám sát có rủi ro cao cần mô hình tin cậy khác.
+
+\subsection{Tính hợp lệ khái niệm và ước lượng thích ứng}
+Nhãn \emph{inference} chỉ hữu ích khi item thực sự đòi hỏi suy luận. Ghi trường \texttt{skill: inference} trong JSON chưa chứng minh điều đó. Tương tự, câu trả lời rất nhanh có thể do đoán hoặc từng gặp câu chứ không phải do đọc lưu loát. Ước lượng kỹ năng ban đầu có thể dùng tỷ lệ làm trơn:
+\begin{equation}
+\widehat{p}_{s}=\frac{c_s+\alpha}{n_s+\alpha+\beta},
+\label{eq:mastery}
+\end{equation}
+trong đó $c_s$ là số câu đúng hợp lệ ngay lần đầu, $n_s$ là số lần thử hợp lệ và $\alpha,\beta>0$ là tham số prior được công bố. Đây là baseline có thể giải thích, \emph{không phải phép đo năng lực tâm trắc đã được kiểm định}. Phải hiển thị cùng số mẫu và độ bất định, không chuyển trực tiếp thành CEFR. Các mô hình xét độ khó item và lịch sử chỉ nên triển khai khi đã có đủ dữ liệu hiệu chuẩn.
+
+\section{Thiết kế Đánh giá Có thể Bác bỏ Giả thuyết}
+\subsection{Kết quả chính và đại lượng cần ước lượng}
+Chỉ số chính phải là khả năng làm \emph{bài đọc mới, có độ khó tương đương}, không có gợi ý. Chỉ số phụ đo mức duy trì sau một khoảng trì hoãn bằng các câu song song chứ không lặp lại câu đã nhớ. Chênh lệch can thiệp được định nghĩa như sau:
+\begin{equation}
+\Delta=E[Y_{\mathrm{post}}-Y_{\mathrm{pre}}\mid T=1]-E[Y_{\mathrm{post}}-Y_{\mathrm{pre}}\mid T=0],
+\label{eq:estimand}
+\end{equation}
+trong đó $T=1$ là thiết kế Reading tích hợp, còn $T=0$ là điều kiện so sánh đã xác định. $Y$ là điểm đọc hiểu được đăng ký trước trên các bộ đề mới, đã kiểm tra tính tương đương. Công thức chỉ \emph{định nghĩa đại lượng cần đo}; nó không phải hiệu quả đã quan sát. Độ khó bài và chất lượng câu hỏi cần được kiểm tra độc lập với việc phân nhóm người học.
+
+\subsection{Trình tự thí nghiệm}
+Trước khi A/B test, phải chạy pilot kiểm định nội dung. Người phản biện kiểm tra độ mạch lạc, trình độ mục tiêu, sự mơ hồ của câu hỏi, khóa đáp án và vị trí bằng chứng. Sau đó lần lượt thử: (i) gloss theo yêu cầu so với không gloss, đo nhớ từ trì hoãn; (ii) giải thích có bằng chứng so với chỉ báo đúng/sai, đo chuyển giao sang câu mới; (iii) gợi ý bài phù hợp so với chỉ lọc chủ đề, đo hoàn thành và đọc hiểu; (iv) ôn từ cách quãng so với bài tập không cách quãng với tổng thời gian tương đương. Không nên bật mọi tính năng cùng lúc rồi gán kết quả tổng hợp cho riêng một cơ chế.
+
+Mỗi thí nghiệm cần đăng ký trước tiêu chí tuyển mẫu, đơn vị ngẫu nhiên hóa, chỉ số chính, quy tắc loại trừ, xử lý dữ liệu thiếu và phân tích cỡ mẫu. Phân tích phải xét đến phụ thuộc giữa câu hỏi và người tham gia; báo cáo khoảng tin cậy thay vì chỉ giá trị $p$. Cần theo dõi số người bỏ dở và cảm nhận quá tải như tác dụng bất lợi tiềm năng. Nếu điểm lúc có hỗ trợ tăng nhưng khả năng hiểu bài mới độc lập không tăng, giả thuyết về tiến bộ mong muốn chưa được ủng hộ.
+
+\subsection{Giới hạn diễn giải chỉ số}
+Dashboard phải phân biệt \emph{độ chính xác lúc luyện}, \emph{đọc hiểu không hỗ trợ}, \emph{khả năng nhớ từ} và \emph{mức sẵn sàng làm IELTS}. Nhãn CEFR chỉ nên được đưa ra khi có bằng chứng từ nhiều nhiệm vụ phù hợp descriptor, đi kèm mức tin cậy. Mọi dự đoán IELTS Band cần nghiên cứu hiệu chuẩn riêng; trước đó chỉ nên dùng raw practice score hoặc thước đo readiness ghi rõ tính thử nghiệm. Thời gian đọc và số lần bấm tra từ là dữ liệu hành vi, không phải bằng chứng trực tiếp về năng lực.
+
+
+\section{Nguy cơ Sai lệch và Quy tắc Báo cáo}
+Ba yếu tố có thể khiến kết quả thử nghiệm Stella nhìn có vẻ thành công mà không phản ánh tiến bộ thực. \emph{Rò rỉ tập huấn luyện} xảy ra khi bài hoặc câu gần trùng xuất hiện trong cả luyện tập lẫn đánh giá. \emph{Lệch độ khó} xảy ra khi nhóm can thiệp làm bộ câu dễ hơn dù hai bộ cùng ghi nhãn CEFR. \emph{Thiếu dữ liệu do bỏ học} xảy ra khi những người gặp khó khăn bỏ dở trước bài đo trì hoãn. Quy trình đánh giá phải loại trùng văn bản giữa các tập, cân bằng hoặc điều chỉnh độ khó câu và công bố tỷ lệ thiếu dữ liệu, hoàn thành của từng nhóm.
+
+Ý nghĩa của từ ``cải thiện'' cũng phải được xác định đúng. Số từ đã lưu, phút đọc hoặc điểm luyện IELTS-style tăng là \emph{kết quả tương tác hoặc kết quả luyện}; chúng không thể thay cho khả năng hiểu bài mới. Báo cáo cần tuân thủ thứ tự các chỉ số đã đăng ký trước, đưa ra khoảng tin cậy, kết quả không có hiệu ứng và mọi thay đổi quy trình. Một thí nghiệm không cho thấy lợi ích vẫn cung cấp bằng chứng có giá trị: nó cho biết tính năng nào cần sửa hoặc loại bỏ.
+
+
+\section{Bản đồ Thay đổi Theo Repository}
+Kiến trúc nên đi theo ranh giới mã nguồn quan sát được thay vì dựng thêm một framework song song. Bảng~\ref{tab:files} nối mỗi thay đổi với file hiện có hoặc module mới sát chức năng đó. Cách trình bày này đủ cụ thể để triển khai, nhưng không có nghĩa patch đã được áp dụng.
+
+\begin{table}[t]
+\caption{Từ File Nguồn đến Thay đổi và Kiểm thử}
+\label{tab:files}
+\centering\footnotesize
+\begin{tabularx}{\columnwidth}{@{}p{.38\columnwidth}X@{}}
+\toprule
+Vị trí hiện tại & Hành vi đề xuất và test bắt buộc\\
+\midrule
+\texttt{pages/Reading.tsx} & Giữ khám phá câu; điều hướng tới reader; thử lưu và tiếp tục\\
+\texttt{lib/drills.ts} & Giữ bộ lọc câu, không gọi đó là tạo bài đọc\\
+\texttt{atlas/context.tsx} & Nối token tới Atlas; kiểm thử khi thiếu entry\\
+\texttt{store/store.ts} & Version Reading và backup; thử round-trip dữ liệu cũ\\
+\texttt{store/srs.ts} & Giữ lịch từ riêng với ước lượng kỹ năng đọc\\
+\texttt{pages/Onboarding.tsx} & Bổ sung A1; tách năng lực hiện tại và mục tiêu IELTS\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Trường hợp onboarding cho thấy vì sao kiểm tra cụ thể quan trọng. Mảng trình độ bắt đầu trong code hiện tại là A2 và mô tả vài trình độ bằng các mục tiêu IELTS xác định. Các nhãn này có thể giúp định hướng, nhưng chưa phải ánh xạ điểm đã được kiểm định. Onboarding mới nên hỏi hai câu độc lập: \emph{Hiện bạn đọc được những dạng văn bản nào?} và \emph{Bạn có mục tiêu IELTS hay không?} Trình độ do người dùng tự khai có thể chọn bài khởi đầu. Ước lượng năng lực được xác minh phải dựa vào bằng chứng đánh giá sau đó. Nhờ vậy, Stella không hiển thị ``B2'' chỉ vì người học chọn một target band.
+
+Tương tự, hàm \texttt{sanitizeProgress} hiện đọc schema có version và chỉ giữ những trường hợp lệ đã khai báo. Nếu thêm lịch sử Reading mà không có migration và nâng cấp backup, trường mới có nguy cơ bị mất khi tải lại hoặc import. Hướng an toàn hơn là tạo Reading store riêng có version và kiểm thử chuyển đổi từ backup từ vựng hiện tại. Build chạy qua chưa đủ. Test phát hành phải khôi phục một backup cũ thực tế, hoàn thành passage mới, xuất tiến độ, import vào profile trống và đối chiếu attempt lần đầu cùng version của nội dung.
+
+Hàm tải trước entry của Atlas hiện trả null khi tải lỗi. Đây có thể là lựa chọn hợp lý để giao diện khám phá từ tiếp tục hoạt động. Nhưng nó không phải chính sách chấm điểm hợp lệ nếu một bài đọc thiếu câu hỏi. Reader mới phải phân biệt \emph{lỗi tài nguyên từ vựng tùy chọn} với \emph{lỗi dữ liệu đánh giá bắt buộc}. Thiếu audio hoặc gloss có thể giảm chức năng một cách an toàn; thiếu câu passage, lựa chọn đáp án hoặc quy tắc chấm thì attempt phải bị đánh dấu không hợp lệ, thay vì tự tạo hoặc bỏ qua chứng cứ.
+
+Bản pilot nên phát hành một hồ sơ kiểm định gọn cùng source: số passage đã duyệt theo cấp, số câu theo kỹ năng, tỷ lệ câu phải sửa khóa đáp án, mức đồng thuận giữa hai người duyệt, số lỗi liên kết evidence, kết quả kiểm thử migration backup và tỷ lệ bài đánh giá độc lập đủ dữ liệu. Những con số này khiến các tuyên bố tiến bộ về sau có thể được kiểm tra lại. Bài báo cố ý chưa điền giá trị vì chưa có pilot nào được thực hiện.
+
+\section{Lộ trình Kỹ thuật và Tiêu chí Chấp nhận}
+Thứ tự triển khai cần dựa trên phụ thuộc kỹ thuật, không dựa vào một lời hứa hoàn tất mọi tính năng trong một sprint. Trước hết, giữ hoạt động khám phá câu hiện có dưới tên đúng và thêm schema bài đọc đã qua kiểm định. Tiếp theo, xây bộ chấm điểm xác định, lưu attempt, phản hồi theo bằng chứng và unit test cho từng dạng câu. Sau đó, kết nối từ trong passage với Atlas qua ánh xạ biến thể từ và tái sử dụng FSRS. Bước tiếp theo là lưu trữ có migration, kiểm thử round-trip backup và xung đột nhiều tab. Chỉ sau các bước đó mới thêm đề xuất bài thích ứng. Mock test IELTS có tính thời gian triển khai khi khóa đáp án và quy trình chấm đã đáng tin cậy.
+
+Điều kiện phát hành gồm: không có đáp án mơ hồ trong bộ nội dung được duyệt; không chấm khi payload bài đọc thiếu; phân biệt lần làm đầu với lần thử có gợi ý; xuất/nhập thành công lịch sử Reading; khôi phục được Learn session khi offline; không công bố ánh xạ CEFR--IELTS không có bằng chứng. Đây là tiêu chí \emph{đề xuất}, không phải các kiểm thử mà Stella đã vượt qua.
+
+\section{Giới hạn và Kết luận}
+Nghiên cứu này chỉ tổng hợp bằng chứng để định hướng thiết kế. Nó không thực hiện tìm kiếm hệ thống, không tính lại cỡ hiệu ứng, không đo kết quả học trên người dùng Stella và không chứng minh thuật toán thích ứng đề xuất là hiệu quả. Các công trình nguồn khác nhau về quần thể, dạng can thiệp, phép đo và bối cảnh. Những nhận định kỹ thuật xuất phát từ kiểm tra source, chưa phải audit production bằng thí nghiệm có kiểm soát. Định dạng IEEE và lập luận có trích dẫn không thể thay thế kiểm định thực nghiệm.
+
+Đề xuất quan trọng nhất là thay đổi \emph{đơn vị mà Stella gọi là tiến bộ}. Ứng dụng vẫn giữ hệ thống học từ hiện có, nhưng bài đọc hoàn chỉnh cần câu hỏi, bằng chứng, attempt và thước đo riêng. Câu hỏi đánh giá trung tâm được đặt một cách có chủ đích: \emph{sau khi luyện bằng Stella, người học có hiểu được một văn bản mới mà không cần những hỗ trợ từng xuất hiện trong lúc luyện hay không?} Chỉ khi thu thập được dữ liệu để trả lời câu hỏi đó, hệ thống mới nên tuyên bố người học đã tiến bộ.
+
+\balance
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+\end{document}

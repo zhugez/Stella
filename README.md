@@ -109,6 +109,10 @@ Vocabulary, illustration, audio, and spaced repetition are complete. The remaini
 - [ ] Reading — academic passages with tap-to-inspect vocabulary
 - [ ] Writing — Task 1 and Task 2 prompts with collocation banks
 
+## Research papers
+
+- [Evidence-informed CEFR–IELTS reading design — IEEE-style manuscripts (English and Vietnamese)](docs/research/ieee-cefr-ielts/README.md). Includes LaTeX sources, shared bibliography, build instructions, and an editorial-quality checklist.
+
 ## Attribution
 
 Built and maintained by [zhugez](https://github.com/zhugez).

@@ -1,0 +1,231 @@
+\documentclass[conference,10pt]{IEEEtran}
+\usepackage{fontspec}
+\setmainfont{Liberation Serif}
+\setsansfont{Liberation Sans}
+\setmonofont{DejaVu Sans Mono}
+\usepackage[english]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,array,tabularx}
+\usepackage{url}
+\usepackage{enumitem}
+\usepackage{balance}
+\setlist[itemize]{leftmargin=*,nosep,topsep=2pt}
+\setlist[enumerate]{leftmargin=*,nosep,topsep=2pt}
+\renewcommand{\arraystretch}{1.12}
+\begin{document}
+\title{From Vocabulary Recall to Reading Transfer:\\An Evidence-Informed CEFR--IELTS Learning Design for Stella}
+\author{\IEEEauthorblockN{Author information to be supplied}\IEEEauthorblockA{Independent research and open-source software design\\Manuscript draft --- 31 October 2026}}
+\maketitle
+\begin{abstract}
+Many vocabulary applications can count learned words but cannot show whether learners understand an unfamiliar text. Stella illustrates this gap. Its open-source implementation provides 7,298 vocabulary entries, Common European Framework of Reference for Languages (CEFR) labels, thematic examples, and spaced review; its current Reading screen selects six independent example sentences from one topic rather than a coherent passage. This paper conducts a targeted, non-systematic synthesis of published research and a source-code inspection to derive a testable reading-learning architecture. The synthesis separates evidence for extensive reading, vocabulary glosses, retrieval, spacing, and formative feedback from hypotheses about their combination inside an application. We propose coherent graded passages, first-attempt comprehension measures, evidence-linked feedback, contextual vocabulary review, and separate CEFR-oriented proficiency and IELTS Academic task-readiness profiles. A content-validation process and an evaluation protocol using unseen, difficulty-matched passages and delayed tests are specified. No learner experiment was conducted, and no improvement in Stella users is claimed. The contribution is a traceable design specification with measurable failure conditions, not an empirically validated intervention.
+\end{abstract}
+\begin{IEEEkeywords}
+second-language acquisition, reading comprehension, CEFR, IELTS Academic, retrieval practice
+\end{IEEEkeywords}
+
+\section{Introduction}
+A learner can remember the definition of \emph{however} and still fail to recognize how it reverses an argument across paragraphs. A vocabulary card measures one kind of knowledge; a reading passage asks the learner to integrate many kinds of knowledge under time and attention constraints. Treating these outcomes as interchangeable is a design error. The problem is visible in the open-source learning application Stella \cite{stellarepo}: its Atlas supports indexed vocabulary, examples, pronunciation, and spaced repetition, while the existing Reading page assembles topic-related example sentences. Those sentences can help a learner meet words in context. They cannot, by themselves, support robust questions about an author's claim across several paragraphs.
+
+This paper asks three questions: \emph{(RQ1)} Which learning mechanisms have evidence relevant to second-language reading and vocabulary? \emph{(RQ2)} Which mechanisms can be integrated into Stella without confusing vocabulary memory, reading comprehension, and examination performance? \emph{(RQ3)} How should a future evaluation test whether the integration transfers to unfamiliar texts? We report inspected software behavior separately from published empirical results and proposed product decisions. This distinction matters: a plausible interface is not evidence that its users learn more.
+
+\section{Materials and Method}
+\subsection{Scope of the Evidence Review}
+We conducted a \emph{targeted narrative synthesis}, not a PRISMA-style systematic review. Sources were selected for relevance to extensive reading, contextual vocabulary learning, retrieval practice, distributed practice, text comprehension, and actionable feedback. We prioritized peer-reviewed meta-analyses and reviews, supplemented them with explanatory experiments and official CEFR and IELTS documentation \cite{sangers2025,yanagisawa2020,roediger2006,coe2020,ieltsformat}. The review does not claim exhaustive coverage or compute new pooled effects. Reported effect sizes and percentages retain their original study populations and outcome definitions.
+
+Our evidence-to-design procedure has four steps. First, identify the result actually measured in a cited study. Second, describe a learner action that might use the mechanism. Third, mark the required software capability. Fourth, define a falsifiable outcome and a limitation. Design parameters, including schedules and adaptive weights, are presented as candidate settings rather than research findings.
+
+\subsection{Source-Code Inspection}
+The implementation case is the public \texttt{zhugez/Stella} repository, inspected on 31 October 2026 \cite{stellarepo}. Inspection focused on \texttt{src/pages/Reading.tsx}, \texttt{src/lib/drills.ts}, \texttt{src/atlas/data.ts}, \texttt{src/atlas/context.tsx}, \texttt{src/store/store.ts}, \texttt{src/store/session.ts}, and \texttt{src/store/srs.ts}. The analysis is static; it does not establish runtime faults or provide measurements from production traffic. We distinguish code behavior from risks that require tests.
+
+\section{Observed Gap in Stella}
+\subsection{Reading Is Currently Sentence Exploration}
+The Reading component filters Atlas words by selected topic, shuffles candidates, prefetches detailed entries, and passes the returned entries to \texttt{passage(..., 6)}. In \texttt{drills.ts}, that function keeps entries whose first example is longer than 30 characters and contains the target word in a highlightable form, then returns at most six entries. The screen itself explains that the sentences share a subject but not a story \cite{stellarepo}. This is a useful \emph{sentence exploration} activity. It is not a multi-paragraph reading assessment.
+
+The immediate consequence is specific. The interface can expose vocabulary and launch an Atlas card, but it does not contain a stored passage with paragraph boundaries, question-answer keys, evidence spans, first attempts, or comprehension outcomes. It therefore cannot attribute gains to inference, discourse structure, or academic reading based on its current Reading activity.
+
+\subsection{Assets to Reuse and Boundaries to Respect}
+Stella's dataset contains 7,298 indexed words, including CEFR and topic metadata. Full entries are loaded in chunks; the existing vocabulary store maintains review cards and supports export/import of progress \cite{stellarepo}. These assets make contextual lookup feasible without building another dictionary. Yet the \texttt{Progress} structure is built around word cards, daily counters, typing rounds, and a vocabulary session. Reusing that session object for reading answers would blur the meaning of grades and complicate backup migration. The proposal therefore isolates reading attempts from word-review events while allowing a passage word to reference an Atlas identifier.
+
+\section{Research Findings and Design Implications}
+\subsection{Reading Volume and Text Coherence}
+Sangers \emph{et al.} synthesized 73 studies and 82 extensive-reading interventions. Their immediate comparisons produced an average effect of Cohen's $d=0.38$; the small number of longer-term follow-up comparisons did not support a firm long-term estimate \cite{sangers2025}. These results support offering sustained access to readable, coherent texts, not a guarantee of a particular IELTS band gain. In Stella, an \emph{Explore} mode should let learners choose topics and read at their own pace. Its success must be tested using comprehension of new texts, not only reading minutes or page completions.
+
+The distinction between \emph{extensive} and \emph{intensive} practice is operationally useful. Explore mode prioritizes meaning and reading continuity. Learn mode supports questions and feedback. Both use genuine passages, but they impose different tasks. Forcing an examination-style question after every paragraph may discourage extensive reading. Conversely, never asking for a response leaves comprehension unmeasured \cite{grabe2004,nation2007}.
+
+\subsection{Contextual Glosses and Vocabulary Depth}
+In a meta-regression of 42 studies with 3,802 participants, Yanagisawa \emph{et al.} reported higher target-word learning after glossed than nonglossed reading on both immediate and delayed tests \cite{yanagisawa2020}. The result concerns vocabulary uptake, not a confirmed increase in independent reading comprehension. Gloss format also mattered. Stella should therefore offer a restrained, on-demand gloss, with the local word meaning first and the Atlas card as a deliberate second action. The application should record whether a gloss was opened because assisted and unassisted answers cannot be treated identically.
+
+Vocabulary coverage should guide rather than dictate passage selection. Nation analyzed vocabulary needed for unassisted comprehension under a 98\% coverage assumption \cite{nation2006}. Schmitt \emph{et al.}, studying 661 learners, found a broadly linear association between vocabulary knowledge and comprehension rather than a sharp threshold \cite{schmitt2011}. Stella can display \emph{comfortable} and \emph{stretch} texts. It should not reject every passage below a fixed coverage estimate, particularly where the learner intends supported practice. Because Atlas CEFR labels describe individual words, they also must not be treated as validated CEFR labels for entire passages.
+
+Controlled repetition research shows that encounters with a word contribute to multiple aspects of word knowledge, but the number of encounters required varies \cite{webb2007}. Intentional vocabulary tasks show measurable gains yet also substantial variation and weaker delayed retention than immediate scores imply \cite{webb2020intentional}. Hence, after reading, selected words can enter Stella's existing spaced-review scheduler. A comprehension score must remain separate from a word-card review grade.
+
+\subsection{Retrieval, Distributed Practice, and Transfer}
+In experiments with prose passages, Roediger and Karpicke found that retrieval tests improved delayed recall relative to additional restudy under their experimental conditions \cite{roediger2006}. Cepeda \emph{et al.} synthesized 317 distributed-practice experiments and showed that scheduling effects depend on the interval to the final assessment \cite{cepeda2006}. Dunlosky \emph{et al.} also rated practice testing and distributed practice highly across learning contexts \cite{dunlosky2013}. None of these results proves that Stella's FSRS scheduler can estimate a learner's ability to infer an author's intention.
+
+We therefore propose a separation. FSRS continues to schedule \emph{recollection of words and phrases}. A reading-skill model summarizes independent, first-attempt performance across unseen passages. A passage or question already seen may be used for remediation, but it must not be treated as independent evidence for a proficiency increase.
+
+\subsection{Feedback That Points Back to the Text}
+Shute's review favors specific, task-focused, manageable formative feedback while warning against overload and feedback that reveals answers before an attempt \cite{shute2008}. Hattie and Timperley likewise show that feedback effects depend on what is communicated and how \cite{hattie2007}. In Stella, every assessable question should carry a defensible evidence reference, such as paragraph and sentence identifiers. Feedback should state the correct response, quote or point to relevant evidence, and explain the mistaken inference. For \emph{Not Given}, the explanation must make clear that the text does not establish the claim; an unsupported fabricated ``evidence sentence'' is not acceptable.
+
+\begin{table}[t]
+\caption{Evidence-to-Design Traceability (Selected Examples)}
+\label{tab:evidence}
+\centering\footnotesize
+\begin{tabularx}{\columnwidth}{@{}p{.22\columnwidth}X p{.24\columnwidth}@{}}
+\toprule
+Evidence & Implementable decision & Outcome to test\\
+\midrule
+Extensive reading \cite{sangers2025} & Coherent graded library; learner text choice & New-text comprehension\\
+Glossing \cite{yanagisawa2020} & On-demand in-context meaning & Delayed word recall\\
+Retrieval \cite{roediger2006} & First answer before explanation & Delayed unseen items\\
+Feedback \cite{shute2008} & Evidence-linked error explanation & Error transfer rate\\
+Coverage \cite{schmitt2011} & Flexible comfortable/stretch levels & Fit and abandonment\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{A Unified CEFR--IELTS Learning Architecture}
+\subsection{One Library, Two Measurement Targets}
+CEFR provides proficiency descriptors, including what learners can do with different kinds of reading material \cite{coe2020}. IELTS Academic Reading specifies a 60-minute test with three sections and 40 questions on approximately 2,150--2,750 words \cite{ieltsformat}. Official IELTS guidance cautions that IELTS band scores do not map one-to-one onto CEFR levels \cite{ieltscefr}. A single Stella reading path can serve both purposes without collapsing their measures:
+\begin{itemize}
+\item \emph{CEFR-oriented reading profile}: descriptor-aligned tasks, comprehension across text types, and confidence based on coverage of assessed skills.
+\item \emph{IELTS task readiness}: question-family performance, paraphrase and evidence handling, and performance under relevant time limits.
+\item \emph{Vocabulary memory}: FSRS state for individual lexical entries; never used as a direct CEFR or IELTS conversion.
+\end{itemize}
+
+A1--A2 content should primarily develop everyday comprehension with optional support. At B1--B2, learners can work with longer texts, rhetorical relations, and gradually introduced IELTS-style tasks. At C1--C2, complex arguments and author stance become central. These are \emph{curriculum suggestions}; they are not official rules assigning IELTS question types to CEFR bands.
+
+\subsection{Learning Modes}
+\textbf{Explore} offers low-stakes graded reading, optional lookup, and short meaning checks. \textbf{Learn} requests independent answers before revealing evidence and explanations. \textbf{Challenge} introduces IELTS-style question families at a suitable textual difficulty. \textbf{Exam} follows the official timing and task format, disables hints, and scores by first submitted answers. An activity must carry its mode, hint policy, content version, and grading policy so that its results remain interpretable.
+
+\subsection{Data Contracts and Content Integrity}
+Every passage needs an identifier, immutable version, paragraphs with stable sentence IDs, intended level, topic, and editorial status. Each question needs a typed response schema, skill tags, a canonical scoring rule, and independently reviewed evidence. Table~\ref{tab:contract} lists the smallest viable contract. Content changes must not silently rewrite previous attempts.
+
+\begin{table}[t]
+\caption{Minimal Reading Data Contract}
+\label{tab:contract}
+\centering\footnotesize
+\begin{tabularx}{\columnwidth}{@{}p{.33\columnwidth}X@{}}
+\toprule
+Entity & Required fields and invariant\\
+\midrule
+Passage & \texttt{id}, \texttt{version}, \texttt{level}, \texttt{paragraphs}, \texttt{status}\\
+Question & \texttt{id}, \texttt{type}, \texttt{skill}, \texttt{key}, \texttt{evidenceIds}\\
+Attempt & \texttt{sessionId}, \texttt{questionId}, response, assistance, timestamp\\
+Assessment & passage version, first-attempt score, duration, validity flags\\
+Skill profile & dimension, estimate, sample count, uncertainty, update time\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+A static JSON corpus with a manifest fits Stella's current Cloudflare deployment and lazy-loading model. Reading attempts should use a versioned local-first store. IndexedDB is preferable for expanding histories; backup export/import must include its schema and migration logic. An incomplete or failed content load must block grading rather than silently omit an item. Since downloadable client-side content exposes answer keys, an entirely offline Exam mode is a \emph{practice environment}, not a secure high-stakes examination.
+
+\subsection{A Cautious Adaptive Rule}
+Let $s$ denote a reading skill and $q$ a candidate question. As an initial \emph{engineering heuristic}, rank suitable unseen items by
+\begin{equation}
+U(q)=w_1W_s+w_2F_q+w_3R_s+w_4D_q,\quad \sum_i w_i=1,
+\label{eq:selection}
+\end{equation}
+where $W_s$ is observed weakness, $F_q$ is match to current level, $R_s$ indicates a review opportunity, and $D_q$ rewards underrepresented skill coverage. No coefficient is estimated in this paper. Production use requires calibration, minimum sample counts, and constraints that prevent repeatedly selecting one easy question type. When evidence is sparse, Stella should display \emph{insufficient data}, not a precise CEFR level.
+
+
+\section{Content Validation and Worked Example}
+\subsection{What an Assessable Passage Requires}
+A passage is not valid because its vocabulary resembles a CEFR list. It must convey a coherent discourse: entities persist across paragraphs, claims have identifiable scope, and necessary premises appear in the text. The passage editor should write a short content brief stating the intended comprehension constructs before generating questions. For example, a B2 environmental article might compare two interventions, qualify one result, and report uncertainty about another. If every question can be answered by matching one isolated word, the item set does not measure the intended range of reading skills.
+
+The content pipeline should maintain two separate files or access roles. A \emph{learner payload} contains the passage and question wording. A \emph{review payload} contains answer keys, permitted variants, explanation, evidence locations, and reviewer decisions. Publication requires a second reviewer to resolve ambiguous wording and inspect the evidence; automatically generated questions remain drafts until then. Both files carry the same immutable content version. An edit to a key or evidence location creates a new version, not an invisible change to an assessed item.
+
+\subsection{A Constructed Question Example}
+Consider the following \emph{illustrative, newly written} two-sentence passage: ``The council planted trees in two districts last year. It has not yet measured their effect on summer temperatures.'' A candidate statement reads: ``The tree-planting program lowered the average summer temperature.'' Under a True/False/Not Given task, the defensible answer is \emph{Not Given}. The passage reports an intervention and the absence of an outcome measurement. It does not report that temperature decreased, nor that it failed to decrease. A correct explanation points to the scope of the second sentence; a poor explanation invents a temperature observation. This small example demonstrates why a question record needs both a key and an evidence rationale. It does not claim that Stella already contains this item.
+
+Question families need type-specific invariants. \emph{Matching headings} must expose one unambiguous central idea per target paragraph. \emph{Multiple choice} requires distractors that are plausible but contradicted, unsupported, or weaker than the best answer. \emph{Summary completion} needs an explicit policy for spelling, capitalization, article use, and maximum word count. \emph{True/False/Not Given} requires separate judgments about contradiction and absence of evidence. A single generic string-comparison grader is inadequate for all families.
+
+\subsection{A Reviewer Rubric}
+Each draft should receive independent scores on four axes: (a) coherence and factual defensibility; (b) match between the specified skill and what the question actually demands; (c) uniqueness and traceability of the answer; and (d) linguistic appropriateness for the intended learners. Reviewers should record an explicit failure reason instead of a bare pass/fail. Repeated reviewer disagreement is a signal to revise or discard an item, not to average the two keys. A passage's CEFR label should initially be an \emph{editorial target}. It becomes an assessment claim only after empirical item review and descriptor alignment.
+
+\section{Implementation Details and Failure Modes}
+\subsection{Separating Evidence from Convenience Features}
+In Learn mode, a tap on a highlighted word can display an Atlas gloss and let the learner save the word for later review. The software must record that assistance for the current question, but it must not call the learner wrong merely because a gloss was opened. Instead, it reports assisted practice separately from independent proficiency evidence. A user may intentionally choose challenging material for exploration; the recommendation engine should respect that choice without pretending the resulting assisted accuracy measures unassisted skill.
+
+Word lookup is technically less simple than a direct headword equality test. The visible token \emph{developing} may be a form of \emph{develop}; \emph{development} is a related noun and may represent a different sense. A lookup bridge needs normalized tokenization, explicit lemma or morphology rules, and a sense-disambiguation fallback. It should avoid attaching a misleading definition to every surface string. Its accuracy can be checked with a small annotated set containing inflections, multiword expressions, homographs, and unseen words.
+
+\subsection{Scoring, Persistence, and Provenance}
+The grading engine should be a deterministic, pure function for all closed-form question types. Its input comprises the content version, question schema, recorded answer, and grading policy. Its output carries correctness, normalized answer, validity flags, and a feedback reference. The evaluation record also stores whether the item was previously seen, whether a hint or gloss was used, and how much of the assigned time elapsed. Feedback text is generated or displayed \emph{after} recording the first attempt so that a learner's correction cannot overwrite it.
+
+Stella's current local-first design has practical advantages: it permits offline study and avoids a central account requirement. It also imposes limits. Browser storage can be erased; two tabs can update related records; and answer keys shipped with static files can be inspected. The reading store therefore needs versioned migration and backup checksums, not a claim of examination security. Test cases should include a forced reload during submission, unavailable content chunks, an old backup restored into a new schema, and concurrent changes from two tabs. Security decisions follow the intended use: formative practice can run locally, but a high-stakes supervised test needs a different trust model.
+
+\subsection{Construct Validity and Adaptive Estimates}
+A skill label such as \emph{inference} is only useful if its items genuinely demand inference. Tagging the question in JSON does not establish that property. Similarly, a fast response may reflect guessing or familiarity, not fluency. The initial skill estimate may use a smoothed proportion,
+\begin{equation}
+\widehat{p}_{s}=\frac{c_s+\alpha}{n_s+\alpha+\beta},
+\label{eq:mastery}
+\end{equation}
+where $c_s$ counts valid first-attempt successes, $n_s$ counts valid attempts, and $\alpha,\beta>0$ are stated prior parameters. This is a transparent baseline, \emph{not} a validated psychometric proficiency estimate. It must be displayed with sample size and uncertainty, and it cannot be equated directly to a CEFR band. Later models may incorporate item difficulty and learner history only after sufficient calibrated data are available.
+
+\section{An Evaluation That Can Fail}
+\subsection{Primary Outcome and Estimand}
+The primary endpoint should be performance on \emph{unseen, difficulty-matched reading passages}, assessed without hints. A secondary endpoint should measure retention after a delay, with parallel rather than repeated items. The experimental contrast can be written as
+\begin{equation}
+\Delta=E[Y_{\mathrm{post}}-Y_{\mathrm{pre}}\mid T=1]-E[Y_{\mathrm{post}}-Y_{\mathrm{pre}}\mid T=0],
+\label{eq:estimand}
+\end{equation}
+where $T=1$ denotes the integrated reading design and $T=0$ a specified comparator. $Y$ is a pre-registered comprehension measure on equated, unfamiliar forms. This equation defines an estimand; it is \emph{not} an observed effect. Passage difficulty and item quality must be checked independently of user assignment.
+
+\subsection{Experiment Sequence}
+Before any A/B test, conduct a content-review pilot. Reviewers verify each passage's coherence, stated level, question ambiguity, answer key, and evidence spans. Then evaluate separately: (i) on-demand gloss versus no gloss for delayed word knowledge; (ii) evidence-based explanation versus correctness-only feedback for transfer to a new item; (iii) guided recommendation versus topic-only browsing for completion and comprehension; and (iv) spaced vocabulary follow-up versus an equal-time non-spaced comparison. Do not run all treatments at once and attribute a combined result to one mechanism.
+
+For each study, pre-register inclusion criteria, randomization unit, primary outcome, exclusion rules, missing-data handling, and a power analysis. Use analyses that account for dependence among items and participants. Report confidence intervals, not merely $p$-values. Track task completion and perceived workload as possible harms. If assisted-session accuracy rises while independent unseen-text comprehension does not, the intended learning claim fails.
+
+\subsection{Measurement and Product Guardrails}
+The dashboard should distinguish \emph{practice accuracy}, \emph{independent comprehension}, \emph{vocabulary recall}, and \emph{IELTS task readiness}. A CEFR label requires evidence from sufficiently varied, descriptor-aligned tasks and a stated confidence level. Any predicted IELTS band would require a separate calibration and validation study; until then, display raw practice scores or an explicitly experimental readiness indicator. Read time and click counts are behavioral traces, not proof of proficiency.
+
+
+\section{Threats to Validity and Reporting Rules}
+Three threats could make a successful-looking Stella experiment misleading. \emph{Training-set leakage} occurs if passage content or near-duplicate questions appear in both practice and assessment. \emph{Difficulty imbalance} occurs if one treatment receives easier tests, even when the same CEFR label is printed on both. \emph{Attrition} occurs when the learners who struggle most stop before the delayed test. The evaluation protocol should deduplicate passages across splits, match or statistically adjust item difficulty, and report group-specific missingness and completion rates.
+
+The meaning of the reported improvement is equally important. A rise in words saved, time spent reading, or IELTS-style practice accuracy is an \emph{engagement or practice outcome}; it is not interchangeable with transfer to new texts. Outcomes should be published in the order set by the preregistered hierarchy, with confidence intervals, negative results, and any protocol deviations. A study with no measurable benefit still provides design evidence. It can show that a feature should be revised or removed.
+
+
+\section{Repository-Level Transition Map}
+The architecture should follow the observed source boundaries rather than introduce a parallel framework. Table~\ref{tab:files} maps each proposed change to a concrete file or an adjacent new module. The mapping is actionable without asserting that a patch has already been applied.
+
+\begin{table}[t]
+\caption{Source-to-Change Map and Verification}
+\label{tab:files}
+\centering\footnotesize
+\begin{tabularx}{\columnwidth}{@{}p{.38\columnwidth}X@{}}
+\toprule
+Current location & Proposed behavior and required test\\
+\midrule
+\texttt{pages/Reading.tsx} & Keep sentence exploration; route coherent reader; test navigation and resume\\
+\texttt{lib/drills.ts} & Retain sentence filter; do not present it as passage construction\\
+\texttt{atlas/context.tsx} & Bridge token to Atlas entry; verify missing-entry fallback\\
+\texttt{store/store.ts} & Version reading state and backups; test old export/import round trip\\
+\texttt{store/srs.ts} & Keep lexical scheduling independent of reading-skill estimates\\
+\texttt{pages/Onboarding.tsx} & Add A1 choice; separate current proficiency from target IELTS score\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The onboarding case illustrates why precise inspection matters. The current array of starting levels begins at A2 and couples several levels with specific IELTS targets. These labels may help orient users, but they are not validated score conversions. The revised onboarding should ask two different questions: \emph{Which reading activities can you currently complete?} and \emph{Do you have an IELTS target?} A self-reported level may set the first lesson, but a verified reading estimate requires later evidence. This avoids displaying ``B2'' merely because the learner selected a target band.
+
+Likewise, the existing \texttt{sanitizeProgress} logic reads a versioned schema and rebuilds fields from recognized values. Adding reading history without a migration and backup update risks dropping new fields during reload or import. A safer implementation creates a dedicated, versioned reading store and explicitly tests the migration from the current vocabulary backup. A successful build is not enough: the release test must restore a realistic old backup, complete a new passage, export it, import it on a fresh profile, and compare first-attempt records and content versions.
+
+The current Atlas prefetch helper returns a null for a failed entry fetch. That is a reasonable resilience choice in a vocabulary-exploration screen. It is not a valid grading policy for a passage with missing questions. The new reader must distinguish \emph{optional vocabulary media failure} from \emph{assessment content failure}. Missing audio or an optional gloss may degrade gracefully; missing passage sentences, answer options, or grading rules should mark the attempt invalid rather than invent or omit evidence.
+
+A pilot implementation can report a compact quality dossier alongside its source release: number of reviewed passages per level, number of questions per skill, proportion requiring key revision, inter-reviewer agreement, broken-evidence checks, backup migration tests, and the fraction of independent assessments with sufficient data. Reporting these quantities will make subsequent learning claims auditable. Values are intentionally unspecified here because no such pilot has been run.
+
+\section{Engineering Plan and Quality Gates}
+Implementation should follow dependencies rather than a promise that all modules can be built in one sprint. First, preserve current sentence exploration as a named activity and add an independently validated passage schema. Second, implement deterministic scoring, attempt capture, evidence feedback, and unit tests for each question type. Third, connect words in passages to Atlas through a deliberate word-form mapping and reuse the existing FSRS card scheduler. Fourth, add migration-safe persistence, backup round-trip tests, and multi-tab conflict tests. Only then introduce adaptive recommendations. A timed IELTS-style mock follows after content quality and scoring reliability are established.
+
+Release gates should include: no ambiguous answer keys in the reviewed sample; zero grading from incomplete passage payloads; first attempts distinguished from hinted retries; successful export/import of reading histories; offline recovery of an interrupted Learn session; and no fabricated CEFR or IELTS equivalence. These are proposed acceptance criteria, not measurements that Stella already passes.
+
+\section{Limitations and Conclusion}
+This work is a design-oriented synthesis. It does not conduct a systematic search, re-estimate published effects, measure reading outcomes in Stella, or establish that the proposed adaptive rule is effective. The underlying studies vary in learner populations, interventions, measures, and contexts. Software observations come from source inspection rather than a controlled production audit. Neither IEEE formatting nor a carefully cited argument replaces experimental validation.
+
+The proposed improvement changes what Stella should count as learning. It preserves the existing vocabulary system while giving coherent reading passages their own questions, evidence, attempts, and outcomes. The core test is intentionally demanding: \emph{after using Stella, can a learner understand a new text without the help that was available during practice?} The system should claim progress only when data begin to answer that question.
+
+\balance
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+\end{document}
