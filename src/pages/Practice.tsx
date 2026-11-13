@@ -405,7 +405,7 @@ function CollocationRound({ entries, onExit, onAgain }: { entries: Entry[]; onEx
       </div>
     );
 
-  const gloss = q.entry.senses[0]?.vi || (!/[\u4e00-\u9fff]/.test(q.entry.senses[0]?.zh ?? "") ? q.entry.senses[0]?.zh : "");
+  const gloss = q.entry.vi_word || q.entry.senses[0]?.vi || (!/[\u4e00-\u9fff]/.test(q.entry.senses[0]?.zh ?? "") ? q.entry.senses[0]?.zh : "");
 
   return (
     <div className="page practice typing">

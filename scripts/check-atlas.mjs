@@ -45,8 +45,9 @@ for (let n = 0; n * index.chunk < index.count; n++) {
     if (e.ex.length < 2) warn.oneExample++;
     if (!e.uk && !e.us) warn.missingIpa++;
     if (typeof e.vi_word !== "string" || !e.vi_word) warn.missingViWord++;
-    // tip_vi must keep the Latin-script terms of tip (headwords, example words)
-    const terms = [...new Set((e.tip || "").replace(/\/[^/]*\//g, "").match(/[A-Za-z][A-Za-z'-]*[A-Za-z]|[A-Za-z]{2,}/g) || [])];
+    // tip_vi must keep the Latin-script terms of tip (headwords, example words).
+    // IPA such as 读/z/ is skipped; word lists such as last/next/this are kept.
+    const terms = [...new Set((e.tip || "").replace(/(^|[^A-Za-z])\/[^/\s]+\//g, "$1 ").match(/[A-Za-z][A-Za-z'-]*[A-Za-z]|[A-Za-z]{2,}/g) || [])];
     const tipVi = (e.tip_vi || "").toLowerCase();
     if (terms.some((t) => !tipVi.includes(t.toLowerCase()))) warn.tipViLostTerms++;
     const stem = e.w.toLowerCase().split(" ")[0].replace(/(e|y)$/, "").slice(0, 5);
