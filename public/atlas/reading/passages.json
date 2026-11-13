@@ -25,14 +25,14 @@
       },
       {
         "type": "tfng",
-        "question": "Digital distribution tools have made it harder for independent artists to reach global audiences.",
+        "question": "Most independent musicians now earn more from digital distribution than from live performances.",
         "options": [
           "TRUE",
           "FALSE",
           "NOT GIVEN"
         ],
-        "answer": 1,
-        "explanation": "Paragraph 3 explains that independent musicians and illustrators 'can reach global audiences without corporate patronage'."
+        "answer": 2,
+        "explanation": "Paragraph 3 says independent artists can reach global audiences without corporate patronage, but it says nothing about their income or live performances."
       }
     ],
     "vocabulary": [
@@ -572,7 +572,7 @@
     "topic": "daily",
     "topicName": "Daily Life",
     "title": "Circadian Rhythms and the Architecture of Sleep",
-    "cefr": "B1",
+    "cefr": "C1",
     "paragraphs": [
       "Human physiology is synchronized to an endogenous 24-hour cycle known as the circadian rhythm. Governed by the suprachiasmatic nucleus located in the hypothalamus of the brain, this biological clock orchestrates core body temperature, hormone secretion, digestive enzyme production, and sleep-wake cycles in response to environmental light cues.",
       "The ubiquity of artificial illumination and electronic device screens emitting high-energy blue wavelength light has disrupted this evolutionary synchronization. Exposure to bright luminescence in the late evening suppresses the secretion of melatonin, the neurohormone responsible for signaling sleep readiness to the brain. Chronic circadian misalignment results in fragmented sleep architecture, diminished cognitive performance, and elevated risks of cardiovascular disease and metabolic dysfunction.",
@@ -1113,14 +1113,14 @@
       },
       {
         "type": "tfng",
-        "question": "Digital infrastructure by itself is sufficient to ensure high academic performance.",
+        "question": "Governments spend more on school technology than on teacher training.",
         "options": [
           "TRUE",
           "FALSE",
           "NOT GIVEN"
         ],
-        "answer": 1,
-        "explanation": "Paragraph 3 explicitly states: 'technological infrastructure alone cannot guarantee academic attainment'."
+        "answer": 2,
+        "explanation": "Paragraph 3 discusses the digital divide and calls for balanced reform, but it gives no information about government spending."
       }
     ],
     "vocabulary": [
@@ -1457,14 +1457,14 @@
       },
       {
         "type": "tfng",
-        "question": "Habitual expressive suppression of emotions improves cardiovascular health.",
+        "question": "Mindfulness practices reduce anxiety more effectively than cognitive reappraisal.",
         "options": [
           "TRUE",
           "FALSE",
           "NOT GIVEN"
         ],
-        "answer": 1,
-        "explanation": "Paragraph 3 notes that individuals who chronically suppress emotions 'exhibit elevated vascular cardiovascular strain'."
+        "answer": 2,
+        "explanation": "The passage describes both mindfulness and cognitive reappraisal, but it never compares how well they reduce anxiety."
       }
     ],
     "vocabulary": [
@@ -2221,14 +2221,14 @@
       },
       {
         "type": "tfng",
-        "question": "Diets rich in ultra-processed foods help enhance protective gut bacterial diversity.",
+        "question": "Probiotic therapies work better for older patients than for younger ones.",
         "options": [
           "TRUE",
           "FALSE",
           "NOT GIVEN"
         ],
-        "answer": 1,
-        "explanation": "Paragraph 3 explicitly states that ultra-processed diets 'severely diminish protective bacterial taxa'."
+        "answer": 2,
+        "explanation": "Paragraph 3 mentions probiotic therapies as a frontier in personalized medicine, but it does not compare their effect by patient age."
       }
     ],
     "vocabulary": [
@@ -2717,14 +2717,14 @@
       },
       {
         "type": "tfng",
-        "question": "Investigative local journalism has experienced significant financial expansion due to social media platforms.",
+        "question": "Media literacy courses are already compulsory in most secondary schools.",
         "options": [
           "TRUE",
           "FALSE",
           "NOT GIVEN"
         ],
-        "answer": 1,
-        "explanation": "Paragraph 3 points to 'the commercial decline of investigative local journalism'."
+        "answer": 2,
+        "explanation": "Paragraph 3 says that rebuilding the civic ecosystem requires media literacy, but it does not say whether schools teach it."
       }
     ],
     "vocabulary": [
@@ -2953,14 +2953,14 @@
       },
       {
         "type": "tfng",
-        "question": "Rewilding projects never face resistance from agricultural communities or farmers.",
+        "question": "Rewilding projects in Europe attract more ecotourists than those in North America.",
         "options": [
           "TRUE",
           "FALSE",
           "NOT GIVEN"
         ],
-        "answer": 1,
-        "explanation": "Paragraph 3 points out that rewilding projects 'frequently encounter socio-political friction with agricultural stakeholders'."
+        "answer": 2,
+        "explanation": "Paragraph 3 mentions rural ecotourism, but the passage does not compare ecotourism in different regions."
       }
     ],
     "vocabulary": [

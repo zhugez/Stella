@@ -24,14 +24,14 @@
     },
     {
       "type": "tfng",
-      "question": "Rewilding projects never face resistance from agricultural communities or farmers.",
+      "question": "Rewilding projects in Europe attract more ecotourists than those in North America.",
       "options": [
         "TRUE",
         "FALSE",
         "NOT GIVEN"
       ],
-      "answer": 1,
-      "explanation": "Paragraph 3 points out that rewilding projects 'frequently encounter socio-political friction with agricultural stakeholders'."
+      "answer": 2,
+      "explanation": "Paragraph 3 mentions rural ecotourism, but the passage does not compare ecotourism in different regions."
     }
   ],
   "vocabulary": [

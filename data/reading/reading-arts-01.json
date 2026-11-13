@@ -24,14 +24,14 @@
     },
     {
       "type": "tfng",
-      "question": "Digital distribution tools have made it harder for independent artists to reach global audiences.",
+      "question": "Most independent musicians now earn more from digital distribution than from live performances.",
       "options": [
         "TRUE",
         "FALSE",
         "NOT GIVEN"
       ],
-      "answer": 1,
-      "explanation": "Paragraph 3 explains that independent musicians and illustrators 'can reach global audiences without corporate patronage'."
+      "answer": 2,
+      "explanation": "Paragraph 3 says independent artists can reach global audiences without corporate patronage, but it says nothing about their income or live performances."
     }
   ],
   "vocabulary": [

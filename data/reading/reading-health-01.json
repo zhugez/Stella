@@ -24,14 +24,14 @@
     },
     {
       "type": "tfng",
-      "question": "Diets rich in ultra-processed foods help enhance protective gut bacterial diversity.",
+      "question": "Probiotic therapies work better for older patients than for younger ones.",
       "options": [
         "TRUE",
         "FALSE",
         "NOT GIVEN"
       ],
-      "answer": 1,
-      "explanation": "Paragraph 3 explicitly states that ultra-processed diets 'severely diminish protective bacterial taxa'."
+      "answer": 2,
+      "explanation": "Paragraph 3 mentions probiotic therapies as a frontier in personalized medicine, but it does not compare their effect by patient age."
     }
   ],
   "vocabulary": [

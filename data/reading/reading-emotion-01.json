@@ -24,14 +24,14 @@
     },
     {
       "type": "tfng",
-      "question": "Habitual expressive suppression of emotions improves cardiovascular health.",
+      "question": "Mindfulness practices reduce anxiety more effectively than cognitive reappraisal.",
       "options": [
         "TRUE",
         "FALSE",
         "NOT GIVEN"
       ],
-      "answer": 1,
-      "explanation": "Paragraph 3 notes that individuals who chronically suppress emotions 'exhibit elevated vascular cardiovascular strain'."
+      "answer": 2,
+      "explanation": "The passage describes both mindfulness and cognitive reappraisal, but it never compares how well they reduce anxiety."
     }
   ],
   "vocabulary": [

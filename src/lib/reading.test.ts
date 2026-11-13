@@ -20,14 +20,16 @@ test("corpus is structurally complete; evidence references stay within passages"
 
 test("closed-form scoring blocks partial answers and unverified extracts", () => {
   assert.throws(() => gradeReading(p, { 0: 1 }));
-  assert.equal(gradeReading(p, { 0: 1, 1: 1 }), 2);
-  assert.equal(gradeReading(p, { 0: 0, 1: 1 }), 1);
+  const [a0, a1] = p.questions.map((q) => q.answer);
+  assert.equal(gradeReading(p, { 0: a0, 1: a1 }), 2);
+  assert.equal(gradeReading(p, { 0: (a0 + 1) % 4, 1: a1 }), 1);
   assert.throws(() => gradeReading({ ...p, author: "Unverified import" }, { 0: 1, 1: 1 }));
 });
 
 test("first submission is immutable across reload, retries and content edits", () => {
-  let state = recordAnswer(empty(), p, 0, 0);
-  state = recordAnswer(state, p, 1, 1);
+  // First question wrong, second right: one correct answer.
+  let state = recordAnswer(empty(), p, 0, (p.questions[0].answer + 1) % 4);
+  state = recordAnswer(state, p, 1, p.questions[1].answer);
   state = submitReading(state, p);
   const restored = sanitizeReading(JSON.parse(JSON.stringify(state)));
   assert.equal(restored.attempts[readingKey(p)].correct, 1);

@@ -24,14 +24,14 @@
     },
     {
       "type": "tfng",
-      "question": "Investigative local journalism has experienced significant financial expansion due to social media platforms.",
+      "question": "Media literacy courses are already compulsory in most secondary schools.",
       "options": [
         "TRUE",
         "FALSE",
         "NOT GIVEN"
       ],
-      "answer": 1,
-      "explanation": "Paragraph 3 points to 'the commercial decline of investigative local journalism'."
+      "answer": 2,
+      "explanation": "Paragraph 3 says that rebuilding the civic ecosystem requires media literacy, but it does not say whether schools teach it."
     }
   ],
   "vocabulary": [

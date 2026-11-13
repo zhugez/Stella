@@ -24,14 +24,14 @@
     },
     {
       "type": "tfng",
-      "question": "Digital infrastructure by itself is sufficient to ensure high academic performance.",
+      "question": "Governments spend more on school technology than on teacher training.",
       "options": [
         "TRUE",
         "FALSE",
         "NOT GIVEN"
       ],
-      "answer": 1,
-      "explanation": "Paragraph 3 explicitly states: 'technological infrastructure alone cannot guarantee academic attainment'."
+      "answer": 2,
+      "explanation": "Paragraph 3 discusses the digital divide and calls for balanced reform, but it gives no information about government spending."
     }
   ],
   "vocabulary": [
