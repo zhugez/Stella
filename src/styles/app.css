@@ -4812,6 +4812,16 @@ a:hover .mark-needle,
   font-variant-numeric: tabular-nums;
   text-align: center;
 }
+/* The same button inside a learning session: a header icon button, 44px to touch, its slot kept while it is off. */
+.note-badge-compact {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  color: var(--terra);
+}
+.note-badge-compact:disabled {
+  visibility: hidden;
+}
 /* Room under the footer, the last item on every page, so the badge never sits on its links. */
 .app:has(.note-badge) .footer {
   padding-bottom: 84px;

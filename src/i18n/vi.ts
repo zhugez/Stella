@@ -543,4 +543,5 @@ export const vi: Record<keyof typeof en, string> = {
   note_badge: "Ghi chú từ (Shift+N)",
   note_in_atlas: "Từ này đã có trong Stella.",
   note_open_card: "Mở thẻ",
+  note_src_session: "Buổi học",
 };

@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import type { Atlas, Entry, WordRef } from "../atlas/types";
-import { findHeadword, makeNote, noteEntry, noteId, noteRef, selectionSentence, selectionWord, sentenceAt, unlearnedCount, withNotes } from "./notes";
+import { findHeadword, makeNote, noteAllowedInSession, noteEntry, noteId, noteRef, selectionSentence, selectionWord, sentenceAt, unlearnedCount, withNotes } from "./notes";
 
 const words: WordRef[] = ["advise", "study", "car", "stunt", "day off", "parade", "stop", "begin"].map((word, order) => ({ id: `w${order}`, word, zh: "", ipa: "", cefr: 1, topic: 0, media: 3, order }));
 const atlas = {
@@ -110,4 +110,17 @@ test("withNotes answers for note ids and leaves the atlas path alone", async () 
   assert.equal(a.audio(noteEntry(n), "uk"), null);
   assert.equal(a.img(words[1]), "img.webp");
   assert.equal(a.audio(words[1], "uk"), "a.mp3");
+});
+
+test("noteAllowedInSession allows the intro, an answered quiz and the summary only", () => {
+  const intro = { id: "w0", kind: "intro" } as const;
+  const quiz = { id: "w0", kind: "meaning" } as const;
+  const recall = { id: "w0", kind: "recall" } as const;
+  const pending = { correct: true, value: "w0" };
+  assert.equal(noteAllowedInSession(intro, undefined, false), true);
+  assert.equal(noteAllowedInSession(quiz, undefined, false), false);
+  assert.equal(noteAllowedInSession(quiz, pending, false), true);
+  assert.equal(noteAllowedInSession(recall, undefined, false), false);
+  assert.equal(noteAllowedInSession(recall, pending, false), false);
+  assert.equal(noteAllowedInSession(undefined, undefined, true), true);
 });

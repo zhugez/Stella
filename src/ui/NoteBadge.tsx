@@ -5,6 +5,7 @@ import { noteId, selectionSentence, selectionWord, unlearnedCount } from "../lib
 import { closeWord, useLocation } from "../lib/router";
 import { store, useStore } from "../store/store";
 import { openNoteSheet } from "./NoteSheet";
+import { sheetOpen } from "./Sheet";
 
 /** A selection read from the page: pressing the badge can clear it, so it is captured beforehand. */
 interface Picked {
@@ -36,8 +37,9 @@ function readSelection(): Picked | null {
   return { word, ctx: selectionSentence(block.textContent ?? "", before.toString().length), title: title || undefined, at: Date.now() };
 }
 
-/** Round button on every page: opens the note sheet, prefilled from the text selected on the page. `page` names where the learner is. */
-export function NoteBadge({ page }: { page: string }) {
+/** Round button on every page: opens the note sheet, prefilled from the text selected on the page. `page` names where the learner is.
+ * `compact` is the header button used inside a learning session; `disabled` keeps its slot but hides it and its shortcut. */
+export function NoteBadge({ page, compact = false, disabled = false }: { page: string; compact?: boolean; disabled?: boolean }) {
   const t = useT();
   const loc = useLocation();
   const count = useStore((s) => unlearnedCount(s.progress.notes, s.progress.cards));
@@ -76,8 +78,8 @@ export function NoteBadge({ page }: { page: string }) {
     const on = (e: KeyboardEvent) => {
       if (!e.shiftKey || e.ctrlKey || e.metaKey || e.altKey || e.repeat || e.key.toLowerCase() !== "n") return;
       const target = e.target as HTMLElement;
-      // The badge is hidden under other sheets; the shortcut follows it.
-      if (target.isContentEditable || target.closest("input, textarea, select") || !button.current?.checkVisibility()) return;
+      // The badge is hidden under other sheets; the shortcut follows it. The compact one stays visible there, so it checks the sheet itself.
+      if (target.isContentEditable || target.closest("input, textarea, select") || !button.current?.checkVisibility() || button.current.disabled || (compact && sheetOpen())) return;
       e.preventDefault();
       open(grab());
     };
@@ -89,8 +91,10 @@ export function NoteBadge({ page }: { page: string }) {
     <button
       ref={button}
       type="button"
-      className="note-badge"
+      className={compact ? "icon-btn note-badge-compact" : "note-badge"}
       aria-label={t("note_badge")}
+      title={compact ? t("note_badge") : undefined}
+      disabled={disabled}
       onPointerDown={() => (grabbed.current = grab())}
       // detail 0: activated from the keyboard, no pointerdown came first.
       onClick={(e) => {

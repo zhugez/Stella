@@ -542,4 +542,5 @@ export const en = {
   note_badge: "Note a word (Shift+N)",
   note_in_atlas: "This word is already in Stella.",
   note_open_card: "Open card",
+  note_src_session: "Learning session",
 } as const;

@@ -6,7 +6,7 @@ import { useT, type TranslationKey } from "../i18n";
 import { play, stopAudio } from "../lib/audio";
 import { burst } from "../lib/burst";
 import { cue } from "../lib/sound";
-import { isNoteId } from "../lib/notes";
+import { isNoteId, noteAllowedInSession } from "../lib/notes";
 import { go } from "../lib/router";
 import { accepts } from "../lib/spelling";
 import { gap, normalize } from "../lib/text";
@@ -15,6 +15,8 @@ import { Rating } from "../store/srs";
 import { store, useStore, type ActiveSession, type QuizKind, type Step } from "../store/store";
 import { EntryView, Highlight } from "../ui/EntryView";
 import { Illustration } from "../ui/Illustration";
+import { NoteBadge } from "../ui/NoteBadge";
+import { sheetOpen } from "../ui/Sheet";
 import { Galaxy } from "../galaxy/Galaxy";
 import { AmbiencePicker } from "../ui/Ambience";
 import { Ring } from "../ui/Ring";
@@ -78,6 +80,7 @@ function Runner({ session }: { session: ActiveSession }) {
           {session.index + 1}
           <small>/{total}</small>
         </span>
+        <NoteBadge compact page={t("note_src_session")} disabled={!noteAllowedInSession(step, session.pending, false)} />
         <AmbiencePicker />
       </header>
       <main className="learn-stage" key={`${session.id}-${session.index}`}>
@@ -600,6 +603,7 @@ function Summary({ session }: { session: ActiveSession }) {
         </ul>
         <p className="summary-note">{t("summary_note")}</p>
         <div className="summary-actions">
+          <NoteBadge compact page={t("note_src_session")} />
           {wrong.length > 0 && (
             <button className="btn btn-ghost" onClick={again}>
               <RotateCcw size={18} /> {t("practice_mistakes").replace("{n}", String(wrong.length))}
@@ -617,13 +621,13 @@ function Summary({ session }: { session: ActiveSession }) {
   );
 }
 
-/** Page-level shortcuts that ignore typing in inputs (except Enter, which forms handle). */
+/** Page-level shortcuts that ignore typing in inputs (except Enter, which forms handle) and everything while a sheet is open. */
 export function useKeys(map: Record<string, () => void>) {
   const ref = useRef(map);
   ref.current = map;
   useEffect(() => {
     const on = (e: KeyboardEvent) => {
-      if (e.metaKey || e.ctrlKey || e.altKey || e.repeat) return;
+      if (e.metaKey || e.ctrlKey || e.altKey || e.repeat || sheetOpen()) return;
       const t = e.target as HTMLElement;
       const typing = t.tagName === "INPUT" || t.tagName === "TEXTAREA";
       if (typing && !(e.key === "Enter" && (t as HTMLInputElement).readOnly)) return;

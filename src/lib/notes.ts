@@ -1,5 +1,5 @@
 import type { Atlas, Entry, WordRef } from "../atlas/types";
-import type { Note } from "../store/store";
+import type { ActiveSession, Note, Step } from "../store/store";
 import { headwordPattern, IRREGULAR, normalize } from "./text";
 
 export const NOTE_LIMITS = { w: 40, vi: 120, pos: 8, ctx: 400, src: 80 } as const;
@@ -110,6 +110,10 @@ export const selectionSentence = (block: string, index: number) =>
   sentenceAt(block, index).replace(/\s+/g, " ").replace(/^ ?\[\d+\] /, "").trim().slice(0, NOTE_LIMITS.ctx);
 
 /** Notes that have no review card yet. */
+/** Noting a word may not touch a grade or a timer that feeds one: the intro, an answered quiz (Feedback) and the summary. Recall grades on the same screen it is revealed. */
+export const noteAllowedInSession = (step: Step | undefined, pending: ActiveSession["pending"], finished: boolean) =>
+  finished || step?.kind === "intro" || (!!step && step.kind !== "recall" && !!pending);
+
 export const unlearnedCount = (notes: Note[], cards: Record<string, unknown>) => notes.filter((n) => !cards[n.id]).length;
 
 /** The atlas, also answering for note ids. `words` stays the atlas path, so the Atlas page, galaxy and level path never list notes. */

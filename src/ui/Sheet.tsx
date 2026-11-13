@@ -2,6 +2,9 @@ import { X } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { useT } from "../i18n";
 
+/** True while any sheet is on screen; page shortcuts stand down so typing and Escape stay in the dialog. */
+export const sheetOpen = () => !!document.querySelector(".sheet-root");
+
 /** Accessible dialog: centered panel on desktop, bottom sheet on phones. */
 export function Sheet({
   open,
