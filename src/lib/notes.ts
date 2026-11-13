@@ -96,6 +96,22 @@ export function sentenceAt(text: string, index: number) {
   return text.slice(start);
 }
 
+const SELECTION_WORD = "[a-z'’-]*[a-z][a-z'’-]*";
+const SELECTION = new RegExp(`^${SELECTION_WORD}(?: ${SELECTION_WORD}){0,3}$`);
+
+/** A selected 1–4 word phrase ready to note: trimmed, lowercased, spaces collapsed. Null for numbers, punctuation, longer text. */
+export function selectionWord(text: string): string | null {
+  const s = text.replace(/\s+/g, " ").trim().toLowerCase();
+  return s.length <= NOTE_LIMITS.w && SELECTION.test(s) ? s : null;
+}
+
+/** The sentence around `index` of a block's text, on one line and without a leading "[1] " paragraph number. */
+export const selectionSentence = (block: string, index: number) =>
+  sentenceAt(block, index).replace(/\s+/g, " ").replace(/^ ?\[\d+\] /, "").trim().slice(0, NOTE_LIMITS.ctx);
+
+/** Notes that have no review card yet. */
+export const unlearnedCount = (notes: Note[], cards: Record<string, unknown>) => notes.filter((n) => !cards[n.id]).length;
+
 /** The atlas, also answering for note ids. `words` stays the atlas path, so the Atlas page, galaxy and level path never list notes. */
 export function withNotes(atlas: Atlas, notes: Note[]): Atlas {
   if (!notes.length) return atlas;

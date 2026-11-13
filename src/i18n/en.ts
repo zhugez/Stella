@@ -539,4 +539,7 @@ export const en = {
   note_not_learned: "Not learned yet",
   note_device_voice: "Device voice",
   note_listen: "Listen",
+  note_badge: "Note a word (Shift+N)",
+  note_in_atlas: "This word is already in Stella.",
+  note_open_card: "Open card",
 } as const;

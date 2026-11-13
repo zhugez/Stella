@@ -4668,6 +4668,11 @@ a:hover .mark-needle,
   font: 400 16px / 1.55 var(--serif);
   color: var(--ink-2);
 }
+.note-hint {
+  margin: 0;
+  font-size: 13.5px;
+  color: var(--ink-2);
+}
 .note-actions {
   display: flex;
   flex-wrap: wrap;
@@ -4717,4 +4722,111 @@ a:hover .mark-needle,
   font-style: normal;
   color: var(--ink-3);
   white-space: nowrap;
+}
+
+/* ---- Note badge ---- */
+/* A glass orb lit from the top-left by a gold rim, like the star marks on the atlas. */
+.note-badge {
+  --note-badge-face: color-mix(in oklab, var(--card-2) 84%, transparent);
+  --note-badge-glow: color-mix(in oklab, var(--ochre) 45%, transparent);
+  position: fixed;
+  z-index: 40;
+  right: calc(16px + env(safe-area-inset-right));
+  bottom: calc(max(var(--tab), env(safe-area-inset-bottom)) + 16px);
+  width: 52px;
+  height: 52px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(90% 70% at 30% 10%, color-mix(in oklab, var(--ochre) 16%, transparent), transparent 70%) padding-box,
+    linear-gradient(var(--note-badge-face), var(--note-badge-face)) padding-box,
+    linear-gradient(150deg, var(--ochre) 12%, var(--line-strong) 55%) border-box;
+  backdrop-filter: saturate(1.4) blur(14px);
+  -webkit-backdrop-filter: saturate(1.4) blur(14px);
+  color: var(--terra);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.14) inset,
+    0 14px 30px -14px rgba(14, 18, 30, 0.6),
+    0 0 24px -6px var(--note-badge-glow);
+  transition: transform 0.3s var(--spring), box-shadow 0.3s var(--ease);
+  -webkit-tap-highlight-color: transparent;
+}
+.note-badge-icon {
+  transition: transform 0.35s var(--spring);
+}
+/* The label pill reads the button's own aria-label, so it needs no extra string. */
+.note-badge::after {
+  content: attr(aria-label);
+  position: absolute;
+  right: calc(100% + 10px);
+  top: 50%;
+  padding: 7px 13px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--paper);
+  font: 600 13px / 1.3 var(--sans);
+  white-space: nowrap;
+  box-shadow: var(--shadow-lg);
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(6px, -50%);
+  transition: opacity 0.2s var(--ease), transform 0.3s var(--spring);
+}
+@media (hover: hover) {
+  .note-badge:hover {
+    transform: translateY(-2px);
+    box-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.14) inset,
+      0 18px 34px -14px rgba(14, 18, 30, 0.65),
+      0 0 30px -4px var(--note-badge-glow);
+  }
+  .note-badge:hover .note-badge-icon {
+    transform: rotate(-10deg);
+  }
+  .note-badge:hover::after {
+    opacity: 1;
+    transform: translate(0, -50%);
+  }
+}
+.note-badge:focus-visible::after {
+  opacity: 1;
+  transform: translate(0, -50%);
+}
+.note-badge:active {
+  transform: scale(0.94);
+}
+.note-badge-count {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--paper);
+  box-shadow: 0 0 0 2px var(--paper);
+  font: 700 11px / 20px var(--sans);
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+}
+/* Room under the footer, the last item on every page, so the badge never sits on its links. */
+.app:has(.note-badge) .footer {
+  padding-bottom: 84px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .note-badge:hover,
+  .note-badge:active,
+  .note-badge:hover .note-badge-icon {
+    transform: none;
+  }
+}
+/* The word card (the wide sheet) keeps the badge above its overlay, so a word selected there can be noted; every other sheet hides it. */
+.app:has(.sheet-wide) .note-badge {
+  z-index: 65;
+}
+.app:has(.sheet-root .sheet:not(.sheet-wide)) .note-badge {
+  display: none;
 }

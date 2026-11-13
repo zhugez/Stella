@@ -540,4 +540,7 @@ export const vi: Record<keyof typeof en, string> = {
   note_not_learned: "Chưa học",
   note_device_voice: "Giọng của thiết bị",
   note_listen: "Nghe",
+  note_badge: "Ghi chú từ (Shift+N)",
+  note_in_atlas: "Từ này đã có trong Stella.",
+  note_open_card: "Mở thẻ",
 };

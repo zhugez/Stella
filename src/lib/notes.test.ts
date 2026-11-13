@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import type { Atlas, Entry, WordRef } from "../atlas/types";
-import { findHeadword, makeNote, noteEntry, noteId, noteRef, sentenceAt, withNotes } from "./notes";
+import { findHeadword, makeNote, noteEntry, noteId, noteRef, selectionSentence, selectionWord, sentenceAt, unlearnedCount, withNotes } from "./notes";
 
 const words: WordRef[] = ["advise", "study", "car", "stunt", "day off", "parade", "stop", "begin"].map((word, order) => ({ id: `w${order}`, word, zh: "", ipa: "", cefr: 1, topic: 0, media: 3, order }));
 const atlas = {
@@ -65,6 +65,33 @@ test("sentenceAt returns the sentence around an index", () => {
   assert.equal(sentenceAt(text, text.indexOf("Yes")), "Yes!");
   assert.equal(sentenceAt(text, text.indexOf("last")), "The last sentence.");
   assert.equal(sentenceAt("No stop", 3), "No stop");
+});
+
+test("selectionWord accepts 1-4 word phrases, trimmed and lowercased", () => {
+  assert.equal(selectionWord("  Salt "), "salt");
+  assert.equal(selectionWord("Take\n  OFF"), "take off");
+  assert.equal(selectionWord("don’t"), "don’t");
+  assert.equal(selectionWord("well-known"), "well-known");
+  assert.equal(selectionWord("a b c d"), "a b c d");
+});
+
+test("selectionWord rejects numbers, punctuation, long and empty selections", () => {
+  for (const bad of ["", "   ", "42", "salt2", "-", "'", "salt.", "hello, world", "a b c d e", "x".repeat(41), "(salt)", "café"]) assert.equal(selectionWord(bad), null, bad);
+  assert.equal(selectionWord("x".repeat(40)), "x".repeat(40));
+});
+
+test("selectionSentence takes the sentence at the index on one line, without a paragraph number", () => {
+  const text = "[1] First one.  Is it\nhere? Yes!";
+  assert.equal(selectionSentence(text, 0), "First one.");
+  assert.equal(selectionSentence(text, text.indexOf("here")), "Is it here?");
+  assert.equal(selectionSentence("a ".repeat(500), 0).length, 400);
+});
+
+test("unlearnedCount counts notes without a card", () => {
+  const notes = [makeNote("salt", "muối"), makeNote("pepper", "tiêu")];
+  assert.equal(unlearnedCount([], {}), 0);
+  assert.equal(unlearnedCount(notes, {}), 2);
+  assert.equal(unlearnedCount(notes, { "u:salt": {} }), 1);
 });
 
 test("withNotes answers for note ids and leaves the atlas path alone", async () => {

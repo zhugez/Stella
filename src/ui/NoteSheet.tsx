@@ -56,16 +56,19 @@ function NoteForm({ draft: d }: { draft: NoteDraft }) {
   const [vi, setVi] = useState(d.vi ?? "");
   const [pos, setPos] = useState(d.pos ?? "");
   const ready = !!word.trim() && !!vi.trim();
+  // A word the atlas already has gets its card, which can be saved to learn first.
+  const hit = d.from ? undefined : findHeadword(atlas, word);
+
+  const openCard = (id: string) => {
+    closeNoteSheet();
+    openWord(id);
+  };
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!ready) return;
-    // A word the atlas already has gets its card, which can be saved to learn first.
-    const hit = d.from ? undefined : findHeadword(atlas, word);
-    if (hit) {
-      closeNoteSheet();
-      openWord(hit);
-    } else if (saveNote(makeNote(word, vi, d.ctx, d.src, pos), d.from)) {
+    if (hit) openCard(hit);
+    else if (saveNote(makeNote(word, vi, d.ctx, d.src, pos), d.from)) {
       closeNoteSheet();
       toast(t("note_saved"), "ok");
     } else toast(t("drill_finish_first"), "warn");
@@ -74,6 +77,14 @@ function NoteForm({ draft: d }: { draft: NoteDraft }) {
   return (
     <form className="note-form" onSubmit={submit}>
       <p className="eyebrow">{t("note_title")}</p>
+      {hit && (
+        <p className="note-hint">
+          {t("note_in_atlas")}{" "}
+          <button type="button" className="link" onClick={() => openCard(hit)}>
+            {t("note_open_card")}
+          </button>
+        </p>
+      )}
       <label className="note-field">
         <span>{t("note_word")}</span>
         <input data-autofocus={d.word ? undefined : ""} value={word} onChange={(e) => setWord(e.target.value)} maxLength={NOTE_LIMITS.w} lang="en" autoCapitalize="off" autoCorrect="off" spellCheck={false} required />
