@@ -1,6 +1,6 @@
 import type { Entry } from "../atlas/types";
 import type { Progress } from "../store/store";
-import { gap, headwordPattern, shuffle, splitHighlight, splitPair } from "./text";
+import { gap, headwordPattern, normalize, shuffle, splitHighlight, splitPair } from "./text";
 
 /** Words the scheduler keeps forgetting, hardest first. Only lapsed cards qualify. */
 export function weakWords(p: Progress, limit = 8): string[] {
@@ -102,6 +102,111 @@ export function collocationQuestion(
     gloss: chosen.gloss,
     options: shuffle([chosen.masked, ...distractors], seed + 13),
   };
+}
+
+const lower = (s: string) => s.trim().toLowerCase();
+const related = (e: Entry) => [...e.syn, ...e.ant].map(lower);
+
+/** One paraphrase question: pick a synonym (or, with no synonyms, an antonym) of the word highlighted in its sentence. */
+export function paraphraseQuestion(
+  target: Entry,
+  pool: Entry[],
+  seed: number,
+): { sentence: [string, string, string]; kind: "syn" | "ant"; answer: string; options: string[]; all: string[] } | null {
+  const sentence = [target.ex[1], target.ex[0]].flatMap((x) => {
+    const parts = x && splitHighlight(x.en, target.w);
+    return parts ? [parts] : [];
+  })[0];
+  if (!sentence) return null;
+  const kind = target.syn.length ? "syn" : "ant";
+  const all = target[kind].map((s) => s.trim()).filter(Boolean);
+  if (!all.length) return null;
+  const answer = shuffle(all, seed)[0];
+
+  const targetW = lower(target.w);
+  const blocked = new Set([targetW, ...related(target)]);
+  const targetPos = target.senses[0]?.pos;
+  const byHeadword = new Map(pool.map((e) => [lower(e.w), e]));
+
+  const samePos: string[] = [];
+  const otherPos: string[] = [];
+  for (const entry of pool) {
+    if (entry.id === target.id || related(entry).includes(targetW)) continue;
+    const bucket = !!targetPos && entry.senses[0]?.pos === targetPos ? samePos : otherPos;
+    for (const word of [entry.w, ...entry.syn, ...entry.ant]) {
+      const w = lower(word);
+      // A candidate that is itself a pool headword is judged by its own lists too.
+      if (blocked.has(w) || (byHeadword.get(w) && related(byHeadword.get(w)!).includes(targetW))) continue;
+      bucket.push(word.trim());
+    }
+  }
+
+  const seen = new Set(blocked);
+  const distractors: string[] = [];
+  for (const word of [...shuffle(samePos, seed + 7), ...shuffle(otherPos, seed + 11)]) {
+    if (distractors.length === 3) break;
+    if (seen.has(lower(word))) continue;
+    seen.add(lower(word));
+    distractors.push(word);
+  }
+  if (distractors.length < 3) return null;
+  return { sentence, kind, answer, options: shuffle([answer, ...distractors], seed + 13), all };
+}
+
+export type Pos = "n" | "v" | "adj" | "adv";
+export type FamilyMember = { word: string; pos: Pos };
+
+const FAMILY_ITEM = /^(.+?)\s*\((n|v|adj|adv)\.\)$/;
+
+/** "strength (n.)" → { word: "strength", pos: "n" }; items that do not match are dropped. */
+export function parseFamily(entry: Entry): FamilyMember[] {
+  return entry.fam.flatMap((item) => {
+    const m = FAMILY_ITEM.exec(item.trim());
+    return m ? [{ word: m[1], pos: m[2] as Pos }] : [];
+  });
+}
+
+/** One word-family question: which family member has the asked part of speech. */
+export function familyQuestion(
+  target: Entry,
+  pool: Entry[],
+  seed: number,
+): { pos: Pos; answer: string; options: string[]; family: FamilyMember[] } | null {
+  const family = parseFamily(target);
+  const targetPos = target.senses[0]?.pos.replace(/\.$/, "");
+  const chosen = shuffle(
+    family.filter((m) => m.pos !== targetPos),
+    seed,
+  )[0];
+  if (!chosen) return null;
+
+  const seen = new Set([lower(chosen.word)]);
+  const distractors: string[] = [];
+  const add = (words: string[]) => {
+    for (const word of words) {
+      if (distractors.length === 3) break;
+      if (seen.has(lower(word))) continue;
+      seen.add(lower(word));
+      distractors.push(word);
+    }
+  };
+  add(shuffle([...family.filter((m) => m.pos !== chosen.pos).map((m) => m.word), ...(targetPos !== chosen.pos ? [target.w] : [])], seed + 7));
+  const others = pool.filter((e) => e.id !== target.id).flatMap((e) => parseFamily(e).filter((m) => m.pos !== chosen.pos));
+  add(shuffle(others.map((m) => m.word), seed + 11));
+  if (distractors.length < 3) return null;
+  return { pos: chosen.pos, answer: chosen.word, options: shuffle([chosen.word, ...distractors], seed + 13), family };
+}
+
+export type SentenceCheck = { ok: boolean; reason: "short" | "missing" | "copied" | "ok" };
+
+/** Cheap checks on a learner's own sentence; there is no grammar checking. */
+export function sentenceCheck(input: string, target: Entry): SentenceCheck {
+  const reason = (r: SentenceCheck["reason"]): SentenceCheck => ({ ok: r === "ok", reason: r });
+  if (input.trim().split(/\s+/).filter(Boolean).length < 5) return reason("short");
+  if (!headwordPattern(target.w).test(input)) return reason("missing");
+  const n = normalize(input);
+  if (target.ex.slice(0, 2).some((x) => normalize(x.en) === n)) return reason("copied");
+  return reason("ok");
 }
 
 /** Sentences long enough to read as a passage, keeping the order given. */
