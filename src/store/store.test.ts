@@ -36,3 +36,9 @@ test("display name is trimmed, capped and defaults to empty", () => {
   assert.equal(sanitizeSettings({ name: 42 }).name, "");
   assert.equal(sanitizeSettings({ name: "x".repeat(50) }).name.length, 30);
 });
+
+test("interface language accepts en, vi, zh and falls back to vi", () => {
+  assert.equal(sanitizeSettings({ lang: "en" }).lang, "en");
+  assert.equal(sanitizeSettings({ lang: "zh" }).lang, "zh");
+  assert.equal(sanitizeSettings({ lang: "fr" }).lang, "vi");
+});

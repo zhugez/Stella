@@ -1,17 +1,19 @@
 import { ArrowLeftRight, Check, Globe } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import { useT, type TranslationKey } from "../i18n";
 import { store, useStore, type LangPair } from "../store/store";
 
-export const PAIRS: { id: LangPair; label: string; desc: string; from: string; to: string }[] = [
-  { id: "en-vi", label: "EN ➔ VI", desc: "Học từ tiếng Anh, hiểu nghĩa tiếng Việt", from: "English", to: "Tiếng Việt" },
-  { id: "vi-en", label: "VI ➔ EN", desc: "Phản xạ từ nghĩa Việt sang từ vựng Anh", from: "Tiếng Việt", to: "English" },
-  { id: "zh-vi", label: "ZH ➔ VI", desc: "Hán tự chữ Hán & nghĩa tiếng Việt", from: "中文", to: "Tiếng Việt" },
-  { id: "vi-zh", label: "VI ➔ ZH", desc: "Từ nghĩa Việt tra chữ Hán", from: "Tiếng Việt", to: "中文" },
-  { id: "fr-vi", label: "FR ➔ VI", desc: "Từ vựng tiếng Pháp & phát âm bản xứ", from: "Français", to: "Tiếng Việt" },
-  { id: "vi-fr", label: "VI ➔ FR", desc: "Từ nghĩa Việt tra tiếng Pháp", from: "Tiếng Việt", to: "Français" },
+export const PAIRS: { id: LangPair; label: string; desc: TranslationKey; from: string; to: string }[] = [
+  { id: "en-vi", label: "EN ➔ VI", desc: "pair_desc_en_vi", from: "English", to: "Tiếng Việt" },
+  { id: "vi-en", label: "VI ➔ EN", desc: "pair_desc_vi_en", from: "Tiếng Việt", to: "English" },
+  { id: "zh-vi", label: "ZH ➔ VI", desc: "pair_desc_zh_vi", from: "中文", to: "Tiếng Việt" },
+  { id: "vi-zh", label: "VI ➔ ZH", desc: "pair_desc_vi_zh", from: "Tiếng Việt", to: "中文" },
+  { id: "fr-vi", label: "FR ➔ VI", desc: "pair_desc_fr_vi", from: "Français", to: "Tiếng Việt" },
+  { id: "vi-fr", label: "VI ➔ FR", desc: "pair_desc_vi_fr", from: "Tiếng Việt", to: "Français" },
 ];
 
 export function LanguagePairPicker() {
+  const t = useT();
   const currentPair = useStore((s) => s.settings.langPair || "en-vi");
   const [open, setOpen] = useState(false);
   const popoverRef = useRef<HTMLDivElement>(null);
@@ -50,7 +52,7 @@ export function LanguagePairPicker() {
         role="button"
         tabIndex={0}
         onKeyDown={(e) => e.key === "Enter" && setOpen((prev) => !prev)}
-        aria-label={`Language Mode ${active.label}`}
+        aria-label={`${t("language_mode")} ${active.label}`}
       >
         <Globe size={15} />
         <b>{active.label}</b>
@@ -68,16 +70,16 @@ export function LanguagePairPicker() {
               swap();
             }
           }}
-          title="Đảo chiều ngôn ngữ (Swap)"
-          aria-label="Đảo chiều ngôn ngữ"
+          title={t("swap_languages")}
+          aria-label={t("swap_languages")}
         >
           <ArrowLeftRight size={13} />
         </span>
       </div>
 
       {open && (
-        <div className="amb-pop lang-pop" role="dialog" aria-label="Language Mode">
-          <p className="eyebrow">Language Mode</p>
+        <div className="amb-pop lang-pop" role="dialog" aria-label={t("language_mode")}>
+          <p className="eyebrow">{t("language_mode")}</p>
           <ul>
             {PAIRS.map((p) => {
               const sel = p.id === currentPair;
@@ -93,7 +95,7 @@ export function LanguagePairPicker() {
                   >
                     <span>
                       <span className="pair-title">{p.label} <small style={{ fontWeight: 400, opacity: 0.75 }}>({p.from} ➔ {p.to})</small></span>
-                      <span className="pair-sub">{p.desc}</span>
+                      <span className="pair-sub">{t(p.desc)}</span>
                     </span>
                     {sel && <Check size={16} />}
                   </button>

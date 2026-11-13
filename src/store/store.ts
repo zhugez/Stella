@@ -1,5 +1,6 @@
 import { useSyncExternalStore } from "react";
 import type { Accent } from "../atlas/types";
+import type { TranslationKey } from "../i18n";
 import type { CardState, Grade } from "./srs";
 
 export type QuizKind = "meaning" | "picture" | "listen" | "spell";
@@ -49,7 +50,7 @@ export interface Progress {
 export type LangPair = "en-vi" | "vi-en" | "zh-vi" | "vi-zh" | "fr-vi" | "vi-fr";
 
 export interface Settings {
-  lang: "vi" | "zh";
+  lang: "en" | "vi" | "zh";
   /** Display name shown on the profile page. Empty means unnamed. */
   name: string;
   langPair: LangPair;
@@ -172,7 +173,7 @@ export function sanitizeProgress(v: unknown, datasetId: string): Progress {
 export function sanitizeSettings(v: unknown): Settings {
   const s = { ...defaultSettings };
   if (!isObj(v)) return s;
-  if (v.lang === "vi" || v.lang === "zh") s.lang = v.lang;
+  if (v.lang === "en" || v.lang === "vi" || v.lang === "zh") s.lang = v.lang;
   if (typeof v.name === "string") s.name = v.name.trim().slice(0, 30);
   if (["en-vi", "vi-en", "zh-vi", "vi-zh", "fr-vi", "vi-fr"].includes(v.langPair as string)) {
     s.langPair = v.langPair as LangPair;
@@ -313,17 +314,17 @@ function markDirty() {
   dirty = true;
 }
 
-export function importBackup(text: string): { ok: true; cards: number } | { ok: false; error: string } {
+export function importBackup(text: string): { ok: true; cards: number } | { ok: false; error: TranslationKey } {
   let data: unknown;
   try {
     data = JSON.parse(text);
   } catch {
-    return { ok: false, error: "文件不是有效的 JSON。" };
+    return { ok: false, error: "backup_invalid_json" };
   }
   if (!isObj(data) || data.app !== "word-atlas" || data.version !== 2 || !isObj(data.progress))
-    return { ok: false, error: "这不是词光的学习备份。" };
+    return { ok: false, error: "backup_not_stella" };
   const id = state.progress.datasetId;
-  if (data.progress.datasetId !== id) return { ok: false, error: "备份来自另一个词库，请先切换到对应词库。" };
+  if (data.progress.datasetId !== id) return { ok: false, error: "backup_other_dataset" };
   const progress = sanitizeProgress({ ...data.progress, session: null }, id);
   state = { ...state, progress, settings: { ...sanitizeSettings(data.settings), onboarded: true } };
   emit();

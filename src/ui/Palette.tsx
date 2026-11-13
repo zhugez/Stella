@@ -2,6 +2,7 @@ import { CornerDownLeft, Search } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Atlas, WordRef } from "../atlas/types";
 import { useAtlas } from "../atlas/context";
+import { useT } from "../i18n";
 import { openWord } from "../lib/router";
 import { Illustration } from "./Illustration";
 
@@ -26,6 +27,7 @@ export function searchAtlas(atlas: Atlas, raw: string, limit = 40): WordRef[] {
 }
 
 export function Palette({ open, onClose }: { open: boolean; onClose: () => void }) {
+  const t = useT();
   const atlas = useAtlas();
   const [q, setQ] = useState("");
   const [sel, setSel] = useState(0);
@@ -46,13 +48,13 @@ export function Palette({ open, onClose }: { open: boolean; onClose: () => void 
   };
   return (
     <div className="palette-root" onMouseDown={(e) => e.target === e.currentTarget && onClose()}>
-      <div className="palette" role="dialog" aria-modal="true" aria-label="Search vocabulary">
+      <div className="palette" role="dialog" aria-modal="true" aria-label={t("palette_aria")}>
         <label className="palette-input">
           <Search size={20} />
           <input
             ref={input}
             value={q}
-            placeholder="Search words in English, e.g. serendipity or environment..."
+            placeholder={t("palette_placeholder")}
             onChange={(e) => setQ(e.target.value)}
             onKeyDown={(e) => {
               if (e.key === "Escape") onClose();
@@ -92,11 +94,11 @@ export function Palette({ open, onClose }: { open: boolean; onClose: () => void 
               {i === sel && <CornerDownLeft size={15} className="palette-enter" />}
             </li>
           ))}
-          {q && !results.length && <li className="palette-empty">No results for "{q}"</li>}
+          {q && !results.length && <li className="palette-empty">{t("palette_empty").replace("{q}", q)}</li>}
           {!q && (
             <li className="palette-hint">
-              {atlas.count.toLocaleString()} words · Instant search · <kbd>↑</kbd>
-              <kbd>↓</kbd> navigate <kbd>↵</kbd> open
+              {atlas.count.toLocaleString()} {t("words_count")} · {t("instant_search")} · <kbd>↑</kbd>
+              <kbd>↓</kbd> {t("navigate")} <kbd>↵</kbd> {t("open_action")}
             </li>
           )}
         </ul>

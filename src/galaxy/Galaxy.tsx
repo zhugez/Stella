@@ -2,6 +2,7 @@ import { Crosshair, Minus, Plus, RotateCcw, Share2 } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useAtlas } from "../atlas/context";
 import type { WordRef } from "../atlas/types";
+import { topicLabel, useT } from "../i18n";
 import { openWord } from "../lib/router";
 import { cue, playFile } from "../lib/sound";
 import { isMastered } from "../store/srs";
@@ -55,6 +56,7 @@ export function Galaxy({
   /** Fly to this word once ready. */
   focus?: string | null;
 }) {
+  const t = useT();
   const atlas = useAtlas();
   const layout = useGalaxyLayout();
   const cards = useStore((s) => s.progress.cards);
@@ -69,10 +71,12 @@ export function Galaxy({
     const cv = canvas.current;
     if (!cv) return;
     const eng = new GalaxyEngine(cv, layout, {
-      quality: detectQuality(),
+      // The mini panel is decorative: low quality tier (DPR capped at 1.25, 3 nebula octaves) and 30fps.
+      quality: mode === "mini" ? "low" : detectQuality(),
       reducedMotion: reduced(),
       preserve: mode === "full",
       autoRotate: mode === "mini" ? 0.06 : 0.025,
+      maxFps: mode === "mini" ? 30 : undefined,
     });
     engine.current = eng;
     setFallback(!eng.webgl);
@@ -80,11 +84,15 @@ export function Galaxy({
     if (mode === "mini") eng.cam.dist = eng.baseDist() * 1.1;
     const ro = new ResizeObserver(() => eng.resize());
     ro.observe(cv);
-    // Only animate while visible.
-    const io = new IntersectionObserver(([e]) => (e.isIntersecting && !document.hidden ? eng.start() : eng.stop()));
+    // Only animate while the canvas is on screen and the tab is visible.
+    let seen = false;
+    const sync = () => (seen && !document.hidden ? eng.start() : eng.stop());
+    const io = new IntersectionObserver(([e]) => {
+      seen = e.isIntersecting;
+      sync();
+    });
     io.observe(cv);
-    const vis = () => (document.hidden ? eng.stop() : eng.start());
-    document.addEventListener("visibilitychange", vis);
+    document.addEventListener("visibilitychange", sync);
     if (mode === "full") {
       eng.onFrame = () => {
         const box = labels.current;
@@ -106,7 +114,7 @@ export function Galaxy({
     return () => {
       ro.disconnect();
       io.disconnect();
-      document.removeEventListener("visibilitychange", vis);
+      document.removeEventListener("visibilitychange", sync);
       eng.destroy();
       engine.current = null;
     };
@@ -293,7 +301,7 @@ export function Galaxy({
         }}
         onWheel={onWheel}
         role="img"
-        aria-label={`词汇星图：${layout.n} 颗星，已点亮 ${lit} 颗。可拖动旋转、滚动缩放，点击星星打开词条。`}
+        aria-label={t("galaxy_aria").replace("{n}", String(layout.n)).replace("{lit}", String(lit))}
         tabIndex={0}
         onKeyDown={(e) => {
           const eng = engine.current;
@@ -307,9 +315,9 @@ export function Galaxy({
         }}
       />
       <div className="galaxy-labels" ref={labels} aria-hidden="true">
-        {atlas.topics.map(([key, name], t) => (
-          <span key={key} style={{ "--c": TOPIC_COLORS[t % TOPIC_COLORS.length] } as React.CSSProperties}>
-            {name}
+        {atlas.topics.map(([key, name], ti) => (
+          <span key={key} style={{ "--c": TOPIC_COLORS[ti % TOPIC_COLORS.length] } as React.CSSProperties}>
+            {topicLabel(t, name)}
           </span>
         ))}
       </div>
@@ -328,28 +336,28 @@ export function Galaxy({
       )}
       <div className="galaxy-hud">
         <p>
-          <b>{lit.toLocaleString()}</b> / {layout.n.toLocaleString()} 颗星已点亮
+          <b>{lit.toLocaleString()}</b> / {layout.n.toLocaleString()} {t("galaxy_stars_lit")}
         </p>
         <ul className="galaxy-legend" aria-hidden="true">
           <li>
             <i className="lg-dust" />
-            未学
+            {t("status_unlearned")}
           </li>
           <li>
             <i className="lg-learning" />
-            学习中
+            {t("status_learning")}
           </li>
           <li>
             <i className="lg-mastered" />
-            已掌握
+            {t("status_mastered")}
           </li>
         </ul>
       </div>
       <div className="galaxy-controls">
-        <button className="icon-btn" onClick={() => engine.current && (engine.current.cam.dist = clampDist(engine.current.cam.dist * 0.8))} aria-label="放大">
+        <button className="icon-btn" onClick={() => engine.current && (engine.current.cam.dist = clampDist(engine.current.cam.dist * 0.8))} aria-label={t("zoom_in")}>
           <Plus size={18} />
         </button>
-        <button className="icon-btn" onClick={() => engine.current && (engine.current.cam.dist = clampDist(engine.current.cam.dist * 1.25))} aria-label="缩小">
+        <button className="icon-btn" onClick={() => engine.current && (engine.current.cam.dist = clampDist(engine.current.cam.dist * 1.25))} aria-label={t("zoom_out")}>
           <Minus size={18} />
         </button>
         <button
@@ -359,7 +367,7 @@ export function Galaxy({
             engine.current?.replayIntro();
             if (store.get().settings.sfx) void cue("fly");
           }}
-          aria-label="回到全景"
+          aria-label={t("reset_view")}
         >
           <RotateCcw size={17} />
         </button>
@@ -374,15 +382,15 @@ export function Galaxy({
               if (store.get().settings.sfx) void cue("fly");
             }
           }}
-          aria-label="飞到一颗已点亮的星"
+          aria-label={t("fly_to_lit_star")}
         >
           <Crosshair size={17} />
         </button>
-        <button className="icon-btn" onClick={() => canvas.current && shareGalaxy(canvas.current, lit, layout.n)} aria-label="分享我的星图">
+        <button className="icon-btn" onClick={() => canvas.current && shareGalaxy(canvas.current, lit, layout.n)} aria-label={t("share_my_galaxy")}>
           <Share2 size={17} />
         </button>
       </div>
-      <p className="galaxy-hint">拖动旋转 · 滚动缩放 · 点击星星打开词条</p>
+      <p className="galaxy-hint">{t("galaxy_controls_hint")}</p>
     </div>
   );
 }

@@ -28,7 +28,7 @@ const b2 = index.words.filter((w) => w[4] === index.cefr.indexOf("B2"));
 try {
   act("open", url);
   run("storage", "local", "set", "word-atlas:settings", JSON.stringify({
-    onboarded: true, theme: "dark", splash: false, ambience: "off", sfx: false, autoplay: false,
+    lang: "en", onboarded: true, theme: "dark", splash: false, ambience: "off", sfx: false, autoplay: false,
   }));
   run("storage", "local", "set", "word-atlas:view", "grid");
   act("reload");
@@ -77,7 +77,7 @@ try {
   assert.equal(first(), "philosophy");
   act("click", ".tile");
   run("wait", ".sheet");
-  assert.equal(evaluate('document.querySelector(".sheet").getAttribute("aria-label")'), "philosophy 词条");
+  assert.equal(evaluate('document.querySelector(".sheet").getAttribute("aria-label")'), "philosophy entry");
   act("press", "Escape");
   assert.equal(evaluate('!!document.querySelector(".sheet")'), false);
   act("click", '[aria-label="Clear search"]');
@@ -90,9 +90,9 @@ try {
   const educationCount = b2.filter((w) => w[5] === 0).length;
   assert.equal(count(educationCount), educationCount);
   act("click", '.chips[aria-label="Topic"] button:first-child');
-  act("click", '.segmented[aria-label="学习状态"] button:last-child');
+  act("click", '.segmented[aria-label="Learning status"] button:last-child');
   assert.equal(count(0), 0);
-  act("click", '.segmented[aria-label="学习状态"] button:first-child');
+  act("click", '.segmented[aria-label="Learning status"] button:first-child');
   assert.equal(count(b2.length), b2.length);
 
   for (const view of ["List", "Grid"]) {

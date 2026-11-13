@@ -6,10 +6,10 @@
   "author": "zhugez",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
-    "build": "node scripts/publish-reading.mjs && tsc -b && vite build && rm -rf dist/atlas/audio",
+    "build": "node scripts/publish-reading.mjs && tsc -b && vite build",
     "deploy": "npm run build && wrangler deploy",
     "preview": "vite preview --host 0.0.0.0",
-    "test": "node --import tsx --test src/**/*.test.ts",
+    "test": "node --import tsx --test \"src/**/*.test.ts\"",
     "check:atlas": "node scripts/check-atlas.mjs",
     "build:atlas": "python3 scripts/atlas/build_atlas.py",
     "render:cards": "node scripts/render-cards.mjs",

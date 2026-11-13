@@ -3757,7 +3757,7 @@
       {
         "pos": "n.",
         "zh": "方差",
-        "vi": "Một thước đo thống kê về sự khác biệt giữa giá trị trung bình và giá trị trung bình.",
+        "vi": "Một thước đo thống kê cho biết các giá trị chênh lệch so với giá trị trung bình nhiều đến mức nào.",
         "en": "A statistical measure of how widely values differ from their mean."
       }
     ],

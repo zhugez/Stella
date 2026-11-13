@@ -8,7 +8,7 @@
 
 [**Bản chạy thử**](https://stella.zhugez.workers.dev) · [**Bộ dữ liệu**](data/) · [**Brandkit**](BRANDKIT.md) · [**Lộ trình**](#lộ-trình)
 
-[![Code: MIT](https://img.shields.io/badge/code-MIT-17283B?style=flat-square)](LICENSE)
+[![Code: GPL-3.0](https://img.shields.io/badge/code-GPL--3.0-17283B?style=flat-square)](LICENSE)
 [![Dataset: CC BY 4.0](https://img.shields.io/badge/dataset-CC%20BY%204.0-AD5038?style=flat-square)](CONTENT_LICENSE.md)
 
 <sub>[English](README.md)</sub>
@@ -124,5 +124,5 @@ Phần bản fork này thêm vào:
 
 ## Giấy phép
 
-- Mã nguồn: [MIT](LICENSE)
+- Mã nguồn: [GPL-3.0](LICENSE)
 - Bộ dữ liệu và tranh minh hoạ: [CC BY 4.0](CONTENT_LICENSE.md)

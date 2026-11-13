@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { uiLang, useT } from "../i18n";
 import { duck, playFile, preloadFiles } from "../lib/sound";
 import { dayKey, store } from "../store/store";
 
@@ -40,7 +41,7 @@ interface P {
 
 const ease = (t: number) => 1 - Math.pow(1 - Math.min(1, Math.max(0, t)), 3);
 
-/** Sample bright pixels of the logo, the Chinese name and the wordmark as particle targets. */
+/** Sample bright pixels of the logo and the wordmark (Chinese name + STELLA in zh, "Stella" + IELTS otherwise) as particle targets. */
 function targets(w: number, h: number, count: number) {
   const c = document.createElement("canvas");
   c.width = w;
@@ -71,14 +72,22 @@ function targets(w: number, h: number, count: number) {
   g.closePath();
   g.fill();
   const zh = Math.min(w * 0.3, s * 0.24);
-  g.font = `700 ${zh}px "Songti SC", "STSong", "Noto Serif SC", "Source Han Serif SC", serif`;
+  const isZh = uiLang() === "zh";
   g.textAlign = "center";
   g.textBaseline = "middle";
-  g.fillText("词光", cx, cy + R + zh * 0.78);
+  if (isZh) {
+    g.font = `700 ${zh}px "Songti SC", "STSong", "Noto Serif SC", "Source Han Serif SC", serif`;
+    g.fillText("词光", cx, cy + R + zh * 0.78);
+  } else {
+    g.font = `700 ${zh}px "Fraunces Variable", Georgia, serif`;
+    const fit = (w * 0.8) / g.measureText("Stella").width;
+    if (fit < 1) g.font = `700 ${zh * fit}px "Fraunces Variable", Georgia, serif`;
+    g.fillText("Stella", cx, cy + R + zh * 0.78);
+  }
   const en = Math.max(18, zh * 0.24);
   g.font = `700 ${en}px "Fraunces Variable", Georgia, serif`;
   g.letterSpacing = `${en * 0.34}px`;
-  g.fillText("STELLA", cx, cy + R + zh * 1.52);
+  g.fillText(isZh ? "STELLA" : "IELTS", cx, cy + R + zh * 1.52);
   const data = g.getImageData(0, 0, w, h).data;
   // Take every lit pixel, then a random subset: no visible sampling grid.
   const all: [number, number][] = [];
@@ -92,6 +101,7 @@ function targets(w: number, h: number, count: number) {
 }
 
 export function Splash({ onDone }: { onDone: () => void }) {
+  const t = useT();
   const canvas = useRef<HTMLCanvasElement>(null);
   const [phase, setPhase] = useState<"gather" | "ready" | "open">("gather");
   const opening = useRef(false);
@@ -237,7 +247,7 @@ export function Splash({ onDone }: { onDone: () => void }) {
   }); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
-    <div className={`splash is-${phase} ${reduce ? "is-reduced" : ""}`} onClick={() => open()} role="dialog" aria-label="Welcome to Stella, click to enter">
+    <div className={`splash is-${phase} ${reduce ? "is-reduced" : ""}`} onClick={() => open()} role="dialog" aria-label={t("splash_aria")}>
       <div className="door door-l" />
       <div className="door door-r" />
       <div className="splash-light" />
@@ -245,14 +255,14 @@ export function Splash({ onDone }: { onDone: () => void }) {
       {reduce && (
         <div className="splash-static">
           <b>STELLA</b>
-          <small>ILLUSTRATED VOCABULARY</small>
+          <small>{t("splash_subtitle")}</small>
         </div>
       )}
       <div className="splash-copy">
-        <p className="splash-tag">Welcome to Stella</p>
+        <p className="splash-tag">{t("welcome_stella")}</p>
         <p className="splash-hint">
           <span className="splash-key" />
-          Click to enter · Press any key
+          {t("splash_hint")}
         </p>
       </div>
       <button
@@ -262,7 +272,7 @@ export function Splash({ onDone }: { onDone: () => void }) {
           open(false);
         }}
       >
-        Skip
+        {t("splash_skip")}
       </button>
     </div>
   );

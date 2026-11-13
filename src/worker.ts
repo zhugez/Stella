@@ -4,98 +4,41 @@ export interface Env {
   };
 }
 
+// Audio has too many files to upload as static assets (20,000-file limit), so the Worker proxies it
+// from GitHub. The `cf` options cache successful upstream responses at Cloudflare's edge.
+const AUDIO_CACHE = { cacheEverything: true, cacheTtlByStatus: { "200-299": 31536000, "300-599": -1 } };
+
 export default {
-  async fetch(request: Request, env: Env, ctx: { waitUntil: (p: Promise<any>) => void }): Promise<Response> {
+  async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
 
-    // 1. Audio stream & edge-caching proxy (avoids hitting Cloudflare's 20,000 file upload limit)
     if (url.pathname.startsWith("/atlas/audio/")) {
       const upstream = `https://raw.githubusercontent.com/zhugez/stella/main/public${url.pathname}`;
-      const cache = (caches as any).default;
-      let response = await cache.match(request);
-
-      if (!response) {
-        const res = await fetch(upstream);
-        if (res.ok) {
-          const headers = new Headers(res.headers);
-          headers.set("Cache-Control", "public, max-age=31536000, immutable");
-          headers.set("Content-Type", "audio/mpeg");
-          headers.set("Access-Control-Allow-Origin", "*");
-          response = new Response(res.body, {
-            status: res.status,
-            headers,
-          });
-          ctx.waitUntil(cache.put(request, response.clone()));
-        } else {
-          return new Response("Audio track not found", { status: 404 });
-        }
+      const init: RequestInit & { cf: typeof AUDIO_CACHE } = { cf: AUDIO_CACHE };
+      const res = await fetch(upstream, init);
+      if (!res.ok) {
+        // 404: the file does not exist. Anything else (429 rate limit, 5xx) is an upstream failure.
+        const missing = res.status === 404;
+        return new Response(missing ? "Audio track not found" : "Audio upstream unavailable", {
+          status: missing ? 404 : 502,
+          headers: { "Cache-Control": "no-store" },
+        });
       }
-      return response;
+      const headers = new Headers(res.headers);
+      headers.set("Cache-Control", "public, max-age=31536000, immutable");
+      headers.set("Content-Type", "audio/mpeg");
+      headers.set("Access-Control-Allow-Origin", "*");
+      // Cloudflare sets cf-cache-status on cached subrequests: HIT on a repeat request proves the cf cache works.
+      headers.set("X-Upstream-Cache", res.headers.get("cf-cache-status") ?? "none");
+      return new Response(res.body, { status: 200, headers });
     }
 
-    // 1b. Direct AI Agent discovery endpoints (prevents SPA HTML fallback)
-    if (url.pathname === "/ai-catalog.json" || url.pathname === "/.well-known/ai-catalog.json" || url.pathname === "/.well-known/ard.json") {
-      const catalogData = {
-        "$schema": "https://agentic-web.org/schemas/ai-catalog/v1/schema.json",
-        "version": "1.0",
-        "name": "Stella IELTS Ecosystem",
-        "description": "Illustrated IELTS vocabulary & 4-skill learning ecosystem with 7,298 entries, native audio, and FSRS spaced repetition.",
-        "url": `${url.origin}/`,
-        "documentation": `${url.origin}/llms.txt`,
-        "resources": [
-          {
-            "name": "Vocabulary Atlas",
-            "description": "7,298 IELTS vocabulary words with CEFR levels, definitions in EN/VI/ZH/FR, collocations, and example sentences.",
-            "type": "dataset",
-            "url": `${url.origin}/atlas/index.json`,
-            "format": "application/json"
-          }
-        ]
-      };
-      return new Response(JSON.stringify(catalogData, null, 2), {
-        status: 200,
-        headers: {
-          "Content-Type": "application/json; charset=utf-8",
-          "Cache-Control": "public, max-age=86400",
-          "Access-Control-Allow-Origin": "*",
-          "X-Content-Type-Options": "nosniff"
-        }
-      });
+    // Only missing files reach the Worker under these prefixes (existing assets are served first).
+    // Answer 404 instead of the SPA index.html, which _headers would cache under the file's URL.
+    if (/^\/(assets|brand|atlas)\//.test(url.pathname)) {
+      return new Response("Not found", { status: 404, headers: { "Cache-Control": "no-store" } });
     }
 
-    // 2. Fetch static asset from Cloudflare Edge
-    const response = await env.ASSETS.fetch(request);
-    const newHeaders = new Headers(response.headers);
-
-    // 3. High-performance Cache-Control headers based on asset type
-    if (url.pathname === "/robots.txt") {
-      newHeaders.set("Content-Type", "text/plain; charset=utf-8");
-      newHeaders.set("Cache-Control", "public, max-age=86400");
-    } else if (url.pathname === "/llms.txt") {
-      newHeaders.set("Content-Type", "text/markdown; charset=utf-8");
-      newHeaders.set("Cache-Control", "public, max-age=86400");
-    } else if (url.pathname === "/ai-catalog.json" || url.pathname.startsWith("/.well-known/")) {
-      newHeaders.set("Content-Type", "application/json; charset=utf-8");
-      newHeaders.set("Cache-Control", "public, max-age=86400");
-      newHeaders.set("Access-Control-Allow-Origin", "*");
-    } else if (url.pathname.startsWith("/assets/")) {
-      // Vite hashed JS, CSS, and fonts never change
-      newHeaders.set("Cache-Control", "public, max-age=31536000, immutable");
-    } else if (url.pathname.startsWith("/brand/") || url.pathname.startsWith("/atlas/img/") || url.pathname.startsWith("/atlas/thumb/")) {
-      // Brand illustrations, WebP paintings, and thumbnails
-      newHeaders.set("Cache-Control", "public, max-age=2592000, stale-while-revalidate=604800");
-    } else if (url.pathname.startsWith("/atlas/entries/") || url.pathname.endsWith("/index.json")) {
-      // Vocabulary data chunks: fresh with background revalidation
-      newHeaders.set("Cache-Control", "public, max-age=86400, stale-while-revalidate=604800");
-    }
-
-    // Security & performance headers
-    newHeaders.set("X-Content-Type-Options", "nosniff");
-    newHeaders.set("Referrer-Policy", "strict-origin-when-cross-origin");
-
-    return new Response(response.body, {
-      status: response.status,
-      headers: newHeaders,
-    });
+    return env.ASSETS.fetch(request);
   },
 };

@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { isMastered, preview, Rating, review } from "./srs";
+import { dict, type TranslationKey } from "../i18n";
+import { formatInterval, isMastered, preview, Rating, review } from "./srs";
 
 const DAY = 86400000;
 
@@ -36,4 +37,21 @@ test("a lapse resets progress and counts the lapse", () => {
   assert.equal(c.lapses, 1);
   assert.ok(c.s < before);
   assert.equal(isMastered(c), false);
+});
+
+test("formatInterval writes English units", () => {
+  const t = (k: TranslationKey) => dict.en[k];
+  assert.equal(formatInterval(10_000, t), "<1 min");
+  assert.equal(formatInterval(5 * 60_000, t), "5 min");
+  assert.equal(formatInterval(3 * 3600_000, t), "3 h");
+  assert.equal(formatInterval(DAY, t), "1 day");
+  assert.equal(formatInterval(3 * DAY, t), "3 days");
+  assert.equal(formatInterval(60 * DAY, t), "2 months");
+  assert.equal(formatInterval(400 * DAY, t), "1.1 years");
+});
+
+test("formatInterval writes Vietnamese units", () => {
+  const t = (k: TranslationKey) => dict.vi[k];
+  assert.equal(formatInterval(3 * DAY, t), "3 ngày");
+  assert.equal(formatInterval(10_000, t), "<1 phút");
 });

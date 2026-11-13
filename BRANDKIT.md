@@ -64,5 +64,5 @@
 - **Author & Maintainer:** `zhugez` (`github.com/zhugez/stella`)
 - **Upstream Foundation:** Directly inspired by and built upon **Word Atlas** by Yang Lei (`designfuchen/word-atlas`).
 - **Licenses:**
-  - Application Code: **MIT License**
+  - Application Code: **GNU General Public License v3.0 (GPL-3.0)**
   - Dataset & Original Illustrations: **Creative Commons Attribution 4.0 International (CC BY 4.0)**

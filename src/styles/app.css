@@ -653,7 +653,8 @@ code {
 .topnav a {
   position: relative;
   height: 38px;
-  padding: 0 14px;
+  padding: 0 12px;
+  white-space: nowrap;
   display: grid;
   place-items: center;
   border-radius: 999px;
@@ -701,7 +702,8 @@ code {
 .search-pill::before {
   content: none;
 }
-@media (max-width: 759px) {
+/* The full search pill fits beside the nav and tools only from 1200px; below that it shows the icon. */
+@media (max-width: 1199px) {
   .search-pill {
     display: inline-flex;
     min-width: 0;
@@ -716,8 +718,19 @@ code {
   .search-pill kbd {
     display: none;
   }
+}
+@media (max-width: 759px) {
   .hide-sm {
     display: none;
+  }
+  /* Phones: keep every tool on screen. The logo drops "IELTS" (the language pill shrinks further down),
+     and on very narrow screens the logo text is clipped before anything overflows. */
+  .topbar .logo-text small {
+    display: none;
+  }
+  .topbar-logo {
+    min-width: 0;
+    overflow: hidden;
   }
 }
 
@@ -787,11 +800,18 @@ code {
   :root {
     --gutter: 32px;
   }
-  .topnav {
-    display: flex;
-  }
   .search-pill {
     display: inline-flex;
+  }
+  .page {
+    padding-top: 40px;
+  }
+}
+/* The text nav needs about 1000px next to the logo and tools (Vietnamese labels are the widest).
+   Narrower screens keep the bottom tab bar. */
+@media (min-width: 1024px) {
+  .topnav {
+    display: flex;
   }
   .tabbar {
     display: none;
@@ -799,9 +819,6 @@ code {
   .app:not(.is-focus) {
     --tab: 0px;
     padding-bottom: 0;
-  }
-  .page {
-    padding-top: 40px;
   }
 }
 
@@ -2091,8 +2108,10 @@ code {
   font: 600 10px/1 var(--mono);
   letter-spacing: 0.04em;
   color: var(--ink-2);
+  /* No backdrop-filter: this label is invisible until hover, yet Chrome still
+     allocates and composites a blur layer per tile (~50 of them), halving the
+     frame rate on the atlas. The fill is 88% opaque, so the blur was invisible. */
   background: color-mix(in oklab, #fbf8f2 88%, transparent);
-  backdrop-filter: blur(4px);
   opacity: 0;
   transform: translateY(-3px);
   transition: opacity 0.25s, transform 0.3s var(--ease);
@@ -4262,6 +4281,18 @@ a:hover .mark-needle,
   background: var(--paper-3);
   color: var(--terra);
   transform: rotate(180deg);
+}
+/* Phones: the pill shows only its globe. The popover still offers every pair, including the swapped ones. */
+@media (max-width: 759px) {
+  .lang-pill {
+    width: 38px;
+    padding: 0;
+    justify-content: center;
+  }
+  .lang-pill b,
+  .lang-swap-btn {
+    display: none;
+  }
 }
 .lang-pop {
   width: 270px;

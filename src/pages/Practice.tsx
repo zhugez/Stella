@@ -4,6 +4,7 @@ import { prefetch, useAtlas } from "../atlas/context";
 import type { Entry } from "../atlas/types";
 import { clozeTarget, collocationQuestion } from "../lib/drills";
 import { play, stopAudio } from "../lib/audio";
+import { useT, type TranslationKey } from "../i18n";
 import { cue } from "../lib/sound";
 import { gap, hashSeed, shuffle } from "../lib/text";
 import { correctCharacterCount, hidesAnswer, isComplete, maskChar, same, typingDelta, typingMetrics } from "../lib/typing";
@@ -15,21 +16,22 @@ type Mode = "word" | "sentence" | "dictation" | "cloze" | "collocation";
 type Source = "recent" | "mistakes" | "saved" | "path";
 type TypeMode = Exclude<Mode, "collocation">;
 
-const MODES: [Mode, string, string, typeof Type][] = [
-  ["word", "Word", "Type the word from the illustration", Type],
-  ["sentence", "Sentence", "Type the full sentence to build muscle memory", Keyboard],
-  ["dictation", "Dictation", "Listen to audio and type the sentence", Headphones],
-  ["cloze", "Cloze", "Hear the sentence, type the missing word", Ear],
-  ["collocation", "Collocations", "Pick the phrase that really goes with the word", Blocks],
+const MODES: [Mode, TranslationKey, TranslationKey, typeof Type][] = [
+  ["word", "mode_word", "mode_word_desc", Type],
+  ["sentence", "mode_sentence", "mode_sentence_desc", Keyboard],
+  ["dictation", "mode_dictation", "mode_dictation_desc", Headphones],
+  ["cloze", "mode_cloze", "mode_cloze_desc", Ear],
+  ["collocation", "mode_collocation", "mode_collocation_desc", Blocks],
 ];
-const SOURCES: [Source, string][] = [
-  ["recent", "Recent"],
-  ["mistakes", "Mistakes"],
-  ["saved", "Saved"],
-  ["path", "Curriculum"],
+const SOURCES: [Source, TranslationKey][] = [
+  ["recent", "pool_recent"],
+  ["mistakes", "pool_mistakes"],
+  ["saved", "pool_saved"],
+  ["path", "pool_path"],
 ];
 
 export function Practice() {
+  const t = useT();
   const atlas = useAtlas();
   const progress = useStore((s) => s.progress);
   const startLevel = useStore((s) => s.settings.startLevel);
@@ -62,64 +64,64 @@ export function Practice() {
       <TypingRound key={round.key} mode={mode} entries={round.entries} onExit={() => setRound(null)} onAgain={start} />
     );
 
-  const best = progress.typing.filter((t) => t.mode === mode).reduce((m, t) => Math.max(m, t.wpm), 0);
+  const best = progress.typing.filter((r) => r.mode === mode).reduce((m, r) => Math.max(m, r.wpm), 0);
   return (
     <div className="page practice">
       <header className="page-head">
-        <p className="eyebrow">Practice · Typing Studio</p>
-        <h1 className="display">Type it out until your fingers remember.</h1>
-        <p className="lede">Build muscle memory and spellings without altering your SRS review intervals.</p>
+        <p className="eyebrow">{t("practice_title")}</p>
+        <h1 className="display">{t("practice_subtitle")}</h1>
+        <p className="lede">{t("practice_lede")}</p>
       </header>
       <div className="practice-grid">
         <section className="panel">
-          <h3 className="eyebrow">Mode</h3>
+          <h3 className="eyebrow">{t("practice_mode")}</h3>
           <div className="mode-cards">
             {MODES.map(([k, name, desc, Icon]) => (
               <button key={k} className={`mode-card ${mode === k ? "is-on" : ""}`} onClick={() => setMode(k)} aria-pressed={mode === k}>
                 <Icon size={22} strokeWidth={1.7} />
-                <b>{name}</b>
-                <small>{desc}</small>
+                <b>{t(name)}</b>
+                <small>{t(desc)}</small>
               </button>
             ))}
           </div>
-          <h3 className="eyebrow">Word Source</h3>
+          <h3 className="eyebrow">{t("word_source")}</h3>
           <div className="segmented segmented-wide">
             {SOURCES.map(([k, label]) => (
               <button key={k} className={source === k ? "is-on" : ""} onClick={() => setSource(k)} aria-pressed={source === k}>
-                {label}
+                {t(label)}
               </button>
             ))}
           </div>
           <p className="muted">
             {pool.length
               ? source === "path"
-                ? "10 random words picked from the top 400 curriculum words."
-                : `${pool.length} words available, 10 random words per round.`
-              : "No words here yet. Learn a few words first or pick another source."}
+                ? t("pool_path_note")
+                : t("pool_available").replace("{n}", String(pool.length))
+              : t("pool_empty")}
           </p>
           <button className="btn btn-primary btn-xl" onClick={start} disabled={!pool.length}>
-            Start Round
+            {t("start_round")}
           </button>
         </section>
         <section className="panel practice-side">
           <img src={`${import.meta.env.BASE_URL}brand/${mode === "dictation" ? "listen" : "typing"}.webp`} alt="" />
           <dl className="mini-stats">
             <div>
-              <dt>{mode === "collocation" ? "Words in Pool" : "Best Speed"}</dt>
+              <dt>{mode === "collocation" ? t("pool_words") : t("best_speed")}</dt>
               <dd>
                 {mode === "collocation" ? pool.length : best}
                 {mode !== "collocation" && <small>WPM</small>}
               </dd>
             </div>
             <div>
-              <dt>Rounds Completed</dt>
+              <dt>{t("completed_rounds")}</dt>
               <dd>{progress.typing.length}</dd>
             </div>
           </dl>
           <p className="muted">
             {mode === "collocation"
-              ? "One real collocation per word, three borrowed from other words. No effect on your review intervals."
-              : "WPM counts standard 5 characters per word, valid entries only."}
+              ? t("collocation_note")
+              : t("wpm_note")}
           </p>
         </section>
       </div>
@@ -128,6 +130,7 @@ export function Practice() {
 }
 
 function TypingRound({ mode, entries, onExit, onAgain }: { mode: TypeMode; entries: Entry[]; onExit: () => void; onAgain: () => void }) {
+  const t = useT();
   const atlas = useAtlas();
   const settings = useStore((s) => s.settings);
   const [i, setI] = useState(0);
@@ -167,8 +170,8 @@ function TypingRound({ mode, entries, onExit, onAgain }: { mode: TypeMode; entri
     if (started.current === null && next) started.current = performance.now();
     const d = typingDelta(value, next, target);
     if (settings.sfx && d.total > 0) void cue("key");
-    const t = totalsRef.current;
-    totalsRef.current = { ...t, typed: t.typed + d.total, correct: t.correct + d.correct };
+    const cur = totalsRef.current;
+    totalsRef.current = { ...cur, typed: cur.typed + d.total, correct: cur.correct + d.correct };
     setTotals(totalsRef.current);
     setValue(next);
     if (isComplete(next, target)) finishItem(next);
@@ -178,8 +181,8 @@ function TypingRound({ mode, entries, onExit, onAgain }: { mode: TypeMode; entri
     const ms = started.current ? performance.now() - started.current : 0;
     const accepted = correctCharacterCount(final, target);
     if (settings.sfx) void cue("correct");
-    const t = totalsRef.current;
-    const nt = { ...t, accepted: t.accepted + accepted, ms: t.ms + ms };
+    const cur = totalsRef.current;
+    const nt = { ...cur, accepted: cur.accepted + accepted, ms: cur.ms + ms };
     totalsRef.current = nt;
     setTotals(nt);
     if (i + 1 >= entries.length) {
@@ -201,17 +204,17 @@ function TypingRound({ mode, entries, onExit, onAgain }: { mode: TypeMode; entri
     return (
       <div className="page practice">
         <section className="panel typing-done">
-          <p className="eyebrow">Round Complete</p>
+          <p className="eyebrow">{t("round_complete")}</p>
           <h1 className="display">
             {m.wpm} <small>WPM</small>
           </h1>
-          <p className="lede">Accuracy {m.accuracy}% · {entries.length} items</p>
+          <p className="lede">{t("round_accuracy").replace("{acc}", String(m.accuracy)).replace("{n}", String(entries.length))}</p>
           <div className="summary-actions">
             <button className="btn btn-ghost" onClick={onExit}>
-              Back
+              {t("back")}
             </button>
             <button className="btn btn-primary btn-xl" onClick={onAgain} autoFocus>
-              <RotateCcw size={18} /> Practice Again
+              <RotateCcw size={18} /> {t("practice_again")}
             </button>
           </div>
         </section>
@@ -232,7 +235,7 @@ function TypingRound({ mode, entries, onExit, onAgain }: { mode: TypeMode; entri
     <div className="page practice typing">
       <header className="typing-top">
         <button className="btn btn-ghost" onClick={onExit}>
-          Exit
+          {t("exit")}
         </button>
         <AmbiencePicker />
         <div className="learn-progress">
@@ -255,7 +258,7 @@ function TypingRound({ mode, entries, onExit, onAgain }: { mode: TypeMode; entri
           <p className="typing-zh">
             {(mode === "dictation" || mode === "cloze") && (
               <button className="link" onClick={() => play(atlas.audio(e, "ex"), e.ex[0].en, settings.accent)}>
-                Listen again
+                {t("listen_again")}
               </button>
             )}
             {mode === "cloze" ? <ClozeSentence entry={e} /> : cueSentence}
@@ -263,9 +266,9 @@ function TypingRound({ mode, entries, onExit, onAgain }: { mode: TypeMode; entri
         )}
         <p className={`typing-text ${mode === "word" || mode === "cloze" ? "is-word" : ""}`} lang="en" aria-hidden="true">
           {chars.map((ch, k) => {
-            const t = typed[k];
-            const cls = t === undefined ? (k === typed.length ? "is-caret" : "") : same(t, ch) ? "is-ok" : "is-bad";
-            const show = t === undefined && hidesAnswer(mode) ? maskChar(ch) : ch;
+            const tc = typed[k];
+            const cls = tc === undefined ? (k === typed.length ? "is-caret" : "") : same(tc, ch) ? "is-ok" : "is-bad";
+            const show = tc === undefined && hidesAnswer(mode) ? maskChar(ch) : ch;
             return (
               <span key={k} className={cls}>
                 {show}
@@ -283,10 +286,10 @@ function TypingRound({ mode, entries, onExit, onAgain }: { mode: TypeMode; entri
           autoCorrect="off"
           autoComplete="off"
           spellCheck={false}
-          aria-label="Type here"
+          aria-label={t("type_here")}
         />
         <p className="muted typing-help">
-          {mode === "dictation" ? "Click 'Listen again' if you need another listen." : mode === "cloze" ? "The sentence is on screen; type the missing word." : "Start typing. Automatically advances once completed."} Item {i + 1}/{entries.length}
+          {mode === "dictation" ? t("typing_help_dictation") : mode === "cloze" ? t("typing_help_cloze") : t("typing_help_default")} {t("typing_item").replace("{i}", String(i + 1)).replace("{n}", String(entries.length))}
         </p>
       </section>
     </div>
@@ -308,6 +311,7 @@ function ClozeSentence({ entry }: { entry: Entry }) {
 type Question = { entry: Entry; answer: string; options: string[] };
 
 function CollocationRound({ entries, onExit, onAgain }: { entries: Entry[]; onExit: () => void; onAgain: () => void }) {
+  const t = useT();
   const settings = useStore((s) => s.settings);
   const questions = useMemo(
     () =>
@@ -361,17 +365,17 @@ function CollocationRound({ entries, onExit, onAgain }: { entries: Entry[]; onEx
     return (
       <div className="page practice">
         <section className="panel typing-done">
-          <p className="eyebrow">Round Complete</p>
+          <p className="eyebrow">{t("round_complete")}</p>
           <h1 className="display">
             {score} <small>/ {questions.length}</small>
           </h1>
-          <p className="lede">Collocations you already recognise in context.</p>
+          <p className="lede">{t("collocation_done")}</p>
           <div className="summary-actions">
             <button className="btn btn-ghost" onClick={onExit}>
-              Back
+              {t("back")}
             </button>
             <button className="btn btn-primary btn-xl" onClick={onAgain} autoFocus>
-              <RotateCcw size={18} /> Practice Again
+              <RotateCcw size={18} /> {t("practice_again")}
             </button>
           </div>
         </section>
@@ -382,11 +386,11 @@ function CollocationRound({ entries, onExit, onAgain }: { entries: Entry[]; onEx
     return (
       <div className="page practice">
         <section className="panel typing-done">
-          <p className="eyebrow">No collocations</p>
-          <p className="lede">None of these words carry a collocation yet. Try another word source.</p>
+          <p className="eyebrow">{t("no_collocations")}</p>
+          <p className="lede">{t("no_collocations_note")}</p>
           <div className="summary-actions">
             <button className="btn btn-ghost" onClick={onExit}>
-              Back
+              {t("back")}
             </button>
           </div>
         </section>
@@ -399,7 +403,7 @@ function CollocationRound({ entries, onExit, onAgain }: { entries: Entry[]; onEx
     <div className="page practice typing">
       <header className="typing-top">
         <button className="btn btn-ghost" onClick={onExit}>
-          Exit
+          {t("exit")}
         </button>
         <div className="learn-progress">
           <span style={{ transform: `scaleX(${Math.max(0.01, i / Math.max(1, questions.length))})` }} />
@@ -410,7 +414,7 @@ function CollocationRound({ entries, onExit, onAgain }: { entries: Entry[]; onEx
       </header>
       <section className="typing-stage">
         <p className="stage-label">
-          <span className="dot dot-review" /> Which phrase really goes with this word?
+          <span className="dot dot-review" /> {t("collocation_question")}
         </p>
         <div className="collocation-prompt">
           <h2 className="headword" lang="en">
@@ -438,7 +442,7 @@ function CollocationRound({ entries, onExit, onAgain }: { entries: Entry[]; onEx
         {picked && (
           <div className="collocation-next">
             <button className="btn btn-primary btn-xl" onClick={next} autoFocus>
-              {i + 1 >= questions.length ? "See result" : "Continue"} <ArrowRight size={20} />
+              {i + 1 >= questions.length ? t("see_result") : t("continue_label")} <ArrowRight size={20} />
             </button>
           </div>
         )}

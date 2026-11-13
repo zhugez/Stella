@@ -1,6 +1,7 @@
 import { Bookmark, BookmarkCheck, Lightbulb, Share2 } from "lucide-react";
 import type { Entry, WordRef } from "../atlas/types";
 import { useAtlas } from "../atlas/context";
+import { topicLabel, useT } from "../i18n";
 import { splitHighlight, splitPair } from "../lib/text";
 import { formatInterval, isMastered } from "../store/srs";
 import { toggleBookmark, useStore } from "../store/store";
@@ -22,12 +23,13 @@ export function Highlight({ text, word }: { text: string; word: string }) {
 }
 
 export function Pronounce({ entry, refw }: { entry: Entry; refw: WordRef | Entry }) {
+  const t = useT();
   const atlas = useAtlas();
   const accent = useStore((s) => s.settings.accent);
   const both = entry.uk && entry.us && entry.uk !== entry.us;
   const items: ["uk" | "us", string, string][] = both
-    ? [["uk", "UK", entry.uk], ["us", "US", entry.us]]
-    : [[accent, accent === "uk" ? "UK" : "US", entry.uk || entry.us]];
+    ? [["uk", t("accent_uk"), entry.uk], ["us", t("accent_us"), entry.us]]
+    : [[accent, accent === "uk" ? t("accent_uk") : t("accent_us"), entry.uk || entry.us]];
   if (!both && items[0][2] === "") return null;
   return (
     <div className="pron">
@@ -51,12 +53,13 @@ export function Pronounce({ entry, refw }: { entry: Entry; refw: WordRef | Entry
 }
 
 export function EntryView({ entry, mode = "detail", eager = true }: { entry: Entry; mode?: "detail" | "intro" | "reveal"; eager?: boolean }) {
+  const t = useT();
   const atlas = useAtlas();
   const ref = atlas.byId.get(entry.id);
   const card = useStore((s) => s.progress.cards[entry.id]);
   const saved = useStore((s) => s.progress.bookmarks.includes(entry.id));
   const accent = useStore((s) => s.settings.accent);
-  const topicIdx = atlas.topics.findIndex((t) => t[0] === entry.topic);
+  const topicIdx = atlas.topics.findIndex((tp) => tp[0] === entry.topic);
   const topic = atlas.topics[topicIdx];
   const exUrls = [atlas.audio(entry, "ex"), atlas.audio(entry, "ex2")];
   const famLinks = entry.fam.map((f) => {
@@ -64,7 +67,7 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
     const hit = atlas.words.find((x) => x.word.toLowerCase() === w);
     return { label: f, id: hit?.id };
   });
-  const status = card ? (isMastered(card) ? "Mastered" : "Learning") : null;
+  const status = card ? (isMastered(card) ? "mastered" : "learning") : null;
 
   const langPair = useStore((s) => s.settings.langPair || "en-vi");
   const isZh = langPair === "zh-vi" || langPair === "vi-zh";
@@ -73,21 +76,21 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
   return (
     <article className={`entry entry-${mode}`}>
       <div className="entry-art">
-        <Illustration src={atlas.img(entry)} word={entry.w} topic={topicIdx} eager={eager} alt={`${isFr ? (entry.fr_word || entry.w) : isZh ? (entry.zh_word || entry.w) : entry.w} illustration`} />
+        <Illustration src={atlas.img(entry)} word={entry.w} topic={topicIdx} eager={eager} alt={t("illustration_alt").replace("{word}", isFr ? (entry.fr_word || entry.w) : isZh ? (entry.zh_word || entry.w) : entry.w)} />
       </div>
       <div className="entry-body">
         <header className="entry-head">
           <div className="entry-tags">
             <span className={`chip chip-level lv-${entry.cefr}`}>{entry.cefr}</span>
-            {topic && <span className="chip">{topic[1]}</span>}
-            {status && <span className={`chip chip-status ${status === "Mastered" ? "is-done" : ""}`}>{status}</span>}
+            {topic && <span className="chip">{topicLabel(t, topic[1])}</span>}
+            {status && <span className={`chip chip-status ${status === "mastered" ? "is-done" : ""}`}>{t(status === "mastered" ? "status_mastered" : "status_learning")}</span>}
           </div>
           {mode === "detail" && (
             <div className="entry-actions">
-              <button className={`icon-btn ${saved ? "is-on" : ""}`} onClick={() => toggleBookmark(entry.id)} aria-pressed={saved} aria-label={saved ? "Remove bookmark" : "Save word"} title={saved ? "Remove bookmark" : "Save word"}>
+              <button className={`icon-btn ${saved ? "is-on" : ""}`} onClick={() => toggleBookmark(entry.id)} aria-pressed={saved} aria-label={saved ? t("remove_bookmark") : t("save_word")} title={saved ? t("remove_bookmark") : t("save_word")}>
                 {saved ? <BookmarkCheck size={19} /> : <Bookmark size={19} />}
               </button>
-              <button className="icon-btn" onClick={() => shareWord(atlas, entry)} aria-label="Generate share card" title="Generate share card">
+              <button className="icon-btn" onClick={() => shareWord(atlas, entry)} aria-label={t("generate_share_card")} title={t("generate_share_card")}>
                 <Share2 size={19} />
               </button>
             </div>
@@ -144,14 +147,14 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
 
         {entry.ex.length > 0 && (
           <section className="block">
-            <h3 className="eyebrow">Examples</h3>
+            <h3 className="eyebrow">{t("examples")}</h3>
             <ul className="examples">
               {entry.ex.map((x, i) => {
                 const mainSent = isFr && x.fr ? x.fr : isZh && x.zh ? x.zh : x.en;
                 const audioUrl = isFr || isZh ? null : (exUrls[i] ?? null);
                 return (
                   <li key={i}>
-                    {entry.ex.length > 1 && <span className={`ex-tag ${i ? "is-ielts" : ""}`}>{i ? "IELTS Context" : "Everyday"}</span>}
+                    {entry.ex.length > 1 && <span className={`ex-tag ${i ? "is-ielts" : ""}`}>{i ? t("example_ielts") : t("example_everyday")}</span>}
                     <p className="ex-en" lang={isFr ? "fr" : isZh ? "zh" : "en"}>
                       <Highlight text={mainSent} word={isFr ? (entry.fr_word || entry.w) : isZh ? (entry.zh_word || entry.w) : entry.w} />
                       <Speak url={audioUrl} text={mainSent} accent={i === 1 && exUrls[1] ? "us" : accent} size="sm" className="ex-speak" />
@@ -169,7 +172,7 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
 
         {(entry.col.length > 0 || entry.col_fr?.length || entry.col_zh?.length) && (
           <section className="block">
-            <h3 className="eyebrow">Collocations</h3>
+            <h3 className="eyebrow">{t("collocations")}</h3>
             <ul className="collocations">
               {(isFr && entry.col_fr?.length ? entry.col_fr : isZh && entry.col_zh?.length ? entry.col_zh : entry.col).map((c) => {
                 const { en: headPhrase, zh: subDef } = splitPair(c);
@@ -188,7 +191,7 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
           <section className="block relations">
             {famLinks.length > 0 && (
               <div>
-                <h3 className="eyebrow">Word Family</h3>
+                <h3 className="eyebrow">{t("word_family")}</h3>
                 <p>
                   {famLinks.map((f) =>
                     f.id && mode === "detail" ? (
@@ -204,7 +207,7 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
             )}
             {entry.syn.length > 0 && (
               <div>
-                <h3 className="eyebrow">Synonyms</h3>
+                <h3 className="eyebrow">{t("synonyms")}</h3>
                 <p>
                   {entry.syn.map((s) => (
                     <span key={s} style={{ display: "inline-block", background: "rgba(255,255,255,0.06)", padding: "2px 8px", borderRadius: "4px", marginRight: "6px", marginBottom: "4px" }}>
@@ -216,7 +219,7 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
             )}
             {entry.ant.length > 0 && (
               <div>
-                <h3 className="eyebrow">Antonyms</h3>
+                <h3 className="eyebrow">{t("antonyms")}</h3>
                 <p>
                   {entry.ant.map((s) => (
                     <span key={s} style={{ display: "inline-block", background: "rgba(255,255,255,0.06)", padding: "2px 8px", borderRadius: "4px", marginRight: "6px", marginBottom: "4px" }}>
@@ -236,11 +239,11 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
           </aside>
         )}
 
-        {entry.note && <p className="usage-note">Usage Note: {entry.note}</p>}
+        {entry.note && <p className="usage-note">{t("usage_note")}: {entry.note}</p>}
 
         {mode === "detail" && card && (
           <p className="memory-note">
-            {card.due <= Date.now() ? "Ready to review" : `Next review in ${formatInterval(card.due - Date.now())}`} · Stability {card.s < 1 ? "<1" : Math.round(card.s)} days · Reviewed {card.reps} times
+            {card.due <= Date.now() ? t("memory_ready") : t("memory_next").replace("{interval}", formatInterval(card.due - Date.now(), t))} · {t("memory_stability").replace("{n}", card.s < 1 ? "<1" : String(Math.round(card.s)))} · {t("memory_reviewed").replace("{n}", String(card.reps))}
           </p>
         )}
       </div>

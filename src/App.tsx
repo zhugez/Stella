@@ -25,7 +25,7 @@ import { Palette } from "./ui/Palette";
 import { Sheet } from "./ui/Sheet";
 import { shouldShowSplash, Splash } from "./ui/Splash";
 import { Toasts } from "./ui/Toast";
-import { useT } from "./i18n";
+import { useLang, useT, type Lang } from "./i18n";
 
 const NAV_ITEMS: { page: Route["page"]; key: "today" | "atlas" | "practice" | "reading" | "me"; icon: typeof Compass }[] = [
   { page: "today", key: "today", icon: Compass },
@@ -34,6 +34,8 @@ const NAV_ITEMS: { page: Route["page"]; key: "today" | "atlas" | "practice" | "r
   { page: "reading", key: "reading", icon: Newspaper },
   { page: "me", key: "me", icon: User },
 ];
+
+const NEXT_LANG: Record<Lang, Lang> = { vi: "en", en: "zh", zh: "vi" };
 
 function useTheme() {
   const theme = useStore((s) => s.settings.theme);
@@ -54,6 +56,11 @@ export default function App() {
   const [error, setError] = useState<string | null>(null);
   const dataset = useStore((s) => s.settings.dataset);
   useTheme();
+  const t = useT();
+  const lang = useLang();
+  useEffect(() => {
+    document.documentElement.lang = lang;
+  }, [lang]);
 
   useEffect(() => {
     loadOpenAtlas().then(
@@ -79,7 +86,7 @@ export default function App() {
         <Logo />
         <p>{error}</p>
         <button className="btn btn-primary" onClick={() => location.reload()}>
-          重新加载
+          {t("reload")}
         </button>
       </div>
     );
@@ -101,7 +108,7 @@ function Shell({ privateAvailable }: { privateAvailable: boolean }) {
   const { route, word } = useLocation();
   const onboarded = useStore((s) => s.settings.onboarded);
   const theme = useStore((s) => s.settings.theme);
-  const lang = useStore((s) => s.settings.lang || "vi");
+  const lang = useLang();
   const t = useT();
   const [palette, setPalette] = useState(false);
   const [splash, setSplash] = useState(shouldShowSplash);
@@ -138,7 +145,7 @@ function Shell({ privateAvailable }: { privateAvailable: boolean }) {
           <a className="topbar-logo" href="#/">
             <Logo />
           </a>
-          <nav className="topnav" aria-label="Main navigation">
+          <nav className="topnav" aria-label={t("main_navigation")}>
             {NAV_ITEMS.map(({ page, key }) => (
               <a key={page} href={page === "today" ? "#/" : `#/${page}`} className={route.page === page ? "is-on" : ""} aria-current={route.page === page ? "page" : undefined}>
                 {t(key)}
@@ -155,16 +162,17 @@ function Shell({ privateAvailable }: { privateAvailable: boolean }) {
             <LanguagePairPicker />
             <button
               className="icon-btn"
-              onClick={() => store.settings({ lang: lang === "vi" ? "zh" : "vi" })}
-              title="Chuyển ngôn ngữ / 切换语言"
+              onClick={() => store.settings({ lang: NEXT_LANG[lang] })}
+              title="Ngôn ngữ giao diện · Interface language · 界面语言"
+              aria-label={`${t("interface_language")}: ${lang.toUpperCase()}`}
               style={{ fontWeight: 600, fontSize: "0.82rem" }}
             >
               {lang.toUpperCase()}
             </button>
-            <button className="icon-btn" onClick={() => store.settings({ theme: dark ? "light" : "dark" })} aria-label={dark ? t("toggle_theme_light") : t("toggle_theme_dark")}>
+            <button className="icon-btn hide-sm" onClick={() => store.settings({ theme: dark ? "light" : "dark" })} aria-label={dark ? t("toggle_theme_light") : t("toggle_theme_dark")}>
               {dark ? <Sun size={19} /> : <Moon size={19} />}
             </button>
-            <a className="icon-btn hide-sm" href="#/about" aria-label="About & Open Source" title="About & Open Source">
+            <a className="icon-btn hide-sm" href="#/about" aria-label={t("about_open_source")} title={t("about_open_source")}>
               <Github size={19} />
             </a>
           </div>
@@ -203,7 +211,7 @@ function Shell({ privateAvailable }: { privateAvailable: boolean }) {
       {!focus && <SupportPrompt />}
 
       {!focus && (
-        <nav className="tabbar" aria-label="Main navigation">
+        <nav className="tabbar" aria-label={t("main_navigation")}>
           {NAV_ITEMS.map(({ page, key, icon: Icon }) => (
             <a key={page} href={page === "today" ? "#/" : `#/${page}`} className={route.page === page ? "is-on" : ""} aria-current={route.page === page ? "page" : undefined}>
               <Icon size={22} strokeWidth={route.page === page ? 2.1 : 1.7} />
@@ -224,6 +232,7 @@ function Shell({ privateAvailable }: { privateAvailable: boolean }) {
 }
 
 function WordSheet({ id }: { id: string | null }) {
+  const t = useT();
   const atlas = useAtlas();
   const opened = id !== null;
   useEffect(() => {
@@ -250,7 +259,7 @@ function WordSheet({ id }: { id: string | null }) {
     return () => window.removeEventListener("keydown", on);
   }, [id, neighbor]);
   return (
-    <Sheet open={!!id} onClose={closeWord} label={ref ? `${ref.word} 词条` : "词条"} wide>
+    <Sheet open={!!id} onClose={closeWord} label={ref ? t("word_entry").replace("{word}", ref.word) : t("entry")} wide>
       {entry ? (
         <EntryView key={entry.id} entry={entry} />
       ) : error ? (
@@ -259,14 +268,14 @@ function WordSheet({ id }: { id: string | null }) {
         <span className="spinner" />
       )}
       {ref && (
-        <nav className="sheet-nav" aria-label="切换词条">
-          <button className="icon-btn" onClick={() => neighbor(-1)} disabled={ref.order === 0} aria-label="上一个">
+        <nav className="sheet-nav" aria-label={t("browse_words")}>
+          <button className="icon-btn" onClick={() => neighbor(-1)} disabled={ref.order === 0} aria-label={t("previous_word")}>
             <ChevronLeft size={20} />
           </button>
           <span>
             {(ref.order + 1).toLocaleString()} / {atlas.count.toLocaleString()}
           </span>
-          <button className="icon-btn" onClick={() => neighbor(1)} disabled={ref.order >= atlas.count - 1} aria-label="下一个">
+          <button className="icon-btn" onClick={() => neighbor(1)} disabled={ref.order >= atlas.count - 1} aria-label={t("next_word")}>
             <ChevronRight size={20} />
           </button>
         </nav>

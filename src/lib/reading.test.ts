@@ -3,6 +3,7 @@ import { readFileSync } from "node:fs";
 import { test } from "node:test";
 import { contentVersion, evidenceParagraph, gradeReading, parsePassages } from "./reading";
 import { recordAnswer, sanitizeReading, submitReading, readingKey, readingStore } from "../store/reading";
+import { store } from "../store/store";
 
 const corpus = parsePassages(JSON.parse(readFileSync("public/atlas/reading/passages.json", "utf8")));
 const p = corpus.find((p) => p.id === "reading-education-01")!;
@@ -55,6 +56,9 @@ test("reading import merges without replacing first submissions", () => {
 });
 
 test("storage failure is observable and does not advance in-memory answers", () => {
+  // store.settings() schedules a save through window.setTimeout; give Node a window so it can.
+  Object.assign(globalThis, { window: globalThis });
+  store.settings({ lang: "en" });
   const before = readingStore.status().progress;
   Object.assign(globalThis, { localStorage: { getItem: () => JSON.stringify(before), setItem() { throw new Error("quota"); } } });
   readingStore.answer(corpus.find((item) => item.id !== p.id)!, 0, 1);
@@ -73,4 +77,11 @@ test("reading backup validates before restoring without touching vocabulary", ()
   assert.deepEqual(sanitizeReading(submitted, [p]), submitted);
   submitted.attempts[readingKey(p)].correct = 0;
   assert.throws(() => sanitizeReading(submitted, [p]));
+});
+
+test("reading errors follow the interface language", () => {
+  store.settings({ lang: "vi" });
+  assert.throws(() => parsePassages([]), /Thư viện đọc hiểu đang trống/);
+  store.settings({ lang: "en" });
+  assert.throws(() => parsePassages([]), /The reading library is empty/);
 });

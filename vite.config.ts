@@ -84,6 +84,8 @@ function localMedia(
     res.end();
   }
 }
+let outDir = "";
+let publicDir = "";
 export default defineConfig({
   // Deploy under a sub-path with ATLAS_BASE=/words/ npm run build
   base: process.env.ATLAS_BASE || "/",
@@ -98,10 +100,24 @@ export default defineConfig({
         server.middlewares.use(localMedia);
       },
     },
+    {
+      // Audio is proxied by src/worker.ts (too many files for static assets), so copy public/ without it.
+      name: "copy-public-without-audio",
+      apply: "build",
+      configResolved(c) {
+        outDir = path.resolve(c.root, c.build.outDir);
+        publicDir = c.publicDir;
+      },
+      closeBundle() {
+        const skip = path.join(publicDir, "atlas", "audio");
+        fs.cpSync(publicDir, outDir, { recursive: true, filter: (src) => src !== skip && !src.startsWith(skip + path.sep) });
+      },
+    },
   ],
   server: { port: 5188, strictPort: true },
   preview: { port: 5188, strictPort: true },
   build: {
+    copyPublicDir: false,
     chunkSizeWarningLimit: 600,
     rollupOptions: {
       output: {

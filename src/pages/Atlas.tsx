@@ -3,6 +3,7 @@ import { Galaxy } from "../galaxy/Galaxy";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useAtlas } from "../atlas/context";
 import type { WordRef } from "../atlas/types";
+import { topicLabel, useT, type TranslationKey } from "../i18n";
 import { morphFrom } from "../lib/motion";
 import { go, openWord, type Route } from "../lib/router";
 import { isMastered } from "../store/srs";
@@ -12,12 +13,12 @@ import { searchAtlas } from "../ui/Palette";
 import { Speak } from "../ui/Speak";
 
 type Status = "all" | "new" | "learning" | "mastered" | "saved";
-const STATUS: [Status, string][] = [
-  ["all", "All"],
-  ["new", "Unseen"],
-  ["learning", "Learning"],
-  ["mastered", "Mastered"],
-  ["saved", "Saved"],
+const STATUS: [Status, TranslationKey][] = [
+  ["all", "status_all"],
+  ["new", "status_unlearned"],
+  ["learning", "status_learning"],
+  ["mastered", "status_mastered"],
+  ["saved", "status_bookmarked"],
 ];
 
 type View = "grid" | "list" | "galaxy";
@@ -35,6 +36,7 @@ export function AtlasPage({
 }: {
   route: Extract<Route, { page: "atlas" }>;
 }) {
+  const t = useT();
   const atlas = useAtlas();
   const cards = useStore((s) => s.progress.cards);
   const bookmarks = useStore((s) => s.progress.bookmarks);
@@ -97,14 +99,12 @@ export function AtlasPage({
     <div className={`page atlas ${view === "galaxy" ? "is-galaxy" : ""}`}>
       <header className="atlas-head">
         <div>
-          <p className="eyebrow">Atlas · {atlas.count.toLocaleString()} words</p>
+          <p className="eyebrow">{t("atlas_eyebrow").replace("{n}", atlas.count.toLocaleString())}</p>
           <h1 className="display">
-            Every word,
-            <br className="br-sm" />
-            has a picture.
+            {t("atlas_title")}
           </h1>
           <p className="lede">
-            {atlas.examples.toLocaleString()} original examples · UK & US audio · Filtered by CEFR and {atlas.topics.length} IELTS topics
+            {t("atlas_subtitle").replace("{examples}", atlas.examples.toLocaleString()).replace("{topics}", String(atlas.topics.length))}
           </p>
         </div>
         <label className="search">
@@ -112,7 +112,7 @@ export function AtlasPage({
           <input
             value={q}
             onChange={(e) => setQ(e.target.value)}
-            placeholder="Search words or meanings..."
+            placeholder={t("search_placeholder")}
             spellCheck={false}
             autoComplete="off"
           />
@@ -120,7 +120,7 @@ export function AtlasPage({
             <button
               className="icon-btn"
               onClick={() => setQ("")}
-              aria-label="Clear search"
+              aria-label={t("clear_search")}
             >
               <X size={16} />
             </button>
@@ -131,12 +131,12 @@ export function AtlasPage({
       <div className="filters">
         {view !== "galaxy" && (
           <>
-            <div className="chips chips-scroll" role="group" aria-label="Level">
+            <div className="chips chips-scroll" role="group" aria-label={t("level_group")}>
               <button
                 className={`chip-btn ${!level ? "is-on" : ""}`}
                 onClick={() => setFilter({ level: undefined })}
               >
-                All levels
+                {t("all_levels")}
               </button>
               {atlas.cefr.map((l) => (
                 <button
@@ -150,12 +150,12 @@ export function AtlasPage({
                 </button>
               ))}
             </div>
-            <div className="chips chips-scroll" role="group" aria-label="Topic">
+            <div className="chips chips-scroll" role="group" aria-label={t("topic_group")}>
               <button
                 className={`chip-btn ${!topic ? "is-on" : ""}`}
                 onClick={() => setFilter({ topic: undefined })}
               >
-                All topics
+                {t("all_topics")}
               </button>
               {atlas.topics.map(([k, name]) => (
                 <button
@@ -165,7 +165,7 @@ export function AtlasPage({
                     setFilter({ topic: topic === k ? undefined : k })
                   }
                 >
-                  {name}
+                  {topicLabel(t, name)}
                 </button>
               ))}
             </div>
@@ -173,33 +173,33 @@ export function AtlasPage({
         )}
         <div className="filters-row">
           {view !== "galaxy" && (
-            <div className="segmented" role="group" aria-label="学习状态">
-              {STATUS.map(([k, label]) => (
+            <div className="segmented" role="group" aria-label={t("learning_status")}>
+              {STATUS.map(([k, labelKey]) => (
                 <button
                   key={k}
                   className={status === k ? "is-on" : ""}
                   onClick={() => setStatus(k)}
                   aria-pressed={status === k}
                 >
-                  {label}
+                  {t(labelKey)}
                 </button>
               ))}
             </div>
           )}
           <span className="result-count">
             {view === "galaxy"
-              ? "Search a word and the galaxy will fly there"
-              : `${list.length.toLocaleString()} results`}
+              ? t("galaxy_hint")
+              : `${list.length.toLocaleString()} ${t("result_count")}`}
           </span>
           <div
             className="segmented segmented-icons"
             role="group"
-            aria-label="View"
+            aria-label={t("view_group")}
           >
             <button
               className={view === "grid" ? "is-on" : ""}
               onClick={() => setView("grid")}
-              aria-label="Grid view"
+              aria-label={t("view_grid")}
               aria-pressed={view === "grid"}
             >
               <Grid3x3 size={17} />
@@ -207,7 +207,7 @@ export function AtlasPage({
             <button
               className={view === "list" ? "is-on" : ""}
               onClick={() => setView("list")}
-              aria-label="List view"
+              aria-label={t("view_list")}
               aria-pressed={view === "list"}
             >
               <List size={17} />
@@ -215,7 +215,7 @@ export function AtlasPage({
             <button
               className={view === "galaxy" ? "is-on" : ""}
               onClick={() => setView("galaxy")}
-              aria-label="Galaxy view"
+              aria-label={t("view_galaxy")}
               aria-pressed={view === "galaxy"}
             >
               <Sparkles size={17} />
@@ -229,7 +229,7 @@ export function AtlasPage({
       ) : list.length === 0 ? (
         <div className="empty">
           <img src={`${import.meta.env.BASE_URL}brand/empty.webp`} alt="" />
-          <p>No words found in this sector. Try different filters.</p>
+          <p>{t("empty_atlas")}</p>
         </div>
       ) : view === "grid" ? (
         <VirtualGrid items={list} cards={cards} />

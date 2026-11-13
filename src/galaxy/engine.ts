@@ -155,6 +155,8 @@ export interface EngineOptions {
   reducedMotion: boolean;
   preserve?: boolean;
   autoRotate?: number;
+  /** Skip rAF frames above this rate. Decorative canvases don't need the display's refresh rate. */
+  maxFps?: number;
 }
 
 /** Choose a quality tier before the first frame. */
@@ -305,9 +307,14 @@ export class GalaxyEngine {
     if (this.running) return;
     this.running = true;
     this.last = performance.now();
+    const minDt = this.opts.maxFps ? 1000 / this.opts.maxFps - 1 : 0;
+    let drawn = 0;
     const loop = (now: number) => {
       if (!this.running) return;
-      this.frame(now);
+      if (now - drawn >= minDt) {
+        drawn = now;
+        this.frame(now);
+      }
       this.raf = requestAnimationFrame(loop);
     };
     this.raf = requestAnimationFrame(loop);

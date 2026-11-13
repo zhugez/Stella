@@ -11,15 +11,15 @@ import { Galaxy } from "../galaxy/Galaxy";
 import { Highlight, Pronounce } from "../ui/EntryView";
 import { Illustration } from "../ui/Illustration";
 import { Ring } from "../ui/Ring";
-import { useT } from "../i18n";
+import { LOCALE, topicLabel, useLang, useT, type TranslationKey } from "../i18n";
 
 const BRAND = `${import.meta.env.BASE_URL}brand`;
 
-function greeting(h: number) {
-  if (h < 5) return "Late night";
-  if (h < 12) return "Good morning";
-  if (h < 18) return "Good afternoon";
-  return "Good evening";
+function greeting(h: number): TranslationKey {
+  if (h < 5) return "greeting_night";
+  if (h < 12) return "greeting_morning";
+  if (h < 18) return "greeting_afternoon";
+  return "greeting_evening";
 }
 
 export function streakOf(days: Record<string, { r: number }>) {
@@ -38,6 +38,7 @@ export function Today() {
   const progress = useStore((s) => s.progress);
   const settings = useStore((s) => s.settings);
   const t = useT();
+  const lang = useLang();
   const plan = useMemo(() => todayPlan(atlas, progress, settings), [atlas, progress, settings]);
   // Warm the first cards of today's journey so the session opens instantly.
   const firstIds = [...plan.due.slice(0, 4), ...plan.fresh.slice(0, 6)].join(",");
@@ -68,21 +69,20 @@ export function Today() {
     const d = new Date();
     d.setDate(d.getDate() - (6 - i));
     const k = dayKey(d);
-    const dayLabel = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"][d.getDay()];
-    return { k, label: dayLabel, v: progress.days[k]?.r ?? 0, today: i === 6 };
+    return { k, label: d.toLocaleDateString(LOCALE[lang], { weekday: "short" }), v: progress.days[k]?.r ?? 0, today: i === 6 };
   });
 
   const learned = Object.keys(progress.cards).length;
   const mastered = masteredCount(progress);
   const teaser = (active ? active.newIds : plan.fresh).slice(0, 5).map((id) => atlas.byId.get(id)!).filter(Boolean);
 
-  const dateHeader = now.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" });
+  const dateHeader = now.toLocaleDateString(LOCALE[lang], { weekday: "long", month: "long", day: "numeric" });
 
   return (
     <div className="page today">
       <header className="greet">
         <p className="eyebrow">{dateHeader}</p>
-        <h1 className="display">{greeting(now.getHours())}, explorer.</h1>
+        <h1 className="display">{t(greeting(now.getHours()))}</h1>
       </header>
 
       <section className={`journey ${total === 0 && !active ? "is-clear" : ""}`}>
@@ -98,63 +98,63 @@ export function Today() {
         <div className="journey-body">
           {active ? (
             <>
-              <p className="eyebrow eyebrow-light">Session in progress</p>
+              <p className="eyebrow eyebrow-light">{t("session_in_progress")}</p>
               <h2>
-                <b>{active.steps.length - active.index}</b> steps remaining
+                <b>{active.steps.length - active.index}</b> {t("steps_remaining")}
               </h2>
-              <p className="journey-lede">Progress is saved. Resume whenever you're ready.</p>
+              <p className="journey-lede">{t("progress_saved")}</p>
             </>
           ) : total > 0 ? (
             <>
-              <p className="eyebrow eyebrow-light">Today's Journey</p>
+              <p className="eyebrow eyebrow-light">{t("today_journey")}</p>
               <h2>
                 {plan.due.length > 0 && (
                   <>
-                    Review <b>{plan.due.length}</b>
+                    {t("review_label")} <b>{plan.due.length}</b>
                   </>
                 )}
                 {plan.due.length > 0 && plan.fresh.length > 0 && <i> · </i>}
                 {plan.fresh.length > 0 && (
                   <>
-                    New <b>{plan.fresh.length}</b>
+                    {t("new_label")} <b>{plan.fresh.length}</b>
                   </>
                 )}
               </h2>
-              <p className="journey-lede">~{plan.minutes} mins. Review past words first, then explore new ones.</p>
+              <p className="journey-lede">{t("journey_plan").replace("{n}", String(plan.minutes))}</p>
             </>
           ) : (
             <>
-              <p className="eyebrow eyebrow-light">Completed today</p>
-              <h2>All stars lit for today.</h2>
-              <p className="journey-lede">Memory needs resting time. Feel free to keep going if you want.</p>
+              <p className="eyebrow eyebrow-light">{t("completed_today")}</p>
+              <h2>{t("all_stars_lit")}</h2>
+              <p className="journey-lede">{t("rest_note")}</p>
             </>
           )}
           {teaser.length > 0 && (
-            <div className="teaser" aria-label="Upcoming words today">
+            <div className="teaser" aria-label={t("upcoming_words_aria")}>
               {teaser.map((w, i) => (
                 <Illustration key={w.id} src={atlas.img(w, "thumb")} word={w.word} topic={w.topic} className={`teaser-${i}`} />
               ))}
-              <span>Coming up today</span>
+              <span>{t("coming_up")}</span>
             </div>
           )}
           <div className="journey-actions">
             {active || total > 0 ? (
               <button className="btn btn-primary btn-xl" onClick={() => start()}>
-                {active ? "Resume Journey" : "Start Today's Session"} <ArrowRight size={20} />
+                {active ? t("continue_journey") : t("start_journey")} <ArrowRight size={20} />
               </button>
             ) : (
               <button className="btn btn-primary btn-xl" onClick={() => start({ extra: 5 })}>
-                Learn 5 more words <Sparkles size={18} />
+                {t("learn_more")} <Sparkles size={18} />
               </button>
             )}
             {!active && plan.due.length > 0 && plan.fresh.length > 0 && (
               <button className="btn btn-glass" onClick={() => start({ reviewOnly: true })}>
-                Review only
+                {t("review_only")}
               </button>
             )}
             {!active && total === 0 && (
               <button className="btn btn-glass" onClick={() => go({ page: "practice" })}>
-                <Keyboard size={18} /> Typing Practice
+                <Keyboard size={18} /> {t("typing_practice")}
               </button>
             )}
           </div>
@@ -166,19 +166,19 @@ export function Today() {
 
         <section className="panel streak-panel">
           <div className="panel-head">
-            <h3 className="eyebrow">This Week</h3>
+            <h3 className="eyebrow">{t("weekly_progress")}</h3>
             <span className={`streak ${streak ? "is-on" : ""}`}>
-              <Flame size={16} /> {streak} day streak
+              <Flame size={16} /> {t("streak_days").replace("{n}", String(streak))}
             </span>
           </div>
           <div className="streak-body">
             <Ring value={goal ? doneToday / goal : 0} size={112} stroke={8} tone="terra">
               <b>{doneToday}</b>
-              <small>answered</small>
+              <small>{t("answered")}</small>
             </Ring>
             <ol className="week">
               {week.map((d) => (
-                <li key={d.k} className={`${d.v ? "is-on" : ""} ${d.today ? "is-today" : ""}`} title={`${d.k}：${d.v} 题`}>
+                <li key={d.k} className={`${d.v ? "is-on" : ""} ${d.today ? "is-today" : ""}`} title={t("week_day_answered").replace("{day}", d.k).replace("{n}", String(d.v))}>
                   <span style={{ "--h": Math.min(1, d.v / 40) } as React.CSSProperties} />
                   <small>{d.label}</small>
                 </li>
@@ -210,6 +210,7 @@ export function Today() {
 }
 
 function GalaxyPanel({ learned, total }: { learned: number; total: number }) {
+  const t = useT();
   const today = useStore((s) => s.progress.days[dayKey()]);
   const ids = useStore((s) => s.progress.cards);
   const todayIds = useMemo(() => {
@@ -224,13 +225,13 @@ function GalaxyPanel({ learned, total }: { learned: number; total: number }) {
     <div className="galaxy-panel" onClick={() => go({ page: "atlas", view: "galaxy" })} role="link" tabIndex={0} onKeyDown={(e) => e.key === "Enter" && go({ page: "atlas", view: "galaxy" })}>
       <Galaxy mode="mini" highlight={todayIds} />
       <div className="galaxy-panel-copy">
-        <p className="eyebrow eyebrow-light">Your Word Galaxy</p>
+        <p className="eyebrow eyebrow-light">{t("galaxy_panel_title")}</p>
         <h3>
-          <b>{learned.toLocaleString()}</b> stars lit up
+          <b>{learned.toLocaleString()}</b> {t("galaxy_panel_sub")}
         </h3>
-        <p>{learned ? `${(total - learned).toLocaleString()} stars waiting for you. Golden stars were lit today.` : `${total.toLocaleString()} words are ${total.toLocaleString()} stars. Learn one, light one up.`}</p>
+        <p>{learned ? t("galaxy_waiting").replace("{n}", (total - learned).toLocaleString()) : t("galaxy_empty").replaceAll("{n}", total.toLocaleString())}</p>
         <span className="btn btn-glass">
-          Enter Galaxy <ArrowRight size={18} />
+          {t("enter_galaxy")} <ArrowRight size={18} />
         </span>
       </div>
     </div>
@@ -238,6 +239,7 @@ function GalaxyPanel({ learned, total }: { learned: number; total: number }) {
 }
 
 function WordOfDay() {
+  const t = useT();
   const atlas = useAtlas();
   const pick = useMemo(() => {
     const pool = atlas.words.filter((w) => w.cefr >= 2 && w.media & 1);
@@ -247,10 +249,10 @@ function WordOfDay() {
   const { entry } = useEntry(pick?.id);
   if (!pick) return null;
   return (
-    <div className="panel wotd" onClick={() => openWord(pick.id)} role="button" tabIndex={0} onKeyDown={(e) => e.key === "Enter" && openWord(pick.id)} aria-label={`Word of the day: ${pick.word}`}>
+    <div className="panel wotd" onClick={() => openWord(pick.id)} role="button" tabIndex={0} onKeyDown={(e) => e.key === "Enter" && openWord(pick.id)} aria-label={t("word_of_day_aria").replace("{word}", pick.word)}>
       <Illustration src={atlas.img(pick)} word={pick.word} topic={pick.topic} className="wotd-art" />
       <div className="wotd-body">
-        <h3 className="eyebrow">Word of the day</h3>
+        <h3 className="eyebrow">{t("today_word")}</h3>
         <p className="wotd-word" lang="en">
           {pick.word}
         </p>
@@ -270,7 +272,10 @@ function WordOfDay() {
   );
 }
 
+const LEVEL_NAMES: TranslationKey[] = ["level_beginner", "level_elementary", "level_intermediate", "level_upper_int", "level_advanced", "level_mastery"];
+
 function LevelPath() {
+  const t = useT();
   const atlas = useAtlas();
   const cards = useStore((s) => s.progress.cards);
   const start = useStore((s) => s.settings.startLevel);
@@ -287,13 +292,12 @@ function LevelPath() {
     }
     return out;
   }, [atlas, cards]);
-  const NAMES = ["Beginner", "Elementary", "Intermediate", "Upper-Int", "Advanced", "Mastery"];
   return (
     <section className="panel path-panel">
       <div className="panel-head">
-        <h3 className="eyebrow">Curriculum · A1 to C2</h3>
+        <h3 className="eyebrow">{t("level_path")}</h3>
         <span className="legend">
-          <i className="lg-seen" /> Seen <i className="lg-done" /> Mastered
+          <i className="lg-seen" /> {t("seen_label")} <i className="lg-done" /> {t("mastered_label")}
         </span>
       </div>
       <ol className="route">
@@ -302,16 +306,16 @@ function LevelPath() {
           const done = l.mastered / Math.max(1, l.total);
           return (
             <li key={l.name} className={`${i === start ? "is-start" : ""} ${l.seen ? "is-on" : ""}`}>
-              <button onClick={() => go({ page: "atlas", level: l.name })} aria-label={`${l.name} ${NAMES[i]} ${l.seen}/${l.total}`}>
+              <button onClick={() => go({ page: "atlas", level: l.name })} aria-label={`${l.name} ${t(LEVEL_NAMES[i])} ${l.seen}/${l.total}`}>
                 <span className="station" style={{ "--seen": seen, "--done": done } as React.CSSProperties}>
                   <b>{l.name}</b>
                 </span>
-                <span className="station-name">{NAMES[i]}</span>
+                <span className="station-name">{t(LEVEL_NAMES[i])}</span>
                 <span className="station-count">
                   {l.seen}
                   <small>/{l.total}</small>
                 </span>
-                {i === start && <span className="station-flag">Start</span>}
+                {i === start && <span className="station-flag">{t("start_flag")}</span>}
               </button>
             </li>
           );
@@ -322,6 +326,7 @@ function LevelPath() {
 }
 
 function Topics() {
+  const t = useT();
   const atlas = useAtlas();
   const counts = useMemo(() => {
     const c = Array.from({ length: atlas.topics.length }, () => 0);
@@ -331,9 +336,9 @@ function Topics() {
   return (
     <section className="topics-panel">
       <div className="panel-head">
-        <h3 className="eyebrow">Explore by IELTS Topics</h3>
+        <h3 className="eyebrow">{t("topics_title")}</h3>
         <button className="link" onClick={() => go({ page: "atlas" })}>
-          Open Atlas
+          {t("open_atlas")}
         </button>
       </div>
       <ul className="topic-tiles">
@@ -342,8 +347,8 @@ function Topics() {
             <button onClick={() => go({ page: "atlas", topic: key })}>
               <img src={`${BRAND}/topic-${key}.webp`} alt="" loading="lazy" onError={(e) => (e.currentTarget.style.visibility = "hidden")} />
               <span>
-                <b>{name}</b>
-                <small>{counts[i]} words</small>
+                <b>{topicLabel(t, name)}</b>
+                <small>{counts[i]} {t("words_count")}</small>
               </span>
             </button>
           </li>

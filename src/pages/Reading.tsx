@@ -2,6 +2,7 @@ import { ArrowRight, BookOpen, RefreshCw } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { prefetch, useAtlas } from "../atlas/context";
 import type { Entry } from "../atlas/types";
+import { topicLabel, tr, useT } from "../i18n";
 import { passage } from "../lib/drills";
 import { evidenceParagraph, parsePassages, type ReadingPassage } from "../lib/reading";
 import { go, openWord } from "../lib/router";
@@ -11,6 +12,7 @@ import { readingKey, readingStore, useReadingProgress } from "../store/reading";
 const BASE = import.meta.env.BASE_URL.replace(/\/$/, "");
 
 export function Reading() {
+  const t = useT();
   const atlas = useAtlas();
   const [mode, setMode] = useState<"passage" | "sentences">("passage");
   const [topic, setTopic] = useState(() => atlas.topics[0][0]);
@@ -26,7 +28,7 @@ export function Reading() {
     setLoadError("");
     setPassages(null);
     fetch(`${BASE}/atlas/reading/passages.json`, { signal: controller.signal })
-      .then((r) => { if (!r.ok) throw new Error("Reading content could not be loaded."); return r.json(); })
+      .then((r) => { if (!r.ok) throw new Error(tr("reading_load_failed")); return r.json(); })
       .then((v: unknown) => { if (!controller.signal.aborted) { const parsed = parsePassages(v); readingStore.library(parsed); setPassages(parsed); } })
       .catch((e: Error) => { if (!controller.signal.aborted) setLoadError(e.message); });
     return () => controller.abort();
@@ -35,7 +37,7 @@ export function Reading() {
   useEffect(() => {
     let live = true;
     setLines(null);
-    const ti = atlas.topics.findIndex((t) => t[0] === topic);
+    const ti = atlas.topics.findIndex((tp) => tp[0] === topic);
     const ids = shuffle(atlas.words.filter((w) => w.topic === ti), seed).slice(0, 18).map((w) => w.id);
     void prefetch(atlas, ids).then((list) => { if (live) setLines(passage(list.filter((e): e is Entry => !!e), 6)); });
     return () => { live = false; };
@@ -46,29 +48,30 @@ export function Reading() {
 
   return <div className="page reading">
     <header className="page-head">
-      <h1 className="display">Read, understand, explore.</h1>
-      <p className="lede">Academic practice and classic extracts. Levels are editorial targets, not certified CEFR levels or IELTS scores.</p>
+      <h1 className="display">{t("reading_title")}</h1>
+      <p className="lede">{t("reading_lede")}</p>
     </header>
     <div className="chips reading-topics">
-      <button className={`chip-btn ${mode === "passage" ? "is-on" : ""}`} aria-pressed={mode === "passage"} onClick={() => setMode("passage")}><BookOpen size={15} /> Full passages</button>
-      <button className={`chip-btn ${mode === "sentences" ? "is-on" : ""}`} aria-pressed={mode === "sentences"} onClick={() => setMode("sentences")}>Topic sentences</button>
+      <button className={`chip-btn ${mode === "passage" ? "is-on" : ""}`} aria-pressed={mode === "passage"} onClick={() => setMode("passage")}><BookOpen size={15} /> {t("reading_full_passages")}</button>
+      <button className={`chip-btn ${mode === "sentences" ? "is-on" : ""}`} aria-pressed={mode === "sentences"} onClick={() => setMode("sentences")}>{t("reading_topic_sentences")}</button>
     </div>
-    <div className="chips reading-topics">{atlas.topics.map(([key, name]) => <button key={key} className={`chip-btn ${topic === key ? "is-on" : ""}`} aria-pressed={topic === key} onClick={() => { setTopic(key); setSelected(null); }}>{name}</button>)}</div>
+    <div className="chips reading-topics">{atlas.topics.map(([key, name]) => <button key={key} className={`chip-btn ${topic === key ? "is-on" : ""}`} aria-pressed={topic === key} onClick={() => { setTopic(key); setSelected(null); }}>{topicLabel(t, name)}</button>)}</div>
     {mode === "passage" ? <>
-      {loadError ? <section className="panel" role="alert"><p>{loadError} No answers will be graded.</p><button className="btn btn-primary" onClick={() => setReload((n) => n + 1)}>Retry loading</button></section> : passages === null ? <p role="status">Loading reading library…</p> : !current ? <p>No passages in this topic yet.</p> : <>
-        <div className="chips reading-topics">{topicPassages.map((p, i) => <button key={p.id} className={`chip-btn ${current.id === p.id ? "is-on" : ""}`} aria-pressed={current.id === p.id} onClick={() => setSelected(p.id)}>Article {i + 1}: {p.author ?? "Academic overview"}</button>)}</div>
+      {loadError ? <section className="panel" role="alert"><p>{loadError} {t("reading_no_grading")}</p><button className="btn btn-primary" onClick={() => setReload((n) => n + 1)}>{t("reading_retry")}</button></section> : passages === null ? <p role="status">{t("reading_loading")}</p> : !current ? <p>{t("reading_no_passages")}</p> : <>
+        <div className="chips reading-topics">{topicPassages.map((p, i) => <button key={p.id} className={`chip-btn ${current.id === p.id ? "is-on" : ""}`} aria-pressed={current.id === p.id} onClick={() => setSelected(p.id)}>{t("reading_article").replace("{n}", String(i + 1)).replace("{name}", p.author ?? t("reading_academic_overview"))}</button>)}</div>
         <Reader key={readingKey(current)} passage={current} />
       </>}
     </> : <section className="panel passage">
-      <p className="muted">Independent example sentences sharing a topic, not a continuous story or comprehension assessment.</p>
-      {lines === null ? <p role="status">Loading sentences…</p> : lines.length ? <div className="passage-body">{lines.map((e) => <Line key={e.id} entry={e} />)}</div> : <p>No sentences available. Try another topic.</p>}
-      <div className="passage-actions"><button className="btn btn-primary" onClick={() => setSeed(Date.now())}><RefreshCw size={18} /> New sentences</button></div>
+      <p className="muted">{t("reading_sentences_note")}</p>
+      {lines === null ? <p role="status">{t("reading_loading_sentences")}</p> : lines.length ? <div className="passage-body">{lines.map((e) => <Line key={e.id} entry={e} />)}</div> : <p>{t("reading_no_sentences")}</p>}
+      <div className="passage-actions"><button className="btn btn-primary" onClick={() => setSeed(Date.now())}><RefreshCw size={18} /> {t("reading_new_sentences")}</button></div>
     </section>}
-    <div className="passage-actions"><button className="btn btn-ghost" onClick={() => go({ page: "atlas", topic })}>Browse in Atlas <ArrowRight size={18} /></button></div>
+    <div className="passage-actions"><button className="btn btn-ghost" onClick={() => go({ page: "atlas", topic })}>{t("reading_browse_atlas")} <ArrowRight size={18} /></button></div>
   </div>;
 }
 
 function Reader({ passage: p }: { passage: ReadingPassage }) {
+  const t = useT();
   const atlas = useAtlas();
   const { progress, error } = useReadingProgress();
   const attempt = progress.attempts[readingKey(p)];
@@ -89,36 +92,37 @@ function Reader({ passage: p }: { passage: ReadingPassage }) {
     const url = URL.createObjectURL(new Blob([readingStore.export()], { type: "application/json" }));
     const a = document.createElement("a"); a.href = url; a.download = "stella-reading-backup.json"; a.click(); URL.revokeObjectURL(url);
   };
-  if (p.author) return <section className="panel passage"><h2>{p.title}</h2><p role="status">This imported extract is quarantined pending source and question verification. It cannot be read or graded here yet. Choose an Academic overview for draft practice.</p></section>;
+  if (p.author) return <section className="panel passage"><h2>{p.title}</h2><p role="status">{t("reading_quarantined")}</p></section>;
   return <section className="panel passage">
     <h2>{p.title}</h2>
-    <p className="muted">{p.cefr} editorial target · {p.wordCount} words{p.author ? ` · ${p.author}` : ""}</p>
-    {p.source && <p className="muted">Source: {p.source}. Extract, not the complete work.</p>}
-    <p className="muted">Draft content: practice only, not a validated reading assessment. {supported ? "Submit all answers before feedback. Dictionary use marks this attempt as assisted." : "Explore only: question evidence for this extract has not been verified, so grading is disabled."}</p>
+    <p className="muted">{t("reading_meta").replace("{cefr}", p.cefr).replace("{n}", String(p.wordCount))}{p.author ? ` · ${p.author}` : ""}</p>
+    {p.source && <p className="muted">{t("reading_source").replace("{source}", p.source)}</p>}
+    <p className="muted">{t("reading_draft")} {supported ? t("reading_submit_note") : t("reading_explore_only")}</p>
     {error && <p role="alert">{error}</p>}
-    <div className="passage-body">{p.paragraphs.map((text, i) => <p className="passage-line" lang="en" id={`reading-p${i + 1}`} key={i}><span className="muted">[{i + 1}] </span>{text.split(/([a-zA-Z]{3,})/g).map((word, j) => { const id = vocab.get(word.toLowerCase()); return id ? <button key={j} className="passage-word" onClick={() => lookup(id)} title={`${word} — open card`}>{word}</button> : word; })}</p>)}</div>
+    <div className="passage-body">{p.paragraphs.map((text, i) => <p className="passage-line" lang="en" id={`reading-p${i + 1}`} key={i}><span className="muted">[{i + 1}] </span>{text.split(/([a-zA-Z]{3,})/g).map((word, j) => { const id = vocab.get(word.toLowerCase()); return id ? <button key={j} className="passage-word" onClick={() => lookup(id)} title={t("open_card").replace("{word}", word)}>{word}</button> : word; })}</p>)}</div>
     <div className="passage-actions">{p.vocabulary.filter((v) => atlas.byId.has(v.id)).slice(0, 30).map((v) => <button className="chip-btn" key={v.id} onClick={() => lookup(v.id)}>{v.word}</button>)}</div>
     {supported && <div className="reading-questions">
-      <h3>Comprehension practice</h3>
-      {submitted && <p role="status">First submission: {attempt.correct}/{p.questions.length} · {attempt.assisted ? "Assisted practice" : "Without dictionary support"}. This is a practice score, not a proficiency estimate. Your first submission is preserved.</p>}
+      <h3>{t("reading_questions_title")}</h3>
+      {submitted && <p role="status">{t("reading_result").replace("{score}", String(attempt.correct)).replace("{total}", String(p.questions.length)).replace("{mode}", attempt.assisted ? t("reading_assisted") : t("reading_unassisted"))}</p>}
       {p.questions.map((q, i) => <fieldset key={i} className="reading-question" disabled={submitted || !!error}>
         <legend>{i + 1}. {q.question}</legend>
         {q.options.map((option, j) => <label className="reading-option" key={j}><input type="radio" name={`${p.id}-q${i}`} checked={attempt?.answers[i] === j} onChange={() => readingStore.answer(p, i, j)} />{option}</label>)}
-        {submitted && <div className="reading-feedback"><p>{attempt.answers[i] === q.answer ? "Correct" : "Incorrect"}. Answer: {q.options[q.answer]}</p><p>{q.explanation}</p><a href={`#reading-p${evidenceParagraph(p, i)}`} onClick={(e) => { e.preventDefault(); document.getElementById(`reading-p${evidenceParagraph(p, i)}`)?.scrollIntoView({ behavior: "smooth", block: "center" }); }}>Evidence: paragraph {evidenceParagraph(p, i)}</a></div>}
+        {submitted && <div className="reading-feedback"><p>{t(attempt.answers[i] === q.answer ? "reading_correct" : "reading_incorrect").replace("{answer}", q.options[q.answer])}</p><p>{q.explanation}</p><a href={`#reading-p${evidenceParagraph(p, i)}`} onClick={(e) => { e.preventDefault(); document.getElementById(`reading-p${evidenceParagraph(p, i)}`)?.scrollIntoView({ behavior: "smooth", block: "center" }); }}>{t("reading_evidence").replace("{n}", String(evidenceParagraph(p, i)))}</a></div>}
       </fieldset>)}
-      {!submitted && <button className="btn btn-primary" disabled={!allAnswered || !!error} onClick={() => { try { readingStore.submit(p); } catch (e) { setMessage((e as Error).message); } }}>Submit first answers</button>}
+      {!submitted && <button className="btn btn-primary" disabled={!allAnswered || !!error} onClick={() => { try { readingStore.submit(p); } catch (e) { setMessage((e as Error).message); } }}>{t("reading_submit")}</button>}
     </div>}
     <div className="passage-actions">
-      <button className="btn btn-ghost" onClick={download}>Export reading progress</button>
-      <button className="btn btn-ghost" disabled={!!error} onClick={() => file.current?.click()}>Import reading progress</button>
-      <input ref={file} type="file" accept="application/json" hidden onChange={async (e) => { const selected = e.target.files?.[0]; if (!selected) return; try { readingStore.import(await selected.text()); setMessage("Reading backup merged. Existing attempts were kept."); } catch (err) { setMessage((err as Error).message); } e.target.value = ""; }} />
+      <button className="btn btn-ghost" onClick={download}>{t("reading_export")}</button>
+      <button className="btn btn-ghost" disabled={!!error} onClick={() => file.current?.click()}>{t("reading_import")}</button>
+      <input ref={file} type="file" accept="application/json" hidden onChange={async (e) => { const selected = e.target.files?.[0]; if (!selected) return; try { readingStore.import(await selected.text()); setMessage(t("reading_merged")); } catch (err) { setMessage((err as Error).message); } e.target.value = ""; }} />
     </div>
-    <p className="muted">Reading progress is saved separately on this device. Export it separately from your vocabulary backup.</p>
+    <p className="muted">{t("reading_storage_note")}</p>
     {message && <p role="status">{message}</p>}
   </section>;
 }
 
 function Line({ entry }: { entry: Entry }) {
+  const t = useT();
   const parts = splitHighlight(entry.ex[0].en, entry.w);
-  return <p className="passage-line" lang="en">{parts ? <>{parts[0]}<button className="passage-word" onClick={() => openWord(entry.id)} title={`${entry.w} — open card`}>{parts[1]}</button>{parts[2]}</> : entry.ex[0].en}</p>;
+  return <p className="passage-line" lang="en">{parts ? <>{parts[0]}<button className="passage-word" onClick={() => openWord(entry.id)} title={t("open_card").replace("{word}", entry.w)}>{parts[1]}</button>{parts[2]}</> : entry.ex[0].en}</p>;
 }

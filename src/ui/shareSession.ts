@@ -1,5 +1,6 @@
 import type { Atlas } from "../atlas/types";
 import { sessionStats } from "../store/session";
+import { LOCALE, tr, uiLang } from "../i18n";
 import { Rating } from "../store/srs";
 import type { ActiveSession } from "../store/store";
 import { toast } from "./Toast";
@@ -59,14 +60,19 @@ export async function shareSession(atlas: Atlas, s: ActiveSession) {
     const d = new Date();
     ctx.fillStyle = "#8A8C96";
     ctx.font = `500 28px ${SANS}`;
-    ctx.fillText(`${d.getMonth() + 1}月${d.getDate()}日 · 今天点亮了 ${ids.length} 颗星`, pad, top - 24);
+    const date = uiLang() === "zh" ? `${d.getMonth() + 1}月${d.getDate()}日` : d.toLocaleDateString(LOCALE[uiLang()], { day: "numeric", month: "long" });
+    ctx.fillText(tr("share_session_head").replace("{date}", date).replace("{n}", String(ids.length)), pad, top - 24);
     ctx.fillStyle = "#1E2640";
     ctx.font = `600 64px ${SERIF}`;
-    ctx.fillText(`学了 ${ids.length} 个词，首次正确 ${st.accuracy}%`, pad, top + 52, W - pad * 2);
+    ctx.fillText(tr("share_session_title").replace("{n}", String(ids.length)).replace("{acc}", String(st.accuracy)), pad, top + 52, W - pad * 2);
     const wrong = Object.values(s.graded).filter((g) => g === Rating.Again).length;
     ctx.font = `400 30px ${SANS}`;
     ctx.fillStyle = "#5A6075";
-    ctx.fillText(`新词 ${s.newIds.length} · 复习 ${s.reviewIds.length} · 需要再见面 ${wrong}`, pad, top + 112);
+    ctx.fillText(
+      tr("share_session_counts").replace("{new}", String(s.newIds.length)).replace("{review}", String(s.reviewIds.length)).replace("{wrong}", String(wrong)),
+      pad,
+      top + 112,
+    );
     ctx.fillStyle = "rgba(30,38,64,.14)";
     ctx.fillRect(pad, H - 116, W - pad * 2, 2);
     ctx.fillStyle = "#1E2640";
@@ -74,7 +80,7 @@ export async function shareSession(atlas: Atlas, s: ActiveSession) {
     ctx.fillText("Stella · IELTS", pad, H - 58);
     ctx.font = `400 26px ${SANS}`;
     ctx.fillStyle = "#8A8C96";
-    const tag = "One word, one canvas.";
+    const tag = tr("share_tagline");
     ctx.fillText(tag, W - pad - ctx.measureText(tag).width, H - 60);
     const blob = await new Promise<Blob | null>((r) => c.toBlob(r, "image/png"));
     if (!blob) throw new Error();
@@ -88,8 +94,8 @@ export async function shareSession(atlas: Atlas, s: ActiveSession) {
     a.download = file.name;
     a.click();
     setTimeout(() => URL.revokeObjectURL(a.href), 2000);
-    toast("成绩卡已保存", "ok");
+    toast(tr("result_card_saved"), "ok");
   } catch {
-    toast("成绩卡生成失败", "warn");
+    toast(tr("result_card_failed"), "warn");
   }
 }

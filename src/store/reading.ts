@@ -1,4 +1,5 @@
 import { useSyncExternalStore } from "react";
+import { tr } from "../i18n";
 import { contentVersion, gradeReading, type ReadingPassage } from "../lib/reading";
 
 export interface ReadingAttempt {
@@ -16,21 +17,21 @@ const empty = (): ReadingProgress => ({ version: 1, attempts: {} });
 export const readingKey = (p: ReadingPassage) => `${p.id}:${contentVersion(p)}`;
 
 export function sanitizeReading(value: unknown, passages: ReadingPassage[] = []): ReadingProgress {
-  if (!value || typeof value !== "object") throw new Error("Invalid reading backup.");
+  if (!value || typeof value !== "object") throw new Error(tr("reading_err_invalid_backup"));
   const v = value as ReadingProgress;
-  if (v.version !== 1 || !v.attempts || typeof v.attempts !== "object" || Array.isArray(v.attempts)) throw new Error("Unsupported reading backup.");
+  if (v.version !== 1 || !v.attempts || typeof v.attempts !== "object" || Array.isArray(v.attempts)) throw new Error(tr("reading_err_unsupported_backup"));
   for (const [key, a] of Object.entries(v.attempts)) {
     if (!a || typeof a.passageId !== "string" || typeof a.version !== "string" || key !== `${a.passageId}:${a.version}` ||
       !Number.isFinite(a.started) || a.started < 0 || typeof a.assisted !== "boolean" || !a.answers || typeof a.answers !== "object" || Array.isArray(a.answers) ||
       Object.entries(a.answers).some(([k, n]) => !/^\d+$/.test(k) || !Number.isInteger(n) || n < 0 || n > 20) ||
       (a.submitted !== undefined && (!Number.isFinite(a.submitted) || a.submitted < a.started || !Number.isInteger(a.correct) || a.correct! < 0 || a.correct! > Object.keys(a.answers).length)))
-      throw new Error("Invalid reading attempt. Existing progress was kept.");
+      throw new Error(tr("reading_err_invalid_attempt"));
   }
   for (const p of passages) {
     const a = v.attempts[readingKey(p)];
     if (!a) continue;
     if (Object.entries(a.answers).some(([i, option]) => !p.questions[Number(i)] || option >= p.questions[Number(i)].options.length) ||
-      (a.submitted !== undefined && gradeReading(p, a.answers) !== a.correct)) throw new Error("Reading backup contains an invalid answer or score.");
+      (a.submitted !== undefined && gradeReading(p, a.answers) !== a.correct)) throw new Error(tr("reading_err_invalid_answer"));
   }
   return JSON.parse(JSON.stringify(v));
 }
@@ -52,7 +53,7 @@ export function submitReading(progress: ReadingProgress, p: ReadingPassage): Rea
 let library: ReadingPassage[] = [];
 let data = empty();
 let error = "";
-try { const raw = typeof localStorage === "undefined" ? null : localStorage.getItem(KEY); if (raw) data = sanitizeReading(JSON.parse(raw)); } catch { error = "Reading progress could not be loaded. Export or recover the stored data before continuing."; }
+try { const raw = typeof localStorage === "undefined" ? null : localStorage.getItem(KEY); if (raw) data = sanitizeReading(JSON.parse(raw)); } catch { error = tr("reading_err_load"); }
 const listeners = new Set<() => void>();
 function save(next: ReadingProgress) {
   try {
@@ -61,17 +62,17 @@ function save(next: ReadingProgress) {
     const latest = stored ? sanitizeReading(JSON.parse(stored), library) : empty();
     if (JSON.stringify(latest) !== JSON.stringify(data)) {
       data = latest;
-      error = "Reading progress changed in another tab. Reload before continuing.";
+      error = tr("reading_err_other_tab");
     } else {
       localStorage.setItem(KEY, JSON.stringify(next));
       data = next;
     }
-  } catch { error = "Reading progress could not be saved. Free storage and reload before continuing."; }
+  } catch { error = tr("reading_err_save"); }
   listeners.forEach((l) => l());
 }
 if (typeof window !== "undefined") window.addEventListener("storage", (e) => {
   if (e.key !== KEY) return;
-  try { data = e.newValue ? sanitizeReading(JSON.parse(e.newValue), library) : empty(); error = ""; } catch { error = "Another tab saved invalid reading data. Reload before continuing."; }
+  try { data = e.newValue ? sanitizeReading(JSON.parse(e.newValue), library) : empty(); error = ""; } catch { error = tr("reading_err_other_tab_invalid"); }
   listeners.forEach((l) => l());
 });
 

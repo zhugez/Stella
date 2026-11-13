@@ -1,3 +1,4 @@
+import type { TranslationKey } from "../i18n";
 import { createEmptyCard, fsrs, Rating, State, type Card, type Grade } from "ts-fsrs";
 
 /** Serialized FSRS card. Dates are epoch milliseconds to keep backups small and JSON-safe. */
@@ -83,15 +84,15 @@ export const MASTERED_STABILITY = 21;
 export const isMastered = (c?: CardState) => !!c && c.st === 2 && c.s >= MASTERED_STABILITY;
 export const isLearning = (c?: CardState) => !!c && !isMastered(c);
 
-export function formatInterval(ms: number) {
+export function formatInterval(ms: number, t: (k: TranslationKey) => string) {
   const m = Math.round(ms / 60000);
-  if (m < 1) return "<1分";
-  if (m < 60) return `${m}分`;
+  if (m < 1) return t("interval_lt_min");
+  if (m < 60) return t("interval_min").replace("{n}", String(m));
   const h = Math.round(m / 60);
-  if (h < 24) return `${h}小时`;
+  if (h < 24) return t("interval_h").replace("{n}", String(h));
   const d = Math.round(h / 24);
-  if (d < 31) return `${d}天`;
+  if (d < 31) return d === 1 ? t("interval_day") : t("interval_days").replace("{n}", String(d));
   const mo = Math.round(d / 30);
-  if (mo < 12) return `${mo}个月`;
-  return `${(d / 365).toFixed(1)}年`;
+  if (mo < 12) return mo === 1 ? t("interval_month") : t("interval_months").replace("{n}", String(mo));
+  return t("interval_years").replace("{n}", (d / 365).toFixed(1));
 }

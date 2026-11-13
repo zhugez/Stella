@@ -9,3 +9,7 @@ output/
 .DS_Store
 .playwright-cli/
 *.tsbuildinfo
+.pi/
+graphify-out/
+src/graphify-out/
+.wrangler/

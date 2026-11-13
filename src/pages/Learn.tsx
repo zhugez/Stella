@@ -2,6 +2,7 @@ import { ArrowRight, Check, Lightbulb, RotateCcw, Share2, Volume2, X } from "luc
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { prefetch, useAtlas, useEntry } from "../atlas/context";
 import type { Entry, WordRef } from "../atlas/types";
+import { useT, type TranslationKey } from "../i18n";
 import { play, stopAudio } from "../lib/audio";
 import { burst } from "../lib/burst";
 import { cue } from "../lib/sound";
@@ -55,6 +56,7 @@ export function Learn() {
 }
 
 function Runner({ session }: { session: ActiveSession }) {
+  const t = useT();
   const step = session.steps[session.index];
   const total = session.steps.length;
   const exit = () => {
@@ -64,7 +66,7 @@ function Runner({ session }: { session: ActiveSession }) {
   return (
     <div className="learn">
       <header className="learn-top">
-        <button className="icon-btn" onClick={exit} aria-label="Pause and return">
+        <button className="icon-btn" onClick={exit} aria-label={t("pause_return")}>
           <X size={22} />
         </button>
         <div className="learn-progress" role="progressbar" aria-valuemin={0} aria-valuemax={total} aria-valuenow={session.index}>
@@ -89,6 +91,7 @@ function useStepTimer() {
 }
 
 function Intro({ step }: { step: Step }) {
+  const t = useT();
   const atlas = useAtlas();
   const { entry } = useEntry(step.id);
   const settings = useStore((s) => s.settings);
@@ -106,29 +109,30 @@ function Intro({ step }: { step: Step }) {
   return (
     <div className="intro">
       <p className="stage-label">
-        <span className="dot dot-new" /> First look
+        <span className="dot dot-new" /> {t("first_meeting")}
       </p>
       <EntryView entry={entry} mode="intro" />
       <footer className="learn-actions">
         <button className="btn btn-primary btn-xl" onClick={next} autoFocus>
-          Got it <ArrowRight size={20} />
+          {t("know_it")} <ArrowRight size={20} />
         </button>
         <span className="hint-keys">
-          <kbd>Enter</kbd> Continue
+          <kbd>Enter</kbd> {t("continue_label")}
         </span>
       </footer>
     </div>
   );
 }
 
-const KIND_LABEL: Record<QuizKind, string> = {
-  meaning: "What does it mean?",
-  picture: "Look at the picture, complete the sentence",
-  listen: "Listen, which word is it?",
-  spell: "Spell this word",
+const KIND_LABEL: Record<QuizKind, TranslationKey> = {
+  meaning: "quiz_meaning",
+  picture: "quiz_picture",
+  listen: "quiz_listen",
+  spell: "quiz_spell",
 };
 
 function Quiz({ step, session }: { step: Step & { kind: QuizKind }; session: ActiveSession }) {
+  const t = useT();
   const atlas = useAtlas();
   const ref = atlas.byId.get(step.id)!;
   const { entry } = useEntry(step.id);
@@ -179,8 +183,8 @@ function Quiz({ step, session }: { step: Step & { kind: QuizKind }; session: Act
     <div className={`quiz quiz-${step.kind} ${pending ? (pending.correct ? "is-right" : "is-wrong") : ""}`}>
       <p className="stage-label">
         <span className={`dot ${step.retry ? "dot-retry" : "dot-review"}`} />
-        {step.retry ? "Review again · " : ""}
-        {KIND_LABEL[step.kind]}
+        {step.retry ? `${t("review_again")} · ` : ""}
+        {t(KIND_LABEL[step.kind])}
       </p>
 
       <section className="prompt">
@@ -211,12 +215,12 @@ function Quiz({ step, session }: { step: Step & { kind: QuizKind }; session: Act
         )}
         {step.kind === "listen" && (
           <div className="prompt-listen">
-            <button className="listen-orb" onClick={() => play(atlas.audio(entry, settings.accent), entry.w, settings.accent)} aria-label="Listen again">
+            <button className="listen-orb" onClick={() => play(atlas.audio(entry, settings.accent), entry.w, settings.accent)} aria-label={t("listen_again")}>
               <Volume2 size={40} strokeWidth={1.6} />
               <span />
             </button>
             <button className="link" onClick={() => play(atlas.audio(entry, settings.accent), entry.w, settings.accent, 0.7)}>
-              Listen slower
+              {t("listen_slower")}
             </button>
           </div>
         )}
@@ -258,6 +262,7 @@ function Quiz({ step, session }: { step: Step & { kind: QuizKind }; session: Act
 }
 
 function SpellPrompt({ entry, refw, hints }: { entry: Entry; refw: WordRef; hints: number }) {
+  const t = useT();
   const atlas = useAtlas();
   const accent = useStore((s) => s.settings.accent);
   const sentence = entry.ex[0] ? gap(entry.ex[0].en, entry.w) : null;
@@ -276,13 +281,14 @@ function SpellPrompt({ entry, refw, hints }: { entry: Entry; refw: WordRef; hint
             {sentence.after}
           </p>
         )}
-        <Speak url={atlas.audio(entry, accent)} text={entry.w} accent={accent} size="sm" label="Audio" />
+        <Speak url={atlas.audio(entry, accent)} text={entry.w} accent={accent} size="sm" label={t("audio_label")} />
       </div>
     </div>
   );
 }
 
 function SpellInput({ entry, pending, hints, onHint, onSubmit }: { entry: Entry; pending?: { correct: boolean; value: string }; hints: number; onHint: () => void; onSubmit: (v: string) => void }) {
+  const t = useT();
   const [value, setValue] = useState("");
   const input = useRef<HTMLInputElement>(null);
   const target = entry.w;
@@ -322,16 +328,16 @@ function SpellInput({ entry, pending, hints, onHint, onSubmit }: { entry: Entry;
         autoComplete="off"
         spellCheck={false}
         enterKeyHint="done"
-        aria-label={`拼写，${target.length} 个字符`}
+        aria-label={t("spelling_input").replace("{n}", String(target.length))}
         readOnly={!!pending}
       />
       {!pending && (
         <div className="spell-actions">
           <button type="button" className="btn btn-ghost" onClick={onHint} disabled={hints >= target.length - 1}>
-            <Lightbulb size={17} /> Hint letter
+            <Lightbulb size={17} /> {t("hint_letter")}
           </button>
           <button type="submit" className="btn btn-primary" disabled={!value.trim()}>
-            Submit <kbd>Enter</kbd>
+            {t("submit")} <kbd>Enter</kbd>
           </button>
         </div>
       )}
@@ -340,6 +346,7 @@ function SpellInput({ entry, pending, hints, onHint, onSubmit }: { entry: Entry;
 }
 
 function Feedback({ entry, refw, correct, onNext }: { entry: Entry; refw: WordRef; correct: boolean; onNext: () => void }) {
+  const t = useT();
   const atlas = useAtlas();
   const btn = useRef<HTMLButtonElement>(null);
   useEffect(() => btn.current?.focus({ preventScroll: true }), []);
@@ -348,7 +355,7 @@ function Feedback({ entry, refw, correct, onNext }: { entry: Entry; refw: WordRe
       <div className="feedback-inner">
         <Illustration src={atlas.img(entry, "thumb")} word={entry.w} topic={refw.topic} className="feedback-art" />
         <div className="feedback-text">
-          <p className="feedback-verdict">{correct ? "Correct" : "No worries, note it down"}</p>
+          <p className="feedback-verdict">{correct ? t("feedback_correct") : t("feedback_wrong")}</p>
           <p className="feedback-word">
             <b lang="en">{entry.w}</b>
             <span className="ipa">{entry.uk || entry.us}</span>
@@ -366,7 +373,7 @@ function Feedback({ entry, refw, correct, onNext }: { entry: Entry; refw: WordRe
           )}
         </div>
         <button ref={btn} className={`btn btn-xl ${correct ? "btn-sage" : "btn-terra"}`} onClick={onNext}>
-          Continue <ArrowRight size={20} />
+          {t("continue_label")} <ArrowRight size={20} />
         </button>
       </div>
     </div>
@@ -374,6 +381,7 @@ function Feedback({ entry, refw, correct, onNext }: { entry: Entry; refw: WordRe
 }
 
 function Summary({ session }: { session: ActiveSession }) {
+  const t = useT();
   const atlas = useAtlas();
   useEffect(() => {
     if (store.get().settings.sfx) void cue("complete");
@@ -395,29 +403,29 @@ function Summary({ session }: { session: ActiveSession }) {
       <div className="summary-card">
         <div className="summary-sky">
           <Galaxy mode="mini" highlight={words.map((w) => w.id)} ignite />
-          <p>Lit up {words.length} stars today</p>
+          <p>{t("lit_up_today").replace("{n}", String(words.length))}</p>
         </div>
-        <p className="eyebrow">Session complete</p>
-        <h1 className="display">{stats.accuracy >= 90 ? "Excellent session." : stats.accuracy >= 60 ? "Steady progress." : "Missed words will return soon."}</h1>
+        <p className="eyebrow">{t("session_complete")}</p>
+        <h1 className="display">{stats.accuracy >= 90 ? t("summary_excellent") : stats.accuracy >= 60 ? t("summary_steady") : t("summary_missed")}</h1>
         <div className="summary-stats">
           <Ring value={stats.accuracy / 100} size={128} tone={stats.accuracy >= 60 ? "sage" : "terra"}>
             <b>{stats.accuracy}%</b>
-            <small>First Try</small>
+            <small>{t("first_try")}</small>
           </Ring>
           <dl>
             <div>
-              <dt>New</dt>
+              <dt>{t("new_label")}</dt>
               <dd>{session.newIds.length}</dd>
             </div>
             <div>
-              <dt>Review</dt>
+              <dt>{t("review_label")}</dt>
               <dd>{session.reviewIds.length}</dd>
             </div>
             <div>
-              <dt>Time</dt>
+              <dt>{t("time_label")}</dt>
               <dd>
                 {minutes}
-                <small>mins</small>
+                <small>{t("mins")}</small>
               </dd>
             </div>
           </dl>
@@ -431,18 +439,18 @@ function Summary({ session }: { session: ActiveSession }) {
             </li>
           ))}
         </ul>
-        <p className="summary-note">FSRS has scheduled review intervals for each word. Mistakes will reappear sooner.</p>
+        <p className="summary-note">{t("summary_note")}</p>
         <div className="summary-actions">
           {wrong.length > 0 && (
             <button className="btn btn-ghost" onClick={again}>
-              <RotateCcw size={18} /> Practice {wrong.length} mistake(s)
+              <RotateCcw size={18} /> {t("practice_mistakes").replace("{n}", String(wrong.length))}
             </button>
           )}
           <button className="btn btn-ghost" onClick={() => shareSession(atlas, session)}>
-            <Share2 size={18} /> Share Card
+            <Share2 size={18} /> {t("share_card")}
           </button>
           <button className="btn btn-primary btn-xl" onClick={done} ref={(b) => b?.focus({ preventScroll: true })}>
-            Finish <ArrowRight size={20} />
+            {t("finish")} <ArrowRight size={20} />
           </button>
         </div>
       </div>
