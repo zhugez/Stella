@@ -1,0 +1,257 @@
+{
+  "id": "reading-education-02",
+  "topic": "education",
+  "topicName": "Education",
+  "title": "The Value of Struggle in the Classroom",
+  "cefr": "B2",
+  "paragraphs": [
+    "Teachers have long wanted their lessons to feel smooth. A well-planned lesson, in which every explanation is clear and every exercise is within easy reach, creates a pleasant atmosphere, and students leave with the comforting sense that they have understood. Yet many educators now question whether such comfort is the same thing as learning. Some researchers argue that when material is too easy to absorb, it is also easy to forget, and that a certain amount of struggle may actually strengthen memory. This question matters because school time is limited, and teachers need to know which classroom habits deserve it.",
+    "The idea is sometimes described as productive difficulty. Consider two students preparing for a history exam. One rereads her notes several times and highlights the key passages; the other closes the book and tries to write down everything she can remember, then checks for gaps. The first student feels more confident, because the notes look familiar. The second feels frustrated, because she keeps forgetting things. Yet studies of this kind generally find that the second method leads to better results later, since retrieving information from memory is itself a form of practice.",
+    "Teachers can build such challenges into ordinary lessons without making them punishing. Spacing is one example: returning to a topic after several days rather than studying it all at once. Mixing different types of problem in a single homework task is another. Both methods feel slower and less tidy than repeating one skill until it seems perfect, and students often dislike them at first. Their value lies in forcing learners to decide which approach a problem requires, instead of simply following a pattern they have just seen. A teacher who adopts these habits must also be ready to explain them, since students who do not understand the reason for a method are unlikely to keep using it.",
+    "There is, however, a danger in taking this view too far. Difficulty helps only when it is within a student's reach. A task that lies far beyond a learner's current knowledge does not produce effortful thinking; it produces confusion and, eventually, a decision to give up. Teachers therefore have to judge carefully. A good teacher watches faces and answers closely during a lesson, and changes the plan when the class seems lost. Hints, examples and short bursts of guidance can keep a demanding task manageable, and they can be withdrawn gradually as confidence grows. This is why experienced teachers tend to describe their job as adjusting the level of challenge rather than simply raising it.",
+    "Motivation complicates the picture further. Students who believe that ability is fixed often read a mistake as proof that they are simply not good at a subject, and they may avoid hard tasks to protect their self-image. Those who see ability as something that develops with effort are more likely to treat the same mistake as useful information. Schools that praise careful strategies and persistence, rather than natural talent, may therefore help pupils to tolerate the discomfort that productive difficulty involves. Not all researchers are convinced, however, that short programmes aimed at changing beliefs produce lasting effects.",
+    "Assessment also shapes how students respond to difficulty. Where every quiz counts towards a final grade, a wrong answer feels costly, and learners naturally prefer safe, familiar tasks. Low-stakes testing, in which results are used mainly to show students what they still need to practise, tends to reduce anxiety. Some teachers worry that frequent quizzes will take up valuable lesson time, but others reply that the time is well spent if the extra practice improves retention. Whatever the format, the feedback that follows matters as much as the quiz itself, because a score with no explanation teaches very little.",
+    "Parents can find these ideas uncomfortable, because they are used to judging a school by how happy their children appear. A lesson in which pupils visibly struggle may look like poor teaching. Part of the task for schools, then, is to explain why a moment of difficulty need not signal failure. Learning that feels effortless may be pleasant, but it is not necessarily the most durable kind. A classroom where students are regularly stretched, supported and then given time to recover is more likely to prepare them for problems that no teacher has explained in advance."
+  ],
+  "questions": [
+    {
+      "type": "mcq",
+      "question": "Why do some researchers doubt that very smooth lessons are the best kind?",
+      "options": [
+        "They make students feel that teachers are not explaining clearly.",
+        "Material that is easy to absorb may also be easy to forget.",
+        "They create an atmosphere that is too pleasant for serious study.",
+        "They give students too little time to understand each exercise."
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 1 says that when material is too easy to absorb, \"it is also easy to forget\".",
+      "evidence": 1
+    },
+    {
+      "type": "mcq",
+      "question": "What does the example of the two history students show?",
+      "options": [
+        "Highlighting key passages is the quickest way to prepare for an exam.",
+        "Students who feel frustrated are usually less intelligent.",
+        "Checking for gaps is unnecessary if the notes look familiar.",
+        "The method that feels harder can produce better long-term results."
+      ],
+      "answer": 3,
+      "explanation": "Paragraph 2 says the second method \"leads to better results later\" even though the student feels frustrated.",
+      "evidence": 2
+    },
+    {
+      "type": "mcq",
+      "question": "According to the writer, difficulty is useful for learning only when it is",
+      "options": [
+        "within the learner's reach.",
+        "withdrawn gradually over several weeks.",
+        "combined with praise for natural talent.",
+        "chosen by the student rather than the teacher."
+      ],
+      "answer": 0,
+      "explanation": "Paragraph 4 states that \"Difficulty helps only when it is within a student's reach\".",
+      "evidence": 4
+    },
+    {
+      "type": "mcq",
+      "question": "What is the writer's view of programmes designed to change students' beliefs about ability?",
+      "options": [
+        "They are unnecessary because most students already value effort.",
+        "They work better with younger pupils than with older ones.",
+        "Their long-term effect is still disputed among researchers.",
+        "They should replace praise for careful strategies."
+      ],
+      "answer": 2,
+      "explanation": "Paragraph 5 says \"Not all researchers are convinced\" that such programmes produce lasting effects.",
+      "evidence": 5
+    },
+    {
+      "type": "tfng",
+      "question": "Students who reread their notes tend to feel more sure of themselves than students who test their own memory.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 0,
+      "explanation": "Paragraph 2 says the first student \"feels more confident, because the notes look familiar\".",
+      "evidence": 2
+    },
+    {
+      "type": "tfng",
+      "question": "Students usually welcome mixed-problem homework from the start.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 3 says students \"often dislike them at first\", so the statement is false.",
+      "evidence": 3
+    },
+    {
+      "type": "tfng",
+      "question": "Younger pupils need more guidance than older pupils when they face difficult tasks.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 2,
+      "explanation": "Paragraph 4 mentions hints and guidance but says nothing about pupils' ages.",
+      "evidence": 4
+    },
+    {
+      "type": "tfng",
+      "question": "The main purpose of low-stakes quizzes is to tell learners which areas need further work.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 0,
+      "explanation": "Paragraph 6 says results are used \"mainly to show students what they still need to practise\".",
+      "evidence": 6
+    },
+    {
+      "type": "tfng",
+      "question": "Parents' views of a school are strongly influenced by the opinions of other parents.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 2,
+      "explanation": "Paragraph 7 says parents judge a school by how happy children appear, but it never mentions the influence of other parents.",
+      "evidence": 7
+    },
+    {
+      "type": "gap",
+      "question": "The second student's method works well because retrieving information from memory is a form of ____.",
+      "accept": [
+        "practice"
+      ],
+      "explanation": "Paragraph 2 explains that retrieving information is \"itself a form of practice\".",
+      "evidence": 2
+    },
+    {
+      "type": "gap",
+      "question": "One way to add challenge to lessons is ____, which means returning to a topic after several days.",
+      "accept": [
+        "spacing"
+      ],
+      "explanation": "Paragraph 3 says \"Spacing is one example\" and defines it as returning to a topic after several days.",
+      "evidence": 3
+    },
+    {
+      "type": "gap",
+      "question": "A task that is far too difficult tends to produce ____ instead of effortful thinking.",
+      "accept": [
+        "confusion"
+      ],
+      "explanation": "Paragraph 4 says such a task \"produces confusion\".",
+      "evidence": 4
+    },
+    {
+      "type": "gap",
+      "question": "Low-stakes testing tends to reduce student ____.",
+      "accept": [
+        "anxiety"
+      ],
+      "explanation": "Paragraph 6 says low-stakes testing \"tends to reduce anxiety\".",
+      "evidence": 6
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "atmosphere",
+      "id": "atmosphere"
+    },
+    {
+      "word": "memory",
+      "id": "memory"
+    },
+    {
+      "word": "practice",
+      "id": "practice"
+    },
+    {
+      "word": "confident",
+      "id": "confident"
+    },
+    {
+      "word": "familiar",
+      "id": "familiar"
+    },
+    {
+      "word": "method",
+      "id": "method"
+    },
+    {
+      "word": "tidy",
+      "id": "tidy"
+    },
+    {
+      "word": "pattern",
+      "id": "pattern"
+    },
+    {
+      "word": "danger",
+      "id": "danger"
+    },
+    {
+      "word": "confusion",
+      "id": "confusion"
+    },
+    {
+      "word": "guidance",
+      "id": "guidance"
+    },
+    {
+      "word": "gradually",
+      "id": "gradually"
+    },
+    {
+      "word": "motivation",
+      "id": "motivation"
+    },
+    {
+      "word": "ability",
+      "id": "ability"
+    },
+    {
+      "word": "persistence",
+      "id": "persistence"
+    },
+    {
+      "word": "tolerate",
+      "id": "tolerate"
+    },
+    {
+      "word": "anxiety",
+      "id": "anxiety"
+    },
+    {
+      "word": "assessment",
+      "id": "assessment"
+    },
+    {
+      "word": "retention",
+      "id": "retention"
+    },
+    {
+      "word": "durable",
+      "id": "durable"
+    },
+    {
+      "word": "judge",
+      "id": "judge"
+    },
+    {
+      "word": "prepare",
+      "id": "prepare"
+    }
+  ],
+  "wordCount": 716
+}

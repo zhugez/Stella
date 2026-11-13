@@ -1432,6 +1432,263 @@
     "wordCount": 177
   },
   {
+    "id": "reading-education-02",
+    "topic": "education",
+    "topicName": "Education",
+    "title": "The Value of Struggle in the Classroom",
+    "cefr": "B2",
+    "paragraphs": [
+      "Teachers have long wanted their lessons to feel smooth. A well-planned lesson, in which every explanation is clear and every exercise is within easy reach, creates a pleasant atmosphere, and students leave with the comforting sense that they have understood. Yet many educators now question whether such comfort is the same thing as learning. Some researchers argue that when material is too easy to absorb, it is also easy to forget, and that a certain amount of struggle may actually strengthen memory. This question matters because school time is limited, and teachers need to know which classroom habits deserve it.",
+      "The idea is sometimes described as productive difficulty. Consider two students preparing for a history exam. One rereads her notes several times and highlights the key passages; the other closes the book and tries to write down everything she can remember, then checks for gaps. The first student feels more confident, because the notes look familiar. The second feels frustrated, because she keeps forgetting things. Yet studies of this kind generally find that the second method leads to better results later, since retrieving information from memory is itself a form of practice.",
+      "Teachers can build such challenges into ordinary lessons without making them punishing. Spacing is one example: returning to a topic after several days rather than studying it all at once. Mixing different types of problem in a single homework task is another. Both methods feel slower and less tidy than repeating one skill until it seems perfect, and students often dislike them at first. Their value lies in forcing learners to decide which approach a problem requires, instead of simply following a pattern they have just seen. A teacher who adopts these habits must also be ready to explain them, since students who do not understand the reason for a method are unlikely to keep using it.",
+      "There is, however, a danger in taking this view too far. Difficulty helps only when it is within a student's reach. A task that lies far beyond a learner's current knowledge does not produce effortful thinking; it produces confusion and, eventually, a decision to give up. Teachers therefore have to judge carefully. A good teacher watches faces and answers closely during a lesson, and changes the plan when the class seems lost. Hints, examples and short bursts of guidance can keep a demanding task manageable, and they can be withdrawn gradually as confidence grows. This is why experienced teachers tend to describe their job as adjusting the level of challenge rather than simply raising it.",
+      "Motivation complicates the picture further. Students who believe that ability is fixed often read a mistake as proof that they are simply not good at a subject, and they may avoid hard tasks to protect their self-image. Those who see ability as something that develops with effort are more likely to treat the same mistake as useful information. Schools that praise careful strategies and persistence, rather than natural talent, may therefore help pupils to tolerate the discomfort that productive difficulty involves. Not all researchers are convinced, however, that short programmes aimed at changing beliefs produce lasting effects.",
+      "Assessment also shapes how students respond to difficulty. Where every quiz counts towards a final grade, a wrong answer feels costly, and learners naturally prefer safe, familiar tasks. Low-stakes testing, in which results are used mainly to show students what they still need to practise, tends to reduce anxiety. Some teachers worry that frequent quizzes will take up valuable lesson time, but others reply that the time is well spent if the extra practice improves retention. Whatever the format, the feedback that follows matters as much as the quiz itself, because a score with no explanation teaches very little.",
+      "Parents can find these ideas uncomfortable, because they are used to judging a school by how happy their children appear. A lesson in which pupils visibly struggle may look like poor teaching. Part of the task for schools, then, is to explain why a moment of difficulty need not signal failure. Learning that feels effortless may be pleasant, but it is not necessarily the most durable kind. A classroom where students are regularly stretched, supported and then given time to recover is more likely to prepare them for problems that no teacher has explained in advance."
+    ],
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Why do some researchers doubt that very smooth lessons are the best kind?",
+        "options": [
+          "They make students feel that teachers are not explaining clearly.",
+          "Material that is easy to absorb may also be easy to forget.",
+          "They create an atmosphere that is too pleasant for serious study.",
+          "They give students too little time to understand each exercise."
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 1 says that when material is too easy to absorb, \"it is also easy to forget\".",
+        "evidence": 1
+      },
+      {
+        "type": "mcq",
+        "question": "What does the example of the two history students show?",
+        "options": [
+          "Highlighting key passages is the quickest way to prepare for an exam.",
+          "Students who feel frustrated are usually less intelligent.",
+          "Checking for gaps is unnecessary if the notes look familiar.",
+          "The method that feels harder can produce better long-term results."
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 2 says the second method \"leads to better results later\" even though the student feels frustrated.",
+        "evidence": 2
+      },
+      {
+        "type": "mcq",
+        "question": "According to the writer, difficulty is useful for learning only when it is",
+        "options": [
+          "within the learner's reach.",
+          "withdrawn gradually over several weeks.",
+          "combined with praise for natural talent.",
+          "chosen by the student rather than the teacher."
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 4 states that \"Difficulty helps only when it is within a student's reach\".",
+        "evidence": 4
+      },
+      {
+        "type": "mcq",
+        "question": "What is the writer's view of programmes designed to change students' beliefs about ability?",
+        "options": [
+          "They are unnecessary because most students already value effort.",
+          "They work better with younger pupils than with older ones.",
+          "Their long-term effect is still disputed among researchers.",
+          "They should replace praise for careful strategies."
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 5 says \"Not all researchers are convinced\" that such programmes produce lasting effects.",
+        "evidence": 5
+      },
+      {
+        "type": "tfng",
+        "question": "Students who reread their notes tend to feel more sure of themselves than students who test their own memory.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 2 says the first student \"feels more confident, because the notes look familiar\".",
+        "evidence": 2
+      },
+      {
+        "type": "tfng",
+        "question": "Students usually welcome mixed-problem homework from the start.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 3 says students \"often dislike them at first\", so the statement is false.",
+        "evidence": 3
+      },
+      {
+        "type": "tfng",
+        "question": "Younger pupils need more guidance than older pupils when they face difficult tasks.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 4 mentions hints and guidance but says nothing about pupils' ages.",
+        "evidence": 4
+      },
+      {
+        "type": "tfng",
+        "question": "The main purpose of low-stakes quizzes is to tell learners which areas need further work.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 6 says results are used \"mainly to show students what they still need to practise\".",
+        "evidence": 6
+      },
+      {
+        "type": "tfng",
+        "question": "Parents' views of a school are strongly influenced by the opinions of other parents.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 7 says parents judge a school by how happy children appear, but it never mentions the influence of other parents.",
+        "evidence": 7
+      },
+      {
+        "type": "gap",
+        "question": "The second student's method works well because retrieving information from memory is a form of ____.",
+        "accept": [
+          "practice"
+        ],
+        "explanation": "Paragraph 2 explains that retrieving information is \"itself a form of practice\".",
+        "evidence": 2
+      },
+      {
+        "type": "gap",
+        "question": "One way to add challenge to lessons is ____, which means returning to a topic after several days.",
+        "accept": [
+          "spacing"
+        ],
+        "explanation": "Paragraph 3 says \"Spacing is one example\" and defines it as returning to a topic after several days.",
+        "evidence": 3
+      },
+      {
+        "type": "gap",
+        "question": "A task that is far too difficult tends to produce ____ instead of effortful thinking.",
+        "accept": [
+          "confusion"
+        ],
+        "explanation": "Paragraph 4 says such a task \"produces confusion\".",
+        "evidence": 4
+      },
+      {
+        "type": "gap",
+        "question": "Low-stakes testing tends to reduce student ____.",
+        "accept": [
+          "anxiety"
+        ],
+        "explanation": "Paragraph 6 says low-stakes testing \"tends to reduce anxiety\".",
+        "evidence": 6
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "atmosphere",
+        "id": "atmosphere"
+      },
+      {
+        "word": "memory",
+        "id": "memory"
+      },
+      {
+        "word": "practice",
+        "id": "practice"
+      },
+      {
+        "word": "confident",
+        "id": "confident"
+      },
+      {
+        "word": "familiar",
+        "id": "familiar"
+      },
+      {
+        "word": "method",
+        "id": "method"
+      },
+      {
+        "word": "tidy",
+        "id": "tidy"
+      },
+      {
+        "word": "pattern",
+        "id": "pattern"
+      },
+      {
+        "word": "danger",
+        "id": "danger"
+      },
+      {
+        "word": "confusion",
+        "id": "confusion"
+      },
+      {
+        "word": "guidance",
+        "id": "guidance"
+      },
+      {
+        "word": "gradually",
+        "id": "gradually"
+      },
+      {
+        "word": "motivation",
+        "id": "motivation"
+      },
+      {
+        "word": "ability",
+        "id": "ability"
+      },
+      {
+        "word": "persistence",
+        "id": "persistence"
+      },
+      {
+        "word": "tolerate",
+        "id": "tolerate"
+      },
+      {
+        "word": "anxiety",
+        "id": "anxiety"
+      },
+      {
+        "word": "assessment",
+        "id": "assessment"
+      },
+      {
+        "word": "retention",
+        "id": "retention"
+      },
+      {
+        "word": "durable",
+        "id": "durable"
+      },
+      {
+        "word": "judge",
+        "id": "judge"
+      },
+      {
+        "word": "prepare",
+        "id": "prepare"
+      }
+    ],
+    "wordCount": 716
+  },
+  {
     "id": "reading-emotion-01",
     "topic": "emotion",
     "topicName": "Emotions",
@@ -1956,6 +2213,261 @@
     "wordCount": 198
   },
   {
+    "id": "reading-environment-02",
+    "topic": "environment",
+    "topicName": "Environment",
+    "title": "Letting the Rain Back In",
+    "cefr": "B2",
+    "paragraphs": [
+      "For most of the last century, engineers treated rain falling on a city as a problem to be removed as quickly as possible. Roofs, roads and car parks were built so that water ran off them into drains and then into the nearest river. This approach worked well enough when storms were moderate and cities were small. But as urban areas have spread and heavy downpours have become more frequent in many regions, the old system has started to fail, and flooded streets have become a familiar sight. Local councils have therefore had to ask whether a drainage network designed for a different climate can still be trusted.",
+      "The basic difficulty is that hard surfaces such as concrete and asphalt do not absorb water. In a field or a forest, much of the rain soaks into the soil, is taken up by plants or evaporates slowly. In a paved district, almost all of it reaches the drains at once. When the pipes cannot cope, water backs up and spills into streets and basements. Enlarging the pipes is one answer, but it is expensive, disruptive and only postpones the problem if storms continue to intensify.",
+      "An alternative that has attracted growing attention is to copy natural processes rather than fight them. Planners speak of green infrastructure: rain gardens, tree-lined streets with permeable pavements, roofs covered in vegetation, and small ponds that hold water temporarily. Each feature is modest, but together they slow the flow of water and give it time to sink into the ground. The aim is not to stop floods completely, which is unrealistic, but to reduce their frequency and severity.",
+      "These measures bring additional benefits that conventional drains cannot. Vegetation cools the air in hot weather, since plants release moisture and shade the surfaces beneath them. Parks and wetlands provide habitats for insects, birds and frogs, and residents often report that green streets are more pleasant to walk along. Some local authorities have found that such improvements even raise the value of neighbouring property, although this effect varies considerably from place to place. Several of these gains are enjoyed every day, not only during storms, which makes the investment easier to defend to taxpayers.",
+      "Critics, however, point out real limitations. Green features need space, and in dense city centres space is exactly what is missing. They also need regular maintenance: a rain garden clogged with litter or a pond choked by weeds will not perform as intended. Moreover, soil that is already saturated after days of rain cannot take in any more water, so a sudden storm can still overwhelm a district that has been carefully designed. For this reason, few experts suggest that greenery can replace pipes and pumping stations altogether.",
+      "Who pays, and who is responsible, is another source of disagreement. Traditional drainage is usually managed by a single public body, whereas green infrastructure is spread across private gardens, school grounds and public parks. Persuading many owners to install and look after small features is harder than building one large tunnel. Some cities have tried offering lower charges to households that keep rainwater on their land; others have simply written the requirement into building regulations. Both approaches have supporters, and neither has proved ideal everywhere. In practice, success depends as much on persuasion and cooperation as on engineering.",
+      "Climate also matters. A design that works in a region with steady, gentle rain may perform poorly where long dry periods are followed by violent storms, because dry, hard soil can initially repel water instead of absorbing it. Planners therefore have to study local conditions rather than import a successful design wholesale. In a few places, the stored water is also collected and reused for watering plants or flushing toilets, which turns a hazard into a resource.",
+      "The most realistic view is that cities will need both grey and green solutions. Pipes and pumps remain essential for the heaviest storms, while natural features can deal with the many smaller ones and make urban life more pleasant. What has changed is the underlying attitude: rain is no longer regarded simply as waste to be discarded, but as a resource that, with careful planning, a city can learn to manage and even to enjoy."
+    ],
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Why does the writer say that enlarging drainage pipes is not a complete solution?",
+        "options": [
+          "It makes flooding in basements more likely.",
+          "It is impractical in forests and fields.",
+          "It may only delay the problem if storms keep getting stronger.",
+          "It reduces the amount of water that reaches rivers."
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 2 says enlarging pipes is \"expensive, disruptive and only postpones the problem\" if storms intensify.",
+        "evidence": 2
+      },
+      {
+        "type": "mcq",
+        "question": "What is the main aim of green infrastructure, according to paragraph 3?",
+        "options": [
+          "To prevent every flood in the city",
+          "To copy the design of traditional drains",
+          "To store water permanently in small ponds",
+          "To make floods happen less often and be less serious"
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 3 says the aim is \"not to stop floods completely\" but \"to reduce their frequency and severity\".",
+        "evidence": 3
+      },
+      {
+        "type": "mcq",
+        "question": "What problem with saturated soil do critics mention?",
+        "options": [
+          "It cannot absorb more water during a sudden storm.",
+          "It encourages weeds to grow in rain gardens.",
+          "It makes pumping stations stop working.",
+          "It prevents plants from releasing moisture."
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 5 says saturated soil \"cannot take in any more water\", so a storm can still overwhelm a designed district.",
+        "evidence": 5
+      },
+      {
+        "type": "mcq",
+        "question": "Why must planners study local conditions?",
+        "options": [
+          "Dry regions have no need of green features.",
+          "Successful designs are usually too expensive to copy.",
+          "Violent storms are always followed by long dry periods.",
+          "A design that suits one climate may work badly in another."
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 7 says a design for gentle rain \"may perform poorly\" where dry periods are followed by violent storms.",
+        "evidence": 7
+      },
+      {
+        "type": "tfng",
+        "question": "Traditional drainage was designed to move rainwater out of the city quickly.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 1 says rain was treated as a problem \"to be removed as quickly as possible\".",
+        "evidence": 1
+      },
+      {
+        "type": "tfng",
+        "question": "The writer states that green improvements raise property values equally in all areas.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 4 says the effect \"varies considerably from place to place\", so the statement is false.",
+        "evidence": 4
+      },
+      {
+        "type": "tfng",
+        "question": "Rain gardens are cheaper to build than large underground tunnels.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 5 and 6 discuss space, maintenance and ownership, but the passage never compares the building costs of rain gardens and tunnels.",
+        "evidence": 5
+      },
+      {
+        "type": "tfng",
+        "question": "Some cities have used building rules to make households deal with rainwater on their own land.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 6 says some cities \"simply written the requirement into building regulations\".",
+        "evidence": 6
+      },
+      {
+        "type": "tfng",
+        "question": "Reusing stored rainwater is more common in dry regions than in wet ones.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 7 says stored water is reused \"in a few places\" but gives no comparison between dry and wet regions.",
+        "evidence": 7
+      },
+      {
+        "type": "gap",
+        "question": "In a paved district, almost all of the rain reaches the ____ immediately.",
+        "accept": [
+          "drains",
+          "drain"
+        ],
+        "explanation": "Paragraph 2 says that in a paved district almost all rain \"reaches the drains at once\".",
+        "evidence": 2
+      },
+      {
+        "type": "gap",
+        "question": "Planners use the term ____ for rain gardens, permeable pavements and similar features.",
+        "accept": [
+          "green infrastructure"
+        ],
+        "explanation": "Paragraph 3 says \"Planners speak of green infrastructure\".",
+        "evidence": 3
+      },
+      {
+        "type": "gap",
+        "question": "Plants help to cool the air because they release moisture and ____ the surfaces beneath them.",
+        "accept": [
+          "shade"
+        ],
+        "explanation": "Paragraph 4 says plants \"release moisture and shade the surfaces beneath them\".",
+        "evidence": 4
+      },
+      {
+        "type": "gap",
+        "question": "A rain garden blocked by ____ will not perform as intended.",
+        "accept": [
+          "litter"
+        ],
+        "explanation": "Paragraph 5 mentions \"a rain garden clogged with litter\".",
+        "evidence": 5
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "engineer",
+        "id": "engineer"
+      },
+      {
+        "word": "moderate",
+        "id": "moderate"
+      },
+      {
+        "word": "concrete",
+        "id": "concrete"
+      },
+      {
+        "word": "soil",
+        "id": "soil"
+      },
+      {
+        "word": "evaporate",
+        "id": "evaporate"
+      },
+      {
+        "word": "expensive",
+        "id": "expensive"
+      },
+      {
+        "word": "intensify",
+        "id": "intensify"
+      },
+      {
+        "word": "vegetation",
+        "id": "vegetation"
+      },
+      {
+        "word": "frequency",
+        "id": "frequency"
+      },
+      {
+        "word": "habitat",
+        "id": "habitat"
+      },
+      {
+        "word": "resident",
+        "id": "resident"
+      },
+      {
+        "word": "maintenance",
+        "id": "maintenance"
+      },
+      {
+        "word": "responsible",
+        "id": "responsible"
+      },
+      {
+        "word": "regulation",
+        "id": "regulation"
+      },
+      {
+        "word": "climate",
+        "id": "climate"
+      },
+      {
+        "word": "resource",
+        "id": "resource"
+      },
+      {
+        "word": "hazard",
+        "id": "hazard"
+      },
+      {
+        "word": "flood",
+        "id": "flood"
+      },
+      {
+        "word": "pavement",
+        "id": "pavement"
+      },
+      {
+        "word": "attitude",
+        "id": "attitude"
+      },
+      {
+        "word": "overwhelm",
+        "id": "overwhelm"
+      }
+    ],
+    "wordCount": 704
+  },
+  {
     "id": "reading-government-01",
     "topic": "government",
     "topicName": "Law & Politics",
@@ -2442,6 +2954,309 @@
       }
     ],
     "wordCount": 181
+  },
+  {
+    "id": "reading-health-02",
+    "topic": "health",
+    "topicName": "Health",
+    "title": "The Invisible Success of Prevention",
+    "cefr": "B2",
+    "paragraphs": [
+      "When people think about health care, they usually picture hospitals: busy wards, skilled surgeons and powerful machines. This image is understandable, because dramatic treatment saves individual lives in front of an audience. Yet historians of medicine often remind us that much of the improvement in human health over the past two centuries came from less dramatic changes, such as cleaner drinking water, better sewage systems, vaccination and safer food. These measures prevented illness rather than curing it, and for that reason they rarely made the news.",
+      "Prevention is hard to appreciate for a simple reason: its successes are invisible. When a vaccination programme works, nobody can point to the people who did not become ill. When a treatment works, by contrast, a patient walks out of hospital and a family is grateful. Politicians who need to show results before the next election therefore often find it more attractive to open a new hospital wing than to fund a long programme whose benefits will appear only after many years, and may never be credited to them.",
+      "A second difficulty is known as the prevention paradox. The term describes a situation in which a measure that brings large benefits to a whole population offers only a small benefit to each individual taking part. Consider advice to reduce the salt in food. For most people the risk of serious illness in any one year is low, so the advice seems unnecessary and a little irritating. Across millions of people, however, a small shift in habits can mean many fewer heart attacks. The individual sees little reward; the community sees a great deal.",
+      "Personal choices complicate the picture further. Many of the habits that protect health, such as regular exercise, a balanced diet and enough sleep, require effort now in exchange for a reward that is distant and uncertain. Psychologists have long observed that people tend to give too much weight to immediate pleasure and too little to future benefit. A person who knows perfectly well that an evening walk is good for them may still choose the sofa. Information alone, then, is rarely enough to change behaviour.",
+      "Some critics of public health campaigns go further and argue that governments should not interfere in private decisions. They say that taxes on sugary drinks or limits on advertising treat adults like children, and that individuals have the right to accept risks to their own health. This argument deserves to be taken seriously, but it overlooks an important point. Many unhealthy choices are made in surroundings that quietly encourage them: cheap fast food is available on every corner, while safe places to walk or cycle are scarce. Where the options are shaped in advance, free choice is less free than it appears.",
+      "Experience suggests that the most successful approaches work at both levels. Some cities have redesigned streets so that walking is the easiest way to reach shops and schools, some employers allow staff to take exercise breaks, and some health services send reminders to people who are due for a screening test. None of these measures forces anyone to act. Instead, they make the healthy option the default one, requiring slightly less effort than the alternative. Researchers call such a gentle push a nudge, and some studies suggest it can work better than a lecture.",
+      "Even so, prevention is not a cure for every problem. Some screening programmes lead to unnecessary further tests and to worry for people who would never have become seriously ill. Others cost more than their supporters expected. These are fair warnings, and they show that preventive measures need the same careful evidence as any treatment. Enthusiasm for prevention should not become an excuse for ignoring the question of whether a particular programme really works.",
+      "In conclusion, a health system that devotes nearly all its attention to treatment resembles a fire service that arrives only after the building has burned. Hospitals will always be essential, but a sensible balance requires patience from governments, honest explanation to the public and a willingness to value the illnesses that never happen. Because prevention succeeds so quietly, societies must make a deliberate effort to notice it."
+    ],
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "According to historians of medicine, much of the improvement in health over two centuries came from",
+        "options": [
+          "the growing skill of hospital surgeons.",
+          "measures that stopped people becoming ill.",
+          "the arrival of more powerful hospital machines.",
+          "news coverage of dramatic treatments."
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 1 credits changes such as 'cleaner drinking water' and vaccination, which 'prevented illness rather than curing it'.",
+        "evidence": 1
+      },
+      {
+        "type": "mcq",
+        "question": "Why might politicians prefer to build a hospital wing rather than fund a long prevention programme?",
+        "options": [
+          "Vaccination programmes are always more expensive than hospitals.",
+          "Hospitals need more public money than prevention does.",
+          "Voters usually refuse to support preventive measures.",
+          "They can show results and receive credit before an election."
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 2 says politicians 'need to show results before the next election', while preventive benefits 'may never be credited to them'.",
+        "evidence": 2
+      },
+      {
+        "type": "mcq",
+        "question": "What does the term 'prevention paradox' describe?",
+        "options": [
+          "A measure that greatly benefits a population but gives each person little.",
+          "A measure that helps individuals but harms the wider community.",
+          "Advice that people ignore because it is too complicated.",
+          "Treatments that cost more than the illnesses they cure."
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 3 defines it as a measure with 'large benefits to a whole population' but 'only a small benefit to each individual'.",
+        "evidence": 3
+      },
+      {
+        "type": "mcq",
+        "question": "What is the writer's view of the argument that governments should not interfere in private decisions?",
+        "options": [
+          "It is mistaken and does not deserve discussion.",
+          "It is correct for adults but wrong for children.",
+          "It is worth considering but ignores the influence of people's surroundings.",
+          "It is supported by the results of taxes on sugary drinks."
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 5 says the argument 'deserves to be taken seriously' but 'overlooks' how surroundings quietly encourage unhealthy choices.",
+        "evidence": 5
+      },
+      {
+        "type": "tfng",
+        "question": "When a vaccination programme succeeds, the individuals it protected cannot be identified.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 2 says 'nobody can point to the people who did not become ill'.",
+        "evidence": 2
+      },
+      {
+        "type": "tfng",
+        "question": "Eating less salt is the most effective way to prevent heart disease.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 3 uses salt only as an example of the prevention paradox; it does not compare it with other ways of preventing heart disease.",
+        "evidence": 3
+      },
+      {
+        "type": "tfng",
+        "question": "Psychologists have noticed that people often value rewards in the present more than rewards in the future.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 4 says people 'give too much weight to immediate pleasure and too little to future benefit'.",
+        "evidence": 4
+      },
+      {
+        "type": "tfng",
+        "question": "The writer believes that nudging measures compel people to change their behaviour.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 6 states that 'None of these measures forces anyone to act'.",
+        "evidence": 6
+      },
+      {
+        "type": "tfng",
+        "question": "Screening programmes are more expensive in wealthy countries than in poor ones.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 7 says some programmes cost more than expected, but it does not compare countries of different wealth.",
+        "evidence": 7
+      },
+      {
+        "type": "gap",
+        "question": "Better drinking water, safer food and improved ____ systems all helped to prevent illness.",
+        "accept": [
+          "sewage"
+        ],
+        "explanation": "Paragraph 1 lists 'better sewage systems' among the preventive changes.",
+        "evidence": 1
+      },
+      {
+        "type": "gap",
+        "question": "A prevention programme may bring benefits only after many ____.",
+        "accept": [
+          "years"
+        ],
+        "explanation": "Paragraph 2 says the benefits 'will appear only after many years'.",
+        "evidence": 2
+      },
+      {
+        "type": "gap",
+        "question": "A small change in habits across a large population can mean far fewer ____.",
+        "accept": [
+          "heart attacks",
+          "heart attack"
+        ],
+        "explanation": "Paragraph 3 says a small shift 'can mean many fewer heart attacks'.",
+        "evidence": 3
+      },
+      {
+        "type": "gap",
+        "question": "A nudge makes the healthy option the ____ choice, so it takes slightly less effort.",
+        "accept": [
+          "default"
+        ],
+        "explanation": "Paragraph 6 says such measures 'make the healthy option the default one'.",
+        "evidence": 6
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "powerful",
+        "id": "powerful"
+      },
+      {
+        "word": "measure",
+        "id": "measure"
+      },
+      {
+        "word": "image",
+        "id": "image"
+      },
+      {
+        "word": "argument",
+        "id": "argument"
+      },
+      {
+        "word": "risk",
+        "id": "risk"
+      },
+      {
+        "word": "option",
+        "id": "option"
+      },
+      {
+        "word": "essential",
+        "id": "essential"
+      },
+      {
+        "word": "treat",
+        "id": "treat"
+      },
+      {
+        "word": "benefit",
+        "id": "benefit"
+      },
+      {
+        "word": "term",
+        "id": "term"
+      },
+      {
+        "word": "effort",
+        "id": "effort"
+      },
+      {
+        "word": "community",
+        "id": "community"
+      },
+      {
+        "word": "gentle",
+        "id": "gentle"
+      },
+      {
+        "word": "reduce",
+        "id": "reduce"
+      },
+      {
+        "word": "treatment",
+        "id": "treatment"
+      },
+      {
+        "word": "honest",
+        "id": "honest"
+      },
+      {
+        "word": "grateful",
+        "id": "grateful"
+      },
+      {
+        "word": "individual",
+        "id": "individual"
+      },
+      {
+        "word": "pleasure",
+        "id": "pleasure"
+      },
+      {
+        "word": "tend",
+        "id": "tend"
+      },
+      {
+        "word": "uncertain",
+        "id": "uncertain"
+      },
+      {
+        "word": "unhealthy",
+        "id": "unhealthy"
+      },
+      {
+        "word": "improvement",
+        "id": "improvement"
+      },
+      {
+        "word": "reward",
+        "id": "reward"
+      },
+      {
+        "word": "population",
+        "id": "population"
+      },
+      {
+        "word": "immediate",
+        "id": "immediate"
+      },
+      {
+        "word": "evidence",
+        "id": "evidence"
+      },
+      {
+        "word": "cure",
+        "id": "cure"
+      },
+      {
+        "word": "invisible",
+        "id": "invisible"
+      },
+      {
+        "word": "appreciate",
+        "id": "appreciate"
+      },
+      {
+        "word": "default",
+        "id": "default"
+      },
+      {
+        "word": "interfere",
+        "id": "interfere"
+      },
+      {
+        "word": "alternative",
+        "id": "alternative"
+      }
+    ],
+    "wordCount": 691
   },
   {
     "id": "reading-history-01",
@@ -3440,6 +4255,289 @@
     "wordCount": 177
   },
   {
+    "id": "reading-science-02",
+    "topic": "science",
+    "topicName": "Science",
+    "title": "Why Science Needs a Second Look",
+    "cefr": "C1",
+    "paragraphs": [
+      "A single experiment rarely settles a scientific question. When a laboratory reports a striking result, other researchers usually wait before accepting it, because they know that chance, small errors and hidden assumptions can all produce findings that look convincing but do not hold up. The habit of repeating work, known as replication, is one of the main ways in which science corrects itself, yet it is also one of the least glamorous.",
+      "The reason replication matters becomes clear when we consider how results arise. Measurements always contain some random variation, and a small study may by luck produce a pattern that does not exist in the wider population. If a hundred teams test a doubtful idea, a few may well find support for it purely by accident. Those few are the ones most likely to be written up, since an exciting result attracts attention while a result showing nothing at all does not. This is why a result from one small team, however exciting, is best regarded as a hypothesis rather than a fact.",
+      "This tendency, called publication bias, distorts the record of what is known. Journals prefer novel discoveries, and researchers who need to win funding or secure a permanent post feel pressure to supply them. Studies that confirm earlier work, or that fail to find an effect, are therefore harder to publish and often remain in a drawer. Anyone reading only the published literature may conclude that the evidence is stronger than it really is.",
+      "In recent years, several fields, particularly psychology and medicine, have examined this problem by trying to repeat well-known studies. Some of those attempts succeeded, but others produced weaker effects or none at all. The discovery caused alarm, and the phrase \"replication crisis\" entered public debate. Some commentators claimed that science was fundamentally unreliable. Most researchers disagree; they argue that finding errors is exactly what a healthy system should do, and that the crisis shows the method working rather than failing. The debate also led ordinary readers to ask how far they should trust headlines that begin with the words \"scientists have found\".",
+      "Failure to replicate does not always mean the original result was wrong. A second team may have used a different group of participants, slightly different equipment, or an altered procedure that mattered more than anyone realised. In biology, for example, the condition of laboratory animals or the purity of a chemical can change an outcome. Careful researchers therefore treat a failed replication as a prompt for investigation, not as a verdict. Working out why two studies differ can reveal a factor that nobody had considered. Even a simple difference in the time of day when measurements were taken can matter.",
+      "Several reforms have been introduced to improve reliability. Some journals now accept a paper on the basis of its research question and method before any data are collected, which removes the temptation to favour dramatic outcomes. Researchers are also encouraged to publish their raw data and computer code so that others can check the calculations. In addition, larger samples reduce the influence of chance, although they are more costly and take longer to gather. Some funding agencies now set aside money specifically for projects that repeat earlier work.",
+      "These changes carry costs of their own. Time spent preparing data for public release is time not spent on new experiments, and young scientists worry that careful, slow work will be undervalued when jobs are awarded. Some also fear that an excessive focus on repeating old studies could discourage risk-taking, which has historically led to many important breakthroughs. The challenge is to reward both creativity and caution. Others point out that a replication carried out by one team may itself contain errors, so it too needs checking.",
+      "Ultimately, replication reminds us that scientific knowledge is provisional. A claim becomes trustworthy not because a respected laboratory announced it, but because independent groups, working in different places, keep arriving at the same conclusion. For the public, this suggests a sensible attitude: treat a single surprising study with interest but also with patience, and place greater confidence in findings that have survived repeated testing."
+    ],
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Why do researchers usually wait before accepting a striking result?",
+        "options": [
+          "Laboratories often report results dishonestly.",
+          "Repeating experiments is a glamorous activity that attracts funding.",
+          "Chance, small errors and hidden assumptions can make weak findings look convincing.",
+          "Striking results are always caused by faulty equipment."
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 1 says \"chance, small errors and hidden assumptions\" can produce findings that look convincing but do not hold up.",
+        "evidence": 1
+      },
+      {
+        "type": "mcq",
+        "question": "What causes publication bias, according to the third paragraph?",
+        "options": [
+          "Journals and funding pressures favour new discoveries over confirming or null results.",
+          "Researchers deliberately hide results that support their own ideas.",
+          "Journals refuse to print any study with a large sample.",
+          "Studies that confirm earlier work are usually wrong."
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 3 says journals \"prefer novel discoveries\" and researchers feel pressure to supply them, so confirming studies stay unpublished.",
+        "evidence": 3
+      },
+      {
+        "type": "mcq",
+        "question": "How do most researchers interpret the so-called replication crisis?",
+        "options": [
+          "As proof that science is fundamentally unreliable",
+          "As evidence that every well-known study was mistaken",
+          "As a sign that attempts to repeat studies should stop",
+          "As a sign that science can detect its own errors"
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 4 says most researchers see the crisis as \"the method working rather than failing\".",
+        "evidence": 4
+      },
+      {
+        "type": "mcq",
+        "question": "What concern do some young scientists have about the new reforms?",
+        "options": [
+          "Preparing data for release leaves them more time for new experiments.",
+          "Careful, slow work may be undervalued when jobs are awarded.",
+          "Risk-taking has never produced important breakthroughs.",
+          "Larger samples are cheaper and faster to collect."
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 7 says young scientists \"worry that careful, slow work will be undervalued when jobs are awarded\".",
+        "evidence": 7
+      },
+      {
+        "type": "tfng",
+        "question": "A small study can find a pattern that is not real simply through good luck.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 2 says a small study \"may by luck produce a pattern that does not exist\" in the wider population.",
+        "evidence": 2
+      },
+      {
+        "type": "tfng",
+        "question": "Publication bias is stronger in psychology than in medicine.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 4 names both fields as having examined the problem but does not compare how serious it is in each.",
+        "evidence": 4
+      },
+      {
+        "type": "tfng",
+        "question": "If a repeated study fails, this always proves that the original result was incorrect.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 5 begins \"Failure to replicate does not always mean the original result was wrong\".",
+        "evidence": 5
+      },
+      {
+        "type": "tfng",
+        "question": "Some journals decide to publish a paper before its results are known.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 6 says some journals accept a paper on its question and method \"before any data are collected\".",
+        "evidence": 6
+      },
+      {
+        "type": "tfng",
+        "question": "Many young scientists plan to leave research because of career pressures.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 7 says young scientists worry about being undervalued, but it does not say any of them intend to leave research.",
+        "evidence": 7
+      },
+      {
+        "type": "gap",
+        "question": "The practice of repeating earlier work is called ____.",
+        "accept": [
+          "replication"
+        ],
+        "explanation": "Paragraph 1 says \"The habit of repeating work, known as replication\".",
+        "evidence": 1
+      },
+      {
+        "type": "gap",
+        "question": "Studies that find no effect often stay unpublished in a ____.",
+        "accept": [
+          "drawer",
+          "a drawer"
+        ],
+        "explanation": "Paragraph 3 says such studies \"often remain in a drawer\".",
+        "evidence": 3
+      },
+      {
+        "type": "gap",
+        "question": "Researchers are encouraged to share their raw data and computer ____ so that calculations can be checked.",
+        "accept": [
+          "code"
+        ],
+        "explanation": "Paragraph 6 asks researchers to publish \"their raw data and computer code\".",
+        "evidence": 6
+      },
+      {
+        "type": "gap",
+        "question": "A claim becomes trustworthy when independent groups keep reaching the same ____.",
+        "accept": [
+          "conclusion"
+        ],
+        "explanation": "Paragraph 8 says groups in different places \"keep arriving at the same conclusion\".",
+        "evidence": 8
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "laboratory",
+        "id": "laboratory"
+      },
+      {
+        "word": "striking",
+        "id": "striking"
+      },
+      {
+        "word": "assumption",
+        "id": "assumption"
+      },
+      {
+        "word": "random",
+        "id": "random"
+      },
+      {
+        "word": "variation",
+        "id": "variation"
+      },
+      {
+        "word": "distort",
+        "id": "distort"
+      },
+      {
+        "word": "novel",
+        "id": "novel"
+      },
+      {
+        "word": "literature",
+        "id": "literature"
+      },
+      {
+        "word": "alarm",
+        "id": "alarm"
+      },
+      {
+        "word": "participant",
+        "id": "participant"
+      },
+      {
+        "word": "procedure",
+        "id": "procedure"
+      },
+      {
+        "word": "verdict",
+        "id": "verdict"
+      },
+      {
+        "word": "reliability",
+        "id": "reliability"
+      },
+      {
+        "word": "temptation",
+        "id": "temptation"
+      },
+      {
+        "word": "sample",
+        "id": "sample"
+      },
+      {
+        "word": "excessive",
+        "id": "excessive"
+      },
+      {
+        "word": "breakthrough",
+        "id": "breakthrough"
+      },
+      {
+        "word": "independent",
+        "id": "independent"
+      },
+      {
+        "word": "confidence",
+        "id": "confidence"
+      },
+      {
+        "word": "evidence",
+        "id": "evidence"
+      },
+      {
+        "word": "discovery",
+        "id": "discovery"
+      },
+      {
+        "word": "publication",
+        "id": "publication"
+      },
+      {
+        "word": "bias",
+        "id": "bias"
+      },
+      {
+        "word": "effect",
+        "id": "effect"
+      },
+      {
+        "word": "reform",
+        "id": "reform"
+      },
+      {
+        "word": "calculation",
+        "id": "calculation"
+      },
+      {
+        "word": "caution",
+        "id": "caution"
+      },
+      {
+        "word": "pattern",
+        "id": "pattern"
+      }
+    ],
+    "wordCount": 688
+  },
+  {
     "id": "reading-society-01",
     "topic": "society",
     "topicName": "Society",
@@ -3746,6 +4844,280 @@
       }
     ],
     "wordCount": 175
+  },
+  {
+    "id": "reading-society-02",
+    "topic": "society",
+    "topicName": "Society",
+    "title": "The Hidden Architecture of Community",
+    "cefr": "B2",
+    "paragraphs": [
+      "In many wealthy countries, people say they feel more connected than ever through technology, yet surveys of public mood often describe growing loneliness. This apparent contradiction has led sociologists to look more closely at what holds communities together. Their conclusion is that connection is not a single thing. A person may exchange hundreds of messages a week and still lack anyone who would notice if they stopped appearing in the street.",
+      "One useful distinction is between strong ties and weak ties. Strong ties link close family and friends, who offer emotional support in a crisis. Weak ties, by contrast, connect people who meet only occasionally: the shopkeeper, the neighbour at the bus stop, the parent at the school gate. Although each of these encounters is brief, together they create a sense of belonging and a steady flow of small pieces of information, such as news of a job vacancy or a warning about a local scam. A person with plenty of weak ties rarely feels invisible, even without many close friends.",
+      "Public spaces play a larger role in sustaining weak ties than is often assumed. Parks, libraries, markets and community halls give strangers a reason to share the same place without any obligation to talk. Over time, the repeated sight of the same faces builds familiarity, and familiarity builds trust. When a council closes a library to save money, therefore, the visible loss is a collection of books, but the hidden loss may be a regular meeting point for elderly residents and young families alike. Markets are a good example, because buying vegetables from the same stallholder every week turns a simple transaction into a small relationship.",
+      "Volunteering is another way in which communities generate trust. People who give their time to a food bank, a sports club or a neighbourhood clean-up learn to cooperate with others outside their usual social circle. Researchers who study civic life often argue that this experience teaches skills such as organising, compromising and listening, all of which are valuable in a democratic society. Critics reply that volunteers tend to come from comfortable backgrounds, so the benefits may flow mainly to those who are already well connected.",
+      "That criticism points to a wider problem: social opportunities are unevenly distributed. Residents of areas where people move house frequently have fewer chances to build lasting relationships, and long working hours leave little energy for community activity. Housing costs push many families to the edge of cities, where there are few shared spaces. In such places, a lack of trust is not a personal failing but a result of the way the area is organised. Young people and recent migrants may be especially affected, since they often arrive without the networks that longer-term residents take for granted.",
+      "Some planners have responded by designing for encounter. Streets with shops at ground level, benches in shaded corners and school buildings that open their halls in the evening all encourage spontaneous contact. Supporters say such features cost little compared with their effect. Sceptics note, however, that a bench cannot create a community on its own; if residents do not feel that a space belongs to them, it may remain empty. Real participation usually depends on residents being consulted from the start.",
+      "Digital platforms complicate the picture further. Local online groups can help neighbours lend tools, find lost pets or organise petitions, and they may be a lifeline for people who find it hard to leave home. Yet the same groups can also encourage suspicion, as members circulate rumours about strangers and treat minor disagreements as public quarrels. The evidence suggests that online contact works best when it leads to meetings in person, not when it replaces them. Moderators who set clear rules can reduce such conflict, but they are usually unpaid volunteers themselves.",
+      "In conclusion, the strength of a society depends less on dramatic acts of generosity than on the ordinary habits of everyday contact. Policies that protect shared spaces, support volunteers from many backgrounds and give residents a real voice are likely to do more for social cohesion than campaigns urging people to be friendlier. Community, it seems, has to be built into the places where people live, rather than simply hoped for."
+    ],
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "What conclusion do sociologists draw from the contradiction described in the first paragraph?",
+        "options": [
+          "Technology has made loneliness impossible.",
+          "Connection takes more than one form, and messages alone may not provide it.",
+          "Surveys about public mood cannot be trusted.",
+          "People who send many messages are always lonely."
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 1 says \"connection is not a single thing\" and gives the example of someone with many messages but nobody who would notice their absence.",
+        "evidence": 1
+      },
+      {
+        "type": "mcq",
+        "question": "According to the second paragraph, what do weak ties offer?",
+        "options": [
+          "Emotional support during a crisis",
+          "A replacement for family and friends",
+          "Long conversations at regular times",
+          "A sense of belonging and useful local information"
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 2 says brief encounters create \"a sense of belonging\" and a flow of small pieces of information, while emotional support comes from strong ties.",
+        "evidence": 2
+      },
+      {
+        "type": "mcq",
+        "question": "What may be the hidden loss when a council closes a library?",
+        "options": [
+          "A regular meeting point for different groups",
+          "A collection of books that cannot be replaced",
+          "A place where strangers are required to talk",
+          "A source of money for the council"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 3 contrasts the visible loss of books with \"a regular meeting point\" for elderly residents and young families.",
+        "evidence": 3
+      },
+      {
+        "type": "mcq",
+        "question": "What is the writer's main conclusion in the final paragraph?",
+        "options": [
+          "Campaigns urging people to be friendlier are the best solution.",
+          "Dramatic acts of generosity matter most to a society.",
+          "Ordinary everyday contact, supported by good policies, builds social strength.",
+          "Community will develop naturally if people simply hope for it."
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 8 says society depends on \"the ordinary habits of everyday contact\" and that policies protecting shared spaces do more than campaigns.",
+        "evidence": 8
+      },
+      {
+        "type": "tfng",
+        "question": "Seeing the same people repeatedly can help neighbours come to trust one another.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 3 states that \"familiarity builds trust\" through the repeated sight of the same faces.",
+        "evidence": 3
+      },
+      {
+        "type": "tfng",
+        "question": "Volunteers at sports clubs develop better organising skills than volunteers at food banks.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 4 mentions both kinds of volunteering but never compares the skills people gain from them.",
+        "evidence": 4
+      },
+      {
+        "type": "tfng",
+        "question": "Moving home often makes it easier for people to form long-lasting relationships.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 5 says residents of areas where people \"move house frequently have fewer chances\" to build lasting relationships.",
+        "evidence": 5
+      },
+      {
+        "type": "tfng",
+        "question": "School halls that open in the evening attract more visitors than street benches do.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 6 lists both features as ways to encourage contact but gives no comparison of how many people use each.",
+        "evidence": 6
+      },
+      {
+        "type": "tfng",
+        "question": "Local internet groups can sometimes increase mistrust between neighbours.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 7 says such groups \"can also encourage suspicion\" when members spread rumours about strangers.",
+        "evidence": 7
+      },
+      {
+        "type": "gap",
+        "question": "Contacts between people who meet only occasionally are described as ____ ties.",
+        "accept": [
+          "weak"
+        ],
+        "explanation": "Paragraph 2 says \"Weak ties, by contrast, connect people who meet only occasionally\".",
+        "evidence": 2
+      },
+      {
+        "type": "gap",
+        "question": "Public spaces allow strangers to share a place without any ____ to talk.",
+        "accept": [
+          "obligation"
+        ],
+        "explanation": "Paragraph 3 says these spaces give strangers a reason to be together \"without any obligation to talk\".",
+        "evidence": 3
+      },
+      {
+        "type": "gap",
+        "question": "Long working hours leave residents little ____ for community activity.",
+        "accept": [
+          "energy"
+        ],
+        "explanation": "Paragraph 5 says \"long working hours leave little energy for community activity\".",
+        "evidence": 5
+      },
+      {
+        "type": "gap",
+        "question": "Protecting shared spaces is likely to do more for social ____ than campaigns asking people to be friendlier.",
+        "accept": [
+          "cohesion"
+        ],
+        "explanation": "Paragraph 8 says such policies will do more \"for social cohesion\" than campaigns urging people to be friendlier.",
+        "evidence": 8
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "emotional",
+        "id": "emotional"
+      },
+      {
+        "word": "crisis",
+        "id": "crisis"
+      },
+      {
+        "word": "vacancy",
+        "id": "vacancy"
+      },
+      {
+        "word": "assume",
+        "id": "assume"
+      },
+      {
+        "word": "obligation",
+        "id": "obligation"
+      },
+      {
+        "word": "generate",
+        "id": "generate"
+      },
+      {
+        "word": "cooperate",
+        "id": "cooperate"
+      },
+      {
+        "word": "civic",
+        "id": "civic"
+      },
+      {
+        "word": "democratic",
+        "id": "democratic"
+      },
+      {
+        "word": "distribute",
+        "id": "distribute"
+      },
+      {
+        "word": "frequently",
+        "id": "frequently"
+      },
+      {
+        "word": "spontaneous",
+        "id": "spontaneous"
+      },
+      {
+        "word": "participation",
+        "id": "participation"
+      },
+      {
+        "word": "petition",
+        "id": "petition"
+      },
+      {
+        "word": "suspicion",
+        "id": "suspicion"
+      },
+      {
+        "word": "evidence",
+        "id": "evidence"
+      },
+      {
+        "word": "generosity",
+        "id": "generosity"
+      },
+      {
+        "word": "cohesion",
+        "id": "cohesion"
+      },
+      {
+        "word": "contradiction",
+        "id": "contradiction"
+      },
+      {
+        "word": "distinction",
+        "id": "distinction"
+      },
+      {
+        "word": "encounter",
+        "id": "encounter"
+      },
+      {
+        "word": "volunteer",
+        "id": "volunteer"
+      },
+      {
+        "word": "trust",
+        "id": "trust"
+      },
+      {
+        "word": "community",
+        "id": "community"
+      },
+      {
+        "word": "resident",
+        "id": "resident"
+      },
+      {
+        "word": "complicate",
+        "id": "complicate"
+      }
+    ],
+    "wordCount": 703
   },
   {
     "id": "reading-sport-01",
@@ -4278,6 +5650,313 @@
       }
     ],
     "wordCount": 187
+  },
+  {
+    "id": "reading-technology-02",
+    "topic": "technology",
+    "topicName": "Technology",
+    "title": "The Quiet Cost of Automatic Help",
+    "cefr": "B2",
+    "paragraphs": [
+      "Few people would choose to give up the tools that now guide their daily lives. Satellite navigation takes drivers to unfamiliar places without a map, spell-checkers correct errors before anyone notices them, and software can suggest the next word in an email. Each of these tools saves time and reduces stress. Yet a growing number of researchers have begun to ask a less comfortable question: what happens to human ability when machines perform more and more of the mental work that people once did for themselves?",
+      "Engineers who design aircraft cockpits were among the first to notice the problem. Modern planes can fly almost entirely on autopilot, and in normal conditions this makes flying safer and more efficient. However, investigators who examine rare accidents have sometimes found that crews, after long periods of monitoring rather than steering, reacted slowly or incorrectly when the system suddenly handed control back. The pilots were not careless. Their manual skills had simply faded through lack of practice, a process sometimes called skill decay.",
+      "The same pattern appears in much more ordinary settings. Some studies of drivers who rely heavily on satellite navigation suggest that they form weaker mental maps of the areas they travel through than people who read maps or learn routes by landmarks. Following spoken instructions requires attention to the next turn, but not to the wider layout of a city. The driver arrives at the destination, yet has learned very little about the place that lies around it.",
+      "Defenders of automation point out that this argument is not new. Writing, they say, was once criticised for weakening memory, and calculators were feared as the end of arithmetic. In both cases society adapted, and people used the freed mental capacity for more ambitious tasks. Few of us now regret that we cannot recite a long poem without a book. From this perspective, losing a skill is no tragedy if the skill has become unnecessary, and the only real question is whether the machine will always be available and reliable.",
+      "That condition is exactly what critics doubt. Systems fail, batteries run out, and software can contain errors that are difficult to see. A person who has never practised the underlying skill cannot judge whether the machine's answer is sensible. A student who accepts a calculator's result without any sense of the expected size of the answer, for instance, may not notice a simple typing mistake. Dependence therefore carries a hidden risk: the less users understand a task, the less able they are to supervise the tool that performs it.",
+      "Designers have started to respond. Some navigation applications now encourage users to look at an overview of the route before they set off, and some airlines require pilots to fly by hand at regular intervals. In schools, a number of teachers ask students to attempt a problem unaided before checking it with software. These measures share a common idea: technology should act as a partner that supports human judgement, not as a replacement for it. Designers call this deliberate inconvenience friction, and they argue that a little of it keeps the user's mind active.",
+      "None of this means that people should return to paper maps and slide rules. The benefits of automation are real, and in fields such as medicine and transport they help to save lives. Nor is it clear that every lost skill deserves rescue; some are better left behind. A more realistic conclusion is that convenience has a price which is easy to overlook, because it is paid slowly and out of sight.",
+      "Users, designers and institutions therefore share a task. They must decide which abilities are worth keeping alive, and then build habits and tools that keep those abilities in regular use. The aim is not to resist technology but to remain its master. A society that understands what its machines do, and can still do the essential work without them, will be far better prepared when the machines eventually fail."
+    ],
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "What did investigators discover about some pilots involved in rare accidents?",
+        "options": [
+          "They had been careless while monitoring the autopilot.",
+          "Their hands-on skills had weakened through lack of practice.",
+          "The autopilot had made flying less safe in normal conditions.",
+          "They had refused to take control back from the system."
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 2 says the pilots were not careless and that their 'manual skills had simply faded through lack of practice'.",
+        "evidence": 2
+      },
+      {
+        "type": "mcq",
+        "question": "According to some studies, drivers who depend on satellite navigation",
+        "options": [
+          "drive more slowly in unfamiliar areas.",
+          "pay close attention to landmarks on the way.",
+          "find spoken instructions hard to follow.",
+          "develop a weaker understanding of the area's layout."
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 3 states that they form 'weaker mental maps' and learn 'very little about the place'.",
+        "evidence": 3
+      },
+      {
+        "type": "mcq",
+        "question": "Why do defenders of automation mention writing and calculators?",
+        "options": [
+          "To suggest that society has coped with similar worries before.",
+          "To prove that calculators improved people's arithmetic.",
+          "To show that writing was easy for people to learn.",
+          "To argue that memory is no longer of any value."
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 4 says that 'in both cases society adapted', so earlier fears about lost skills were overcome.",
+        "evidence": 4
+      },
+      {
+        "type": "mcq",
+        "question": "What is the critics' main concern about dependence on machines?",
+        "options": [
+          "Machines are too expensive for most users to maintain.",
+          "Software is usually written by people with little training.",
+          "Students become careless when they type numbers.",
+          "Users may be unable to check or supervise what a machine does."
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 5 concludes that 'the less users understand a task, the less able they are to supervise the tool'.",
+        "evidence": 5
+      },
+      {
+        "type": "tfng",
+        "question": "The writer says that the tools mentioned at the start can lower the stress felt by their users.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 1 says that each of these tools 'saves time and reduces stress'.",
+        "evidence": 1
+      },
+      {
+        "type": "tfng",
+        "question": "Autopilot systems have made flying less efficient in normal conditions.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 2 says autopilot 'makes flying safer and more efficient' in normal conditions.",
+        "evidence": 2
+      },
+      {
+        "type": "tfng",
+        "question": "Drivers who use paper maps reach their destinations faster than those who use satellite navigation.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 3 compares how well people understand an area, but it says nothing about the speed of the journey.",
+        "evidence": 3
+      },
+      {
+        "type": "tfng",
+        "question": "Some teachers want students to try a problem on their own before they use software to check it.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 6 says teachers 'ask students to attempt a problem unaided before checking it with software'.",
+        "evidence": 6
+      },
+      {
+        "type": "tfng",
+        "question": "The writer concludes that people should stop using automated tools.",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 7 begins 'None of this means that people should return to paper maps', and paragraph 8 says the aim 'is not to resist technology'.",
+        "evidence": 7
+      },
+      {
+        "type": "gap",
+        "question": "The gradual loss of an ability through lack of use is sometimes called ____.",
+        "accept": [
+          "skill decay"
+        ],
+        "explanation": "Paragraph 2 describes the fading of manual skills as 'skill decay'.",
+        "evidence": 2
+      },
+      {
+        "type": "gap",
+        "question": "Some studies suggest that people who learn routes by ____ understand an area better than those who follow spoken directions.",
+        "accept": [
+          "landmarks",
+          "landmark"
+        ],
+        "explanation": "Paragraph 3 contrasts satellite navigation users with people who 'learn routes by landmarks'.",
+        "evidence": 3
+      },
+      {
+        "type": "gap",
+        "question": "A person without practice in a skill cannot tell whether a machine's result is ____.",
+        "accept": [
+          "sensible"
+        ],
+        "explanation": "Paragraph 5 says such a person 'cannot judge whether the machine's answer is sensible'.",
+        "evidence": 5
+      },
+      {
+        "type": "gap",
+        "question": "Designers use the term ____ for deliberately making a tool slightly less convenient.",
+        "accept": [
+          "friction"
+        ],
+        "explanation": "Paragraph 6 says 'Designers call this deliberate inconvenience friction'.",
+        "evidence": 6
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "argument",
+        "id": "argument"
+      },
+      {
+        "word": "risk",
+        "id": "risk"
+      },
+      {
+        "word": "stress",
+        "id": "stress"
+      },
+      {
+        "word": "essential",
+        "id": "essential"
+      },
+      {
+        "word": "mental",
+        "id": "mental"
+      },
+      {
+        "word": "sensible",
+        "id": "sensible"
+      },
+      {
+        "word": "rely",
+        "id": "rely"
+      },
+      {
+        "word": "society",
+        "id": "society"
+      },
+      {
+        "word": "require",
+        "id": "require"
+      },
+      {
+        "word": "regret",
+        "id": "regret"
+      },
+      {
+        "word": "encourage",
+        "id": "encourage"
+      },
+      {
+        "word": "efficient",
+        "id": "efficient"
+      },
+      {
+        "word": "hidden",
+        "id": "hidden"
+      },
+      {
+        "word": "respond",
+        "id": "respond"
+      },
+      {
+        "word": "contain",
+        "id": "contain"
+      },
+      {
+        "word": "reliable",
+        "id": "reliable"
+      },
+      {
+        "word": "judge",
+        "id": "judge"
+      },
+      {
+        "word": "rare",
+        "id": "rare"
+      },
+      {
+        "word": "lack",
+        "id": "lack"
+      },
+      {
+        "word": "unnecessary",
+        "id": "unnecessary"
+      },
+      {
+        "word": "careless",
+        "id": "careless"
+      },
+      {
+        "word": "perform",
+        "id": "perform"
+      },
+      {
+        "word": "route",
+        "id": "route"
+      },
+      {
+        "word": "overlook",
+        "id": "overlook"
+      },
+      {
+        "word": "layout",
+        "id": "layout"
+      },
+      {
+        "word": "entirely",
+        "id": "entirely"
+      },
+      {
+        "word": "attempt",
+        "id": "attempt"
+      },
+      {
+        "word": "deliberate",
+        "id": "deliberate"
+      },
+      {
+        "word": "dependence",
+        "id": "dependence"
+      },
+      {
+        "word": "realistic",
+        "id": "realistic"
+      },
+      {
+        "word": "decay",
+        "id": "decay"
+      },
+      {
+        "word": "capacity",
+        "id": "capacity"
+      },
+      {
+        "word": "resist",
+        "id": "resist"
+      },
+      {
+        "word": "supervise",
+        "id": "supervise"
+      }
+    ],
+    "wordCount": 661
   },
   {
     "id": "reading-thinking-01",

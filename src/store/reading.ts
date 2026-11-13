@@ -1,11 +1,11 @@
 import { useSyncExternalStore } from "react";
 import { tr } from "../i18n";
-import { contentVersion, gradeReading, type ReadingPassage } from "../lib/reading";
+import { contentVersion, GAP_MAX_CHARS, gradeReading, validAnswer, type ReadingAnswer, type ReadingPassage } from "../lib/reading";
 
 export interface ReadingAttempt {
   passageId: string;
   version: string;
-  answers: Record<string, number>;
+  answers: Record<string, ReadingAnswer>;
   assisted: boolean;
   started: number;
   submitted?: number;
@@ -23,24 +23,24 @@ export function sanitizeReading(value: unknown, passages: ReadingPassage[] = [])
   for (const [key, a] of Object.entries(v.attempts)) {
     if (!a || typeof a.passageId !== "string" || typeof a.version !== "string" || key !== `${a.passageId}:${a.version}` ||
       !Number.isFinite(a.started) || a.started < 0 || typeof a.assisted !== "boolean" || !a.answers || typeof a.answers !== "object" || Array.isArray(a.answers) ||
-      Object.entries(a.answers).some(([k, n]) => !/^\d+$/.test(k) || !Number.isInteger(n) || n < 0 || n > 20) ||
+      Object.entries(a.answers).some(([k, n]) => !/^\d+$/.test(k) || !(typeof n === "string" ? n.length <= GAP_MAX_CHARS : Number.isInteger(n) && n >= 0 && n <= 20)) ||
       (a.submitted !== undefined && (!Number.isFinite(a.submitted) || a.submitted < a.started || !Number.isInteger(a.correct) || a.correct! < 0 || a.correct! > Object.keys(a.answers).length)))
       throw new Error(tr("reading_err_invalid_attempt"));
   }
   for (const p of passages) {
     const a = v.attempts[readingKey(p)];
     if (!a) continue;
-    if (Object.entries(a.answers).some(([i, option]) => !p.questions[Number(i)] || option >= p.questions[Number(i)].options.length) ||
+    if (Object.entries(a.answers).some(([i, answer]) => !p.questions[Number(i)] || !validAnswer(p.questions[Number(i)], answer)) ||
       (a.submitted !== undefined && gradeReading(p, a.answers) !== a.correct)) throw new Error(tr("reading_err_invalid_answer"));
   }
   return JSON.parse(JSON.stringify(v));
 }
 
-export function recordAnswer(progress: ReadingProgress, p: ReadingPassage, index: number, option: number): ReadingProgress {
+export function recordAnswer(progress: ReadingProgress, p: ReadingPassage, index: number, answer: ReadingAnswer): ReadingProgress {
   const key = readingKey(p), prev = progress.attempts[key];
-  if (prev?.submitted !== undefined || !p.questions[index] || !Number.isInteger(option) || option < 0 || option >= p.questions[index].options.length) return progress;
+  if (prev?.submitted !== undefined || !p.questions[index] || !validAnswer(p.questions[index], answer)) return progress;
   const a = prev ?? { passageId: p.id, version: contentVersion(p), answers: {}, assisted: false, started: Date.now() };
-  return { ...progress, attempts: { ...progress.attempts, [key]: { ...a, answers: { ...a.answers, [index]: option } } } };
+  return { ...progress, attempts: { ...progress.attempts, [key]: { ...a, answers: { ...a.answers, [index]: answer } } } };
 }
 
 export function submitReading(progress: ReadingProgress, p: ReadingPassage): ReadingProgress {
@@ -88,7 +88,7 @@ export const readingStore = {
     try { sanitizeReading(data, library); } catch (e) { error = (e as Error).message; }
     listeners.forEach((l) => l());
   },
-  answer: (p: ReadingPassage, i: number, o: number) => save(recordAnswer(data, p, i, o)),
+  answer: (p: ReadingPassage, i: number, a: ReadingAnswer) => save(recordAnswer(data, p, i, a)),
   submit: (p: ReadingPassage) => save(submitReading(data, p)),
   assist(p: ReadingPassage) {
     const key = readingKey(p), a = data.attempts[key];

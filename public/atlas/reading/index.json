@@ -40,6 +40,14 @@
     "status": "draft-practice"
   },
   {
+    "id": "reading-education-02",
+    "topic": "education",
+    "title": "The Value of Struggle in the Classroom",
+    "cefr": "B2",
+    "wordCount": 716,
+    "status": "draft-practice"
+  },
+  {
     "id": "reading-emotion-01",
     "topic": "emotion",
     "title": "Emotional Regulation and Affective Neuroscience",
@@ -56,6 +64,14 @@
     "status": "draft-practice"
   },
   {
+    "id": "reading-environment-02",
+    "topic": "environment",
+    "title": "Letting the Rain Back In",
+    "cefr": "B2",
+    "wordCount": 704,
+    "status": "draft-practice"
+  },
+  {
     "id": "reading-government-01",
     "topic": "government",
     "title": "Constitutional Checks and the Rule of Law in Contemporary Governance",
@@ -69,6 +85,14 @@
     "title": "The Human Gut Microbiome and Metabolic Homeostasis",
     "cefr": "B2",
     "wordCount": 181,
+    "status": "draft-practice"
+  },
+  {
+    "id": "reading-health-02",
+    "topic": "health",
+    "title": "The Invisible Success of Prevention",
+    "cefr": "B2",
+    "wordCount": 691,
     "status": "draft-practice"
   },
   {
@@ -104,11 +128,27 @@
     "status": "draft-practice"
   },
   {
+    "id": "reading-science-02",
+    "topic": "science",
+    "title": "Why Science Needs a Second Look",
+    "cefr": "C1",
+    "wordCount": 688,
+    "status": "draft-practice"
+  },
+  {
     "id": "reading-society-01",
     "topic": "society",
     "title": "Demographic Aging and the Restructuring of Social Contracts",
     "cefr": "B2",
     "wordCount": 175,
+    "status": "draft-practice"
+  },
+  {
+    "id": "reading-society-02",
+    "topic": "society",
+    "title": "The Hidden Architecture of Community",
+    "cefr": "B2",
+    "wordCount": 703,
     "status": "draft-practice"
   },
   {
@@ -125,6 +165,14 @@
     "title": "Autonomous Systems and Algorithmic Decision-Making",
     "cefr": "C1",
     "wordCount": 187,
+    "status": "draft-practice"
+  },
+  {
+    "id": "reading-technology-02",
+    "topic": "technology",
+    "title": "The Quiet Cost of Automatic Help",
+    "cefr": "B2",
+    "wordCount": 661,
     "status": "draft-practice"
   },
   {

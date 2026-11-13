@@ -1,0 +1,303 @@
+{
+  "id": "reading-health-02",
+  "topic": "health",
+  "topicName": "Health",
+  "title": "The Invisible Success of Prevention",
+  "cefr": "B2",
+  "paragraphs": [
+    "When people think about health care, they usually picture hospitals: busy wards, skilled surgeons and powerful machines. This image is understandable, because dramatic treatment saves individual lives in front of an audience. Yet historians of medicine often remind us that much of the improvement in human health over the past two centuries came from less dramatic changes, such as cleaner drinking water, better sewage systems, vaccination and safer food. These measures prevented illness rather than curing it, and for that reason they rarely made the news.",
+    "Prevention is hard to appreciate for a simple reason: its successes are invisible. When a vaccination programme works, nobody can point to the people who did not become ill. When a treatment works, by contrast, a patient walks out of hospital and a family is grateful. Politicians who need to show results before the next election therefore often find it more attractive to open a new hospital wing than to fund a long programme whose benefits will appear only after many years, and may never be credited to them.",
+    "A second difficulty is known as the prevention paradox. The term describes a situation in which a measure that brings large benefits to a whole population offers only a small benefit to each individual taking part. Consider advice to reduce the salt in food. For most people the risk of serious illness in any one year is low, so the advice seems unnecessary and a little irritating. Across millions of people, however, a small shift in habits can mean many fewer heart attacks. The individual sees little reward; the community sees a great deal.",
+    "Personal choices complicate the picture further. Many of the habits that protect health, such as regular exercise, a balanced diet and enough sleep, require effort now in exchange for a reward that is distant and uncertain. Psychologists have long observed that people tend to give too much weight to immediate pleasure and too little to future benefit. A person who knows perfectly well that an evening walk is good for them may still choose the sofa. Information alone, then, is rarely enough to change behaviour.",
+    "Some critics of public health campaigns go further and argue that governments should not interfere in private decisions. They say that taxes on sugary drinks or limits on advertising treat adults like children, and that individuals have the right to accept risks to their own health. This argument deserves to be taken seriously, but it overlooks an important point. Many unhealthy choices are made in surroundings that quietly encourage them: cheap fast food is available on every corner, while safe places to walk or cycle are scarce. Where the options are shaped in advance, free choice is less free than it appears.",
+    "Experience suggests that the most successful approaches work at both levels. Some cities have redesigned streets so that walking is the easiest way to reach shops and schools, some employers allow staff to take exercise breaks, and some health services send reminders to people who are due for a screening test. None of these measures forces anyone to act. Instead, they make the healthy option the default one, requiring slightly less effort than the alternative. Researchers call such a gentle push a nudge, and some studies suggest it can work better than a lecture.",
+    "Even so, prevention is not a cure for every problem. Some screening programmes lead to unnecessary further tests and to worry for people who would never have become seriously ill. Others cost more than their supporters expected. These are fair warnings, and they show that preventive measures need the same careful evidence as any treatment. Enthusiasm for prevention should not become an excuse for ignoring the question of whether a particular programme really works.",
+    "In conclusion, a health system that devotes nearly all its attention to treatment resembles a fire service that arrives only after the building has burned. Hospitals will always be essential, but a sensible balance requires patience from governments, honest explanation to the public and a willingness to value the illnesses that never happen. Because prevention succeeds so quietly, societies must make a deliberate effort to notice it."
+  ],
+  "questions": [
+    {
+      "type": "mcq",
+      "question": "According to historians of medicine, much of the improvement in health over two centuries came from",
+      "options": [
+        "the growing skill of hospital surgeons.",
+        "measures that stopped people becoming ill.",
+        "the arrival of more powerful hospital machines.",
+        "news coverage of dramatic treatments."
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 1 credits changes such as 'cleaner drinking water' and vaccination, which 'prevented illness rather than curing it'.",
+      "evidence": 1
+    },
+    {
+      "type": "mcq",
+      "question": "Why might politicians prefer to build a hospital wing rather than fund a long prevention programme?",
+      "options": [
+        "Vaccination programmes are always more expensive than hospitals.",
+        "Hospitals need more public money than prevention does.",
+        "Voters usually refuse to support preventive measures.",
+        "They can show results and receive credit before an election."
+      ],
+      "answer": 3,
+      "explanation": "Paragraph 2 says politicians 'need to show results before the next election', while preventive benefits 'may never be credited to them'.",
+      "evidence": 2
+    },
+    {
+      "type": "mcq",
+      "question": "What does the term 'prevention paradox' describe?",
+      "options": [
+        "A measure that greatly benefits a population but gives each person little.",
+        "A measure that helps individuals but harms the wider community.",
+        "Advice that people ignore because it is too complicated.",
+        "Treatments that cost more than the illnesses they cure."
+      ],
+      "answer": 0,
+      "explanation": "Paragraph 3 defines it as a measure with 'large benefits to a whole population' but 'only a small benefit to each individual'.",
+      "evidence": 3
+    },
+    {
+      "type": "mcq",
+      "question": "What is the writer's view of the argument that governments should not interfere in private decisions?",
+      "options": [
+        "It is mistaken and does not deserve discussion.",
+        "It is correct for adults but wrong for children.",
+        "It is worth considering but ignores the influence of people's surroundings.",
+        "It is supported by the results of taxes on sugary drinks."
+      ],
+      "answer": 2,
+      "explanation": "Paragraph 5 says the argument 'deserves to be taken seriously' but 'overlooks' how surroundings quietly encourage unhealthy choices.",
+      "evidence": 5
+    },
+    {
+      "type": "tfng",
+      "question": "When a vaccination programme succeeds, the individuals it protected cannot be identified.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 0,
+      "explanation": "Paragraph 2 says 'nobody can point to the people who did not become ill'.",
+      "evidence": 2
+    },
+    {
+      "type": "tfng",
+      "question": "Eating less salt is the most effective way to prevent heart disease.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 2,
+      "explanation": "Paragraph 3 uses salt only as an example of the prevention paradox; it does not compare it with other ways of preventing heart disease.",
+      "evidence": 3
+    },
+    {
+      "type": "tfng",
+      "question": "Psychologists have noticed that people often value rewards in the present more than rewards in the future.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 0,
+      "explanation": "Paragraph 4 says people 'give too much weight to immediate pleasure and too little to future benefit'.",
+      "evidence": 4
+    },
+    {
+      "type": "tfng",
+      "question": "The writer believes that nudging measures compel people to change their behaviour.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 6 states that 'None of these measures forces anyone to act'.",
+      "evidence": 6
+    },
+    {
+      "type": "tfng",
+      "question": "Screening programmes are more expensive in wealthy countries than in poor ones.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 2,
+      "explanation": "Paragraph 7 says some programmes cost more than expected, but it does not compare countries of different wealth.",
+      "evidence": 7
+    },
+    {
+      "type": "gap",
+      "question": "Better drinking water, safer food and improved ____ systems all helped to prevent illness.",
+      "accept": [
+        "sewage"
+      ],
+      "explanation": "Paragraph 1 lists 'better sewage systems' among the preventive changes.",
+      "evidence": 1
+    },
+    {
+      "type": "gap",
+      "question": "A prevention programme may bring benefits only after many ____.",
+      "accept": [
+        "years"
+      ],
+      "explanation": "Paragraph 2 says the benefits 'will appear only after many years'.",
+      "evidence": 2
+    },
+    {
+      "type": "gap",
+      "question": "A small change in habits across a large population can mean far fewer ____.",
+      "accept": [
+        "heart attacks",
+        "heart attack"
+      ],
+      "explanation": "Paragraph 3 says a small shift 'can mean many fewer heart attacks'.",
+      "evidence": 3
+    },
+    {
+      "type": "gap",
+      "question": "A nudge makes the healthy option the ____ choice, so it takes slightly less effort.",
+      "accept": [
+        "default"
+      ],
+      "explanation": "Paragraph 6 says such measures 'make the healthy option the default one'.",
+      "evidence": 6
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "powerful",
+      "id": "powerful"
+    },
+    {
+      "word": "measure",
+      "id": "measure"
+    },
+    {
+      "word": "image",
+      "id": "image"
+    },
+    {
+      "word": "argument",
+      "id": "argument"
+    },
+    {
+      "word": "risk",
+      "id": "risk"
+    },
+    {
+      "word": "option",
+      "id": "option"
+    },
+    {
+      "word": "essential",
+      "id": "essential"
+    },
+    {
+      "word": "treat",
+      "id": "treat"
+    },
+    {
+      "word": "benefit",
+      "id": "benefit"
+    },
+    {
+      "word": "term",
+      "id": "term"
+    },
+    {
+      "word": "effort",
+      "id": "effort"
+    },
+    {
+      "word": "community",
+      "id": "community"
+    },
+    {
+      "word": "gentle",
+      "id": "gentle"
+    },
+    {
+      "word": "reduce",
+      "id": "reduce"
+    },
+    {
+      "word": "treatment",
+      "id": "treatment"
+    },
+    {
+      "word": "honest",
+      "id": "honest"
+    },
+    {
+      "word": "grateful",
+      "id": "grateful"
+    },
+    {
+      "word": "individual",
+      "id": "individual"
+    },
+    {
+      "word": "pleasure",
+      "id": "pleasure"
+    },
+    {
+      "word": "tend",
+      "id": "tend"
+    },
+    {
+      "word": "uncertain",
+      "id": "uncertain"
+    },
+    {
+      "word": "unhealthy",
+      "id": "unhealthy"
+    },
+    {
+      "word": "improvement",
+      "id": "improvement"
+    },
+    {
+      "word": "reward",
+      "id": "reward"
+    },
+    {
+      "word": "population",
+      "id": "population"
+    },
+    {
+      "word": "immediate",
+      "id": "immediate"
+    },
+    {
+      "word": "evidence",
+      "id": "evidence"
+    },
+    {
+      "word": "cure",
+      "id": "cure"
+    },
+    {
+      "word": "invisible",
+      "id": "invisible"
+    },
+    {
+      "word": "appreciate",
+      "id": "appreciate"
+    },
+    {
+      "word": "default",
+      "id": "default"
+    },
+    {
+      "word": "interfere",
+      "id": "interfere"
+    },
+    {
+      "word": "alternative",
+      "id": "alternative"
+    }
+  ],
+  "wordCount": 691
+}

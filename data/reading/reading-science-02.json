@@ -1,0 +1,283 @@
+{
+  "id": "reading-science-02",
+  "topic": "science",
+  "topicName": "Science",
+  "title": "Why Science Needs a Second Look",
+  "cefr": "C1",
+  "paragraphs": [
+    "A single experiment rarely settles a scientific question. When a laboratory reports a striking result, other researchers usually wait before accepting it, because they know that chance, small errors and hidden assumptions can all produce findings that look convincing but do not hold up. The habit of repeating work, known as replication, is one of the main ways in which science corrects itself, yet it is also one of the least glamorous.",
+    "The reason replication matters becomes clear when we consider how results arise. Measurements always contain some random variation, and a small study may by luck produce a pattern that does not exist in the wider population. If a hundred teams test a doubtful idea, a few may well find support for it purely by accident. Those few are the ones most likely to be written up, since an exciting result attracts attention while a result showing nothing at all does not. This is why a result from one small team, however exciting, is best regarded as a hypothesis rather than a fact.",
+    "This tendency, called publication bias, distorts the record of what is known. Journals prefer novel discoveries, and researchers who need to win funding or secure a permanent post feel pressure to supply them. Studies that confirm earlier work, or that fail to find an effect, are therefore harder to publish and often remain in a drawer. Anyone reading only the published literature may conclude that the evidence is stronger than it really is.",
+    "In recent years, several fields, particularly psychology and medicine, have examined this problem by trying to repeat well-known studies. Some of those attempts succeeded, but others produced weaker effects or none at all. The discovery caused alarm, and the phrase \"replication crisis\" entered public debate. Some commentators claimed that science was fundamentally unreliable. Most researchers disagree; they argue that finding errors is exactly what a healthy system should do, and that the crisis shows the method working rather than failing. The debate also led ordinary readers to ask how far they should trust headlines that begin with the words \"scientists have found\".",
+    "Failure to replicate does not always mean the original result was wrong. A second team may have used a different group of participants, slightly different equipment, or an altered procedure that mattered more than anyone realised. In biology, for example, the condition of laboratory animals or the purity of a chemical can change an outcome. Careful researchers therefore treat a failed replication as a prompt for investigation, not as a verdict. Working out why two studies differ can reveal a factor that nobody had considered. Even a simple difference in the time of day when measurements were taken can matter.",
+    "Several reforms have been introduced to improve reliability. Some journals now accept a paper on the basis of its research question and method before any data are collected, which removes the temptation to favour dramatic outcomes. Researchers are also encouraged to publish their raw data and computer code so that others can check the calculations. In addition, larger samples reduce the influence of chance, although they are more costly and take longer to gather. Some funding agencies now set aside money specifically for projects that repeat earlier work.",
+    "These changes carry costs of their own. Time spent preparing data for public release is time not spent on new experiments, and young scientists worry that careful, slow work will be undervalued when jobs are awarded. Some also fear that an excessive focus on repeating old studies could discourage risk-taking, which has historically led to many important breakthroughs. The challenge is to reward both creativity and caution. Others point out that a replication carried out by one team may itself contain errors, so it too needs checking.",
+    "Ultimately, replication reminds us that scientific knowledge is provisional. A claim becomes trustworthy not because a respected laboratory announced it, but because independent groups, working in different places, keep arriving at the same conclusion. For the public, this suggests a sensible attitude: treat a single surprising study with interest but also with patience, and place greater confidence in findings that have survived repeated testing."
+  ],
+  "questions": [
+    {
+      "type": "mcq",
+      "question": "Why do researchers usually wait before accepting a striking result?",
+      "options": [
+        "Laboratories often report results dishonestly.",
+        "Repeating experiments is a glamorous activity that attracts funding.",
+        "Chance, small errors and hidden assumptions can make weak findings look convincing.",
+        "Striking results are always caused by faulty equipment."
+      ],
+      "answer": 2,
+      "explanation": "Paragraph 1 says \"chance, small errors and hidden assumptions\" can produce findings that look convincing but do not hold up.",
+      "evidence": 1
+    },
+    {
+      "type": "mcq",
+      "question": "What causes publication bias, according to the third paragraph?",
+      "options": [
+        "Journals and funding pressures favour new discoveries over confirming or null results.",
+        "Researchers deliberately hide results that support their own ideas.",
+        "Journals refuse to print any study with a large sample.",
+        "Studies that confirm earlier work are usually wrong."
+      ],
+      "answer": 0,
+      "explanation": "Paragraph 3 says journals \"prefer novel discoveries\" and researchers feel pressure to supply them, so confirming studies stay unpublished.",
+      "evidence": 3
+    },
+    {
+      "type": "mcq",
+      "question": "How do most researchers interpret the so-called replication crisis?",
+      "options": [
+        "As proof that science is fundamentally unreliable",
+        "As evidence that every well-known study was mistaken",
+        "As a sign that attempts to repeat studies should stop",
+        "As a sign that science can detect its own errors"
+      ],
+      "answer": 3,
+      "explanation": "Paragraph 4 says most researchers see the crisis as \"the method working rather than failing\".",
+      "evidence": 4
+    },
+    {
+      "type": "mcq",
+      "question": "What concern do some young scientists have about the new reforms?",
+      "options": [
+        "Preparing data for release leaves them more time for new experiments.",
+        "Careful, slow work may be undervalued when jobs are awarded.",
+        "Risk-taking has never produced important breakthroughs.",
+        "Larger samples are cheaper and faster to collect."
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 7 says young scientists \"worry that careful, slow work will be undervalued when jobs are awarded\".",
+      "evidence": 7
+    },
+    {
+      "type": "tfng",
+      "question": "A small study can find a pattern that is not real simply through good luck.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 0,
+      "explanation": "Paragraph 2 says a small study \"may by luck produce a pattern that does not exist\" in the wider population.",
+      "evidence": 2
+    },
+    {
+      "type": "tfng",
+      "question": "Publication bias is stronger in psychology than in medicine.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 2,
+      "explanation": "Paragraph 4 names both fields as having examined the problem but does not compare how serious it is in each.",
+      "evidence": 4
+    },
+    {
+      "type": "tfng",
+      "question": "If a repeated study fails, this always proves that the original result was incorrect.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 5 begins \"Failure to replicate does not always mean the original result was wrong\".",
+      "evidence": 5
+    },
+    {
+      "type": "tfng",
+      "question": "Some journals decide to publish a paper before its results are known.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 0,
+      "explanation": "Paragraph 6 says some journals accept a paper on its question and method \"before any data are collected\".",
+      "evidence": 6
+    },
+    {
+      "type": "tfng",
+      "question": "Many young scientists plan to leave research because of career pressures.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 2,
+      "explanation": "Paragraph 7 says young scientists worry about being undervalued, but it does not say any of them intend to leave research.",
+      "evidence": 7
+    },
+    {
+      "type": "gap",
+      "question": "The practice of repeating earlier work is called ____.",
+      "accept": [
+        "replication"
+      ],
+      "explanation": "Paragraph 1 says \"The habit of repeating work, known as replication\".",
+      "evidence": 1
+    },
+    {
+      "type": "gap",
+      "question": "Studies that find no effect often stay unpublished in a ____.",
+      "accept": [
+        "drawer",
+        "a drawer"
+      ],
+      "explanation": "Paragraph 3 says such studies \"often remain in a drawer\".",
+      "evidence": 3
+    },
+    {
+      "type": "gap",
+      "question": "Researchers are encouraged to share their raw data and computer ____ so that calculations can be checked.",
+      "accept": [
+        "code"
+      ],
+      "explanation": "Paragraph 6 asks researchers to publish \"their raw data and computer code\".",
+      "evidence": 6
+    },
+    {
+      "type": "gap",
+      "question": "A claim becomes trustworthy when independent groups keep reaching the same ____.",
+      "accept": [
+        "conclusion"
+      ],
+      "explanation": "Paragraph 8 says groups in different places \"keep arriving at the same conclusion\".",
+      "evidence": 8
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "laboratory",
+      "id": "laboratory"
+    },
+    {
+      "word": "striking",
+      "id": "striking"
+    },
+    {
+      "word": "assumption",
+      "id": "assumption"
+    },
+    {
+      "word": "random",
+      "id": "random"
+    },
+    {
+      "word": "variation",
+      "id": "variation"
+    },
+    {
+      "word": "distort",
+      "id": "distort"
+    },
+    {
+      "word": "novel",
+      "id": "novel"
+    },
+    {
+      "word": "literature",
+      "id": "literature"
+    },
+    {
+      "word": "alarm",
+      "id": "alarm"
+    },
+    {
+      "word": "participant",
+      "id": "participant"
+    },
+    {
+      "word": "procedure",
+      "id": "procedure"
+    },
+    {
+      "word": "verdict",
+      "id": "verdict"
+    },
+    {
+      "word": "reliability",
+      "id": "reliability"
+    },
+    {
+      "word": "temptation",
+      "id": "temptation"
+    },
+    {
+      "word": "sample",
+      "id": "sample"
+    },
+    {
+      "word": "excessive",
+      "id": "excessive"
+    },
+    {
+      "word": "breakthrough",
+      "id": "breakthrough"
+    },
+    {
+      "word": "independent",
+      "id": "independent"
+    },
+    {
+      "word": "confidence",
+      "id": "confidence"
+    },
+    {
+      "word": "evidence",
+      "id": "evidence"
+    },
+    {
+      "word": "discovery",
+      "id": "discovery"
+    },
+    {
+      "word": "publication",
+      "id": "publication"
+    },
+    {
+      "word": "bias",
+      "id": "bias"
+    },
+    {
+      "word": "effect",
+      "id": "effect"
+    },
+    {
+      "word": "reform",
+      "id": "reform"
+    },
+    {
+      "word": "calculation",
+      "id": "calculation"
+    },
+    {
+      "word": "caution",
+      "id": "caution"
+    },
+    {
+      "word": "pattern",
+      "id": "pattern"
+    }
+  ],
+  "wordCount": 688
+}

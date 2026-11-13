@@ -1,0 +1,255 @@
+{
+  "id": "reading-environment-02",
+  "topic": "environment",
+  "topicName": "Environment",
+  "title": "Letting the Rain Back In",
+  "cefr": "B2",
+  "paragraphs": [
+    "For most of the last century, engineers treated rain falling on a city as a problem to be removed as quickly as possible. Roofs, roads and car parks were built so that water ran off them into drains and then into the nearest river. This approach worked well enough when storms were moderate and cities were small. But as urban areas have spread and heavy downpours have become more frequent in many regions, the old system has started to fail, and flooded streets have become a familiar sight. Local councils have therefore had to ask whether a drainage network designed for a different climate can still be trusted.",
+    "The basic difficulty is that hard surfaces such as concrete and asphalt do not absorb water. In a field or a forest, much of the rain soaks into the soil, is taken up by plants or evaporates slowly. In a paved district, almost all of it reaches the drains at once. When the pipes cannot cope, water backs up and spills into streets and basements. Enlarging the pipes is one answer, but it is expensive, disruptive and only postpones the problem if storms continue to intensify.",
+    "An alternative that has attracted growing attention is to copy natural processes rather than fight them. Planners speak of green infrastructure: rain gardens, tree-lined streets with permeable pavements, roofs covered in vegetation, and small ponds that hold water temporarily. Each feature is modest, but together they slow the flow of water and give it time to sink into the ground. The aim is not to stop floods completely, which is unrealistic, but to reduce their frequency and severity.",
+    "These measures bring additional benefits that conventional drains cannot. Vegetation cools the air in hot weather, since plants release moisture and shade the surfaces beneath them. Parks and wetlands provide habitats for insects, birds and frogs, and residents often report that green streets are more pleasant to walk along. Some local authorities have found that such improvements even raise the value of neighbouring property, although this effect varies considerably from place to place. Several of these gains are enjoyed every day, not only during storms, which makes the investment easier to defend to taxpayers.",
+    "Critics, however, point out real limitations. Green features need space, and in dense city centres space is exactly what is missing. They also need regular maintenance: a rain garden clogged with litter or a pond choked by weeds will not perform as intended. Moreover, soil that is already saturated after days of rain cannot take in any more water, so a sudden storm can still overwhelm a district that has been carefully designed. For this reason, few experts suggest that greenery can replace pipes and pumping stations altogether.",
+    "Who pays, and who is responsible, is another source of disagreement. Traditional drainage is usually managed by a single public body, whereas green infrastructure is spread across private gardens, school grounds and public parks. Persuading many owners to install and look after small features is harder than building one large tunnel. Some cities have tried offering lower charges to households that keep rainwater on their land; others have simply written the requirement into building regulations. Both approaches have supporters, and neither has proved ideal everywhere. In practice, success depends as much on persuasion and cooperation as on engineering.",
+    "Climate also matters. A design that works in a region with steady, gentle rain may perform poorly where long dry periods are followed by violent storms, because dry, hard soil can initially repel water instead of absorbing it. Planners therefore have to study local conditions rather than import a successful design wholesale. In a few places, the stored water is also collected and reused for watering plants or flushing toilets, which turns a hazard into a resource.",
+    "The most realistic view is that cities will need both grey and green solutions. Pipes and pumps remain essential for the heaviest storms, while natural features can deal with the many smaller ones and make urban life more pleasant. What has changed is the underlying attitude: rain is no longer regarded simply as waste to be discarded, but as a resource that, with careful planning, a city can learn to manage and even to enjoy."
+  ],
+  "questions": [
+    {
+      "type": "mcq",
+      "question": "Why does the writer say that enlarging drainage pipes is not a complete solution?",
+      "options": [
+        "It makes flooding in basements more likely.",
+        "It is impractical in forests and fields.",
+        "It may only delay the problem if storms keep getting stronger.",
+        "It reduces the amount of water that reaches rivers."
+      ],
+      "answer": 2,
+      "explanation": "Paragraph 2 says enlarging pipes is \"expensive, disruptive and only postpones the problem\" if storms intensify.",
+      "evidence": 2
+    },
+    {
+      "type": "mcq",
+      "question": "What is the main aim of green infrastructure, according to paragraph 3?",
+      "options": [
+        "To prevent every flood in the city",
+        "To copy the design of traditional drains",
+        "To store water permanently in small ponds",
+        "To make floods happen less often and be less serious"
+      ],
+      "answer": 3,
+      "explanation": "Paragraph 3 says the aim is \"not to stop floods completely\" but \"to reduce their frequency and severity\".",
+      "evidence": 3
+    },
+    {
+      "type": "mcq",
+      "question": "What problem with saturated soil do critics mention?",
+      "options": [
+        "It cannot absorb more water during a sudden storm.",
+        "It encourages weeds to grow in rain gardens.",
+        "It makes pumping stations stop working.",
+        "It prevents plants from releasing moisture."
+      ],
+      "answer": 0,
+      "explanation": "Paragraph 5 says saturated soil \"cannot take in any more water\", so a storm can still overwhelm a designed district.",
+      "evidence": 5
+    },
+    {
+      "type": "mcq",
+      "question": "Why must planners study local conditions?",
+      "options": [
+        "Dry regions have no need of green features.",
+        "Successful designs are usually too expensive to copy.",
+        "Violent storms are always followed by long dry periods.",
+        "A design that suits one climate may work badly in another."
+      ],
+      "answer": 3,
+      "explanation": "Paragraph 7 says a design for gentle rain \"may perform poorly\" where dry periods are followed by violent storms.",
+      "evidence": 7
+    },
+    {
+      "type": "tfng",
+      "question": "Traditional drainage was designed to move rainwater out of the city quickly.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 0,
+      "explanation": "Paragraph 1 says rain was treated as a problem \"to be removed as quickly as possible\".",
+      "evidence": 1
+    },
+    {
+      "type": "tfng",
+      "question": "The writer states that green improvements raise property values equally in all areas.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 4 says the effect \"varies considerably from place to place\", so the statement is false.",
+      "evidence": 4
+    },
+    {
+      "type": "tfng",
+      "question": "Rain gardens are cheaper to build than large underground tunnels.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 2,
+      "explanation": "Paragraph 5 and 6 discuss space, maintenance and ownership, but the passage never compares the building costs of rain gardens and tunnels.",
+      "evidence": 5
+    },
+    {
+      "type": "tfng",
+      "question": "Some cities have used building rules to make households deal with rainwater on their own land.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 0,
+      "explanation": "Paragraph 6 says some cities \"simply written the requirement into building regulations\".",
+      "evidence": 6
+    },
+    {
+      "type": "tfng",
+      "question": "Reusing stored rainwater is more common in dry regions than in wet ones.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 2,
+      "explanation": "Paragraph 7 says stored water is reused \"in a few places\" but gives no comparison between dry and wet regions.",
+      "evidence": 7
+    },
+    {
+      "type": "gap",
+      "question": "In a paved district, almost all of the rain reaches the ____ immediately.",
+      "accept": [
+        "drains",
+        "drain"
+      ],
+      "explanation": "Paragraph 2 says that in a paved district almost all rain \"reaches the drains at once\".",
+      "evidence": 2
+    },
+    {
+      "type": "gap",
+      "question": "Planners use the term ____ for rain gardens, permeable pavements and similar features.",
+      "accept": [
+        "green infrastructure"
+      ],
+      "explanation": "Paragraph 3 says \"Planners speak of green infrastructure\".",
+      "evidence": 3
+    },
+    {
+      "type": "gap",
+      "question": "Plants help to cool the air because they release moisture and ____ the surfaces beneath them.",
+      "accept": [
+        "shade"
+      ],
+      "explanation": "Paragraph 4 says plants \"release moisture and shade the surfaces beneath them\".",
+      "evidence": 4
+    },
+    {
+      "type": "gap",
+      "question": "A rain garden blocked by ____ will not perform as intended.",
+      "accept": [
+        "litter"
+      ],
+      "explanation": "Paragraph 5 mentions \"a rain garden clogged with litter\".",
+      "evidence": 5
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "engineer",
+      "id": "engineer"
+    },
+    {
+      "word": "moderate",
+      "id": "moderate"
+    },
+    {
+      "word": "concrete",
+      "id": "concrete"
+    },
+    {
+      "word": "soil",
+      "id": "soil"
+    },
+    {
+      "word": "evaporate",
+      "id": "evaporate"
+    },
+    {
+      "word": "expensive",
+      "id": "expensive"
+    },
+    {
+      "word": "intensify",
+      "id": "intensify"
+    },
+    {
+      "word": "vegetation",
+      "id": "vegetation"
+    },
+    {
+      "word": "frequency",
+      "id": "frequency"
+    },
+    {
+      "word": "habitat",
+      "id": "habitat"
+    },
+    {
+      "word": "resident",
+      "id": "resident"
+    },
+    {
+      "word": "maintenance",
+      "id": "maintenance"
+    },
+    {
+      "word": "responsible",
+      "id": "responsible"
+    },
+    {
+      "word": "regulation",
+      "id": "regulation"
+    },
+    {
+      "word": "climate",
+      "id": "climate"
+    },
+    {
+      "word": "resource",
+      "id": "resource"
+    },
+    {
+      "word": "hazard",
+      "id": "hazard"
+    },
+    {
+      "word": "flood",
+      "id": "flood"
+    },
+    {
+      "word": "pavement",
+      "id": "pavement"
+    },
+    {
+      "word": "attitude",
+      "id": "attitude"
+    },
+    {
+      "word": "overwhelm",
+      "id": "overwhelm"
+    }
+  ],
+  "wordCount": 704
+}

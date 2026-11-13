@@ -55,11 +55,17 @@ Stella sử dụng thuật toán FSRS (`ts-fsrs`, mục tiêu mặc định 90%)
 Các chế độ này giúp rèn luyện bổ trợ và **không làm thay đổi lịch ôn FSRS**:
 
 - **Cụm từ đi kèm (`Collocations`)**: Từ chính trong câu hỏi và đáp án được che thành `___`. Các phương án nhiễu mượn từ các từ khác có cùng từ loại và loại trừ từ đồng nghĩa/trái nghĩa, loại bỏ khả năng nhận biết đáp án bằng mắt thường.
+- **Đồng nghĩa (`Paraphrase`)**: Câu IELTS (`ex[1]`, nếu không có thì `ex[0]`) hiện từ chính được tô sáng. Người học chọn từ đồng nghĩa (`syn`); chỉ khi từ không có đồng nghĩa mới hỏi từ trái nghĩa (`ant`). Phương án nhiễu lấy từ đồng/trái nghĩa và từ chính của các từ khác trong lượt, ưu tiên cùng từ loại, loại trừ mọi từ liên quan đến từ đang hỏi.
+- **Họ từ (`Family`)**: Hỏi dạng từ loại khác của cùng một từ (ví dụ danh từ của `advise`) dựa trên `fam`. Phương án nhiễu ưu tiên các dạng khác từ loại trong cùng họ từ, rồi đến họ từ của các từ khác, nên chỉ có một đáp án đúng về từ loại.
+- **Đặt câu (`Write`)**: Người học tự viết câu có dùng từ. `sentenceCheck` chỉ kiểm tra câu quá ngắn (< 5 từ), thiếu từ chính, hoặc chép lại câu mẫu; không kiểm tra ngữ pháp. Sau đó hiện câu mẫu và cụm từ đi kèm để người học tự đánh giá "đúng" hoặc "chưa chắc".
+- Cả ba chế độ chỉ là luyện tập: không ghi vào `progress.cards`, `progress.log`, `progress.typing` hay số liệu theo ngày.
 - **Gõ từ vựng (`Word`)**: Mặc định che chữ cái để người học tự nhớ lại từ trước khi gõ; có nút "Hiện đáp án" khi cần.
 - **Đọc hiểu (`Reading`)**: Thứ tự hiển thị của 4 lựa chọn trắc nghiệm được xáo ngẫu nhiên theo thuật toán ổn định (`optionOrder`), tránh việc đáp án tập trung vào một vị trí cố định.
+  - **Bài đọc dài (`reading-<chủ đề>-02`)**: 650–950 từ, 13 câu hỏi (4 trắc nghiệm, 5 Đúng/Sai/Không có thông tin, 4 hoàn thành câu). Mỗi câu có trường `evidence` là số đoạn chứa đáp án; bài `-01` vẫn dùng bảng dẫn chứng cũ.
+  - **Hoàn thành câu (`gap`)**: Người học gõ vào chỗ trống, tối đa HAI TỪ lấy từ bài. `gapCorrect` bỏ qua hoa/thường và một mạo từ đứng đầu (a/an/the) ở cả hai phía, so với từng đáp án trong `accept`; trả lời quá hai từ luôn bị tính sai. Câu trả lời lưu như chữ, câu trắc nghiệm vẫn lưu theo chỉ số lựa chọn.
 
 ## 6. Giới hạn đã biết
 
 - Bước tự nhớ nghĩa (`recall`) phụ thuộc vào sự tự giác của người học.
 - Các bài trắc nghiệm nhận diện vẫn có xác suất đoán đúng ngẫu nhiên.
-- 19 bài đọc hiểu hiện tại là các bài luyện tập mẫu, điểm số dùng để tham khảo kỹ năng đọc, không phải chứng chỉ hay điểm số quy đổi IELTS chính thức.
+- 25 bài đọc hiểu hiện tại (19 bài ngắn, 6 bài dài) là các bài luyện tập mẫu, điểm số dùng để tham khảo kỹ năng đọc, không phải chứng chỉ hay điểm số quy đổi IELTS chính thức.

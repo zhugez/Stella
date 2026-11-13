@@ -1,0 +1,274 @@
+{
+  "id": "reading-society-02",
+  "topic": "society",
+  "topicName": "Society",
+  "title": "The Hidden Architecture of Community",
+  "cefr": "B2",
+  "paragraphs": [
+    "In many wealthy countries, people say they feel more connected than ever through technology, yet surveys of public mood often describe growing loneliness. This apparent contradiction has led sociologists to look more closely at what holds communities together. Their conclusion is that connection is not a single thing. A person may exchange hundreds of messages a week and still lack anyone who would notice if they stopped appearing in the street.",
+    "One useful distinction is between strong ties and weak ties. Strong ties link close family and friends, who offer emotional support in a crisis. Weak ties, by contrast, connect people who meet only occasionally: the shopkeeper, the neighbour at the bus stop, the parent at the school gate. Although each of these encounters is brief, together they create a sense of belonging and a steady flow of small pieces of information, such as news of a job vacancy or a warning about a local scam. A person with plenty of weak ties rarely feels invisible, even without many close friends.",
+    "Public spaces play a larger role in sustaining weak ties than is often assumed. Parks, libraries, markets and community halls give strangers a reason to share the same place without any obligation to talk. Over time, the repeated sight of the same faces builds familiarity, and familiarity builds trust. When a council closes a library to save money, therefore, the visible loss is a collection of books, but the hidden loss may be a regular meeting point for elderly residents and young families alike. Markets are a good example, because buying vegetables from the same stallholder every week turns a simple transaction into a small relationship.",
+    "Volunteering is another way in which communities generate trust. People who give their time to a food bank, a sports club or a neighbourhood clean-up learn to cooperate with others outside their usual social circle. Researchers who study civic life often argue that this experience teaches skills such as organising, compromising and listening, all of which are valuable in a democratic society. Critics reply that volunteers tend to come from comfortable backgrounds, so the benefits may flow mainly to those who are already well connected.",
+    "That criticism points to a wider problem: social opportunities are unevenly distributed. Residents of areas where people move house frequently have fewer chances to build lasting relationships, and long working hours leave little energy for community activity. Housing costs push many families to the edge of cities, where there are few shared spaces. In such places, a lack of trust is not a personal failing but a result of the way the area is organised. Young people and recent migrants may be especially affected, since they often arrive without the networks that longer-term residents take for granted.",
+    "Some planners have responded by designing for encounter. Streets with shops at ground level, benches in shaded corners and school buildings that open their halls in the evening all encourage spontaneous contact. Supporters say such features cost little compared with their effect. Sceptics note, however, that a bench cannot create a community on its own; if residents do not feel that a space belongs to them, it may remain empty. Real participation usually depends on residents being consulted from the start.",
+    "Digital platforms complicate the picture further. Local online groups can help neighbours lend tools, find lost pets or organise petitions, and they may be a lifeline for people who find it hard to leave home. Yet the same groups can also encourage suspicion, as members circulate rumours about strangers and treat minor disagreements as public quarrels. The evidence suggests that online contact works best when it leads to meetings in person, not when it replaces them. Moderators who set clear rules can reduce such conflict, but they are usually unpaid volunteers themselves.",
+    "In conclusion, the strength of a society depends less on dramatic acts of generosity than on the ordinary habits of everyday contact. Policies that protect shared spaces, support volunteers from many backgrounds and give residents a real voice are likely to do more for social cohesion than campaigns urging people to be friendlier. Community, it seems, has to be built into the places where people live, rather than simply hoped for."
+  ],
+  "questions": [
+    {
+      "type": "mcq",
+      "question": "What conclusion do sociologists draw from the contradiction described in the first paragraph?",
+      "options": [
+        "Technology has made loneliness impossible.",
+        "Connection takes more than one form, and messages alone may not provide it.",
+        "Surveys about public mood cannot be trusted.",
+        "People who send many messages are always lonely."
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 1 says \"connection is not a single thing\" and gives the example of someone with many messages but nobody who would notice their absence.",
+      "evidence": 1
+    },
+    {
+      "type": "mcq",
+      "question": "According to the second paragraph, what do weak ties offer?",
+      "options": [
+        "Emotional support during a crisis",
+        "A replacement for family and friends",
+        "Long conversations at regular times",
+        "A sense of belonging and useful local information"
+      ],
+      "answer": 3,
+      "explanation": "Paragraph 2 says brief encounters create \"a sense of belonging\" and a flow of small pieces of information, while emotional support comes from strong ties.",
+      "evidence": 2
+    },
+    {
+      "type": "mcq",
+      "question": "What may be the hidden loss when a council closes a library?",
+      "options": [
+        "A regular meeting point for different groups",
+        "A collection of books that cannot be replaced",
+        "A place where strangers are required to talk",
+        "A source of money for the council"
+      ],
+      "answer": 0,
+      "explanation": "Paragraph 3 contrasts the visible loss of books with \"a regular meeting point\" for elderly residents and young families.",
+      "evidence": 3
+    },
+    {
+      "type": "mcq",
+      "question": "What is the writer's main conclusion in the final paragraph?",
+      "options": [
+        "Campaigns urging people to be friendlier are the best solution.",
+        "Dramatic acts of generosity matter most to a society.",
+        "Ordinary everyday contact, supported by good policies, builds social strength.",
+        "Community will develop naturally if people simply hope for it."
+      ],
+      "answer": 2,
+      "explanation": "Paragraph 8 says society depends on \"the ordinary habits of everyday contact\" and that policies protecting shared spaces do more than campaigns.",
+      "evidence": 8
+    },
+    {
+      "type": "tfng",
+      "question": "Seeing the same people repeatedly can help neighbours come to trust one another.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 0,
+      "explanation": "Paragraph 3 states that \"familiarity builds trust\" through the repeated sight of the same faces.",
+      "evidence": 3
+    },
+    {
+      "type": "tfng",
+      "question": "Volunteers at sports clubs develop better organising skills than volunteers at food banks.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 2,
+      "explanation": "Paragraph 4 mentions both kinds of volunteering but never compares the skills people gain from them.",
+      "evidence": 4
+    },
+    {
+      "type": "tfng",
+      "question": "Moving home often makes it easier for people to form long-lasting relationships.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 5 says residents of areas where people \"move house frequently have fewer chances\" to build lasting relationships.",
+      "evidence": 5
+    },
+    {
+      "type": "tfng",
+      "question": "School halls that open in the evening attract more visitors than street benches do.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 2,
+      "explanation": "Paragraph 6 lists both features as ways to encourage contact but gives no comparison of how many people use each.",
+      "evidence": 6
+    },
+    {
+      "type": "tfng",
+      "question": "Local internet groups can sometimes increase mistrust between neighbours.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 0,
+      "explanation": "Paragraph 7 says such groups \"can also encourage suspicion\" when members spread rumours about strangers.",
+      "evidence": 7
+    },
+    {
+      "type": "gap",
+      "question": "Contacts between people who meet only occasionally are described as ____ ties.",
+      "accept": [
+        "weak"
+      ],
+      "explanation": "Paragraph 2 says \"Weak ties, by contrast, connect people who meet only occasionally\".",
+      "evidence": 2
+    },
+    {
+      "type": "gap",
+      "question": "Public spaces allow strangers to share a place without any ____ to talk.",
+      "accept": [
+        "obligation"
+      ],
+      "explanation": "Paragraph 3 says these spaces give strangers a reason to be together \"without any obligation to talk\".",
+      "evidence": 3
+    },
+    {
+      "type": "gap",
+      "question": "Long working hours leave residents little ____ for community activity.",
+      "accept": [
+        "energy"
+      ],
+      "explanation": "Paragraph 5 says \"long working hours leave little energy for community activity\".",
+      "evidence": 5
+    },
+    {
+      "type": "gap",
+      "question": "Protecting shared spaces is likely to do more for social ____ than campaigns asking people to be friendlier.",
+      "accept": [
+        "cohesion"
+      ],
+      "explanation": "Paragraph 8 says such policies will do more \"for social cohesion\" than campaigns urging people to be friendlier.",
+      "evidence": 8
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "emotional",
+      "id": "emotional"
+    },
+    {
+      "word": "crisis",
+      "id": "crisis"
+    },
+    {
+      "word": "vacancy",
+      "id": "vacancy"
+    },
+    {
+      "word": "assume",
+      "id": "assume"
+    },
+    {
+      "word": "obligation",
+      "id": "obligation"
+    },
+    {
+      "word": "generate",
+      "id": "generate"
+    },
+    {
+      "word": "cooperate",
+      "id": "cooperate"
+    },
+    {
+      "word": "civic",
+      "id": "civic"
+    },
+    {
+      "word": "democratic",
+      "id": "democratic"
+    },
+    {
+      "word": "distribute",
+      "id": "distribute"
+    },
+    {
+      "word": "frequently",
+      "id": "frequently"
+    },
+    {
+      "word": "spontaneous",
+      "id": "spontaneous"
+    },
+    {
+      "word": "participation",
+      "id": "participation"
+    },
+    {
+      "word": "petition",
+      "id": "petition"
+    },
+    {
+      "word": "suspicion",
+      "id": "suspicion"
+    },
+    {
+      "word": "evidence",
+      "id": "evidence"
+    },
+    {
+      "word": "generosity",
+      "id": "generosity"
+    },
+    {
+      "word": "cohesion",
+      "id": "cohesion"
+    },
+    {
+      "word": "contradiction",
+      "id": "contradiction"
+    },
+    {
+      "word": "distinction",
+      "id": "distinction"
+    },
+    {
+      "word": "encounter",
+      "id": "encounter"
+    },
+    {
+      "word": "volunteer",
+      "id": "volunteer"
+    },
+    {
+      "word": "trust",
+      "id": "trust"
+    },
+    {
+      "word": "community",
+      "id": "community"
+    },
+    {
+      "word": "resident",
+      "id": "resident"
+    },
+    {
+      "word": "complicate",
+      "id": "complicate"
+    }
+  ],
+  "wordCount": 703
+}

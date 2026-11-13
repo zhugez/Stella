@@ -1,0 +1,307 @@
+{
+  "id": "reading-technology-02",
+  "topic": "technology",
+  "topicName": "Technology",
+  "title": "The Quiet Cost of Automatic Help",
+  "cefr": "B2",
+  "paragraphs": [
+    "Few people would choose to give up the tools that now guide their daily lives. Satellite navigation takes drivers to unfamiliar places without a map, spell-checkers correct errors before anyone notices them, and software can suggest the next word in an email. Each of these tools saves time and reduces stress. Yet a growing number of researchers have begun to ask a less comfortable question: what happens to human ability when machines perform more and more of the mental work that people once did for themselves?",
+    "Engineers who design aircraft cockpits were among the first to notice the problem. Modern planes can fly almost entirely on autopilot, and in normal conditions this makes flying safer and more efficient. However, investigators who examine rare accidents have sometimes found that crews, after long periods of monitoring rather than steering, reacted slowly or incorrectly when the system suddenly handed control back. The pilots were not careless. Their manual skills had simply faded through lack of practice, a process sometimes called skill decay.",
+    "The same pattern appears in much more ordinary settings. Some studies of drivers who rely heavily on satellite navigation suggest that they form weaker mental maps of the areas they travel through than people who read maps or learn routes by landmarks. Following spoken instructions requires attention to the next turn, but not to the wider layout of a city. The driver arrives at the destination, yet has learned very little about the place that lies around it.",
+    "Defenders of automation point out that this argument is not new. Writing, they say, was once criticised for weakening memory, and calculators were feared as the end of arithmetic. In both cases society adapted, and people used the freed mental capacity for more ambitious tasks. Few of us now regret that we cannot recite a long poem without a book. From this perspective, losing a skill is no tragedy if the skill has become unnecessary, and the only real question is whether the machine will always be available and reliable.",
+    "That condition is exactly what critics doubt. Systems fail, batteries run out, and software can contain errors that are difficult to see. A person who has never practised the underlying skill cannot judge whether the machine's answer is sensible. A student who accepts a calculator's result without any sense of the expected size of the answer, for instance, may not notice a simple typing mistake. Dependence therefore carries a hidden risk: the less users understand a task, the less able they are to supervise the tool that performs it.",
+    "Designers have started to respond. Some navigation applications now encourage users to look at an overview of the route before they set off, and some airlines require pilots to fly by hand at regular intervals. In schools, a number of teachers ask students to attempt a problem unaided before checking it with software. These measures share a common idea: technology should act as a partner that supports human judgement, not as a replacement for it. Designers call this deliberate inconvenience friction, and they argue that a little of it keeps the user's mind active.",
+    "None of this means that people should return to paper maps and slide rules. The benefits of automation are real, and in fields such as medicine and transport they help to save lives. Nor is it clear that every lost skill deserves rescue; some are better left behind. A more realistic conclusion is that convenience has a price which is easy to overlook, because it is paid slowly and out of sight.",
+    "Users, designers and institutions therefore share a task. They must decide which abilities are worth keeping alive, and then build habits and tools that keep those abilities in regular use. The aim is not to resist technology but to remain its master. A society that understands what its machines do, and can still do the essential work without them, will be far better prepared when the machines eventually fail."
+  ],
+  "questions": [
+    {
+      "type": "mcq",
+      "question": "What did investigators discover about some pilots involved in rare accidents?",
+      "options": [
+        "They had been careless while monitoring the autopilot.",
+        "Their hands-on skills had weakened through lack of practice.",
+        "The autopilot had made flying less safe in normal conditions.",
+        "They had refused to take control back from the system."
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 2 says the pilots were not careless and that their 'manual skills had simply faded through lack of practice'.",
+      "evidence": 2
+    },
+    {
+      "type": "mcq",
+      "question": "According to some studies, drivers who depend on satellite navigation",
+      "options": [
+        "drive more slowly in unfamiliar areas.",
+        "pay close attention to landmarks on the way.",
+        "find spoken instructions hard to follow.",
+        "develop a weaker understanding of the area's layout."
+      ],
+      "answer": 3,
+      "explanation": "Paragraph 3 states that they form 'weaker mental maps' and learn 'very little about the place'.",
+      "evidence": 3
+    },
+    {
+      "type": "mcq",
+      "question": "Why do defenders of automation mention writing and calculators?",
+      "options": [
+        "To suggest that society has coped with similar worries before.",
+        "To prove that calculators improved people's arithmetic.",
+        "To show that writing was easy for people to learn.",
+        "To argue that memory is no longer of any value."
+      ],
+      "answer": 0,
+      "explanation": "Paragraph 4 says that 'in both cases society adapted', so earlier fears about lost skills were overcome.",
+      "evidence": 4
+    },
+    {
+      "type": "mcq",
+      "question": "What is the critics' main concern about dependence on machines?",
+      "options": [
+        "Machines are too expensive for most users to maintain.",
+        "Software is usually written by people with little training.",
+        "Students become careless when they type numbers.",
+        "Users may be unable to check or supervise what a machine does."
+      ],
+      "answer": 3,
+      "explanation": "Paragraph 5 concludes that 'the less users understand a task, the less able they are to supervise the tool'.",
+      "evidence": 5
+    },
+    {
+      "type": "tfng",
+      "question": "The writer says that the tools mentioned at the start can lower the stress felt by their users.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 0,
+      "explanation": "Paragraph 1 says that each of these tools 'saves time and reduces stress'.",
+      "evidence": 1
+    },
+    {
+      "type": "tfng",
+      "question": "Autopilot systems have made flying less efficient in normal conditions.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 2 says autopilot 'makes flying safer and more efficient' in normal conditions.",
+      "evidence": 2
+    },
+    {
+      "type": "tfng",
+      "question": "Drivers who use paper maps reach their destinations faster than those who use satellite navigation.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 2,
+      "explanation": "Paragraph 3 compares how well people understand an area, but it says nothing about the speed of the journey.",
+      "evidence": 3
+    },
+    {
+      "type": "tfng",
+      "question": "Some teachers want students to try a problem on their own before they use software to check it.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 0,
+      "explanation": "Paragraph 6 says teachers 'ask students to attempt a problem unaided before checking it with software'.",
+      "evidence": 6
+    },
+    {
+      "type": "tfng",
+      "question": "The writer concludes that people should stop using automated tools.",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": 1,
+      "explanation": "Paragraph 7 begins 'None of this means that people should return to paper maps', and paragraph 8 says the aim 'is not to resist technology'.",
+      "evidence": 7
+    },
+    {
+      "type": "gap",
+      "question": "The gradual loss of an ability through lack of use is sometimes called ____.",
+      "accept": [
+        "skill decay"
+      ],
+      "explanation": "Paragraph 2 describes the fading of manual skills as 'skill decay'.",
+      "evidence": 2
+    },
+    {
+      "type": "gap",
+      "question": "Some studies suggest that people who learn routes by ____ understand an area better than those who follow spoken directions.",
+      "accept": [
+        "landmarks",
+        "landmark"
+      ],
+      "explanation": "Paragraph 3 contrasts satellite navigation users with people who 'learn routes by landmarks'.",
+      "evidence": 3
+    },
+    {
+      "type": "gap",
+      "question": "A person without practice in a skill cannot tell whether a machine's result is ____.",
+      "accept": [
+        "sensible"
+      ],
+      "explanation": "Paragraph 5 says such a person 'cannot judge whether the machine's answer is sensible'.",
+      "evidence": 5
+    },
+    {
+      "type": "gap",
+      "question": "Designers use the term ____ for deliberately making a tool slightly less convenient.",
+      "accept": [
+        "friction"
+      ],
+      "explanation": "Paragraph 6 says 'Designers call this deliberate inconvenience friction'.",
+      "evidence": 6
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "argument",
+      "id": "argument"
+    },
+    {
+      "word": "risk",
+      "id": "risk"
+    },
+    {
+      "word": "stress",
+      "id": "stress"
+    },
+    {
+      "word": "essential",
+      "id": "essential"
+    },
+    {
+      "word": "mental",
+      "id": "mental"
+    },
+    {
+      "word": "sensible",
+      "id": "sensible"
+    },
+    {
+      "word": "rely",
+      "id": "rely"
+    },
+    {
+      "word": "society",
+      "id": "society"
+    },
+    {
+      "word": "require",
+      "id": "require"
+    },
+    {
+      "word": "regret",
+      "id": "regret"
+    },
+    {
+      "word": "encourage",
+      "id": "encourage"
+    },
+    {
+      "word": "efficient",
+      "id": "efficient"
+    },
+    {
+      "word": "hidden",
+      "id": "hidden"
+    },
+    {
+      "word": "respond",
+      "id": "respond"
+    },
+    {
+      "word": "contain",
+      "id": "contain"
+    },
+    {
+      "word": "reliable",
+      "id": "reliable"
+    },
+    {
+      "word": "judge",
+      "id": "judge"
+    },
+    {
+      "word": "rare",
+      "id": "rare"
+    },
+    {
+      "word": "lack",
+      "id": "lack"
+    },
+    {
+      "word": "unnecessary",
+      "id": "unnecessary"
+    },
+    {
+      "word": "careless",
+      "id": "careless"
+    },
+    {
+      "word": "perform",
+      "id": "perform"
+    },
+    {
+      "word": "route",
+      "id": "route"
+    },
+    {
+      "word": "overlook",
+      "id": "overlook"
+    },
+    {
+      "word": "layout",
+      "id": "layout"
+    },
+    {
+      "word": "entirely",
+      "id": "entirely"
+    },
+    {
+      "word": "attempt",
+      "id": "attempt"
+    },
+    {
+      "word": "deliberate",
+      "id": "deliberate"
+    },
+    {
+      "word": "dependence",
+      "id": "dependence"
+    },
+    {
+      "word": "realistic",
+      "id": "realistic"
+    },
+    {
+      "word": "decay",
+      "id": "decay"
+    },
+    {
+      "word": "capacity",
+      "id": "capacity"
+    },
+    {
+      "word": "resist",
+      "id": "resist"
+    },
+    {
+      "word": "supervise",
+      "id": "supervise"
+    }
+  ],
+  "wordCount": 661
+}

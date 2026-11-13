@@ -1,10 +1,10 @@
 import { ArrowRight, BookOpen, RefreshCw } from "lucide-react";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { Fragment, useEffect, useMemo, useRef, useState } from "react";
 import { prefetch, useAtlas } from "../atlas/context";
 import type { Entry } from "../atlas/types";
 import { topicLabel, tr, useT } from "../i18n";
 import { passage } from "../lib/drills";
-import { evidenceParagraph, optionOrder, parsePassages, type ReadingPassage } from "../lib/reading";
+import { evidenceParagraph, GAP_MAX_CHARS, gapCorrect, isAnswered, optionOrder, parsePassages, type ReadingPassage } from "../lib/reading";
 import { go, openWord } from "../lib/router";
 import { shuffle, splitHighlight } from "../lib/text";
 import { readingKey, readingStore, useReadingProgress } from "../store/reading";
@@ -87,7 +87,7 @@ function Reader({ passage: p }: { passage: ReadingPassage }) {
     return () => window.removeEventListener("stella:dictionary", assist);
   }, [p, supported]);
   const lookup = (id: string) => openWord(id);
-  const allAnswered = p.questions.every((_, i) => attempt?.answers[i] !== undefined);
+  const allAnswered = p.questions.every((q, i) => isAnswered(q, attempt?.answers[i]));
   const download = () => {
     const url = URL.createObjectURL(new Blob([readingStore.export()], { type: "application/json" }));
     const a = document.createElement("a"); a.href = url; a.download = "stella-reading-backup.json"; a.click(); URL.revokeObjectURL(url);
@@ -106,11 +106,22 @@ function Reader({ passage: p }: { passage: ReadingPassage }) {
       {submitted && <p role="status">{t("reading_result").replace("{score}", String(attempt.correct)).replace("{total}", String(p.questions.length)).replace("{mode}", attempt.assisted ? t("reading_assisted") : t("reading_unassisted"))}</p>}
       {p.questions.map((q, i) => {
         const order = optionOrder(p, i);
-        return <fieldset key={i} className="reading-question" disabled={submitted || !!error}>
-          <legend>{i + 1}. {q.question}</legend>
-          {order.map((j) => <label className="reading-option" key={j}><input type="radio" name={`${p.id}-q${i}`} checked={attempt?.answers[i] === j} onChange={() => readingStore.answer(p, i, j)} />{q.options[j]}</label>)}
-          {submitted && <div className="reading-feedback"><p>{t(attempt.answers[i] === q.answer ? "reading_correct" : "reading_incorrect").replace("{answer}", q.options[q.answer])}</p><p>{q.explanation}</p><a href={`#reading-p${evidenceParagraph(p, i)}`} onClick={(e) => { e.preventDefault(); document.getElementById(`reading-p${evidenceParagraph(p, i)}`)?.scrollIntoView({ behavior: "smooth", block: "center" }); }}>{t("reading_evidence").replace("{n}", String(evidenceParagraph(p, i)))}</a></div>}
-        </fieldset>;
+        const given = attempt?.answers[i];
+        const [before, after] = q.type === "gap" ? q.question.split(/_{4,}/) : [];
+        const right = q.type === "gap" ? typeof given === "string" && gapCorrect(q, given) : given === q.answer;
+        return <Fragment key={i}>
+          {q.type !== p.questions[i - 1]?.type && <h4 className="reading-group">{t(`reading_group_${q.type}`)}</h4>}
+          <fieldset className="reading-question" disabled={submitted || !!error}>
+            {q.type === "gap" ? <>
+              <legend>{i + 1}. {before}<input className="reading-gap" type="text" value={typeof given === "string" ? given : ""} maxLength={GAP_MAX_CHARS} autoComplete="off" autoCapitalize="off" spellCheck={false} aria-label={t("reading_gap_label").replace("{n}", String(i + 1))} onChange={(e) => readingStore.answer(p, i, e.target.value)} />{after}</legend>
+              <p className="muted">{t("reading_gap_rule")}</p>
+            </> : <>
+              <legend>{i + 1}. {q.question}</legend>
+              {order.map((j) => <label className="reading-option" key={j}><input type="radio" name={`${p.id}-q${i}`} checked={given === j} onChange={() => readingStore.answer(p, i, j)} />{q.options[j]}</label>)}
+            </>}
+            {submitted && <div className="reading-feedback"><p>{t(right ? "reading_correct" : "reading_incorrect").replace("{answer}", q.type === "gap" ? q.accept[0] : q.options[q.answer])}</p><p>{q.explanation}</p><a href={`#reading-p${evidenceParagraph(p, i)}`} onClick={(e) => { e.preventDefault(); document.getElementById(`reading-p${evidenceParagraph(p, i)}`)?.scrollIntoView({ behavior: "smooth", block: "center" }); }}>{t("reading_evidence").replace("{n}", String(evidenceParagraph(p, i)))}</a></div>}
+          </fieldset>
+        </Fragment>;
       })}
       {!submitted && <button className="btn btn-primary" disabled={!allAnswered || !!error} onClick={() => { try { readingStore.submit(p); } catch (e) { setMessage((e as Error).message); } }}>{t("reading_submit")}</button>}
     </div>}

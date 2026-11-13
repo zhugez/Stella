@@ -2,14 +2,16 @@ import { readFile, writeFile, mkdir, readdir } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 
 const root = new URL("../", import.meta.url);
-const ids = (await readdir(new URL("data/reading/", root))).filter((name) => /^reading-[a-z]+-01\.json$/.test(name)).map((name) => name.slice(0, -5)).sort();
+const names = (await readdir(new URL("data/reading/", root))).filter((name) => /^reading-[a-z]+-0[12]\.json$/.test(name));
+// Order by topic, then -01 before -02.
+const ids = names.map((name) => name.slice(0, -5)).sort((a, b) => a.split("-")[1].localeCompare(b.split("-")[1]) || a.localeCompare(b));
 const passages = [];
 for (const id of ids) {
   const p = JSON.parse(await readFile(new URL(`data/reading/${id}.json`, root), "utf8"));
   if (p.id !== id || p.author || !p.paragraphs?.length || !p.questions?.length) throw new Error(`Invalid practice draft: ${id}`);
   passages.push(p);
 }
-if (passages.length !== 19) throw new Error("Expected 19 academic practice drafts. Imported classics remain quarantined in data/reading.");
+if (ids.filter((id) => id.endsWith("-01")).length !== 19) throw new Error("Expected 19 academic practice drafts (reading-<topic>-01). Imported classics remain quarantined in data/reading.");
 const out = new URL("public/atlas/reading/", root);
 await mkdir(out, { recursive: true });
 await writeFile(new URL("passages.json", out), JSON.stringify(passages, null, 2) + "\n");
