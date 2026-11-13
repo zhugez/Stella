@@ -2048,6 +2048,7 @@ code {
 }
 .filters {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 12px;
   margin-bottom: 22px;
   position: relative;
@@ -3145,7 +3146,7 @@ code {
 .heatmap span {
   aspect-ratio: 1;
   border-radius: 4px;
-  background: var(--paper-2);
+  background: color-mix(in oklab, var(--ink) 9%, var(--card));
 }
 .heatmap .h1 {
   background: color-mix(in oklab, var(--sage) 35%, var(--paper-2));
@@ -4316,6 +4317,13 @@ a:hover .mark-needle,
 .passage {
   padding: clamp(20px, 4vw, 36px);
 }
+.reading .passage {
+  max-width: 860px;
+}
+.passage h2 {
+  font: 600 clamp(22px, 3vw, 28px) / 1.2 var(--serif);
+  margin: 0 0 8px;
+}
 .passage-body {
   display: grid;
   gap: 14px;
@@ -4329,15 +4337,14 @@ a:hover .mark-needle,
 }
 .passage-word {
   font: inherit;
-  padding: 0 2px;
-  color: var(--terra-ink);
-  background: var(--mark);
-  border-bottom: 2px solid var(--terra);
-  border-radius: 4px;
-  transition: background-color 0.2s var(--ease);
+  padding: 0;
+  color: inherit;
+  border-bottom: 1px dashed var(--terra);
+  transition: background-color 0.2s var(--ease), color 0.2s var(--ease);
 }
 .passage-word:hover {
-  background: var(--ochre-soft);
+  color: var(--terra-ink);
+  background: var(--mark);
 }
 .passage-actions {
   display: flex;
@@ -4408,4 +4415,45 @@ a:hover .mark-needle,
   display: flex;
   justify-content: center;
   margin-top: 18px;
+}
+
+/* ---- Small screens: first card above the fold, no orphan mode card ---- */
+@media (max-width: 759px) {
+  .atlas-head {
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+  .atlas-head .lede {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .mode-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ---- Touch: 40px+ targets ---- */
+@media (pointer: coarse) {
+  .chip-btn,
+  .segmented button {
+    height: 40px;
+  }
+  .segmented-icons button {
+    width: 40px;
+  }
+  .name-edit,
+  .ex-speak {
+    position: relative;
+  }
+  .name-edit::after,
+  .ex-speak::after {
+    content: "";
+    position: absolute;
+    inset: -7px;
+  }
+  .footer a {
+    display: inline-block;
+    padding: 12px 0;
+  }
 }

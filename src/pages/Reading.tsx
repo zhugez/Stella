@@ -55,7 +55,7 @@ export function Reading() {
       <button className={`chip-btn ${mode === "passage" ? "is-on" : ""}`} aria-pressed={mode === "passage"} onClick={() => setMode("passage")}><BookOpen size={15} /> {t("reading_full_passages")}</button>
       <button className={`chip-btn ${mode === "sentences" ? "is-on" : ""}`} aria-pressed={mode === "sentences"} onClick={() => setMode("sentences")}>{t("reading_topic_sentences")}</button>
     </div>
-    <div className="chips reading-topics">{atlas.topics.map(([key, name]) => <button key={key} className={`chip-btn ${topic === key ? "is-on" : ""}`} aria-pressed={topic === key} onClick={() => { setTopic(key); setSelected(null); }}>{topicLabel(t, name)}</button>)}</div>
+    <div className="chips chips-scroll reading-topics" role="group" aria-label={t("topic_group")}>{atlas.topics.map(([key, name]) => <button key={key} className={`chip-btn ${topic === key ? "is-on" : ""}`} aria-pressed={topic === key} onClick={() => { setTopic(key); setSelected(null); }}>{topicLabel(t, name)}</button>)}</div>
     {mode === "passage" ? <>
       {loadError ? <section className="panel" role="alert"><p>{loadError} {t("reading_no_grading")}</p><button className="btn btn-primary" onClick={() => setReload((n) => n + 1)}>{t("reading_retry")}</button></section> : passages === null ? <p role="status">{t("reading_loading")}</p> : !current ? <p>{t("reading_no_passages")}</p> : <>
         <div className="chips reading-topics">{topicPassages.map((p, i) => <button key={p.id} className={`chip-btn ${current.id === p.id ? "is-on" : ""}`} aria-pressed={current.id === p.id} onClick={() => setSelected(p.id)}>{t("reading_article").replace("{n}", String(i + 1)).replace("{name}", p.author ?? t("reading_academic_overview"))}</button>)}</div>

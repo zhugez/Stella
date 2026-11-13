@@ -32,7 +32,7 @@
 
 | Token Name | Hex Code | Visual Role |
 |---|---|---|
-| **Cosmos Void** | `#0B0F19` | Nền chính sâu thẳm, tạo chiều sâu thị giác tối đa cho chòm sao 3D |
+| **Cosmos Void** | `#0D1120` | Nền chính sâu thẳm, tạo chiều sâu thị giác tối đa cho chòm sao 3D |
 | **Cosmos Surface** | `#131B2E` | Bề mặt thẻ từ, modal, panel điều khiển |
 | **Cosmos Border** | `rgba(255, 255, 255, 0.08)` | Viền kính mờ tinh tế (Frosted glass divider) |
 | **Starlight Gold** | `#F59E0B` | Màu nhấn đặc trưng: Sao mới thắp sáng, chuỗi streak, huy hiệu xuất sắc |
@@ -46,7 +46,7 @@
 ## 4. Typography
 
 - **Headings & Display:** `Fraunces` Variable Serif (Serif ấm áp, cổ điển, mang chiều sâu của thư viện Oxford, hỗ trợ đầy đủ tiếng Việt).
-- **Interface & Body:** `Plus Jakarta Sans` / `-apple-system, BlinkMacSystemFont, Segoe UI` (Hiện đại, nét chữ thoáng đãng, sắc nét trên màn hình Retina).
+- **Interface & Body:** Font hệ thống: `-apple-system, BlinkMacSystemFont, Segoe UI, Roboto` (không tải thêm webfont, sắc nét trên mọi nền tảng).
 - **Phonetics & Code:** `Consolas, Menlo, Monaco` (Hiển thị chính xác các ký hiệu phiên âm IPA).
 
 ---

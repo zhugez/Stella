@@ -4,8 +4,8 @@
   "description": "One word, one canvas. Light up your IELTS.",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#0B0F19",
-  "theme_color": "#0B0F19",
+  "background_color": "#0D1120",
+  "theme_color": "#0D1120",
   "icons": [
     {
       "src": "favicon.svg",
