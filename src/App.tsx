@@ -1,9 +1,10 @@
 import { BookOpen, ChevronLeft, ChevronRight, Compass, Github, Keyboard, Moon, Newspaper, Search, Sun, User } from "lucide-react";
-import { useCallback, useEffect, useRef, useState, lazy, Suspense } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState, lazy, Suspense } from "react";
 import { AtlasContext, useAtlas, useEntry } from "./atlas/context";
 import { loadOpenAtlas, loadPrivateAtlas } from "./atlas/data";
 import type { Atlas } from "./atlas/types";
 import { REPO_URL, SUPPORT_URL } from "./config";
+import { isNoteId, withNotes } from "./lib/notes";
 import { closeWord, currentLocation, go, openWord, useLocation, type Route } from "./lib/router";
 import { AtlasPage } from "./pages/Atlas";
 
@@ -21,6 +22,7 @@ import { EntryView } from "./ui/EntryView";
 import { AmbienceController, AmbiencePicker } from "./ui/Ambience";
 import { LanguagePairPicker } from "./ui/LanguagePairPicker";
 import { Logo } from "./ui/Logo";
+import { NoteSheet } from "./ui/NoteSheet";
 import { Palette } from "./ui/Palette";
 import { Sheet } from "./ui/Sheet";
 import { shouldShowSplash, Splash } from "./ui/Splash";
@@ -55,6 +57,9 @@ export default function App() {
   const [priv, setPriv] = useState<Atlas | null>(null);
   const [error, setError] = useState<string | null>(null);
   const dataset = useStore((s) => s.settings.dataset);
+  const notes = useStore((s) => s.progress.notes);
+  // The atlas the pages see also answers for the learner's notes; it changes only when the notes do.
+  const noted = useMemo(() => (atlas ? withNotes(atlas, notes) : null), [atlas, notes]);
   useTheme();
   const t = useT();
   const lang = useLang();
@@ -90,7 +95,7 @@ export default function App() {
         </button>
       </div>
     );
-  if (!atlas)
+  if (!noted)
     return (
       <div className="boot" aria-busy="true">
         <Logo />
@@ -98,7 +103,7 @@ export default function App() {
       </div>
     );
   return (
-    <AtlasContext.Provider value={atlas}>
+    <AtlasContext.Provider value={noted}>
       <Shell privateAvailable={!!priv} />
     </AtlasContext.Provider>
   );
@@ -222,6 +227,7 @@ function Shell({ privateAvailable }: { privateAvailable: boolean }) {
       )}
 
       <WordSheet id={word} />
+      <NoteSheet />
       <Palette open={palette} onClose={() => setPalette(false)} />
       {!onboarded && route.page !== "about" && !splash && <Onboarding />}
       {splash && <Splash onDone={() => setSplash(false)} />}
@@ -242,7 +248,7 @@ function WordSheet({ id }: { id: string | null }) {
   const ref = id ? atlas.byId.get(id) : undefined;
   const neighbor = useCallback(
     (d: number) => {
-      if (!ref) return;
+      if (!ref || isNoteId(ref.id)) return;
       const n = atlas.words[ref.order + d];
       if (n) go(currentLocation().route, n.id, true);
     },
@@ -267,7 +273,7 @@ function WordSheet({ id }: { id: string | null }) {
       ) : (
         <span className="spinner" />
       )}
-      {ref && (
+      {ref && !isNoteId(ref.id) && (
         <nav className="sheet-nav" aria-label={t("browse_words")}>
           <button className="icon-btn" onClick={() => neighbor(-1)} disabled={ref.order === 0} aria-label={t("previous_word")}>
             <ChevronLeft size={20} />

@@ -6,6 +6,7 @@ import { useT, type TranslationKey } from "../i18n";
 import { play, stopAudio } from "../lib/audio";
 import { burst } from "../lib/burst";
 import { cue } from "../lib/sound";
+import { isNoteId } from "../lib/notes";
 import { go } from "../lib/router";
 import { accepts } from "../lib/spelling";
 import { gap, normalize } from "../lib/text";
@@ -152,7 +153,7 @@ function exIndex(step: QuizStep, entry: Entry, atlas: Atlas): 0 | 1 {
 function StageLabel({ step, session }: { step: QuizStep; session: ActiveSession }) {
   const t = useT();
   const kind = t(step.kind === "picture" && step.plain ? "quiz_cloze" : KIND_LABEL[step.kind]);
-  const final = step.kind === "recall" && !step.retry && session.newIds.includes(step.id);
+  const final = step.kind === "recall" && !step.retry && !step.practice && session.newIds.includes(step.id);
   const text = step.retry ? `${t("review_again")} · ${kind}` : step.practice ? `${t("practice_check")} · ${kind}` : final ? t("final_check") : kind;
   return (
     <p className="stage-label">
@@ -246,7 +247,7 @@ function Quiz({ step, session }: { step: QuizStep; session: ActiveSession }) {
                 viText(entry.senses[0])
               )}
             </p>
-            {sentence && pending && <p className="cloze-zh">{viText(example!)}</p>}
+            {sentence && pending && viText(example!) && <p className="cloze-zh">{viText(example!)}</p>}
           </div>
         )}
         {step.kind === "listen" && (
@@ -436,6 +437,8 @@ function Recall({ step, session }: { step: QuizStep; session: ActiveSession }) {
   useKeys(shown ? { "1": () => choose(false), "2": () => choose(true) } : { Enter: reveal, " ": reveal });
 
   if (!entry) return <span className="spinner" />;
+  const note = isNoteId(entry.id);
+  const ipa = settings.accent === "us" ? entry.us || entry.uk : entry.uk || entry.us;
   return (
     <div className="quiz quiz-recall">
       <StageLabel step={step} session={session} />
@@ -445,19 +448,21 @@ function Recall({ step, session }: { step: QuizStep; session: ActiveSession }) {
             <h2 className="headword" lang="en">
               {entry.w}
             </h2>
-            <Speak url={atlas.audio(entry, settings.accent)} text={entry.w} accent={settings.accent} label={<span className="ipa">{settings.accent === "us" ? entry.us || entry.uk : entry.uk || entry.us}</span>} />
+            <Speak url={atlas.audio(entry, settings.accent)} text={entry.w} accent={settings.accent} label={ipa ? <span className="ipa">{ipa}</span> : undefined} />
           </div>
           {shown ? (
             <div className="recall-answer">
               <Illustration src={atlas.img(entry, "thumb")} word={entry.w} topic={ref.topic} className="recall-art" />
               <div>
                 <p className="recall-gloss">{shortGloss(ref)}</p>
-                <p className="feedback-zh">
-                  {entry.senses
-                    .slice(0, 2)
-                    .map((s) => `${s.pos} ${viText(s)}`)
-                    .join("　")}
-                </p>
+                {!note && (
+                  <p className="feedback-zh">
+                    {entry.senses
+                      .slice(0, 2)
+                      .map((s) => `${s.pos} ${viText(s)}`)
+                      .join("　")}
+                  </p>
+                )}
                 {entry.ex[0] && (
                   <p className="recall-ex" lang="en">
                     <Highlight text={entry.ex[0].en} word={entry.w} />
@@ -494,6 +499,7 @@ function Feedback({ entry, refw, correct, hinted, example, onNext }: { entry: En
   const atlas = useAtlas();
   const btn = useRef<HTMLButtonElement>(null);
   useEffect(() => btn.current?.focus({ preventScroll: true }), []);
+  const note = isNoteId(entry.id);
   return (
     <div className={`feedback ${correct ? "is-right" : "is-wrong"}`} role="status">
       <div className="feedback-inner">
@@ -505,12 +511,14 @@ function Feedback({ entry, refw, correct, hinted, example, onNext }: { entry: En
             <span className="ipa">{entry.uk || entry.us}</span>
           </p>
           <p className="feedback-gloss">{shortGloss(refw)}</p>
-          <p className="feedback-zh">
-            {entry.senses
-              .slice(0, 2)
-              .map((s) => `${s.pos} ${viText(s)}`)
-              .join("　")}
-          </p>
+          {!note && (
+            <p className="feedback-zh">
+              {entry.senses
+                .slice(0, 2)
+                .map((s) => `${s.pos} ${viText(s)}`)
+                .join("　")}
+            </p>
+          )}
           {example && (
             <p className="feedback-ex" lang="en">
               <Highlight text={example.en} word={entry.w} />

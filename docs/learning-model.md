@@ -26,6 +26,14 @@ Dạng bài thay đổi theo độ ổn định FSRS của từ (`card.s`, tính
 
 Khi từ đã ổn định (`s >= 4`) hoặc khi chuyển sang câu ví dụ thứ hai (`ex = 1`), tranh minh họa sẽ được ẩn (`plain: true`) để tránh việc người học ghi nhớ mẹo dựa vào tranh thay vì từ vựng.
 
+### Từ ghi chú của người học
+
+- Khi đọc, người học bấm vào một từ chưa có trong atlas và tự gõ nghĩa tiếng Việt, câu chứa từ và từ loại (không bắt buộc). Dữ liệu này nằm trong `Progress.notes` (id dạng `u:từ`), đi cùng bản sao lưu và không có hình, không có AI, không gọi mạng.
+- Từ ghi chú chưa học luôn được xếp trước tiên trong `nextNew` (cũ nhất trước), rồi mới đến từ đã lưu và lộ trình CEFR. Chúng được tính vào `dailyNew` của ngày.
+- Âm thanh dùng giọng đọc của thiết bị (`speechSynthesis`), vì không có bản ghi sẵn.
+- Dạng bài bị giới hạn vì không có đáp án nhiễu và không có audio câu: luôn có `recall`; từ `c.s >= 2` thêm `spell` (nếu bật chính tả) và `picture` dạng điền câu (nếu có câu chứa từ, không hình). Không bao giờ dùng `meaning`, `listen`, `dictation`.
+- Dự kiến sau này: gợi ý nghĩa bằng AI, người học vẫn là người xác nhận.
+
 ## 3. Quy tắc chấm điểm và FSRS (`gradeFor`)
 
 Stella sử dụng thuật toán FSRS (`ts-fsrs`, mục tiêu mặc định 90%):

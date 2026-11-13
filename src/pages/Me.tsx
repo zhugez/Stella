@@ -1,12 +1,14 @@
-import { Download, Pencil, RotateCcw, Sparkles, Upload } from "lucide-react";
+import { Download, Pencil, Plus, RotateCcw, Sparkles, Trash2, Upload } from "lucide-react";
 import { useMemo, useRef, useState } from "react";
 import { useAtlas } from "../atlas/context";
 import { tr, useT, type TranslationKey } from "../i18n";
 import { weakWords } from "../lib/drills";
 import { go, openWord } from "../lib/router";
 import { buildSession, masteredCount, rememberedCount, retentionStats, streakOf } from "../store/session";
-import { dayKey, exportBackup, importBackup, resetProgress, store, useStore, type Settings } from "../store/store";
+import { formatInterval } from "../store/srs";
+import { dayKey, deleteNote, exportBackup, importBackup, resetProgress, store, useStore, type Settings } from "../store/store";
 import { Illustration } from "../ui/Illustration";
+import { openNoteSheet } from "../ui/NoteSheet";
 import { toast } from "../ui/Toast";
 
 export function Me({ privateAvailable: _privateAvailable }: { privateAvailable: boolean }) {
@@ -197,6 +199,8 @@ export function Me({ privateAvailable: _privateAvailable }: { privateAvailable: 
 
         <WeakWords />
 
+        <NotesPanel />
+
         <section className="panel settings">
           <h3 className="eyebrow">{t("settings_title")}</h3>
           <Field label={t("setting_daily_new")} hint={t("setting_daily_new_hint")}>
@@ -330,6 +334,52 @@ function WeakWords() {
       )}
       <button className="btn btn-ghost" onClick={drill} disabled={!ids.length}>
         <Sparkles size={18} /> {ids.length ? t("drill_these").replace("{n}", String(ids.length)) : t("drill_these_none")}
+      </button>
+    </section>
+  );
+}
+
+function NotesPanel() {
+  const t = useT();
+  const notes = useStore((s) => s.progress.notes);
+  const cards = useStore((s) => s.progress.cards);
+  const remove = (id: string) => {
+    if (confirm(t("note_delete_confirm")) && !deleteNote(id)) toast(t("drill_finish_first"), "warn");
+  };
+  return (
+    <section className="panel notes-panel">
+      <div className="panel-head">
+        <h3 className="eyebrow">{t("notes_title")}</h3>
+        <span className="muted">{notes.length}</span>
+      </div>
+      {notes.length ? (
+        <ul>
+          {[...notes]
+            .sort((a, b) => b.added - a.added)
+            .map((n) => {
+              const card = cards[n.id];
+              return (
+                <li key={n.id}>
+                  <button onClick={() => openWord(n.id)}>
+                    <b lang="en">{n.w}</b>
+                    <small lang="vi">{`${n.pos ?? ""} ${n.vi}`.trim()}</small>
+                  </button>
+                  <em>{card ? formatInterval(Math.max(0, card.due - Date.now()), t) : t("note_not_learned")}</em>
+                  <button className="icon-btn" onClick={() => openNoteSheet({ word: n.w, vi: n.vi, pos: n.pos, ctx: n.ctx, src: n.src, from: n.id })} aria-label={`${t("note_edit")}: ${n.w}`} title={t("note_edit")}>
+                    <Pencil size={17} />
+                  </button>
+                  <button className="icon-btn" onClick={() => remove(n.id)} aria-label={`${t("note_delete")}: ${n.w}`} title={t("note_delete")}>
+                    <Trash2 size={17} />
+                  </button>
+                </li>
+              );
+            })}
+        </ul>
+      ) : (
+        <p className="muted">{t("notes_empty")}</p>
+      )}
+      <button className="btn btn-ghost" onClick={() => openNoteSheet({ word: "" })}>
+        <Plus size={18} /> {t("note_add")}
       </button>
     </section>
   );

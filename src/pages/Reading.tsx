@@ -5,9 +5,12 @@ import type { Entry } from "../atlas/types";
 import { topicLabel, tr, useT } from "../i18n";
 import { passage } from "../lib/drills";
 import { evidenceParagraph, GAP_MAX_CHARS, gapCorrect, isAnswered, optionOrder, parsePassages, type ReadingPassage } from "../lib/reading";
+import { findHeadword, noteId, sentenceAt } from "../lib/notes";
 import { go, openWord } from "../lib/router";
 import { shuffle, splitHighlight } from "../lib/text";
 import { readingKey, readingStore, useReadingProgress } from "../store/reading";
+import { useStore } from "../store/store";
+import { openNoteSheet } from "../ui/NoteSheet";
 
 const BASE = import.meta.env.BASE_URL.replace(/\/$/, "");
 
@@ -70,6 +73,30 @@ export function Reading() {
   </div>;
 }
 
+/** Every word of 3+ letters is a button: a known headword opens its card, any other word opens the note sheet. `vocab` maps the highlighted forms to atlas ids. */
+function Words({ text, vocab, source }: { text: string; vocab?: Map<string, string>; source?: string }) {
+  const t = useT();
+  const atlas = useAtlas();
+  const notes = useStore((s) => s.progress.notes);
+  const pick = (word: string, at: number, known?: string) => {
+    const id = known ?? findHeadword(atlas, word);
+    if (id) return openWord(id);
+    const lower = word.toLowerCase();
+    const old = notes.find((n) => n.id === noteId(lower));
+    // Opening the sheet is a lookup like any other, so the attempt counts as assisted.
+    window.dispatchEvent(new Event("stella:dictionary"));
+    openNoteSheet({ word: lower, vi: old?.vi, pos: old?.pos, ctx: sentenceAt(text, at).trim(), src: source, from: old?.id });
+  };
+  let at = 0;
+  return <>{text.split(/([a-zA-Z]{3,})/g).map((part, j) => {
+    const start = at;
+    at += part.length;
+    if (j % 2 === 0) return part;
+    const known = vocab?.get(part.toLowerCase());
+    return <button key={j} className={known ? "passage-word" : "passage-token"} onClick={() => pick(part, start, known)} title={known ? t("open_card").replace("{word}", part) : undefined}>{part}</button>;
+  })}</>;
+}
+
 function Reader({ passage: p }: { passage: ReadingPassage }) {
   const t = useT();
   const atlas = useAtlas();
@@ -99,7 +126,7 @@ function Reader({ passage: p }: { passage: ReadingPassage }) {
     {p.source && <p className="muted">{t("reading_source").replace("{source}", p.source)}</p>}
     <p className="muted">{t("reading_draft")} {supported ? t("reading_submit_note") : t("reading_explore_only")}</p>
     {error && <p role="alert">{error}</p>}
-    <div className="passage-body">{p.paragraphs.map((text, i) => <p className="passage-line" lang="en" id={`reading-p${i + 1}`} key={i}><span className="muted">[{i + 1}] </span>{text.split(/([a-zA-Z]{3,})/g).map((word, j) => { const id = vocab.get(word.toLowerCase()); return id ? <button key={j} className="passage-word" onClick={() => lookup(id)} title={t("open_card").replace("{word}", word)}>{word}</button> : word; })}</p>)}</div>
+    <div className="passage-body">{p.paragraphs.map((text, i) => <p className="passage-line" lang="en" id={`reading-p${i + 1}`} key={i}><span className="muted">[{i + 1}] </span><Words text={text} vocab={vocab} source={p.title} /></p>)}</div>
     <div className="passage-actions">{p.vocabulary.filter((v) => atlas.byId.has(v.id)).slice(0, 30).map((v) => <button className="chip-btn" key={v.id} onClick={() => lookup(v.id)}>{v.word}</button>)}</div>
     {supported && <div className="reading-questions">
       <h3>{t("reading_questions_title")}</h3>
@@ -136,7 +163,6 @@ function Reader({ passage: p }: { passage: ReadingPassage }) {
 }
 
 function Line({ entry }: { entry: Entry }) {
-  const t = useT();
   const parts = splitHighlight(entry.ex[0].en, entry.w);
-  return <p className="passage-line" lang="en">{parts ? <>{parts[0]}<button className="passage-word" onClick={() => openWord(entry.id)} title={t("open_card").replace("{word}", entry.w)}>{parts[1]}</button>{parts[2]}</> : entry.ex[0].en}</p>;
+  return <p className="passage-line" lang="en"><Words text={entry.ex[0].en} vocab={parts ? new Map([[parts[1].toLowerCase(), entry.id]]) : undefined} /></p>;
 }

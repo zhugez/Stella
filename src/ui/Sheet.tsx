@@ -44,7 +44,7 @@ export function Sheet({
     };
     document.addEventListener("keydown", onKey);
     document.documentElement.classList.add("is-locked");
-    requestAnimationFrame(() => panel.current?.focus({ preventScroll: true }));
+    requestAnimationFrame(() => (panel.current?.querySelector<HTMLElement>("[data-autofocus]") ?? panel.current)?.focus({ preventScroll: true }));
     return () => {
       document.removeEventListener("keydown", onKey);
       document.documentElement.classList.remove("is-locked");

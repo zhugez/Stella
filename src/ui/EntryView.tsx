@@ -1,14 +1,17 @@
-import { Bookmark, BookmarkCheck, Lightbulb, Share2 } from "lucide-react";
+import { Bookmark, BookmarkCheck, Lightbulb, Pencil, Share2, Trash2 } from "lucide-react";
 import type { Entry, WordRef } from "../atlas/types";
 import { useAtlas } from "../atlas/context";
 import { topicLabel, useT } from "../i18n";
+import { isNoteId } from "../lib/notes";
 import { splitHighlight, splitPair } from "../lib/text";
 import { formatInterval, isMastered } from "../store/srs";
-import { toggleBookmark, useStore } from "../store/store";
+import { deleteNote, toggleBookmark, useStore } from "../store/store";
 import { Illustration } from "./Illustration";
+import { openNoteSheet } from "./NoteSheet";
 import { Speak } from "./Speak";
 import { shareWord } from "./share";
-import { openWord } from "../lib/router";
+import { toast } from "./Toast";
+import { closeWord, openWord } from "../lib/router";
 
 export function Highlight({ text, word }: { text: string; word: string }) {
   const parts = splitHighlight(text, word);
@@ -58,6 +61,7 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
   const ref = atlas.byId.get(entry.id);
   const card = useStore((s) => s.progress.cards[entry.id]);
   const saved = useStore((s) => s.progress.bookmarks.includes(entry.id));
+  const note = useStore((s) => s.progress.notes.find((n) => n.id === entry.id));
   const accent = useStore((s) => s.settings.accent);
   const topicIdx = atlas.topics.findIndex((tp) => tp[0] === entry.topic);
   const topic = atlas.topics[topicIdx];
@@ -67,6 +71,16 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
     const hit = atlas.words.find((x) => x.word.toLowerCase() === w);
     return { label: f, id: hit?.id };
   });
+  const editNote = () => {
+    if (!note) return;
+    closeWord();
+    openNoteSheet({ word: note.w, vi: note.vi, pos: note.pos, ctx: note.ctx, src: note.src, from: note.id });
+  };
+  const removeNote = () => {
+    if (!confirm(t("note_delete_confirm"))) return;
+    if (deleteNote(entry.id)) closeWord();
+    else toast(t("drill_finish_first"), "warn");
+  };
   const status = card ? (isMastered(card) ? "mastered" : "learning") : null;
 
   const langPair = useStore((s) => s.settings.langPair || "en-vi");
@@ -76,16 +90,26 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
   return (
     <article className={`entry entry-${mode}`}>
       <div className="entry-art">
-        <Illustration src={atlas.img(entry)} word={entry.w} topic={topicIdx} eager={eager} alt={t("illustration_alt").replace("{word}", isFr ? (entry.fr_word || entry.w) : isZh ? (entry.zh_word || entry.w) : entry.w)} />
+        <Illustration src={atlas.img(entry)} word={entry.w} topic={Math.max(0, topicIdx)} eager={eager} alt={t("illustration_alt").replace("{word}", isFr ? (entry.fr_word || entry.w) : isZh ? (entry.zh_word || entry.w) : entry.w)} />
       </div>
       <div className="entry-body">
         <header className="entry-head">
           <div className="entry-tags">
-            <span className={`chip chip-level lv-${entry.cefr}`}>{entry.cefr}</span>
+            {note ? <span className="chip">{t("note_chip")}</span> : <span className={`chip chip-level lv-${entry.cefr}`}>{entry.cefr}</span>}
             {topic && <span className="chip">{topicLabel(t, topic[1])}</span>}
             {status && <span className={`chip chip-status ${status === "mastered" ? "is-done" : ""}`}>{t(status === "mastered" ? "status_mastered" : "status_learning")}</span>}
           </div>
-          {mode === "detail" && (
+          {mode === "detail" && note && (
+            <div className="entry-actions">
+              <button className="icon-btn" onClick={editNote} aria-label={t("note_edit")} title={t("note_edit")}>
+                <Pencil size={19} />
+              </button>
+              <button className="icon-btn" onClick={removeNote} aria-label={t("note_delete")} title={t("note_delete")}>
+                <Trash2 size={19} />
+              </button>
+            </div>
+          )}
+          {mode === "detail" && !note && (
             <div className="entry-actions">
               <button className={`icon-btn ${saved ? "is-on" : ""}`} onClick={() => toggleBookmark(entry.id)} aria-pressed={saved} aria-label={saved ? t("remove_bookmark") : t("save_word")} title={saved ? t("remove_bookmark") : t("save_word")}>
                 {saved ? <BookmarkCheck size={19} /> : <Bookmark size={19} />}
@@ -96,7 +120,7 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
             </div>
           )}
         </header>
-        {ref && (
+        {ref && !note && (
           <p className="specimen">
             № {String(ref.order + 1).padStart(4, "0")}
             <i />
@@ -127,7 +151,7 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
           </p>
         )}
         <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "8px" }}>
-          <Pronounce entry={entry} refw={ref ?? entry} />
+          {isNoteId(entry.id) ? <Speak url={null} text={entry.w} accent={accent} size="sm" label={<span>{t("note_device_voice")}</span>} /> : <Pronounce entry={entry} refw={ref ?? entry} />}
           {isFr && entry.fr_audio && (
             <Speak url={entry.fr_audio} text={entry.fr_word || entry.w} accent="uk" size="sm" label="FR (Français)" />
           )}

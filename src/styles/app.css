@@ -4433,6 +4433,20 @@ a:hover .mark-needle,
   color: var(--terra-ink);
   background: var(--mark);
 }
+/* Words that are not in the atlas: plain until hovered or focused, so the passage stays readable. */
+.passage-token {
+  font: inherit;
+  padding: 0;
+  color: inherit;
+  border-radius: 3px;
+  transition: background-color 0.2s var(--ease), color 0.2s var(--ease);
+}
+.passage-token:hover,
+.passage-token:focus-visible {
+  color: var(--terra-ink);
+  background: var(--mark);
+  text-decoration: underline dotted;
+}
 .passage-actions {
   display: flex;
   flex-wrap: wrap;
@@ -4613,4 +4627,94 @@ a:hover .mark-needle,
   color: inherit;
   font-weight: 600;
   padding: 0 1px;
+}
+
+/* ---- Notes: learner-added words ---- */
+.note-form {
+  display: grid;
+  gap: 16px;
+}
+.note-field {
+  display: grid;
+  gap: 6px;
+}
+.note-field > span {
+  font: 600 12px var(--sans);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.note-field input,
+.note-field textarea,
+.note-field select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--line-strong);
+  background: var(--card);
+}
+.note-field textarea {
+  resize: vertical;
+}
+.note-field small {
+  color: var(--ink-3);
+  font-size: 12.5px;
+}
+.note-source {
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: var(--card-2);
+  font: 400 16px / 1.55 var(--serif);
+  color: var(--ink-2);
+}
+.note-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+.note-actions .muted {
+  flex: 1;
+  min-width: 8ch;
+}
+.notes-panel ul {
+  list-style: none;
+  margin: 14px 0 18px;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+}
+.notes-panel li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 8px;
+  border-radius: 14px;
+}
+.notes-panel li:hover {
+  background: var(--card-2);
+}
+.notes-panel li > button:first-child {
+  flex: 1;
+  min-width: 0;
+  display: grid;
+  gap: 2px;
+  text-align: left;
+}
+.notes-panel li b {
+  font: 600 16px var(--serif);
+}
+.notes-panel li small {
+  color: var(--ink-3);
+  font-size: 12.5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.notes-panel li em {
+  font: 500 12.5px var(--mono);
+  font-style: normal;
+  color: var(--ink-3);
+  white-space: nowrap;
 }

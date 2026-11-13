@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { bumpDay, dayKey, emptyProgress, sanitizeProgress, sanitizeSettings } from "./store";
+import { bumpDay, dayKey, deleteNote, emptyProgress, saveNote, sanitizeProgress, sanitizeSettings, store } from "./store";
 
 const card = { due: 1, s: 2, d: 5, el: 0, sd: 1, ls: 0, reps: 1, lapses: 0, st: 2, seen: 1 };
 
@@ -71,4 +71,69 @@ test("bumpDay treats a missing session count as 0 and always writes it", () => {
   assert.equal(done.days[dayKey()].s, 1);
   const old = { ...p, days: { [dayKey()]: { n: 0, r: 0, c: 0, t: 0 } } };
   assert.equal(bumpDay(old, { s: 1 }).days[dayKey()].s, 1);
+});
+
+const note = { id: "u:salt", w: "salt", vi: "muối", pos: "n.", ctx: "Pass the salt.", src: "Dinner", added: 5 };
+
+test("keeps valid notes, drops bad ones, caps strings and removes duplicates", () => {
+  const long = "x".repeat(900);
+  const p = sanitizeProgress(
+    {
+      version: 2,
+      notes: [
+        note,
+        { ...note, vi: "again" },
+        { ...note, id: "u:other" },
+        { ...note, id: "u:pepper", w: "pepper", vi: "   " },
+        { ...note, id: "u:cumin", w: "cumin", added: -1 },
+        { id: "u:a", w: "a", vi: 3, added: 1 },
+        "nope",
+        { id: "u:long", w: "long", vi: long, ctx: long, src: long, pos: long, added: 1 },
+      ],
+    },
+    "x",
+  );
+  assert.deepEqual(p.notes.map((n) => n.id), ["u:salt", "u:long"]);
+  assert.equal(p.notes[0].vi, "muối");
+  assert.deepEqual([p.notes[1].vi.length, p.notes[1].ctx!.length, p.notes[1].src!.length, p.notes[1].pos!.length], [120, 400, 80, 8]);
+  const many = Array.from({ length: 2100 }, (_, i) => ({ ...note, id: `u:w${i}`, w: `w${i}` }));
+  assert.equal(sanitizeProgress({ version: 2, notes: many }, "x").notes.length, 2000);
+});
+
+test("progress without notes, as in older backups, loads with an empty list", () => {
+  assert.deepEqual(sanitizeProgress({ version: 2, cards: { ok: card } }, "x").notes, []);
+  assert.deepEqual(sanitizeProgress({ version: 2, notes: "x" }, "x").notes, []);
+  assert.deepEqual(emptyProgress("x").notes, []);
+});
+
+test("saveNote updates in place, keeps the first added time and moves the card on a rename; deleteNote removes the rest", () => {
+  const storage = new Map<string, string>();
+  Object.assign(globalThis, {
+    window: { clearTimeout() {}, setTimeout() { return 0; } },
+    localStorage: { getItem: (k: string) => storage.get(k) ?? null, setItem: (k: string, v: string) => storage.set(k, v) },
+  });
+  store.progress(() => ({ ...emptyProgress("notes-test"), cards: { "u:salt": { ...card, st: 2 as const }, keep: { ...card, st: 2 as const } }, bookmarks: ["u:salt", "keep"], mistakes: ["u:salt"] }));
+  assert.equal(saveNote(note), true);
+  assert.equal(saveNote({ ...note, vi: "muối ăn", added: 99 }), true);
+  assert.deepEqual(store.get().progress.notes, [{ ...note, vi: "muối ăn" }]);
+  assert.equal(saveNote({ ...note, id: "u:sea-salt", w: "sea salt", added: 99 }, "u:salt"), true);
+  const moved = store.get().progress;
+  assert.deepEqual(moved.notes.map((n) => [n.id, n.added]), [["u:sea-salt", 5]]);
+  assert.deepEqual(Object.keys(moved.cards).sort(), ["keep", "u:sea-salt"]);
+  assert.deepEqual([moved.bookmarks, moved.mistakes], [["u:sea-salt", "keep"], ["u:sea-salt"]]);
+  assert.equal(deleteNote("u:sea-salt"), true);
+  const gone = store.get().progress;
+  assert.deepEqual([gone.notes, Object.keys(gone.cards), gone.bookmarks, gone.mistakes], [[], ["keep"], ["keep"], []]);
+});
+
+test("a note used by the unfinished session cannot be renamed or deleted, but can be edited", () => {
+  const step = { id: "u:salt", kind: "intro" as const };
+  const session = { id: "s", started: 1, steps: [step], index: 0, graded: {}, newIds: ["u:salt"], reviewIds: [] };
+  store.progress(() => ({ ...emptyProgress("notes-test"), notes: [note], session }));
+  assert.equal(deleteNote("u:salt"), false);
+  assert.equal(saveNote({ ...note, id: "u:pepper", w: "pepper" }, "u:salt"), false);
+  assert.equal(saveNote({ ...note, vi: "mới" }), true);
+  assert.equal(store.get().progress.notes[0].vi, "mới");
+  store.progress((p) => ({ ...p, session: { ...session, finished: 2 } }));
+  assert.equal(deleteNote("u:salt"), true);
 });

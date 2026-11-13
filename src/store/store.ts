@@ -1,6 +1,7 @@
 import { useSyncExternalStore } from "react";
 import type { Accent } from "../atlas/types";
 import type { TranslationKey } from "../i18n";
+import { NOTE_LIMITS, NOTE_MAX, noteId } from "../lib/notes";
 import type { CardState, Grade } from "./srs";
 
 export type QuizKind = "meaning" | "picture" | "listen" | "spell" | "recall" | "dictation";
@@ -62,11 +63,26 @@ export interface TypingRound {
   accuracy: number;
 }
 
+/** A word the learner added from a reading; the meaning is their own. */
+export interface Note {
+  /** "u:" + the word, see noteId. */
+  id: string;
+  w: string;
+  vi: string;
+  pos?: string;
+  /** The sentence where the learner met the word. */
+  ctx?: string;
+  /** Where that sentence came from, e.g. the passage title. */
+  src?: string;
+  added: number;
+}
+
 export interface Progress {
   version: 2;
   datasetId: string;
   cards: Record<string, CardState>;
   bookmarks: string[];
+  notes: Note[];
   days: Record<string, DayStat>;
   typing: TypingRound[];
   session: ActiveSession | null;
@@ -125,6 +141,7 @@ export const emptyProgress = (datasetId: string): Progress => ({
   datasetId,
   cards: {},
   bookmarks: [],
+  notes: [],
   days: {},
   typing: [],
   session: null,
@@ -177,12 +194,32 @@ function validCard(v: unknown): v is CardState {
   );
 }
 
+function validNote(v: unknown): Note | null {
+  if (!isObj(v) || typeof v.w !== "string" || typeof v.vi !== "string" || typeof v.id !== "string" || !num(v.added, 0)) return null;
+  const note: Note = { id: v.id, w: v.w.slice(0, NOTE_LIMITS.w), vi: v.vi.slice(0, NOTE_LIMITS.vi), added: v.added as number };
+  if (!note.w.trim() || !note.vi.trim() || note.id !== noteId(note.w)) return null;
+  if (typeof v.pos === "string") note.pos = v.pos.slice(0, NOTE_LIMITS.pos);
+  if (typeof v.ctx === "string") note.ctx = v.ctx.slice(0, NOTE_LIMITS.ctx);
+  if (typeof v.src === "string") note.src = v.src.slice(0, NOTE_LIMITS.src);
+  return note;
+}
+
 export function sanitizeProgress(v: unknown, datasetId: string): Progress {
   const out = emptyProgress(datasetId);
   if (!isObj(v) || v.version !== 2) return out;
   if (isObj(v.cards)) for (const [k, c] of Object.entries(v.cards)) if (validCard(c)) out.cards[k] = c;
   if (Array.isArray(v.bookmarks)) out.bookmarks = v.bookmarks.filter((x): x is string => typeof x === "string").slice(0, 20000);
   if (Array.isArray(v.mistakes)) out.mistakes = v.mistakes.filter((x): x is string => typeof x === "string").slice(0, 300);
+  if (Array.isArray(v.notes)) {
+    const seen = new Set<string>();
+    for (const raw of v.notes) {
+      const note = validNote(raw);
+      if (note && !seen.has(note.id) && seen.size < NOTE_MAX) {
+        seen.add(note.id);
+        out.notes.push(note);
+      }
+    }
+  }
   if (isObj(v.days))
     for (const [k, d] of Object.entries(v.days))
       if (/^\d{4}-\d{2}-\d{2}$/.test(k) && isObj(d) && num(d.n, 0) && num(d.r, 0) && num(d.c, 0) && num(d.t, 0))
@@ -337,6 +374,37 @@ export function toggleBookmark(id: string) {
     ...p,
     bookmarks: p.bookmarks.includes(id) ? p.bookmarks.filter((x) => x !== id) : [id, ...p.bookmarks],
   }));
+}
+
+/** A note in an unfinished session cannot go: the session would point at a word that no longer exists. */
+const inActiveSession = (p: Progress, id: string) => !!p.session && !p.session.finished && p.session.steps.some((x) => x.id === id);
+
+/** Add or update a note. `from` is the id it had before an edit; a renamed note keeps its card, bookmark and mistake. Returns false when the rename would break the running session. */
+export function saveNote(note: Note, from = note.id): boolean {
+  if (from !== note.id && inActiveSession(store.get().progress, from)) return false;
+  store.progress((p) => {
+    const old = p.notes.find((n) => n.id === from) ?? p.notes.find((n) => n.id === note.id);
+    const move = (id: string) => (id === from ? note.id : id);
+    const { [from]: moved, ...cards } = p.cards;
+    return {
+      ...p,
+      notes: [...p.notes.filter((n) => n.id !== from && n.id !== note.id), { ...note, added: old?.added ?? note.added }],
+      cards: from === note.id ? p.cards : { ...cards, ...(moved && !cards[note.id] ? { [note.id]: moved } : {}) },
+      bookmarks: [...new Set(p.bookmarks.map(move))],
+      mistakes: [...new Set(p.mistakes.map(move))],
+    };
+  });
+  return true;
+}
+
+/** Remove a note with its card, bookmark and mistake. Returns false while the running session still uses it. */
+export function deleteNote(id: string): boolean {
+  if (inActiveSession(store.get().progress, id)) return false;
+  store.progress((p) => {
+    const { [id]: _card, ...cards } = p.cards;
+    return { ...p, notes: p.notes.filter((n) => n.id !== id), cards, bookmarks: p.bookmarks.filter((x) => x !== id), mistakes: p.mistakes.filter((x) => x !== id) };
+  });
+  return true;
 }
 
 /* ---------- backup ---------- */

@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { test } from "node:test";
 import type { Atlas, WordRef } from "../atlas/types";
 import { MEDIA } from "../atlas/types";
+import { makeNote, noteRef, withNotes } from "../lib/notes";
 import { answer, advance, buildSession, distractors, gradeFor, nextNew, quizKind, rememberedCount, retentionStats, sessionStats, streakOf } from "./session";
 import { Rating, type CardState } from "./srs";
 import { defaultSettings, emptyProgress, exportBackup, importBackup, sanitizeProgress, store, type ActiveSession, type QuizKind, type Step } from "./store";
@@ -275,4 +276,96 @@ test("rememberedCount and retentionStats measure retrievability and review reten
   const rStats = retentionStats(p.log, now, 30);
   assert.deepEqual(rStats.recall, { n: 2, ok: 1 });
   assert.deepEqual(rStats.choice, { n: 1, ok: 1 });
+});
+
+const saltNote = makeNote("salt", "muối", "Pass the salt, please.", "Dinner", "n.");
+const pepperNote = { ...makeNote("pepper", "hạt tiêu"), added: saltNote.added - 10 };
+// Reading the gloss of an atlas word is what `distractors` does first, so any call for a note throws.
+const trapped = makeAtlas(["one", "two", "three", "four"].map((id) => [id, `n. ${id}`]));
+trapped.words.forEach((w) => Object.defineProperty(w, "zh", { get: () => assert.fail("distractors ran for a note") }));
+const noteAtlas = withNotes(trapped, [saltNote, pepperNote]);
+
+test("nextNew puts unlearned notes first (oldest first), then bookmarks, then the path", () => {
+  const p = emptyProgress("x");
+  p.notes = [saltNote, pepperNote];
+  p.bookmarks = ["three"];
+  assert.deepEqual(nextNew(noteAtlas, p, defaultSettings, 4), ["u:pepper", "u:salt", "three", "one"]);
+  assert.deepEqual(nextNew(noteAtlas, p, defaultSettings, 1), ["u:pepper"]);
+  p.cards["u:pepper"] = card(1);
+  assert.deepEqual(nextNew(noteAtlas, p, defaultSettings, 2), ["u:salt", "three"]);
+});
+
+test("quizKind for a note is recall, plus spell and a cloze once the memory holds, never choice or audio kinds", () => {
+  const ref = noteRef(saltNote, 4);
+  const kindsAt = (cardS: number | null, spell: boolean, notes = [saltNote]) => {
+    const p = emptyProgress("x");
+    p.notes = notes;
+    if (cardS !== null) p.cards[ref.id] = card(cardS);
+    return new Set(Array.from({ length: 300 }, (_, i) => quizKind(ref, p, { ...defaultSettings, spell }, i)));
+  };
+  assert.deepEqual([...kindsAt(null, true)], ["recall"]);
+  assert.deepEqual([...kindsAt(1.9, true)], ["recall"]);
+  assert.deepEqual([...kindsAt(3, false)].sort(), ["picture", "recall"]);
+  assert.deepEqual([...kindsAt(6, true)].sort(), ["picture", "recall", "spell"]);
+  assert.deepEqual([...kindsAt(6, true, [{ ...saltNote, ctx: undefined }])].sort(), ["recall", "spell"]);
+  // The sentence must contain the word, or there is nothing to blank.
+  assert.deepEqual([...kindsAt(6, false, [{ ...saltNote, ctx: "Nothing here." }])], ["recall"]);
+});
+
+test("a session with a note is intro, recall check, recall and never asks for distractors", () => {
+  const p = emptyProgress("session-test");
+  p.notes = [saltNote];
+  const s = buildSession(noteAtlas, p, { ...defaultSettings, dailyNew: 1 });
+  assert.deepEqual(s.newIds, ["u:salt"]);
+  assert.deepEqual(
+    s.steps.map((x) => (x.kind === "intro" ? "intro" : `${x.kind}${x.practice ? "-practice" : ""}`)),
+    ["intro", "recall-practice", "recall"],
+  );
+  assert.ok(s.steps.every((x) => x.kind === "intro" || !x.options));
+});
+
+test("reviewing a note builds only recall, spell or a four-option cloze without an image", () => {
+  const p = emptyProgress("session-test");
+  p.notes = [saltNote];
+  p.cards["u:salt"] = card(6);
+  const kinds = new Set<string>();
+  const realNow = Date.now;
+  try {
+    for (let i = 0; i < 40; i++) {
+      // The session seed is the clock; fixed seeds keep this test repeatable.
+      Date.now = () => 1_700_000_000_000 + i;
+      const s = buildSession(noteAtlas, p, { ...defaultSettings, dailyNew: 0 }, { reviewOnly: true });
+      const step = s.steps[0];
+      kinds.add(step.kind);
+      if (step.kind === "intro") assert.fail("reviews have no intro");
+      assert.ok(["recall", "spell", "picture"].includes(step.kind));
+      if (step.kind === "picture") {
+        assert.equal(step.plain, true);
+        assert.equal(step.options!.length, 4);
+        assert.ok(step.options!.includes("u:salt"));
+        assert.equal(new Set(step.options).size, 4);
+      } else assert.equal(step.options, undefined);
+    }
+  } finally {
+    Date.now = realNow;
+  }
+  assert.deepEqual([...kinds].sort(), ["picture", "recall", "spell"]);
+});
+
+test("answering a note creates a card and a log entry; a wrong answer retries with recall, not choices", () => {
+  const p = emptyProgress("note-answer");
+  p.notes = [saltNote];
+  const s = buildSession(noteAtlas, p, { ...defaultSettings, dailyNew: 1 });
+  s.index = 2;
+  store.progress(() => ({ ...p, session: s }));
+  const recall = current() as Step & { kind: QuizKind };
+  assert.equal(recall.kind, "recall");
+  answer(noteAtlas, recall, false, Rating.Again, "forgot", 2000);
+  const after = store.get().progress;
+  assert.deepEqual(Object.keys(after.cards), ["u:salt"]);
+  assert.deepEqual(after.log.map((l) => [l.id, l.k, l.g]), [["u:salt", "recall", Rating.Again]]);
+  assert.deepEqual(after.mistakes, ["u:salt"]);
+  assert.equal(Object.values(after.days)[0].n, 1);
+  const retry = after.session!.steps[3];
+  assert.ok(retry.kind === "recall" && retry.retry && !retry.options);
 });

@@ -12,14 +12,15 @@ import { detectQuality, GalaxyEngine } from "./engine";
 import { layoutGalaxy, TOPIC_COLORS, type GalaxyLayout } from "./layout";
 import { shareGalaxy } from "./share";
 
+// Keyed by the word list: adding a note makes a new atlas object but the same words.
 const layouts = new WeakMap<object, GalaxyLayout>();
 export function useGalaxyLayout() {
   const atlas = useAtlas();
   return useMemo(() => {
-    let l = layouts.get(atlas);
+    let l = layouts.get(atlas.words);
     if (!l) {
       l = layoutGalaxy(atlas);
-      layouts.set(atlas, l);
+      layouts.set(atlas.words, l);
     }
     return l;
   }, [atlas]);
@@ -374,7 +375,7 @@ export function Galaxy({
         <button
           className="icon-btn"
           onClick={() => {
-            const ids = Object.keys(cards);
+            const ids = Object.keys(cards).filter((id) => layout.index.has(id));
             const pick = ids[Math.floor(Math.random() * ids.length)] ?? atlas.words[0].id;
             const i = layout.index.get(pick);
             if (i !== undefined) {

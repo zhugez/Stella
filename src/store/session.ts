@@ -1,7 +1,8 @@
 import type { Atlas, WordRef } from "../atlas/types";
 import { MEDIA } from "../atlas/types";
+import { isNoteId } from "../lib/notes";
 import { twinOf } from "../lib/spelling";
-import { hashSeed, normalize, shuffle } from "../lib/text";
+import { gap, hashSeed, normalize, shuffle } from "../lib/text";
 import { isMastered, retrievability, review, Rating, type Grade } from "./srs";
 import { bumpDay, dayKey, store, type ActiveSession, type Progress, type QuizKind, type Settings, type Step } from "./store";
 
@@ -24,7 +25,7 @@ function idOfWord(atlas: Atlas, word: string) {
   return ids.get(normalize(word));
 }
 
-/** Bookmarked words first (oldest bookmark first), then unseen words along the learning path from the learner's level. */
+/** The learner's unlearned notes first (oldest first), then bookmarked words (oldest bookmark first), then unseen words along the learning path from the learner's level. */
 export function nextNew(atlas: Atlas, p: Progress, settings: Settings, count: number) {
   const out: string[] = [];
   const taken = (id: string) => !!p.cards[id] || out.includes(id);
@@ -37,6 +38,10 @@ export function nextNew(atlas: Atlas, p: Progress, settings: Settings, count: nu
   const add = (w: WordRef | undefined) => {
     if (w && !taken(w.id) && !twinTaken(w)) out.push(w.id);
   };
+  for (const n of [...p.notes].sort((a, b) => a.added - b.added)) {
+    if (out.length >= count) return out;
+    if (!taken(n.id)) out.push(n.id);
+  }
   for (const id of [...p.bookmarks].reverse()) {
     if (out.length >= count) return out;
     add(atlas.byId.get(id));
@@ -77,10 +82,32 @@ function recognitionKind(ref: WordRef, roll: number): QuizKind {
   return roll < 75 ? "meaning" : "listen";
 }
 
+/** Notes have no distractors, no illustration and no sentence audio: recall, then typing and a cloze once the memory holds. */
+function noteKind(id: string, p: Progress, s: Settings, roll: number): QuizKind {
+  const note = p.notes.find((n) => n.id === id);
+  const kinds: QuizKind[] = ["recall"];
+  if ((p.cards[id]?.s ?? 0) >= 2) {
+    if (s.spell) kinds.push("spell");
+    if (note?.ctx && gap(note.ctx, note.w)) kinds.push("picture");
+  }
+  return kinds[roll % kinds.length];
+}
+
+/** Answers for a note's cloze: the note and three atlas words. Not `distractors`, which needs a gloss and a position on the path. */
+function noteChoices(atlas: Atlas, ref: WordRef, seed: number) {
+  const picks = new Map<string, string>();
+  for (let i = 0; picks.size < 3 && i < 30; i++) {
+    const w = atlas.words[hashSeed(ref.id + seed + i) % atlas.words.length];
+    if (normalize(w.word) !== normalize(ref.word)) picks.set(normalize(w.word), w.id);
+  }
+  return shuffle([ref.id, ...picks.values()], seed);
+}
+
 /** Harder formats as memory gets stronger (FSRS stability in days). */
 export function quizKind(ref: WordRef, p: Progress, s: Settings, salt: number): QuizKind {
   const c = p.cards[ref.id];
   const roll = hashSeed(ref.id + salt) % 100;
+  if (isNoteId(ref.id)) return noteKind(ref.id, p, s, roll);
   if (!c || c.s < 2) return recognitionKind(ref, roll);
   if (c.s >= 4 && s.spell) return roll < 40 ? "spell" : roll < 70 ? "recall" : roll < 85 ? "dictation" : "listen";
   if (roll < 40) return "recall";
@@ -131,6 +158,7 @@ export function buildSession(atlas: Atlas, p: Progress, s: Settings, opts?: { id
     let kind = quizKind(ref, p, s, seed + salt);
     // Dictation needs the sentence recording; private datasets may lack it.
     if (kind === "dictation" && !(ref.media & MEDIA.ex)) kind = "spell";
+    if (isNoteId(id)) return { id, kind, options: kind === "picture" ? noteChoices(atlas, ref, seed + salt) : undefined, ex: 0, plain: true };
     const options = CHOICE_KINDS.includes(kind) ? distractors(atlas, ref, kind, seed + salt) : undefined;
     if (kind !== "picture" && kind !== "spell" && kind !== "dictation") return { id, kind, options };
     const second = hashSeed(id + seed + "ex") % 2 === 1 && (kind !== "dictation" || !!(ref.media & MEDIA.ex2));
@@ -145,6 +173,11 @@ export function buildSession(atlas: Atlas, p: Progress, s: Settings, opts?: { id
     group.forEach((id) => steps.push({ id, kind: "intro" }));
     shuffle(group, seed + g).forEach((id, i) => {
       const ref = atlas.byId.get(id)!;
+      // A note has no answers to choose from: the check is recall too.
+      if (isNoteId(id)) {
+        steps.push({ id, kind: "recall", practice: true });
+        return;
+      }
       const kind = recognitionKind(ref, hashSeed(id + (seed + 1000 + g + i)) % 100);
       steps.push({ id, kind, practice: true, options: distractors(atlas, ref, kind, seed + 1000 + g + i), ex: 0 });
     });
@@ -189,9 +222,10 @@ export function answer(atlas: Atlas, step: Step & { kind: QuizKind }, correct: b
       const retries = steps.filter((x) => x.id === step.id && "retry" in x && x.retry).length;
       if (retries < 2) {
         const ref = atlas.byId.get(step.id)!;
-        const kind: QuizKind = step.kind === "meaning" ? (ref.media & MEDIA.img ? "picture" : "listen") : "meaning";
+        const note = isNoteId(step.id);
+        const kind: QuizKind = note ? "recall" : step.kind === "meaning" ? (ref.media & MEDIA.img ? "picture" : "listen") : "meaning";
         const at = Math.min(steps.length, sess.index + 4);
-        steps.splice(at, 0, { id: step.id, kind, retry: true, options: distractors(atlas, ref, kind, Date.now()), ex: 0, plain: false });
+        steps.splice(at, 0, { id: step.id, kind, retry: true, options: note ? undefined : distractors(atlas, ref, kind, Date.now()), ex: 0, plain: false });
         next = { ...next, session: { ...next.session!, steps } };
       }
     }
