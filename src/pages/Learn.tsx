@@ -145,6 +145,15 @@ const hasCjk = (s: string) => /[\u4e00-\u9fff]/.test(s);
 const viText = (x: { vi?: string; zh: string }) => x.vi || (!hasCjk(x.zh) ? x.zh : "");
 /** Index gloss for datasets that store a Vietnamese one; empty otherwise. */
 const shortGloss = (ref: WordRef) => (hasCjk(ref.zh) ? "" : ref.zh);
+/** Sense lines under the short gloss, without one that only repeats it ("n. thứ Năm" twice). */
+const senseLine = (entry: Entry, ref: WordRef) => {
+  const gloss = normalize(glossParts(shortGloss(ref)).text);
+  return entry.senses
+    .slice(0, 2)
+    .filter((s) => normalize(viText(s)) !== gloss)
+    .map((s) => `${s.pos} ${viText(s)}`)
+    .join("　");
+};
 
 /** Which example sentence a step uses; falls back to the first when the second is missing or has no gap. */
 function exIndex(step: QuizStep, entry: Entry, atlas: Atlas): 0 | 1 {
@@ -458,14 +467,7 @@ function Recall({ step, session }: { step: QuizStep; session: ActiveSession }) {
               <Illustration src={atlas.img(entry, "thumb")} word={entry.w} topic={ref.topic} className="recall-art" />
               <div>
                 <p className="recall-gloss">{shortGloss(ref)}</p>
-                {!note && (
-                  <p className="feedback-zh">
-                    {entry.senses
-                      .slice(0, 2)
-                      .map((s) => `${s.pos} ${viText(s)}`)
-                      .join("　")}
-                  </p>
-                )}
+                {!note && senseLine(entry, ref) && <p className="feedback-zh">{senseLine(entry, ref)}</p>}
                 {entry.ex[0] && (
                   <p className="recall-ex" lang="en">
                     <Highlight text={entry.ex[0].en} word={entry.w} />
@@ -501,8 +503,14 @@ function Feedback({ entry, refw, correct, hinted, example, onNext }: { entry: En
   const t = useT();
   const atlas = useAtlas();
   const btn = useRef<HTMLButtonElement>(null);
-  useEffect(() => btn.current?.focus({ preventScroll: true }), []);
+  useEffect(() => {
+    btn.current?.focus({ preventScroll: true });
+    // On a short screen the sticky panel would cover the options; scroll it down to its place below them.
+    const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    window.scrollTo({ top: document.documentElement.scrollHeight, behavior: reduce ? "auto" : "smooth" });
+  }, []);
   const note = isNoteId(entry.id);
+  const senses = senseLine(entry, refw);
   return (
     <div className={`feedback ${correct ? "is-right" : "is-wrong"}`} role="status">
       <div className="feedback-inner">
@@ -514,14 +522,7 @@ function Feedback({ entry, refw, correct, hinted, example, onNext }: { entry: En
             <span className="ipa">{entry.uk || entry.us}</span>
           </p>
           <p className="feedback-gloss">{shortGloss(refw)}</p>
-          {!note && (
-            <p className="feedback-zh">
-              {entry.senses
-                .slice(0, 2)
-                .map((s) => `${s.pos} ${viText(s)}`)
-                .join("　")}
-            </p>
-          )}
+          {!note && senses && <p className="feedback-zh">{senses}</p>}
           {example && (
             <p className="feedback-ex" lang="en">
               <Highlight text={example.en} word={entry.w} />
