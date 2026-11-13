@@ -10,7 +10,7 @@ export const same = (a: string, b: string) =>
   clean(a).toLowerCase() === clean(b).toLowerCase();
 
 /** Modes where the answer must stay hidden until the learner types it. */
-export const hidesAnswer = (mode: string) => mode === "dictation" || mode === "cloze";
+export const hidesAnswer = (mode: string) => mode === "word" || mode === "dictation" || mode === "cloze";
 
 /** What to show for a character the learner has not typed yet: keep spacing, hide letters. */
 export const maskChar = (ch: string) => (ch === " " ? " " : /[A-Za-z]/.test(ch) ? "·" : ch);

@@ -1,11 +1,11 @@
 import { ArrowRight, Flame, Keyboard, Sparkles } from "lucide-react";
-import { useEffect, useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { prefetch, useAtlas, useEntry } from "../atlas/context";
 import { go, openWord } from "../lib/router";
 import { cue } from "../lib/sound";
 import { hashSeed } from "../lib/text";
-import { buildSession, masteredCount, todayPlan } from "../store/session";
-import { isMastered } from "../store/srs";
+import { buildSession, isDayActive, masteredCount, rememberedCount, streakOf, todayPlan } from "../store/session";
+import { formatInterval, isMastered } from "../store/srs";
 import { dayKey, store, useStore } from "../store/store";
 import { Galaxy } from "../galaxy/Galaxy";
 import { Highlight, Pronounce } from "../ui/EntryView";
@@ -22,23 +22,13 @@ function greeting(h: number): TranslationKey {
   return "greeting_evening";
 }
 
-export function streakOf(days: Record<string, { r: number }>) {
-  let n = 0;
-  const d = new Date();
-  if (!(days[dayKey(d)]?.r > 0)) d.setDate(d.getDate() - 1);
-  while (days[dayKey(d)]?.r > 0) {
-    n++;
-    d.setDate(d.getDate() - 1);
-  }
-  return n;
-}
-
 export function Today() {
   const atlas = useAtlas();
   const progress = useStore((s) => s.progress);
   const settings = useStore((s) => s.settings);
   const t = useT();
   const lang = useLang();
+  const [, setTick] = useState(0);
   const plan = useMemo(() => todayPlan(atlas, progress, settings), [atlas, progress, settings]);
   // Warm the first cards of today's journey so the session opens instantly.
   const firstIds = [...plan.due.slice(0, 4), ...plan.fresh.slice(0, 6)].join(",");
@@ -47,13 +37,28 @@ export function Today() {
     const t = window.setTimeout(() => void prefetch(atlas, ids), 800);
     return () => window.clearTimeout(t);
   }, [atlas, firstIds]);
-  const now = new Date();
+  const now = Date.now();
   const today = progress.days[dayKey()];
   const streak = streakOf(progress.days);
   const active = progress.session && !progress.session.finished ? progress.session : null;
   const total = plan.due.length + plan.fresh.length;
   const goal = settings.dailyNew + Math.min(plan.due.length, 60);
   const doneToday = today?.r ?? 0;
+
+  const waiting = useMemo(
+    () =>
+      Object.values(progress.cards)
+        .filter((c) => (c.st === 1 || c.st === 3) && c.due > now)
+        .sort((a, b) => a.due - b.due),
+    [progress.cards, now],
+  );
+
+  useEffect(() => {
+    if (!waiting.length) return;
+    const delay = Math.max(500, Math.min(3600000, waiting[0].due - Date.now() + 500));
+    const timer = window.setTimeout(() => setTick((n) => n + 1), delay);
+    return () => window.clearTimeout(timer);
+  }, [waiting]);
 
   const start = (opts?: { reviewOnly?: boolean; extra?: number }) => {
     if (!active) {
@@ -69,20 +74,21 @@ export function Today() {
     const d = new Date();
     d.setDate(d.getDate() - (6 - i));
     const k = dayKey(d);
-    return { k, label: d.toLocaleDateString(LOCALE[lang], { weekday: "short" }), v: progress.days[k]?.r ?? 0, today: i === 6 };
+    return { k, label: d.toLocaleDateString(LOCALE[lang], { weekday: "short" }), v: progress.days[k]?.r ?? 0, on: isDayActive(progress.days[k]), today: i === 6 };
   });
 
   const learned = Object.keys(progress.cards).length;
   const mastered = masteredCount(progress);
+  const remembered = rememberedCount(progress, now, settings.retention);
   const teaser = (active ? active.newIds : plan.fresh).slice(0, 5).map((id) => atlas.byId.get(id)!).filter(Boolean);
 
-  const dateHeader = now.toLocaleDateString(LOCALE[lang], { weekday: "long", month: "long", day: "numeric" });
+  const dateHeader = new Date(now).toLocaleDateString(LOCALE[lang], { weekday: "long", month: "long", day: "numeric" });
 
   return (
     <div className="page today">
       <header className="greet">
         <p className="eyebrow">{dateHeader}</p>
-        <h1 className="display">{t(greeting(now.getHours()))}</h1>
+        <h1 className="display">{t(greeting(new Date(now).getHours()))}</h1>
       </header>
 
       <section className={`journey ${total === 0 && !active ? "is-clear" : ""}`}>
@@ -122,6 +128,16 @@ export function Today() {
               </h2>
               <p className="journey-lede">{t("journey_plan").replace("{n}", String(plan.minutes))}</p>
             </>
+          ) : waiting.length > 0 ? (
+            <>
+              <p className="eyebrow eyebrow-light">{t("completed_today")}</p>
+              <h2>{t("all_stars_lit")}</h2>
+              <p className="journey-lede">
+                {t("waiting_note")
+                  .replace("{n}", String(waiting.length))
+                  .replace("{time}", formatInterval(Math.max(0, waiting[0].due - now), t))}
+              </p>
+            </>
           ) : (
             <>
               <p className="eyebrow eyebrow-light">{t("completed_today")}</p>
@@ -142,7 +158,7 @@ export function Today() {
               <button className="btn btn-primary btn-xl" onClick={() => start()}>
                 {active ? t("continue_journey") : t("start_journey")} <ArrowRight size={20} />
               </button>
-            ) : (
+            ) : waiting.length > 0 ? null : (
               <button className="btn btn-primary btn-xl" onClick={() => start({ extra: 5 })}>
                 {t("learn_more")} <Sparkles size={18} />
               </button>
@@ -167,7 +183,7 @@ export function Today() {
         <section className="panel streak-panel">
           <div className="panel-head">
             <h3 className="eyebrow">{t("weekly_progress")}</h3>
-            <span className={`streak ${streak ? "is-on" : ""}`}>
+            <span className={`streak ${streak ? "is-on" : ""}`} title={t("streak_rule")}>
               <Flame size={16} /> {t("streak_days").replace("{n}", String(streak))}
             </span>
           </div>
@@ -178,7 +194,7 @@ export function Today() {
             </Ring>
             <ol className="week">
               {week.map((d) => (
-                <li key={d.k} className={`${d.v ? "is-on" : ""} ${d.today ? "is-today" : ""}`} title={t("week_day_answered").replace("{day}", d.k).replace("{n}", String(d.v))}>
+                <li key={d.k} className={`${d.on ? "is-on" : ""} ${d.today ? "is-today" : ""}`} title={t("week_day_answered").replace("{day}", d.k).replace("{n}", String(d.v))}>
                   <span style={{ "--h": Math.min(1, d.v / 40) } as React.CSSProperties} />
                   <small>{d.label}</small>
                 </li>
@@ -186,17 +202,17 @@ export function Today() {
             </ol>
           </div>
           <dl className="mini-stats">
-            <div>
-              <dt>{t("lit_stars")}</dt>
-              <dd>{learned.toLocaleString()}</dd>
+            <div title={t("remembering_hint")}>
+              <dt>{t("remembering")}</dt>
+              <dd>{remembered.toLocaleString()}</dd>
             </div>
-            <div>
+            <div title={t("mastered_hint")}>
               <dt>{t("mastered")}</dt>
               <dd>{mastered.toLocaleString()}</dd>
             </div>
-            <div>
-              <dt>{t("total_words")}</dt>
-              <dd>{atlas.count.toLocaleString()}</dd>
+            <div title={t("seen_hint")}>
+              <dt>{t("lit_stars")}</dt>
+              <dd>{learned.toLocaleString()}</dd>
             </div>
           </dl>
         </section>

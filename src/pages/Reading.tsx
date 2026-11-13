@@ -4,7 +4,7 @@ import { prefetch, useAtlas } from "../atlas/context";
 import type { Entry } from "../atlas/types";
 import { topicLabel, tr, useT } from "../i18n";
 import { passage } from "../lib/drills";
-import { evidenceParagraph, parsePassages, type ReadingPassage } from "../lib/reading";
+import { evidenceParagraph, optionOrder, parsePassages, type ReadingPassage } from "../lib/reading";
 import { go, openWord } from "../lib/router";
 import { shuffle, splitHighlight } from "../lib/text";
 import { readingKey, readingStore, useReadingProgress } from "../store/reading";
@@ -104,11 +104,14 @@ function Reader({ passage: p }: { passage: ReadingPassage }) {
     {supported && <div className="reading-questions">
       <h3>{t("reading_questions_title")}</h3>
       {submitted && <p role="status">{t("reading_result").replace("{score}", String(attempt.correct)).replace("{total}", String(p.questions.length)).replace("{mode}", attempt.assisted ? t("reading_assisted") : t("reading_unassisted"))}</p>}
-      {p.questions.map((q, i) => <fieldset key={i} className="reading-question" disabled={submitted || !!error}>
-        <legend>{i + 1}. {q.question}</legend>
-        {q.options.map((option, j) => <label className="reading-option" key={j}><input type="radio" name={`${p.id}-q${i}`} checked={attempt?.answers[i] === j} onChange={() => readingStore.answer(p, i, j)} />{option}</label>)}
-        {submitted && <div className="reading-feedback"><p>{t(attempt.answers[i] === q.answer ? "reading_correct" : "reading_incorrect").replace("{answer}", q.options[q.answer])}</p><p>{q.explanation}</p><a href={`#reading-p${evidenceParagraph(p, i)}`} onClick={(e) => { e.preventDefault(); document.getElementById(`reading-p${evidenceParagraph(p, i)}`)?.scrollIntoView({ behavior: "smooth", block: "center" }); }}>{t("reading_evidence").replace("{n}", String(evidenceParagraph(p, i)))}</a></div>}
-      </fieldset>)}
+      {p.questions.map((q, i) => {
+        const order = optionOrder(p, i);
+        return <fieldset key={i} className="reading-question" disabled={submitted || !!error}>
+          <legend>{i + 1}. {q.question}</legend>
+          {order.map((j) => <label className="reading-option" key={j}><input type="radio" name={`${p.id}-q${i}`} checked={attempt?.answers[i] === j} onChange={() => readingStore.answer(p, i, j)} />{q.options[j]}</label>)}
+          {submitted && <div className="reading-feedback"><p>{t(attempt.answers[i] === q.answer ? "reading_correct" : "reading_incorrect").replace("{answer}", q.options[q.answer])}</p><p>{q.explanation}</p><a href={`#reading-p${evidenceParagraph(p, i)}`} onClick={(e) => { e.preventDefault(); document.getElementById(`reading-p${evidenceParagraph(p, i)}`)?.scrollIntoView({ behavior: "smooth", block: "center" }); }}>{t("reading_evidence").replace("{n}", String(evidenceParagraph(p, i)))}</a></div>}
+        </fieldset>;
+      })}
       {!submitted && <button className="btn btn-primary" disabled={!allAnswered || !!error} onClick={() => { try { readingStore.submit(p); } catch (e) { setMessage((e as Error).message); } }}>{t("reading_submit")}</button>}
     </div>}
     <div className="passage-actions">

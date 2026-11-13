@@ -21,18 +21,87 @@ export function clozeTarget(entry: Entry): string | null {
   return p.test(g.before) || p.test(g.after) ? null : g.hidden;
 }
 
-/** One collocation question: a real collocation of `target` plus three borrowed from other words. */
-export function collocationQuestion(target: Entry, pool: Entry[], seed: number): { answer: string; options: string[] } | null {
-  const mine = new Set(target.col.map((c) => splitPair(c).en.toLowerCase()));
-  const answer = splitPair(shuffle(target.col, seed)[0] ?? "").en;
-  if (!answer) return null;
-  const borrowed = pool
-    .filter((e) => e.id !== target.id)
-    .flatMap((e) => e.col.map((c) => splitPair(c).en))
-    .filter((en) => en && !mine.has(en.toLowerCase()));
-  const distractors = shuffle([...new Set(borrowed)], seed + 7).slice(0, 3);
+function maskCol(entry: Entry, raw: string): { masked: string; full: string; gloss: string } | null {
+  const pair = splitPair(raw);
+  if (!pair.en) return null;
+  const p = new RegExp(headwordPattern(entry.w).source, "gi");
+  if (!p.test(pair.en)) return null;
+  const masked = pair.en.replace(p, "___");
+  return { masked, full: pair.en, gloss: pair.vi || pair.zh };
+}
+
+/** One collocation question: a masked collocation of `target` plus three borrowed from other words. */
+export function collocationQuestion(
+  target: Entry,
+  pool: Entry[],
+  seed: number,
+): { answer: string; options: string[]; full: string; gloss: string } | null {
+  const targetMasked = (target.col || [])
+    .map((c) => maskCol(target, c))
+    .filter((x): x is NonNullable<typeof x> => !!x);
+  if (!targetMasked.length) return null;
+  const chosen = shuffle(targetMasked, seed)[0];
+  const targetFrames = new Set(targetMasked.map((c) => c.masked.toLowerCase()));
+
+  const targetRelated = new Set([
+    ...target.syn.map((s) => splitPair(s).en.toLowerCase()),
+    ...target.ant.map((s) => splitPair(s).en.toLowerCase()),
+  ]);
+
+  const targetW = target.w.toLowerCase();
+  const targetPos = target.senses[0]?.pos;
+
+  const samePosCandidates: string[] = [];
+  const otherPosCandidates: string[] = [];
+
+  for (const entry of pool) {
+    if (entry.id === target.id) continue;
+    const entryW = entry.w.toLowerCase();
+    if (targetRelated.has(entryW)) continue;
+    const entryRelated = [
+      ...entry.syn.map((s) => splitPair(s).en.toLowerCase()),
+      ...entry.ant.map((s) => splitPair(s).en.toLowerCase()),
+    ];
+    if (entryRelated.includes(targetW)) continue;
+
+    const isSamePos = !!targetPos && entry.senses[0]?.pos === targetPos;
+
+    for (const c of entry.col || []) {
+      const m = maskCol(entry, c);
+      if (!m) continue;
+      const lower = m.masked.toLowerCase();
+      if (targetFrames.has(lower)) continue;
+      if (isSamePos) samePosCandidates.push(m.masked);
+      else otherPosCandidates.push(m.masked);
+    }
+  }
+
+  const seen = new Set<string>();
+  const distractors: string[] = [];
+
+  const addUnique = (list: string[]) => {
+    for (const item of list) {
+      const lower = item.toLowerCase();
+      if (!seen.has(lower)) {
+        seen.add(lower);
+        distractors.push(item);
+        if (distractors.length === 3) break;
+      }
+    }
+  };
+
+  addUnique(shuffle(samePosCandidates, seed + 7));
+  if (distractors.length < 3) {
+    addUnique(shuffle(otherPosCandidates, seed + 11));
+  }
+
   if (distractors.length < 3) return null;
-  return { answer, options: shuffle([answer, ...distractors], seed + 13) };
+  return {
+    answer: chosen.masked,
+    full: chosen.full,
+    gloss: chosen.gloss,
+    options: shuffle([chosen.masked, ...distractors], seed + 13),
+  };
 }
 
 /** Sentences long enough to read as a passage, keeping the order given. */

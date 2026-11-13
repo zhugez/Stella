@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { test } from "node:test";
-import { contentVersion, evidenceParagraph, gradeReading, parsePassages } from "./reading";
+import { contentVersion, evidenceParagraph, gradeReading, optionOrder, parsePassages } from "./reading";
 import { recordAnswer, sanitizeReading, submitReading, readingKey, readingStore } from "../store/reading";
 import { store } from "../store/store";
 
@@ -84,4 +84,19 @@ test("reading errors follow the interface language", () => {
   assert.throws(() => parsePassages([]), /Thư viện đọc hiểu đang trống/);
   store.settings({ lang: "en" });
   assert.throws(() => parsePassages([]), /The reading library is empty/);
+});
+
+test("optionOrder preserves TFNG order and deterministically shuffles MCQ", () => {
+  const tfngOrder = optionOrder(p, 1);
+  assert.deepEqual(tfngOrder, [0, 1, 2]);
+
+  const mcqOrder1 = optionOrder(p, 0);
+  const mcqOrder2 = optionOrder(p, 0);
+  assert.deepEqual(mcqOrder1, mcqOrder2);
+  assert.equal(mcqOrder1.length, 4);
+  assert.deepEqual([...mcqOrder1].sort(), [0, 1, 2, 3]);
+
+  // Grading still uses original indices regardless of optionOrder
+  const answers = { 0: p.questions[0].answer, 1: p.questions[1].answer };
+  assert.equal(gradeReading(p, answers), 2);
 });

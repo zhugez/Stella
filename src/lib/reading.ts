@@ -1,4 +1,5 @@
 import { tr } from "../i18n";
+import { hashSeed, shuffle } from "./text";
 
 export interface ReadingQuestion {
   type: "mcq" | "tfng";
@@ -64,4 +65,17 @@ export function gradeReading(p: ReadingPassage, answers: Record<string, number>)
   if (!p.questions.length || p.questions.some((q, i) => !Number.isInteger(answers[i]) || answers[i] < 0 || answers[i] >= q.options.length || !evidenceParagraph(p, i)))
     throw new Error(tr("reading_err_answer_all"));
   return p.questions.reduce((n, q, i) => n + Number(answers[i] === q.answer), 0);
+}
+
+export function optionOrder(p: ReadingPassage, i: number): number[] {
+  const q = p.questions[i];
+  if (!q) return [];
+  const indices = q.options.map((_, idx) => idx);
+  if (q.type === "tfng" || JSON.stringify(q.options) === JSON.stringify(["TRUE", "FALSE", "NOT GIVEN"])) {
+    return indices;
+  }
+  if (q.options.some((opt) => /(all|none|both|neither) of the|option [A-D]|\b[A-D] and [A-D]\b/i.test(opt))) {
+    return indices;
+  }
+  return shuffle(indices, hashSeed(`${p.id}:${i}`));
 }

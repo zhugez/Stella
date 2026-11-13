@@ -107,15 +107,17 @@ const preview = (target: string, typed: string, mode: string) =>
     .map((ch, i) => (typed[i] === undefined && hidesAnswer(mode) ? maskChar(ch) : (typed[i] ?? ch)))
     .join("");
 
-test("cloze and dictation keep the answer hidden, other modes show it", () => {
+test("word, cloze and dictation keep the answer hidden, other modes show it", () => {
+  assert.ok(hidesAnswer("word"));
   assert.ok(hidesAnswer("cloze"));
   assert.ok(hidesAnswer("dictation"));
-  assert.ok(!hidesAnswer("word"));
   assert.ok(!hidesAnswer("sentence"));
   assert.ok(!hidesAnswer("collocation"));
   assert.equal(preview("picture", "", "cloze"), "·······");
   assert.equal(preview("picture", "pic", "cloze"), "pic····");
-  assert.equal(preview("picture", "", "word"), "picture");
+  assert.equal(preview("picture", "", "word"), "·······");
+  assert.equal(preview("picture", "pic", "word"), "pic····");
+  assert.equal(preview("a fine day", "", "sentence"), "a fine day");
   assert.equal(preview("a fine day", "", "dictation"), "· ···· ···");
 });
 

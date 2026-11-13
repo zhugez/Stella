@@ -1035,6 +1035,11 @@ code {
   margin: 8px 0 12px;
   overflow-wrap: anywhere;
 }
+.entry-gloss {
+  font: 600 18px/1.3 var(--sans);
+  color: var(--sage);
+  margin: -4px 0 12px;
+}
 .pron {
   display: flex;
   flex-wrap: wrap;
@@ -2533,8 +2538,69 @@ code {
   font-size: 20px;
   font-weight: 600;
 }
-.prompt-spell .speak {
-  margin-top: 12px;
+.spell-sub {
+  font-size: 14px;
+  color: var(--ink-3);
+  margin-top: 2px;
+}
+.prompt-spell.is-plain {
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+.prompt-spell.is-plain .cloze-sm {
+  text-align: center;
+}
+.prompt-dictation {
+  width: 100%;
+  max-width: 560px;
+  text-align: center;
+}
+.prompt-dictation .listen-orb {
+  width: 104px;
+  height: 104px;
+}
+.prompt-recall {
+  width: 100%;
+  max-width: 560px;
+  display: grid;
+  justify-items: center;
+  gap: 20px;
+  text-align: center;
+}
+.recall-hint {
+  color: var(--ink-3);
+  font-size: 14px;
+}
+.recall-answer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 14px;
+  align-items: start;
+  padding: 16px;
+  border-radius: 20px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  text-align: left;
+  animation: rise 0.35s var(--ease);
+}
+.recall-art {
+  width: 72px;
+  border-radius: 14px;
+}
+.recall-gloss {
+  font-weight: 600;
+  font-size: 17px;
+}
+.recall-ex {
+  margin-top: 6px;
+  font: italic 400 15px/1.45 var(--serif);
+  color: var(--ink-2);
+}
+.hint-rule {
+  text-align: center;
+  font-size: 13px;
+  color: var(--ink-3);
 }
 @media (min-width: 640px) {
   .prompt-spell {
@@ -2760,6 +2826,10 @@ code {
   color: var(--ink-3);
   font-size: 14px;
 }
+.feedback-gloss {
+  font-size: 14px;
+  font-weight: 600;
+}
 .feedback-zh {
   font-size: 14px;
   color: var(--ink-2);
@@ -2851,6 +2921,16 @@ code {
   font: 500 12px var(--sans);
   color: var(--ink-3);
   margin-left: 3px;
+}
+.summary-split {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px 20px;
+  margin: -12px 0 24px;
+  font-size: 14px;
+  color: var(--ink-2);
+  font-variant-numeric: tabular-nums;
 }
 .summary-words {
   list-style: none;
@@ -3096,9 +3176,6 @@ code {
   background: var(--card);
   padding: 18px 20px;
 }
-.stat-strip > div:last-child {
-  grid-column: 1 / -1;
-}
 .stat-strip dt {
   font-size: 12.5px;
   color: var(--ink-3);
@@ -3114,12 +3191,20 @@ code {
   color: var(--ink-3);
   margin-left: 4px;
 }
+.stat-strip .stat-sub {
+  display: block;
+  font: 450 11.5px/1.35 var(--sans);
+  color: var(--ink-3);
+  margin-top: 4px;
+}
 @media (min-width: 760px) {
   .stat-strip {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
-  .stat-strip > div:last-child {
-    grid-column: auto;
+}
+@media (min-width: 1080px) {
+  .stat-strip {
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 .me-grid {
@@ -4415,6 +4500,23 @@ a:hover .mark-needle,
   display: flex;
   justify-content: center;
   margin-top: 18px;
+}
+.collocation-reveal {
+  text-align: center;
+  font: 500 15px/1.4 var(--sans);
+  color: var(--ink-2);
+  margin: 16px 0 0;
+}
+.collocation-reveal b {
+  color: var(--ink-1);
+}
+.typing-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 8px;
 }
 
 /* ---- Small screens: first card above the fold, no orphan mode card ---- */

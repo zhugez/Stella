@@ -105,13 +105,18 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
         )}
         <h2 className="headword" lang="en">
           {langPair === "vi-en" || langPair === "vi-zh" || langPair === "vi-fr"
-            ? (entry.senses[0]?.vi || entry.w)
+            ? (entry.vi_word || entry.senses[0]?.vi || entry.w)
             : langPair === "zh-vi"
             ? (entry.zh_word || entry.senses[0]?.zh || entry.w)
             : langPair === "fr-vi"
             ? (entry.fr_word || entry.w)
             : entry.w}
         </h2>
+        {(langPair === "en-vi" || langPair === "zh-vi" || langPair === "fr-vi") && entry.vi_word && (
+          <p className="entry-gloss" lang="vi">
+            {entry.vi_word}
+          </p>
+        )}
         {(langPair === "vi-en" || langPair === "vi-zh" || langPair === "vi-fr" || langPair === "zh-vi" || langPair === "fr-vi") && (
           <p style={{ fontSize: "1.05rem", fontWeight: 600, color: "var(--terra)", marginTop: "-6px", marginBottom: "8px" }}>
             {langPair === "vi-en" && <>English: <b>{entry.w}</b></>}
@@ -232,12 +237,16 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
           </section>
         )}
 
-        {(isFr && entry.tip_fr ? entry.tip_fr : entry.tip_vi || entry.tip) && (
-          <aside className="tip">
-            <Lightbulb size={17} strokeWidth={1.8} />
-            <p>{isFr && entry.tip_fr ? entry.tip_fr : (entry.tip_vi || entry.tip)}</p>
-          </aside>
-        )}
+        {(() => {
+          const tip = isFr && entry.tip_fr ? entry.tip_fr : isZh ? entry.tip || entry.tip_vi : entry.tip_vi;
+          if (!tip) return null;
+          return (
+            <aside className="tip">
+              <Lightbulb size={17} strokeWidth={1.8} />
+              <p>{tip}</p>
+            </aside>
+          );
+        })()}
 
         {entry.note && <p className="usage-note">{t("usage_note")}: {entry.note}</p>}
 

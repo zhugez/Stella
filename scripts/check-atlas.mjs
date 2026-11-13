@@ -8,7 +8,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const pub = path.join(root, "public/atlas");
 const index = JSON.parse(fs.readFileSync(path.join(pub, "index.json"), "utf8"));
 const errors = [];
-const warn = { headwordNotInExample: 0, missingIpa: 0, oneExample: 0 };
+const warn = { headwordNotInExample: 0, missingIpa: 0, oneExample: 0, missingViWord: 0, tipViLostTerms: 0 };
 const fail = (msg) => errors.length < 50 && errors.push(msg);
 
 if (index.words.length !== index.count) fail(`count ${index.count} != rows ${index.words.length}`);
@@ -44,6 +44,11 @@ for (let n = 0; n * index.chunk < index.count; n++) {
     examples += e.ex.length;
     if (e.ex.length < 2) warn.oneExample++;
     if (!e.uk && !e.us) warn.missingIpa++;
+    if (typeof e.vi_word !== "string" || !e.vi_word) warn.missingViWord++;
+    // tip_vi must keep the Latin-script terms of tip (headwords, example words)
+    const terms = [...new Set((e.tip || "").replace(/\/[^/]*\//g, "").match(/[A-Za-z][A-Za-z'-]*[A-Za-z]|[A-Za-z]{2,}/g) || [])];
+    const tipVi = (e.tip_vi || "").toLowerCase();
+    if (terms.some((t) => !tipVi.includes(t.toLowerCase()))) warn.tipViLostTerms++;
     const stem = e.w.toLowerCase().split(" ")[0].replace(/(e|y)$/, "").slice(0, 5);
     if (e.ex[0] && !e.ex[0].en.toLowerCase().includes(stem)) warn.headwordNotInExample++;
     for (const k of ["col", "fam", "syn", "ant"]) if (!Array.isArray(e[k])) fail(`${k} not array: ${e.id}`);

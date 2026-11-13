@@ -3,8 +3,32 @@ import type { Accent } from "../atlas/types";
 import type { TranslationKey } from "../i18n";
 import type { CardState, Grade } from "./srs";
 
-export type QuizKind = "meaning" | "picture" | "listen" | "spell";
-export type Step = { id: string; kind: "intro" } | { id: string; kind: QuizKind; retry?: boolean; options?: string[] };
+export type QuizKind = "meaning" | "picture" | "listen" | "spell" | "recall" | "dictation";
+const QUIZ_KINDS: QuizKind[] = ["meaning", "picture", "listen", "spell", "recall", "dictation"];
+export type Step =
+  | { id: string; kind: "intro" }
+  | {
+      id: string;
+      kind: QuizKind;
+      retry?: boolean;
+      /** Ungraded check right after an intro. */
+      practice?: boolean;
+      options?: string[];
+      /** Which example sentence the prompt uses. */
+      ex?: 0 | 1;
+      /** Do not show the illustration. */
+      plain?: boolean;
+    };
+
+/** One graded first attempt; `st` is the card state before the answer (0 for a new card). */
+export interface ReviewLog {
+  id: string;
+  t: number;
+  k: QuizKind;
+  g: 1 | 2 | 3 | 4;
+  ms: number;
+  st: 0 | 1 | 2 | 3;
+}
 
 export interface ActiveSession {
   id: string;
@@ -13,6 +37,8 @@ export interface ActiveSession {
   index: number;
   /** First-attempt grade per word; retries never change it. */
   graded: Record<string, Grade>;
+  /** Kind of the graded attempt per word; missing in sessions saved before it existed. */
+  kinds?: Record<string, QuizKind>;
   newIds: string[];
   reviewIds: string[];
   /** Answer shown but not yet continued; survives reload without double counting. */
@@ -25,6 +51,7 @@ export interface DayStat {
   r: number; // graded reviews (first attempts)
   c: number; // correct first attempts
   t: number; // active seconds
+  s?: number; // sessions finished
 }
 
 export interface TypingRound {
@@ -45,6 +72,8 @@ export interface Progress {
   session: ActiveSession | null;
   /** Rolling list of recent mistakes, newest first. */
   mistakes: string[];
+  /** Graded attempts, oldest first, newest 5,000 kept. */
+  log: ReviewLog[];
 }
 
 export type LangPair = "en-vi" | "vi-en" | "zh-vi" | "vi-zh" | "fr-vi" | "vi-fr";
@@ -100,6 +129,7 @@ export const emptyProgress = (datasetId: string): Progress => ({
   typing: [],
   session: null,
   mistakes: [],
+  log: [],
 });
 
 export const dayKey = (d = new Date()) =>
@@ -156,7 +186,14 @@ export function sanitizeProgress(v: unknown, datasetId: string): Progress {
   if (isObj(v.days))
     for (const [k, d] of Object.entries(v.days))
       if (/^\d{4}-\d{2}-\d{2}$/.test(k) && isObj(d) && num(d.n, 0) && num(d.r, 0) && num(d.c, 0) && num(d.t, 0))
-        out.days[k] = { n: d.n as number, r: d.r as number, c: d.c as number, t: d.t as number };
+        out.days[k] = { n: d.n as number, r: d.r as number, c: d.c as number, t: d.t as number, ...(num(d.s, 0) ? { s: d.s as number } : {}) };
+  if (Array.isArray(v.log))
+    out.log = v.log
+      .filter(
+        (l): l is ReviewLog =>
+          isObj(l) && typeof l.id === "string" && num(l.t, 0) && QUIZ_KINDS.includes(l.k as QuizKind) && [1, 2, 3, 4].includes(l.g as number) && num(l.ms, 0) && [0, 1, 2, 3].includes(l.st as number),
+      )
+      .slice(-5000);
   if (Array.isArray(v.typing))
     out.typing = v.typing
       .filter(
@@ -290,7 +327,7 @@ export function bumpDay(p: Progress, patch: Partial<DayStat>): Progress {
     ...p,
     days: {
       ...p.days,
-      [k]: { n: d.n + (patch.n ?? 0), r: d.r + (patch.r ?? 0), c: d.c + (patch.c ?? 0), t: d.t + (patch.t ?? 0) },
+      [k]: { n: d.n + (patch.n ?? 0), r: d.r + (patch.r ?? 0), c: d.c + (patch.c ?? 0), t: d.t + (patch.t ?? 0), s: (d.s ?? 0) + (patch.s ?? 0) },
     },
   };
 }

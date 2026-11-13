@@ -18,10 +18,10 @@ type TypeMode = Exclude<Mode, "collocation">;
 
 const MODES: [Mode, TranslationKey, TranslationKey, typeof Type][] = [
   ["word", "mode_word", "mode_word_desc", Type],
-  ["sentence", "mode_sentence", "mode_sentence_desc", Keyboard],
   ["dictation", "mode_dictation", "mode_dictation_desc", Headphones],
   ["cloze", "mode_cloze", "mode_cloze_desc", Ear],
   ["collocation", "mode_collocation", "mode_collocation_desc", Blocks],
+  ["sentence", "mode_sentence", "mode_sentence_desc", Keyboard],
 ];
 const SOURCES: [Source, TranslationKey][] = [
   ["recent", "pool_recent"],
@@ -135,6 +135,7 @@ function TypingRound({ mode, entries, onExit, onAgain }: { mode: TypeMode; entri
   const settings = useStore((s) => s.settings);
   const [i, setI] = useState(0);
   const [value, setValue] = useState("");
+  const [revealed, setRevealed] = useState(false);
   // Running totals live in a ref so every keystroke is counted exactly once.
   const totalsRef = useRef({ typed: 0, correct: 0, accepted: 0, ms: 0 });
   const [totals, setTotals] = useState(totalsRef.current);
@@ -146,10 +147,10 @@ function TypingRound({ mode, entries, onExit, onAgain }: { mode: TypeMode; entri
 
   useEffect(() => {
     setValue("");
+    setRevealed(false);
     started.current = null;
     input.current?.focus();
     if (mode === "dictation" || mode === "cloze") void play(atlas.audio(e, "ex"), e.ex[0].en, settings.accent);
-    if (mode === "word" && settings.autoplay) void play(atlas.audio(e, settings.accent), e.w, settings.accent);
   }, [i]); // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => () => stopAudio(), []);
 
@@ -225,7 +226,7 @@ function TypingRound({ mode, entries, onExit, onAgain }: { mode: TypeMode; entri
     ? `${e.zh_word || e.senses[0].zh} · ${e.senses[0].vi || ""}`
     : isFr
     ? `${e.fr_word || ""} · ${e.senses[0].vi || ""}`
-    : (e.senses[0].vi || (!/[\u4e00-\u9fff]/.test(e.senses[0].zh) ? e.senses[0].zh : ""));
+    : (e.vi_word || e.senses[0].vi || (!/[\u4e00-\u9fff]/.test(e.senses[0].zh) ? e.senses[0].zh : ""));
 
   const cueSentence = isZh
     ? `${e.ex[0].zh} · ${e.ex[0].vi || ""}`
@@ -268,7 +269,7 @@ function TypingRound({ mode, entries, onExit, onAgain }: { mode: TypeMode; entri
           {chars.map((ch, k) => {
             const tc = typed[k];
             const cls = tc === undefined ? (k === typed.length ? "is-caret" : "") : same(tc, ch) ? "is-ok" : "is-bad";
-            const show = tc === undefined && hidesAnswer(mode) ? maskChar(ch) : ch;
+            const show = tc === undefined && hidesAnswer(mode) && !revealed ? maskChar(ch) : ch;
             return (
               <span key={k} className={cls}>
                 {show}
@@ -288,9 +289,16 @@ function TypingRound({ mode, entries, onExit, onAgain }: { mode: TypeMode; entri
           spellCheck={false}
           aria-label={t("type_here")}
         />
-        <p className="muted typing-help">
-          {mode === "dictation" ? t("typing_help_dictation") : mode === "cloze" ? t("typing_help_cloze") : t("typing_help_default")} {t("typing_item").replace("{i}", String(i + 1)).replace("{n}", String(entries.length))}
-        </p>
+        <div className="typing-bottom">
+          <p className="muted typing-help">
+            {mode === "dictation" ? t("typing_help_dictation") : mode === "cloze" ? t("typing_help_cloze") : t("typing_help_default")} {t("typing_item").replace("{i}", String(i + 1)).replace("{n}", String(entries.length))}
+          </p>
+          {hidesAnswer(mode) && !revealed && (
+            <button type="button" className="btn btn-ghost btn-sm" onClick={() => setRevealed(true)}>
+              {t("show_answer")}
+            </button>
+          )}
+        </div>
       </section>
     </div>
   );
@@ -308,7 +316,7 @@ function ClozeSentence({ entry }: { entry: Entry }) {
   );
 }
 
-type Question = { entry: Entry; answer: string; options: string[] };
+type Question = { entry: Entry; answer: string; options: string[]; full: string; gloss: string };
 
 function CollocationRound({ entries, onExit, onAgain }: { entries: Entry[]; onExit: () => void; onAgain: () => void }) {
   const t = useT();
@@ -439,6 +447,11 @@ function CollocationRound({ entries, onExit, onAgain }: { entries: Entry[]; onEx
             );
           })}
         </ul>
+        {picked && (
+          <p className="collocation-reveal" lang="en">
+            <b>{q.full}</b> {q.gloss && <span>— {q.gloss}</span>}
+          </p>
+        )}
         {picked && (
           <div className="collocation-next">
             <button className="btn btn-primary btn-xl" onClick={next} autoFocus>

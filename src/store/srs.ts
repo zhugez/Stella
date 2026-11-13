@@ -76,6 +76,7 @@ export function preview(prev: CardState | undefined, now: number, retention = 0.
 }
 
 export function retrievability(c: CardState, now: number, retention = 0.9) {
+  if (!c.last || c.st === 0) return 0;
   return scheduler(retention).get_retrievability(toCard(c), new Date(now), false) as number;
 }
 

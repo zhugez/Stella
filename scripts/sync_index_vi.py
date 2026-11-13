@@ -1,8 +1,10 @@
 import json
 import os
+from pathlib import Path
 
-INDEX_PATH = '/home/dev/stella/public/atlas/index.json'
-ENTRIES_DIR = '/home/dev/stella/public/atlas/entries'
+ROOT = Path(__file__).resolve().parent.parent
+INDEX_PATH = ROOT / 'public/atlas/index.json'
+ENTRIES_DIR = ROOT / 'public/atlas/entries'
 
 with open(INDEX_PATH, 'r', encoding='utf-8') as f:
     index_data = json.load(f)
@@ -22,6 +24,11 @@ for fname in sorted(os.listdir(ENTRIES_DIR)):
     for entry in chunk:
         w_id = entry.get('id')
         senses = entry.get('senses', [])
+        vi_word = (entry.get('vi_word') or '').strip()
+        if vi_word:
+            pos = (senses[0].get('pos', '') if senses else '').strip()
+            defs_map[w_id] = f"{pos} {vi_word}" if pos else vi_word
+            continue
         # Find first sense with 'vi'
         vi_sense = next((s for s in senses if s.get('vi')), None)
         if vi_sense:

@@ -32,6 +32,8 @@ export interface Entry {
   tip_vi?: string;
   tip_fr?: string;
   zh_word?: string;
+  /** Short Vietnamese equivalent of sense 1; the index gloss uses it. */
+  vi_word?: string;
   fr_word?: string;
   fr_audio?: string;
   col_zh?: string[];

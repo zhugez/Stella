@@ -1,14 +1,15 @@
 import { ArrowRight, Check, Lightbulb, RotateCcw, Share2, Volume2, X } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { prefetch, useAtlas, useEntry } from "../atlas/context";
-import type { Entry, WordRef } from "../atlas/types";
+import type { Atlas, Entry, Example, WordRef } from "../atlas/types";
 import { useT, type TranslationKey } from "../i18n";
 import { play, stopAudio } from "../lib/audio";
 import { burst } from "../lib/burst";
 import { cue } from "../lib/sound";
 import { go } from "../lib/router";
+import { accepts } from "../lib/spelling";
 import { gap, normalize } from "../lib/text";
-import { answer, advance, buildSession, gradeFor, sessionStats } from "../store/session";
+import { answer, advance, buildSession, glossParts, gradeFor, sessionStats } from "../store/session";
 import { Rating } from "../store/srs";
 import { store, useStore, type ActiveSession, type QuizKind, type Step } from "../store/store";
 import { EntryView, Highlight } from "../ui/EntryView";
@@ -79,7 +80,7 @@ function Runner({ session }: { session: ActiveSession }) {
         <AmbiencePicker />
       </header>
       <main className="learn-stage" key={`${session.id}-${session.index}`}>
-        {step.kind === "intro" ? <Intro step={step} /> : <Quiz step={step as Step & { kind: QuizKind }} session={session} />}
+        {step.kind === "intro" ? <Intro step={step} /> : step.kind === "recall" ? <Recall step={step} session={session} /> : <Quiz step={step} session={session} />}
       </main>
     </div>
   );
@@ -129,9 +130,39 @@ const KIND_LABEL: Record<QuizKind, TranslationKey> = {
   picture: "quiz_picture",
   listen: "quiz_listen",
   spell: "quiz_spell",
+  recall: "quiz_recall",
+  dictation: "quiz_dictation",
 };
 
-function Quiz({ step, session }: { step: Step & { kind: QuizKind }; session: ActiveSession }) {
+type QuizStep = Step & { kind: QuizKind };
+
+const hasCjk = (s: string) => /[\u4e00-\u9fff]/.test(s);
+/** Vietnamese text of a sense or example; Chinese-only data is not shown. */
+const viText = (x: { vi?: string; zh: string }) => x.vi || (!hasCjk(x.zh) ? x.zh : "");
+/** Index gloss for datasets that store a Vietnamese one; empty otherwise. */
+const shortGloss = (ref: WordRef) => (hasCjk(ref.zh) ? "" : ref.zh);
+
+/** Which example sentence a step uses; falls back to the first when the second is missing or has no gap. */
+function exIndex(step: QuizStep, entry: Entry, atlas: Atlas): 0 | 1 {
+  const second = entry.ex[1];
+  if (step.ex !== 1 || !second || !gap(second.en, entry.w)) return 0;
+  return step.kind === "dictation" && !atlas.audio(entry, "ex2") ? 0 : 1;
+}
+
+function StageLabel({ step, session }: { step: QuizStep; session: ActiveSession }) {
+  const t = useT();
+  const kind = t(step.kind === "picture" && step.plain ? "quiz_cloze" : KIND_LABEL[step.kind]);
+  const final = step.kind === "recall" && !step.retry && session.newIds.includes(step.id);
+  const text = step.retry ? `${t("review_again")} · ${kind}` : step.practice ? `${t("practice_check")} · ${kind}` : final ? t("final_check") : kind;
+  return (
+    <p className="stage-label">
+      <span className={`dot ${step.retry ? "dot-retry" : step.practice || final ? "dot-new" : "dot-review"}`} />
+      {text}
+    </p>
+  );
+}
+
+function Quiz({ step, session }: { step: QuizStep; session: ActiveSession }) {
   const t = useT();
   const atlas = useAtlas();
   const ref = atlas.byId.get(step.id)!;
@@ -141,21 +172,30 @@ function Quiz({ step, session }: { step: Step & { kind: QuizKind }; session: Act
   const elapsed = useStepTimer();
   const [hints, setHints] = useState(0);
   const options = useMemo(() => (step.options ?? []).map((id) => atlas.byId.get(id)!).filter(Boolean), [atlas, step.options]);
+  const typed = step.kind === "spell" || step.kind === "dictation";
+
+  const idx = entry ? exIndex(step, entry, atlas) : 0;
+  const example = entry?.ex[idx];
+  const sentence = entry && example ? gap(example.en, entry.w) : null;
+  // Dictation types the form heard in the sentence; without a gap it falls back to the headword.
+  const target = step.kind === "dictation" && sentence ? sentence.hidden : (entry?.w ?? "");
 
   const submit = useCallback(
     (value: string, correct: boolean) => {
       if (pending || !entry) return;
       const ms = elapsed() * 1000;
-      if (correct) {
-        const el = document.querySelector<HTMLElement>(step.kind === "spell" ? ".slots" : `[data-option="${value}"]`);
+      // Two or more hints mean the word was not remembered, even when the typed answer is right.
+      const ok = correct && hints < 2;
+      if (ok) {
+        const el = document.querySelector<HTMLElement>(typed ? ".slots" : `[data-option="${value}"]`);
         const r = el?.getBoundingClientRect();
         if (r) burst(r.left + r.width / 2, r.top + r.height / 2);
       }
-      if (settings.sfx) void cue(correct ? "correct" : "wrong");
-      answer(atlas, step, correct, gradeFor(step.kind, correct, ms, hints > 0), value);
-      if (entry) void play(atlas.audio(entry, settings.accent), entry.w, settings.accent);
+      if (settings.sfx) void cue(ok ? "correct" : "wrong");
+      answer(atlas, step, ok, gradeFor(step.kind, ok, ms, hints), value, ms);
+      void play(atlas.audio(entry, settings.accent), entry.w, settings.accent);
     },
-    [pending, elapsed, settings, atlas, step, hints, entry],
+    [pending, elapsed, settings, atlas, step, hints, entry, typed],
   );
 
   const next = useCallback(() => {
@@ -171,21 +211,17 @@ function Quiz({ step, session }: { step: Step & { kind: QuizKind }; session: Act
   if (pending) {
     keys.Enter = next;
     keys[" "] = next;
-  } else if (step.kind !== "spell") {
+  } else {
     options.forEach((o, i) => (keys[String(i + 1)] = () => submit(o.id, o.id === ref.id)));
   }
   useKeys(keys);
 
   if (!entry) return <span className="spinner" />;
-  const sentence = entry.ex[0] ? gap(entry.ex[0].en, entry.w) : null;
+  const meanings = step.kind === "meaning" || step.kind === "listen";
 
   return (
     <div className={`quiz quiz-${step.kind} ${pending ? (pending.correct ? "is-right" : "is-wrong") : ""}`}>
-      <p className="stage-label">
-        <span className={`dot ${step.retry ? "dot-retry" : "dot-review"}`} />
-        {step.retry ? `${t("review_again")} · ` : ""}
-        {t(KIND_LABEL[step.kind])}
-      </p>
+      <StageLabel step={step} session={session} />
 
       <section className="prompt">
         {step.kind === "meaning" && (
@@ -198,7 +234,7 @@ function Quiz({ step, session }: { step: Step & { kind: QuizKind }; session: Act
         )}
         {step.kind === "picture" && (
           <div className="prompt-picture">
-            <Illustration src={atlas.img(entry)} word={entry.w} topic={ref.topic} eager />
+            {!step.plain && idx === 0 && <Illustration src={atlas.img(entry)} word={entry.w} topic={ref.topic} eager />}
             <p className="cloze" lang="en">
               {sentence ? (
                 <>
@@ -207,10 +243,10 @@ function Quiz({ step, session }: { step: Step & { kind: QuizKind }; session: Act
                   {sentence.after}
                 </>
               ) : (
-                entry.senses[0].vi || (!/[\u4e00-\u9fff]/.test(entry.senses[0].zh) ? entry.senses[0].zh : "")
+                viText(entry.senses[0])
               )}
             </p>
-            {sentence && pending && <p className="cloze-zh">{entry.ex[0].vi || (!/[\u4e00-\u9fff]/.test(entry.ex[0].zh) ? entry.ex[0].zh : "")}</p>}
+            {sentence && pending && <p className="cloze-zh">{viText(example!)}</p>}
           </div>
         )}
         {step.kind === "listen" && (
@@ -224,29 +260,30 @@ function Quiz({ step, session }: { step: Step & { kind: QuizKind }; session: Act
             </button>
           </div>
         )}
-        {step.kind === "spell" && <SpellPrompt entry={entry} refw={ref} hints={hints} />}
+        {step.kind === "spell" && <SpellPrompt entry={entry} refw={ref} sentence={sentence} plain={!!step.plain} />}
+        {step.kind === "dictation" && <DictationPrompt url={atlas.audio(entry, idx === 1 ? "ex2" : "ex")} text={example?.en ?? entry.w} accent={settings.accent} sentence={sentence} revealed={!!pending} />}
       </section>
 
-      {step.kind === "spell" ? (
-        <SpellInput entry={entry} pending={pending} hints={hints} onHint={() => setHints((h) => Math.min(entry.w.length - 1, h + 1))} onSubmit={(v) => submit(v, normalize(v) === normalize(entry.w))} />
+      {typed ? (
+        <SpellInput target={target} pending={pending} hints={hints} onHint={() => setHints((h) => Math.min(target.split("/")[0].length - 1, h + 1))} onSubmit={(v) => submit(v, accepts(v, target))} />
       ) : (
-        <ul className={`options ${step.kind === "meaning" ? "options-zh" : "options-en"}`}>
+        <ul className={`options ${meanings ? "options-zh" : "options-en"}`}>
           {options.map((o, i) => {
             const isAnswer = o.id === ref.id;
             const chosen = pending?.value === o.id;
             const cls = pending ? (isAnswer ? "is-answer" : chosen ? "is-chosen" : "is-dim") : "";
             const langPair = settings.langPair || "en-vi";
             let optionLabel = o.word;
-            if (step.kind === "meaning") {
+            if (meanings) {
               if (langPair === "vi-zh") optionLabel = o.zh_word || o.word;
               else if (langPair === "vi-fr") optionLabel = o.fr_word || o.word;
-              else optionLabel = o.vi || (!/[\u4e00-\u9fff]/.test(o.zh) ? o.zh : o.word);
+              else optionLabel = o.vi || (!hasCjk(o.zh) ? o.zh : o.word);
             }
             return (
               <li key={o.id}>
                 <button className={`option ${cls}`} data-option={o.id} onClick={() => submit(o.id, isAnswer)} disabled={!!pending}>
                   <kbd>{i + 1}</kbd>
-                  <span lang={step.kind === "meaning" ? "vi" : "en"}>{optionLabel}</span>
+                  <span lang={meanings ? "vi" : "en"}>{optionLabel}</span>
                   {pending && isAnswer && <Check size={20} className="option-mark" />}
                   {pending && chosen && !isAnswer && <X size={20} className="option-mark" />}
                 </button>
@@ -256,24 +293,23 @@ function Quiz({ step, session }: { step: Step & { kind: QuizKind }; session: Act
         </ul>
       )}
 
-      {pending && <Feedback entry={entry} refw={ref} correct={pending.correct} onNext={next} />}
+      {pending && <Feedback entry={entry} refw={ref} correct={pending.correct} hinted={typed && !pending.correct && accepts(pending.value, target)} example={example} onNext={next} />}
     </div>
   );
 }
 
-function SpellPrompt({ entry, refw, hints }: { entry: Entry; refw: WordRef; hints: number }) {
-  const t = useT();
+function SpellPrompt({ entry, refw, sentence, plain }: { entry: Entry; refw: WordRef; sentence: ReturnType<typeof gap>; plain: boolean }) {
   const atlas = useAtlas();
-  const accent = useStore((s) => s.settings.accent);
-  const sentence = entry.ex[0] ? gap(entry.ex[0].en, entry.w) : null;
-  void hints;
+  const { pos, text } = glossParts(shortGloss(refw));
+  const vi = viText(entry.senses[0]);
   return (
-    <div className="prompt-spell">
-      <Illustration src={atlas.img(entry)} word={entry.w} topic={refw.topic} eager className="spell-art" />
+    <div className={`prompt-spell ${plain ? "is-plain" : ""}`}>
+      {!plain && <Illustration src={atlas.img(entry)} word={entry.w} topic={refw.topic} eager className="spell-art" />}
       <div>
         <p className="spell-zh">
-          <span className="pos">{entry.senses[0].pos}</span> {entry.senses[0].vi || (!/[\u4e00-\u9fff]/.test(entry.senses[0].zh) ? entry.senses[0].zh : "")}
+          <span className="pos">{pos || entry.senses[0].pos}</span> {text || vi}
         </p>
+        {text && vi && vi !== text && <p className="spell-sub">{vi}</p>}
         {sentence && (
           <p className="cloze cloze-sm" lang="en">
             {sentence.before}
@@ -281,23 +317,49 @@ function SpellPrompt({ entry, refw, hints }: { entry: Entry; refw: WordRef; hint
             {sentence.after}
           </p>
         )}
-        <Speak url={atlas.audio(entry, accent)} text={entry.w} accent={accent} size="sm" label={t("audio_label")} />
       </div>
     </div>
   );
 }
 
-function SpellInput({ entry, pending, hints, onHint, onSubmit }: { entry: Entry; pending?: { correct: boolean; value: string }; hints: number; onHint: () => void; onSubmit: (v: string) => void }) {
+function DictationPrompt({ url, text, accent, sentence, revealed }: { url: string | null; text: string; accent: "uk" | "us"; sentence: ReturnType<typeof gap>; revealed: boolean }) {
+  const t = useT();
+  useEffect(() => {
+    void play(url, text, accent);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  return (
+    <div className="prompt-listen prompt-dictation">
+      <button className="listen-orb" onClick={() => play(url, text, accent)} aria-label={t("listen_again")}>
+        <Volume2 size={40} strokeWidth={1.6} />
+        <span />
+      </button>
+      <button className="link" onClick={() => play(url, text, accent, 0.7)}>
+        {t("listen_slower")}
+      </button>
+      {sentence && (
+        <p className="cloze" lang="en">
+          {sentence.before}
+          <span className="blank">{revealed ? sentence.hidden : "　　　"}</span>
+          {sentence.after}
+        </p>
+      )}
+    </div>
+  );
+}
+
+function SpellInput({ target, pending, hints, onHint, onSubmit }: { target: string; pending?: { correct: boolean; value: string }; hints: number; onHint: () => void; onSubmit: (v: string) => void }) {
   const t = useT();
   const [value, setValue] = useState("");
   const input = useRef<HTMLInputElement>(null);
-  const target = entry.w;
-  const prefix = target.slice(0, hints);
+  // Alternatives such as "cheque/check" show the first spelling in the boxes; either one is accepted.
+  const shape = target.split("/")[0];
+  const prefix = shape.slice(0, hints);
   useEffect(() => {
     if (hints && !normalize(value).startsWith(normalize(prefix))) setValue(prefix);
     input.current?.focus();
   }, [hints]); // eslint-disable-line react-hooks/exhaustive-deps
   const shown = pending ? pending.value : value;
+  const accepted = !!pending && accepts(pending.value, target);
   return (
     <form
       className="spell"
@@ -307,9 +369,9 @@ function SpellInput({ entry, pending, hints, onHint, onSubmit }: { entry: Entry;
       }}
     >
       <div className="slots" aria-hidden="true" onClick={() => input.current?.focus()}>
-        {Array.from(target).map((ch, i) => {
+        {Array.from(shape).map((ch, i) => {
           const typed = shown[i];
-          const ok = typed !== undefined && typed.toLowerCase() === ch.toLowerCase();
+          const ok = accepted || (typed !== undefined && typed.toLowerCase() === ch.toLowerCase());
           return (
             <span key={i} className={`slot ${ch === " " ? "slot-space" : ""} ${typed !== undefined ? (pending ? (ok ? "is-ok" : "is-bad") : "is-filled") : ""} ${!pending && i === shown.length ? "is-caret" : ""}`}>
               {pending && !pending.correct ? ch : typed ?? ""}
@@ -321,19 +383,19 @@ function SpellInput({ entry, pending, hints, onHint, onSubmit }: { entry: Entry;
         ref={input}
         className="spell-input"
         value={shown}
-        onChange={(e) => !pending && setValue(e.target.value.slice(0, target.length + 6))}
+        onChange={(e) => !pending && setValue(e.target.value.slice(0, shape.length + 6))}
         autoFocus
         autoCapitalize="off"
         autoCorrect="off"
         autoComplete="off"
         spellCheck={false}
         enterKeyHint="done"
-        aria-label={t("spelling_input").replace("{n}", String(target.length))}
+        aria-label={t("spelling_input").replace("{n}", String(shape.length))}
         readOnly={!!pending}
       />
       {!pending && (
         <div className="spell-actions">
-          <button type="button" className="btn btn-ghost" onClick={onHint} disabled={hints >= target.length - 1}>
+          <button type="button" className="btn btn-ghost" onClick={onHint} disabled={hints >= shape.length - 1}>
             <Lightbulb size={17} /> {t("hint_letter")}
           </button>
           <button type="submit" className="btn btn-primary" disabled={!value.trim()}>
@@ -341,11 +403,93 @@ function SpellInput({ entry, pending, hints, onHint, onSubmit }: { entry: Entry;
           </button>
         </div>
       )}
+      {!pending && hints > 0 && <p className="hint-rule">{t("hint_rule")}</p>}
     </form>
   );
 }
 
-function Feedback({ entry, refw, correct, onNext }: { entry: Entry; refw: WordRef; correct: boolean; onNext: () => void }) {
+function Recall({ step, session }: { step: QuizStep; session: ActiveSession }) {
+  const t = useT();
+  const atlas = useAtlas();
+  const ref = atlas.byId.get(step.id)!;
+  const { entry } = useEntry(step.id);
+  const settings = useStore((s) => s.settings);
+  const elapsed = useStepTimer();
+  const [shown, setShown] = useState(false);
+  const done = useRef(false);
+
+  useEffect(() => {
+    if (entry && settings.autoplay) void play(atlas.audio(entry, settings.accent), entry.w, settings.accent);
+  }, [entry, atlas, settings.autoplay, settings.accent]);
+
+  const choose = (remembered: boolean) => {
+    if (!shown || done.current) return;
+    done.current = true;
+    const seconds = elapsed();
+    if (settings.sfx) void cue(remembered ? "correct" : "wrong");
+    answer(atlas, step, remembered, remembered ? Rating.Good : Rating.Again, remembered ? "remembered" : "forgot", seconds * 1000);
+    stopAudio();
+    advance(seconds, step);
+  };
+  const reveal = () => setShown(true);
+
+  useKeys(shown ? { "1": () => choose(false), "2": () => choose(true) } : { Enter: reveal, " ": reveal });
+
+  if (!entry) return <span className="spinner" />;
+  return (
+    <div className="quiz quiz-recall">
+      <StageLabel step={step} session={session} />
+      <section className="prompt">
+        <div className="prompt-recall">
+          <div className="prompt-word">
+            <h2 className="headword" lang="en">
+              {entry.w}
+            </h2>
+            <Speak url={atlas.audio(entry, settings.accent)} text={entry.w} accent={settings.accent} label={<span className="ipa">{settings.accent === "us" ? entry.us || entry.uk : entry.uk || entry.us}</span>} />
+          </div>
+          {shown ? (
+            <div className="recall-answer">
+              <Illustration src={atlas.img(entry, "thumb")} word={entry.w} topic={ref.topic} className="recall-art" />
+              <div>
+                <p className="recall-gloss">{shortGloss(ref)}</p>
+                <p className="feedback-zh">
+                  {entry.senses
+                    .slice(0, 2)
+                    .map((s) => `${s.pos} ${viText(s)}`)
+                    .join("　")}
+                </p>
+                {entry.ex[0] && (
+                  <p className="recall-ex" lang="en">
+                    <Highlight text={entry.ex[0].en} word={entry.w} />
+                  </p>
+                )}
+              </div>
+            </div>
+          ) : (
+            <>
+              <button className="btn btn-primary btn-xl" onClick={reveal} autoFocus>
+                {t("reveal_meaning")} <kbd>Space</kbd>
+              </button>
+              <p className="recall-hint">{t("recall_hint")}</p>
+            </>
+          )}
+        </div>
+      </section>
+      {shown && (
+        <footer className="learn-actions">
+          <button className="btn btn-terra btn-xl" onClick={() => choose(false)}>
+            {t("recall_forgot")} <kbd>1</kbd>
+          </button>
+          <button className="btn btn-sage btn-xl" onClick={() => choose(true)}>
+            {t("recall_remembered")} <kbd>2</kbd>
+          </button>
+        </footer>
+      )}
+    </div>
+  );
+}
+
+function Feedback({ entry, refw, correct, hinted, example, onNext }: { entry: Entry; refw: WordRef; correct: boolean; hinted: boolean; example?: Example; onNext: () => void }) {
   const t = useT();
   const atlas = useAtlas();
   const btn = useRef<HTMLButtonElement>(null);
@@ -355,20 +499,21 @@ function Feedback({ entry, refw, correct, onNext }: { entry: Entry; refw: WordRe
       <div className="feedback-inner">
         <Illustration src={atlas.img(entry, "thumb")} word={entry.w} topic={refw.topic} className="feedback-art" />
         <div className="feedback-text">
-          <p className="feedback-verdict">{correct ? t("feedback_correct") : t("feedback_wrong")}</p>
+          <p className="feedback-verdict">{correct ? t("feedback_correct") : hinted ? t("feedback_hinted") : t("feedback_wrong")}</p>
           <p className="feedback-word">
             <b lang="en">{entry.w}</b>
             <span className="ipa">{entry.uk || entry.us}</span>
           </p>
+          <p className="feedback-gloss">{shortGloss(refw)}</p>
           <p className="feedback-zh">
             {entry.senses
               .slice(0, 2)
-              .map((s) => `${s.pos} ${s.vi || (!/[\u4e00-\u9fff]/.test(s.zh) ? s.zh : "")}`)
+              .map((s) => `${s.pos} ${viText(s)}`)
               .join("　")}
           </p>
-          {entry.ex[0] && (
+          {example && (
             <p className="feedback-ex" lang="en">
-              <Highlight text={entry.ex[0].en} word={entry.w} />
+              <Highlight text={example.en} word={entry.w} />
             </p>
           )}
         </div>
@@ -430,6 +575,12 @@ function Summary({ session }: { session: ActiveSession }) {
             </div>
           </dl>
         </div>
+        {(stats.recall.n > 0 || stats.choice.n > 0) && (
+          <p className="summary-split">
+            {stats.recall.n > 0 && <span>{t("summary_recall").replace("{ok}", String(stats.recall.ok)).replace("{n}", String(stats.recall.n))}</span>}
+            {stats.choice.n > 0 && <span>{t("summary_choice").replace("{ok}", String(stats.choice.ok)).replace("{n}", String(stats.choice.n))}</span>}
+          </p>
+        )}
         <ul className="summary-words">
           {words.map((w) => (
             <li key={w.id} className={session.graded[w.id] === Rating.Again ? "is-wrong" : ""}>

@@ -4,12 +4,10 @@ import { useAtlas } from "../atlas/context";
 import { tr, useT, type TranslationKey } from "../i18n";
 import { weakWords } from "../lib/drills";
 import { go, openWord } from "../lib/router";
-import { buildSession } from "../store/session";
-import { isMastered } from "../store/srs";
+import { buildSession, masteredCount, rememberedCount, retentionStats, streakOf } from "../store/session";
 import { dayKey, exportBackup, importBackup, resetProgress, store, useStore, type Settings } from "../store/store";
 import { Illustration } from "../ui/Illustration";
 import { toast } from "../ui/Toast";
-import { streakOf } from "./Today";
 
 export function Me({ privateAvailable: _privateAvailable }: { privateAvailable: boolean }) {
   const t = useT();
@@ -50,8 +48,19 @@ export function Me({ privateAvailable: _privateAvailable }: { privateAvailable: 
       return cards.filter((x) => (i === 0 ? x.due <= end.getTime() : x.due >= start.getTime() && x.due <= end.getTime())).length;
     });
     void now;
-    return { learned: cards.length, mastered: cards.filter(isMastered).length, reviews: r, accuracy: r ? Math.round((c / r) * 100) : 0, minutes: Math.round(secs / 60), forecast };
-  }, [progress]);
+    const remembered = rememberedCount(progress, now, settings.retention);
+    const retention = retentionStats(progress.log, now, 30);
+    return {
+      learned: cards.length,
+      mastered: masteredCount(progress),
+      remembered,
+      retention,
+      reviews: r,
+      accuracy: r ? Math.round((c / r) * 100) : 0,
+      minutes: Math.round(secs / 60),
+      forecast,
+    };
+  }, [progress, settings.retention]);
 
   const set = (patch: Partial<Settings>) => store.settings(patch);
   const download = () => {
@@ -117,27 +126,45 @@ export function Me({ privateAvailable: _privateAvailable }: { privateAvailable: 
       </header>
 
       <section className="stat-strip">
-        <div>
+        <div title={t("streak_rule")}>
           <dt>{t("stat_streak")}</dt>
           <dd>
             {streakOf(progress.days)}
             <small>{t("stat_days")}</small>
           </dd>
         </div>
-        <div>
+        <div title={t("seen_hint")}>
           <dt>{t("stat_lit_stars")}</dt>
           <dd>{stats.learned.toLocaleString()}</dd>
         </div>
-        <div>
+        <div title={t("remembering_hint")}>
+          <dt>{t("remembering")}</dt>
+          <dd>{stats.remembered.toLocaleString()}</dd>
+        </div>
+        <div title={t("mastered_hint")}>
           <dt>{t("stat_long_term")}</dt>
           <dd>{stats.mastered.toLocaleString()}</dd>
         </div>
         <div>
-          <dt>{t("stat_first_try")}</dt>
+          <dt>{t("stat_retention")}</dt>
           <dd>
-            {stats.accuracy}
-            <small>%</small>
+            {stats.retention.recall.n > 0 ? (
+              <>
+                {Math.round((stats.retention.recall.ok / stats.retention.recall.n) * 100)}
+                <small>%</small>
+              </>
+            ) : (
+              "—"
+            )}
           </dd>
+          <small className="stat-sub">
+            {stats.retention.recall.n > 0
+              ? t("retention_detail")
+                  .replace("{r}", `${Math.round((stats.retention.recall.ok / stats.retention.recall.n) * 100)}%`)
+                  .replace("{c}", stats.retention.choice.n > 0 ? `${Math.round((stats.retention.choice.ok / stats.retention.choice.n) * 100)}%` : "—")
+                  .replace("{goal}", `${Math.round(settings.retention * 100)}%`)
+              : t("retention_none")}
+          </small>
         </div>
         <div>
           <dt>{t("time_label")}</dt>
